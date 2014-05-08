@@ -559,8 +559,8 @@ RegisterAttack(558,"Fusion Flare","The user brings down a giant flame. This atta
 RegisterAttack(559,"Fusion Bolt","The user throws down a giant thunderbolt. This attack does greater damage when influenced by an enormous flame.","Attacks\\Electric\\FusionBolt")
 RegisterAttack(560,"Ride","The user clumps over the target and hits with enormous power","Attacks\\Fighting\\Ride")
 RegisterAttack(561,"Fairy Wind","Blasts the opponent with magical pixie dust.","Attacks\\Fairy\\FairyWind")
-RegisterAttack(562,"Moonblast","Calls on the power of the moon to attack an opposing Pokémon. Also lowers the target's attack stat.","Attacks\\Fairy\\Moonblast")
-RegisterAttack(999,"TheUltimateDerp","The Pokémon derps around to the max. Nothing can stop it now. Not even a cookie.","Attacks\\Special\\TheDerpMove")
+RegisterAttack(562,"Moonblast","Calls on the power of the moon to attack an opposing Pokï¿½mon. Also lowers the target's attack stat.","Attacks\\Fairy\\Moonblast")
+RegisterAttack(999,"TheUltimateDerp","The Pokemon derps around to the max. Nothing can stop it now. Not even a cookie.","Attacks\\Special\\TheDerpMove")
 --THIS IS THE ATTACK THAT OCCURS WHEN YOU HIT YOURSELF IN CONFUSION
 RegisterAttack(0,"Confusion","Pounds the target with forelegs or tail.","Attacks\\Confusion")
 
