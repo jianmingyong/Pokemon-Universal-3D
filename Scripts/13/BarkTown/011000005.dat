@@ -1,0 +1,13 @@
+version=2
+:if:<Register.value(13\BarkTown\011000005)>=1
+	@Sound.play(Select)
+	@Text.show(<Player.name>'s House)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,13\BarkTown\011000005.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

@@ -1,0 +1,7 @@
+SetAttackBaseDamage(443,60)
+SetAttackMaxPP(443,20)
+SetAttackCategory(443,0)
+SetAttackContestCategory(443,3)
+SetAttackType(443,8)
+SetAttackPriority(443,0)
+SetAttackAccuracy(443,-1)

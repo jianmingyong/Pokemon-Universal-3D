@@ -1,0 +1,8 @@
+version=2
+@Register.register(System\Intro\5\Intro,int,1)
+@Register.register(System\Intro\5\Intro.1,int,1)
+@Register.register(System\Intro\5\Intro.2,int,1)
+@Register.register(System\Intro\5\Intro.3,int,1)
+@Register.register(System\Intro\5\Intro.4,int,1)
+@Register.register(System\Register\5)
+:end

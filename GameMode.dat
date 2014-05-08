@@ -1,0 +1,22 @@
+﻿Name|Pokemon FireRed Universal 3D
+Description|Pokemon FireRed Universal in 3D
+Version|0.46.2.0.0.1
+Author|jianmingyong
+MapPath|$Mode\Maps\
+ScriptPath|$Mode\Scripts\
+PokeFilePath|$Mode\Encounters\
+PokemonDataPath|$Mode\Content\Pokemon\Data\
+ContentPath|$Mode\Content\
+LocalizationsPath|$Mode\Content\Localization\
+Gamerules|(MaxLevel|100)(OnlyCaptureFirst|0)(ForceRename|0)(DeathInsteadOfFaint|0)(CanUseHealItems|1)(Difficulty|0)(LockDifficulty|0)(GameOverAt0Pokemon|0)(CanGetAchievements|1)(ShowFollowPokemon|0)
+StartMap|System\GlobalIntro.dat
+StartPosition|0,0,0
+StartRotation|0
+StartLocationName|Intro
+StartDialogue|Welcome!~Enjoy the music, it will be used in*the future.|I will skip this intro.~You are recommended not to use*mouse for the in-game intro.|~Press Space Bar/Enter to start
+StartColor|127,127,255
+PokemonAppear|0
+IntroMusic|PMD_EOT_D_S Dialga's Fight To The Finish!
+SkinColors|255;127;127,127;255;127,255;127;127,127;127;255
+SkinFiles|trchar000,trchar001,trchar002,trchar003
+SkinNames|Red,Leaf,Brendan,May

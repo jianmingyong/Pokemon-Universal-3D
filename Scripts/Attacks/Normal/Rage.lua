@@ -1,0 +1,8 @@
+SetAttackBaseDamage(99,20)
+SetAttackMaxPP(99,20)
+SetAttackCategory(99,0)
+SetAttackContestCategory(99,3)
+SetAttackType(99,0)
+SetAttackAttackCategory(99,0)
+SetAttackPriority(99,0)
+SetAttackAccuracy(99,255)

@@ -1,0 +1,14 @@
+version=2
+:if:<Register.registered(System.GlobalVariable)>=false
+	@Script.start(System\GlobalRegister)
+:endif
+:if:<Level.filename>=GlobalIntro
+	@Script.start(System\GlobalIntro)
+:endif
+@Script.start(System\GlobalMigration)
+@Script.start(System\GlobalUpdateValidation)
+@Script.start(System\GlobalUpdate)
+@Script.start(System\GlobalRegisterValidation)
+@Script.start(System\GlobalOptions)
+@Script.start(System\GlobalParallelProcess)
+:end

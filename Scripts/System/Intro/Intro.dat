@@ -1,0 +1,10 @@
+version=2
+@Entity.setopacity(51,0)
+@Entity.setopacity(52,0)
+@Entity.setopacity(53,0)
+@Entity.setopacity(54,0)
+@Entity.setopacity(131,0)
+@Entity.setopacity(132,0)
+@Entity.setopacity(133,0)
+@Entity.setopacity(134,0)
+:end

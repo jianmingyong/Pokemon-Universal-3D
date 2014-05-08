@@ -1,0 +1,14 @@
+version=2
+@Script.start(System\Intro\Intro)
+:if:<Register.value(System.Game ID)>=5
+	:if:<Register.value(System\Intro\5\Intro)>=1
+		@Script.start(System\Intro\5\Intro)
+		:end
+	:endif
+:endif
+:if:<Register.value(System.Game ID)>=13
+	:if:<Register.value(System\Intro\13\Intro)>=1
+		@Script.start(System\Intro\13\Intro)
+		:end
+	:endif
+:endif

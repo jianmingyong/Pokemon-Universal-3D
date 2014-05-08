@@ -1,0 +1,32 @@
+version=2
+:if:<Register.value(13\BarkTown\003000002)>=1
+	@Sound.play(Select)
+	@NPC.turn(2,3)
+	@Text.show(......)
+	@Sound.play(Select)
+	@Text.show(So this is the famous~Elm POKéMON Lab)
+	@Sound.play(Select)
+	@NPC.turn(2,1)
+	@Text.show(......)
+	@Sound.play(Select)
+	@Text.show(What are you~staring at?)
+	@Sound.play(Select)
+	@Player.turnto(0)
+	@Player.setmovement(0,0,1)
+	@Player.move(1)
+	@NPC.move(2,1)
+	@NPC.turn(2,2)
+	@Sound.play(destroy)
+	@Player.move(1)
+	@NPC.turn(2,3)
+	@NPC.move(2,1)
+	@Player.resetmovement
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,13\BarkTown\003000002.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

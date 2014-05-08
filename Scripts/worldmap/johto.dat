@@ -1,0 +1,140 @@
+Cities:
+{"PlaceType"[City]}{"Name"[New Bark Town]}{"MapFiles"[barktown.dat,barktown0.dat,yourroom.dat,elmlab.dat,barktown\0.dat,barktown\1.dat]}{"Position"[20,13]}{"Size"[Small]}{"FlyTo"[barktown.dat,19,12,12]}
+{"PlaceType"[City]}{"Name"[Cherrygrove City]}{"MapFiles"[cherrygrove.dat,cherrygrove_center.dat,cherrygrove_mart.dat,cherrygrove\0.dat,cherrygrove\1.dat,cherrygrove\2.dat]}{"Position"[15,13]}{"Size"[Horizontal]}{"FlyTo"[cherrygrove.dat,31,12,6]}
+{"PlaceType"[City]}{"Name"[Violet City]}{"MapFiles"[violet.dat,violet_center.dat,violet_mart.dat,violet\001.dat,violet\002.dat,violet\school.dat,gyms\violet_gym.dat]}{"Position"[13,8]}{"Size"[Big]}{"FlyTo"[violet.dat,31,12,28]}
+{"PlaceType"[City]}{"Name"[Azalea Town]}{"MapFiles"[azalea.dat,gates\azaleailexgate.dat,azalea\0.dat,azalea\center.dat,azalea\kurt.dat,azalea\mart.dat,gyms\azalea_gym.dat]}{"Position"[11,15]}{"Size"[Horizontal]}{"FlyTo"[azalea.dat,15,12,12]}
+{"PlaceType"[City]}{"Name"[Goldenrod City]}{"MapFiles"[goldenrod.dat,goldenrod\001.dat,goldenrod\002.dat,goldenrod\bill.dat,goldenrod\center.dat,goldenrod\center_friends.dat,goldenrod\center_global.dat,goldenrod\flowershop.dat,goldenrod\mart.dat,goldenrod\martbasement.dat,goldenrod\namerater.dat,goldenrod\taming_shop.dat,goldenrod\trainstation.dat,goldenrod\underground0.dat,goldenrod\underground1.dat,goldenrod\underground2.dat,goldenrod\underground3.dat,goldenrod\radiotower\1f.dat,goldenrod\radiotower\2f.dat,goldenrod\radiotower\3f.dat,goldenrod\radiotower\4f.dat,goldenrod\radiotower\5f.dat,gyms\goldenrod_gym.dat]}{"Position"[8,11]}{"Size"[Large]}{"FlyTo"[goldenrod.dat,15,12,28]}
+{"PlaceType"[City]}{"Name"[Ecruteak City]}{"MapFiles"[ecruteak.dat,ecruteak\001.dat,ecruteak\002.dat,ecruteak\center.dat,ecruteak\dance_theater.dat,ecruteak\mart.dat,ecruteak\tintowergate1.dat,ecruteak\tintowergate2.dat,ecruteak\tintowergate3.dat,gyms\ecruteak_gym.dat]}{"Position"[10,5]}{"Size"[Big]}{"FlyTo"[ecruteak.dat,23,12,28]}
+{"PlaceType"[City]}{"Name"[Olivine City]}{"MapFiles"[olivine.dat,olivine\001.dat,olivine\002.dat,olivine\003.dat,olivine\center.dat,olivine\mart.dat,gyms\olivine_gym.dat,olivine\Cafe.dat,olivine\dock.dat,olivine\dock_entrance.dat]}{"Position"[7,8]}{"Size"[Big]}{"FlyTo"[olivine.dat,13,12,22]}
+{"PlaceType"[City]}{"Name"[Cianwood City]}{"MapFiles"[cianwood.dat,gyms\cianwood_gym.dat,cianwood\000.dat,cianwood\001.dat,cianwood\002.dat,cianwood\003.dat,cianwood\004.dat,cianwood\center.dat,gates\cliffedge.dat]}{"Position"[4,11]}{"Size"[Vertical]}{"FlyTo"[cianwood.dat,22,12,44]}
+{"PlaceType"[City]}{"Name"[Mahogany Town]}{"MapFiles"[mahogany.dat,gyms\mahogany_gym.dat,mahogany\center.dat,mahogany\0.dat,mahogany\shop.dat,gates\mahoganyroute43gate.dat,rocketbase\rocketbase1.dat,rocketbase\rocketbase2.dat,rocketbase\rocketbase3.dat]}{"Position"[15,6]}{"Size"[Small]}{"FlyTo"[mahogany.dat,15,12,14]}
+{"PlaceType"[City]}{"Name"[Blackthorn City]}{"MapFiles"[blackthorn.dat,blackthorn\000.dat,blackthorn\001.dat,blackthorn\002.dat,blackthorn\center.dat,blackthorn\mart.dat,gyms\blackthorn_gym_1.dat,gyms\blackthorn_gym_2.dat]}{"Position"[19,5]}{"Size"[Big]}{"FlyTo"[blackthorn.dat,21,12,30]}
+
+Routes:
+{"PlaceType"[Route]}{"Name"[Route 26]}{"MapFiles"[routes\route26.dat,routes\route26\0.dat,routes\route26\1.dat]}{"Position"[27,8]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 26]}{"MapFiles"[routes\route26.dat,routes\route26\0.dat,routes\route26\1.dat]}{"Position"[27,9]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 26]}{"MapFiles"[routes\route26.dat,routes\route26\0.dat,routes\route26\1.dat]}{"Position"[27,10]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 26]}{"MapFiles"[routes\route26.dat,routes\route26\0.dat,routes\route26\1.dat]}{"Position"[27,11]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 26]}{"MapFiles"[routes\route26.dat,routes\route26\0.dat,routes\route26\1.dat]}{"Position"[27,12]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 26]}{"MapFiles"[routes\route26.dat,routes\route26\0.dat,routes\route26\1.dat]}{"Position"[27,13]}{"Direction"[CurveUpLeft]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 27]}{"MapFiles"[routes\route27.dat,routes\route27\1.dat]}{"Position"[26,13]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 27]}{"MapFiles"[routes\route27.dat,routes\route27\1.dat]}{"Position"[25,13]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 27]}{"MapFiles"[routes\route27.dat,routes\route27\1.dat]}{"Position"[24,13]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 27]}{"MapFiles"[routes\route27.dat,routes\route27\1.dat]}{"Position"[23,13]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 27]}{"MapFiles"[routes\route27.dat,routes\route27\1.dat]}{"Position"[22,13]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 27]}{"MapFiles"[routes\route27.dat,routes\route27\1.dat]}{"Position"[21,13]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 28]}{"MapFiles"[]}{"Position"[26,9]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 28]}{"MapFiles"[]}{"Position"[25,9]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 29]}{"MapFiles"[route29.dat,gates\route2946gate.dat]}{"Position"[19,13]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 29]}{"MapFiles"[route29.dat,gates\route2946gate.dat]}{"Position"[18,13]}{"Direction"[TUp]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 29]}{"MapFiles"[route29.dat,gates\route2946gate.dat]}{"Position"[17,13]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 30]}{"MapFiles"[route30.dat,mrpokemonhouse.dat,routes\berryhouse.dat]}{"Position"[16,12]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 30]}{"MapFiles"[route30.dat,mrpokemonhouse.dat,routes\berryhouse.dat]}{"Position"[16,11]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 30]}{"MapFiles"[route30.dat,mrpokemonhouse.dat,routes\berryhouse.dat]}{"Position"[16,10]}{"Direction"[Vertical]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 31]}{"MapFiles"[route31.dat,violetroute31gate.dat]}{"Position"[16,9]}{"Direction"[CurveDownLeft]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 31]}{"MapFiles"[route31.dat,violetroute31gate.dat]}{"Position"[15,9]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 32]}{"MapFiles"[route32.dat,route32_center.dat]}{"Position"[13,10]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 32]}{"MapFiles"[route32.dat,route32_center.dat]}{"Position"[13,11]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 32]}{"MapFiles"[route32.dat,route32_center.dat]}{"Position"[13,12]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 32]}{"MapFiles"[route32.dat,route32_center.dat]}{"Position"[13,13]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 32]}{"MapFiles"[route32.dat,route32_center.dat]}{"Position"[13,14]}{"Direction"[Vertical]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 33]}{"MapFiles"[route33.dat]}{"Position"[13,15]}{"Direction"[CurveUpLeft]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 33]}{"MapFiles"[route33.dat]}{"Position"[12,15]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 34]}{"MapFiles"[routes\routes34.dat,routes\daycare.dat,gates\ilexroute34gate.dat]}{"Position"[11,15]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 34]}{"MapFiles"[routes\routes34.dat,routes\daycare.dat,gates\ilexroute34gate.dat]}{"Position"[10,15]}{"Direction"[CurveUpRight]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 34]}{"MapFiles"[routes\routes34.dat,routes\daycare.dat,gates\ilexroute34gate.dat]}{"Position"[10,14]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 34]}{"MapFiles"[routes\routes34.dat,routes\daycare.dat,gates\ilexroute34gate.dat]}{"Position"[10,13]}{"Direction"[Vertical]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 35]}{"MapFiles"[routes\route35.dat,gates\goldenrodroute35gate.dat]}{"Position"[10,10]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 35]}{"MapFiles"[routes\route35.dat,gates\goldenrodroute35gate.dat]}{"Position"[10,9]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 35]}{"MapFiles"[routes\route35.dat,gates\goldenrodroute35gate.dat]}{"Position"[10,8]}{"Direction"[CurveDownRight]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 35]}{"MapFiles"[routes\route35.dat,gates\goldenrodroute35gate.dat]}{"Position"[11,8]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 36]}{"MapFiles"[route36.dat]}{"Position"[12,8]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 36]}{"MapFiles"[route36.dat]}{"Position"[11,8]}{"Direction"[TUp]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 37]}{"MapFiles"[route37.dat]}{"Position"[11,7]}{"Direction"[Vertical]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 38]}{"MapFiles"[route38.dat,gates\ecruteakroute38.dat]}{"Position"[9,6]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 38]}{"MapFiles"[route38.dat,gates\ecruteakroute38.dat]}{"Position"[8,6]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 39]}{"MapFiles"[route39.dat,route39\barn.dat,route39\house.dat]}{"Position"[7,6]}{"Direction"[CurveDownRight]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 39]}{"MapFiles"[route39.dat,route39\barn.dat,route39\house.dat]}{"Position"[7,7]}{"Direction"[Vertical]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 40]}{"MapFiles"[routes\route40.dat]}{"Position"[7,9]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 40]}{"MapFiles"[routes\route40.dat]}{"Position"[6,9]}{"Direction"[CurveDownRight]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 40]}{"MapFiles"[routes\route40.dat]}{"Position"[6,10]}{"Direction"[Vertical]}{"RouteType"[Water]}
+
+{"PlaceType"[Route]}{"Name"[Route 41]}{"MapFiles"[routes\route41.dat]}{"Position"[6,11]}{"Direction"[Vertical]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 41]}{"MapFiles"[routes\route41.dat]}{"Position"[6,12]}{"Direction"[CurveUpLeft]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 41]}{"MapFiles"[routes\route41.dat]}{"Position"[5,12]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+
+{"PlaceType"[Route]}{"Name"[Route 42]}{"MapFiles"[routes\route42.dat,gates\ecruteakroute42gate.dat]}{"Position"[12,6]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 42]}{"MapFiles"[routes\route42.dat,gates\ecruteakroute42gate.dat]}{"Position"[13,6]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 42]}{"MapFiles"[routes\route42.dat,gates\ecruteakroute42gate.dat]}{"Position"[14,6]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 43]}{"MapFiles"[routes\route43.dat,gates\route43gate.dat,gates\mahoganyroute43gate.dat]}{"Position"[15,5]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 43]}{"MapFiles"[routes\route43.dat,gates\route43gate.dat,gates\mahoganyroute43gate.dat]}{"Position"[15,4]}{"Direction"[Vertical]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 44]}{"MapFiles"[routes\route44.dat]}{"Position"[16,6]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 44]}{"MapFiles"[routes\route44.dat]}{"Position"[17,6]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 44]}{"MapFiles"[routes\route44.dat]}{"Position"[18,6]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 45]}{"MapFiles"[routes\route45.dat]}{"Position"[19,7]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 45]}{"MapFiles"[routes\route45.dat]}{"Position"[19,8]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 45]}{"MapFiles"[routes\route45.dat]}{"Position"[19,9]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 45]}{"MapFiles"[routes\route45.dat]}{"Position"[19,10]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 45]}{"MapFiles"[routes\route45.dat]}{"Position"[18,11]}{"Direction"[HorizontalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 45]}{"MapFiles"[routes\route45.dat]}{"Position"[19,11]}{"Direction"[CurveUpLeft]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 46]}{"MapFiles"[routes\route46.dat]}{"Position"[18,11]}{"Direction"[CurveDownRight]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 46]}{"MapFiles"[routes\route46.dat]}{"Position"[18,12]}{"Direction"[Vertical]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 47]}{"MapFiles"[routes\route47\1.dat,routes\route47\2.dat,routes\route47\3.dat,routes\route47\c1.dat,routes\route47\c2.dat,routes\route47\cb.dat]}{"Position"[3,12]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 47]}{"MapFiles"[routes\route47\1.dat,routes\route47\2.dat,routes\route47\3.dat,routes\route47\c1.dat,routes\route47\c2.dat,routes\route47\cb.dat]}{"Position"[2,12]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 47]}{"MapFiles"[routes\route47\1.dat,routes\route47\2.dat,routes\route47\3.dat,routes\route47\c1.dat,routes\route47\c2.dat,routes\route47\cb.dat]}{"Position"[1,12]}{"Direction"[CurveUpRight]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Route 48]}{"MapFiles"[routes\route48.dat]}{"Position"[1,11]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 48]}{"MapFiles"[routes\route48.dat]}{"Position"[1,10]}{"Direction"[Vertical]}{"RouteType"[Land]}
+
+Places:
+{"PlaceType"[Place]}{"Name"[Dark Cave]}{"Mapfiles"[darkcave\darkcave0.dat,darkcave\darkcave1.dat]}{"Position"[16,9]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Dark Cave]}{"Mapfiles"[darkcave\darkcave0.dat,darkcave\darkcave1.dat]}{"Position"[18,11]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Dark Cave]}{"Mapfiles"[darkcave\darkcave0.dat,darkcave\darkcave1.dat]}{"Position"[19,7]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Union Cave]}{"Mapfiles"[unioncave\unioncavebf1.dat,unioncave\unioncavebf2.dat,unioncave\unioncavef1.dat]}{"Position"[13,14]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Mt. Mortar]}{"Mapfiles"[mtmortar\mtmortarbf1.dat,mtmortar\mtmortarf1.dat,mtmortar\mtmortarmain.dat,mtmortar\mtmortarf2.dat]}{"Position"[13,6]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Mt. Silver]}{"Mapfiles"[]}{"Position"[24,9]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Victory Road]}{"Mapfiles"[gates\league.dat,victoryroad\1.dat,victoryroad\2.dat,victoryroad\3.dat]}{"Position"[27,8]}{"Size"[Vertical]}{"FlyTo"[routes\route26.dat,7,12,6]}
+{"PlaceType"[Place]}{"Name"[Tohjo Falls]}{"Mapfiles"[tohjofalls.dat]}{"Position"[22,13]}{"Size"[Small]}
+
+{"PlaceType"[Place]}{"Name"[Sprout Tower]}{"Mapfiles"[violet\sprouttowerf1.dat,violet\sprouttowerf2.dat,violet\sprouttowerf3.dat]}{"Position"[14,8]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Tin Tower]}{"Mapfiles"[ecruteak\tintower1f.dat,ecruteak\tintower2f.dat,ecruteak\tintower3f.dat,ecruteak\tintower4f.dat,ecruteak\tintower5f.dat,ecruteak\tintower6f.dat,ecruteak\tintower7f.dat,ecruteak\tintower8f.dat,ecruteak\tintower9f.dat,ecruteak\tintower10f.dat]}{"Position"[11,5]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Burned Tower]}{"Mapfiles"[burnedtower\burnedtower1f.dat,burnedtower\burnedtowerb1f.dat]}{"Position"[10,5]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Glitter Lighthouse]}{"Mapfiles"[lighthouse\lighthouse0.dat]}{"Position"[8,9]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Indigo Plateau]}{"Mapfiles"[indigo\outside.dat,indigo\inside.dat,indigo\will.dat,indigo\koga.dat,indigo\bruno.dat,indigo\karen.dat,indigo\lance.dat,indigo\halloffame.dat]}{"Position"[27,7]}{"Size"[Small]}{"FlyTo"[indigo\outside.dat,1,13,-28]}
+
+{"PlaceType"[Place]}{"Name"[Slowpoke Well]}{"Mapfiles"[slowpokewell\slowpokewell1f.dat,slowpokewell\slowpokewellb1f.dat]}{"Position"[12,15]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Ice Path]}{"Mapfiles"[icepath\1f.dat,icepath\2f.dat,icepath\3f.dat,icepath\4f.dat]}{"Position"[20,5]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Dragon's Den]}{"Mapfiles"[dragonsden\0.dat,dragonsden\1.dat,dragonsden\main.dat,dragonsden\shrine.dat]}{"Position"[19,5]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Ruins of Alph]}{"Mapfiles"[alph\ruinsofalph.dat,gates\alphroutegate32.dat,gates\alphroute36gate.dat,alph\alph01.dat,alph\alph02.dat,alph\alph03.dat,alph\alph04.dat,alph\alph05.dat,alph\alph06.dat,alph\alphhouse.dat]}{"Position"[12,10]}{"Size"[VericalBig]}
+
+{"PlaceType"[Place]}{"Name"[Ilex Forest]}{"Mapfiles"[ilexforest.dat]}{"Position"[10,15]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[National Park]}{"Mapfiles"[nationalpark\nationalpark0.dat,nationalpark\nationalpark1.dat,nationalpark\nationalpark2.dat,nationalpark\contest.dat]}{"Position"[9,8]}{"Size"[Round]}
+{"PlaceType"[Place]}{"Name"[Safari Zone]}{"Mapfiles"[safarizone\main.dat,safarizone\center.dat,safarizone\gate.dat,safarizone\areas\0.dat,safarizone\areas\1.dat,safarizone\areas\2.dat,safarizone\areas\3.dat,safarizone\areas\4.dat,safarizone\areas\5.dat,safarizone\areas\6.dat,safarizone\areas\7.dat,safarizone\areas\8.dat,safarizone\areas\9.dat,safarizone\areas\10.dat,safarizone\areas\11.dat,safarizone\areas\12.dat,safarizone\areas\12.dat,safarizone\areas\14.dat,safarizone\areas\15.dat]}{"Position"[1,9]}{"Size"[Square]}{"FlyTo"[safarizone\main.dat,3,12,8]}
+
+{"PlaceType"[Place]}{"Name"[Whirl Islands]}{"Mapfiles"[whirislands\1fnw.dat,whirislands\1fne.dat,whirislands\1fse.dat,whirislands\1fsw.dat,whirislands\bf1main.dat,whirislands\sc1.dat,whirislands\sc2.dat,whirislands\sc3.dat,whirislands\sc4.dat,whirislands\wfall.dat,whirislands\lugia.dat]}{"Position"[6,12]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Lake of Rage]}{"Mapfiles"[lakeofrage.dat,lakeofrage\0.dat,lakeofrage\1.dat]}{"Position"[15,3]}{"Size"[Large]}{"FlyTo"[lakeofrage.dat,27,12,32]}
+
+{"PlaceType"[Place]}{"Name"[Twirl Forest]}{"Mapfiles"[twirl forest\main.dat,twirl forest\0\0.dat,twirl forest\0\1.dat,twirl forest\0\2.dat,twirl forest\0\3.dat,twirl forest\0\4.dat,twirl forest\0\5.dat,twirl forest\0\9.dat,twirl forest\0\10.dat,twirl forest\0\11.dat,twirl forest\0\15.dat]}{"Position"[1,6]}{"Size"[Small]}
+
+{"PlaceType"[Place]}{"Name"[Berry Vista]}{"Mapfiles"[BerryVista.dat]}{"Position"[18,15]}{"Size"[Small]}
+
+{"PlaceType"[Place]}{"Name"[Battle Frontier]}{"Mapfiles"[gates\battlegate.dat,frontier\battlefrontier.dat,frontier\battletower\main.dat,frontier\battlefactory\main.dat]}{"Position"[6,8]}{"Size"[Small]}{"FlyTo"[frontier\battlefrontier.dat,10,12,10]}
