@@ -1,13 +1,26 @@
 Table of contents:
-1.	License
-2.	About
-3.	Contacting
-4.	Supported platforms
-5.	Installing and running Pokémon 3D
-5.1.	Installing prerequisites
-5.2.	Installing precautions
-6.	Installing Pokémon FireRed Universal 3D
-7.	Credits
+<<<<<<< HEAD
+1. License
+2. About
+3. Contacting
+4. Supported platforms
+5. Installing and running Pokémon 3D
+5.1. Installing prerequisites
+5.2. Installing precautions
+6. Installing Pokémon FireRed Universal 3D
+7. Credits
+=======
+
+#	License
+#	About
+#	Contacting
+#	Supported platforms
+#	Installing and running Pokémon 3D
+##	Installing prerequisites
+##	Installing precautions
+##	Installing Pokémon FireRed Universal 3D
+#	Credits
+>>>>>>> 5e4edc4b70ece1fe43adca855cdf9cc35c781cb0
 
 ==================================================
 1.	License
