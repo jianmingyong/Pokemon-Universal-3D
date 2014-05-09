@@ -108,7 +108,7 @@ Elms Lab:
 
 {"EntityField"{ENT[{"Size"{intArr[6,4]}}{"EntityID"{str[WallBlock]}}{"Position"{sngArr[10,1,6]}}{"TexturePath"{str[BarkTown]}}{"Textures"{recArr[[80,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 
-{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[12,0,9]}}{"TexturePath"{str[BarkTown]}}{"Textures"{recArr[[16,0,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[elmlab.dat,4,0.1,11,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[12,0,9]}}{"TexturePath"{str[BarkTown]}}{"Textures"{recArr[[16,0,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[13\BarkTown\BarkTown.ElmLab.dat,4,0.1,11,0]}}{"Rotation"{int[0]}}]}}
 
 Signs:
 {"Entity"{ENT[{"EntityID"{str[SignBlock]}}{"Position"{sngArr[9,0,9]}}{"TexturePath"{str[Routes]}}{"Textures"{recArr[[32,32,16,16][48,32,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\003000003]}}{"Rotation"{int[2]}}]}}

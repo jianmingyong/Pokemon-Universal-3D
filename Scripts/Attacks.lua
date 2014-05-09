@@ -561,7 +561,7 @@ RegisterAttack(560,"Ride","The user clumps over the target and hits with enormou
 RegisterAttack(561,"Fairy Wind (Not Implemented)","Blasts the opponent with magical pixie dust.","Attacks\\Fairy\\FairyWind")
 RegisterAttack(562,"Moonblast (Not Implemented)","Calls on the power of the moon to attack an opposing Pokémon. Also lowers the target's attack stat.","Attacks\\Fairy\\Moonblast")
 -- Custom Implmentation
-RegisterAttack(568,"Noble Roar","Letting out a noble roar, the user intimidates the target and lowers its Attack and Sp. Atk stats.","Attacks\\Normal\\NobleRoar")
+-- Custom Implmentation RegisterAttack(568,"Noble Roar","Letting out a noble roar, the user intimidates the target and lowers its Attack and Sp. Atk stats.","Attacks\\Normal\\NobleRoar")
 RegisterAttack(999,"TheUltimateDerp","The Pokémon derps around to the max. Nothing can stop it now. Not even a cookie.","Attacks\\Special\\TheDerpMove")
 --THIS IS THE ATTACK THAT OCCURS WHEN YOU HIT YOURSELF IN CONFUSION
 RegisterAttack(0,"Confusion","Pounds the target with forelegs or tail.","Attacks\\Confusion")

@@ -20,8 +20,8 @@ version=2
 @Register.register(13\BarkTown\011000005,int,1)
 @Register.register(13\BarkTown\008000008,int,1)
 @Register.register(13\BarkTown\009000013,int,1)
-
 @Register.register(13\BarkTown\012000008,int,1)
 @Register.register(13\BarkTown\003000002,int,1)
+@Register.register(13\BarkTown\House.2\002000002,int,1)
 @Register.register(System\Register\13)
 :end

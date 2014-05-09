@@ -1,5 +1,5 @@
 {"Level"{LEV[{"Name"{str[New Bark Town]}}{"MusicLoop"{str[barktown]}}]}}
-{"Actions"{LEV[{"CanTeleport"{bool[0]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"EnviromentType"{int[1]}}{"Weather"{int[1]}}]}}
+{"Actions"{LEV[{"CanTeleport"{bool[0]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"EnviromentType"{int[1]}}{"Weather"{int[1]}}{"MapScript"{str[System\GlobalMain]}}]}}
 
 Floor:
 {"Floor"{ENT[{"Size"{intArr[8,8]}}{"Position"{intArr[0,0,0]}}{"TexturePath"{str[House2]}}{"Texture"{rec[0,0,16,16]}}]}}
@@ -61,4 +61,4 @@ tv:
 {"Entity"{ENT[{"Scale"{sngArr[0.8,0.5,0.3]}}{"EntityID"{str[WallBlock]}}{"Position"{sngArr[2,0.15,0]}}{"TexturePath"{str[House]}}{"Textures"{recArr[[80,48,16,11][96,48,16,11][80,59,16,4]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,2,2,2,2]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 
 NPCs:
-{"NPC"{NPC[{"Position"{sngArr[2,0,2]}}{"TextureID"{str[7]}}{"ID"{int[0]}}{"Name"{str[Women]}}{"Action"{int[0]}}{"AdditionalValue"{str[PIKACHU is an~evolved [POKE]MON.*I was amazed by~PROF.ELM's findings.*He's so famous for~his research on~[POKE]MON evolution.*...sigh...*I wish I could be~a researcher like~him...]}}{"Rotation"{int[3]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}]}}
+{"NPC"{NPC[{"Position"{sngArr[2,0,2]}}{"TextureID"{str[7]}}{"ID"{int[0]}}{"Name"{str[Women]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\House.2\002000002]}}{"Rotation"{int[3]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}]}}
