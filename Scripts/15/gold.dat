@@ -1,0 +1,35 @@
+version=2
+@Camera.deactivethirdperson
+@Text.show(Good bye~forever ....)
+@NPC.remove(0)
+@Level.wait(25)
+@Text.show(???~used NIGHTMARE!)
+@Level.wait(35)
+@Camera.deactivethirdperson
+@Player.turn(1)
+@Player.turn(1)
+@Player.turn(1)
+@Player.turn(1)
+@Player.turn(1)
+@Player.turn(1)
+@Player.turn(1)
+@Player.turn(1)
+@Player.turn(1)
+@Player.turn(1)
+@Player.turn(1)
+@Player.turn(1)
+@Player.turn(1)
+:select:<Player.position>
+:when:8,0,84
+	@Player.turn(1)
+	@NPC.warp(2,8,0,83)
+:when:7,0,83
+	@NPC.warp(2,7,0,82)
+:when:7,0,85
+	@NPC.warp(1,7,0,86)
+:endwhen
+@Player.turn(1)
+@Player.turn(1)
+@Level.wait(20)
+@Player.warp(rip.dat,4,0.1,4,0)
+:end

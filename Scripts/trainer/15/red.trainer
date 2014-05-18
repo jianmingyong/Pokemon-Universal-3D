@@ -1,0 +1,22 @@
+[TRAINER FORMAT]
+Name| 
+TrainerClass| 
+Money|0
+IntroMessage|...
+OutroMessage|... ... ...
+DefeatMessage|... ... ...
+TextureID|GhostRed
+Region|Johto
+IniMusic|nomusic
+DefeatMusic|johto_unown
+BattleMusic|johto_unown
+Pokemon1|{"Pokemon"[25]}{"Experience"[16581375]}{"Gender"[0]}{"EggSteps"[0]}{"Item"[0]}{"NickName"[PIKACHU]}{"Level"[255]}{"OT"[00001]}{"Ability"[9]}{"Status"[]}{"Nature"[23]}{"CatchLocation"[Pallet Town]}{"CatchTrainer"[Red]}{"CatchBall"[5]}{"CatchMethod"[Stolen]}{"Friendship"[0]}{"isShiny"[0]}{"Attack1"[174,10,10]}{"Attack2"[]}{"Attack3"[]}{"Attack4"[]}{"Stats"[50,299,311,171,301,269,523]}{"FPs"[0,0,0,0,0,0]}{"DVs"[16,10,5,29,14,23]}{"AdditionalData"[]}
+Pokemon2|
+Pokemon3|
+Pokemon4|
+Pokemon5|
+Pokemon6|
+Items|
+Gender|0
+AI|0
+IntroSequence|Red,Red

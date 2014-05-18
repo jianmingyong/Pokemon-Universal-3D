@@ -1,0 +1,27 @@
+version=2
+@Camera.deactivethirdperson
+@Text.show(HURRY used FLASH!)
+@Level.wait(50)
+@Pokemon.cry(155)
+@Text.show(HURRY has fainted!)
+@Music.play(Pokeflute)
+@Pokemon.clear
+@Pokemon.add(201,5,...,5,Ruins of Alph,0)
+@Pokemon.setnickname(0,UNOWN)
+@Pokemon.setadditionalvalue(0,7)
+@Pokemon.add(201,5,...,5,Ruins of Alph,0)
+@Pokemon.setnickname(1,UNOWN)
+@Pokemon.setadditionalvalue(1,4)
+@Pokemon.add(201,5,...,5,Ruins of Alph,0)
+@Pokemon.setnickname(2,UNOWN)
+@Pokemon.setadditionalvalue(2,3)
+@Pokemon.add(201,5,...,5,Ruins of Alph,0)
+@Pokemon.setnickname(3,UNOWN)
+@Pokemon.setadditionalvalue(3,8)
+@Pokemon.add(201,5,...,5,Ruins of Alph,0)
+@Pokemon.setnickname(4,UNOWN)
+@Pokemon.setadditionalvalue(4,4)
+@Pokemon.add(201,5,...,5,Ruins of Alph,0)
+@Pokemon.setnickname(5,UNOWN)
+@Pokemon.setadditionalvalue(5,3)
+:end
