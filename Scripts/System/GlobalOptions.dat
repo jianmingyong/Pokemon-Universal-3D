@@ -1,3 +1,22 @@
 version=2
-@Register.register(System.Game ID,int,13)
+@Register.register(Options.System.Game ID,int,13)
+:if:<Register.value(Options.System.Game ID)>=13
+	:if:<Register.value(System.Game ID)>=13
+		:end
+	:else
+		@Register.change(System.Game ID,13)
+		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
+		:end
+	:endif
+:endif
+:if:<Register.value(Options.System.Game ID)>=15
+	:if:<Register.value(System.Game ID)>=15
+		:end
+	:else
+		@Register.change(System.Game ID,15)
+		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
+		:end
+	:endif
+:endif
+
 :end

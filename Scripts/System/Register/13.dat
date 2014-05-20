@@ -1,27 +1,77 @@
 version=2
-@Register.register(System\Intro\13\Intro,int,1)
-@Register.register(System\Intro\13\Intro.1,int,1)
-@Register.register(System\Intro\13\Intro.2,int,1)
-@Register.register(System\Intro\13\Intro.3,int,1)
-@Register.register(System\Intro\13\Intro.4,int,1)
-@Register.register(13\BarkTown\PlayerRoom.2\002000001,int,1)
-@Register.register(13\BarkTown\PlayerRoom.2\004000001,int,1)
-@Register.register(13\BarkTown\PlayerRoom.2\005000001,int,1)
-@Register.register(13\BarkTown\PlayerRoom.2\006000000,int,1)
-@Register.register(13\BarkTown\PlayerRoom.2\000000003,int,1)
-@Register.register(13\BarkTown\PlayerRoom.2\007000003,int,1)
-@Register.register(13\BarkTown\PlayerRoom.1\009000001,int,1)
-@Register.register(13\BarkTown\PlayerRoom.1\004000001,int,1)
-@Register.register(13\BarkTown\PlayerRoom.1\002000001,int,1)
-@Register.register(13\BarkTown\PlayerRoom.1\001000001,int,1)
-@Register.register(13\BarkTown\PlayerRoom.1\000000001,int,1)
-@Register.register(13\BarkTown\PlayerRoom.1\007000003,int,1)
-@Register.register(13\BarkTown\003000003,int,1)
-@Register.register(13\BarkTown\011000005,int,1)
-@Register.register(13\BarkTown\008000008,int,1)
-@Register.register(13\BarkTown\009000013,int,1)
-@Register.register(13\BarkTown\012000008,int,1)
-@Register.register(13\BarkTown\003000002,int,1)
-@Register.register(13\BarkTown\House.2\002000002,int,1)
-@Register.register(System\Register\13)
+:if:<Register.registered(System\Intro\13\Intro)>=false
+	@Register.register(System\Intro\13\Intro,int,1)
+:endif
+:if:<Register.registered(System\Intro\13\Intro.1)>=false
+	@Register.register(System\Intro\13\Intro.1,int,1)
+:endif
+:if:<Register.registered(System\Intro\13\Intro.2)>=false
+	@Register.register(System\Intro\13\Intro.2,int,1)
+:endif
+:if:<Register.registered(System\Intro\13\Intro.3)>=false
+	@Register.register(System\Intro\13\Intro.3,int,1)
+:endif
+:if:<Register.registered(System\Intro\13\Intro.4)>=false
+	@Register.register(System\Intro\13\Intro.4,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.2\002000001)>=false
+	@Register.register(13\BarkTown\PlayerRoom.2\002000001,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.2\004000001)>=false
+	@Register.register(13\BarkTown\PlayerRoom.2\004000001,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.2\005000001)>=false
+	@Register.register(13\BarkTown\PlayerRoom.2\005000001,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.2\006000000)>=false
+	@Register.register(13\BarkTown\PlayerRoom.2\006000000,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.2\000000003)>=false
+	@Register.register(13\BarkTown\PlayerRoom.2\000000003,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.2\007000003)>=false
+	@Register.register(13\BarkTown\PlayerRoom.2\007000003,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.1\009000001)>=false
+	@Register.register(13\BarkTown\PlayerRoom.1\009000001,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.1\004000001)>=false
+	@Register.register(13\BarkTown\PlayerRoom.1\004000001,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.1\002000001)>=false
+	@Register.register(13\BarkTown\PlayerRoom.1\002000001,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.1\001000001)>=false
+	@Register.register(13\BarkTown\PlayerRoom.1\001000001,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.1\000000001)>=false
+	@Register.register(13\BarkTown\PlayerRoom.1\000000001,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\PlayerRoom.1\007000003)>=false
+	@Register.register(13\BarkTown\PlayerRoom.1\007000003,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\003000003)>=false
+	@Register.register(13\BarkTown\003000003,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\011000005)>=false
+	@Register.register(13\BarkTown\011000005,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\008000008)>=false
+	@Register.register(13\BarkTown\008000008,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\009000013)>=false
+	@Register.register(13\BarkTown\009000013,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\012000008)>=false
+	@Register.register(13\BarkTown\012000008,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\003000002)>=false
+	@Register.register(13\BarkTown\003000002,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\House.2\002000002)>=false
+	@Register.register(13\BarkTown\House.2\002000002,int,1)
+:endif
+:if:<Register.registered(System\Register\13)>=false
+	@Register.register(System\Register\13)
+:endif
 :end

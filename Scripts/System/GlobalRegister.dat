@@ -6,6 +6,7 @@ version=2
 @Register.register(System.ErrorLog.ErrorID1,int,1)
 @Register.register(System.ErrorLog.ErrorID2,int,1)
 @Register.register(System.ActionScript,str,System\GlobalRegister.dat)
+@Script.start(System\GlobalMigration)
 :if:<Register.registered(System\Register\5)>=false
 	@Script.start(System\Register\5)
 :endif

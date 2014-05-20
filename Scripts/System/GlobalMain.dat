@@ -5,7 +5,6 @@ version=2
 :if:<Level.filename>=GlobalIntro
 	@Script.start(System\GlobalIntro)
 :endif
-@Script.start(System\GlobalMigration)
 @Script.start(System\GlobalUpdateValidation)
 @Script.start(System\GlobalUpdate)
 @Script.start(System\GlobalRegisterValidation)
