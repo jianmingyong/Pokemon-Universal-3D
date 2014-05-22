@@ -1,0 +1,10 @@
+version=2
+:if:<Register.value(System\Intro\15\Intro)>=1
+	@Script.start(System\Intro\15\Intro.1)
+	@Camera.set(0,0,0,0,0)
+	@Level.update
+	@Level.wait(250)
+	@Script.start(System\Intro\15\Intro.1)
+	@Player.warp(15\tower.dat,7,0.1,11,0)
+	:end
+:endif

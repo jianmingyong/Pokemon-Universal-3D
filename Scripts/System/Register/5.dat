@@ -1,8 +1,20 @@
 version=2
-@Register.register(System\Intro\5\Intro,int,1)
-@Register.register(System\Intro\5\Intro.1,int,1)
-@Register.register(System\Intro\5\Intro.2,int,1)
-@Register.register(System\Intro\5\Intro.3,int,1)
-@Register.register(System\Intro\5\Intro.4,int,1)
-@Register.register(System\Register\5)
+:if:<Register.registered(System\Intro\5\Intro)>=false
+	@Register.register(System\Intro\5\Intro,int,1)
+:endif
+:if:<Register.registered(System\Intro\5\Intro.1)>=false
+	@Register.register(System\Intro\5\Intro.1,int,1)
+:endif
+:if:<Register.registered(System\Intro\5\Intro.2)>=false
+	@Register.register(System\Intro\5\Intro.2,int,1)
+:endif
+:if:<Register.registered(System\Intro\5\Intro.3)>=false
+	@Register.register(System\Intro\5\Intro.3,int,1)
+:endif
+:if:<Register.registered(System\Intro\5\Intro.4)>=false
+	@Register.register(System\Intro\5\Intro.4,int,1)
+:endif
+:if:<Register.registered(System\Register\5)>=false
+	@Register.register(System\Register\5)
+:endif
 :end

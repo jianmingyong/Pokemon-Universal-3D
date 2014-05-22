@@ -1,9 +1,7 @@
 version=2
 :if:<Register.registered(System.GlobalVariable)>=false
 	@Script.start(System\GlobalRegister)
-:endif
-:if:<Level.filename>=GlobalIntro
-	@Script.start(System\GlobalIntro)
+	@Player.warp(System\GlobalIntro.dat,0,0,0,0)
 :endif
 @Script.start(System\GlobalUpdateValidation)
 @Script.start(System\GlobalUpdate)

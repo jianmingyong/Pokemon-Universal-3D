@@ -1,11 +1,14 @@
 version=2
-:if:<Level.filename>=GlobalIntro
-	@Script.start(System\GlobalIntro)
-:endif
 :if:<Register.value(System.Game ID)>=13
 	:if:<Level.filename>=BarkTown.PlayerRoom.1
 		@Script.start(System\ParallelProcess\13\PlayerRoom.1\009000001)
 	:endif
 :endif
+:if:<Register.value(System.Game ID)>=15
+	:if:<Level.filename>=Tower
+		@Script.start(System\ParallelProcess\15\tower)
+	:endif
+:endif
 @Register.unregister(System.GlobalValidation)
 @Player.save
+:end

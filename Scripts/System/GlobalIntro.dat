@@ -12,3 +12,9 @@ version=2
 		:end
 	:endif
 :endif
+:if:<Register.value(System.Game ID)>=15
+	:if:<Register.value(System\Intro\15\Intro)>=1
+		@Script.start(System\Intro\15\Intro)
+		:end
+	:endif
+:endif

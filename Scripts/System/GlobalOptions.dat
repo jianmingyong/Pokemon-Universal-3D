@@ -1,5 +1,5 @@
 version=2
-@Register.register(Options.System.Game ID,int,13)
+@Register.change(Options.System.Game ID,15)
 :if:<Register.value(Options.System.Game ID)>=13
 	:if:<Register.value(System.Game ID)>=13
 		:end
