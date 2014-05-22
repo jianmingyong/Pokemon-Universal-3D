@@ -76,6 +76,6 @@ version=2
 	@Script.start(System\Intro\13\Intro.3)
 	@Script.start(System\Intro\13\Intro.2)
 	@Register.change(System\Intro\13\Intro,2)
-	@Player.warp(13\BarkTown\BarkTown.PlayerRoom.1.dat,3,0.1,2,2)
+	@Player.warp(13\BarkTown\BarkTown.PlayerRoom.2.dat,3,0.1,2,2)
 	:end
 :endif

@@ -6,6 +6,7 @@ version=2
 		:else
 			@Register.change(13\BarkTown\PlayerRoom.2\006000000,2)
 		:endif
+		@Register.unregister(clairtmget)
 	:endif
 	:if:<register.registered(mom_start)>=true
 		:if:<Register.registered(13\BarkTown\PlayerRoom.1\009000001)>=false
@@ -13,6 +14,7 @@ version=2
 		:else
 			@Register.change(13\BarkTown\PlayerRoom.1\009000001,2)
 		:endif
+		@Register.unregister(mom_start)
 	:endif
 	:if:<register.registered(mom_getpokegear)>=true <or> <register.registered(mom_wait)>=true
 		:if:<Register.registered(13\BarkTown\PlayerRoom.1\007000003)>=false
@@ -20,6 +22,8 @@ version=2
 		:else
 			@Register.change(13\BarkTown\PlayerRoom.1\007000003,2)
 		:endif
+		@Register.unregister(mom_getpokegear)
+		@Register.unregister(mom_wait)
 	:endif
 	:if:<register.registered(mom_adventure1)>=true
 		:if:<Register.registered(13\BarkTown\PlayerRoom.1\007000003)>=false
@@ -27,6 +31,7 @@ version=2
 		:else
 			@Register.change(13\BarkTown\PlayerRoom.1\007000003,3)
 		:endif
+		@Register.unregister(mom_adventure1)
 	:endif
 	:if:<register.registered(mom_adventure2)>=true
 		:if:<Register.registered(13\BarkTown\PlayerRoom.1\007000003)>=false
@@ -34,6 +39,7 @@ version=2
 		:else
 			@Register.change(13\BarkTown\PlayerRoom.1\007000003,4)
 		:endif
+		@Register.unregister(mom_adventure2)
 	:endif
 	:if:<register.registered(mom_talk)>=true
 		:if:<Register.registered(13\BarkTown\PlayerRoom.1\007000003)>=false
@@ -41,6 +47,7 @@ version=2
 		:else
 			@Register.change(13\BarkTown\PlayerRoom.1\007000003,5)
 		:endif
+		@Register.unregister(mom_talk)
 	:endif
 :endif
 :end
