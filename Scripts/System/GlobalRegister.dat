@@ -1,27 +1,28 @@
 version=2
 :if:<Register.registered(System.P3D Version)>=false
 	@Register.register(System.P3D Version,str,0.47.2)
-:end
+:endif
 :if:<Register.registered(System.Game Version)>=false
 	@Register.register(System.Game Version,str,0.0.1)
-:end
+:endif
 :if:<Register.registered(System.Game ID)>=false
 	@Register.register(System.Game ID,int,13)
-:end
+:endif
+:if:<Register.registered(Options.System.Game ID)>=false
+	@Register.register(Options.System.Game ID,int,13)
+:endif
 :if:<Register.registered(System.ErrorLog.ErrorID0)>=false
 	@Register.register(System.ErrorLog.ErrorID0,int,1)
-:end
+:endif
 :if:<Register.registered(System.ErrorLog.ErrorID1)>=false
 	@Register.register(System.ErrorLog.ErrorID1,int,1)
-:end
+:endif
 :if:<Register.registered(System.ErrorLog.ErrorID2)>=false
 	@Register.register(System.ErrorLog.ErrorID2,int,1)
-:end
+:endif
 :if:<Register.registered(System.ActionScript)>=false
 	@Register.register(System.ActionScript,str,System\GlobalRegister.dat)
-:end
+:endif
 @Script.start(System\GlobalMigration)
-@Script.start(System\Register\5)
 @Script.start(System\Register\13)
-@Script.start(System\Register\15)
 :end
