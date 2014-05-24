@@ -4,11 +4,5 @@ version=2
 		@Script.start(System\ParallelProcess\13\PlayerRoom.1\009000001)
 	:endif
 :endif
-:if:<Register.value(System.Game ID)>=15
-	:if:<Level.filename>=Tower
-		@Script.start(System\ParallelProcess\15\tower)
-	:endif
-:endif
 @Register.unregister(System.GlobalValidation)
-@Player.save
 :end

@@ -1,6 +1,0 @@
-version=2
-@Player.wearskin(WhiteGold)
-@Camera.activatethirdperson
-@Pokemon.clear
-@Player.move(3)
-:end

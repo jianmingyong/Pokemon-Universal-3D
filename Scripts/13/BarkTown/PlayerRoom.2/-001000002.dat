@@ -1,5 +1,5 @@
 version=2
-:if:<Register.value(13\BarkTown\PlayerRoom.2\000000003)>=1
+:if:<Register.value(13\BarkTown\PlayerRoom.2\001000002)>=1
 	@Sound.play(Select)
 	@Text.show(It's a note on the~wall about the controls.)
 	@Sound.play(Select)
@@ -27,7 +27,7 @@ version=2
 :endif
 @Player.save
 @Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,13\BarkTown\PlayerRoom.2\000000003.dat)
+@Register.change(System.ActionScript,13\BarkTown\PlayerRoom.2\-001000002.dat)
 @Script.start(System\GlobalErrorLog)
 @Player.warp(System\GlobalValidation.dat,0,0,0,0)
 :end

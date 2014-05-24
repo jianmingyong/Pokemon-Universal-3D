@@ -5,7 +5,7 @@ version=2
 		@Script.start(System\GlobalErrorLog)
 		@Register.register(System.ErrorLogInit)
 	:endif
-	@Text.log([Register Validation result: "System\Intro\13\Intro" does not exist])
+	@Text.log([Register validation result: "System\Intro\13\Intro" does not exist])
 :else
 	:if:<Register.value(System\Intro\13\Intro)>=1 <or> <Register.value(System\Intro\13\Intro)>=2
 	:else
@@ -14,7 +14,7 @@ version=2
 			@Script.start(System\GlobalErrorLog)
 			@Register.register(System.ErrorLogInit)
 		:endif
-		@Text.log([Register Validation result: "System\Intro\13\Intro" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\13\Intro)>])
+		@Text.log([Register validation result: "System\Intro\13\Intro" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\13\Intro)>])
 	:endif
 :endif
 :if:<Register.registered(System\Intro\13\Intro.1)>=false
@@ -23,7 +23,7 @@ version=2
 		@Script.start(System\GlobalErrorLog)
 		@Register.register(System.ErrorLogInit)
 	:endif
-	@Text.log([Register Validation result: "System\Intro\13\Intro.1" does not exist])
+	@Text.log([Register validation result: "System\Intro\13\Intro.1" does not exist])
 :else
 	:if:<Register.value(System\Intro\13\Intro.1)>=1 <or> <Register.value(System\Intro\13\Intro.1)>=2
 	:else
@@ -32,7 +32,7 @@ version=2
 			@Script.start(System\GlobalErrorLog)
 			@Register.register(System.ErrorLogInit)
 		:endif
-		@Text.log([Register Validation result: "System\Intro\13\Intro.1" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\13\Intro.1)>])
+		@Text.log([Register validation result: "System\Intro\13\Intro.1" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\13\Intro.1)>])
 	:endif
 :endif
 :if:<Register.registered(System\Intro\13\Intro.2)>=false
@@ -41,7 +41,7 @@ version=2
 		@Script.start(System\GlobalErrorLog)
 		@Register.register(System.ErrorLogInit)
 	:endif
-	@Text.log([Register Validation result: "System\Intro\13\Intro.2" does not exist])
+	@Text.log([Register validation result: "System\Intro\13\Intro.2" does not exist])
 :else
 	:if:<Register.value(System\Intro\13\Intro.2)>=1 <or> <Register.value(System\Intro\13\Intro.2)>=2
 	:else
@@ -50,7 +50,7 @@ version=2
 			@Script.start(System\GlobalErrorLog)
 			@Register.register(System.ErrorLogInit)
 		:endif
-		@Text.log([Register Validation result: "System\Intro\13\Intro.2" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\13\Intro.2)>])
+		@Text.log([Register validation result: "System\Intro\13\Intro.2" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\13\Intro.2)>])
 	:endif
 :endif
 :if:<Register.registered(System\Intro\13\Intro.3)>=false
@@ -59,7 +59,7 @@ version=2
 		@Script.start(System\GlobalErrorLog)
 		@Register.register(System.ErrorLogInit)
 	:endif
-	@Text.log([Register Validation result: "System\Intro\13\Intro.3" does not exist])
+	@Text.log([Register validation result: "System\Intro\13\Intro.3" does not exist])
 :else
 	:if:<Register.value(System\Intro\13\Intro.3)>=1 <or> <Register.value(System\Intro\13\Intro.3)>=2
 	:else
@@ -68,7 +68,7 @@ version=2
 			@Script.start(System\GlobalErrorLog)
 			@Register.register(System.ErrorLogInit)
 		:endif
-		@Text.log([Register Validation result: "System\Intro\13\Intro.3" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\13\Intro.3)>])
+		@Text.log([Register validation result: "System\Intro\13\Intro.3" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\13\Intro.3)>])
 	:endif
 :endif
 :if:<Register.registered(System\Intro\13\Intro.4)>=false
@@ -77,7 +77,7 @@ version=2
 		@Script.start(System\GlobalErrorLog)
 		@Register.register(System.ErrorLogInit)
 	:endif
-	@Text.log([Register Validation result: "System\Intro\13\Intro.4" does not exist])
+	@Text.log([Register validation result: "System\Intro\13\Intro.4" does not exist])
 :else
 	:if:<Register.value(System\Intro\13\Intro.4)>=1 <or> <Register.value(System\Intro\13\Intro.4)>=2
 	:else
@@ -86,7 +86,7 @@ version=2
 			@Script.start(System\GlobalErrorLog)
 			@Register.register(System.ErrorLogInit)
 		:endif
-		@Text.log([Register Validation result: "System\Intro\13\Intro.4" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\13\Intro.4)>])
+		@Text.log([Register validation result: "System\Intro\13\Intro.4" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\13\Intro.4)>])
 	:endif
 :endif
 :end

@@ -1,5 +1,0 @@
-version=2
-@Player.wearskin(GoldRetro)
-@Text.show(HURRY used FLASH!)
-@Environment.toggledarkness
-:end
