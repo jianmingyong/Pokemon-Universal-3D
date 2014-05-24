@@ -1,11 +1,14 @@
 version=2
-:if:<Register.registered(System.GlobalVariable)>=false
-	@Script.start(System\GlobalRegister)
-	@Player.warp(System\GlobalIntro.dat,0,0,0,0)
+:if:<Register.value(System.Game Version)>=0.0.1
+:else
+	@Register.change(System.ErrorLog.ErrorID1,2)
+	@Script.start(System\GlobalErrorLog)
+	@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+	:end
 :endif
-@Script.start(System\GlobalUpdateValidation)
 @Script.start(System\GlobalUpdate)
 @Script.start(System\GlobalRegisterValidation)
 @Script.start(System\GlobalOptions)
 @Script.start(System\GlobalParallelProcess)
+@Player.save
 :end

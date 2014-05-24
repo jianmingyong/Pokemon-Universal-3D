@@ -1,9 +1,0 @@
-version=2
-@Text.show(TURN BACK NOW)
-@Level.wait(1)
-@Options.show(YES,NO)
-:when:YES
-:when:NO
-:endwhen
-@Player.warp(grave.dat,4,0.1,4,0)
-:end

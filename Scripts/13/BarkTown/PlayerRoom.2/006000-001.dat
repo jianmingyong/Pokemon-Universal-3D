@@ -1,5 +1,5 @@
 version=2
-:if:<Register.value(13\BarkTown\PlayerRoom.2\006000000)>=1
+:if:<Register.value(13\BarkTown\PlayerRoom.2\006000001)>=1
 	@Sound.play(Select)
 	@Text.show(It's the TOWN MAP.)
 	@Sound.play(Select)
@@ -7,7 +7,7 @@ version=2
 	@Script.start(System\GlobalMain)
 	:end
 :endif
-:if:<Register.value(13\BarkTown\PlayerRoom.2\006000000)>=2
+:if:<Register.value(13\BarkTown\PlayerRoom.2\006000001)>=2
 	@Sound.play(Select)
 	@Text.show(It's the TOWN MAP.)
 	@Sound.play(Select)
@@ -17,7 +17,7 @@ version=2
 :endif
 @Player.save
 @Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,13\BarkTown\PlayerRoom.2\006000000.dat)
+@Register.change(System.ActionScript,13\BarkTown\PlayerRoom.2\006000-001.dat)
 @Script.start(System\GlobalErrorLog)
 @Player.warp(System\GlobalValidation.dat,0,0,0,0)
 :end

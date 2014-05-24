@@ -1,6 +1,5 @@
 version=2
 :if:<Register.value(System.Game Version)>=0.0.1
-
 	:end
 :else
 	:end

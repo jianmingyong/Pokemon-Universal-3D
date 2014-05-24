@@ -1,9 +1,0 @@
-version=2
-:if:<Register.value(System.Game Version)>=0.0.1
-	:end
-:else
-	@Register.change(System.ErrorLog.ErrorID1,2)
-	@Script.start(System\GlobalErrorLog)
-	@Player.warp(System\GlobalValidation.dat,0,0,0,0)
-	:end
-:endif

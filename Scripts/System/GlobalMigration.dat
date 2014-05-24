@@ -1,10 +1,10 @@
 version=2
 :if:<Register.value(System.Game ID)>=13
 	:if:<register.registered(clairtmget)>=true
-		:if:<Register.registered(13\BarkTown\PlayerRoom.2\006000000)>=false
-			@Register.register(13\BarkTown\PlayerRoom.2\006000000,int,2)
+		:if:<Register.registered(13\BarkTown\PlayerRoom.2\006000001)>=false
+			@Register.register(13\BarkTown\PlayerRoom.2\006000001,int,2)
 		:else
-			@Register.change(13\BarkTown\PlayerRoom.2\006000000,2)
+			@Register.change(13\BarkTown\PlayerRoom.2\006000001,2)
 		:endif
 		@Register.unregister(clairtmget)
 	:endif
