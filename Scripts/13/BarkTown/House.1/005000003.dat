@@ -1,0 +1,19 @@
+﻿version=2
+:if:<Register.value(13\BarkTown\House.1\005000003)>=1
+	@Sound.play(Select)
+	@Text.show(When I grow up,~I'm going to help)
+	@Sound.play(Select)
+	@Text.show(my Dad!)
+	@Sound.play(Select)
+	@Text.show(I'm going to be a~great POKéMON)
+	@Sound.play(Select)
+	@Text.show(professor!)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,13\BarkTown\House.1\005000003.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

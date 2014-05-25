@@ -1,0 +1,38 @@
+version=2
+:if:<Register.registered(13\BarkTown\House.1\001000003)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "13\BarkTown\House.1\001000003" does not exist])
+:else
+	:if:<Register.value(13\BarkTown\House.1\001000003)>=1
+	:else
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "13\BarkTown\House.1\001000003" cannot be less than 1 and more than 1. Current value: <Register.value(13\BarkTown\House.1\001000003)>])
+	:endif
+:endif
+:if:<Register.registered(13\BarkTown\House.1\005000003)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "13\BarkTown\House.1\005000003" does not exist])
+:else
+	:if:<Register.value(13\BarkTown\House.1\005000003)>=1
+	:else
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "13\BarkTown\House.1\005000003" cannot be less than 1 and more than 1. Current value: <Register.value(13\BarkTown\House.1\005000003)>])
+	:endif
+:endif
+:end
