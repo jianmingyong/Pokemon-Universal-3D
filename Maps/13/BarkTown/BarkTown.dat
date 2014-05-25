@@ -111,10 +111,10 @@ Elms Lab:
 {"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[12,0,9]}}{"TexturePath"{str[BarkTown]}}{"Textures"{recArr[[16,0,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[13\BarkTown\BarkTown.ElmLab.dat,4,0.1,11,0]}}{"Rotation"{int[0]}}]}}
 
 Signs:
-{"Entity"{ENT[{"EntityID"{str[SignBlock]}}{"Position"{sngArr[9,0,9]}}{"TexturePath"{str[Routes]}}{"Textures"{recArr[[32,32,16,16][48,32,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\003000003]}}{"Rotation"{int[2]}}]}}
-{"Entity"{ENT[{"EntityID"{str[SignBlock]}}{"Position"{sngArr[17,0,11]}}{"TexturePath"{str[Routes]}}{"Textures"{recArr[[32,32,16,16][48,32,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\011000005]}}{"Rotation"{int[0]}}]}}
-{"Entity"{ENT[{"EntityID"{str[SignBlock]}}{"Position"{sngArr[14,0,14]}}{"TexturePath"{str[Routes]}}{"Textures"{recArr[[32,32,16,16][48,32,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\008000008]}}{"Rotation"{int[0]}}]}}
-{"Entity"{ENT[{"EntityID"{str[SignBlock]}}{"Position"{sngArr[15,0,19]}}{"TexturePath"{str[Routes]}}{"Textures"{recArr[[32,32,16,16][48,32,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\009000013]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[SignBlock]}}{"Position"{sngArr[9,0,9]}}{"TexturePath"{str[Routes]}}{"Textures"{recArr[[32,32,16,16][48,32,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\009000009]}}{"Rotation"{int[2]}}]}}
+{"Entity"{ENT[{"EntityID"{str[SignBlock]}}{"Position"{sngArr[17,0,11]}}{"TexturePath"{str[Routes]}}{"Textures"{recArr[[32,32,16,16][48,32,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\017000011]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[SignBlock]}}{"Position"{sngArr[14,0,14]}}{"TexturePath"{str[Routes]}}{"Textures"{recArr[[32,32,16,16][48,32,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\014000014]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[SignBlock]}}{"Position"{sngArr[15,0,19]}}{"TexturePath"{str[Routes]}}{"Textures"{recArr[[32,32,16,16][48,32,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\015000019]}}{"Rotation"{int[0]}}]}}
 
 House:
 {"EntityField"{ENT[{"Size"{intArr[4,1]}}{"EntityID"{str[WallBlock]}}{"Position"{sngArr[8,0,16]}}{"TexturePath"{str[BarkTown]}}{"Textures"{recArr[[96,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,0,0,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
@@ -179,10 +179,10 @@ Water:
 {"EntityField"{ENT[{"Size"{intArr[2,1]}}{"EntityID"{str[Water]}}{"Position"{sngArr[26,-0.25,15]}}{"TexturePath"{str[Routes]}}{"Textures"{recArr[[0,16,16,16][144,16,16,16]]}}{"TextureIndex"{intArr[0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[9]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 
 NPC:
-{"NPC"{NPC[{"Position"{sngArr[18,0,14]}}{"TextureID"{str[28]}}{"ID"{int[0]}}{"Name"{str[Jo]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\012000008]}}{"Rotation"{int[2]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[18,13,1,3]]}}]}}
-{"NPC"{NPC[{"Position"{sngArr[12,0,14]}}{"TextureID"{str[1]}}{"ID"{int[1]}}{"Name"{str[Mary]}}{"Action"{int[1]}}{"AdditionalValue"{str[barktown\mary]}}{"Rotation"{int[1]}}{"Movement"{str[Looking]}}{"MoveRectangles"{recArr[]}}]}}
+{"NPC"{NPC[{"Position"{sngArr[18,0,14]}}{"TextureID"{str[28]}}{"ID"{int[0]}}{"Name"{str[Jo]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\018000014]}}{"Rotation"{int[2]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[18,13,1,3]]}}]}}
+{"NPC"{NPC[{"Position"{sngArr[12,0,14]}}{"TextureID"{str[1]}}{"ID"{int[1]}}{"Name"{str[Mary]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\012000014]}}{"Rotation"{int[1]}}{"Movement"{str[Looking]}}{"MoveRectangles"{recArr[]}}]}}
 
-{"NPC"{NPC[{"Position"{sngArr[9,0,8]}}{"TextureID"{str[4]}}{"ID"{int[2]}}{"Name"{str[Rival]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\003000002]}}{"Rotation"{int[3]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}]}}
+{"NPC"{NPC[{"Position"{sngArr[9,0,8]}}{"TextureID"{str[4]}}{"ID"{int[2]}}{"Name"{str[Rival]}}{"Action"{int[1]}}{"AdditionalValue"{str[13\BarkTown\009000008]}}{"Rotation"{int[3]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}]}}
 
 ScriptBlocks:
 {"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"Position"{sngArr[7,0,14]}}{"TexturePath"{str[Center]}}{"Textures"{recArr[[0,48,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[0]}}{"Action"{int[0]}}{"AdditionalValue"{str[barktown\no_pokemon]}}{"Rotation"{int[0]}}]}}

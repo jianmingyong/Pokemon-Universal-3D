@@ -1,7 +1,7 @@
 version=2
 :if:<Register.value(System.Game ID)>=13
 	:if:<Level.filename>=BarkTown.PlayerRoom.1
-		@Script.start(System\ParallelProcess\13\PlayerRoom.1\009000001)
+		@Script.start(System\ParallelProcess\13\PlayerRoom.1\008000000)
 	:endif
 :endif
 @Register.unregister(System.GlobalValidation)
