@@ -4,7 +4,6 @@ version=2
 	@Register.change(System.ErrorLog.ErrorID1,2)
 	@Script.start(System\GlobalErrorLog)
 	@Player.warp(System\GlobalValidation.dat,0,0,0,0)
-	:end
 :endif
 @Script.start(System\GlobalUpdate)
 @Script.start(System\GlobalRegisterValidation)
