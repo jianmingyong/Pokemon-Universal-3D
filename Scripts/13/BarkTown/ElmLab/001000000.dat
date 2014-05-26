@@ -1,0 +1,30 @@
+﻿version=2
+:if:<Register.value(13\BarkTown\ElmLab\001000000)>=1
+	:if:<pokemon.count>=0
+		@Sound.play(Select)
+		@Text.show(This is a~machine for healing)
+		@Sound.play(Select)
+		@Text.show(injured Pokémon.)
+	:else
+		@Sound.play(Select)
+		@Text.show(Do you want to~heal your Pokémon?)
+		@Options.show(Yes,No)
+		:when:Yes
+		@Screen.fadeout
+		@Pokemon.heal
+		@Sound.play(Pokemon Recovery)
+		@Level.wait(150)
+		@Screen.fadein
+		@Text.show(Your Pokémon are~fully restored.)
+		:when:No
+		:endwhen
+	:endif
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,13\BarkTown\ElmLab\001000000.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

@@ -74,10 +74,22 @@ version=2
 :if:<Register.registered(13\BarkTown\012000014)>=false
 	@Register.register(13\BarkTown\012000014,int,1)
 :endif
+:if:<Register.registered(13\BarkTown\007000014)>=false
+	@Register.register(13\BarkTown\007000014,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\007000015)>=false
+	@Register.register(13\BarkTown\007000015,int,1)
+:endif
 :if:<Register.registered(13\BarkTown\House.1\001000003)>=false
 	@Register.register(13\BarkTown\House.1\001000003,int,1)
 :endif
 :if:<Register.registered(13\BarkTown\House.1\005000003)>=false
 	@Register.register(13\BarkTown\House.1\005000003,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\ElmLab\003000008)>=false
+	@Register.register(13\BarkTown\ElmLab\003000008,int,1)
+:endif
+:if:<Register.registered(13\BarkTown\ElmLab\001000000)>=false
+	@Register.register(13\BarkTown\ElmLab\001000000,int,1)
 :endif
 :end

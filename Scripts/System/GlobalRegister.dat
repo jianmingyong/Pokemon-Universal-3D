@@ -12,22 +12,25 @@ version=2
 	@Register.register(Options.System.Game ID,int,13)
 :endif
 :if:<Register.registered(System.ErrorLog.ErrorID0)>=false
+	@Register.register(System.ErrorLog.ErrorID0,int,1)
+:else
 	:if:<Register.value(System.ErrorLog.ErrorID0)>=2
 		@Register.change(System.ErrorLog.ErrorID0,1)
 	:endif
-	@Register.register(System.ErrorLog.ErrorID0,int,1)
 :endif
 :if:<Register.registered(System.ErrorLog.ErrorID1)>=false
+	@Register.register(System.ErrorLog.ErrorID1,int,1)
+:else
 	:if:<Register.value(System.ErrorLog.ErrorID1)>=2
 		@Register.change(System.ErrorLog.ErrorID1,1)
 	:endif
-	@Register.register(System.ErrorLog.ErrorID1,int,1)
 :endif
 :if:<Register.registered(System.ErrorLog.ErrorID2)>=false
+	@Register.register(System.ErrorLog.ErrorID2,int,1)
+:else
 	:if:<Register.value(System.ErrorLog.ErrorID2)>=2 <or> <Register.value(System.ErrorLog.ErrorID2)>=3
 		@Register.change(System.ErrorLog.ErrorID2,1)
 	:endif
-	@Register.register(System.ErrorLog.ErrorID2,int,1)
 :endif
 :if:<Register.registered(System.ActionScript)>=false
 	@Register.register(System.ActionScript,str,System\GlobalRegister.dat)
