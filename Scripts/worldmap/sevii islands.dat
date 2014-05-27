@@ -1,0 +1,101 @@
+Cities:
+{"PlaceType"[City]}{"Name"[One Island]}{"MapFiles"[]}{"Position"[2,8]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Two Island]}{"MapFiles"[]}{"Position"[8,9]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Three Island]}{"MapFiles"[]}{"Position"[15,11]}{"Size"[Vertical]}
+{"PlaceType"[City]}{"Name"[Four Island]}{"MapFiles"[]}{"Position"[15,5]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Five Island]}{"MapFiles"[]}{"Position"[22,4]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Six Island]}{"MapFiles"[]}{"Position"[26,13]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Seven Island]}{"MapFiles"[]}{"Position"[19,11]}{"Size"[Small]}
+
+Routes:
+{"PlaceType"[Route]}{"Name"[Kindle Road]}{"MapFiles"[]}{"Position"[2,8]}{"Direction"[HorizontalConnection]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Kindle Road]}{"MapFiles"[]}{"Position"[3,8]}{"Direction"[CurveUpLeft]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Kindle Road]}{"MapFiles"[]}{"Position"[3,7]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Kindle Road]}{"MapFiles"[]}{"Position"[3,6]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Kindle Road]}{"MapFiles"[]}{"Position"[3,5]}{"Direction"[Vertical]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Kindle Road]}{"MapFiles"[]}{"Position"[3,4]}{"Direction"[VerticalEndUp]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Treasure Beach]}{"MapFiles"[]}{"Position"[2,9]}{"Direction"[Vertical]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Treasure Beach]}{"MapFiles"[]}{"Position"[2,9]}{"Direction"[VerticalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Treasure Beach]}{"MapFiles"[]}{"Position"[2,10]}{"Direction"[VerticalEndDown]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Cape Brink]}{"MapFiles"[]}{"Position"[8,8]}{"Direction"[VerticalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Cape Brink]}{"MapFiles"[]}{"Position"[8,8]}{"Direction"[VerticalEndUp]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Three Isle Port]}{"MapFiles"[]}{"Position"[15,13]}{"Direction"[HorizontalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Three Isle Port]}{"MapFiles"[]}{"Position"[15,12]}{"Direction"[VerticalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Three Isle Port]}{"MapFiles"[]}{"Position"[15,13]}{"Direction"[CurveUpRight]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Three Isle Port]}{"MapFiles"[]}{"Position"[16,13]}{"Direction"[HorizontalEndRight]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Bond Bridge]}{"MapFiles"[]}{"Position"[14,11]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Bond Bridge]}{"MapFiles"[]}{"Position"[13,11]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Bond Bridge]}{"MapFiles"[]}{"Position"[12,11]}{"Direction"[HorizontalEndLeft]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Five Isle Meadow]}{"MapFiles"[]}{"Position"[22,4]}{"Direction"[HorizontalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Five Isle Meadow]}{"MapFiles"[]}{"Position"[23,5]}{"Direction"[HorizontalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Five Isle Meadow]}{"MapFiles"[]}{"Position"[23,4]}{"Direction"[VerticalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Five Isle Meadow]}{"MapFiles"[]}{"Position"[23,4]}{"Direction"[CurveDownLeft]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Five Isle Meadow]}{"MapFiles"[]}{"Position"[23,5]}{"Direction"[CurveUpRight]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Memorial Pillar]}{"MapFiles"[]}{"Position"[24,5]}{"Direction"[VerticalConnection]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Memorial Pillar]}{"MapFiles"[]}{"Position"[24,5]}{"Direction"[CurveDownLeft]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Memorial Pillar]}{"MapFiles"[]}{"Position"[24,6]}{"Direction"[VerticalEndDown]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Water Labyrinth]}{"MapFiles"[]}{"Position"[22,3]}{"Direction"[VerticalConnection]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Water Labyrinth]}{"MapFiles"[]}{"Position"[22,2]}{"Direction"[VerticalConnection]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Water Labyrinth]}{"MapFiles"[]}{"Position"[22,3]}{"Direction"[TLeft]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Water Labyrinth]}{"MapFiles"[]}{"Position"[21,3]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Water Labyrinth]}{"MapFiles"[]}{"Position"[20,3]}{"Direction"[HorizontalEndLeft]}{"RouteType"[Water]}
+
+{"PlaceType"[Route]}{"Name"[Resort Gorgeous]}{"MapFiles"[]}{"Position"[22,2]}{"Direction"[HorizontalConnection]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Resort Gorgeous]}{"MapFiles"[]}{"Position"[22,2]}{"Direction"[CurveDownRight]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Resort Gorgeous]}{"MapFiles"[]}{"Position"[23,2]}{"Direction"[HorizontalEndRight]}{"RouteType"[Water]}
+
+{"PlaceType"[Route]}{"Name"[Water Path]}{"MapFiles"[]}{"Position"[26,13]}{"Direction"[HorizontalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Water Path]}{"MapFiles"[]}{"Position"[27,11]}{"Direction"[CurveDownLeft]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Water Path]}{"MapFiles"[]}{"Position"[27,12]}{"Direction"[Vertical]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Water Path]}{"MapFiles"[]}{"Position"[27,13]}{"Direction"[VerticalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Water Path]}{"MapFiles"[]}{"Position"[27,13]}{"Direction"[TLeft]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Ruin Valley]}{"MapFiles"[]}{"Position"[26,14]}{"Direction"[HorizontalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Ruin Valley]}{"MapFiles"[]}{"Position"[26,14]}{"Direction"[VerticalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Ruin Valley]}{"MapFiles"[]}{"Position"[26,15]}{"Direction"[HorizontalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Ruin Valley]}{"MapFiles"[]}{"Position"[27,14]}{"Direction"[CurveUpLeft]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Ruin Valley]}{"MapFiles"[]}{"Position"[26,14]}{"Direction"[CurveDownRight]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Ruin Valley]}{"MapFiles"[]}{"Position"[26,15]}{"Direction"[CurveUpRight]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Ruin Valley]}{"MapFiles"[]}{"Position"[27,15]}{"Direction"[HorizontalEndRight]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Grass Path]}{"MapFiles"[]}{"Position"[26,11]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Grass Path]}{"MapFiles"[]}{"Position"[25,11]}{"Direction"[CurveUpRight]}{"RouteType"[Water]}
+
+{"PlaceType"[Route]}{"Name"[Outcast Island]}{"MapFiles"[]}{"Position"[25,10]}{"Direction"[Vertical]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Outcast Island]}{"MapFiles"[]}{"Position"[25,9]}{"Direction"[VerticalEndUp]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Trainer Tower]}{"MapFiles"[]}{"Position"[19,10]}{"Direction"[VerticalConnection]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Canyon Entrance]}{"MapFiles"[]}{"Position"[19,11]}{"Direction"[VerticalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Canyon Entrance]}{"MapFiles"[]}{"Position"[19,12]}{"Direction"[HorizontalConnection]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Canyon Entrance]}{"MapFiles"[]}{"Position"[19,12]}{"Direction"[CurveUpRight]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Sevault Canyon]}{"MapFiles"[]}{"Position"[20,12]}{"Direction"[CurveDownLeft]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Sevault Canyon]}{"MapFiles"[]}{"Position"[20,13]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Sevault Canyon]}{"MapFiles"[]}{"Position"[20,14]}{"Direction"[Vertical]}{"RouteType"[Land]}
+
+{"PlaceType"[Route]}{"Name"[Tanoby Ruins]}{"MapFiles"[]}{"Position"[20,15]}{"Direction"[TUp]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Tanoby Ruins]}{"MapFiles"[]}{"Position"[18,15]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Tanoby Ruins]}{"MapFiles"[]}{"Position"[19,15]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Tanoby Ruins]}{"MapFiles"[]}{"Position"[21,15]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Tanoby Ruins]}{"MapFiles"[]}{"Position"[22,15]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Tanoby Ruins]}{"MapFiles"[]}{"Position"[23,15]}{"Direction"[HorizontalEndRight]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Tanoby Ruins]}{"MapFiles"[]}{"Position"[17,15]}{"Direction"[HorizontalEndLeft]}{"RouteType"[Water]}
+
+Places:
+{"PlaceType"[Place]}{"Name"[Mt. Ember]}{"Mapfiles"[]}{"Position"[3,4]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Three Isle Path]}{"Mapfiles"[]}{"Position"[16,13]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Berry Forest]}{"Mapfiles"[]}{"Position"[12,11]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Icefall Cave]}{"Mapfiles"[]}{"Position"[15,5]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Lost Cave]}{"Mapfiles"[]}{"Position"[23,2]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Dotted Hole]}{"Mapfiles"[]}{"Position"[27,15]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Pattern Bush]}{"Mapfiles"[]}{"Position"[26,11]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Altering Cave]}{"Mapfiles"[]}{"Position"[25,9]}{"Size"[Small]}
+{"PlaceType"[Place]}{"Name"[Trainer Tower]}{"Mapfiles"[]}{"Position"[19,10]}{"Size"[Small]}

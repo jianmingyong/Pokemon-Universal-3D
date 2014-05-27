@@ -1,0 +1,27 @@
+version=2
+:if:<Register.registered(System.GlobalValidation)>=false
+	:if:<Register.value(System.ErrorLog.ErrorID0)>=2
+		@Entity.setopacity(2,0)
+		@Entity.setopacity(3,0)
+	:endif
+	:if:<Register.value(System.ErrorLog.ErrorID1)>=2
+		@Entity.setopacity(1,0)
+		@Entity.setopacity(3,0)
+	:endif
+	:if:<Register.value(System.ErrorLog.ErrorID2)>=2 <or> <Register.value(System.ErrorLog.ErrorID2)>=3
+		@Entity.setopacity(1,0)
+		@Entity.setopacity(2,0)
+	:endif
+	@Sound.play(Windows Critical Stop)
+	@Camera.set(0,0,0,0,0)
+	@Register.change(System.ErrorLog.ErrorID0,1)
+	@Register.change(System.ErrorLog.ErrorID1,1)
+	@Register.change(System.ErrorLog.ErrorID2,1)
+	@Register.unregister(System.ErrorLogInit)
+	@Register.register(System.GlobalValidation)
+:endif
+:if:<Register.registered(System.GlobalValidation)>=true
+	@Level.wait(9999)
+	@Script.start(System\GlobalValidation)
+:endif
+:end

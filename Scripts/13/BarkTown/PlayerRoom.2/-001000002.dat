@@ -1,0 +1,33 @@
+version=2
+:if:<Register.value(13\BarkTown\PlayerRoom.2\001000002)>=1
+	@Sound.play(Select)
+	@Text.show(It's a note on the~wall about the controls.)
+	@Sound.play(Select)
+	@Text.show(Do you want to read it?)
+	@Options.show(Yes,No)
+	:when:Yes
+		@Sound.play(Select)
+		@Text.show(The controls in Pokemon:~Move: [W])
+		@Sound.play(Select)
+		@Text.show(Watch: [A][S][D]~Change camera: [C])
+		@Sound.play(Select)
+		@Text.show(Open menu: [E]~Mute music: [M])
+		@Sound.play(Select)
+		@Text.show(Hide GUI: [F1]~Take screenshot: [F2])
+		@Sound.play(Select)
+		@Text.show(Change camera mode: [F5])
+		@Sound.play(Select)
+		@Script.start(System\GlobalMain)
+		:end
+	:when:No
+		@Sound.play(Select)
+		@Script.start(System\GlobalMain)
+		:end
+	:endwhen
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,13\BarkTown\PlayerRoom.2\-001000002.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

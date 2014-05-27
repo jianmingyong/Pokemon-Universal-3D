@@ -1,0 +1,15 @@
+version=2
+:if:<Register.value(13\BarkTown\PlayerRoom.2\004000000)>=1
+	@Sound.play(Select)
+	@Text.show(It's a TV.~A Nintendo Wii is)
+	@Sound.play(Select)
+	@Text.show(connected to it via Wifi.)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,13\BarkTown\PlayerRoom.2\004000000.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end
