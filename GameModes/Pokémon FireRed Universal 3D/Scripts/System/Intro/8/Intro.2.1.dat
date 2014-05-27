@@ -1,0 +1,21 @@
+version=2
+:if:<Register.value(Intro.2.1)>=1
+	:if:<Entity.opacity(3)><100
+		@Entity.setopacity(3,<Entity.opacity(3)>+10)
+	:endif
+	:if:<Entity.opacity(3)><100
+		@Script.start(Intro/Intro.2.1)
+	:endif
+	@Register.change(Intro.2.1,2)
+	:end
+:endif
+:if:<Register.value(Intro.2.1)>=2
+	:if:<Entity.opacity(3)>>0
+		@Entity.setopacity(3,<Entity.opacity(3)>-10)
+	:endif
+	:if:<Entity.opacity(3)>>0
+		@Script.start(Intro/Intro.2.1)
+	:endif
+	@Register.change(Intro.2.1,1)
+	:end
+:endif
