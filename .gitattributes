@@ -6,3 +6,5 @@
 *.dat text
 *.txt text
 *.lua text
+*.wma binary
+*.wav binary
