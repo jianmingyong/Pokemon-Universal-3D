@@ -1,74 +1,53 @@
 version=2
-:if:<Register.registered(FRU3D.Global.Variable.Registered)>=false
-	@Screen.fadeout
-	@Script.start(Main/GlobalVariable)
-:endif
-:if:<Register.value(Intro)>=1
-	@Register.change(Intro,2)
-	@Player.warp(Intro/Intro.dat,0,1,0,0)
-	:end
-:endif
-:if:<Register.value(Intro)>=2
-	@Entity.warp(1,<Player.position>-1)
-	@Entity.warp(2,<Player.position>-1)
-	@Entity.warp(3,<Player.position>-1)
-	@Entity.warp(4,<Player.position>-1)
-	@Entity.warp(5,<Player.position>-1)
-	@Entity.setopacity(1,0)
-	@Entity.setopacity(2,0)
-	@Entity.setopacity(3,0)
-	@Entity.setopacity(4,0)
-	@Entity.setopacity(5,0)
-	@Entity.setopacity(6,0)
-	@Entity.setopacity(7,0)
-	@Entity.setopacity(8,0)
-	@Entity.setopacity(9,0)
+:if:<Register.value(System\Intro\8\Intro)>=1
 	@Music.play(P_FR_LG Game Explanation 1)
-	@Script.start(Intro/Intro.1)
+	@Script.start(System\Intro\8\Intro.1)
 	@Camera.set(<Player.position>,0,0)
-	@Screen.fadein
-	@Register.change(Intro,3)
+	@Level.update
+	@Register.change(System\Intro\8\Intro,2)
 	:end
 :endif
-:if:<Register.value(Intro)>=3
+:if:<Register.value(System\Intro\8\Intro)>=2
 	@Sound.play(Select)
-	@Camera.set(<Player.position>,0,0)
-	@Screen.fadeout
-	@Script.start(Intro/Intro.1)
+	@Script.start(System\Intro\8\Intro.1)
 	@Music.play(P_FR_LG Game Explanation 2)
-	@Script.start(Intro/Intro.2)
-	@Screen.fadein
-	@Script.start(Intro/Intro.2.1)
-	@Register.change(Intro,4)
-	:end
-:endif
-:if:<Register.value(Intro)>=4
+	@Script.start(System\Intro\8\Intro.2)
+	@Script.start(System\Intro\8\Intro.2.1)
 	@Camera.set(<Player.position>,0,0)
-	@Sound.play(Select)
-	@Script.start(Intro/Intro.2.1)
-	@Script.start(Intro/Intro.2.2)
-	@Register.change(Intro,5)
+	@Level.update
+	@Register.change(System\Intro\8\Intro,3)
 	:end
 :endif
-:if:<Register.value(Intro)>=5
+:if:<Register.value(System\Intro\8\Intro)>=3
+	@Sound.play(Select)
+	@Script.start(System\Intro\8\Intro.2.1)
+	@Script.start(System\Intro\8\Intro.2.2)
 	@Camera.set(<Player.position>,0,0)
-	@Sound.play(Select)
-	@Script.start(Intro/Intro.2.2)
-	@Script.start(Intro/Intro.2.3)
-	@Register.change(Intro,6)
+	@Level.update
+	@Register.change(System\Intro\8\Intro,4)
 	:end
 :endif
-:if:<Register.value(Intro)>=6
+:if:<Register.value(System\Intro\8\Intro)>=4
+	@Sound.play(Select)
+	@Script.start(System\Intro\8\Intro.2.2)
+	@Script.start(System\Intro\8\Intro.2.3)
+	@Camera.set(<Player.position>,0,0)
+	@Level.update
+	@Register.change(System\Intro\8\Intro,5)
+	:end
+:endif
+:if:<Register.value(System\Intro\8\Intro)>=5
 	@Sound.play(Select)
 	@Music.play(P_FR_LG Game Explanation 3)
-	@Screen.fadeout
-	@Script.start(intro/Intro.2.3)
-	@Script.start(intro/Intro.2)
+	@Script.start(System\Intro\8\Intro.2.3)
+	@Script.start(System\Intro\8\Intro.2)
+	@Level.wait(50)
 	@Music.play(P_FR_LG Welcome to the World of Pokémon!)
-	@Script.start(Intro/Intro.3.background)
-	@Screen.fadein
-	@Script.start(Intro/Intro.3.base)
-	@Script.start(Intro/Intro.3.profoak)
+	@Script.start(System\Intro\8\Intro.3.background)
+	@Script.start(System\Intro\8\Intro.3.base)
+	@Script.start(System\Intro\8\Intro.3.profoak)
+	@Camera.set(<Player.position>,0,0)
+	@Level.update
 	@Text.show(Hello, there!~Glad to meet you!)
 	@Sound.play(Select)
 	@Text.show(Welcome to the world of POKéMON!)
@@ -79,8 +58,8 @@ version=2
 	@Sound.play(Select)
 	@Text.show(This world...)
 	@Sound.play(Select)
-	@Script.start(Intro/Intro.3.profoak)
-	@Script.start(Intro/Intro.3.poke)
+	@Script.start(System\Intro\8\Intro.3.profoak)
+	@Script.start(System\Intro\8\Intro.3.poke)
 	@Pokemon.cry(183) 
 	@Text.show(... is inhabited far and wide by~creatures called POKéMON.)
 	@Sound.play(Select)
@@ -90,8 +69,8 @@ version=2
 	@Sound.play(Select)
 	@Text.show(I study POKéMON as a profession.)
 	@Sound.play(Select)
-	@Script.start(Intro/Intro.3.poke)
-	@Script.start(Intro/Intro.3.profoak)
+	@Script.start(System\Intro\8\Intro.3.poke)
+	@Script.start(System\Intro\8\Intro.3.profoak)
 	@Text.show(But first, tell me a little about~yourself.)
 	@Sound.play(Select)
 	@Text.show(Right...~So your name is <Player.name>.)
@@ -102,9 +81,9 @@ version=2
 	@Sound.play(Select)
 	@Text.show(...Erm, what was his name now?)
 	@Sound.play(Select)
-	@Register.change(Intro,7)
+	@Register.change(System\Intro\8\Intro,6)
 :endif
-:if:<Register.value(Intro)>=7
+:if:<Register.value(System\Intro\8\Intro)>=6
 	@Player.renamerival
 	@Text.show(...Er, was it <Rival.name>?)
 	@Options.show(YES,NO)
@@ -114,19 +93,17 @@ version=2
 	@Sound.play(Select)
 	:when:NO
 	@Sound.play(Select)
-	@Script.start(Intro/Intro)
+	@Script.start(System\Intro\8\Intro)
 	:endwhen
 	@Text.show(<Player.name>!)
 	@Sound.play(Select)
 	@Text.show(Your very own POKéMON legend is~about to unfold!)
 	@Sound.play(Select)
 	@Text.show(A world of dreams and adventures~with POKéMON awaits! Let's go!)
-	@Screen.fadeout
-	@Script.start(Intro/Intro.3.profoak)
-	@Script.start(Intro/Intro.3.base)
-	@Script.start(Intro/Intro.3.background)
-	@Player.warp(PalletTown/PalletTown.PlayerHouse.dat,8,2.1,7,0)
-	@Screen.fadein
-	@Register.change(Intro,1)
+	@Script.start(System\Intro\8\Intro.3.profoak)
+	@Script.start(System\Intro\8\Intro.3.base)
+	@Script.start(System\Intro\8\Intro.3.background)
+	@Player.warp(8\PalletTown\PalletTown.PlayerHouse.dat,8,2.1,7,0)
+	@Register.change(System\Intro\8\Intro,1)
 	:end
 :endif

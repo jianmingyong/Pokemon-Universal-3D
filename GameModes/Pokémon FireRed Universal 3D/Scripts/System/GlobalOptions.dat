@@ -1,5 +1,7 @@
 version=2
-@Register.change(Options.System.Game ID,13)
+# This is the avilabale options in the game #
+# @Register.change(Options.System.Game ID,8) #
+# Do not touch the script below. #
 :if:<Register.value(Options.System.Game ID)>=8
 	:if:<Register.value(System.Game ID)>=8
 		:end

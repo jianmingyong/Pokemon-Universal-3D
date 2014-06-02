@@ -1,21 +1,19 @@
 version=2
-:if:<Register.value(Intro.3.background)>=1
-	:if:<Entity.opacity(6)><100
-		@Entity.setopacity(6,<Entity.opacity(6)>+10)
-	:endif
-	:if:<Entity.opacity(6)><100
-		@Script.start(Intro/Intro.3.background)
-	:endif
-	@Register.change(Intro.3.background,2)
+:if:<Register.value(System\Intro\8\Intro.3.background)>=1
+	:while:<Entity.opacity(86)><100
+		@Entity.setopacity(86,<Entity.opacity(86)>+10)
+		@Level.wait(1)
+		@Level.update
+	:endwhile
+	@Register.change(System\Intro\8\Intro.3.background,2)
 	:end
 :endif
-:if:<Register.value(Intro.3.background)>=2
-	:if:<Entity.opacity(6)>>0
-		@Entity.setopacity(6,<Entity.opacity(6)>-10)
-	:endif
-	:if:<Entity.opacity(6)>>0
-		@Script.start(Intro/Intro.3.background)
-	:endif
-	@Register.change(Intro.3.background,1)
+:if:<Register.value(System\Intro\8\Intro.3.background)>=2
+	:while:<Entity.opacity(86)>>0
+		@Entity.setopacity(86,<Entity.opacity(86)>-10)
+		@Level.wait(1)
+		@Level.update
+	:endwhile
+	@Register.change(System\Intro\8\Intro.3.background,1)
 	:end
 :endif

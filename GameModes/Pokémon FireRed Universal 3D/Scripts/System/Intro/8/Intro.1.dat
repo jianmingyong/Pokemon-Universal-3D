@@ -1,21 +1,19 @@
 version=2
-:if:<Register.value(Intro.1)>=1
-	:if:<Entity.opacity(1)><100
-		@Entity.setopacity(1,<Entity.opacity(1)>+10)
-	:endif
-	:if:<Entity.opacity(1)><100
-		@Script.start(Intro/Intro.1)
-	:endif
-	@Register.change(Intro.1,2)
+:if:<Register.value(System\Intro\8\Intro.1)>=1
+	:while:<Entity.opacity(81)><100
+		@Entity.setopacity(81,<Entity.opacity(81)>+10)
+		@Level.wait(1)
+		@Level.update
+	:endwhile
+	@Register.change(System\Intro\8\Intro.1,2)
 	:end
 :endif
-:if:<Register.value(Intro.1)>=2
-	:if:<Entity.opacity(1)>>0
-		@Entity.setopacity(1,<Entity.opacity(1)>-10)
-	:endif
-	:if:<Entity.opacity(1)>>0
-		@Script.start(Intro/Intro.1)
-	:endif
-	@Register.change(Intro.1,1)
+:if:<Register.value(System\Intro\8\Intro.1)>=2
+	:while:<Entity.opacity(81)>>0
+		@Entity.setopacity(81,<Entity.opacity(81)>-10)
+		@Level.wait(1)
+		@Level.update
+	:endwhile
+	@Register.change(System\Intro\8\Intro.1,1)
 	:end
 :endif
