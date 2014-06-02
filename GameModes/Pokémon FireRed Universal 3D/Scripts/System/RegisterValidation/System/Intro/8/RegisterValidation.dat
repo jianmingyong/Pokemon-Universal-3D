@@ -7,8 +7,7 @@ version=2
 	:endif
 	@Text.log([Register validation result: "System\Intro\8\Intro" does not exist])
 :else
-	:if:<Register.value(System\Intro\8\Intro)>=1 <or> <Register.value(System\Intro\8\Intro)>=2 <or> <Register.value(System\Intro\8\Intro)>=3 <or> <Register.value(System\Intro\8\Intro)>=4 <or> <Register.value(System\Intro\8\Intro)>=5 <or> <Register.value(System\Intro\8\Intro)>=6
-	:else
+	:if:not <Register.value(System\Intro\8\Intro)>=1 <or> not <Register.value(System\Intro\8\Intro)>=2 <or> not <Register.value(System\Intro\8\Intro)>=3 <or> not <Register.value(System\Intro\8\Intro)>=4 <or> not <Register.value(System\Intro\8\Intro)>=5 <or> not <Register.value(System\Intro\8\Intro)>=6
 		:if:<Register.registered(System.ErrorLogInit)>=false
 			@Register.change(System.ErrorLog.ErrorID2,2)
 			@Script.start(System\GlobalErrorLog)
@@ -25,8 +24,7 @@ version=2
 	:endif
 	@Text.log([Register validation result: "System\Intro\8\Intro.1" does not exist])
 :else
-	:if:<Register.value(System\Intro\8\Intro.1)>=1 <or> <Register.value(System\Intro\8\Intro.1)>=2
-	:else
+	:if:not <Register.value(System\Intro\8\Intro.1)>=1 <or> not <Register.value(System\Intro\8\Intro.1)>=2
 		:if:<Register.registered(System.ErrorLogInit)>=false
 			@Register.change(System.ErrorLog.ErrorID2,2)
 			@Script.start(System\GlobalErrorLog)
@@ -43,8 +41,7 @@ version=2
 	:endif
 	@Text.log([Register validation result: "System\Intro\8\Intro.2" does not exist])
 :else
-	:if:<Register.value(System\Intro\8\Intro.2)>=1 <or> <Register.value(System\Intro\8\Intro.2)>=2
-	:else
+	:if:not <Register.value(System\Intro\8\Intro.2)>=1 <or> not <Register.value(System\Intro\8\Intro.2)>=2
 		:if:<Register.registered(System.ErrorLogInit)>=false
 			@Register.change(System.ErrorLog.ErrorID2,2)
 			@Script.start(System\GlobalErrorLog)
@@ -61,8 +58,7 @@ version=2
 	:endif
 	@Text.log([Register validation result: "System\Intro\8\Intro.2.1" does not exist])
 :else
-	:if:<Register.value(System\Intro\8\Intro.2.1)>=1 <or> <Register.value(System\Intro\8\Intro.2.1)>=2
-	:else
+	:if:not <Register.value(System\Intro\8\Intro.2.1)>=1 <or> not <Register.value(System\Intro\8\Intro.2.1)>=2
 		:if:<Register.registered(System.ErrorLogInit)>=false
 			@Register.change(System.ErrorLog.ErrorID2,2)
 			@Script.start(System\GlobalErrorLog)
@@ -79,8 +75,7 @@ version=2
 	:endif
 	@Text.log([Register validation result: "System\Intro\8\Intro.2.2" does not exist])
 :else
-	:if:<Register.value(System\Intro\8\Intro.2.2)>=1 <or> <Register.value(System\Intro\8\Intro.2.2)>=2
-	:else
+	:if:not <Register.value(System\Intro\8\Intro.2.2)>=1 <or> not <Register.value(System\Intro\8\Intro.2.2)>=2
 		:if:<Register.registered(System.ErrorLogInit)>=false
 			@Register.change(System.ErrorLog.ErrorID2,2)
 			@Script.start(System\GlobalErrorLog)
@@ -97,8 +92,7 @@ version=2
 	:endif
 	@Text.log([Register validation result: "System\Intro\8\Intro.2.3" does not exist])
 :else
-	:if:<Register.value(System\Intro\8\Intro.2.3)>=1 <or> <Register.value(System\Intro\8\Intro.2.3)>=2
-	:else
+	:if:not <Register.value(System\Intro\8\Intro.2.3)>=1 <or> not <Register.value(System\Intro\8\Intro.2.3)>=2
 		:if:<Register.registered(System.ErrorLogInit)>=false
 			@Register.change(System.ErrorLog.ErrorID2,2)
 			@Script.start(System\GlobalErrorLog)
@@ -115,8 +109,7 @@ version=2
 	:endif
 	@Text.log([Register validation result: "System\Intro\8\Intro.3.background" does not exist])
 :else
-	:if:<Register.value(System\Intro\8\Intro.3.background)>=1 <or> <Register.value(System\Intro\8\Intro.3.background)>=2
-	:else
+	:if:not <Register.value(System\Intro\8\Intro.3.background)>=1 <or> not <Register.value(System\Intro\8\Intro.3.background)>=2
 		:if:<Register.registered(System.ErrorLogInit)>=false
 			@Register.change(System.ErrorLog.ErrorID2,2)
 			@Script.start(System\GlobalErrorLog)
@@ -133,7 +126,7 @@ version=2
 	:endif
 	@Text.log([Register validation result: "System\Intro\8\Intro.3.base" does not exist])
 :else
-	:if:<Register.value(System\Intro\8\Intro.3.base)>=1 <or> <Register.value(System\Intro\8\Intro.3.base)>=2
+	:if:not <Register.value(System\Intro\8\Intro.3.base)>=1 <or> not <Register.value(System\Intro\8\Intro.3.base)>=2
 	:else
 		:if:<Register.registered(System.ErrorLogInit)>=false
 			@Register.change(System.ErrorLog.ErrorID2,2)
@@ -151,8 +144,7 @@ version=2
 	:endif
 	@Text.log([Register validation result: "System\Intro\8\Intro.3.poke" does not exist])
 :else
-	:if:<Register.value(System\Intro\8\Intro.3.poke)>=1 <or> <Register.value(System\Intro\8\Intro.3.poke)>=2
-	:else
+	:if:not <Register.value(System\Intro\8\Intro.3.poke)>=1 <or> not <Register.value(System\Intro\8\Intro.3.poke)>=2
 		:if:<Register.registered(System.ErrorLogInit)>=false
 			@Register.change(System.ErrorLog.ErrorID2,2)
 			@Script.start(System\GlobalErrorLog)
@@ -169,8 +161,7 @@ version=2
 	:endif
 	@Text.log([Register validation result: "System\Intro\8\Intro.3.profoak" does not exist])
 :else
-	:if:<Register.value(System\Intro\8\Intro.3.profoak)>=1 <or> <Register.value(System\Intro\8\Intro.3.profoak)>=2
-	:else
+	:if:not <Register.value(System\Intro\8\Intro.3.profoak)>=1 <or> not <Register.value(System\Intro\8\Intro.3.profoak)>=2
 		:if:<Register.registered(System.ErrorLogInit)>=false
 			@Register.change(System.ErrorLog.ErrorID2,2)
 			@Script.start(System\GlobalErrorLog)
