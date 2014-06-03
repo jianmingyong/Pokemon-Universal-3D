@@ -95,3 +95,6 @@ Celling.Layer.4.Floor.3
 {"EntityField"{ENT[{"EntityID"{str[Cube]}}{"Size"{intArr[5,1]}}{"Position"{sngArr[0,2,4]}}{"TexturePath"{str[12\Truck]}}{"Textures"{recArr[[64,16,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[12]}}]}}
 Celling.Layer.5.Floor.3
 {"EntityField"{ENT[{"EntityID"{str[Cube]}}{"Size"{intArr[5,1]}}{"Position"{sngArr[0,2,5]}}{"TexturePath"{str[12\Truck]}}{"Textures"{recArr[[64,16,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[12]}}]}}
+
+OffsetMap.Layer.0
+{"OffsetMap"{MAP[{"Map"{str[12\LittleRootTown\LittleRootTown.dat]}}{"Offset"{intArr[-7,-1,-10]}}]}}
