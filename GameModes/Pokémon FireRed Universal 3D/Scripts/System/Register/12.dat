@@ -1,0 +1,35 @@
+version=2
+:if:<Register.registered(System\Intro\12\Intro)>=false
+	@Register.register(System\Intro\12\Intro,int,1)
+:endif
+:if:<Register.registered(System\Intro\12\Intro.1)>=false
+	@Register.register(System\Intro\12\Intro.1,int,1)
+:endif
+:if:<Register.registered(System\Intro\12\Intro.2)>=false
+	@Register.register(System\Intro\12\Intro.2,int,1)
+:endif
+:if:<Register.registered(System\Intro\12\Intro.3)>=false
+	@Register.register(System\Intro\12\Intro.3,int,1)
+:endif
+:if:<Register.registered(System\Intro\12\Intro.4)>=false
+	@Register.register(System\Intro\12\Intro.4,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\Truck\001000001)>=false
+	@Register.register(12\LittleRootTown\Truck\001000001,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\Truck\000000002)>=false
+	@Register.register(12\LittleRootTown\Truck\000000002,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\Truck\000000003)>=false
+	@Register.register(12\LittleRootTown\Truck\000000003,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\Truck\001000004)>=false
+	@Register.register(12\LittleRootTown\Truck\001000004,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\Truck\002000004)>=false
+	@Register.register(12\LittleRootTown\Truck\002000004,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\Truck\003000005)>=false
+	@Register.register(12\LittleRootTown\Truck\003000005,int,1)
+:endif
+:end
