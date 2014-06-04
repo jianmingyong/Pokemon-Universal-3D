@@ -1,6 +1,18 @@
 version=2
 @Script.start(System\GlobalRegister)
 @Script.start(System\Intro\Intro)
+:if:<Register.value(System.Game ID)>=8
+	:if:<Register.value(System\Intro\8\Intro)>=1
+		@Script.start(System\Intro\8\Intro)
+		:end
+	:endif
+:endif
+:if:<Register.value(System.Game ID)>=12
+	:if:<Register.value(System\Intro\12\Intro)>=1
+		@Script.start(System\Intro\12\Intro)
+		:end
+	:endif
+:endif
 :if:<Register.value(System.Game ID)>=13
 	:if:<Register.value(System\Intro\13\Intro)>=1
 		@Script.start(System\Intro\13\Intro)

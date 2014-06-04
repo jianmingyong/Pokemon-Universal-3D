@@ -1,0 +1,87 @@
+version=2
+:if:<Register.registered(System\Intro\12\Intro)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\12\Intro" does not exist])
+:else
+	:if:not <Register.value(System\Intro\12\Intro)>=1 <or> not <Register.value(System\Intro\12\Intro)>=2
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "System\Intro\12\Intro" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\12\Intro)>])
+	:endif
+:endif
+:if:<Register.registered(System\Intro\12\Intro.1)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\12\Intro.1" does not exist])
+:else
+	:if:not <Register.value(System\Intro\12\Intro.1)>=1 <or> not <Register.value(System\Intro\12\Intro.1)>=2
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "System\Intro\12\Intro.1" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\12\Intro.1)>])
+	:endif
+:endif
+:if:<Register.registered(System\Intro\12\Intro.2)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\12\Intro.2" does not exist])
+:else
+	:if:not <Register.value(System\Intro\12\Intro.2)>=1 <or> not <Register.value(System\Intro\12\Intro.2)>=2
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "System\Intro\12\Intro.2" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\12\Intro.2)>])
+	:endif
+:endif
+:if:<Register.registered(System\Intro\12\Intro.3)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\12\Intro.3" does not exist])
+:else
+	:if:not <Register.value(System\Intro\12\Intro.3)>=1 <or> not <Register.value(System\Intro\12\Intro.3)>=2
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "System\Intro\12\Intro.3" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\12\Intro.3)>])
+	:endif
+:endif
+:if:<Register.registered(System\Intro\12\Intro.4)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\12\Intro.4" does not exist])
+:else
+	:if:not <Register.value(System\Intro\12\Intro.4)>=1 <or> not <Register.value(System\Intro\12\Intro.4)>=2
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "System\Intro\12\Intro.4" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\12\Intro.4)>])
+	:endif
+:endif
+:end
