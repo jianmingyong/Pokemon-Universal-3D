@@ -9,5 +9,7 @@ version=2
 @Script.start(System\GlobalRegisterValidation)
 @Script.start(System\GlobalOptions)
 @Script.start(System\GlobalParallelProcess)
-@Player.save
+:if:<Register.value(Option.System.Auto Save)>=1
+	@Player.save
+:endif
 :end

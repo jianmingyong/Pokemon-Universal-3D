@@ -44,4 +44,7 @@ version=2
 :if:<Register.registered(12\LittleRootTown\014000017)>=false
 	@Register.register(12\LittleRootTown\014000017,int,1)
 :endif
+:if:<Register.registered(12\LittleRootTown\013000008)>=false
+	@Register.register(12\LittleRootTown\013000008,int,1)
+:endif
 :end
