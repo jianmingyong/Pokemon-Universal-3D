@@ -124,7 +124,7 @@ Shelf.Layer.3
 {"EntityField"{ENT[{"Scale"{sngArr[1,0.45,1]}}{"EntityID"{str[WallBlock]}}{"Size"{intArr[2,1]}}{"Position"{sngArr[2,-0.275,3]}}{"TexturePath"{str[House]}}{"Textures"{recArr[[0,24,16,8][16,23,16,9][48,32,5,8]]}}{"TextureIndex"{intArr[0,0,2,2,2,2,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 
 Tv.Layer.3
-{"Entity"{ENT[{"Scale"{sngArr[0.8,0.5,0.3]}}{"EntityID"{str[WallBlock]}}{"Position"{sngArr[4,0.15,3]}}{"TexturePath"{str[House]}}{"Textures"{recArr[[80,48,16,11][96,48,16,11][80,59,16,4]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,2,2,2,2]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"Scale"{sngArr[0.8,0.5,0.3]}}{"EntityID"{str[ScriptBlock]}}{"Position"{sngArr[4,0.15,3]}}{"TexturePath"{str[House]}}{"Textures"{recArr[[80,48,16,11][96,48,16,11][80,59,16,4]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,2,2,2,2]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\LittleRootTown\PlayerRoom.1\004000003]}}{"Rotation"{int[0]}}]}}
 {"Entity"{ENT[{"Scale"{sngArr[1,0.4,1]}}{"EntityID"{str[WallBlock]}}{"Position"{sngArr[4,-0.3,3]}}{"TexturePath"{str[House]}}{"Textures"{recArr[[0,16,16,9][16,23,16,9]]}}{"TextureIndex"{intArr[0,0,0,0,0,0,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 
 Table.Layer.5
@@ -161,3 +161,6 @@ Ceiling.Layer.6
 {"EntityField"{ENT[{"Size"{intArr[11,1]}}{"EntityID"{str[AllSidesObject]}}{"Position"{sngArr[0,2,6]}}{"TexturePath"{str[12\Tileset1642]}}{"Textures"{recArr[[80,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 Ceiling.Layer.7
 {"EntityField"{ENT[{"Size"{intArr[11,1]}}{"EntityID"{str[AllSidesObject]}}{"Position"{sngArr[0,2,7]}}{"TexturePath"{str[12\Tileset1642]}}{"Textures"{recArr[[80,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
+
+ActionScript.Layer.7
+{"EntityField"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[008000007]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[8,0,7]}}{"TexturePath"{str[12\Tileset1642]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[0]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\PlayerRoom.1\008000007]}}]}}

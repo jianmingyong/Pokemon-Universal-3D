@@ -1,0 +1,87 @@
+version=2
+:if:<Register.registered(12\LittleRootTown\PlayerRoom.2\005000000)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\LittleRootTown\PlayerRoom.2\005000000" does not exist])
+:else
+	:if:not <Register.value(12\LittleRootTown\PlayerRoom.2\005000000)>=1 <or> not <Register.value(12\LittleRootTown\PlayerRoom.2\005000000)>=2
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "12\LittleRootTown\PlayerRoom.2\005000000" cannot be less than 1 and more than 2. Current value: <Register.value(12\LittleRootTown\PlayerRoom.2\005000000)>])
+	:endif
+:endif
+:if:<Register.registered(12\LittleRootTown\PlayerRoom.2\003000001)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\LittleRootTown\PlayerRoom.2\003000001" does not exist])
+:else
+	:if:not <Register.value(12\LittleRootTown\PlayerRoom.2\003000001)>=1
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "12\LittleRootTown\PlayerRoom.2\003000001" cannot be less than 1 and more than 1. Current value: <Register.value(12\LittleRootTown\PlayerRoom.2\003000001)>])
+	:endif
+:endif
+:if:<Register.registered(12\LittleRootTown\PlayerRoom.2\001000001)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\LittleRootTown\PlayerRoom.2\001000001" does not exist])
+:else
+	:if:not <Register.value(12\LittleRootTown\PlayerRoom.2\001000001)>=1
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "12\LittleRootTown\PlayerRoom.2\001000001" cannot be less than 1 and more than 1. Current value: <Register.value(12\LittleRootTown\PlayerRoom.2\001000001)>])
+	:endif
+:endif
+:if:<Register.registered(12\LittleRootTown\PlayerRoom.2\000001001)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\LittleRootTown\PlayerRoom.2\000001001" does not exist])
+:else
+	:if:not <Register.value(12\LittleRootTown\PlayerRoom.2\000001001)>=1 <or> not <Register.value(12\LittleRootTown\PlayerRoom.2\000001001)>=2
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "12\LittleRootTown\PlayerRoom.2\000001001" cannot be less than 1 and more than 2. Current value: <Register.value(12\LittleRootTown\PlayerRoom.2\000001001)>])
+	:endif
+:endif
+:if:<Register.registered(12\LittleRootTown\PlayerRoom.2\004000001)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\LittleRootTown\PlayerRoom.2\004000001" does not exist])
+:else
+	:if:not <Register.value(12\LittleRootTown\PlayerRoom.2\004000001)>=1
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "12\LittleRootTown\PlayerRoom.2\004000001" cannot be less than 1 and more than 1. Current value: <Register.value(12\LittleRootTown\PlayerRoom.2\004000001)>])
+	:endif
+:endif
+:end

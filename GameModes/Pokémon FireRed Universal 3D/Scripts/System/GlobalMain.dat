@@ -1,4 +1,5 @@
 version=2
+@Level.update
 :if:<Register.value(System.Game Version)>=0.0.1
 	@Script.start(System\GlobalRegister)
 :else

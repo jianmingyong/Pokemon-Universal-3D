@@ -6,6 +6,7 @@ version=2
 	@Script.start(System\RegisterValidation\System\Intro\12\RegisterValidation)
 	@Script.start(System\RegisterValidation\12\LittleRootTown\RegisterValidation)
 	@Script.start(System\RegisterValidation\12\LittleRootTown\Truck\RegisterValidation)
+	@Script.start(System\RegisterValidation\System\ParallelProcess\12\LittleRootTown\PlayerRoom.1\RegisterValidation)
 :endif
 :if:<Register.value(System.Game ID)>=13
 	@Script.start(System\RegisterValidation\System\Intro\13\RegisterValidation)
