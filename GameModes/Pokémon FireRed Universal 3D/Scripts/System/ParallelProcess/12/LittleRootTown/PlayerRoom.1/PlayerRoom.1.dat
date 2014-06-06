@@ -20,7 +20,6 @@ version=2
 	@Text.show(Go check it out, dear!~DAD bought you a new clock to mark)
 	@Sound.play(Select)
 	@Text.show(our move here.~Don't forget to set it!)
-	@Sound.play(Select)
 	@Player.turnto(0)
 	@Player.move(1)
 	@NPC.turn(002000005,0)
@@ -35,7 +34,6 @@ version=2
 		@Text.show(MOM: <Player.name>.)
 		@Sound.play(Select)
 		@Text.show(Go set the clock in your room, honey.)
-		@Sound.play(Select)
 		@Player.turnto(0)
 		@Player.warp(12\LittleRootTown\LittleRootTown.PlayerRoom.2.dat,7,0,1,2)
 		:end
@@ -78,7 +76,6 @@ version=2
 	@Text.show(PROF. BIRCH is his name.)
 	@Sound.play(Select)
 	@Text.show(He lives right next door, so you should~go over and introduce yourself.)
-	@Sound.play(Select)
 	@NPC.turn(002000005,1)
 	@NPC.move(002000005,1)
 	@NPC.turn(002000005,2)

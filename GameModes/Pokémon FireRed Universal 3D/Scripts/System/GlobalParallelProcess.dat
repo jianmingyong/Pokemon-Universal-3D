@@ -1,7 +1,7 @@
 version=2
 :if:<Register.value(System.Game ID)>=12
 	:if:<Level.filename>=LittleRootTown
-		@Script.start(System\ParallelProcess\12\LittleRootTown\013000008)
+		@Script.start(System\ParallelProcess\12\LittleRootTown\LittleRootTown)
 	:endif
 	:if:<Level.filename>=LittleRootTown.PlayerRoom.1
 		@Script.start(System\ParallelProcess\12\LittleRootTown\PlayerRoom.1\PlayerRoom.1)

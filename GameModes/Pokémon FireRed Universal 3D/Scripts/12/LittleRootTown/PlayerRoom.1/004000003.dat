@@ -7,7 +7,6 @@
 		@Text.show(keyboard.)
 		@Sound.play(Select)
 		@Text.show(Better get going!)
-		@Sound.play(Select)
 		@Script.start(System\GlobalMain)
 	:endif
 	:end

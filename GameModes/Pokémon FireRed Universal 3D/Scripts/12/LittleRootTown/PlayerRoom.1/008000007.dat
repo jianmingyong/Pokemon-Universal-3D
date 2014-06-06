@@ -3,7 +3,6 @@
 	@Text.show(MOM: Well, <Player.name>?~Aren't you interested in seeing your)
 	@Sound.play(Select)
 	@Text.show(very own room?)
-	@Sound.play(Select)
 	@Player.turnto(0)
 	@Player.move(1)
 	@Script.start(System\GlobalMain)

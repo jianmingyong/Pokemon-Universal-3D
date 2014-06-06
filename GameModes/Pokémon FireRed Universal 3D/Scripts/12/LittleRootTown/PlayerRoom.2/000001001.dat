@@ -9,7 +9,6 @@ version=2
 	:when:ITEM STORAGE
 		@Sound.play(Select)
 		@Text.show(There is no ITEM STORAGE at the moment.~Sorry for any inconvenience caused.)
-		@Sound.play(Select)
 		@Item.give(18,1)
 		@Item.messagegive(18,1)
 		@Register.change(12\LittleRootTown\PlayerRoom.2\000001001,2)
@@ -18,9 +17,7 @@ version=2
 	:when:DECORATION
 		@Sound.play(Select)
 		@Text.show(There is no DECORATION at the moment.~Sorry for any inconvenience caused.)
-		@Sound.play(Select)
 	:when:TURN OFF
-		@Sound.play(Select)
 	:endwhen
 	@Sound.play(computerclose)
 	@Script.start(System\GlobalMain)
@@ -36,15 +33,12 @@ version=2
 	:when:ITEM STORAGE
 		@Sound.play(Select)
 		@Text.show(There is no ITEM STORAGE at the moment.~Sorry for any inconvenience caused.)
-		@Sound.play(Select)
 	:when:MAILBOX
 		@Screen.mailsystem
 	:when:DECORATION
 		@Sound.play(Select)
 		@Text.show(There is no DECORATION at the moment.~Sorry for any inconvenience caused.)
-		@Sound.play(Select)
 	:when:TURN OFF
-		@Sound.play(Select)
 	:endwhen
 	@Sound.play(computerclose)
 	@Script.start(System\GlobalMain)

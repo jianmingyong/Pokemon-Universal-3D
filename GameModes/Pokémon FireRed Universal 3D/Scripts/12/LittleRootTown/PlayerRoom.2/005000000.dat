@@ -4,7 +4,6 @@
 	@Text.show(The clock is stopped...~Better set it and start it!)
 	@Sound.play(Select)
 	@Text.show(Due to the Game Limitation, it will~be using your system default time.)
-	@Sound.play(Select)
 	:if:<NPC.exists(005000000)>=false
 		@NPC.spawn(7,0,0,0,,3,false,2,Mom,005000000,Still)
 	:endif
@@ -21,7 +20,6 @@
 	@Text.show(POKéMON movers are so convenient!)
 	@Sound.play(Select)
 	@Text.show(Oh, you should make sure that~everything's all there on your desk.)
-	@Sound.play(Select)
 	@NPC.turn(005000000,3)
 	@NPC.move(005000000,1)
 	@NPC.turn(005000000,0)

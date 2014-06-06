@@ -48,7 +48,6 @@ version=2
 	@Text.show(adventure, and friendships await!)
 	@Sound.play(Select)
 	@Text.show(Well, I'll be expecting you later.~Come see me in my POKéMON LAB.)
-	@Sound.play(Select)
 	@Script.start(System\Intro\12\Intro.3)
 	@Script.start(System\Intro\12\Intro.2)
 	@Script.start(System\Intro\12\Intro.1)
