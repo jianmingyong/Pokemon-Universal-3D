@@ -6,6 +6,12 @@ version=2
 	:if:<Level.filename>=LittleRootTown.PlayerRoom.1
 		@Script.start(System\ParallelProcess\12\LittleRootTown\PlayerRoom.1\PlayerRoom.1)
 	:endif
+	:if:<Level.filename>=LittleRootTown.RivalRoom.1
+		@Script.start(System\ParallelProcess\12\LittleRootTown\RivalRoom.1\RivalRoom.1)
+	:endif
+	:if:<Level.filename>=LittleRootTown.RivalRoom.2
+		@Script.start(System\ParallelProcess\12\LittleRootTown\RivalRoom.2\RivalRoom.2)
+	:endif
 :endif
 :if:<Register.value(System.Game ID)>=13
 	:if:<Level.filename>=BarkTown.PlayerRoom.1

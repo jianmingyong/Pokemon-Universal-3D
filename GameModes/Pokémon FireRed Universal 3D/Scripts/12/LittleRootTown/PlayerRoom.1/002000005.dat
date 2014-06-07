@@ -1,7 +1,7 @@
 version=2
 :if:<Register.value(12\LittleRootTown\PlayerRoom.1\002000005)>=1
 	@Sound.play(Select)
-	@Text.show(MOM: See you, honey!)
+	@Text.show(MOM: Did you introduce yourself to~PROF. BIRCH?)
 	@Script.start(System\GlobalMain)
 	:end
 :endif

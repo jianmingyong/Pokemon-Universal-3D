@@ -1,9 +1,9 @@
 ﻿version=2
 :if:<Register.value(12\LittleRootTown\020000013)>=1
 	@Sound.play(Select)
-	@Text.show(If you use a PC, you can store items)
+	@Text.show(If you use a PC, you can store items~and POKéMON.)
 	@Sound.play(Select)
-	@Text.show(and POKéMON.~The power of science is staggering!)
+	@Text.show(The power of science is staggering!)
 	@Script.start(System\GlobalMain)
 	:end
 :endif

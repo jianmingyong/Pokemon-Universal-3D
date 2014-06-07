@@ -2,9 +2,9 @@
 :if:<Register.value(12\LittleRootTown\PlayerRoom.2\003000001)>=1
 	:if:<Player.position>=3,0,2
 		@Sound.play(Select)
-		@Text.show(It's a Nintendo GameCube.~A Game Boy Advance is connected to)
+		@Text.show(It's a Nintendo GameCube.)
 		@Sound.play(Select)
-		@Text.show(serve as the Controller.)
+		@Text.show(A Game Boy Advance is connected to~serve as the Controller.)
 	:endif
 	@Script.start(System\GlobalMain)
 	:end

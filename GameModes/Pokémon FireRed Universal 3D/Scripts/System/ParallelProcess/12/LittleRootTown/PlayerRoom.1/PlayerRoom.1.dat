@@ -5,21 +5,19 @@ version=2
 	:endif
 	@Level.wait(50)
 	@Level.update
-	@Text.show(MOM: See, <Player.name>)
-	@Sound.play(Select)
-	@Text.show(Isn't it nice in here, too?)
+	@Text.show(MOM: See, <Player.name>?~Isn't it nice in here, too?)
 	@Sound.play(Select)
 	@Player.turnto(3)
 	@NPC.turn(002000005,1)
-	@Text.show(The mover's POKéMON do all the work)
+	@Text.show(The mover's POKéMON do all the work~of moving us in and cleaning up after.)
 	@Sound.play(Select)
-	@Text.show(of moving us in and cleaning up after.~This is so convenient!)
+	@Text.show(This is so convenient!)
 	@Sound.play(Select)
-	@Text.show(<Player.name>, your room is upstairs.)
+	@Text.show(<Player.name>, your room is upstairs.~Go check it out, dear!)
 	@Sound.play(Select)
-	@Text.show(Go check it out, dear!~DAD bought you a new clock to mark)
+	@Text.show(DAD bought you a new clock to mark~our move here.)
 	@Sound.play(Select)
-	@Text.show(our move here.~Don't forget to set it!)
+	@Text.show(Don't forget to set it!)
 	@Player.turnto(0)
 	@Player.move(1)
 	@NPC.turn(002000005,0)
@@ -28,6 +26,8 @@ version=2
 :endif
 :if:<Register.value(12\LittleRootTown\PlayerRoom.1)>=2
 	:if:<Player.position>=8,0,1 <and> <Player.facing>=2
+		@Player.warp(8,0,2)
+		@Level.update
 		:if:<NPC.exists(002000005)>=false
 			@NPC.spawn(8,0,3,0,,3,false,0,Mom,002000005,Still)
 		:endif
@@ -35,6 +35,9 @@ version=2
 		@Sound.play(Select)
 		@Text.show(Go set the clock in your room, honey.)
 		@Player.turnto(0)
+		@Player.warp(8,0,1)
+		@Level.update
+		@Sound.play(enter)
 		@Player.warp(12\LittleRootTown\LittleRootTown.PlayerRoom.2.dat,7,0,1,2)
 		:end
 	:else
@@ -49,6 +52,7 @@ version=2
 		@NPC.spawn(4,0,4,1,12\LittleRootTown\PlayerRoom.1\002000005,3,false,0,Mom,002000005,Still)
 	:endif
 	@Sound.play(jumptoball)
+	@Entity.showmessagebulb(1|4|0.8|4)
 	@Text.show(MOM: Oh! <Player.name>, <Player.name>!~Quick! Come quickly!)
 	@Sound.play(Select)
 	@Player.move(2)
@@ -82,6 +86,7 @@ version=2
 	@NPC.move(002000005,1)
 	@NPC.turn(002000005,3)
 	@Register.change(12\LittleRootTown\PlayerRoom.1,4)
+	@Register.change(12\LittleRootTown\PlayerRoom.2\004000001,2)
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\PlayerRoom.1)>=4

@@ -1,0 +1,15 @@
+version=2
+:if:<Register.value(12\LittleRootTown\RivalRoom.1\009000004)>=1
+	@Sound.play(Select)
+	@Text.show(Hi, neighbor!)
+	@Sound.play(Select)
+	@Text.show(Do you already have your~own POKÈMON?)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\LittleRootTown\RivalRoom.1\009000004.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

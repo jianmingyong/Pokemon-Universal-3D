@@ -65,11 +65,14 @@ version=2
 :if:<Register.registered(12\LittleRootTown\PlayerRoom.1)>=false
 	@Register.register(12\LittleRootTown\PlayerRoom.1,int,1)
 :endif
+:if:<Register.registered(12\LittleRootTown\PlayerRoom.2\002000000)>=false
+	@Register.register(12\LittleRootTown\PlayerRoom.2\002000000,int,1)
+:endif
 :if:<Register.registered(12\LittleRootTown\PlayerRoom.2\005000000)>=false
 	@Register.register(12\LittleRootTown\PlayerRoom.2\005000000,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\PlayerRoom.2\000001001)>=false
-	@Register.register(12\LittleRootTown\PlayerRoom.2\000001001,int,1)
+:if:<Register.registered(12\LittleRootTown\PlayerRoom.2\000000001)>=false
+	@Register.register(12\LittleRootTown\PlayerRoom.2\000000001,int,1)
 :endif
 :if:<Register.registered(12\LittleRootTown\PlayerRoom.2\001000001)>=false
 	@Register.register(12\LittleRootTown\PlayerRoom.2\001000001,int,1)
@@ -80,7 +83,52 @@ version=2
 :if:<Register.registered(12\LittleRootTown\PlayerRoom.2\004000001)>=false
 	@Register.register(12\LittleRootTown\PlayerRoom.2\004000001,int,1)
 :endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1\001000002)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.1\001000002,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1\003000002)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.1\003000002,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1\002000003)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.1\002000003,int,1)
+:endif
 :if:<Register.registered(12\LittleRootTown\RivalRoom.1\006000003)>=false
 	@Register.register(12\LittleRootTown\RivalRoom.1\006000003,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1\009000004)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.1\009000004,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1\008000006)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.1\008000006,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.1,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\001000000)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.2\001000000,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\003000000)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.2\003000000,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\006000000)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.2\006000000,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\004000001)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.2\004000001,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\005000001)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.2\005000001,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\007000001)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.2\007000001,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\008000001)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.2\008000001,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\005000003)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.2\005000003,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2)>=false
+	@Register.register(12\LittleRootTown\RivalRoom.2,int,1)
 :endif
 :end
