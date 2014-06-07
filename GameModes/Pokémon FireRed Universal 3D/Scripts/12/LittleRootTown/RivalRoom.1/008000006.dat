@@ -1,0 +1,17 @@
+﻿version=2
+:if:<Register.value(12\LittleRootTown\RivalRoom.1\008000006)>=1
+	@Sound.play(Select)
+	@Text.show(Like child, like father.)
+	@Sound.play(Select)
+	@Text.show(My husband is as wild about POKéMON~as our child.)
+	@Sound.play(Select)
+	@Text.show(If he's not at his LAB, he's likely~scrabbling about in grassy places.)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\LittleRootTown\RivalRoom.1\008000006.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

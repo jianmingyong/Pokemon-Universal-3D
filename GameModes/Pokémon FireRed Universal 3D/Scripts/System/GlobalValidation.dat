@@ -14,14 +14,10 @@ version=2
 	:endif
 	@Sound.play(Windows Critical Stop)
 	@Camera.set(0,0,0,0,0)
-	@Register.change(System.ErrorLog.ErrorID0,1)
-	@Register.change(System.ErrorLog.ErrorID1,1)
-	@Register.change(System.ErrorLog.ErrorID2,1)
-	@Register.unregister(System.ErrorLogInit)
 	@Register.register(System.GlobalValidation)
 :endif
 :while:<Register.registered(System.GlobalValidation)>=true
-	@Level.wait(10)
+	@Level.wait(50)
 	@Script.start(System\GlobalValidation)
 :endwhile
 :end
