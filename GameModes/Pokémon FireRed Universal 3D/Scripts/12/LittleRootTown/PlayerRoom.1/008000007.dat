@@ -1,0 +1,16 @@
+﻿version=2
+:if:<Register.value(12\LittleRootTown\PlayerRoom.1\008000007)>=1
+	@Text.show(MOM: Well, <Player.name>?~Aren't you interested in seeing your)
+	@Sound.play(Select)
+	@Text.show(very own room?)
+	@Player.turnto(0)
+	@Player.move(1)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\LittleRootTown\PlayerRoom.1\008000007.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end
