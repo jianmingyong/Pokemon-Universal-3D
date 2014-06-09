@@ -134,3 +134,6 @@ Ceiling.Layer.5
 {"EntityField"{ENT[{"Size"{intArr[9,1]}}{"EntityID"{str[AllSidesObject]}}{"Position"{sngArr[0,2,5]}}{"TexturePath"{str[12\Tileset1642]}}{"Textures"{recArr[[80,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 Ceiling.Layer.6
 {"EntityField"{ENT[{"Size"{intArr[9,1]}}{"EntityID"{str[AllSidesObject]}}{"Position"{sngArr[0,2,6]}}{"TexturePath"{str[12\Tileset1642]}}{"Textures"{recArr[[80,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
+
+Pokéball.Layer.3
+{"NPC"{NPC[{"Scale"{sngArr[0.5,0.5,0.5]}}{"Position"{sngArr[5,-0.25,3]}}{"TextureID"{str[Pokeball]}}{"ID"{int[005000003]}}{"Name"{str[005000003]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\LittleRootTown\RivalRoom.2\005000003]}}{"Rotation"{int[0]}}{"Movement"{str[Pokeball]}}{"MoveRectangles"{recArr[]}}]}}

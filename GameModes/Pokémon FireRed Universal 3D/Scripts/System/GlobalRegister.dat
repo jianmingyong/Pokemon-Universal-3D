@@ -19,8 +19,11 @@ version=2
 :if:<Register.registered(Options.System.Game ID)>=false
 	@Register.register(Options.System.Game ID,int,12)
 :endif
-:if:<Register.registered(Option.System.Auto Save)>=false
-	@Register.register(Option.System.Auto Save,int,1)
+:if:<Register.registered(Options.System.Auto Save)>=false
+	@Register.register(Options.System.Auto Save,int,1)
+:endif
+:if:<Register.registered(Options.System.Skip Intro)>=false
+	@Register.register(Options.System.Skip Intro,int,)
 :endif
 :if:<Register.registered(System.ErrorLog.ErrorID0)>=false
 	@Register.register(System.ErrorLog.ErrorID0,int,1)

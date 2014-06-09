@@ -1,6 +1,7 @@
 version=2
-@Register.change(Option.System.Auto Save,0)
+@Register.change(Options.System.Auto Save,0)
 @Register.change(Options.System.Game ID,12)
+@Register.change(Options.System.Skip Intro,1)
 :if:<Register.value(Options.System.Game ID)>=8
 	:if:not <Register.value(System.Game ID)>=8
 		@Register.change(System.Game ID,8)
