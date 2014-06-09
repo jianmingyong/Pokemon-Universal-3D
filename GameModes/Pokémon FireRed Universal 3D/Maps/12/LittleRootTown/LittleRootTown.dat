@@ -2,6 +2,8 @@ Main:
 {"Level"{LEV[{"Name"{str[LITTLEROOT TOWN]}}{"MusicLoop"{str[P_R_S_E Littleroot Town]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
 {"Actions"{LEV[{"CanTeleport"{bool[0]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[0]}}{"Weather"{int[0]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System/GlobalMain]}}]}}
 
+Floor.Layer.-1
+{"Floor"{ENT[{"Size"{intArr[2,1]}}{"Position"{intArr[18,0,-1]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[0,0,16,16]}}]}}
 Floor.Layer.0
 {"Floor"{ENT[{"Size"{intArr[36,1]}}{"Position"{intArr[0,0,0]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.1
@@ -163,7 +165,7 @@ Tree.Layer.27
 {"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"Size"{intArr[36,1]}}{"Position"{sngArr[0.5,0.5625,27]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[16,16,32,34]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[2,2.125,1]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}{"Steps"{sngArr[2,1,2]}}]}}
 
 Truck.Layer.9
-{"EntityField"{ENT[{"ID"{int[010000010]}}{"Size"{intArr[1,1]}}{"Scale"{sngArr[0.1,0.1,0.1]}}{"RotationXYZ"{sngArr[0.06,4.71238898,0]}}{"EntityID"{str[ModelEntity]}}{"Position"{sngArr[10,-10,10]}}{"TexturePath"{str[Routes]}}{"Textures"{recArr[[96,0,16,16]]}}{"TextureIndex"{intArr[0,0,0,0,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}{"Action"{int[0]}}{"AdditionalValue"{str[models\truck\truck]}}]}}
+{"EntityField"{ENT[{"ID"{int[010000010]}}{"Size"{intArr[1,1]}}{"Scale"{sngArr[1,1,1]}}{"RotationXYZ"{sngArr[0,4.71238898,0]}}{"EntityID"{str[ModelEntity]}}{"Position"{sngArr[10,-10,10]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[Models\Truck\Truck]}}]}}
 
 Prof.BirchLab.Layer.13
 Prof.BirchLab.Side.4
@@ -227,3 +229,9 @@ RivalHouse.Door.Layer.8.Floor.1
 
 NPC.Layer.13
 {"NPC"{NPC[{"Name"{str[020000013]}}{"ID"{int[020000013]}}{"Position"{sngArr[20,0,13]}}{"TextureID"{str[28]}}{"Rotation"{int[2]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\LittleRootTown\020000013]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[18,11,5,5]]}}{"AnimateIdle"{bool[0]}}]}}
+
+OffsetMap.Layer.-1
+{"OffsetMap"{MAP[{"Map"{str[12\Route101\Route101.dat]}}{"Offset"{intArr[0,0,-20]}}]}}
+Warp.Layer.-1
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[18,0,-1]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[32,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route101\Route101.dat,18,0,20,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[19,0,-1]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[32,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route101\Route101.dat,19,0,20,0]}}{"Rotation"{int[0]}}]}}

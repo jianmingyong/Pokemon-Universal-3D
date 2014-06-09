@@ -85,6 +85,7 @@ version=2
 	@NPC.turn(002000005,2)
 	@NPC.move(002000005,1)
 	@NPC.turn(002000005,3)
+	@Entity.remove(008000007)
 	@Register.change(12\LittleRootTown\PlayerRoom.1,4)
 	@Register.change(12\LittleRootTown\PlayerRoom.2\004000001,2)
 	:end

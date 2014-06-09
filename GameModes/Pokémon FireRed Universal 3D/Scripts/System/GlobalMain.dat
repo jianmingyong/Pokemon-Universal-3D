@@ -5,7 +5,7 @@ version=2
 	@Script.start(System\GlobalRegisterValidation)
 	@Script.start(System\GlobalOptions)
 	@Script.start(System\GlobalParallelProcess)
-	:if:<Register.value(Option.System.Auto Save)>=1
+	:if:<Register.value(Options.System.Auto Save)>=1
 		@Player.save
 	:endif
 :else
