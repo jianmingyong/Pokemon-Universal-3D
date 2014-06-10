@@ -32,6 +32,12 @@ version=2
 :if:<Register.registered(12\LittleRootTown\Truck\003000005)>=false
 	@Register.register(12\LittleRootTown\Truck\003000005,int,1)
 :endif
+:if:<Register.registered(12\LittleRootTown\018000001)>=false
+	@Register.register(12\LittleRootTown\018000001,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\019000001)>=false
+	@Register.register(12\LittleRootTown\019000001,int,1)
+:endif
 :if:<Register.registered(12\LittleRootTown\020000008)>=false
 	@Register.register(12\LittleRootTown\020000008,int,1)
 :endif
@@ -41,11 +47,17 @@ version=2
 :if:<Register.registered(12\LittleRootTown\015000008)>=false
 	@Register.register(12\LittleRootTown\015000008,int,1)
 :endif
+:if:<Register.registered(12\LittleRootTown\024000010)>=false
+	@Register.register(12\LittleRootTown\024000010,int,1)
+:endif
 :if:<Register.registered(12\LittleRootTown\023000013)>=false
 	@Register.register(12\LittleRootTown\023000013,int,1)
 :endif
 :if:<Register.registered(12\LittleRootTown\014000017)>=false
 	@Register.register(12\LittleRootTown\014000017,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\022000017)>=false
+	@Register.register(12\LittleRootTown\022000017,int,1)
 :endif
 :if:<Register.registered(12\LittleRootTown)>=false
 	@Register.register(12\LittleRootTown,int,1)
@@ -130,5 +142,29 @@ version=2
 :endif
 :if:<Register.registered(12\LittleRootTown\RivalRoom.2)>=false
 	@Register.register(12\LittleRootTown\RivalRoom.2,int,1)
+:endif
+:if:<Register.registered(12\Route101\015000014)>=false
+	@Register.register(12\Route101\015000014,int,1)
+:endif
+:if:<Register.registered(12\Route101\014000015)>=false
+	@Register.register(12\Route101\014000015,int,1)
+:endif
+:if:<Register.registered(12\Route101\014000016)>=false
+	@Register.register(12\Route101\014000016,int,1)
+:endif
+:if:<Register.registered(12\Route101\014000017)>=false
+	@Register.register(12\Route101\014000017,int,1)
+:endif
+:if:<Register.registered(12\Route101\014000018)>=false
+	@Register.register(12\Route101\014000018,int,1)
+:endif
+:if:<Register.registered(12\Route101\018000018)>=false
+	@Register.register(12\Route101\018000018,int,1)
+:endif
+:if:<Register.registered(12\Route101\019000018)>=false
+	@Register.register(12\Route101\019000018,int,1)
+:endif
+:if:<Register.registered(12\Route101)>=false
+	@Register.register(12\Route101,int,1)
 :endif
 :end

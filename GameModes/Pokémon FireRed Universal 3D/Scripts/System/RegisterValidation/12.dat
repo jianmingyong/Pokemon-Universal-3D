@@ -87,6 +87,22 @@ version=2
 	:endif
 	@Text.log([Register validation result: "12\LittleRootTown\Truck\003000005" cannot be less than 1 and more than 1. Current value: <Register.value(12\LittleRootTown\Truck\003000005)>])
 :endif
+:if:not <Register.value(12\LittleRootTown\018000001)>=1
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\LittleRootTown\018000001" cannot be less than 1 and more than 1. Current value: <Register.value(12\LittleRootTown\018000001)>])
+:endif
+:if:not <Register.value(12\LittleRootTown\019000001)>=1 <or> not <Register.value(12\LittleRootTown\019000001)>=2 <or> not <Register.value(12\LittleRootTown\019000001)>=3
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\LittleRootTown\019000001" cannot be less than 1 and more than 3. Current value: <Register.value(12\LittleRootTown\019000001)>])
+:endif
 :if:not <Register.value(12\LittleRootTown\020000008)>=1
 	:if:<Register.registered(System.ErrorLogInit)>=false
 		@Register.change(System.ErrorLog.ErrorID2,2)
@@ -102,6 +118,14 @@ version=2
 		@Register.register(System.ErrorLogInit)
 	:endif
 	@Text.log([Register validation result: "12\LittleRootTown\015000008" cannot be less than 1 and more than 1. Current value: <Register.value(12\LittleRootTown\015000008)>])
+:endif
+:if:not <Register.value(12\LittleRootTown\024000010)>=1 <or> not <Register.value(12\LittleRootTown\024000010)>=2 <or> not <Register.value(12\LittleRootTown\024000010)>=3
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\LittleRootTown\024000010" cannot be less than 1 and more than 3. Current value: <Register.value(12\LittleRootTown\024000010)>])
 :endif
 :if:not <Register.value(12\LittleRootTown\020000013)>=1
 	:if:<Register.registered(System.ErrorLogInit)>=false
@@ -126,6 +150,14 @@ version=2
 		@Register.register(System.ErrorLogInit)
 	:endif
 	@Text.log([Register validation result: "12\LittleRootTown\014000017" cannot be less than 1 and more than 1. Current value: <Register.value(12\LittleRootTown\014000017)>])
+:endif
+:if:not <Register.value(12\LittleRootTown\022000017)>=1
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\LittleRootTown\022000017" cannot be less than 1 and more than 1. Current value: <Register.value(12\LittleRootTown\022000017)>])
 :endif
 :if:not <Register.value(12\LittleRootTown)>=1 <or> not <Register.value(12\LittleRootTown)>=2
 	:if:<Register.registered(System.ErrorLogInit)>=false
@@ -350,5 +382,69 @@ version=2
 		@Register.register(System.ErrorLogInit)
 	:endif
 	@Text.log([Register validation result: "12\LittleRootTown\RivalRoom.2" cannot be less than 1 and more than 3. Current value: <Register.value(12\LittleRootTown\RivalRoom.2)>])
+:endif
+:if:not <Register.value(12\Route101\015000014)>=1
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\Route101\015000014" cannot be less than 1 and more than 1. Current value: <Register.value(12\Route101\015000014)>])
+:endif
+:if:not <Register.value(12\Route101\014000015)>=1
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\Route101\014000015" cannot be less than 1 and more than 1. Current value: <Register.value(12\Route101\014000015)>])
+:endif
+:if:not <Register.value(12\Route101\014000016)>=1
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\Route101\014000016" cannot be less than 1 and more than 1. Current value: <Register.value(12\Route101\014000016)>])
+:endif
+:if:not <Register.value(12\Route101\014000017)>=1
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\Route101\014000017" cannot be less than 1 and more than 1. Current value: <Register.value(12\Route101\014000017)>])
+:endif
+:if:not <Register.value(12\Route101\014000018)>=1
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\Route101\014000018" cannot be less than 1 and more than 1. Current value: <Register.value(12\Route101\014000018)>])
+:endif
+:if:not <Register.value(12\Route101\018000018)>=1
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\Route101\018000018" cannot be less than 1 and more than 1. Current value: <Register.value(12\Route101\018000018)>])
+:endif
+:if:not <Register.value(12\Route101\019000018)>=1
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\Route101\019000018" cannot be less than 1 and more than 1. Current value: <Register.value(12\Route101\019000018)>])
+:endif
+:if:not <Register.value(12\Route101)>=1 <or> not <Register.value(12\Route101)>=2 <or> not <Register.value(12\Route101)>=3
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\Route101" cannot be less than 1 and more than 3. Current value: <Register.value(12\Route101)>])
 :endif
 :end

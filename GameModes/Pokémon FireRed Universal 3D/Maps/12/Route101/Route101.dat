@@ -162,9 +162,6 @@ Tree.Layer.19
 Sign.Layer.9
 {"EntityField"{ENT[{"EntityID"{str[SignBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[13,0,9]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[64,0,16,16][80,0,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route101\013000009]}}]}}
 
-NPC.Layer.13
-{"NPC"{NPC[{"Name"{str[020000013]}}{"ID"{int[020000013]}}{"Position"{sngArr[20,0,13]}}{"TextureID"{str[[POKEMON|N]1]}}{"Rotation"{int[2]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\LittleRootTown\020000013]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[18,11,5,5]]}}{"AnimateIdle"{bool[0]}}]}}
-
 Grass.Layer.2
 {"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[3,1]}}{"Position"{sngArr[10,-0.25,2]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[3,1]}}{"Position"{sngArr[21,-0.25,2]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}]}}
@@ -201,6 +198,27 @@ Grass.Layer.16
 {"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[10,-0.25,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}]}}
 Grass.Layer.17
 {"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[3,1]}}{"Position"{sngArr[10,-0.25,17]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}]}}
+
+Ledge.Layer.6
+{"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[15,0,6]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[32,0,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}]}}
+Ledge.Layer.7
+{"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[5,1]}}{"Position"{sngArr[10,0,7]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[32,0,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}]}}
+Ledge.Layer.13
+{"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[16,0,13]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[32,0,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}]}}
+
+ActionScript.Layer.15
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[014000015]}}{"Position"{sngArr[14,0,15]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route101\014000015]}}{"Rotation"{int[0]}}]}}
+ActionScript.Layer.16
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[014000016]}}{"Position"{sngArr[14,0,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route101\014000016]}}{"Rotation"{int[0]}}]}}
+ActionScript.Layer.17
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[014000017]}}{"Position"{sngArr[14,0,17]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route101\014000017]}}{"Rotation"{int[0]}}]}}
+ActionScript.Layer.18
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[014000018]}}{"Position"{sngArr[14,0,18]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route101\014000018]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[018000018]}}{"Position"{sngArr[18,0,18]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route101\018000018]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[019000018]}}{"Position"{sngArr[19,0,18]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route101\019000018]}}{"Rotation"{int[0]}}]}}
+
+Pokéball.Layer.14
+{"NPC"{NPC[{"Scale"{sngArr[0.5,0.5,0.5]}}{"Position"{sngArr[15,-0.25,14]}}{"TextureID"{str[Pokeball]}}{"ID"{int[015000014]}}{"Name"{str[015000014]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route101\015000014]}}{"Rotation"{int[0]}}{"Movement"{str[Pokeball]}}{"MoveRectangles"{recArr[]}}]}}
 
 OffsetMap.Layer.20
 {"OffsetMap"{MAP[{"Map"{str[12\LittleRootTown\LittleRootTown.dat]}}{"Offset"{intArr[0,0,20]}}]}}

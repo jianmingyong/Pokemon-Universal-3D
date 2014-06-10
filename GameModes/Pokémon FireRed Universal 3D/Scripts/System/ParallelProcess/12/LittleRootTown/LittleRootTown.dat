@@ -38,10 +38,34 @@ version=2
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown)>=2
-	:if:<Register.value(12\LittleRootTown\PlayerRoom.1)>=3
+	:if:<Register.value(12\LittleRootTown\PlayerRoom.1)>=4
 		@Entity.remove(010000010)
 	:else
 		@Entity.warp(010000010,10,0.35,10)
+	:endif
+	:if:<Register.value(12\LittleRootTown\RivalRoom.1)>=1
+		:if:<NPC.exists(024000010)>=true
+			@NPC.remove(024000010)
+		:endif
+		:if:<NPC.exists(015000002)>=false
+			@NPC.spawn(15,0,2,1,12\LittleRootTown\024000010,LittleGirl,false,2,,015000002,Still)
+		:endif
+	:else
+		:if:<Register.value(12\LittleRootTown\RivalRoom.1)>=2 <and> <Register.value(12\LittleRootTown\RivalRoom.2)>=2
+			@Entity.remove(018000001)
+			@Register.change(12\LittleRootTown\024000010,2)
+			:if:<Register.value(12\LittleRootTown\019000001)>=3
+				@Entity.remove(019000001)
+			:else
+				@Register.change(12\LittleRootTown\019000001,2)
+			:endif
+			:if:<NPC.exists(024000010)>=true
+				@NPC.remove(024000010)
+			:endif
+			:if:<NPC.exists(018000001)>=false
+				@NPC.spawn(18,0,1,1,12\LittleRootTown\024000010,LittleGirl,false,0,,018000001,Still)
+			:endif
+		:endif
 	:endif
 	:end
 :endif
