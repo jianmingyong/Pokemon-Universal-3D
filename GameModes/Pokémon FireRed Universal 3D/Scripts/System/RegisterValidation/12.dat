@@ -383,6 +383,14 @@ version=2
 	:endif
 	@Text.log([Register validation result: "12\LittleRootTown\RivalRoom.2" cannot be less than 1 and more than 3. Current value: <Register.value(12\LittleRootTown\RivalRoom.2)>])
 :endif
+:if:not <Register.value(12\LittleRootTown\ProfBirchLab)>=1 <or> not <Register.value(12\LittleRootTown\ProfBirchLab)>=2
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\LittleRootTown\ProfBirchLab" cannot be less than 1 and more than 2. Current value: <Register.value(12\LittleRootTown\ProfBirchLab)>])
+:endif
 :if:not <Register.value(12\Route101\015000014)>=1
 	:if:<Register.registered(System.ErrorLogInit)>=false
 		@Register.change(System.ErrorLog.ErrorID2,2)

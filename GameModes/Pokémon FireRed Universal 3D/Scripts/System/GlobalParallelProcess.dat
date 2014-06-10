@@ -12,6 +12,9 @@ version=2
 	:if:<Level.filename>=LittleRootTown.RivalRoom.2
 		@Script.start(System\ParallelProcess\12\LittleRootTown\RivalRoom.2\RivalRoom.2)
 	:endif
+	:if:<Level.filename>=LittleRootTown.ProfBirchLab
+		@Script.start(System\ParallelProcess\12\LittleRootTown\ProfBirchLab\ProfBirchLab)
+	:endif
 	:if:<Level.filename>=Route101
 		@Script.start(System\ParallelProcess\12\Route101\Route101)
 	:endif

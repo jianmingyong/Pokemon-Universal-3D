@@ -109,6 +109,7 @@ version=2
 	@Entity.remove(014000018)
 	@Entity.remove(018000018)
 	@Entity.remove(019000018)
+	@NPC.remove(015000014)
 	:end
 :endif
 @Player.save

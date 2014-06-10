@@ -51,7 +51,7 @@ version=2
 			@NPC.spawn(15,0,2,1,12\LittleRootTown\024000010,LittleGirl,false,2,,015000002,Still)
 		:endif
 	:else
-		:if:<Register.value(12\LittleRootTown\RivalRoom.1)>=2 <and> <Register.value(12\LittleRootTown\RivalRoom.2)>=2
+		:if:<Register.value(12\LittleRootTown\RivalRoom.1)>=2 <and> <Register.value(12\LittleRootTown\RivalRoom.2)>=2 <and> not <Register.value(12\LittleRootTown\ProfBirchLab)>=2
 			@Entity.remove(018000001)
 			@Register.change(12\LittleRootTown\024000010,2)
 			:if:<Register.value(12\LittleRootTown\019000001)>=3
@@ -65,6 +65,9 @@ version=2
 			:if:<NPC.exists(018000001)>=false
 				@NPC.spawn(18,0,1,1,12\LittleRootTown\024000010,LittleGirl,false,0,,018000001,Still)
 			:endif
+		:else
+			@Entity.remove(018000001)
+			@Entity.remove(019000001)
 		:endif
 	:endif
 	:end
