@@ -1,68 +1,70 @@
 version=2
 :if:<Register.value(12\LittleRootTown\ProfBirchLab)>=1
-	:if:<NPC.exists(006000003)>=false
-		@NPC.spawn(6,0,3,0,Coming Soon!,62,false,2,,006000003,Still)
-	:endif
-	@Player.turnto(0)
-	@Text.show(PROF. BIRCH: So, <Player.name>.)
-	@Sound.play(Select)
-	@Text.show(I've heard so much about you from~your father.)
-	@Sound.play(Select)
-	@Text.show(I've heard that you don't have your~own POKéMON yet.)
-	@Sound.play(Select)
-	@Text.show(But the way you battled earlier,~you pulled it off with aplomb!)
-	@Sound.play(Select)
-	@Text.show(I guess you have your father's blood~in your veins after all!)
-	@Sound.play(Select)
-	@Text.show(Oh, yes. As thanks for rescuing me,~I'd like you to have the POKéMON you)
-	@Sound.play(Select)
-	@Text.show(used earlier.)
-	@Sound.play(item_found)
-	:if:<Register.value(System.12.Starter)>=252
-		@Text.show(<Player.name> received the TREECKO!)
+	:if:<Register.value(System.12.Starter)>=252 <or> <Register.value(System.12.Starter)>=255 <or> <Register.value(System.12.Starter)>=258
+		:if:<NPC.exists(006000003)>=false
+			@NPC.spawn(6,0,3,0,Coming Soon!,62,false,2,,006000003,Still)
+		:endif
+		@Player.turnto(0)
+		@Text.show(PROF. BIRCH: So, <Player.name>.)
 		@Sound.play(Select)
-		@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that TREECKO?)
+		@Text.show(I've heard so much about you from~your father.)
+		@Sound.play(Select)
+		@Text.show(I've heard that you don't have your~own POKéMON yet.)
+		@Sound.play(Select)
+		@Text.show(But the way you battled earlier,~you pulled it off with aplomb!)
+		@Sound.play(Select)
+		@Text.show(I guess you have your father's blood~in your veins after all!)
+		@Sound.play(Select)
+		@Text.show(Oh, yes. As thanks for rescuing me,~I'd like you to have the POKéMON you)
+		@Sound.play(Select)
+		@Text.show(used earlier.)
+		@Sound.play(item_found)
+		:if:<Register.value(System.12.Starter)>=252
+			@Text.show(<Player.name> received the TREECKO!)
+			@Sound.play(Select)
+			@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that TREECKO?)
+			@Options.show(YES,NO)
+			:when:YES
+				@Pokemon.rename(0)
+			:when:NO
+			:endwhen
+		:endif
+		:if:<Register.value(System.12.Starter)>=255
+			@Text.show(<Player.name> received the TORCHIC!)
+			@Sound.play(Select)
+			@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that TORCHIC?)
+			@Options.show(YES,NO)
+			:when:YES
+				@Pokemon.rename(0)
+			:when:NO
+			:endwhen
+		:endif
+		:if:<Register.value(System.12.Starter)>=258
+			@Text.show(<Player.name> received the MUDKIP!)
+			@Sound.play(Select)
+			@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that MUDKIP?)
+			@Options.show(YES,NO)
+			:when:YES
+				@Pokemon.rename(0)
+			:when:NO
+			:endwhen
+		:endif
+		@Text.show(PROF. BIRCH: If you work at POKéMON~and gain experience, I think you'll make)
+		@Sound.play(Select)
+		@Text.show(an extremely good TRAINER.)
+		@Sound.play(Select)
+		@Text.show(My kid, <Rival.name>, is also studying~POKéMON while helping me out.)
+		@Sound.play(Select)
+		@Text.show(<Player.name>, don't you think it might be~a good idea to go see <Rival.name>?)
 		@Options.show(YES,NO)
 		:when:YES
-			@Pokemon.rename(0)
+			@Text.show(PROF. BIRCH: Great!~<Rival.name> should be happy, too.)
 		:when:NO
+			@Text.show(PROF. BIRCH: Oh, don't be that way.~You should go meet my kid.)
 		:endwhen
+		@Text.show(Get <Rival.name> to teach you what it~means to be a TRAINER.)
+		@Register.change(12\LittleRootTown\ProfBirchLab,2)
 	:endif
-	:if:<Register.value(System.12.Starter)>=255
-		@Text.show(<Player.name> received the TORCHIC!)
-		@Sound.play(Select)
-		@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that TORCHIC?)
-		@Options.show(YES,NO)
-		:when:YES
-			@Pokemon.rename(0)
-		:when:NO
-		:endwhen
-	:endif
-	:if:<Register.value(System.12.Starter)>=258
-		@Text.show(<Player.name> received the MUDKIP!)
-		@Sound.play(Select)
-		@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that MUDKIP?)
-		@Options.show(YES,NO)
-		:when:YES
-			@Pokemon.rename(0)
-		:when:NO
-		:endwhen
-	:endif
-	@Text.show(PROF. BIRCH: If you work at POKéMON~and gain experience, I think you'll make)
-	@Sound.play(Select)
-	@Text.show(an extremely good TRAINER.)
-	@Sound.play(Select)
-	@Text.show(My kid, <Rival.name>, is also studying~POKéMON while helping me out.)
-	@Sound.play(Select)
-	@Text.show(<Player.name>, don't you think it might be~a good idea to go see <Rival.name>?)
-	@Options.show(YES,NO)
-	:when:YES
-		@Text.show(PROF. BIRCH: Great!~<Rival.name> should be happy, too.)
-	:when:NO
-		@Text.show(PROF. BIRCH: Oh, don't be that way.~You should go meet my kid.)
-	:endwhen
-	@Text.show(Get <Rival.name> to teach you what it~means to be a TRAINER.)
-	@Register.change(12\LittleRootTown\ProfBirchLab,2)
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\ProfBirchLab)>=2
