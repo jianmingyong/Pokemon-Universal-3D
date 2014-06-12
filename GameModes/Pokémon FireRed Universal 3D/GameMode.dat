@@ -13,7 +13,7 @@ StartMap|System\GlobalIntro.dat
 StartPosition|0,0,0
 StartRotation|0
 StartLocationName|Intro
-StartDialogue|Welcome!~Enjoy the music, it will be used in*the future.|I will skip this intro.~You are recommended not to use*mouse for the in-game intro.|~Press Space Bar/Enter to start
+StartDialogue|Welcome to~Pokémon FireRed Universal 3D!|I will skip this intro.~You are recommended not to use*mouse for the in-game intro.|~Press Space Bar/Enter to start
 StartColor|127,127,255
 PokemonAppear|0
 IntroMusic|PMD_EOT_D_S Dialga's Fight To The Finish!
