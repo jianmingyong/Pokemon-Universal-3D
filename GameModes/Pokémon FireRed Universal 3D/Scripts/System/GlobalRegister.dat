@@ -26,7 +26,10 @@ version=2
 	@Register.register(Options.System.Auto Save,int,1)
 :endif
 :if:<Register.registered(Options.System.Skip Intro)>=false
-	@Register.register(Options.System.Skip Intro,int,)
+	@Register.register(Options.System.Skip Intro,int,0)
+:endif
+:if:<Register.registered(Options.System.Test Mode)>=false
+	@Register.register(Options.System.Test Mode,int,0)
 :endif
 :if:<Register.registered(System.ErrorLog.ErrorID0)>=false
 	@Register.register(System.ErrorLog.ErrorID0,int,1)
