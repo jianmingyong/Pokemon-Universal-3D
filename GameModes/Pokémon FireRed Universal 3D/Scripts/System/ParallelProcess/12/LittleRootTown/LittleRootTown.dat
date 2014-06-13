@@ -1,7 +1,9 @@
 version=2
 :if:<Register.value(12\LittleRootTown)>=1
-	:if:not <Entity.position(010000010)>=10,0.35,10
-		@Entity.warp(010000010,10,0.35,10)
+	:if:<Register.value(12\LittleRootTown\PlayerRoom.1)>=4
+		@Entity.remove(010000010)
+	:else
+		@Entity.warp(010000010,10,-0.5,10)
 	:endif
 	:if:<NPC.exists(013000008)>=false
 		@NPC.spawn(13,0,8,0,,3,false,2,Mom,013000008,Still)
@@ -41,7 +43,7 @@ version=2
 	:if:<Register.value(12\LittleRootTown\PlayerRoom.1)>=4
 		@Entity.remove(010000010)
 	:else
-		@Entity.warp(010000010,10,0.35,10)
+		@Entity.warp(010000010,10,-0.5,10)
 	:endif
 	:if:<Register.value(12\LittleRootTown\RivalRoom.1)>=1
 		:if:<NPC.exists(024000010)>=true

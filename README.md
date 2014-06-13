@@ -12,46 +12,36 @@ Table of contents:<br />
 ==================================================
 1.	License
 ==================================================
-Pokémon FireRed Universal 3D v0.0.1.exe
+Pokémon FireRed Universal 3D v0.48.0.0.0.1.exe
 Copyright © 2014 jianmingyong
 
-This program is free software: you can redistribute it and/or modify 
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 ==================================================
 2.	About
 ==================================================
-Pokémon FireRed Universal 3D is a gamemode. If you like the Pokémon Games, you will enjoy this even more.
+Pokémon FireRed Universal 3D is a GameMode to the Pokémon 3D game.
 
-All the resources that are available in this installer are made by jianmingyong unless otherwise stated. I am not allowed to add other’s content pack in this installer unless permission is granted from the owner.
+All the resources that are available in this installer are made by me unless otherwise stated. I am not allowed to add other’s content pack in this installer unless permission is granted from the owner.
 
 ==================================================
 3.	Contacting
 ==================================================
-For any bugs and crash due to my content pack or GameMode, please report those bugs (with crash logs if you have it) by searching Pokémon FireRed Universal 3D at http://pokemon3d.net/forum/resources/ 
+The easiest way to contact me privately is by PM. Please make the title as sensible as possible for example: “[v0.48.0.0.0.1] Pokémon FireRed Universal 3D suggestions.”
 
-If you post it at the WORNG SECTION, for example “Community Support” section, the support for those bugs you have reported will be limited and other moderator or community who do not know such content pack might tell you to disable or delete the content pack / GameMode instead. I want to make your life easier as well as the moderator so don’t post it at wrong section please.
-Note: Although this content pack is well known, you are advice to post it somewhere relevant to prevent so many same question being repeated making moderator have to merge or delete it.
+http://pokemon3d.net/forum/conversations/add?to=jianmingyong
+
+For any bugs and crash due to my content pack or GameMode, please report those bugs (with crash logs if you have it) to http://pokemon3d.net/forum/threads/6297/ 
 
 Reporting installer crashes
-For any bugs or crash on my installer, please report those bugs (with crash logs if you have it) to me at http://pokemon3d.net/forum/conversations/add?to=jianmingyong
+For any bugs or crash on my installer, please report those bugs (with crash logs if you have it) to me at http://pokemon3d.net/forum/threads/6297/ 
 
 ==================================================
 4.	Supported platforms
 ==================================================
 Both the game and server are intended to be run on the Windows operating system. However, we are planning on porting to Linux and possibly Mac OSX.
 
-Hence Lost Silver is only meant for Windows operating system.
+Hence Pokémon FireRed Universal 3D is only meant for Windows operating system.
 
 ==================================================
 5.	Installing and running Pokémon 3D
@@ -59,48 +49,49 @@ Hence Lost Silver is only meant for Windows operating system.
 Installing the game is straight forward. Go to http://pokemon3d.net/downloads/ and download the launcher to install the game.
 
 To run the game, use the launcher to start the game.
-* DO NOT GOTO THE Pokemon FOLDER AND OPEN Pokemon.exe use the launcher located outside the Pokemon folder.
+* DO NOT GOTO THE Pokemon FOLDER AND OPEN Pokemon.exe, use the launcher located outside the Pokemon folder.
 
 ==================================================
 5.1.	Installing prerequisites
 ==================================================
-1.	Pokémon 3D Game (Version 0.46.2 and above)
+1.	Pokémon 3D Game (Version 0.48.0 and above)
 
 ==================================================
 5.2.	Installing precautions
 ==================================================
-To prevent the system from any crashing if anything is screwed up, an auto backup will be make before the installer start extracting. Please enable the system restore function for safe keeping.
-
-I am not responsible for any damage if you obtained the same file though other third party sites that are not approved by me. Please get the file from http://pokemon3d.net/forum/resources/ by using the link found there.
+I am not responsible for any damage if you obtained the same file though other third party sites that I do not support it.
 
 ==================================================
 6.	Installing Pokémon FireRed Universal 3D
 ==================================================
 To install Pokémon FireRed Universal 3D, follow the installer wizard and follow the steps below after the installer wizard is done.
 
-1.	Open Pokémon 3D Launcher
-2.	Update where necessary.
-3.	Press Start Game.
-4.	Press the Poké Ball icon on the top right corner.
-5.	Activate the Pokémon FireRed Universal 3D Pack (with the priority that is above everything.)
-6.	Apply and restart the game and all the font will be fully changed.
+1.	Open Pokémon 3D Game.
+2.	Press the Pokéball button on the top right.
+3.	Check that “Pokémon FireRed Universal 3D” is activated and is on top of any other font pack. 
+4.	Apply it if they are not activated by default.
+5.	Restart the game to take effect.
 
 To remove Pokémon FireRed Universal 3D, go to “Control Panel => Programs and Features OR Add or Remove Program” and search for “Pokémon FireRed Universal 3D” and press uninstall.
 
 ==================================================
 7.	Credits
 ==================================================
-Pokémon FireRed Universal 3D  is compiled and edited by jianmingyong.
-Pokémon FireRed Universal 3D music is compiled and edited by jianmingyong.
+Pokémon FireRed Universal 3D is created, compiled and edited by jianmingyong.
 PMD_EOT_D_S Music Rip From: Martin Zanter
 P_FR_LR Music Rip From: Ra2rd93
 P_G_S_C Music Rip From: PocketMonstersMusic
+P_R_S_E Music Rip From: PocketMonstersMusic
+Sound Effect Rip From: Pokémon Essentials v13 2012-12-02 (Flameguru, Poccil (Peter O.), Maruno)
+Tileset Rip using Advance Map.
+3D Models by: AgentPaperCraft
 
-Pokémon Copyright © 1995 - 2013 Nintendo/Creatures Inc./GAME FREAK Inc. 
-Pokémon And All Respective Names are Trademarks of Nintendo 1996 - 2013 
-Pokémon 3D is not affiliated with Nintendo, Creatures Inc. and GAME FREAK Inc. 
-Pokémon 3D is developed by Kolben Games 
+This game is based on Pokémon FireRed Universal Engine (Pokémon Essentials v13 2012-12-02), Pokémon 3D Engine.
+
+© 2014 Pokémon. © 1995-2014 Nintendo/Creatures, Inc./GAME FREAK inc. Pokémon and Pokémon character names are trademarks of Nintendo.
+
+Pokémon 3D neither owns nor claims to own any portion of the Pokémon franchise. Pokémon 3D is an unaffiliated, fan-created game based off of products owned by the companies listed above. All custom artwork and coding for Pokémon 3D is credited to their creators, but intellectual property are owned by the above as well.
 
 Thank you for downloading and using Pokémon FireRed Universal 3D.
 
-// The Dialga team a.k.a jianmingyong team
+// The Dialga team

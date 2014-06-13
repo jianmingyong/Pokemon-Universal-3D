@@ -165,10 +165,14 @@ Tree.Layer.27
 {"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"Size"{intArr[36,1]}}{"Position"{sngArr[0.5,0.5,27]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[48,16,112,128]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[2,2,1]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}{"Steps"{sngArr[2,1,2]}}]}}
 
 Truck.Layer.9
-{"EntityField"{ENT[{"ID"{int[010000010]}}{"Size"{intArr[1,1]}}{"Scale"{sngArr[1,1,1]}}{"RotationXYZ"{sngArr[0,4.71238898,0]}}{"EntityID"{str[ModelEntity]}}{"Position"{sngArr[10,-10,10]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[Models\LittleRootTown\Truck\Truck]}}]}}
+{"EntityField"{ENT[{"ID"{int[010000010]}}{"Size"{intArr[1,1]}}{"Scale"{sngArr[1,1,1]}}{"RotationXYZ"{sngArr[0,0,0]}}{"EntityID"{str[ModelEntity]}}{"Position"{sngArr[10,-10,10]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[Models\LittleRootTown\Truck\Truck]}}]}}
 
 Prof.BirchLab.Layer.13
 {"EntityField"{ENT[{"EntityID"{str[ModelEntity]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[13.95,-0.50,15]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[Models\LittleRootTown\Building.3\Building.3]}}]}}
+Prof.BirchLab_Invisible.wall
+{"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[7,3]}}{"Position"{sngArr[11,0,13]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[11,0,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[2,1]}}{"Position"{sngArr[16,0,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 Prof.BirchLab.Door.Layer.16.Floor.1
 {"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[15,0,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,6,0.1,12,0]}}{"Rotation"{int[0]}}]}}
 
