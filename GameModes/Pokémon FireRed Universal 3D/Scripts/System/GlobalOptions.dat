@@ -1,31 +1,57 @@
 version=2
-@Register.change(Options.System.Auto Save,0)
 @Register.change(Options.System.Game ID,12)
+@Register.change(Options.System.Auto Save,0)
 @Register.change(Options.System.Skip Intro,1)
+@Register.change(Options.System.Skip Mom Story,0)
+@Register.change(Options.System.Skip Rival Story,0)
 @Register.change(Options.System.Test Mode,0)
-:if:<Register.value(Options.System.Test Mode)>=1
-	@Player.warp(test.dat,15,0,15,0)
-	:end
-:endif
 :if:<Register.value(Options.System.Game ID)>=8
-	:if:not <Register.value(System.Game ID)>=8
+	:if:<not><Register.value(System.Game ID)>=8
 		@Register.change(System.Game ID,8)
 		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
-		:end
 	:endif
 :endif
 :if:<Register.value(Options.System.Game ID)>=12
-	:if:not <Register.value(System.Game ID)>=12
+	:if:<not><Register.value(System.Game ID)>=12
 		@Register.change(System.Game ID,12)
 		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
-		:end
 	:endif
 :endif
 :if:<Register.value(Options.System.Game ID)>=13
-	:if:not <Register.value(System.Game ID)>=13
+	:if:<not><Register.value(System.Game ID)>=13
 		@Register.change(System.Game ID,13)
 		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
-		:end
+	:endif
+:endif
+:if:<Register.value(Options.System.Auto Save)>=0
+	:if:<not><Register.value(System.Auto Save)>=0
+		@Register.change(System.Auto Save,0)
+	:endif
+:endif
+:if:<Register.value(Options.System.Auto Save)>=1
+	:if:<not><Register.value(System.Auto Save)>=1
+		@Register.change(System.Auto Save,1)
+	:endif
+:endif
+:if:<Register.value(Options.System.Skip Intro)>=0
+	:if:<not><Register.value(System.Skip Intro)>=0
+		@Register.change(System.Skip Intro,0)
+	:endif
+:endif
+:if:<Register.value(Options.System.Skip Intro)>=1
+	:if:<not><Register.value(System.Skip Intro)>=1
+		@Register.change(System.Skip Intro,1)
+	:endif
+:endif
+:if:<Register.value(Options.System.Test Mode)>=0
+	:if:<not><Register.value(System.Test Mode)>=0
+		@Register.change(System.Test Mode,0)
+	:endif
+:endif
+:if:<Register.value(Options.System.Test Mode)>=1
+	:if:<not><Register.value(System.Test Mode)>=1
+		@Register.change(System.Test Mode,1)
+		@Player.warp(test.dat,15,0,15,0)
 	:endif
 :endif
 :end

@@ -1,0 +1,12 @@
+﻿version=2
+:if:<Register.value(12\LittleRootTown\ProfBirchLab\006000003)>=1
+	@Sound.play(Select)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\LittleRootTown\ProfBirchLab\006000003.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

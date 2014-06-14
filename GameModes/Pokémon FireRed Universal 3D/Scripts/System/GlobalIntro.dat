@@ -4,7 +4,7 @@ version=2
 @Script.start(System\Intro\Intro)
 :if:<Register.value(System.Game ID)>=8
 	:if:<Register.value(System\Intro\8\Intro)>=1
-		:if:<Register.value(Options.System.Skip Intro)>=0
+		:if:<Register.value(System.Skip Intro)>=0
 			@Script.start(System\Intro\8\Intro)
 		:else
 		:endif
@@ -13,7 +13,7 @@ version=2
 :endif
 :if:<Register.value(System.Game ID)>=12
 	:if:<Register.value(System\Intro\12\Intro)>=1
-		:if:<Register.value(Options.System.Skip Intro)>=0
+		:if:<Register.value(System.Skip Intro)>=0
 			@Script.start(System\Intro\12\Intro)
 		:else
 			@Player.warp(12\LittleRootTown\LittleRootTown.Truck.dat,2,0,3,0)
@@ -23,7 +23,7 @@ version=2
 :endif
 :if:<Register.value(System.Game ID)>=13
 	:if:<Register.value(System\Intro\13\Intro)>=1
-		:if:<Register.value(Options.System.Skip Intro)>=0
+		:if:<Register.value(System.Skip Intro)>=0
 			@Script.start(System\Intro\13\Intro)
 		:else
 		:endif

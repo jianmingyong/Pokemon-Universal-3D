@@ -4,7 +4,7 @@ version=2
 	@Script.start(System\GlobalRegisterValidation)
 	@Script.start(System\GlobalOptions)
 	@Script.start(System\GlobalParallelProcess)
-	:if:<Register.value(Options.System.Auto Save)>=1
+	:if:<Register.value(System.Auto Save)>=1
 		@Player.save
 	:endif
 :else
@@ -12,10 +12,10 @@ version=2
 	@Script.start(System\GlobalRegisterValidation)
 	@Script.start(System\GlobalOptions)
 	@Script.start(System\GlobalParallelProcess)
-	:if:<Register.value(Options.System.Auto Save)>=1
+	:if:<Register.value(System.Auto Save)>=1
 		@Player.save
 	:endif
-	:if:<not> <Register.value(System.Game Version)>=0.0.1
+	:if:<not><Register.value(System.Game Version)>=0.0.1
 		@Register.change(System.ErrorLog.ErrorID1,2)
 		@Script.start(System\GlobalErrorLog)
 		@Player.warp(System\GlobalValidation.dat,0,0,0,0)
