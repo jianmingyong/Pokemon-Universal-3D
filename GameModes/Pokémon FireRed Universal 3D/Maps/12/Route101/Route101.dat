@@ -2,6 +2,8 @@ Main:
 {"Level"{LEV[{"Name"{str[ROUTE 101]}}{"MusicLoop"{str[P_R_S_E Route 101]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
 {"Actions"{LEV[{"CanTeleport"{bool[0]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[0]}}{"Weather"{int[0]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System/GlobalMain]}}]}}
 
+Floor.Layer.-1
+{"Floor"{ENT[{"Size"{intArr[4,1]}}{"Position"{intArr[16,0,-1]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[0,0,16,16]}}]}}
 Floor.Layer.0
 {"Floor"{ENT[{"Size"{intArr[16,1]}}{"Position"{intArr[0,0,0]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[16,0,0]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[0,80,16,16]}}]}}
@@ -219,6 +221,14 @@ ActionScript.Layer.18
 
 Pokéball.Layer.14
 {"NPC"{NPC[{"Scale"{sngArr[0.5,0.5,0.5]}}{"Position"{sngArr[15,-0.25,14]}}{"TextureID"{str[Pokeball]}}{"ID"{int[015000014]}}{"Name"{str[015000014]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route101\015000014]}}{"Rotation"{int[0]}}{"Movement"{str[Pokeball]}}{"MoveRectangles"{recArr[]}}]}}
+
+OffsetMap.Layer.-1
+{"OffsetMap"{MAP[{"Map"{str[12\OldaleTown\OldaleTown.dat]}}{"Offset"{intArr[8,0,-20]}}]}}
+Warp.Layer.-1
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[16,0,-1]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[16,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\OldaleTown\OldaleTown.dat,8,0,20,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[17,0,-1]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[16,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\OldaleTown\OldaleTown.dat,9,0,20,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[18,0,-1]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[16,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\OldaleTown\OldaleTown.dat,10,0,20,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[19,0,-1]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[32,96,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\OldaleTown\OldaleTown.dat,11,0,20,0]}}{"Rotation"{int[0]}}]}}
 
 OffsetMap.Layer.20
 {"OffsetMap"{MAP[{"Map"{str[12\LittleRootTown\LittleRootTown.dat]}}{"Offset"{intArr[0,0,20]}}]}}
