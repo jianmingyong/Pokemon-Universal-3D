@@ -6,3 +6,8 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+cacheIndex.txt
+output-info.ini
+*.exe
+Music.mp3
