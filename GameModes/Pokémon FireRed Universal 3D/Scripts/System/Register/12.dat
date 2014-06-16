@@ -170,4 +170,7 @@ version=2
 :if:<Register.registered(12\Route101)>=false
 	@Register.register(12\Route101,int,1)
 :endif
+:if:<Register.registered(12\OldaleTown\011000009)>=false
+	@Register.register(12\OldaleTown\011000009,int,1)
+:endif
 :end

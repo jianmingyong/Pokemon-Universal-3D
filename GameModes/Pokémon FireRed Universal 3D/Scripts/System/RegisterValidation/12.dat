@@ -1022,4 +1022,21 @@ version=2
 		:endif
 	:endif
 :endif
+:if:<Register.registered(12\OldaleTown\011000009)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\OldaleTown\011000009" does not exist.])
+:else
+	:if:<not><Register.value(12\OldaleTown\011000009)>=1
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "12\OldaleTown\011000009" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\011000009)>])
+	:endif
+:endif
 :end

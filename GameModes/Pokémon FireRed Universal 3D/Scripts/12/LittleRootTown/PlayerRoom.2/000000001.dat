@@ -5,6 +5,7 @@ version=2
 	@Text.show(<Player.name> booted up the PC.)
 	@Sound.play(Select)
 	@Text.show(What would you like to do?)
+	@Options.setcancelindex(3)
 	@Options.show(ITEM STORAGE,MAILBOX,DECORATION,TURN OFF)
 	:when:ITEM STORAGE
 		@Sound.play(Select)
@@ -29,6 +30,7 @@ version=2
 	@Text.show(<Player.name> booted up the PC.)
 	@Sound.play(Select)
 	@Text.show(What would you like to do?)
+	@Options.setcancelindex(3)
 	@Options.show(ITEM STORAGE,MAILBOX,DECORATION,TURN OFF)
 	:when:ITEM STORAGE
 		@Sound.play(Select)
