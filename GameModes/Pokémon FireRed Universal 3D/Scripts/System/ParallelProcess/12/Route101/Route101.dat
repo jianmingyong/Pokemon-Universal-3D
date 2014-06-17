@@ -109,7 +109,9 @@ version=2
 	@Entity.remove(014000018)
 	@Entity.remove(018000018)
 	@Entity.remove(019000018)
-	@NPC.remove(015000014)
+	:if:<NPC.exists(015000014)>=true
+		@NPC.remove(015000014)
+	:endif
 	:end
 :endif
 @Player.save

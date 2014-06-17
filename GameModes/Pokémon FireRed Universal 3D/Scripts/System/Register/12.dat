@@ -146,6 +146,15 @@ version=2
 :if:<Register.registered(12\LittleRootTown\ProfBirchLab)>=false
 	@Register.register(12\LittleRootTown\ProfBirchLab,int,1)
 :endif
+:if:<Register.registered(12\Route101\024000008)>=false
+	@Register.register(12\Route101\024000008,int,1)
+:endif
+:if:<Register.registered(12\Route101\013000009)>=false
+	@Register.register(12\Route101\013000009,int,1)
+:endif
+:if:<Register.registered(12\Route101\010000013)>=false
+	@Register.register(12\Route101\010000013,int,1)
+:endif
 :if:<Register.registered(12\Route101\015000014)>=false
 	@Register.register(12\Route101\015000014,int,1)
 :endif
