@@ -1,17 +1,17 @@
 ;aiu;
 
 [Pokémon FireRed Universal 3D]
-ProductVersion=0.0.2.0
+ProductVersion=0.0.1.0
 Category=GameModes
-UpdatedApplications=Pokémon FireRed Universal 3D[0.0.0.0-0.0.2)
+UpdatedApplications=Pokémon FireRed Universal 3D[0.0.0.0-0.0.1)
 Name=Pokémon FireRed Universal 3D v0.49.1.0.0.1 Beta 5
-URL=https://raw.githubusercontent.com/jianmingyong/Pokemon-FireRed-Universal-3D/master/Pok%C3%A9mon%20FireRed%20Universal%203D-Installer-SetupFiles/Pok%C3%A9mon%20FireRed%20Universal%203D%20v0.0.2.exe
-Size=1472684
+URL=https://raw.githubusercontent.com/jianmingyong/Pokemon-FireRed-Universal-3D/master/Pok%C3%A9mon%20FireRed%20Universal%203D-Installer-SetupFiles/Pok%C3%A9mon%20FireRed%20Universal%203D%20v0.0.1.exe
+Size=1472682
 ReleaseDate=18/06/2014
-MD5=e4217200ed51a77284ad16ced721068a
-ServerFileName=Pokémon FireRed Universal 3D v0.0.2.exe
+MD5=421753ab7ae43f2adeee05479de22af2
+ServerFileName=Pokémon FireRed Universal 3D v0.0.1.exe
 Flags=Critical|Sys64|NoCache|NotSelected
 RegistryKey=HKCU\Software\jianmingyong\Pokémon FireRed Universal 3D\Version
-Version=0.0.2
+Version=0.0.1
 Enhancement=New Maps.
 BugFix=Tons of bug fixed.
