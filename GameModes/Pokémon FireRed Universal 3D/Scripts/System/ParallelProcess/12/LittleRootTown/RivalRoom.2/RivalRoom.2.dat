@@ -11,6 +11,7 @@ version=2
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\RivalRoom.2)>=3
+	@NPC.remove(005000003)
 	:end
 :endif
 @Player.save

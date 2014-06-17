@@ -2,7 +2,7 @@ version=2
 :if:<Register.value(12\LittleRootTown\ProfBirchLab)>=1
 	:if:<Register.value(System.12.Starter)>=252 <or> <Register.value(System.12.Starter)>=255 <or> <Register.value(System.12.Starter)>=258
 		:if:<NPC.exists(006000003)>=false
-			@NPC.spawn(6,0,3,0,Coming Soon!,62,false,2,,006000003,Still)
+			@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,62,false,2,,006000003,Still)
 		:endif
 		@Player.turnto(0)
 		@Text.show(PROF. BIRCH: So, <Player.name>.)
@@ -23,6 +23,7 @@ version=2
 			@Text.show(<Player.name> received the TREECKO!)
 			@Sound.play(Select)
 			@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that TREECKO?)
+			@Options.setcancelindex(1)
 			@Options.show(YES,NO)
 			:when:YES
 				@Pokemon.rename(0)
@@ -33,6 +34,7 @@ version=2
 			@Text.show(<Player.name> received the TORCHIC!)
 			@Sound.play(Select)
 			@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that TORCHIC?)
+			@Options.setcancelindex(1)
 			@Options.show(YES,NO)
 			:when:YES
 				@Pokemon.rename(0)
@@ -43,6 +45,7 @@ version=2
 			@Text.show(<Player.name> received the MUDKIP!)
 			@Sound.play(Select)
 			@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that MUDKIP?)
+			@Options.setcancelindex(1)
 			@Options.show(YES,NO)
 			:when:YES
 				@Pokemon.rename(0)
@@ -64,12 +67,15 @@ version=2
 		:endwhen
 		@Text.show(Get <Rival.name> to teach you what it~means to be a TRAINER.)
 		@Register.change(12\LittleRootTown\ProfBirchLab,2)
+		@Register.change(12\LittleRootTown\RivalRoom.1\008000006,2)
+		@Register.change(12\LittleRootTown\RivalRoom.2,3)
+		@Register.change(12\LittleRootTown\PlayerRoom.1\002000005,2)
 	:endif
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\ProfBirchLab)>=2
 	:if:<NPC.exists(006000003)>=false
-		@NPC.spawn(6,0,3,0,Coming Soon!,62,false,2,,006000003,Still)
+		@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,62,false,2,,006000003,Still)
 	:endif
 	:end
 :endif

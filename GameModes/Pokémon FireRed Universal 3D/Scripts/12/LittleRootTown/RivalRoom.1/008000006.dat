@@ -9,6 +9,15 @@
 	@Script.start(System\GlobalMain)
 	:end
 :endif
+:if:<Register.value(12\LittleRootTown\RivalRoom.1\008000006)>=2
+	@Sound.play(Select)
+	@Text.show(Oh, <Rival.name> went out to ROUTE 103~just a little while ago.)
+	@Sound.play(Select)
+	@Text.show(Like father, like child.~<Rival.name> can't stay quietly at home.)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+
 @Player.save
 @Register.change(System.ErrorLog.ErrorID0,2)
 @Register.change(System.ActionScript,12\LittleRootTown\RivalRoom.1\008000006.dat)

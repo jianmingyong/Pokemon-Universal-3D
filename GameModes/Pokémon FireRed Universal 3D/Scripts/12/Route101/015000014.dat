@@ -6,9 +6,10 @@
 	:when:TREECKO
 		@Screen.showPokemon(252,0,1)
 		@Text.show(Do you choose this POKéMON?)
+		@Options.setcancelindex(1)
 		@Options.show(YES,NO)
 		:when:YES
-			@Pokemon.add(252,5)
+			@Pokemon.add(252,5,met at Lv 5,5)
 			@Battle.setvar(canrun,false)
 			@Battle.setvar(cancatch,false)
 			@Battle.wild(263,2)
@@ -35,8 +36,9 @@
 			@Script.start(12\Route101\015000014)
 		:endwhen
 	:when:TORCHIC
-		@Screen.showPokemon(255,0,1)
+		@Screen.showPokemon(255,0,1,met at Lv 5,5)
 		@Text.show(Do you choose this POKéMON?)
+		@Options.setcancelindex(1)
 		@Options.show(YES,NO)
 		:when:YES
 			@Pokemon.add(255,5)
@@ -68,9 +70,10 @@
 	:when:MUDKIP
 		@Screen.showPokemon(258,0,1)
 		@Text.show(Do you choose this POKéMON?)
+		@Options.setcancelindex(1)
 		@Options.show(YES,NO)
 		:when:YES
-			@Pokemon.add(258,5)
+			@Pokemon.add(258,5,met at Lv 5,5)
 			@Battle.setvar(canrun,false)
 			@Battle.setvar(cancatch,false)
 			@Battle.wild(263,2)

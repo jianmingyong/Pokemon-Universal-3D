@@ -1,6 +1,11 @@
 ﻿version=2
 :if:<Register.value(12\LittleRootTown\ProfBirchLab\006000003)>=1
 	@Sound.play(Select)
+	@Text.show(PROF. BIRCH: <Rival.name>?~Gone home, I think.)
+	@Sound.play(Select)
+	@Text.show(Or maybe that kid's scrabbling around~in tall grass again somewhere...)
+	@Sound.play(Select)
+	@Text.show(If you or your POKéMON get tired,~you should get some rest at home.)
 	@Script.start(System\GlobalMain)
 	:end
 :endif
