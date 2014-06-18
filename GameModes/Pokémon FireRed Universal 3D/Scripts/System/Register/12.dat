@@ -182,4 +182,19 @@ version=2
 :if:<Register.registered(12\OldaleTown\011000009)>=false
 	@Register.register(12\OldaleTown\011000009,int,1)
 :endif
+:if:<Register.registered(12\OldaleTown\007000016)>=false
+	@Register.register(12\OldaleTown\007000016,int,1)
+:endif
+:if:<Register.registered(12\OldaleTown\008000016)>=false
+	@Register.register(12\OldaleTown\008000016,int,1)
+:endif
+:if:<Register.registered(12\OldaleTown\PokeCenter\007000002)>=false
+	@Register.register(12\OldaleTown\PokeCenter\007000002,int,1)
+:endif
+:if:<Register.registered(12\OldaleTown\PokeCenter\001000005)>=false
+	@Register.register(12\OldaleTown\PokeCenter\001000005,int,1)
+:endif
+:if:<Register.registered(12\OldaleTown\PokeMart\000000005)>=false
+	@Register.register(12\OldaleTown\PokeMart\000000005,int,1)
+:endif
 :end

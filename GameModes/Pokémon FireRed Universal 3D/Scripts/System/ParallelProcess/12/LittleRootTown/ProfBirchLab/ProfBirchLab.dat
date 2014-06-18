@@ -59,6 +59,7 @@ version=2
 		@Text.show(My kid, <Rival.name>, is also studying~POKéMON while helping me out.)
 		@Sound.play(Select)
 		@Text.show(<Player.name>, don't you think it might be~a good idea to go see <Rival.name>?)
+		@Options.setcancelindex(1)
 		@Options.show(YES,NO)
 		:when:YES
 			@Text.show(PROF. BIRCH: Great!~<Rival.name> should be happy, too.)
