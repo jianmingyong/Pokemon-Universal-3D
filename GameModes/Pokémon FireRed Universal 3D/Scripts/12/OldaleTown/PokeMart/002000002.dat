@@ -1,0 +1,46 @@
+version=2
+:if:<Register.value(12\OldaleTown\PokeMart\002000002)>=1
+	@Sound.play(Select)
+	@Text.show(Welcome!)
+	@Sound.play(Select)
+	@Text.show(How may I serve you?)
+	@Options.show(BUY,SELL,QUIT)
+	:when:BUY
+		@Sound.play(Select)
+		@Screen.trade({18|9|13|12},1,0)
+	:when:SELL
+		@Sound.play(Select)
+		@Screen.trade({18|9|13|12},0,1)
+	:when:QUIT
+		@Sound.play(Select)
+		@Text.show(Please come again!)
+	:endwhen
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+:if:<Register.value(12\OldaleTown\PokeMart\002000002)>=2
+	@Sound.play(Select)
+	@Text.show(Welcome!)
+	@Sound.play(Select)
+	@Text.show(How may I serve you?)
+	@Options.show(BUY,SELL,QUIT)
+	:when:BUY
+		@Sound.play(Select)
+		@Screen.trade({5|18|9|13|12},1,0)
+	:when:SELL
+		@Sound.play(Select)
+		@Screen.trade({5|18|9|13|12},0,1)
+	:when:QUIT
+		@Sound.play(Select)
+		@Text.show(Please come again!)
+	:endwhen
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\OldaleTown\PokeMart\002000002.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

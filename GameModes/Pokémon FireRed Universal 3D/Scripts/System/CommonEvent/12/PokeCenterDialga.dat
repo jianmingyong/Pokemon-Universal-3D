@@ -1,0 +1,5 @@
+version=2
+@Sound.play(Select)
+@Text.show(Primal Dialga: Due to some unstable issue~in other place, I could not operate.)
+@Script.start(System\GlobalMain)
+:end

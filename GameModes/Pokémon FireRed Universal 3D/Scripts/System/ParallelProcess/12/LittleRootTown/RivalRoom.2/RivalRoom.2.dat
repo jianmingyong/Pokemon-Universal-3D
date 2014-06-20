@@ -4,8 +4,10 @@ version=2
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\RivalRoom.2)>=2
-	:if:<NPC.exists(001000000)>=false
+	:if:<NPC.exists(001000000)>=false <and> <Register.value(System.PlayerGender)>=Male
 		@NPC.spawn(8,0,2,1,12\LittleRootTown\RivalRoom.2\001000000,trchar003,false,0,,001000000,Still)
+	:else
+		@NPC.spawn(8,0,2,1,12\LittleRootTown\RivalRoom.2\001000000,trchar002,false,0,,001000000,Still)
 	:endif
 	@NPC.remove(005000003)
 	:end

@@ -1,0 +1,11 @@
+version=2
+:if:<Register.value(12\OldaleTown\PokeCenter\012000000)>=1
+	@Script.start(System\CommonEvent\12\HoennMap)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\OldaleTown\PokeCenter\012000000.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

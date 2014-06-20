@@ -1,10 +1,6 @@
 ﻿version=2
 :if:<Register.value(12\LittleRootTown\PlayerRoom.2\002000000)>=1
-	@Sound.play(Select)
-	@Text.show(<Player.name> took a closer look at the~HOENN region map.)
-	@Sound.play(Select)
-	@Text.show(There is no map at the moment.~Sorry for any inconvenience caused.)
-	@Script.start(System\GlobalMain)
+	@Script.start(System\CommonEvent\12\HoennMap)
 	:end
 :endif
 @Player.save

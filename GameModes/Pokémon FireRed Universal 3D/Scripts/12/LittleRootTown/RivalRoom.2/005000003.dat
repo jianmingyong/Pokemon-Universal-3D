@@ -2,14 +2,21 @@
 :if:<Register.value(12\LittleRootTown\RivalRoom.2\005000003)>=1
 	:if:<Player.facing>=0
 		@Sound.play(Select)
-		:if:<NPC.exists(001000000)>=false
+		:if:<NPC.exists(001000000)>=false <and> <Register.value(System.PlayerGender)>=Male
 			@NPC.spawn(1,0,0,1,12\LittleRootTown\RivalRoom.2\001000000,trchar003,false,2,,001000000,Still)
+		:endif
+		:if:<NPC.exists(001000000)>=false <and> <Register.value(System.PlayerGender)>=Female
+			@NPC.spawn(1,0,0,1,12\LittleRootTown\RivalRoom.2\001000000,trchar002,false,2,,001000000,Still)
 		:endif
 		@NPC.move(001000000,2)
 		@NPC.turn(001000000,3)
 		@Sound.play(jumptoball)
 		@Entity.showmessagebulb(1|1|0.8|2)
-		@Music.play(P_R_S_E May's Theme)
+		:if:<Register.value(System.PlayerGender)>=Male
+			@Music.play(P_R_S_E May's Theme)
+		:else
+			@Music.play(P_R_S_E Brendan's Theme)
+		:endif
 		@Player.turnto(1)
 		@NPC.move(001000000,2)
 		@NPC.turn(001000000,2)
@@ -22,7 +29,7 @@
 		@Sound.play(Select)
 		@Text.show(Oh, you're <Player.name>.~So your move was today.)
 		@Sound.play(Select)
-		:if:<Player.gender>=0
+		:if:<Register.value(System.PlayerGender)>=Female
 			@Player.setrivalname(Brendan)
 		:else
 			@Player.setrivalname(May)
@@ -56,14 +63,21 @@
 	:endif
 	:if:<Player.facing>=1
 		@Sound.play(Select)
-		:if:<NPC.exists(001000000)>=false
+		:if:<NPC.exists(001000000)>=false <and> <Register.value(System.PlayerGender)>=Male
 			@NPC.spawn(1,0,0,1,12\LittleRootTown\RivalRoom.2\001000000,trchar003,false,2,,001000000,Still)
+		:endif
+		:if:<NPC.exists(001000000)>=false <and> <Register.value(System.PlayerGender)>=Female
+			@NPC.spawn(1,0,0,1,12\LittleRootTown\RivalRoom.2\001000000,trchar002,false,2,,001000000,Still)
 		:endif
 		@NPC.move(001000000,2)
 		@NPC.turn(001000000,3)
 		@Sound.play(jumptoball)
 		@Entity.showmessagebulb(1|1|0.8|2)
-		@Music.play(P_R_S_E May's Theme)
+		:if:<Register.value(System.PlayerGender)>=Male
+			@Music.play(P_R_S_E May's Theme)
+		:else
+			@Music.play(P_R_S_E Brendan's Theme)
+		:endif
 		@NPC.move(001000000,3)
 		@NPC.turn(001000000,2)
 		@Player.turnto(0)
@@ -73,7 +87,7 @@
 		@Sound.play(Select)
 		@Text.show(Oh, you're <Player.name>.~So your move was today.)
 		@Sound.play(Select)
-		:if:<Player.gender>=0
+		:if:<Register.value(System.PlayerGender)>=Female
 			@Player.setrivalname(Brendan)
 		:else
 			@Player.setrivalname(May)
@@ -106,14 +120,21 @@
 	:endif
 	:if:<Player.facing>=2
 		@Sound.play(Select)
-		:if:<NPC.exists(001000000)>=false
+		:if:<NPC.exists(001000000)>=false <and> <Register.value(System.PlayerGender)>=Male
 			@NPC.spawn(1,0,0,1,12\LittleRootTown\RivalRoom.2\001000000,trchar003,false,2,,001000000,Still)
+		:endif
+		:if:<NPC.exists(001000000)>=false <and> <Register.value(System.PlayerGender)>=Female
+			@NPC.spawn(1,0,0,1,12\LittleRootTown\RivalRoom.2\001000000,trchar002,false,2,,001000000,Still)
 		:endif
 		@NPC.move(001000000,2)
 		@NPC.turn(001000000,3)
 		@Sound.play(jumptoball)
 		@Entity.showmessagebulb(1|1|0.8|2)
-		@Music.play(P_R_S_E May's Theme)
+		:if:<Register.value(System.PlayerGender)>=Male
+			@Music.play(P_R_S_E May's Theme)
+		:else
+			@Music.play(P_R_S_E Brendan's Theme)
+		:endif
 		@NPC.move(001000000,3)
 		@Player.turnto(1)
 		@Text.show(Huh?~Who... Who are you?)
@@ -122,7 +143,7 @@
 		@Sound.play(Select)
 		@Text.show(Oh, you're <Player.name>.~So your move was today.)
 		@Sound.play(Select)
-		:if:<Player.gender>=0
+		:if:<Register.value(System.PlayerGender)>=Female
 			@Player.setrivalname(Brendan)
 		:else
 			@Player.setrivalname(May)
@@ -157,14 +178,21 @@
 	:endif
 	:if:<Player.facing>=3
 		@Sound.play(Select)
-		:if:<NPC.exists(001000000)>=false
+		:if:<NPC.exists(001000000)>=false <and> <Register.value(System.PlayerGender)>=Male
 			@NPC.spawn(1,0,0,1,12\LittleRootTown\RivalRoom.2\001000000,trchar003,false,2,,001000000,Still)
+		:endif
+		:if:<NPC.exists(001000000)>=false <and> <Register.value(System.PlayerGender)>=Female
+			@NPC.spawn(1,0,0,1,12\LittleRootTown\RivalRoom.2\001000000,trchar002,false,2,,001000000,Still)
 		:endif
 		@NPC.move(001000000,2)
 		@NPC.turn(001000000,3)
 		@Sound.play(jumptoball)
 		@Entity.showmessagebulb(1|1|0.8|2)
-		@Music.play(P_R_S_E May's Theme)
+		:if:<Register.value(System.PlayerGender)>=Male
+			@Music.play(P_R_S_E May's Theme)
+		:else
+			@Music.play(P_R_S_E Brendan's Theme)
+		:endif
 		@NPC.move(001000000,2)
 		@NPC.turn(001000000,2)
 		@NPC.move(001000000,1)
@@ -176,7 +204,7 @@
 		@Sound.play(Select)
 		@Text.show(Oh, you're <Player.name>.~So your move was today.)
 		@Sound.play(Select)
-		:if:<Player.gender>=0
+		:if:<Register.value(System.PlayerGender)>=Female
 			@Player.setrivalname(Brendan)
 		:else
 			@Player.setrivalname(May)

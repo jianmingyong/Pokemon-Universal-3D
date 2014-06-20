@@ -80,9 +80,19 @@ version=2
 		@Register.change(System.ErrorLog.ErrorID3,1)
 	:endif
 :endif
-
 :if:<Register.registered(System.ActionScript)>=false
 	@Register.register(System.ActionScript,str,System\GlobalRegister.dat)
+:endif
+:if:<Register.registered(System.MysteryGift)>=false
+	@Register.register(System.MysteryGift,int,0)
+:endif
+:if:<Register.registered(System.PlayerGender)>=false
+	:if:<Player.skin>=trchar000 <or> <Player.skin>=trchar002
+		@Register.register(System.PlayerGender,str,Male)
+	:endif
+	:if:<Player.skin>=trchar001 <or> <Player.skin>=trchar003
+		@Register.register(System.PlayerGender,str,Female)
+	:endif
 :endif
 @Script.start(System\GlobalMigration)
 @Script.start(System\Register\8)

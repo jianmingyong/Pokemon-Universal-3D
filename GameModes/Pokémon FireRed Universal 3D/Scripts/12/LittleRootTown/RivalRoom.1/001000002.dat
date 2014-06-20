@@ -2,12 +2,19 @@
 :if:<Register.value(12\LittleRootTown\RivalRoom.1\001000002)>=1
 	@Sound.play(Exit)
 	@Level.wait(50)
-	:if:<NPC.exists(002000007)>=false
+	:if:<NPC.exists(002000007)>=false <and> <Register.value(System.PlayerGender)>=Male
 		@NPC.spawn(2,0,7,0,,trchar003,false,0,,002000007,Still)
+	:endif
+	:if:<NPC.exists(002000007)>=false <and> <Register.value(System.PlayerGender)>=Female
+		@NPC.spawn(2,0,7,0,,trchar002,false,0,,002000007,Still)
 	:endif
 	@Sound.play(jumptoball)
 	@Entity.showmessagebulb(1|2|0.8|7)
-	@Music.play(P_R_S_E May's Theme)
+	:if:<Register.value(System.PlayerGender)>=Male
+		@Music.play(P_R_S_E May's Theme)
+	:else
+		@Music.play(P_R_S_E Brendan's Theme)
+	:endif
 	@NPC.turn(002000007,1)
 	@NPC.move(002000007,1)
 	@NPC.turn(002000007,0)
@@ -19,7 +26,7 @@
 	@Sound.play(Select)
 	@Text.show(Oh, you're <Player.name>.~So your move was today.)
 	@Sound.play(Select)
-	:if:<Player.gender>=0
+	:if:<Register.value(System.PlayerGender)>=Female
 		@Player.setrivalname(Brendan)
 	:else
 		@Player.setrivalname(May)

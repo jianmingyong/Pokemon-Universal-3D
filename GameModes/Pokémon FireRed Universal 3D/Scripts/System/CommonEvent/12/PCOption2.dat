@@ -1,0 +1,11 @@
+version=2
+@Text.show(What would you like to do?)
+@Options.setcancelindex(2)
+@Options.show(MANAGE POKéMON,TURN OFF)
+:when:MANAGE POKéMON
+	@Screen.storagesystem
+	@Script.start(System\CommonEvent\12\PCOption3)
+:when:TURN OFF
+	@Script.start(System\CommonEvent\12\PCOption1)
+:endwhen
+:end

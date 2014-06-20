@@ -1,0 +1,27 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(Welcome to Dialga Mystery Gift~Transporter.)
+@Sound.play(Select)
+@Text.show(To use this feature, your game needs to~be saved.)
+@Sound.play(Select)
+@Text.show(Do you want to continue?)
+@Options.setcancelindex(1)
+@Options.show(YES,NO)
+:when:YES
+	@Sound.play(Save)
+	@Text.show(Game Saved!~Checking for Mystery Gift Data...)
+	@Script.start(System\MysteryGift\MysteryGift)
+	:if:<Register.value(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=0
+		@Pokemon.add(483,100,Apparently had a fateful encounter,1,at Mystery Gift,0,Mystery Gift)
+		@Sound.play(success)
+		@Text.show(<Player.name> received~Dialga from mystery gift.)
+		@Sound.play(Select)
+		@Text.show(Thank you for using Dialga Mystery Gift~Transporter.)
+		@Register.change(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal,1)
+		:end
+	:endif
+	@Text.show(No valid Pokémon Data found in~System\MysteryGift\MysteryGift.dat)
+:when:NO
+:endwhen
+@Text.show(Thank you for using Dialga Mystery Gift~Transporter.)
+:end
