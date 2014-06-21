@@ -1,0 +1,27 @@
+﻿version=2
+:if:<Register.value(12\Route103\018000011)>=1
+	@Sound.play(Select)
+	@Text.show(<Rival.name>: Let's see... The POKéMON found~on ROUTE 103 include...)
+	:if:<Register.value(System.PlayerGender)>=Male
+		@Music.play(P_R_S_E May's Theme)
+	:else
+		@Music.play(P_R_S_E Brendan's Theme)
+	:endif
+	@Sound.play(jumptoball)
+	@Entity.showmessagebulb(1|18|0.8|11)
+	@Text.show(Oh, hi, <Player.name>!)
+	@Sound.play(Select)
+	@Text.show(...Oh, I see, my dad gave you~a POKéMON as a gift.)
+	@Sound.play(Select)
+	@Text.show(Since we're here, let's have a quick~battle!)
+	@Sound.play(Select)
+	@Text.show(I'll give you a taste of what being~a TRAINER is like.)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\Route103\018000011.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end
