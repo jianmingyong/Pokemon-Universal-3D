@@ -9,6 +9,16 @@
 	@Script.start(System\GlobalMain)
 	:end
 :endif
+:if:<Register.value(12\LittleRootTown\ProfBirchLab\006000003)>=2
+	@Sound.play(Select)
+	@Text.show(PROF. BIRCH: Countless POKéMON~await you!)
+	@Sound.play(Select)
+	@Text.show(Argh, I'm getting the itch to get out~and do fieldwork again!)
+	@Sound.play(Select)
+	@Text.show(If you or your POKéMON get tired,~you should get some rest at home.)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
 @Player.save
 @Register.change(System.ErrorLog.ErrorID0,2)
 @Register.change(System.ActionScript,12\LittleRootTown\ProfBirchLab\006000003.dat)

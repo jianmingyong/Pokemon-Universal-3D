@@ -72,7 +72,31 @@ version=2
 			@Entity.remove(019000001)
 		:endif
 	:endif
+	@Entity.remove(016000009)
+	@Entity.remove(017000009)
+	@Entity.remove(018000009)
+	@Entity.remove(019000009)
 	:end
+:endif
+:if:<Register.value(12\LittleRootTown)>=3
+	@Entity.remove(010000010)
+	@Entity.remove(018000001)
+	@Entity.remove(019000001)
+	:if:<NPC.exists(013000009)>=false
+		@NPC.spawn(13,0,9,1,12\LittleRootTown\013000009,3,false,2,,013000009,Still)
+	:endif
+	:end
+:endif
+:if:<Register.value(12\LittleRootTown)>=4
+	@Entity.remove(010000010)
+	@Entity.remove(018000001)
+	@Entity.remove(019000001)
+	@Entity.remove(016000009)
+	@Entity.remove(017000009)
+	@Entity.remove(018000009)
+	@Entity.remove(019000009)
+	@Entity.remove(018000002)
+	@Entity.remove(019000002)
 :endif
 @Player.save
 @Register.change(System.ErrorLog.ErrorID0,2)

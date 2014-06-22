@@ -9,7 +9,7 @@ version=2
 		@Item.messagegive(18,1)
 		@Register.change(12\LittleRootTown\PlayerRoom.2\000000001,2)
 	:endif
-	Script.start(System\CommonEvent\12\PCOption3)
+	@Script.start(System\CommonEvent\12\PCOption3)
 :when:MAILBOX
 	@Screen.mailsystem
 	@Script.start(System\CommonEvent\12\PCOption3)

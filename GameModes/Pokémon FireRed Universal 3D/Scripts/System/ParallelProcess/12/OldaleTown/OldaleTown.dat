@@ -1,0 +1,22 @@
+version=2
+:if:<Register.value(12\OldaleTown)>=1
+	@Entity.remove(008000019)
+	@Entity.remove(009000019)
+	@Entity.remove(010000019)
+	:end
+:endif
+:if:<Register.value(12\OldaleTown)>=2
+	:if:<NPC.exists(011000019)>=false <and> <Register.value(System.PlayerGender)>=Male
+		@NPC.spawn(11,0,19,1,12\OldaleTown\011000019,trchar003,false,0,,011000019,Still)
+	:endif
+	:if:<NPC.exists(011000019)>=false <and> <Register.value(System.PlayerGender)>=Female
+		@NPC.spawn(11,0,19,1,12\OldaleTown\011000019,trchar002,false,0,,011000019,Still)
+	:endif
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,System\ParallelProcess\12\OldaleTown.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

@@ -16,6 +16,60 @@
 	@Text.show(Since we're here, let's have a quick~battle!)
 	@Sound.play(Select)
 	@Text.show(I'll give you a taste of what being~a TRAINER is like.)
+	:if:<Register.value(System.PlayerGender)>=Male <and> <Register.value(System.12.Starter)>=252
+		@Battle.trainer(12\Route103\018000011.F.255)
+	:endif
+	:if:<Register.value(System.PlayerGender)>=Male <and> <Register.value(System.12.Starter)>=255
+		@Battle.trainer(12\Route103\018000011.F.258)
+	:endif
+	:if:<Register.value(System.PlayerGender)>=Male <and> <Register.value(System.12.Starter)>=258
+		@Battle.trainer(12\Route103\018000011.F.252)
+	:endif
+	:if:<Register.value(System.PlayerGender)>=Female <and> <Register.value(System.12.Starter)>=252
+		@Battle.trainer(12\Route103\018000011.M.255)
+	:endif
+	:if:<Register.value(System.PlayerGender)>=Female <and> <Register.value(System.12.Starter)>=255
+		@Battle.trainer(12\Route103\018000011.M.258)
+	:endif
+	:if:<Register.value(System.PlayerGender)>=Female <and> <Register.value(System.12.Starter)>=258
+		@Battle.trainer(12\Route103\018000011.M.252)
+	:endif
+	:if:<Register.value(System.PlayerGender)>=Male
+		@Music.play(P_R_S_E May's Theme)
+	:else
+		@Music.play(P_R_S_E Brendan's Theme)
+	:endif
+	@Text.show(<Rival.name>: I think I know why my dad has~an eye out for you now.)
+	@Sound.play(Select)
+	@Text.show(I mean, you just got that POKéMON,~but it already likes you.)
+	@Sound.play(Select)
+	@Text.show(You might be able to befriend any~kind of POKéMON easily.)
+	@Sound.play(Select)
+	@Text.show(Well, it's time to head back to~the LAB.)
+	:if:<Player.facing>=0
+		@NPC.turn(018000011,1)
+		@NPC.move(018000011,1)
+		@Player.turnto(2)
+		@NPC.turn(018000011,2)
+		@NPC.move(018000011,1)
+		@Sound.play(jump_ledge)
+		@NPC.move(018000011,6)
+		@Sound.play(jump_ledge)
+		@NPC.move(018000011,10)
+		@NPC.remove(018000011)
+	:else
+		@NPC.turn(018000011,2)
+		@Player.turnto(2)
+		@NPC.move(018000011,1)
+		@Sound.play(jump_ledge)
+		@NPC.move(018000011,6)
+		@Sound.play(jump_ledge)
+		@NPC.move(018000011,10)
+		@NPC.remove(018000011)
+	:endif
+	@Music.play(P_R_S_E Route 101)
+	@Register.change(12\Route103,2)
+	@Register.change(12\OldaleTown,2)
 	@Script.start(System\GlobalMain)
 	:end
 :endif

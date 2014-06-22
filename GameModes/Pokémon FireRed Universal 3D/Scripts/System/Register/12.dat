@@ -38,6 +38,12 @@ version=2
 :if:<Register.registered(12\LittleRootTown\019000001)>=false
 	@Register.register(12\LittleRootTown\019000001,int,1)
 :endif
+:if:<Register.registered(12\LittleRootTown\018000002)>=false
+	@Register.register(12\LittleRootTown\018000002,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\019000002)>=false
+	@Register.register(12\LittleRootTown\019000002,int,1)
+:endif
 :if:<Register.registered(12\LittleRootTown\020000008)>=false
 	@Register.register(12\LittleRootTown\020000008,int,1)
 :endif
@@ -46,6 +52,21 @@ version=2
 :endif
 :if:<Register.registered(12\LittleRootTown\015000008)>=false
 	@Register.register(12\LittleRootTown\015000008,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\013000009)>=false
+	@Register.register(12\LittleRootTown\013000009,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\016000009)>=false
+	@Register.register(12\LittleRootTown\016000009,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\017000009)>=false
+	@Register.register(12\LittleRootTown\017000009,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\018000009)>=false
+	@Register.register(12\LittleRootTown\018000009,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\019000009)>=false
+	@Register.register(12\LittleRootTown\019000009,int,1)
 :endif
 :if:<Register.registered(12\LittleRootTown\024000010)>=false
 	@Register.register(12\LittleRootTown\024000010,int,1)
@@ -143,6 +164,12 @@ version=2
 :if:<Register.registered(12\LittleRootTown\RivalRoom.2)>=false
 	@Register.register(12\LittleRootTown\RivalRoom.2,int,1)
 :endif
+:if:<Register.registered(12\LittleRootTown\ProfBirchLab\006000003)>=false
+	@Register.register(12\LittleRootTown\ProfBirchLab\006000003,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\ProfBirchLab\007000003)>=false
+	@Register.register(12\LittleRootTown\ProfBirchLab\007000003,int,1)
+:endif
 :if:<Register.registered(12\LittleRootTown\ProfBirchLab)>=false
 	@Register.register(12\LittleRootTown\ProfBirchLab,int,1)
 :endif
@@ -193,6 +220,21 @@ version=2
 :endif
 :if:<Register.registered(12\OldaleTown\008000016)>=false
 	@Register.register(12\OldaleTown\008000016,int,1)
+:endif
+:if:<Register.registered(12\OldaleTown\008000019)>=false
+	@Register.register(12\OldaleTown\008000019,int,1)
+:endif
+:if:<Register.registered(12\OldaleTown\009000019)>=false
+	@Register.register(12\OldaleTown\009000019,int,1)
+:endif
+:if:<Register.registered(12\OldaleTown\010000019)>=false
+	@Register.register(12\OldaleTown\010000019,int,1)
+:endif
+:if:<Register.registered(12\OldaleTown\011000019)>=false
+	@Register.register(12\OldaleTown\011000019,int,1)
+:endif
+:if:<Register.registered(12\OldaleTown)>=false
+	@Register.register(12\OldaleTown,int,1)
 :endif
 :if:<Register.registered(12\OldaleTown\PokeCenter\011000000)>=false
 	@Register.register(12\OldaleTown\PokeCenter\011000000,int,1)

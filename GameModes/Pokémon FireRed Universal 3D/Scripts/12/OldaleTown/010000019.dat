@@ -1,0 +1,21 @@
+﻿version=2
+:if:<Register.value(12\OldaleTown\010000019)>=1
+	@NPC.turn(011000019,1)
+	@Player.turnto(3)
+	@Text.show(<Rival.name>: <Player.name>!~Over here!)
+	@Sound.play(Select)
+	@Text.show(Let's hurry home!)
+	@NPC.turn(011000019,2)
+	@NPC.move(011000019,1)
+	@NPC.remove(011000019)
+	@Register.change(12\OldaleTown,1)
+	@Register.change(12\LittleRootTown\ProfBirchLab,3)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\OldaleTown\010000019.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

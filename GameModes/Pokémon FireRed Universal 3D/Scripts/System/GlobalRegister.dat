@@ -19,9 +19,6 @@ version=2
 :if:<Register.registered(System.Game ID)>=false
 	@Register.register(System.Game ID,int,12)
 :endif
-:if:<Register.registered(System.12.Starter)>=false
-	@Register.register(System.12.Starter,int,1)
-:endif
 :if:<Register.registered(Options.System.Auto Save)>=false
 	@Register.register(Options.System.Auto Save,int,1)
 :endif
@@ -93,6 +90,9 @@ version=2
 	:if:<Player.skin>=trchar001 <or> <Player.skin>=trchar003
 		@Register.register(System.PlayerGender,str,Female)
 	:endif
+:endif
+:if:<Register.registered(System.12.Starter)>=false
+	@Register.register(System.12.Starter,int,1)
 :endif
 @Script.start(System\GlobalMigration)
 @Script.start(System\Register\8)
