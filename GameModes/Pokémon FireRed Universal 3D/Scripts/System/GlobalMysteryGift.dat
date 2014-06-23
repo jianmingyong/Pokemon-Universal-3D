@@ -28,7 +28,7 @@
 		@Text.show(Thank you for using Dialga Mystery Gift~Transporter.)
 		:end
 	:endif
-	@Text.show(No valid Pokémon Data found in~System\MysteryGift\MysteryGift.dat)
+	@Text.show(No valid Pokémon Data found in~System\GlobalMysteryGift.dat)
 	@Register.unregister(<System.lastinput>)
 :when:NO
 :endwhen

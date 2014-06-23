@@ -77,6 +77,13 @@ version=2
 		@Register.change(System.ErrorLog.ErrorID3,1)
 	:endif
 :endif
+:if:<Register.registered(System.ErrorLog.ErrorID4)>=false
+	@Register.register(System.ErrorLog.ErrorID4,int,1)
+:else
+	:if:<not><Register.value(System.ErrorLog.ErrorID4)>=1
+		@Register.change(System.ErrorLog.ErrorID4,1)
+	:endif
+:endif
 :if:<Register.registered(System.ActionScript)>=false
 	@Register.register(System.ActionScript,str,System\GlobalRegister.dat)
 :endif

@@ -76,6 +76,8 @@ version=2
 	@Entity.remove(017000009)
 	@Entity.remove(018000009)
 	@Entity.remove(019000009)
+	@Entity.remove(018000002)
+	@Entity.remove(019000002)
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown)>=3

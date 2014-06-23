@@ -1,5 +1,5 @@
 Main:
-{"Level"{LEV[{"Name"{str[LITTLEROOT TOWN]}}{"MusicLoop"{str[P_R_S_E Littleroot Town]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
+{"Level"{LEV[{"Name"{str[Littleroot Town]}}{"MusicLoop"{str[P_R_S_E Littleroot Town]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
 {"Actions"{LEV[{"CanTeleport"{bool[0]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[0]}}{"Weather"{int[0]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System/GlobalMain]}}]}}
 
 Floor.Layer.-1
@@ -204,6 +204,14 @@ NPC.Layer.17
 ActionScript.Layer.1
 {"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[018000001]}}{"Position"{sngArr[18,0,1]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\018000001]}}{"Rotation"{int[0]}}]}}
 {"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[019000001]}}{"Position"{sngArr[19,0,1]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\019000001]}}{"Rotation"{int[0]}}]}}
+ActionScript.Layer.2
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[018000002]}}{"Position"{sngArr[18,0,2]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\018000002]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[019000002]}}{"Position"{sngArr[19,0,2]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\019000002]}}{"Rotation"{int[0]}}]}}
+ActionScript.Layer.9
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[016000009]}}{"Position"{sngArr[16,0,9]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\016000009]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[017000009]}}{"Position"{sngArr[17,0,9]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\017000009]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[018000009]}}{"Position"{sngArr[18,0,9]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\018000009]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[019000009]}}{"Position"{sngArr[19,0,9]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\019000009]}}{"Rotation"{int[0]}}]}}
 
 OffsetMap.Layer.-1
 {"OffsetMap"{MAP[{"Map"{str[12\Route101\Route101.dat]}}{"Offset"{intArr[0,0,-20]}}]}}

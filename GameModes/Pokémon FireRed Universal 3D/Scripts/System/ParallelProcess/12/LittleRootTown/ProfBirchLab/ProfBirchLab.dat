@@ -148,6 +148,7 @@ version=2
 	:if:<NPC.exists(007000003)>=false <and> <Register.value(System.PlayerGender)>=Female
 		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,trchar002,false,2,,007000003,Still)
 	:endif
+	:end
 :endif
 @Player.save
 @Register.change(System.ErrorLog.ErrorID0,2)

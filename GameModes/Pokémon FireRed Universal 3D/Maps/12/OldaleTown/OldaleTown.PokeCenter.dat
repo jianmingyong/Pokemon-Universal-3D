@@ -1,5 +1,5 @@
 ﻿Main:
-{"Level"{LEV[{"Name"{str[OLDALE TOWN]}}{"MusicLoop"{str[P_R_S_E Pokémon Center]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
+{"Level"{LEV[{"Name"{str[Oldale Town]}}{"MusicLoop"{str[P_R_S_E Pokémon Center]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
 {"Actions"{LEV[{"CanTeleport"{bool[0]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[1]}}{"Weather"{int[1]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System/GlobalMain]}}]}}
 
 Floor.Layer.1
