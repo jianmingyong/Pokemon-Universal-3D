@@ -5,4 +5,4 @@ Main:
 Floor.Layer.0
 {"Floor"{ENT[{"Size"{intArr[50,50]}}{"Position"{intArr[0,0,0]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 
-{"EntityField"{ENT[{"EntityID"{str[ModelEntity]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[15,-0.5,6]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[Models\12\PokeMart]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[ModelEntity]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[15,-0.5,6]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[Models\12\Pokecenter]}}]}}

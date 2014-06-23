@@ -1,5 +1,5 @@
 SetAttackBaseDamage(999, 40)
-SetAttackMaxPP(999, 1)
+SetAttackMaxPP(999, 999)
 SetAttackCategory(999, 0)
 SetAttackContestCategory(999, 0)
 SetAttackAttackCategory(999, 0)

@@ -21,7 +21,7 @@
 		@Register.change(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal,1)
 		:end
 	:endif
-	:if:<Register.registered(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=true <and> <Register.value(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=1
+	:if:<System.lastinput>=QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal <and> <Register.registered(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=true <and> <Register.value(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=1
 		@Sound.play(Select)
 		@Text.show(Sorry but the code is not valid anymore.)
 		@Sound.play(Select)

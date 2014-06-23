@@ -224,7 +224,7 @@ PokéMart.Door.Layer.6.Floor.1
 {"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[14,0,6]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\OldaleTown\OldaleTown.PokeMart.dat,3,0,7,0]}}{"Rotation"{int[0]}}]}}
 
 PokéCenter.Layer.14
-{"EntityField"{ENT[{"EntityID"{str[ModelEntity]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[9.8,-0.5,17.8]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.9,1,0.9]}}{"RotationXYZ"{sngArr[0,3.141592654,0]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[Models\12\PokeCenter\PokeCenter]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[ModelEntity]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[9.8,-0.5,17.8]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.9,1,0.9]}}{"RotationXYZ"{sngArr[0,0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[Models\12\PokeCenter\PokeCenter]}}]}}
 PokéCenter_Invisible.wall
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[4,2]}}{"Position"{sngArr[5,0,14]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[5,0,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
@@ -239,6 +239,8 @@ House.1_Invisible.wall
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[4,3]}}{"Position"{sngArr[4,0,4]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[4,0,7]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[2,1]}}{"Position"{sngArr[6,0,7]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
+House.1.Door.Layer.7.Floor.1
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[5,0,7]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\OldaleTown\OldaleTown.House1.dat,3,0,8,0]}}{"Rotation"{int[0]}}]}}
 
 House.2.Layer.13
 {"EntityField"{ENT[{"EntityID"{str[ModelEntity]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[15.5,-0.5,14.8]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"RotationXYZ"{sngArr[0,3.141592654,0]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[Models\12\OldaleTown\House\House]}}]}}
@@ -246,6 +248,8 @@ House.2_Invisible.wall
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[4,3]}}{"Position"{sngArr[14,0,13]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[14,0,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[2,1]}}{"Position"{sngArr[16,0,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
+House.2.Door.Layer.16.Floor.1
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[15,0,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\OldaleTown\OldaleTown.House2.dat,3,0,7,0]}}{"Rotation"{int[0]}}]}}
 
 NPC.Layer.5
 {"NPC"{NPC[{"Name"{str[000000010]}}{"ID"{int[000000010]}}{"Position"{sngArr[0,0,10]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}]}}
