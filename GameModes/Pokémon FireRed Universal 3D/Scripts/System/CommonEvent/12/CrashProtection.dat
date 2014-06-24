@@ -10,4 +10,7 @@ version=2
 	@Script.start(System\GlobalErrorLog)
 	@Player.warp(System\GlobalValidation.dat,0,0,0,0)
 :endif
+:if:<not><Pokemon.count>=0
+	@Entity.remove(999999999)
+:endif
 :end
