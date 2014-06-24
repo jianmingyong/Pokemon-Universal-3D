@@ -19,6 +19,7 @@
 		@Sound.play(Select)
 		@Text.show(Thank you for using Dialga Mystery Gift~Transporter.)
 		@Register.change(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal,1)
+		@Player.save
 		:end
 	:endif
 	:if:<System.lastinput>=QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal <and> <Register.registered(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=true <and> <Register.value(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=1
@@ -26,10 +27,12 @@
 		@Text.show(Sorry but the code is not valid anymore.)
 		@Sound.play(Select)
 		@Text.show(Thank you for using Dialga Mystery Gift~Transporter.)
+		@Player.save
 		:end
 	:endif
 	@Text.show(No valid Pokémon Data found in~System\GlobalMysteryGift.dat)
 	@Register.unregister(<System.lastinput>)
+	@Player.save
 :when:NO
 :endwhen
 @Text.show(Thank you for using Dialga Mystery Gift~Transporter.)

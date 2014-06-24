@@ -22,7 +22,7 @@ version=2
 	@Text.log(Skip Intro?: <Register.value(System.Skip Intro)>)
 	@Text.log(Skip Mom Story?: <Register.value(System.Skip Mom Story)>)
 	@Text.log(Skip Rival Story?: <Register.value(System.Skip Rival Story)>)
-	@Text.log(Skip Test Mode?: <Register.value(System.Test Mode)>)
+	@Text.log(Test Mode?: <Register.value(System.Test Mode)>)
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
