@@ -1,6 +1,6 @@
 Main:
 {"Level"{LEV[{"Name"{str[Route 102]}}{"MusicLoop"{str[P_R_S_E Route 101]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
-{"Actions"{LEV[{"CanTeleport"{bool[0]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[0]}}{"Weather"{int[0]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System/GlobalMain]}}]}}
+{"Actions"{LEV[{"CanTeleport"{bool[1]}}{"CanDig"{bool[0]}}{"CanFly"{bool[1]}}{"RideType"{int[0]}}{"EnviromentType"{int[0]}}{"Weather"{int[0]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System/GlobalMain]}}]}}
 
 Floor.Layer.0
 {"Floor"{ENT[{"Size"{intArr[50,1]}}{"Position"{intArr[0,0,0]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
@@ -342,10 +342,27 @@ Ledge.Layer.21
 {"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[8,0,21]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[32,0,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}{"Rotation"{int[0]}}]}}
 
 NPC.Layer.14
-{"NPC"{NPC[{"Name"{str[000000014]}}{"ID"{int[000000014]}}{"Position"{sngArr[0,0,14]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}]}}
-{"NPC"{NPC[{"Name"{str[000000015]}}{"ID"{int[000000015]}}{"Position"{sngArr[0,0,15]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}]}}
-{"NPC"{NPC[{"Name"{str[000000016]}}{"ID"{int[000000016]}}{"Position"{sngArr[0,0,16]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}]}}
-{"NPC"{NPC[{"Name"{str[000000017]}}{"ID"{int[000000017]}}{"Position"{sngArr[0,0,17]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}]}}
+{"NPC"{NPC[{"Name"{str[000000014]}}{"ID"{int[000000014]}}{"Position"{sngArr[0,0,14]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Name"{str[000000015]}}{"ID"{int[000000015]}}{"Position"{sngArr[0,0,15]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Name"{str[000000016]}}{"ID"{int[000000016]}}{"Position"{sngArr[0,0,16]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Name"{str[000000017]}}{"ID"{int[000000017]}}{"Position"{sngArr[0,0,17]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+
+Trainer.Layer.12
+{"NPC"{NPC[{"Name"{str[019000012]}}{"ID"{int[019000012]}}{"Position"{sngArr[19,0,12]}}{"TextureID"{str[14]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\Route102\019000012]}}{"Rotation"{int[2]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+Trainer.Layer.15
+{"NPC"{NPC[{"Name"{str[008000015]}}{"ID"{int[008000015]}}{"Position"{sngArr[8,0,15]}}{"TextureID"{str[PinkShirtGirl]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\Route102\008000015]}}{"Rotation"{int[2]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+Trainer.Layer.22
+{"NPC"{NPC[{"Name"{str[033000022]}}{"ID"{int[033000022]}}{"Position"{sngArr[33,0,22]}}{"TextureID"{str[14]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\Route102\033000022]}}{"Rotation"{int[2]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+Trainer.Layer.23
+{"NPC"{NPC[{"Name"{str[025000023]}}{"ID"{int[025000023]}}{"Position"{sngArr[25,0,23]}}{"TextureID"{str[bugcatcher]}}{"Action"{int[2]}}{"AdditionalValue"{str[2|12\Route102\025000023]}}{"Rotation"{int[0]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+
+Pokéball.Layer.23
+{"EntityField"{ENT[{"EntityID"{str[ItemObject]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,-0.25,23]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,0.5]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}{"Action"{int[0]}}{"AdditionalValue"{str[011000023,18]}}]}}
+
+Sign.Layer.10
+{"EntityField"{ENT[{"EntityID"{str[SignBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[17,0,10]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[64,0,16,16][80,0,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route102\017000010]}}]}}
+Sign.Layer.17
+{"EntityField"{ENT[{"EntityID"{str[SignBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[40,0,17]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[64,0,16,16][80,0,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route102\040000017]}}]}}
 
 OffsetMap.Layer.18
 {"OffsetMap"{MAP[{"Map"{str[12\OldaleTown\OldaleTown.dat]}}{"Offset"{intArr[50,0,8]}}]}}

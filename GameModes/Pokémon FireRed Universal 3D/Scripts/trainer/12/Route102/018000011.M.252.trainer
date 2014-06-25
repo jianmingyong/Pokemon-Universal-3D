@@ -1,16 +1,16 @@
 [TRAINER FORMAT]
-Name|<Rival.name>
+Name|jianmingyong
 TrainerClass|Rival
 Money|300
 IntroMessage|
 OutroMessage|Wow! That's great!~<Player.name>, you're pretty good!
 DefeatMessage|
-TextureID|trchar003
+TextureID|trchar002
 Region|12.Hoenn
 IniMusic|P_R_S_E Rival Battle_intro
 DefeatMusic|P_R_S_E Victory! Trainer
 BattleMusic|P_R_S_E Rival Battle
-Pokemon1|258,5
+Pokemon1|252,5
 Pokemon2|
 Pokemon3|
 Pokemon4|
@@ -19,4 +19,4 @@ Pokemon6|
 Items|
 Gender|0
 AI|2
-IntroSequence|Blue,Blue
+IntroSequence|Red,Red

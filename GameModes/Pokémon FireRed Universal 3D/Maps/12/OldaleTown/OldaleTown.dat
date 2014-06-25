@@ -1,6 +1,6 @@
 Main:
 {"Level"{LEV[{"Name"{str[Oldale Town]}}{"MusicLoop"{str[P_R_S_E Oldale Town]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
-{"Actions"{LEV[{"CanTeleport"{bool[0]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[0]}}{"Weather"{int[0]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System/GlobalMain]}}]}}
+{"Actions"{LEV[{"CanTeleport"{bool[0]}}{"CanDig"{bool[0]}}{"CanFly"{bool[1]}}{"RideType"{int[0]}}{"EnviromentType"{int[0]}}{"Weather"{int[0]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System/GlobalMain]}}]}}
 
 Floor.Layer.-1
 {"Floor"{ENT[{"Size"{intArr[4,1]}}{"Position"{intArr[8,0,-1]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[0,0,16,16]}}]}}

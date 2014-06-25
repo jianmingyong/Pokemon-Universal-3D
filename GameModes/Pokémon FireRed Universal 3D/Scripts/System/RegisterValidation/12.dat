@@ -1586,4 +1586,38 @@ version=2
 		:endif
 	:endif
 :endif
+:if:<Register.registered(12\Route102\017000010)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\Route102\017000010" does not exist.])
+:else
+	:if:<not><Register.value(12\Route102\017000010)>=1
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "12\Route102\017000010" cannot be less than 1 and more than 1. Current value: <Register.value(12\Route102\017000010)>])
+	:endif
+:endif
+:if:<Register.registered(12\Route102\040000017)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "12\Route102\040000017" does not exist.])
+:else
+	:if:<not><Register.value(12\Route102\040000017)>=1
+		:if:<Register.registered(System.ErrorLogInit)>=false
+			@Register.change(System.ErrorLog.ErrorID2,2)
+			@Script.start(System\GlobalErrorLog)
+			@Register.register(System.ErrorLogInit)
+		:endif
+		@Text.log([Register validation result: "12\Route102\040000017" cannot be less than 1 and more than 1. Current value: <Register.value(12\Route102\040000017)>])
+	:endif
+:endif
 :end
