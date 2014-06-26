@@ -1,17 +1,18 @@
 ;aiu;
 
 [Pokémon FireRed Universal 3D]
-ProductVersion=0.0.1.0
+ProductVersion=0.0.5.0
 Category=GameModes
-UpdatedApplications=Pokémon FireRed Universal 3D[0.0.0.0-0.0.1)
-Name=Pokémon FireRed Universal 3D v0.49.1.0.0.1 Beta 5
-URL=https://raw.githubusercontent.com/jianmingyong/Pokemon-FireRed-Universal-3D/master/Pok%C3%A9mon%20FireRed%20Universal%203D-Installer-SetupFiles/Pok%C3%A9mon%20FireRed%20Universal%203D%20v0.0.1.exe
+UpdatedApplications=Pokémon FireRed Universal 3D[0.0.0.0-0.0.5)
+Name=Pokémon FireRed Universal 3D v0.49.1.0.0.5
+URL=https://raw.githubusercontent.com/jianmingyong/Pokemon-FireRed-Universal-3D/master/Pok%C3%A9mon%20FireRed%20Universal%203D-Installer-SetupFiles/Pok%C3%A9mon%20FireRed%20Universal%203D%20v0.0.5.exe
 Size=1472682
-ReleaseDate=18/06/2014
-MD5=421753ab7ae43f2adeee05479de22af2
-ServerFileName=Pokémon FireRed Universal 3D v0.0.1.exe
+ReleaseDate=26/06/2014
+MD5=6c68952f255fabfa3cb0bba4d6618f71
+ServerFileName=Pokémon FireRed Universal 3D v0.0.5.exe
 Flags=Critical|Sys64|NoCache|NotSelected
 RegistryKey=HKCU\Software\jianmingyong\Pokémon FireRed Universal 3D\Version
-Version=0.0.1
-Enhancement=New Maps.
+Version=0.0.5
+Feature=Mystery Gifts
+Enhancement=Route 102 Added
 BugFix=Tons of bug fixed.
