@@ -1,13 +1,13 @@
-version=2
+Ôªøversion=2
 :if:<Register.value(12\LittleRootTown\018000009)>=1
 	@Player.turnto(1)
 	@NPC.turn(013000009,3)
 	@NPC.move(013000009,4)
 	@Text.show(MOM: <Player.name>! <Player.name>! Did you~introduce yourself to PROF. BIRCH?)
 	@Sound.play(Select)
-	@Text.show(Oh! What an adorable POKÈMON!~You got it from PROF. BIRCH. How nice!)
+	@Text.show(Oh! What an adorable POK√©MON!~You got it from PROF. BIRCH. How nice!)
 	@Sound.play(Select)
-	@Text.show(You're your father's child, all right.~You look good together with POKÈMON!)
+	@Text.show(You're your father's child, all right.~You look good together with POK√©MON!)
 	@Sound.play(Select)
 	@Text.show(Here, honey! If you're going out on an~adventure, wear these RUNNING SHOES.)
 	@Sound.play(Select)
@@ -24,7 +24,7 @@ version=2
 	@Sound.play(Select)
 	@Text.show(........................~........................)
 	@Sound.play(Select)
-	@Text.show(To think that you have your very own~POKÈMON now...)
+	@Text.show(To think that you have your very own~POK√©MON now...)
 	@Sound.play(Select)
 	@Text.show(Your father will be over joyed.)
 	@Sound.play(Select)

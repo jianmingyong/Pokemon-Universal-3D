@@ -3,6 +3,16 @@ version=2
 	@Entity.remove(008000019)
 	@Entity.remove(009000019)
 	@Entity.remove(010000019)
+	:if:<NPC.exists(000000010)>=false
+		:if:<not><Register.value(12\LittleRootTown\ProfBirchLab)>=4
+			@NPC.spawn(0,0,10,0,Coming Soon!,Dialga,false,3,,000000010,Still)
+		:endif
+	:endif
+	:if:<NPC.exists(000000011)>=false
+		:if:<not><Register.value(12\LittleRootTown\ProfBirchLab)>=4
+			@NPC.spawn(0,0,11,0,Coming Soon!,Dialga,false,3,,000000011,Still)
+		:endif
+	:endif
 	:end
 :endif
 :if:<Register.value(12\OldaleTown)>=2
@@ -11,6 +21,16 @@ version=2
 	:endif
 	:if:<NPC.exists(011000019)>=false <and> <Register.value(System.PlayerGender)>=Female
 		@NPC.spawn(11,0,19,1,12\OldaleTown\011000019,trchar002,false,0,,011000019,Still)
+	:endif
+	:if:<NPC.exists(000000010)>=false
+		:if:<not><Register.value(12\LittleRootTown\ProfBirchLab)>=4
+			@NPC.spawn(0,0,10,0,Coming Soon!,Dialga,false,3,,000000010,Still)
+		:endif
+	:endif
+	:if:<NPC.exists(000000011)>=false
+		:if:<not><Register.value(12\LittleRootTown\ProfBirchLab)>=4
+			@NPC.spawn(0,0,11,0,Coming Soon!,Dialga,false,3,,000000011,Still)
+		:endif
 	:endif
 	:end
 :endif

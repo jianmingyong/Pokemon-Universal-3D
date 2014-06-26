@@ -9,11 +9,10 @@ BaseFriendship|35
 EggGroup1|Flying
 EggGroup2|None
 BaseEggSteps|5355
-EggPokemon|198
 IsGenderLess|0
 IsMale|50
-Ability1|15
-Ability2|105
+Ability1|65
+Ability2|Nothing
 Machines|19,63,86,92,94,104,138,156,164,168,182,207,213,216,218,237,240,241,244,247,259,263,269,332,347,365,371,373,416,496,510,511,514,555
 BaseHP|100
 BaseAttack|125
@@ -41,4 +40,3 @@ Move|55,400
 Move|35,417
 Move|45,492
 Move|65,511
-TradeValue|70

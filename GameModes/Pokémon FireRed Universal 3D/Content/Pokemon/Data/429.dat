@@ -9,10 +9,9 @@ BaseFriendship|35
 EggGroup1|Undiscovered
 EggGroup2|None
 BaseEggSteps|6630
-EggPokemon|200
 IsGenderLess|0
 IsMale|50
-Ability1|26
+Ability1|65
 Ability2|Nothing
 Machines|63,85,86,87,92,94,104,138,148,156,164,168,182,207,213,216,218,237,240,241,244,247,259,261,263,269,332,347,371,373,412,416,433,451,477,496,497
 BaseHP|60
@@ -37,4 +36,3 @@ Move|1,180
 Move|1,310
 Move|1,345
 Move|1,381
-TradeValue|55
