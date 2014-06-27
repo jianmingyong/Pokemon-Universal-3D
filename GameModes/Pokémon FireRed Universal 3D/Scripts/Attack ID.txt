@@ -1,0 +1,2037 @@
+Public Shared Function GetAttackByID(ByVal ID As Int32) As _2._5DHero.BV2.AttackV2
+    Select Case (ID - 1) 
+        Case 0
+            Return New _2._5DHero.BV2.Moves.Normal.Pound()
+            Exit Select
+        Case 1
+            Return New _2._5DHero.BV2.Moves.Fighting.KarateChop()
+            Exit Select
+        Case 2
+            Return New _2._5DHero.BV2.Moves.Normal.DoubleSlap()
+            Exit Select
+        Case 3
+            Return New _2._5DHero.BV2.Moves.Normal.CometPunch()
+            Exit Select
+        Case 4
+            Return New _2._5DHero.BV2.Moves.Normal.MegaPunch()
+            Exit Select
+        Case 5
+            Return New _2._5DHero.BV2.Moves.Normal.PayDay()
+            Exit Select
+        Case 6
+            Return New _2._5DHero.BV2.Moves.Fire.FirePunch()
+            Exit Select
+        Case 7
+            Return New _2._5DHero.BV2.Moves.Ice.IcePunch()
+            Exit Select
+        Case 8
+            Return New _2._5DHero.BV2.Moves.Electric.ThunderPunch()
+            Exit Select
+        Case 9
+            Return New _2._5DHero.BV2.Moves.Normal.Scratch()
+            Exit Select
+        Case 10
+            Return New _2._5DHero.BV2.Moves.Normal.ViceGrip()
+            Exit Select
+        Case 11
+            Return New _2._5DHero.BV2.Moves.Normal.Guillotine()
+            Exit Select
+        Case 12
+            Return New _2._5DHero.BV2.Moves.Normal.RazorWind()
+            Exit Select
+        Case 13
+            Return New _2._5DHero.BV2.Moves.Normal.SwordsDance()
+            Exit Select
+        Case 14
+            Return New _2._5DHero.BV2.Moves.Normal.Cut()
+            Exit Select
+        Case 15
+            Return New _2._5DHero.BV2.Moves.Flying.Gust()
+            Exit Select
+        Case 16
+            Return New _2._5DHero.BV2.Moves.Flying.WingAttack()
+            Exit Select
+        Case 17
+            Return New _2._5DHero.BV2.Moves.Normal.Whirlwind()
+            Exit Select
+        Case 18
+            Return New _2._5DHero.BV2.Moves.Flying.Fly()
+            Exit Select
+        Case 19
+            Return New _2._5DHero.BV2.Moves.Normal.Bind()
+            Exit Select
+        Case 20
+            Return New _2._5DHero.BV2.Moves.Normal.Slam()
+            Exit Select
+        Case 21
+            Return New _2._5DHero.BV2.Moves.Grass.VineWhip()
+            Exit Select
+        Case 22
+            Return New _2._5DHero.BV2.Moves.Normal.Stomp()
+            Exit Select
+        Case 23
+            Return New _2._5DHero.BV2.Moves.Fighting.DoubleKick()
+            Exit Select
+        Case 24
+            Return New _2._5DHero.BV2.Moves.Normal.MegaKick()
+            Exit Select
+        Case 25
+            Return New _2._5DHero.BV2.Moves.Fighting.JumpKick()
+            Exit Select
+        Case 26
+            Return New _2._5DHero.BV2.Moves.Fighting.RollingKick()
+            Exit Select
+        Case 27
+            Return New _2._5DHero.BV2.Moves.Ground.SandAttack()
+            Exit Select
+        Case 28
+            Return New _2._5DHero.BV2.Moves.Normal.Headbutt()
+            Exit Select
+        Case 29
+            Return New _2._5DHero.BV2.Moves.Normal.HornAttack()
+            Exit Select
+        Case 30
+            Return New _2._5DHero.BV2.Moves.Normal.FuryAttack()
+            Exit Select
+        Case 31
+            Return New _2._5DHero.BV2.Moves.Normal.HornDrill()
+            Exit Select
+        Case 32
+            Return New _2._5DHero.BV2.Moves.Normal.Tackle()
+            Exit Select
+        Case 33
+            Return New _2._5DHero.BV2.Moves.Normal.BodySlam()
+            Exit Select
+        Case 34
+            Return New _2._5DHero.BV2.Moves.Normal.Wrap()
+            Exit Select
+        Case 35
+            Return New _2._5DHero.BV2.Moves.Normal.TakeDown()
+            Exit Select
+        Case 36
+            Return New _2._5DHero.BV2.Moves.Normal.Thrash()
+            Exit Select
+        Case 37
+            Return New _2._5DHero.BV2.Moves.Normal.DoubleEdge()
+            Exit Select
+        Case 38
+            Return New _2._5DHero.BV2.Moves.Normal.TailWhip()
+            Exit Select
+        Case 39
+            Return New _2._5DHero.BV2.Moves.Poison.PoisonSting()
+            Exit Select
+        Case 40
+            Return New _2._5DHero.BV2.Moves.Bug.Twineedle()
+            Exit Select
+        Case 41
+            Return New _2._5DHero.BV2.Moves.Bug.PinMissle()
+            Exit Select
+        Case 42
+            Return New _2._5DHero.BV2.Moves.Normal.Leer()
+            Exit Select
+        Case 43
+            Return New _2._5DHero.BV2.Moves.Dark.Bite()
+            Exit Select
+        Case 44
+            Return New _2._5DHero.BV2.Moves.Normal.Growl()
+            Exit Select
+        Case 45
+            Return New _2._5DHero.BV2.Moves.Normal.Roar()
+            Exit Select
+        Case 46
+            Return New _2._5DHero.BV2.Moves.Normal.Sing()
+            Exit Select
+        Case 47
+            Return New _2._5DHero.BV2.Moves.Normal.Supersonic()
+            Exit Select
+        Case 48
+            Return New _2._5DHero.BV2.Moves.Normal.SonicBoom()
+            Exit Select
+        Case 50
+            Return New _2._5DHero.BV2.Moves.Poison.Acid()
+            Exit Select
+        Case 51
+            Return New _2._5DHero.BV2.Moves.Fire.Ember()
+            Exit Select
+        Case 52
+            Return New _2._5DHero.BV2.Moves.Fire.Flamethrower()
+            Exit Select
+        Case 53
+            Return New _2._5DHero.BV2.Moves.Ice.Mist()
+            Exit Select
+        Case 54
+            Return New _2._5DHero.BV2.Moves.Water.WaterGun()
+            Exit Select
+        Case 55
+            Return New _2._5DHero.BV2.Moves.Water.HydroPump()
+            Exit Select
+        Case 56
+            Return New _2._5DHero.BV2.Moves.Water.Surf()
+            Exit Select
+        Case 57
+            Return New _2._5DHero.BV2.Moves.Ice.IceBeam()
+            Exit Select
+        Case 58
+            Return New _2._5DHero.BV2.Moves.Ice.Blizzard()
+            Exit Select
+        Case 59
+            Return New _2._5DHero.BV2.Moves.Psychic.Psybeam()
+            Exit Select
+        Case 60
+            Return New _2._5DHero.BV2.Moves.Water.BubbleBeam()
+            Exit Select
+        Case 61
+            Return New _2._5DHero.BV2.Moves.Ice.AuroraBeam()
+            Exit Select
+        Case 62
+            Return New _2._5DHero.BV2.Moves.Normal.HyperBeam()
+            Exit Select
+        Case 63
+            Return New _2._5DHero.BV2.Moves.Flying.Peck()
+            Exit Select
+        Case 64
+            Return New _2._5DHero.BV2.Moves.Flying.DrillPeck()
+            Exit Select
+        Case 65
+            Return New _2._5DHero.BV2.Moves.Fighting.Submission()
+            Exit Select
+        Case 66
+            Return New _2._5DHero.BV2.Moves.Fighting.LowKick()
+            Exit Select
+        Case 67
+            Return New _2._5DHero.BV2.Moves.Fighting.Counter()
+            Exit Select
+        Case 68
+            Return New _2._5DHero.BV2.Moves.Fighting.SeismicToss()
+            Exit Select
+        Case 69
+            Return New _2._5DHero.BV2.Moves.Normal.Strength()
+            Exit Select
+        Case 70
+            Return New _2._5DHero.BV2.Moves.Grass.Absorb()
+            Exit Select
+        Case 71
+            Return New _2._5DHero.BV2.Moves.Grass.MegaDrain()
+            Exit Select
+        Case 72
+            Return New _2._5DHero.BV2.Moves.Grass.LeechSeed()
+            Exit Select
+        Case 73
+            Return New _2._5DHero.BV2.Moves.Normal.Growth()
+            Exit Select
+        Case 74
+            Return New _2._5DHero.BV2.Moves.Grass.RazorLeaf()
+            Exit Select
+        Case 75
+            Return New _2._5DHero.BV2.Moves.Grass.SolarBeam()
+            Exit Select
+        Case 76
+            Return New _2._5DHero.BV2.Moves.Poison.PoisonPowder()
+            Exit Select
+        Case 77
+            Return New _2._5DHero.BV2.Moves.Grass.StunSpore()
+            Exit Select
+        Case 78
+            Return New _2._5DHero.BV2.Moves.Grass.SleepPowder()
+            Exit Select
+        Case 79
+            Return New _2._5DHero.BV2.Moves.Grass.PetalDance()
+            Exit Select
+        Case 80
+            Return New _2._5DHero.BV2.Moves.Bug.StringShot()
+            Exit Select
+        Case 81
+            Return New _2._5DHero.BV2.Moves.Dragon.DragonRage()
+            Exit Select
+        Case 82
+            Return New _2._5DHero.BV2.Moves.Fire.FireSpin()
+            Exit Select
+        Case 83
+            Return New _2._5DHero.BV2.Moves.Electric.ThunderShock()
+            Exit Select
+        Case 84
+            Return New _2._5DHero.BV2.Moves.Electric.Thunderbolt()
+            Exit Select
+        Case 85
+            Return New _2._5DHero.BV2.Moves.Electric.ThunderWave()
+            Exit Select
+        Case 86
+            Return New _2._5DHero.BV2.Moves.Electric.Thunder()
+            Exit Select
+        Case 87
+            Return New _2._5DHero.BV2.Moves.Rock.RockThrow()
+            Exit Select
+        Case 88
+            Return New _2._5DHero.BV2.Moves.Ground.Earthquake()
+            Exit Select
+        Case 89
+            Return New _2._5DHero.BV2.Moves.Ground.Fissure()
+            Exit Select
+        Case 90
+            Return New _2._5DHero.BV2.Moves.Ground.Dig()
+            Exit Select
+        Case 91
+            Return New _2._5DHero.BV2.Moves.Poison.Toxic()
+            Exit Select
+        Case 92
+            Return New _2._5DHero.BV2.Moves.Psychic.Confusion()
+            Exit Select
+        Case 93
+            Return New _2._5DHero.BV2.Moves.Psychic.Psychic()
+            Exit Select
+        Case 94
+            Return New _2._5DHero.BV2.Moves.Psychic.Hypnosis()
+            Exit Select
+        Case 95
+            Return New _2._5DHero.BV2.Moves.Psychic.Meditate()
+            Exit Select
+        Case 96
+            Return New _2._5DHero.BV2.Moves.Psychic.Agility()
+            Exit Select
+        Case 97
+            Return New _2._5DHero.BV2.Moves.Normal.QuickAttack()
+            Exit Select
+        Case 98
+            Return New _2._5DHero.BV2.Moves.Normal.Rage()
+            Exit Select
+        Case 99
+            Return New _2._5DHero.BV2.Moves.Psychic.Teleport()
+            Exit Select
+        Case 100
+            Return New _2._5DHero.BV2.Moves.Ghost.NightShade()
+            Exit Select
+        Case 101
+            Return New _2._5DHero.BV2.Moves.Normal.Mimic()
+            Exit Select
+        Case 102
+            Return New _2._5DHero.BV2.Moves.Normal.Screech()
+            Exit Select
+        Case 103
+            Return New _2._5DHero.BV2.Moves.Normal.DoubleTeam()
+            Exit Select
+        Case 104
+            Return New _2._5DHero.BV2.Moves.Normal.Recover()
+            Exit Select
+        Case 105
+            Return New _2._5DHero.BV2.Moves.Normal.Harden()
+            Exit Select
+        Case 106
+            Return New _2._5DHero.BV2.Moves.Normal.Minimize()
+            Exit Select
+        Case 107
+            Return New _2._5DHero.BV2.Moves.Normal.SmokeScreen()
+            Exit Select
+        Case 108
+            Return New _2._5DHero.BV2.Moves.Ghost.ConfuseRay()
+            Exit Select
+        Case 109
+            Return New _2._5DHero.BV2.Moves.Water.Withdraw()
+            Exit Select
+        Case 110
+            Return New _2._5DHero.BV2.Moves.Normal.DefenseCurl()
+            Exit Select
+        Case 111
+            Return New _2._5DHero.BV2.Moves.Psychic.Barrier()
+            Exit Select
+        Case 112
+            Return New _2._5DHero.BV2.Moves.Psychic.LightScreen()
+            Exit Select
+        Case 113
+            Return New _2._5DHero.BV2.Moves.Ice.Haze()
+            Exit Select
+        Case 114
+            Return New _2._5DHero.BV2.Moves.Psychic.Reflect()
+            Exit Select
+        Case 115
+            Return New _2._5DHero.BV2.Moves.Normal.FocusEnergy()
+            Exit Select
+        Case 116
+            Return New _2._5DHero.BV2.Moves.Normal.Bide()
+            Exit Select
+        Case 117
+            Return New _2._5DHero.BV2.Moves.Normal.Metronome()
+            Exit Select
+        Case 118
+            Return New _2._5DHero.BV2.Moves.Flying.MirrorMove()
+            Exit Select
+        Case 119
+            Return New _2._5DHero.BV2.Moves.Normal.Selfdestruct()
+            Exit Select
+        Case 120
+            Return New _2._5DHero.BV2.Moves.Normal.EggBomb()
+            Exit Select
+        Case 121
+            Return New _2._5DHero.BV2.Moves.Ghost.Lick()
+            Exit Select
+        Case 122
+            Return New _2._5DHero.BV2.Moves.Poison.Smog()
+            Exit Select
+        Case 123
+            Return New _2._5DHero.BV2.Moves.Poison.Sludge()
+            Exit Select
+        Case 124
+            Return New _2._5DHero.BV2.Moves.Ground.BoneClub()
+            Exit Select
+        Case 125
+            Return New _2._5DHero.BV2.Moves.Fire.FireBlast()
+            Exit Select
+        Case 126
+            Return New _2._5DHero.BV2.Moves.Water.Waterfall()
+            Exit Select
+        Case 127
+            Return New _2._5DHero.BV2.Moves.Water.Clamp()
+            Exit Select
+        Case 128
+            Return New _2._5DHero.BV2.Moves.Normal.Swift()
+            Exit Select
+        Case 129
+            Return New _2._5DHero.BV2.Moves.Normal.SkullBash()
+            Exit Select
+        Case 130
+            Return New _2._5DHero.BV2.Moves.Normal.SpikeCannon()
+            Exit Select
+        Case 131
+            Return New _2._5DHero.BV2.Moves.Normal.Constrict()
+            Exit Select
+        Case 132
+            Return New _2._5DHero.BV2.Moves.Psychic.Amnesia()
+            Exit Select
+        Case 133
+            Return New _2._5DHero.BV2.Moves.Psychic.Kinesis()
+            Exit Select
+        Case 134
+            Return New _2._5DHero.BV2.Moves.Normal.Softboiled()
+            Exit Select
+        Case 135
+            Return New _2._5DHero.BV2.Moves.Fighting.HiJumpKick()
+            Exit Select
+        Case 136
+            Return New _2._5DHero.BV2.Moves.Normal.Glare()
+            Exit Select
+        Case 137
+            Return New _2._5DHero.BV2.Moves.Psychic.DreamEater()
+            Exit Select
+        Case 138
+            Return New _2._5DHero.BV2.Moves.Poison.PoisonGas()
+            Exit Select
+        Case 139
+            Return New _2._5DHero.BV2.Moves.Normal.Barrage()
+            Exit Select
+        Case 140
+            Return New _2._5DHero.BV2.Moves.Bug.LeechLife()
+            Exit Select
+        Case 141
+            Return New _2._5DHero.BV2.Moves.Normal.LovelyKiss()
+            Exit Select
+        Case 142
+            Return New _2._5DHero.BV2.Moves.Flying.SkyAttack()
+            Exit Select
+        Case 143
+            Return New _2._5DHero.BV2.Moves.Normal.Transform()
+            Exit Select
+        Case 144
+            Return New _2._5DHero.BV2.Moves.Water.Bubble()
+            Exit Select
+        Case 145
+            Return New _2._5DHero.BV2.Moves.Normal.DizzyPunch()
+            Exit Select
+        Case 146
+            Return New _2._5DHero.BV2.Moves.Grass.Spore()
+            Exit Select
+        Case 147
+            Return New _2._5DHero.BV2.Moves.Electric.Flash()
+            Exit Select
+        Case 148
+            Return New _2._5DHero.BV2.Moves.Psychic.Psywave()
+            Exit Select
+        Case 149
+            Return New _2._5DHero.BV2.Moves.Normal.Splash()
+            Exit Select
+        Case 150
+            Return New _2._5DHero.BV2.Moves.Poison.AcidArmor()
+            Exit Select
+        Case 151
+            Return New _2._5DHero.BV2.Moves.Water.Crabhammer()
+            Exit Select
+        Case 152
+            Return New _2._5DHero.BV2.Moves.Normal.Explosion()
+            Exit Select
+        Case 153
+            Return New _2._5DHero.BV2.Moves.Normal.FurySwipes()
+            Exit Select
+        Case 154
+            Return New _2._5DHero.BV2.Moves.Ground.Bonemerang()
+            Exit Select
+        Case 155
+            Return New _2._5DHero.BV2.Moves.Psychic.Rest()
+            Exit Select
+        Case 156
+            Return New _2._5DHero.BV2.Moves.Rock.RockSlide()
+            Exit Select
+        Case 157
+            Return New _2._5DHero.BV2.Moves.Normal.HyperFang()
+            Exit Select
+        Case 158
+            Return New _2._5DHero.BV2.Moves.Normal.Sharpen()
+            Exit Select
+        Case 159
+            Return New _2._5DHero.BV2.Moves.Normal.Conversion()
+            Exit Select
+        Case 160
+            Return New _2._5DHero.BV2.Moves.Normal.TriAttack()
+            Exit Select
+        Case 161
+            Return New _2._5DHero.BV2.Moves.Normal.SuperFang()
+            Exit Select
+        Case 162
+            Return New _2._5DHero.BV2.Moves.Normal.Slash()
+            Exit Select
+        Case 163
+            Return New _2._5DHero.BV2.Moves.Normal.Substitute()
+            Exit Select
+        Case 164
+            Return New _2._5DHero.BV2.Moves.Normal.Struggle()
+            Exit Select
+        Case 165
+            Return New _2._5DHero.BV2.Moves.Normal.Sketch()
+            Exit Select
+        Case 166
+            Return New _2._5DHero.BV2.Moves.Fighting.TripleKick()
+            Exit Select
+        Case 167
+            Return New _2._5DHero.BV2.Moves.Dark.Thief()
+            Exit Select
+        Case 168
+            Return New _2._5DHero.BV2.Moves.Bug.SpiderWeb()
+            Exit Select
+        Case 169
+            Return New _2._5DHero.BV2.Moves.Normal.MindReader()
+            Exit Select
+        Case 170
+            Return New _2._5DHero.BV2.Moves.Ghost.Nightmare()
+            Exit Select
+        Case 171
+            Return New _2._5DHero.BV2.Moves.Fire.FlameWheel()
+            Exit Select
+        Case 172
+            Return New _2._5DHero.BV2.Moves.Normal.Snore()
+            Exit Select
+        Case 173
+            Return New _2._5DHero.BV2.Moves.Ghost.Curse()
+            Exit Select
+        Case 174
+            Return New _2._5DHero.BV2.Moves.Normal.Flail()
+            Exit Select
+        Case 175
+            Return New _2._5DHero.BV2.Moves.Normal.Conversion2()
+            Exit Select
+        Case 176
+            Return New _2._5DHero.BV2.Moves.Flying.Aeroblast()
+            Exit Select
+        Case 177
+            Return New _2._5DHero.BV2.Moves.Grass.CottonSpore()
+            Exit Select
+        Case 178
+            Return New _2._5DHero.BV2.Moves.Fighting.Reversal()
+            Exit Select
+        Case 179
+            Return New _2._5DHero.BV2.Moves.Ghost.Spite()
+            Exit Select
+        Case 180
+            Return New _2._5DHero.BV2.Moves.Ice.PowderSnow()
+            Exit Select
+        Case 181
+            Return New _2._5DHero.BV2.Moves.Normal.Protect()
+            Exit Select
+        Case 182
+            Return New _2._5DHero.BV2.Moves.Fighting.MachPunch()
+            Exit Select
+        Case 183
+            Return New _2._5DHero.BV2.Moves.Normal.ScaryFace()
+            Exit Select
+        Case 184
+            Return New _2._5DHero.BV2.Moves.Dark.FaintAttack()
+            Exit Select
+        Case 185
+            Return New _2._5DHero.BV2.Moves.Normal.SweetKiss()
+            Exit Select
+        Case 186
+            Return New _2._5DHero.BV2.Moves.Normal.BellyDrum()
+            Exit Select
+        Case 187
+            Return New _2._5DHero.BV2.Moves.Poison.SludgeBomb()
+            Exit Select
+        Case 188
+            Return New _2._5DHero.BV2.Moves.Ground.MudSlap()
+            Exit Select
+        Case 189
+            Return New _2._5DHero.BV2.Moves.Water.Octazooka()
+            Exit Select
+        Case 190
+            Return New _2._5DHero.BV2.Moves.Ground.Spikes()
+            Exit Select
+        Case 191
+            Return New _2._5DHero.BV2.Moves.Electric.ZapCannon()
+            Exit Select
+        Case 192
+            Return New _2._5DHero.BV2.Moves.Normal.Foresight()
+            Exit Select
+        Case 193
+            Return New _2._5DHero.BV2.Moves.Ghost.DestinyBond()
+            Exit Select
+        Case 194
+            Return New _2._5DHero.BV2.Moves.Normal.PerishSong()
+            Exit Select
+        Case 195
+            Return New _2._5DHero.BV2.Moves.Ice.IcyWind()
+            Exit Select
+        Case 196
+            Return New _2._5DHero.BV2.Moves.Fighting.Detect()
+            Exit Select
+        Case 197
+            Return New _2._5DHero.BV2.Moves.Ground.BoneRush()
+            Exit Select
+        Case 198
+            Return New _2._5DHero.BV2.Moves.Normal.LockOn()
+            Exit Select
+        Case 199
+            Return New _2._5DHero.BV2.Moves.Dragon.Outrage()
+            Exit Select
+        Case 200
+            Return New _2._5DHero.BV2.Moves.Rock.Sandstorm()
+            Exit Select
+        Case 201
+            Return New _2._5DHero.BV2.Moves.Grass.GigaDrain()
+            Exit Select
+        Case 202
+            Return New _2._5DHero.BV2.Moves.Normal.Endure()
+            Exit Select
+        Case 203
+            Return New _2._5DHero.BV2.Moves.Normal.Charm()
+            Exit Select
+        Case 204
+            Return New _2._5DHero.BV2.Moves.Rock.Rollout()
+            Exit Select
+        Case 205
+            Return New _2._5DHero.BV2.Moves.Normal.FalseSwipe()
+            Exit Select
+        Case 206
+            Return New _2._5DHero.BV2.Moves.Normal.Swagger()
+            Exit Select
+        Case 207
+            Return New _2._5DHero.BV2.Moves.Normal.MilkDrink()
+            Exit Select
+        Case 208
+            Return New _2._5DHero.BV2.Moves.Electric.Spark()
+            Exit Select
+        Case 209
+            Return New _2._5DHero.BV2.Moves.Bug.FuryCutter()
+            Exit Select
+        Case 210
+            Return New _2._5DHero.BV2.Moves.Steel.SteelWing()
+            Exit Select
+        Case 211
+            Return New _2._5DHero.BV2.Moves.Normal.MeanLook()
+            Exit Select
+        Case 212
+            Return New _2._5DHero.BV2.Moves.Normal.Attract()
+            Exit Select
+        Case 213
+            Return New _2._5DHero.BV2.Moves.Normal.SleepTalk()
+            Exit Select
+        Case 214
+            Return New _2._5DHero.BV2.Moves.Normal.HealBell()
+            Exit Select
+        Case 215
+            Return New _2._5DHero.BV2.Moves.Normal.Return()
+            Exit Select
+        Case 216
+            Return New _2._5DHero.BV2.Moves.Normal.Present()
+            Exit Select
+        Case 217
+            Return New _2._5DHero.BV2.Moves.Normal.Frustration()
+            Exit Select
+        Case 218
+            Return New _2._5DHero.BV2.Moves.Normal.Safeguard()
+            Exit Select
+        Case 219
+            Return New _2._5DHero.BV2.Moves.Normal.PainSplit()
+            Exit Select
+        Case 220
+            Return New _2._5DHero.BV2.Moves.Fire.SacredFire()
+            Exit Select
+        Case 221
+            Return New _2._5DHero.BV2.Moves.Ground.Magnitude()
+            Exit Select
+        Case 222
+            Return New _2._5DHero.BV2.Moves.Fighting.DynamicPunch()
+            Exit Select
+        Case 223
+            Return New _2._5DHero.BV2.Moves.Bug.Megahorn()
+            Exit Select
+        Case 224
+            Return New _2._5DHero.BV2.Moves.Dragon.DragonBreath()
+            Exit Select
+        Case 225
+            Return New _2._5DHero.BV2.Moves.Normal.BatonPass()
+            Exit Select
+        Case 226
+            Return New _2._5DHero.BV2.Moves.Normal.Encore()
+            Exit Select
+        Case 227
+            Return New _2._5DHero.BV2.Moves.Dark.Pursuit()
+            Exit Select
+        Case 228
+            Return New _2._5DHero.BV2.Moves.Normal.RapidSpin()
+            Exit Select
+        Case 229
+            Return New _2._5DHero.BV2.Moves.Normal.SweetScent()
+            Exit Select
+        Case 230
+            Return New _2._5DHero.BV2.Moves.Steel.IronTail()
+            Exit Select
+        Case 231
+            Return New _2._5DHero.BV2.Moves.Steel.MetalClaw()
+            Exit Select
+        Case 232
+            Return New _2._5DHero.BV2.Moves.Fighting.VitalThrow()
+            Exit Select
+        Case 233
+            Return New _2._5DHero.BV2.Moves.Normal.MorningSun()
+            Exit Select
+        Case 234
+            Return New _2._5DHero.BV2.Moves.Grass.Synthesis()
+            Exit Select
+        Case 235
+            Return New _2._5DHero.BV2.Moves.Normal.Moonlight()
+            Exit Select
+        Case 236
+            Return New _2._5DHero.BV2.Moves.Normal.HiddenPower()
+            Exit Select
+        Case 237
+            Return New _2._5DHero.BV2.Moves.Fighting.CrossChop()
+            Exit Select
+        Case 238
+            Return New _2._5DHero.BV2.Moves.Dragon.Twister()
+            Exit Select
+        Case 239
+            Return New _2._5DHero.BV2.Moves.Water.RainDance()
+            Exit Select
+        Case 240
+            Return New _2._5DHero.BV2.Moves.Fire.SunnyDay()
+            Exit Select
+        Case 241
+            Return New _2._5DHero.BV2.Moves.Dark.Crunch()
+            Exit Select
+        Case 242
+            Return New _2._5DHero.BV2.Moves.Psychic.MirrorCoat()
+            Exit Select
+        Case 243
+            Return New _2._5DHero.BV2.Moves.Normal.PsychUp()
+            Exit Select
+        Case 244
+            Return New _2._5DHero.BV2.Moves.Normal.ExtremeSpeed()
+            Exit Select
+        Case 245
+            Return New _2._5DHero.BV2.Moves.Rock.AncientPower()
+            Exit Select
+        Case 246
+            Return New _2._5DHero.BV2.Moves.Ghost.ShadowBall()
+            Exit Select
+        Case 247
+            Return New _2._5DHero.BV2.Moves.Psychic.FutureSight()
+            Exit Select
+        Case 248
+            Return New _2._5DHero.BV2.Moves.Fighting.RockSmash()
+            Exit Select
+        Case 249
+            Return New _2._5DHero.BV2.Moves.Water.Whirlpool()
+            Exit Select
+        Case 250
+            Return New _2._5DHero.BV2.Moves.Dark.BeatUp()
+            Exit Select
+        Case 251
+            Return New _2._5DHero.BV2.Moves.Normal.FakeOut()
+            Exit Select
+        Case 252
+            Return New _2._5DHero.BV2.Moves.Normal.Uproar()
+            Exit Select
+        Case 253
+            Return New _2._5DHero.BV2.Moves.Normal.Stockpile()
+            Exit Select
+        Case 254
+            Return New _2._5DHero.BV2.Moves.Normal.SpitUp()
+            Exit Select
+        Case 255
+            Return New _2._5DHero.BV2.Moves.Normal.Swallow()
+            Exit Select
+        Case 256
+            Return New _2._5DHero.BV2.Moves.Fire.HeatWave()
+            Exit Select
+        Case 257
+            Return New _2._5DHero.BV2.Moves.Ice.Hail()
+            Exit Select
+        Case 258
+            Return New _2._5DHero.BV2.Moves.Dark.Torment()
+            Exit Select
+        Case 259
+            Return New _2._5DHero.BV2.Moves.Dark.Flatter()
+            Exit Select
+        Case 260
+            Return New _2._5DHero.BV2.Moves.Fire.WillOWisp()
+            Exit Select
+        Case 261
+            Return New _2._5DHero.BV2.Moves.Dark.Memento()
+            Exit Select
+        Case 262
+            Return New _2._5DHero.BV2.Moves.Normal.Facade()
+            Exit Select
+        Case 263
+            Return New _2._5DHero.BV2.Moves.Fighting.FocusPunch()
+            Exit Select
+        Case 264
+            Return New _2._5DHero.BV2.Moves.Normal.SmellingSalt()
+            Exit Select
+        Case 266
+            Return New _2._5DHero.BV2.Moves.Normal.NaturePower()
+            Exit Select
+        Case 267
+            Return New _2._5DHero.BV2.Moves.Electric.Charge()
+            Exit Select
+        Case 268
+            Return New _2._5DHero.BV2.Moves.Dark.Taunt()
+            Exit Select
+        Case 270
+            Return New _2._5DHero.BV2.Moves.Psychic.Trick()
+            Exit Select
+        Case 271
+            Return New _2._5DHero.BV2.Moves.Psychic.RolePlay()
+            Exit Select
+        Case 272
+            Return New _2._5DHero.BV2.Moves.Normal.Wish()
+            Exit Select
+        Case 273
+            Return New _2._5DHero.BV2.Moves.Normal.Assist()
+            Exit Select
+        Case 274
+            Return New _2._5DHero.BV2.Moves.Grass.Ingrain()
+            Exit Select
+        Case 275
+            Return New _2._5DHero.BV2.Moves.Fighting.SuperPower()
+            Exit Select
+        Case 276
+            Return New _2._5DHero.BV2.Moves.Psychic.MagicCoat()
+            Exit Select
+        Case 277
+            Return New _2._5DHero.BV2.Moves.Normal.Recycle()
+            Exit Select
+        Case 278
+            Return New _2._5DHero.BV2.Moves.Fighting.Revenge()
+            Exit Select
+        Case 279
+            Return New _2._5DHero.BV2.Moves.Fighting.BrickBreak()
+            Exit Select
+        Case 280
+            Return New _2._5DHero.BV2.Moves.Normal.Yawn()
+            Exit Select
+        Case 281
+            Return New _2._5DHero.BV2.Moves.Dark.KnockOff()
+            Exit Select
+        Case 282
+            Return New _2._5DHero.BV2.Moves.Normal.Endeavor()
+            Exit Select
+        Case 283
+            Return New _2._5DHero.BV2.Moves.Fire.Eruption()
+            Exit Select
+        Case 284
+            Return New _2._5DHero.BV2.Moves.Psychic.SkillSwap()
+            Exit Select
+        Case 286
+            Return New _2._5DHero.BV2.Moves.Normal.Refresh()
+            Exit Select
+        Case 288
+            Return New _2._5DHero.BV2.Moves.Normal.Snatch()
+            Exit Select
+        Case 290
+            Return New _2._5DHero.BV2.Moves.Water.Dive()
+            Exit Select
+        Case 291
+            Return New _2._5DHero.BV2.Moves.Fighting.ArmThrust()
+            Exit Select
+        Case 293
+            Return New _2._5DHero.BV2.Moves.Bug.Tailglow()
+            Exit Select
+        Case 294
+            Return New _2._5DHero.BV2.Moves.Psychic.LusterPurge()
+            Exit Select
+        Case 295
+            Return New _2._5DHero.BV2.Moves.Psychic.MistBall()
+            Exit Select
+        Case 296
+            Return New _2._5DHero.BV2.Moves.Flying.FeatherDance()
+            Exit Select
+        Case 297
+            Return New _2._5DHero.BV2.Moves.Normal.TeeterDance()
+            Exit Select
+        Case 298
+            Return New _2._5DHero.BV2.Moves.Fire.BlazeKick()
+            Exit Select
+        Case 299
+            Return New _2._5DHero.BV2.Moves.Ground.MudSport()
+            Exit Select
+        Case 300
+            Return New _2._5DHero.BV2.Moves.Ice.IceBall()
+            Exit Select
+        Case 301
+            Return New _2._5DHero.BV2.Moves.Grass.NeedleArm()
+            Exit Select
+        Case 302
+            Return New _2._5DHero.BV2.Moves.Normal.SlackOff()
+            Exit Select
+        Case 303
+            Return New _2._5DHero.BV2.Moves.Normal.HyperVoice()
+            Exit Select
+        Case 304
+            Return New _2._5DHero.BV2.Moves.Poison.PoisonFang()
+            Exit Select
+        Case 305
+            Return New _2._5DHero.BV2.Moves.Normal.CrushClaw()
+            Exit Select
+        Case 306
+            Return New _2._5DHero.BV2.Moves.Fire.BlastBurn()
+            Exit Select
+        Case 307
+            Return New _2._5DHero.BV2.Moves.Water.Hydrocannon()
+            Exit Select
+        Case 308
+            Return New _2._5DHero.BV2.Moves.Steel.MeteorMash()
+            Exit Select
+        Case 309
+            Return New _2._5DHero.BV2.Moves.Ghost.Astonish()
+            Exit Select
+        Case 310
+            Return New _2._5DHero.BV2.Moves.Normal.WeatherBall()
+            Exit Select
+        Case 311
+            Return New _2._5DHero.BV2.Moves.Grass.Aromatherapy()
+            Exit Select
+        Case 312
+            Return New _2._5DHero.BV2.Moves.Dark.FakeTears()
+            Exit Select
+        Case 313
+            Return New _2._5DHero.BV2.Moves.Flying.AirCutter()
+            Exit Select
+        Case 314
+            Return New _2._5DHero.BV2.Moves.Fire.Overheat()
+            Exit Select
+        Case 315
+            Return New _2._5DHero.BV2.Moves.Normal.OdorSleuth()
+            Exit Select
+        Case 316
+            Return New _2._5DHero.BV2.Moves.Rock.RockTomb()
+            Exit Select
+        Case 317
+            Return New _2._5DHero.BV2.Moves.Bug.Silverwind()
+            Exit Select
+        Case 318
+            Return New _2._5DHero.BV2.Moves.Steel.MetalSound()
+            Exit Select
+        Case 319
+            Return New _2._5DHero.BV2.Moves.Grass.GrassWhistle()
+            Exit Select
+        Case 320
+            Return New _2._5DHero.BV2.Moves.Normal.Tickle()
+            Exit Select
+        Case 321
+            Return New _2._5DHero.BV2.Moves.Psychic.CosmicPower()
+            Exit Select
+        Case 322
+            Return New _2._5DHero.BV2.Moves.Water.WaterSpout()
+            Exit Select
+        Case 323
+            Return New _2._5DHero.BV2.Moves.Bug.SignalBeam()
+            Exit Select
+        Case 324
+            Return New _2._5DHero.BV2.Moves.Ghost.ShadowPunch()
+            Exit Select
+        Case 325
+            Return New _2._5DHero.BV2.Moves.Psychic.Extrasensory()
+            Exit Select
+        Case 326
+            Return New _2._5DHero.BV2.Moves.Fighting.SkyUppercut()
+            Exit Select
+        Case 327
+            Return New _2._5DHero.BV2.Moves.Ground.SandTomb()
+            Exit Select
+        Case 328
+            Return New _2._5DHero.BV2.Moves.Ice.SheerCold()
+            Exit Select
+        Case 329
+            Return New _2._5DHero.BV2.Moves.Water.Muddywater()
+            Exit Select
+        Case 330
+            Return New _2._5DHero.BV2.Moves.Grass.BulletSeed()
+            Exit Select
+        Case 331
+            Return New _2._5DHero.BV2.Moves.Flying.AerialAce()
+            Exit Select
+        Case 332
+            Return New _2._5DHero.BV2.Moves.Ice.IcicleSpear()
+            Exit Select
+        Case 333
+            Return New _2._5DHero.BV2.Moves.Steel.IronDefense()
+            Exit Select
+        Case 334
+            Return New _2._5DHero.BV2.Moves.Normal.Block()
+            Exit Select
+        Case 335
+            Return New _2._5DHero.BV2.Moves.Normal.Howl()
+            Exit Select
+        Case 336
+            Return New _2._5DHero.BV2.Moves.Dragon.DragonClaw()
+            Exit Select
+        Case 337
+            Return New _2._5DHero.BV2.Moves.Grass.FrenzyPlant()
+            Exit Select
+        Case 338
+            Return New _2._5DHero.BV2.Moves.Fighting.BulkUp()
+            Exit Select
+        Case 339
+            Return New _2._5DHero.BV2.Moves.Flying.Bounce()
+            Exit Select
+        Case 340
+            Return New _2._5DHero.BV2.Moves.Ground.MudShot()
+            Exit Select
+        Case 341
+            Return New _2._5DHero.BV2.Moves.Poison.PoisonTail()
+            Exit Select
+        Case 342
+            Return New _2._5DHero.BV2.Moves.Normal.Covet()
+            Exit Select
+        Case 343
+            Return New _2._5DHero.BV2.Moves.Electric.VoltTackle()
+            Exit Select
+        Case 344
+            Return New _2._5DHero.BV2.Moves.Grass.MagicalLeaf()
+            Exit Select
+        Case 345
+            Return New _2._5DHero.BV2.Moves.Water.WaterSport()
+            Exit Select
+        Case 346
+            Return New _2._5DHero.BV2.Moves.Psychic.CalmMind()
+            Exit Select
+        Case 347
+            Return New _2._5DHero.BV2.Moves.Grass.LeafBlade()
+            Exit Select
+        Case 348
+            Return New _2._5DHero.BV2.Moves.Dragon.DragonDance()
+            Exit Select
+        Case 349
+            Return New _2._5DHero.BV2.Moves.Rock.RockBlast()
+            Exit Select
+        Case 350
+            Return New _2._5DHero.BV2.Moves.Electric.ShockWave()
+            Exit Select
+        Case 351
+            Return New _2._5DHero.BV2.Moves.Water.WaterPulse()
+            Exit Select
+        Case 352
+            Return New _2._5DHero.BV2.Moves.Steel.DoomDesire()
+            Exit Select
+        Case 353
+            Return New _2._5DHero.BV2.Moves.Psychic.PsychoBoost()
+            Exit Select
+        Case 354
+            Return New _2._5DHero.BV2.Moves.Flying.Roost()
+            Exit Select
+        Case 355
+            Return New _2._5DHero.BV2.Moves.Psychic.Gravity()
+            Exit Select
+        Case 356
+            Return New _2._5DHero.BV2.Moves.Psychic.MiracleEye()
+            Exit Select
+        Case 357
+            Return New _2._5DHero.BV2.Moves.Fighting.WakeUpSlap()
+            Exit Select
+        Case 358
+            Return New _2._5DHero.BV2.Moves.Fighting.HammerArm()
+            Exit Select
+        Case 359
+            Return New _2._5DHero.BV2.Moves.Steel.GyroBall()
+            Exit Select
+        Case 360
+            Return New _2._5DHero.BV2.Moves.Psychic.HealingWish()
+            Exit Select
+        Case 361
+            Return New _2._5DHero.BV2.Moves.Water.Brine()
+            Exit Select
+        Case 362
+            Return New _2._5DHero.BV2.Moves.Normal.NaturalGift()
+            Exit Select
+        Case 363
+            Return New _2._5DHero.BV2.Moves.Normal.Feint()
+            Exit Select
+        Case 364
+            Return New _2._5DHero.BV2.Moves.Flying.Pluck()
+            Exit Select
+        Case 365
+            Return New _2._5DHero.BV2.Moves.Flying.Tailwind()
+            Exit Select
+        Case 366
+            Return New _2._5DHero.BV2.Moves.Normal.Acupressure()
+            Exit Select
+        Case 368
+            Return New _2._5DHero.BV2.Moves.Bug.UTurn()
+            Exit Select
+        Case 369
+            Return New _2._5DHero.BV2.Moves.Fighting.CloseCombat()
+            Exit Select
+        Case 370
+            Return New _2._5DHero.BV2.Moves.Dark.Payback()
+            Exit Select
+        Case 374
+            Return New _2._5DHero.BV2.Moves.Psychic.PsychoShift()
+            Exit Select
+        Case 375
+            Return New _2._5DHero.BV2.Moves.Normal.TrumpCard()
+            Exit Select
+        Case 377
+            Return New _2._5DHero.BV2.Moves.Normal.WringOut()
+            Exit Select
+        Case 383
+            Return New _2._5DHero.BV2.Moves.Psychic.PowerSwap()
+            Exit Select
+        Case 384
+            Return New _2._5DHero.BV2.Moves.Psychic.GuardSwap()
+            Exit Select
+        Case 385
+            Return New _2._5DHero.BV2.Moves.Dark.Punishment()
+            Exit Select
+        Case 386
+            Return New _2._5DHero.BV2.Moves.Normal.LastResort()
+            Exit Select
+        Case 388
+            Return New _2._5DHero.BV2.Moves.Dark.SuckerPunch()
+            Exit Select
+        Case 389
+            Return New _2._5DHero.BV2.Moves.Poison.ToxicSpikes()
+            Exit Select
+        Case 390
+            Return New _2._5DHero.BV2.Moves.Psychic.HeartSwap()
+            Exit Select
+        Case 391
+            Return New _2._5DHero.BV2.Moves.Water.AquaRing()
+            Exit Select
+        Case 393
+            Return New _2._5DHero.BV2.Moves.Fire.FlareBlitz()
+            Exit Select
+        Case 394
+            Return New _2._5DHero.BV2.Moves.Fighting.ForcePalm()
+            Exit Select
+        Case 395
+            Return New _2._5DHero.BV2.Moves.Fighting.AuraSphere()
+            Exit Select
+        Case 396
+            Return New _2._5DHero.BV2.Moves.Rock.RockPolish()
+            Exit Select
+        Case 397
+            Return New _2._5DHero.BV2.Moves.Poison.PoisonJab()
+            Exit Select
+        Case 398
+            Return New _2._5DHero.BV2.Moves.Dark.DarkPulse()
+            Exit Select
+        Case 399
+            Return New _2._5DHero.BV2.Moves.Dark.Nightslash()
+            Exit Select
+        Case 400
+            Return New _2._5DHero.BV2.Moves.Water.Aquatail()
+            Exit Select
+        Case 401
+            Return New _2._5DHero.BV2.Moves.Grass.SeedBomb()
+            Exit Select
+        Case 402
+            Return New _2._5DHero.BV2.Moves.Flying.AirSlash()
+            Exit Select
+        Case 403
+            Return New _2._5DHero.BV2.Moves.Bug.Xscissor()
+            Exit Select
+        Case 404
+            Return New _2._5DHero.BV2.Moves.Bug.BugBuzz()
+            Exit Select
+        Case 405
+            Return New _2._5DHero.BV2.Moves.Dragon.DragonPulse()
+            Exit Select
+        Case 406
+            Return New _2._5DHero.BV2.Moves.Dragon.DragonRush()
+            Exit Select
+        Case 407
+            Return New _2._5DHero.BV2.Moves.Rock.PowerGem()
+            Exit Select
+        Case 408
+            Return New _2._5DHero.BV2.Moves.Fighting.DrainPunch()
+            Exit Select
+        Case 409
+            Return New _2._5DHero.BV2.Moves.Fighting.VacuumWave()
+            Exit Select
+        Case 410
+            Return New _2._5DHero.BV2.Moves.Fighting.FocusBlast()
+            Exit Select
+        Case 411
+            Return New _2._5DHero.BV2.Moves.Grass.EnergyBall()
+            Exit Select
+        Case 412
+            Return New _2._5DHero.BV2.Moves.Flying.BraveBird()
+            Exit Select
+        Case 413
+            Return New _2._5DHero.BV2.Moves.Ground.EarthPower()
+            Exit Select
+        Case 415
+            Return New _2._5DHero.BV2.Moves.Normal.GigaImpact()
+            Exit Select
+        Case 416
+            Return New _2._5DHero.BV2.Moves.Dark.NastyPlot()
+            Exit Select
+        Case 417
+            Return New _2._5DHero.BV2.Moves.Steel.BulletPunch()
+            Exit Select
+        Case 419
+            Return New _2._5DHero.BV2.Moves.Ice.IceShard()
+            Exit Select
+        Case 420
+            Return New _2._5DHero.BV2.Moves.Ghost.ShadowClaw()
+            Exit Select
+        Case 421
+            Return New _2._5DHero.BV2.Moves.Electric.ThunderFang()
+            Exit Select
+        Case 422
+            Return New _2._5DHero.BV2.Moves.Ice.IceFang()
+            Exit Select
+        Case 423
+            Return New _2._5DHero.BV2.Moves.Fire.FireFang()
+            Exit Select
+        Case 424
+            Return New _2._5DHero.BV2.Moves.Ghost.ShadowSneak()
+            Exit Select
+        Case 425
+            Return New _2._5DHero.BV2.Moves.Ground.MudBomb()
+            Exit Select
+        Case 426
+            Return New _2._5DHero.BV2.Moves.Psychic.PsychoCut()
+            Exit Select
+        Case 427
+            Return New _2._5DHero.BV2.Moves.Psychic.ZenHeadbutt()
+            Exit Select
+        Case 428
+            Return New _2._5DHero.BV2.Moves.Steel.MirrorShot()
+            Exit Select
+        Case 429
+            Return New _2._5DHero.BV2.Moves.Steel.FlashCannon()
+            Exit Select
+        Case 430
+            Return New _2._5DHero.BV2.Moves.Normal.RockClimb()
+            Exit Select
+        Case 431
+            Return New _2._5DHero.BV2.Moves.Flying.Defog()
+            Exit Select
+        Case 433
+            Return New _2._5DHero.BV2.Moves.Dragon.DracoMeteor()
+            Exit Select
+        Case 434
+            Return New _2._5DHero.BV2.Moves.Electric.Discharge()
+            Exit Select
+        Case 435
+            Return New _2._5DHero.BV2.Moves.Fire.LavaPlume()
+            Exit Select
+        Case 436
+            Return New _2._5DHero.BV2.Moves.Grass.LeafStorm()
+            Exit Select
+        Case 437
+            Return New _2._5DHero.BV2.Moves.Grass.PowerWhip()
+            Exit Select
+        Case 438
+            Return New _2._5DHero.BV2.Moves.Rock.RockWrecker()
+            Exit Select
+        Case 439
+            Return New _2._5DHero.BV2.Moves.Poison.Crosspoison()
+            Exit Select
+        Case 440
+            Return New _2._5DHero.BV2.Moves.Poison.GunkShot()
+            Exit Select
+        Case 441
+            Return New _2._5DHero.BV2.Moves.Steel.Ironhead()
+            Exit Select
+        Case 442
+            Return New _2._5DHero.BV2.Moves.Steel.MagnetBomb()
+            Exit Select
+        Case 443
+            Return New _2._5DHero.BV2.Moves.Rock.StoneEdge()
+            Exit Select
+        Case 444
+            Return New _2._5DHero.BV2.Moves.Normal.Captivate()
+            Exit Select
+        Case 445
+            Return New _2._5DHero.BV2.Moves.Rock.StealthRock()
+            Exit Select
+        Case 446
+            Return New _2._5DHero.BV2.Moves.Grass.GrassKnot()
+            Exit Select
+        Case 447
+            Return New _2._5DHero.BV2.Moves.Flying.Chatter()
+            Exit Select
+        Case 449
+            Return New _2._5DHero.BV2.Moves.Bug.BugBite()
+            Exit Select
+        Case 450
+            Return New _2._5DHero.BV2.Moves.Electric.Chargebeam()
+            Exit Select
+        Case 451
+            Return New _2._5DHero.BV2.Moves.Grass.WoodHammer()
+            Exit Select
+        Case 452
+            Return New _2._5DHero.BV2.Moves.Water.Aquajet()
+            Exit Select
+        Case 453
+            Return New _2._5DHero.BV2.Moves.Bug.AttackOrder()
+            Exit Select
+        Case 454
+            Return New _2._5DHero.BV2.Moves.Bug.DefendOrder()
+            Exit Select
+        Case 455
+            Return New _2._5DHero.BV2.Moves.Bug.HealOrder()
+            Exit Select
+        Case 456
+            Return New _2._5DHero.BV2.Moves.Rock.HeadSmash()
+            Exit Select
+        Case 457
+            Return New _2._5DHero.BV2.Moves.Normal.DoubleHit()
+            Exit Select
+        Case 461
+            Return New _2._5DHero.BV2.Moves.Normal.CrushGrip()
+            Exit Select
+        Case 462
+            Return New _2._5DHero.BV2.Moves.Fire.MagmaStorm()
+            Exit Select
+        Case 464
+            Return New _2._5DHero.BV2.Moves.Grass.Seedflare()
+            Exit Select
+        Case 465
+            Return New _2._5DHero.BV2.Moves.Ghost.OminousWind()
+            Exit Select
+        Case 467
+            Return New _2._5DHero.BV2.Moves.Dark.HoneClaws()
+            Exit Select
+        Case 472
+            Return New _2._5DHero.BV2.Moves.Psychic.Psyshock()
+            Exit Select
+        Case 473
+            Return New _2._5DHero.BV2.Moves.Poison.Venoshock()
+            Exit Select
+        Case 478
+            Return New _2._5DHero.BV2.Moves.Rock.SmackDown()
+            Exit Select
+        Case 480
+            Return New _2._5DHero.BV2.Moves.Fire.FlameBurst()
+            Exit Select
+        Case 481
+            Return New _2._5DHero.BV2.Moves.Poison.SludgeWave()
+            Exit Select
+        Case 482
+            Return New _2._5DHero.BV2.Moves.Bug.QuiverDance()
+            Exit Select
+        Case 483
+            Return New _2._5DHero.BV2.Moves.Steel.HeavySlam()
+            Exit Select
+        Case 485
+            Return New _2._5DHero.BV2.Moves.Electric.ElectroBall()
+            Exit Select
+        Case 487
+            Return New _2._5DHero.BV2.Moves.Fire.FlameCharge()
+            Exit Select
+        Case 488
+            Return New _2._5DHero.BV2.Moves.Poison.Coil()
+            Exit Select
+        Case 489
+            Return New _2._5DHero.BV2.Moves.Fighting.LowSweep()
+            Exit Select
+        Case 490
+            Return New _2._5DHero.BV2.Moves.Poison.AcidSpray()
+            Exit Select
+        Case 497
+            Return New _2._5DHero.BV2.Moves.Normal.ChipAway()
+            Exit Select
+        Case 498
+            Return New _2._5DHero.BV2.Moves.Poison.ClearSmog()
+            Exit Select
+        Case 499
+            Return New _2._5DHero.BV2.Moves.Psychic.StoredPower()
+            Exit Select
+        Case 502
+            Return New _2._5DHero.BV2.Moves.Water.Scald()
+            Exit Select
+        Case 503
+            Return New _2._5DHero.BV2.Moves.Normal.ShellSmash()
+            Exit Select
+        Case 504
+            Return New _2._5DHero.BV2.Moves.Psychic.HealPulse()
+            Exit Select
+        Case 505
+            Return New _2._5DHero.BV2.Moves.Ghost.Hex()
+            Exit Select
+        Case 507
+            Return New _2._5DHero.BV2.Moves.Steel.ShiftGear()
+            Exit Select
+        Case 511
+            Return New _2._5DHero.BV2.Moves.Flying.Acrobatics()
+            Exit Select
+        Case 516
+            Return New _2._5DHero.BV2.Moves.Fire.Inferno()
+            Exit Select
+        Case 517
+            Return New _2._5DHero.BV2.Moves.Water.WaterPledge()
+            Exit Select
+        Case 518
+            Return New _2._5DHero.BV2.Moves.Fire.FirePledge()
+            Exit Select
+        Case 519
+            Return New _2._5DHero.BV2.Moves.Grass.GrassPledge()
+            Exit Select
+        Case 521
+            Return New _2._5DHero.BV2.Moves.Bug.StruggleBug()
+            Exit Select
+        Case 522
+            Return New _2._5DHero.BV2.Moves.Ground.Bulldoze()
+            Exit Select
+        Case 524
+            Return New _2._5DHero.BV2.Moves.Dragon.DragonTail()
+            Exit Select
+        Case 525
+            Return New _2._5DHero.BV2.Moves.Normal.WorkUp()
+            Exit Select
+        Case 526
+            Return New _2._5DHero.BV2.Moves.Electric.Electroweb()
+            Exit Select
+        Case 527
+            Return New _2._5DHero.BV2.Moves.Electric.WildCharge()
+            Exit Select
+        Case 528
+            Return New _2._5DHero.BV2.Moves.Ground.DrillRun()
+            Exit Select
+        Case 529
+            Return New _2._5DHero.BV2.Moves.Dragon.DualChop()
+            Exit Select
+        Case 530
+            Return New _2._5DHero.BV2.Moves.Psychic.HeartStamp()
+            Exit Select
+        Case 531
+            Return New _2._5DHero.BV2.Moves.Grass.HornLeech()
+            Exit Select
+        Case 533
+            Return New _2._5DHero.BV2.Moves.Water.RazorShell()
+            Exit Select
+        Case 534
+            Return New _2._5DHero.BV2.Moves.Fire.HeatCrash()
+            Exit Select
+        Case 535
+            Return New _2._5DHero.BV2.Moves.Grass.LeafTornado()
+            Exit Select
+        Case 536
+            Return New _2._5DHero.BV2.Moves.Bug.Steamroller()
+            Exit Select
+        Case 537
+            Return New _2._5DHero.BV2.Moves.Grass.CottonGuard()
+            Exit Select
+        Case 538
+            Return New _2._5DHero.BV2.Moves.Dark.NightDaze()
+            Exit Select
+        Case 540
+            Return New _2._5DHero.BV2.Moves.Normal.TailSlap()
+            Exit Select
+        Case 541
+            Return New _2._5DHero.BV2.Moves.Flying.Hurricane()
+            Exit Select
+        Case 542
+            Return New _2._5DHero.BV2.Moves.Normal.HeadCharge()
+            Exit Select
+        Case 543
+            Return New _2._5DHero.BV2.Moves.Steel.GearGrind()
+            Exit Select
+        Case 544
+            Return New _2._5DHero.BV2.Moves.Fire.SearingShot()
+            Exit Select
+        Case 551
+            Return New _2._5DHero.BV2.Moves.Fire.FieryDance()
+            Exit Select
+        Case 552
+            Return New _2._5DHero.BV2.Moves.Ice.FreezeShock()
+            Exit Select
+        Case 553
+            Return New _2._5DHero.BV2.Moves.Ice.IceBurn()
+            Exit Select
+        Case 554
+            Return New _2._5DHero.BV2.Moves.Dark.Snarl()
+            Exit Select
+        Case 555
+            Return New _2._5DHero.BV2.Moves.Ice.IcicleCrash()
+            Exit Select
+        Case 557
+            Return New _2._5DHero.BV2.Moves.Fire.FusionFlare()
+            Exit Select
+        Case 558
+            Return New _2._5DHero.BV2.Moves.Electric.FusionBolt()
+            Exit Select
+        Case 559
+            Return New _2._5DHero.BV2.Moves.Fighting.Ride()
+            Exit Select
+        Case 567
+            Return New _2._5DHero.BV2.Moves.Normal.NobleRoar()
+            Exit Select
+        Case 571
+            Return New _2._5DHero.BV2.Moves.Grass.PetalBlizzard()
+            Exit Select
+        Case 569
+            Return New _2._5DHero.BV2.Moves.Electric.ParabolicCharge()
+            Exit Select
+        Case 573
+            Return New _2._5DHero.BV2.Moves.Fairy.DisarmingVoice()
+            Exit Select
+        Case 576
+            Return New _2._5DHero.BV2.Moves.Fairy.DrainingKiss()
+            Exit Select
+        Case 582
+            Return New _2._5DHero.BV2.Moves.Fairy.PlayRough()
+            Exit Select
+        Case 583
+            Return New _2._5DHero.BV2.Moves.Fairy.FairyWind()
+            Exit Select
+        Case 584
+            Return New _2._5DHero.BV2.Moves.Fairy.Moonblast()
+            Exit Select
+        Case 585
+            Return New _2._5DHero.BV2.Moves.Normal.Boomburst()
+            Exit Select
+        Case 588
+            Return New _2._5DHero.BV2.Moves.Normal.PlayNice()
+            Exit Select
+        Case 589
+            Return New _2._5DHero.BV2.Moves.Normal.Confide()
+            Exit Select
+        Case 593
+            Return New _2._5DHero.BV2.Moves.Water.WaterShuriken()
+            Exit Select
+        Case 594
+            Return New _2._5DHero.BV2.Moves.Fire.MysticalFire()
+            Exit Select
+        Case 597
+            Return New _2._5DHero.BV2.Moves.Electric.EerieImpulse()
+            Exit Select
+        Case 604
+            Return New _2._5DHero.BV2.Moves.Fairy.DazzlingGleam()
+            Exit Select
+        Case 607
+            Return New _2._5DHero.BV2.Moves.Fairy.BabyDollEyes()
+            Exit Select
+        Case 608
+            Return New _2._5DHero.BV2.Moves.Electric.Nuzzle()
+            Exit Select
+        Case 611
+            Return New _2._5DHero.BV2.Moves.Fighting.PowerUpPunch()
+            Exit Select
+        Case 612
+            Return New _2._5DHero.BV2.Moves.Flying.OblivionWing()
+            Exit Select
+        Case 615
+            Return New _2._5DHero.BV2.Moves.Ground.LandsWrath()
+            Exit Select
+        Case 998
+            Return New _2._5DHero.BV2.Moves.Special.TheDerpMove()
+            Exit Select
+        Case Else
+        Case 49
+        Case 265
+        Case 269
+        Case 285
+        Case 287
+        Case 289
+        Case 292
+        Case 367
+        Case 371
+        Case 372
+        Case 373
+        Case 376
+        Case 378
+        Case 379
+        Case 380
+        Case 381
+        Case 382
+        Case 387
+        Case 392
+        Case 414
+        Case 418
+        Case 432
+        Case 448
+        Case 458
+        Case 459
+        Case 460
+        Case 463
+        Case 466
+        Case 468
+        Case 469
+        Case 470
+        Case 471
+        Case 474
+        Case 475
+        Case 476
+        Case 477
+        Case 479
+        Case 484
+        Case 486
+        Case 491
+        Case 492
+        Case 493
+        Case 494
+        Case 495
+        Case 496
+        Case 500
+        Case 501
+        Case 506
+        Case 508
+        Case 509
+        Case 510
+        Case 512
+        Case 513
+        Case 514
+        Case 515
+        Case 520
+        Case 523
+        Case 532
+        Case 539
+        Case 545
+        Case 546
+        Case 547
+        Case 548
+        Case 549
+        Case 550
+        Case 556
+        Case 560
+        Case 561
+        Case 562
+        Case 563
+        Case 564
+        Case 565
+        Case 566
+        Case 568
+        Case 570
+        Case 572
+        Case 574
+        Case 575
+        Case 577
+        Case 578
+        Case 579
+        Case 580
+        Case 581
+        Case 586
+        Case 587
+        Case 590
+        Case 591
+        Case 592
+        Case 595
+        Case 596
+        Case 598
+        Case 599
+        Case 600
+        Case 601
+        Case 602
+        Case 603
+        Case 605
+        Case 606
+        Case 609
+        Case 610
+        Case 613
+        Case 614
+        Case 616
+        Case 617
+        Case 618
+        Case 619
+        Case 620
+        Case 621
+        Case 622
+        Case 623
+        Case 624
+        Case 625
+        Case 626
+        Case 627
+        Case 628
+        Case 629
+        Case 630
+        Case 631
+        Case 632
+        Case 633
+        Case 634
+        Case 635
+        Case 636
+        Case 637
+        Case 638
+        Case 639
+        Case 640
+        Case 641
+        Case 642
+        Case 643
+        Case 644
+        Case 645
+        Case 646
+        Case 647
+        Case 648
+        Case 649
+        Case 650
+        Case 651
+        Case 652
+        Case 653
+        Case 654
+        Case 655
+        Case 656
+        Case 657
+        Case 658
+        Case 659
+        Case 660
+        Case 661
+        Case 662
+        Case 663
+        Case 664
+        Case 665
+        Case 666
+        Case 667
+        Case 668
+        Case 669
+        Case 670
+        Case 671
+        Case 672
+        Case 673
+        Case 674
+        Case 675
+        Case 676
+        Case 677
+        Case 678
+        Case 679
+        Case 680
+        Case 681
+        Case 682
+        Case 683
+        Case 684
+        Case 685
+        Case 686
+        Case 687
+        Case 688
+        Case 689
+        Case 690
+        Case 691
+        Case 692
+        Case 693
+        Case 694
+        Case 695
+        Case 696
+        Case 697
+        Case 698
+        Case 699
+        Case 700
+        Case 701
+        Case 702
+        Case 703
+        Case 704
+        Case 705
+        Case 706
+        Case 707
+        Case 708
+        Case 709
+        Case 710
+        Case 711
+        Case 712
+        Case 713
+        Case 714
+        Case 715
+        Case 716
+        Case 717
+        Case 718
+        Case 719
+        Case 720
+        Case 721
+        Case 722
+        Case 723
+        Case 724
+        Case 725
+        Case 726
+        Case 727
+        Case 728
+        Case 729
+        Case 730
+        Case 731
+        Case 732
+        Case 733
+        Case 734
+        Case 735
+        Case 736
+        Case 737
+        Case 738
+        Case 739
+        Case 740
+        Case 741
+        Case 742
+        Case 743
+        Case 744
+        Case 745
+        Case 746
+        Case 747
+        Case 748
+        Case 749
+        Case 750
+        Case 751
+        Case 752
+        Case 753
+        Case 754
+        Case 755
+        Case 756
+        Case 757
+        Case 758
+        Case 759
+        Case 760
+        Case 761
+        Case 762
+        Case 763
+        Case 764
+        Case 765
+        Case 766
+        Case 767
+        Case 768
+        Case 769
+        Case 770
+        Case 771
+        Case 772
+        Case 773
+        Case 774
+        Case 775
+        Case 776
+        Case 777
+        Case 778
+        Case 779
+        Case 780
+        Case 781
+        Case 782
+        Case 783
+        Case 784
+        Case 785
+        Case 786
+        Case 787
+        Case 788
+        Case 789
+        Case 790
+        Case 791
+        Case 792
+        Case 793
+        Case 794
+        Case 795
+        Case 796
+        Case 797
+        Case 798
+        Case 799
+        Case 800
+        Case 801
+        Case 802
+        Case 803
+        Case 804
+        Case 805
+        Case 806
+        Case 807
+        Case 808
+        Case 809
+        Case 810
+        Case 811
+        Case 812
+        Case 813
+        Case 814
+        Case 815
+        Case 816
+        Case 817
+        Case 818
+        Case 819
+        Case 820
+        Case 821
+        Case 822
+        Case 823
+        Case 824
+        Case 825
+        Case 826
+        Case 827
+        Case 828
+        Case 829
+        Case 830
+        Case 831
+        Case 832
+        Case 833
+        Case 834
+        Case 835
+        Case 836
+        Case 837
+        Case 838
+        Case 839
+        Case 840
+        Case 841
+        Case 842
+        Case 843
+        Case 844
+        Case 845
+        Case 846
+        Case 847
+        Case 848
+        Case 849
+        Case 850
+        Case 851
+        Case 852
+        Case 853
+        Case 854
+        Case 855
+        Case 856
+        Case 857
+        Case 858
+        Case 859
+        Case 860
+        Case 861
+        Case 862
+        Case 863
+        Case 864
+        Case 865
+        Case 866
+        Case 867
+        Case 868
+        Case 869
+        Case 870
+        Case 871
+        Case 872
+        Case 873
+        Case 874
+        Case 875
+        Case 876
+        Case 877
+        Case 878
+        Case 879
+        Case 880
+        Case 881
+        Case 882
+        Case 883
+        Case 884
+        Case 885
+        Case 886
+        Case 887
+        Case 888
+        Case 889
+        Case 890
+        Case 891
+        Case 892
+        Case 893
+        Case 894
+        Case 895
+        Case 896
+        Case 897
+        Case 898
+        Case 899
+        Case 900
+        Case 901
+        Case 902
+        Case 903
+        Case 904
+        Case 905
+        Case 906
+        Case 907
+        Case 908
+        Case 909
+        Case 910
+        Case 911
+        Case 912
+        Case 913
+        Case 914
+        Case 915
+        Case 916
+        Case 917
+        Case 918
+        Case 919
+        Case 920
+        Case 921
+        Case 922
+        Case 923
+        Case 924
+        Case 925
+        Case 926
+        Case 927
+        Case 928
+        Case 929
+        Case 930
+        Case 931
+        Case 932
+        Case 933
+        Case 934
+        Case 935
+        Case 936
+        Case 937
+        Case 938
+        Case 939
+        Case 940
+        Case 941
+        Case 942
+        Case 943
+        Case 944
+        Case 945
+        Case 946
+        Case 947
+        Case 948
+        Case 949
+        Case 950
+        Case 951
+        Case 952
+        Case 953
+        Case 954
+        Case 955
+        Case 956
+        Case 957
+        Case 958
+        Case 959
+        Case 960
+        Case 961
+        Case 962
+        Case 963
+        Case 964
+        Case 965
+        Case 966
+        Case 967
+        Case 968
+        Case 969
+        Case 970
+        Case 971
+        Case 972
+        Case 973
+        Case 974
+        Case 975
+        Case 976
+        Case 977
+        Case 978
+        Case 979
+        Case 980
+        Case 981
+        Case 982
+        Case 983
+        Case 984
+        Case 985
+        Case 986
+        Case 987
+        Case 988
+        Case 989
+        Case 990
+        Case 991
+        Case 992
+        Case 993
+        Case 994
+        Case 995
+        Case 996
+        Case 997
+            _2._5DHero.Logger.Log(LogTypes.Message, "AttackV2.vb: The move with the ID " & ID.ToString() & " defaults to Pound to prevent a game crash.")
+            Return New _2._5DHero.BV2.Moves.Normal.Pound()
+    End Select
+    Return Nothing
+End Function

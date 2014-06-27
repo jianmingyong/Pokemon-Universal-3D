@@ -1,7 +1,7 @@
 version=2
 @Text.show(What would you like to do?)
-@Options.setcancelindex(2)
-@Options.show(ITEM STORAGE,MAILBOX,TURN OFF)
+@Options.setcancelindex(3)
+@Options.show(ITEM STORAGE,BANK,MAILBOX,TURN OFF)
 :when:ITEM STORAGE
 	@Text.show(There is no ITEM STORAGE at the moment.~Sorry for any inconvenience caused.)
 	:if:<Register.value(12\LittleRootTown\PlayerRoom.2\000000001)>=1
@@ -10,6 +10,17 @@ version=2
 		@Register.change(12\LittleRootTown\PlayerRoom.2\000000001,2)
 	:endif
 	@Script.start(System\CommonEvent\12\PCOption3)
+:when:BANK
+	@Text.show(Welcome to the PokéBank,~what would you like to do?)
+	@Options.setcancelindex(2)
+	@Options.show(DEPOSITE,WITHDRAW,CANCEL)
+	:when:DEPOSITE
+		@Script.start(System\CommonEvent\12\PCOption3)
+	:when:WITHDRAW
+		@Script.start(System\CommonEvent\12\PCOption3)
+	:when:CANCEL
+		@Script.start(System\CommonEvent\12\PCOption3)
+	:endwhen
 :when:MAILBOX
 	@Screen.mailsystem
 	@Script.start(System\CommonEvent\12\PCOption3)

@@ -101,6 +101,9 @@ version=2
 :if:<Register.registered(System.12.Starter)>=false
 	@Register.register(System.12.Starter,int,1)
 :endif
+:if:<Register.registered(System.BankMoney)>=false
+	@Register.register(System.BankMoney,int,0)
+:endif
 @Script.start(System\GlobalMigration)
 @Script.start(System\Register\8)
 @Script.start(System\Register\12)
