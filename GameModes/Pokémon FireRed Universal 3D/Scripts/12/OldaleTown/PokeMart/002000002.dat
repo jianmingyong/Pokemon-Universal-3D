@@ -7,10 +7,24 @@ version=2
 	@Options.show(BUY,SELL,QUIT)
 	:when:BUY
 		@Sound.play(Select)
-		@Screen.trade({18|9|13|12},1,0)
+		:if:<Player.money><0
+			@Player.save
+			@Register.change(System.ErrorLog.ErrorID5,2)
+			@Script.start(System\GlobalErrorLog)
+			@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+			:end
+		:endif
+		@Screen.trade({18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1},1,0)
 	:when:SELL
+		:if:<Player.money><0
+			@Player.save
+			@Register.change(System.ErrorLog.ErrorID5,2)
+			@Script.start(System\GlobalErrorLog)
+			@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+			:end
+		:endif
 		@Sound.play(Select)
-		@Screen.trade({18|9|13|12},0,1)
+		@Screen.trade({18|0|-1}{9|0|-1}{13|0|-1}{12|0|-1},0,1)
 	:when:QUIT
 		@Sound.play(Select)
 		@Text.show(Please come again!)
@@ -25,11 +39,25 @@ version=2
 	@Text.show(How may I serve you?)
 	@Options.show(BUY,SELL,QUIT)
 	:when:BUY
+		:if:<Player.money><0
+			@Player.save
+			@Register.change(System.ErrorLog.ErrorID5,2)
+			@Script.start(System\GlobalErrorLog)
+			@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+			:end
+		:endif
 		@Sound.play(Select)
-		@Screen.trade({5|18|9|13|12},1,0)
+		@Screen.trade({5|99-<Inventory.countitem(5)>|-1}{18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1},1,0)
 	:when:SELL
+		:if:<Player.money><0
+			@Player.save
+			@Register.change(System.ErrorLog.ErrorID5,2)
+			@Script.start(System\GlobalErrorLog)
+			@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+			:end
+		:endif
 		@Sound.play(Select)
-		@Screen.trade({5|18|9|13|12},0,1)
+		@Screen.trade({5|0|-1}{18|0|-1}{9|0|-1}{13|0|-1}{12|0|-1},0,1)
 	:when:QUIT
 		@Sound.play(Select)
 		@Text.show(Please come again!)
