@@ -24,6 +24,9 @@ version=2
 	:if:<Level.filename>=Route103
 		@Script.start(System\ParallelProcess\12\Route103\Route103)
 	:endif
+	:if:<Level.filename>=Route102
+		@Script.start(System\ParallelProcess\12\Route102\Route102)
+	:endif
 :endif
 :if:<Register.value(System.Game ID)>=13
 	:if:<Level.filename>=BarkTown.PlayerRoom.1

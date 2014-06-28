@@ -46,6 +46,7 @@
 	@NPC.turn(018000014,2)
 	@NPC.turn(018000014,3)
 	@NPC.remove(018000014)
+	@Register.change(12\Route102,2)
 	@Music.play(P_R_S_E Route 101)
 	@Script.start(System\GlobalMain)
 	:end

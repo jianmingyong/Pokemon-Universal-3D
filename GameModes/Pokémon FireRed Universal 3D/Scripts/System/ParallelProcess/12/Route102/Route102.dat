@@ -1,0 +1,17 @@
+version=2
+:if:<Register.value(12\Route102)>=1
+	:end
+:endif
+:if:<Register.value(12\Route102)>=2
+	@Entity.remove(014000010)
+	@Entity.remove(014000011)
+	@Entity.remove(014000012)
+	@Entity.remove(014000013)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,System\ParallelProcess\12\Route102\Route102.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

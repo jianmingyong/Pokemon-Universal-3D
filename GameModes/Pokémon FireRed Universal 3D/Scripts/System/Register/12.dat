@@ -173,6 +173,9 @@ version=2
 :if:<Register.registered(12\LittleRootTown\ProfBirchLab)>=false
 	@Register.register(12\LittleRootTown\ProfBirchLab,int,1)
 :endif
+:if:<Register.registered(12\LittleRootTown\ProfBirchLab)>=true <and> <Register.value(12\LittleRootTown\ProfBirchLab)>=4
+	@Register.change(12\OldaleTown\PokeMart\002000002,2)
+:endif
 :if:<Register.registered(12\Route101\024000008)>=false
 	@Register.register(12\Route101\024000008,int,1)
 :endif
@@ -283,5 +286,8 @@ version=2
 :endif
 :if:<Register.registered(12\Route102\040000017)>=false
 	@Register.register(12\Route102\040000017,int,1)
+:endif
+:if:<Register.registered(12\Route102)>=false
+	@Register.register(12\Route102,int,1)
 :endif
 :end

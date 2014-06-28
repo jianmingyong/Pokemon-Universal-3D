@@ -135,6 +135,7 @@ version=2
 	@Text.show(If I find any cute POKéMON, I'll catch~them with POKé BALLS!)
 	@Register.change(12\LittleRootTown\ProfBirchLab,4)
 	@Register.change(12\LittleRootTown\ProfBirchLab\006000003,2)
+	@Register.change(12\OldaleTown\PokeMart\002000002,2)
 	@Register.change(12\LittleRootTown,3)
 	:end
 :endif

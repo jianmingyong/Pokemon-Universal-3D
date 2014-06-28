@@ -1,0 +1,66 @@
+﻿version=2
+@Text.show(Your bank have $<Register.value(System.BankMoney)>.~How much would you like to withdraw?)
+:if:<Player.money><0
+	@Player.save
+	@Register.change(System.ErrorLog.ErrorID5,2)
+	@Script.start(System\GlobalErrorLog)
+	@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+	:end
+:endif
+:if:<Register.value(System.BankMoney)>>0 <and> <Register.value(System.BankMoney)><10
+	@Screen.input(,0,,1)
+:endif
+:if:<Register.value(System.BankMoney)>>9 <and> <Register.value(System.BankMoney)><100
+	@Screen.input(,0,,2)
+:endif
+:if:<Register.value(System.BankMoney)>>99 <and> <Register.value(System.BankMoney)><1000
+	@Screen.input(,0,,3)
+:endif
+:if:<Register.value(System.BankMoney)>>999 <and> <Register.value(System.BankMoney)><10000
+	@Screen.input(,0,,4)
+:endif
+:if:<Register.value(System.BankMoney)>>9999 <and> <Register.value(System.BankMoney)><100000
+	@Screen.input(,0,,5)
+:endif
+:if:<Register.value(System.BankMoney)>>99999 <and> <Register.value(System.BankMoney)><1000000
+	@Screen.input(,0,,6)
+:endif
+:if:<Register.value(System.BankMoney)>>999999 <and> <Register.value(System.BankMoney)><10000000
+	@Screen.input(,0,,7)
+:endif
+:if:<Register.value(System.BankMoney)>>9999999 <and> <Register.value(System.BankMoney)><100000000
+	@Screen.input(,0,,8)
+:endif
+:if:<Register.value(System.BankMoney)>>99999999 <and> <Register.value(System.BankMoney)><1000000000
+	@Screen.input(,0,,9)
+:endif
+:if:<Register.value(System.BankMoney)>>999999999 <and> <Register.value(System.BankMoney)><10000000000
+	@Screen.input(,0,,10)
+:endif
+@Sound.play(Select)
+@Text.show(Are you sure you want to withdraw~$<System.lastinput>?)
+@Options.setcancelindex(1)
+@Options.show(YES,NO)
+:when:YES
+	@Sound.play(Select)
+	:if:<System.isint(<System.lastinput>)>=false
+		@Text.show(Please insert a integer number.)
+		@Script.start(System\CommonEvent\12\PC\PokéBankWithdraw)
+		:end
+	:endif
+	:if:<Register.value(System.BankMoney)><<System.lastinput>
+		@Text.show(You do not have that much money in your bank.)
+		@Script.start(System\CommonEvent\12\PC\PokéBankWithdraw)
+		:end
+	:endif
+	@Player.addmoney(<System.lastinput>)
+	@Register.change(System.BankMoney,<Math.sng(<Register.value(System.BankMoney)>-<System.lastinput>)>)
+	@Player.save
+	@Sound.play(Save)
+	@Text.show(You have withdraw successfully.)
+	@Script.start(System\CommonEvent\12\PC\PCOption4)
+:when:NO
+	@Sound.play(Select)
+	@Script.start(System\CommonEvent\12\PC\PokéBankWithdraw)
+:endwhen
+:end
