@@ -12,7 +12,7 @@ Table of contents:<br />
 ==================================================
 1.	License
 ==================================================
-Pokémon FireRed Universal 3D v0.48.0.0.0.1.exe
+Pokémon FireRed Universal 3D v0.49.1.0.0.5
 Copyright © 2014 jianmingyong
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
@@ -27,14 +27,11 @@ All the resources that are available in this installer are made by me unless oth
 ==================================================
 3.	Contacting
 ==================================================
-The easiest way to contact me privately is by PM. Please make the title as sensible as possible for example: “[v0.48.0.0.0.1] Pokémon FireRed Universal 3D suggestions.”
+The easiest way to contact me privately is by PM. Please make the title as sensible as possible for example: “[v0.49.1.0.0.5] Pokémon FireRed Universal 3D suggestions.”
 
 http://pokemon3d.net/forum/conversations/add?to=jianmingyong
 
 For any bugs and crash due to my content pack or GameMode, please report those bugs (with crash logs if you have it) to http://pokemon3d.net/forum/threads/6297/ 
-
-Reporting installer crashes
-For any bugs or crash on my installer, please report those bugs (with crash logs if you have it) to me at http://pokemon3d.net/forum/threads/6297/ 
 
 ==================================================
 4.	Supported platforms
@@ -72,8 +69,6 @@ To install Pokémon FireRed Universal 3D, follow the installer wizard and follow
 4.	Apply it if they are not activated by default.
 5.	Restart the game to take effect.
 
-To remove Pokémon FireRed Universal 3D, go to “Control Panel => Programs and Features OR Add or Remove Program” and search for “Pokémon FireRed Universal 3D” and press uninstall.
-
 ==================================================
 7.	Credits
 ==================================================
@@ -83,8 +78,9 @@ P_FR_LR Music Rip From: Ra2rd93
 P_G_S_C Music Rip From: PocketMonstersMusic
 P_R_S_E Music Rip From: PocketMonstersMusic
 Sound Effect Rip From: Pokémon Essentials v13 2012-12-02 (Flameguru, Poccil (Peter O.), Maruno)
-Tileset Rip using Advance Map.
+Tileset Rip using Advance Map
 3D Models by: AgentPaperCraft
+Game Engine scripted by: jianmingyong
 
 This game is based on Pokémon FireRed Universal Engine (Pokémon Essentials v13 2012-12-02), Pokémon 3D Engine.
 
