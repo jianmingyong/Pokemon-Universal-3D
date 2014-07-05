@@ -1,0 +1,5 @@
+version=2
+:if:<Register.value(System.Game ID)>=12
+	@Register.change(System.LastMap.12,<Level.mapfile>)
+:endif
+:end

@@ -14,9 +14,17 @@ version=2
 :if:<Register.value(System.Game ID)>=12
 	:if:<Register.value(System\Intro\12\Intro)>=1
 		:if:<Register.value(System.Skip Intro)>=0
-			@Script.start(System\Intro\12\Intro)
+			:if:<Register.value(System.LastMap.12)>=Nothing
+				@Script.start(System\Intro\12\Intro)
+			:else
+				@Script.start(System\GlobalSafeWarp)
+			:endif
 		:else
-			@Player.warp(12\LittleRootTown\LittleRootTown.Truck.dat,2,0,3,0)
+			:if:<Register.value(System.LastMap.12)>=Nothing
+				@Player.warp(12\LittleRootTown\LittleRootTown.Truck.dat,2,0,3,0)
+			:else
+				@Script.start(System\GlobalSafeWarp)
+			:endif
 		:endif
 		:end
 	:endif
@@ -29,5 +37,11 @@ version=2
 		:endif
 		:end
 	:endif
+:endif
+:if:<Register.value(System.Game ID)>=15
+	:if:<Register.value(System\Intro\15\Intro)>=1
+		@Script.start(System\Intro\15\Intro)
+	:endif
+	:end
 :endif
 :end

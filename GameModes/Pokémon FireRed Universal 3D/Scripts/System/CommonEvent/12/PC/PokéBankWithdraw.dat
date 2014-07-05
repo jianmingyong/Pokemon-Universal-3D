@@ -8,34 +8,34 @@
 	:end
 :endif
 :if:<Register.value(System.BankMoney)>>0 <and> <Register.value(System.BankMoney)><10
-	@Screen.input(,0,,1)
+	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,1)
 :endif
 :if:<Register.value(System.BankMoney)>>9 <and> <Register.value(System.BankMoney)><100
-	@Screen.input(,0,,2)
+	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,2)
 :endif
 :if:<Register.value(System.BankMoney)>>99 <and> <Register.value(System.BankMoney)><1000
-	@Screen.input(,0,,3)
+	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,3)
 :endif
 :if:<Register.value(System.BankMoney)>>999 <and> <Register.value(System.BankMoney)><10000
-	@Screen.input(,0,,4)
+	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,4)
 :endif
 :if:<Register.value(System.BankMoney)>>9999 <and> <Register.value(System.BankMoney)><100000
-	@Screen.input(,0,,5)
+	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,5)
 :endif
 :if:<Register.value(System.BankMoney)>>99999 <and> <Register.value(System.BankMoney)><1000000
-	@Screen.input(,0,,6)
+	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,6)
 :endif
 :if:<Register.value(System.BankMoney)>>999999 <and> <Register.value(System.BankMoney)><10000000
-	@Screen.input(,0,,7)
+	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,7)
 :endif
 :if:<Register.value(System.BankMoney)>>9999999 <and> <Register.value(System.BankMoney)><100000000
-	@Screen.input(,0,,8)
+	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,8)
 :endif
 :if:<Register.value(System.BankMoney)>>99999999 <and> <Register.value(System.BankMoney)><1000000000
-	@Screen.input(,0,,9)
+	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,9)
 :endif
 :if:<Register.value(System.BankMoney)>>999999999 <and> <Register.value(System.BankMoney)><10000000000
-	@Screen.input(,0,,10)
+	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,10)
 :endif
 @Sound.play(Select)
 @Text.show(Are you sure you want to withdraw~$<System.lastinput>?)
@@ -43,7 +43,7 @@
 @Options.show(YES,NO)
 :when:YES
 	@Sound.play(Select)
-	:if:<System.isint(<System.lastinput>)>=false
+	:if:<Math.isint(<System.lastinput>.0)>=false
 		@Text.show(Please insert a integer number.)
 		@Script.start(System\CommonEvent\12\PC\PokéBankWithdraw)
 		:end

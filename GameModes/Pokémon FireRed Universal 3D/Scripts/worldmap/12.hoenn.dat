@@ -1,0 +1,51 @@
+Cities:
+{"PlaceType"[City]}{"Name"[Littleroot Town]}{"MapFiles"[]}{"Position"[5,13]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Oldale Town]}{"MapFiles"[]}{"Position"[5,11]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Petalburg City]}{"MapFiles"[]}{"Position"[2,11]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Rustboro City]}{"MapFiles"[]}{"Position"[1,7]}{"Size"[Vertical]}
+{"PlaceType"[City]}{"Name"[Dewford Town]}{"MapFiles"[]}{"Position"[3,16]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Slateport City]}{"MapFiles"[]}{"Position"[9,12]}{"Size"[Vertical]}
+{"PlaceType"[City]}{"Name"[Mauville City]}{"MapFiles"[]}{"Position"[9,8]}{"Size"[Horizontal]}
+{"PlaceType"[City]}{"Name"[Verdanturf Town]}{"MapFiles"[]}{"Position"[5,8]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Lavaridge Town]}{"MapFiles"[]}{"Position"[6,5]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Fallarbor Town]}{"MapFiles"[]}{"Position"[4,2]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Fortree City]}{"MapFiles"[]}{"Position"[13,2]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Pacifidlog Town]}{"MapFiles"[]}{"Position"[18,12]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Lilycove City]}{"MapFiles"[]}{"Position"[19,5]}{"Size"[Horizontal]}
+{"PlaceType"[City]}{"Name"[Sootopolis City]}{"MapFiles"[]}{"Position"[22,9]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Mossdeep City]}{"MapFiles"[]}{"Position"[25,7]}{"Size"[Horizontal]}
+{"PlaceType"[City]}{"Name"[Ever Grande City]}{"MapFiles"[]}{"Position"[28,10]}{"Size"[Vertical]}
+
+Routes:
+{"PlaceType"[Route]}{"Name"[Route 101]}{"MapFiles"[]}{"Position"[5,12]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 102]}{"MapFiles"[]}{"Position"[4,11]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 102]}{"MapFiles"[]}{"Position"[3,11]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[]}{"Position"[5,10]}{"Direction"[CurveDownRight]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[]}{"MapFiles"[]}{"Position"[5,11]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[]}{"MapFiles"[]}{"Position"[5,11]}{"Direction"[TLeft]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[]}{"Position"[6,10]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[]}{"Position"[7,10]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[]}{"Position"[8,10]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 110]}{"MapFiles"[]}{"Position"[9,10]}{"Direction"[TLeft]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 110]}{"MapFiles"[]}{"Position"[9,9]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 110]}{"MapFiles"[]}{"Position"[9,11]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[]}{"MapFiles"[]}{"Position"[9,12]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[]}{"MapFiles"[]}{"Position"[9,13]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 109]}{"MapFiles"[]}{"Position"[9,14]}{"Direction"[Vertical]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 109]}{"MapFiles"[]}{"Position"[9,15]}{"Direction"[Vertical]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 109]}{"MapFiles"[]}{"Position"[9,16]}{"Direction"[CurveUpLeft]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 108]}{"MapFiles"[]}{"Position"[8,16]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 108]}{"MapFiles"[]}{"Position"[7,16]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 107]}{"MapFiles"[]}{"Position"[6,16]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 107]}{"MapFiles"[]}{"Position"[5,16]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 107]}{"MapFiles"[]}{"Position"[4,16]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[]}{"MapFiles"[]}{"Position"[3,15]}{"Direction"[VerticalConnection]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[]}{"MapFiles"[]}{"Position"[3,16]}{"Direction"[CurveUpRight]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 106]}{"MapFiles"[]}{"Position"[3,15]}{"Direction"[CurveDownLeft]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 106]}{"MapFiles"[]}{"Position"[2,15]}{"Direction"[Horizontal]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 106]}{"MapFiles"[]}{"Position"[1,15]}{"Direction"[CurveUpRight]}{"RouteType"[Water]}
+
+
+
+
+

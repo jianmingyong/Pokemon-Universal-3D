@@ -21,5 +21,11 @@ version=2
 @Entity.setopacity(133,0)
 @Entity.setopacity(134,0)
 @Entity.setopacity(151,0)
+@Entity.setopacity(152,0)
+@Entity.setopacity(153,0)
+@Entity.setopacity(154,0)
+@Entity.setopacity(155,0)
+@Entity.setopacity(156,0)
+@Entity.setopacity(157,0)
 @Camera.deactivethirdperson
 :end

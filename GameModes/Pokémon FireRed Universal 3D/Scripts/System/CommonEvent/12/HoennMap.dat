@@ -2,6 +2,6 @@ version=2
 @Sound.play(Select)
 @Text.show(<Player.name> took a closer look at the~HOENN region map.)
 @Sound.play(Select)
-@Text.show(There is no map at the moment.~Sorry for any inconvenience caused.)
+@Screen.townmap(12.hoenn)
 @Script.start(System\GlobalMain)
 :end

@@ -1,0 +1,17 @@
+version=2
+:if:<Register.value(System\Intro\15\Intro)>=1
+	@Script.start(System\Intro\15\Intro.<System.random(1,7)>)
+	@Camera.set(<Player.position>,0,0)
+	@Level.update
+	@Music.play(PMD_EOT_D_S Top Menu Theme)
+	@Text.show(Welcome to Pokémon Mystery Dungeon~Universal Rescue Team)
+	@Text.show(Please choose an option.)
+	@Options.setcancelindex(1)
+	@Options.show(Nothing,Exit)
+	:when:Nothing
+	:when:Exit
+		@Register.change(Options.System.Game ID,12)
+		@Script.start(System\GlobalMain)
+	:endwhen
+	:end
+:endif

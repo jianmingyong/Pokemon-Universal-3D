@@ -1,5 +1,4 @@
 version=2
-@Register.change(Options.System.Game ID,12)
 @Register.change(Options.System.Auto Save,0)
 @Register.change(Options.System.Skip Intro,1)
 @Register.change(Options.System.Skip Mom Story,1)
@@ -20,6 +19,12 @@ version=2
 :if:<Register.value(Options.System.Game ID)>=13
 	:if:<not><Register.value(System.Game ID)>=13
 		@Register.change(System.Game ID,13)
+		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
+	:endif
+:endif
+:if:<Register.value(Options.System.Game ID)>=15
+	:if:<not><Register.value(System.Game ID)>=15
+		@Register.change(System.Game ID,15)
 		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
 	:endif
 :endif

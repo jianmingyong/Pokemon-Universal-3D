@@ -1,0 +1,5 @@
+version=2
+:if:<Register.value(System.LastMap.12)>=12\OldaleTown\OldaleTown.PokeCenter.dat
+	@Player.warp(<Register.value(System.LastMap.12)>,2,0,5,0)
+:endif
+:end
