@@ -1,5 +1,12 @@
 version=2
 :if:<Register.value(System\Intro\15\Intro)>=1
+	@Register.change(System\Intro\15\Intro.1,1)
+	@Register.change(System\Intro\15\Intro.2,1)
+	@Register.change(System\Intro\15\Intro.3,1)
+	@Register.change(System\Intro\15\Intro.4,1)
+	@Register.change(System\Intro\15\Intro.5,1)
+	@Register.change(System\Intro\15\Intro.6,1)
+	@Register.change(System\Intro\15\Intro.7,1)
 	@Script.start(System\Intro\15\Intro.<System.random(1,7)>)
 	@Camera.set(<Player.position>,0,0)
 	@Level.update
@@ -9,6 +16,7 @@ version=2
 	@Options.setcancelindex(1)
 	@Options.show(Nothing,Exit)
 	:when:Nothing
+		@Script.start(System\Intro\15\Intro)
 	:when:Exit
 		@Register.change(Options.System.Game ID,12)
 		@Script.start(System\GlobalMain)

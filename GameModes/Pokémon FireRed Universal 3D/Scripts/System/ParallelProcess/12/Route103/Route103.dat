@@ -1,10 +1,10 @@
 version=2
 :if:<Register.value(12\Route103)>=1
 	:if:<NPC.exists(018000011)>=false <and> <Register.value(System.PlayerGender)>=Male
-		@NPC.spawn(18,0,11,1,12\Route103\018000011,trchar003,false,3,,018000011,Still)
+		@NPC.spawn(18,0,11,1,12\Route103\018000011,May,false,3,,018000011,Still)
 	:endif
 	:if:<NPC.exists(018000011)>=false <and> <Register.value(System.PlayerGender)>=Female
-		@NPC.spawn(18,0,11,1,12\Route103\018000011,trchar002,false,3,,018000011,Still)
+		@NPC.spawn(18,0,11,1,12\Route103\018000011,Brendan,false,3,,018000011,Still)
 	:endif
 	:end
 :endif

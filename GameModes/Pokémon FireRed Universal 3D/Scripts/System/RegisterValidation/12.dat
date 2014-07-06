@@ -1,4 +1,33 @@
 version=2
+:if:<Register.registered(System.LastMap.12)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System.LastMap.12" does not exist.])
+:endif
+:if:<Register.registered(System.12.Starter)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System.12.Starter" does not exist.])
+:else
+	:if:<not><Register.value(System.12.Starter)>=252
+		:if:<not><Register.value(System.12.Starter)>=255
+			:if:<not><Register.value(System.12.Starter)>=258
+				:if:<Register.registered(System.ErrorLogInit)>=false
+					@Register.change(System.ErrorLog.ErrorID2,2)
+					@Script.start(System\GlobalErrorLog)
+					@Register.register(System.ErrorLogInit)
+				:endif
+				@Text.log([Register validation result: "System.12.Starter" must be 252 or 255 or 258. Current value: <Register.value(System.12.Starter)>])
+			:endif
+		:endif
+	:endif
+:endif
 :if:<Register.registered(System\Intro\12\Intro)>=false
 	:if:<Register.registered(System.ErrorLogInit)>=false
 		@Register.change(System.ErrorLog.ErrorID2,2)

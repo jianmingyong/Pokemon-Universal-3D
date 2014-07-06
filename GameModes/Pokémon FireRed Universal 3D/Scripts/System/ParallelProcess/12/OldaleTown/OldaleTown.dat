@@ -17,10 +17,10 @@ version=2
 :endif
 :if:<Register.value(12\OldaleTown)>=2
 	:if:<NPC.exists(011000019)>=false <and> <Register.value(System.PlayerGender)>=Male
-		@NPC.spawn(11,0,19,1,12\OldaleTown\011000019,trchar003,false,0,,011000019,Still)
+		@NPC.spawn(11,0,19,1,12\OldaleTown\011000019,May,false,0,,011000019,Still)
 	:endif
 	:if:<NPC.exists(011000019)>=false <and> <Register.value(System.PlayerGender)>=Female
-		@NPC.spawn(11,0,19,1,12\OldaleTown\011000019,trchar002,false,0,,011000019,Still)
+		@NPC.spawn(11,0,19,1,12\OldaleTown\011000019,Brendan,false,0,,011000019,Still)
 	:endif
 	:if:<NPC.exists(000000010)>=false
 		:if:<not><Register.value(12\LittleRootTown\ProfBirchLab)>=4

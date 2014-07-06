@@ -6,7 +6,7 @@ version=2
 	@Player.move(5)
 	@Player.turnto(1)
 	:if:<NPC.exists(010000015)>=false
-		@NPC.spawn(10,0,15,0,,62,true,3,,010000015,Still)
+		@NPC.spawn(10,0,15,0,,Prof. Birch,true,3,,010000015,Still)
 	:endif
 	:if:<NPC.exists(009000015)>=false
 		@NPC.spawn(9,0,15,0,,[POKEMON|N]263,true,3,,009000015,Still)
@@ -95,7 +95,7 @@ version=2
 :if:<Register.value(12\Route101)>=2
 	@Music.play(P_R_S_E Help!)
 	:if:<NPC.exists(010000015)>=false
-		@NPC.spawn(12,0,13,0,,62,true,3,,010000015,Still)
+		@NPC.spawn(12,0,13,0,,Prof. Birch,true,3,,010000015,Still)
 	:endif
 	:if:<NPC.exists(009000015)>=false
 		@NPC.spawn(13,0,13,0,,[POKEMON|N]263,true,1,,009000015,Still)

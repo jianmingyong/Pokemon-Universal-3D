@@ -23,11 +23,6 @@
 	@Sound.play(Select)
 	@Text.show(Oh, you're <Player.name>.~So your move was today.)
 	@Sound.play(Select)
-	:if:<Register.value(System.PlayerGender)>=Female
-		@Player.setrivalname(Brendan)
-	:else
-		@Player.setrivalname(May)
-	:endif
 	@Text.show(Um... I'm <Rival.name>.~Glad to meet you!)
 	@Sound.play(Select)
 	@Text.show(I...~I have this dream of becoming friends)

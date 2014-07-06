@@ -1,18 +1,6 @@
 version=2
-:if:<Register.value(System.Game ID)>=8
-	@Script.start(System\RegisterValidation\System\Intro\8\RegisterValidation)
-:endif
 :if:<Register.value(System.Game ID)>=12
 	@Script.start(System\RegisterValidation\12)
-:endif
-:if:<Register.value(System.Game ID)>=13
-	@Script.start(System\RegisterValidation\System\Intro\13\RegisterValidation)
-	@Script.start(System\RegisterValidation\13\BarkTown\RegisterValidation)
-	@Script.start(System\RegisterValidation\13\BarkTown\ElmLab\RegisterValidation)
-	@Script.start(System\RegisterValidation\13\BarkTown\House.1\RegisterValidation)
-	@Script.start(System\RegisterValidation\13\BarkTown\House.2\RegisterValidation)
-	@Script.start(System\RegisterValidation\13\BarkTown\PlayerRoom.1\RegisterValidation)
-	@Script.start(System\RegisterValidation\13\BarkTown\PlayerRoom.2\RegisterValidation)
 :endif
 :if:<Register.registered(System.ErrorLogInit)>=true
 	@Register.change(System.ErrorLog.ErrorID2,3)

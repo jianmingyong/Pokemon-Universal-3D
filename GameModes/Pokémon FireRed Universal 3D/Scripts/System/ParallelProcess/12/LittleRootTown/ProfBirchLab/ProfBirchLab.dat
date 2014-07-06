@@ -2,7 +2,7 @@ version=2
 :if:<Register.value(12\LittleRootTown\ProfBirchLab)>=1
 	:if:<Register.value(System.12.Starter)>=252 <or> <Register.value(System.12.Starter)>=255 <or> <Register.value(System.12.Starter)>=258
 		:if:<NPC.exists(006000003)>=false
-			@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,62,false,2,,006000003,Still)
+			@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,Prof. Birch,false,2,,006000003,Still)
 		:endif
 		@Player.turnto(0)
 		@Text.show(PROF. BIRCH: So, <Player.name>.)
@@ -76,19 +76,19 @@ version=2
 :endif
 :if:<Register.value(12\LittleRootTown\ProfBirchLab)>=2
 	:if:<NPC.exists(006000003)>=false
-		@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,62,false,2,,006000003,Still)
+		@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,Prof. Birch,false,2,,006000003,Still)
 	:endif
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\ProfBirchLab)>=3
 	:if:<NPC.exists(006000003)>=false
-		@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,62,false,2,,006000003,Still)
+		@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,Prof. Birch,false,2,,006000003,Still)
 	:endif
 	:if:<NPC.exists(007000003)>=false <and> <Register.value(System.PlayerGender)>=Male
-		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,trchar003,false,2,,007000003,Still)
+		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,May,false,2,,007000003,Still)
 	:endif
 	:if:<NPC.exists(007000003)>=false <and> <Register.value(System.PlayerGender)>=Female
-		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,trchar002,false,2,,007000003,Still)
+		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,Brendan,false,2,,007000003,Still)
 	:endif
 	@Player.move(7)
 	@Text.show(PROF.BIRCH: Oh, hi, <Player.name>!)
@@ -141,13 +141,13 @@ version=2
 :endif
 :if:<Register.value(12\LittleRootTown\ProfBirchLab)>=4
 	:if:<NPC.exists(006000003)>=false
-		@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,62,false,2,,006000003,Still)
+		@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,Prof. Birch,false,2,,006000003,Still)
 	:endif
 	:if:<NPC.exists(007000003)>=false <and> <Register.value(System.PlayerGender)>=Male
-		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,trchar003,false,2,,007000003,Still)
+		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,May,false,2,,007000003,Still)
 	:endif
 	:if:<NPC.exists(007000003)>=false <and> <Register.value(System.PlayerGender)>=Female
-		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,trchar002,false,2,,007000003,Still)
+		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,Brendan,false,2,,007000003,Still)
 	:endif
 	:end
 :endif
