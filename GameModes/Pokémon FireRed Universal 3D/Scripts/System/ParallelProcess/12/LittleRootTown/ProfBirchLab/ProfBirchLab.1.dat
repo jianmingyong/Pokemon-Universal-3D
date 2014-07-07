@@ -1,0 +1,20 @@
+version=2
+:if:<Register.value(12\LittleRootTown\ProfBirchLab)>=1
+	@Text.show(<Player.name>, don't you think it might be~a good idea to go see <Rival.name>?)
+	@Options.setcancelindex(1)
+	@Options.show(YES,NO)
+	:when:YES
+		@Text.show(PROF. BIRCH: Great!~<Rival.name> should be happy, too.)
+		:end
+	:when:NO
+		@Text.show(PROF. BIRCH: Oh, don't be that way.~You should go meet my kid.)
+		@Script.start(System\ParallelProcess\12\LittleRootTown\ProfBirchLab\ProfBirchLab.1)
+		:end
+	:endwhen
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,System\ParallelProcess\12\LittleRootTown\ProfBirchLab\ProfBirchLab.1.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

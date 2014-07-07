@@ -153,4 +153,4 @@ PC.Layer.1
 {"Entity"{ENT[{"Scale"{sngArr[0.2,0.5,0.5]}}{"EntityID"{str[WallBlock]}}{"Position"{sngArr[3.42,0.15,1]}}{"TexturePath"{str[Lab]}}{"Textures"{recArr[[64,16,5,11][69,16,11,11][69,27,11,5]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0,2,2]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[1]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 
 NPC.Layer.7
-{"NPC"{NPC[{"Position"{sngArr[9,0,7]}}{"TextureID"{str[61]}}{"ID"{int[009000007]}}{"Name"{str[RandomProf]}}{"Action"{int[0]}}{"AdditionalValue"{str[Crash Protection Error:~This script is disabled for the time being. ]}}{"Rotation"{int[2]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[8,7,3,3]]}}]}}
+{"NPC"{NPC[{"Position"{sngArr[9,0,7]}}{"TextureID"{str[Prof. Birch Assistance]}}{"ID"{int[009000007]}}{"Name"{str[RandomProf]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\LittleRootTown\ProfBirchLab\009000007]}}{"Rotation"{int[2]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[8,7,3,3]]}}]}}

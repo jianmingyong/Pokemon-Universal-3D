@@ -5,7 +5,7 @@ version=2
 :if:<Register.value(System.ErrorLog.ErrorID1)>=2
 	@Script.start(System\ErrorLog\ErrorID1)
 :endif
-:if:<Register.value(System.ErrorLog.ErrorID2)>=2
+:if:<Register.value(System.ErrorLog.ErrorID2)>=2 <or> <Register.value(System.ErrorLog.ErrorID2)>=3
 	@Script.start(System\ErrorLog\ErrorID2)
 :endif
 :if:<Register.value(System.ErrorLog.ErrorID3)>=2

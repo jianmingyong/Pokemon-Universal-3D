@@ -2,11 +2,7 @@
 :if:<Register.value(12\Route103\018000011)>=1
 	@Sound.play(Select)
 	@Text.show(<Rival.name>: Let's see... The POKéMON found~on ROUTE 103 include...)
-	:if:<Register.value(System.PlayerGender)>=Male
-		@Music.play(P_R_S_E May's Theme)
-	:else
-		@Music.play(P_R_S_E Brendan's Theme)
-	:endif
+	@Music.play(P_R_S_E <Rival.name>'s Theme)
 	@Sound.play(jumptoball)
 	@Entity.showmessagebulb(1|18|0.8|11)
 	@Text.show(Oh, hi, <Player.name>!)
@@ -16,29 +12,16 @@
 	@Text.show(Since we're here, let's have a quick~battle!)
 	@Sound.play(Select)
 	@Text.show(I'll give you a taste of what being~a TRAINER is like.)
-	:if:<Register.value(System.PlayerGender)>=Male <and> <Register.value(System.12.Starter)>=252
-		@Battle.trainer(12\Route103\018000011.F.255)
+	:if:<Register.value(System.12.Starter)>=252
+		@Battle.trainer(12\Route103\018000011.255)
 	:endif
-	:if:<Register.value(System.PlayerGender)>=Male <and> <Register.value(System.12.Starter)>=255
-		@Battle.trainer(12\Route103\018000011.F.258)
+	:if:<Register.value(System.12.Starter)>=255
+		@Battle.trainer(12\Route103\018000011.258)
 	:endif
-	:if:<Register.value(System.PlayerGender)>=Male <and> <Register.value(System.12.Starter)>=258
-		@Battle.trainer(12\Route103\018000011.F.252)
+	:if:<Register.value(System.12.Starter)>=258
+		@Battle.trainer(12\Route103\018000011.252)
 	:endif
-	:if:<Register.value(System.PlayerGender)>=Female <and> <Register.value(System.12.Starter)>=252
-		@Battle.trainer(12\Route103\018000011.M.255)
-	:endif
-	:if:<Register.value(System.PlayerGender)>=Female <and> <Register.value(System.12.Starter)>=255
-		@Battle.trainer(12\Route103\018000011.M.258)
-	:endif
-	:if:<Register.value(System.PlayerGender)>=Female <and> <Register.value(System.12.Starter)>=258
-		@Battle.trainer(12\Route103\018000011.M.252)
-	:endif
-	:if:<Register.value(System.PlayerGender)>=Male
-		@Music.play(P_R_S_E May's Theme)
-	:else
-		@Music.play(P_R_S_E Brendan's Theme)
-	:endif
+	@Music.play(P_R_S_E <Rival.name>'s Theme)
 	@Text.show(<Rival.name>: I think I know why my dad has~an eye out for you now.)
 	@Sound.play(Select)
 	@Text.show(I mean, you just got that POKéMON,~but it already likes you.)

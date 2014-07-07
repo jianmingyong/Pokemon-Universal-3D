@@ -58,19 +58,13 @@ version=2
 		@Sound.play(Select)
 		@Text.show(My kid, <Rival.name>, is also studying~POKéMON while helping me out.)
 		@Sound.play(Select)
-		@Text.show(<Player.name>, don't you think it might be~a good idea to go see <Rival.name>?)
-		@Options.setcancelindex(1)
-		@Options.show(YES,NO)
-		:when:YES
-			@Text.show(PROF. BIRCH: Great!~<Rival.name> should be happy, too.)
-		:when:NO
-			@Text.show(PROF. BIRCH: Oh, don't be that way.~You should go meet my kid.)
-		:endwhen
+		@Script.start(System\ParallelProcess\12\LittleRootTown\ProfBirchLab\ProfBirchLab.1)
 		@Text.show(Get <Rival.name> to teach you what it~means to be a TRAINER.)
 		@Register.change(12\LittleRootTown\ProfBirchLab,2)
 		@Register.change(12\LittleRootTown\RivalRoom.1\008000006,2)
 		@Register.change(12\LittleRootTown\RivalRoom.2,3)
 		@Register.change(12\LittleRootTown\PlayerRoom.1\002000005,2)
+		@Register.change(12\LittleRootTown\ProfBirchLab\009000007,2)
 	:endif
 	:end
 :endif
@@ -84,11 +78,8 @@ version=2
 	:if:<NPC.exists(006000003)>=false
 		@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,Prof. Birch,false,2,,006000003,Still)
 	:endif
-	:if:<NPC.exists(007000003)>=false <and> <Register.value(System.PlayerGender)>=Male
-		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,May,false,2,,007000003,Still)
-	:endif
-	:if:<NPC.exists(007000003)>=false <and> <Register.value(System.PlayerGender)>=Female
-		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,Brendan,false,2,,007000003,Still)
+	:if:<NPC.exists(007000003)>=false
+		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,<Rival.name>,false,2,,007000003,Still)
 	:endif
 	@Player.move(7)
 	@Text.show(PROF.BIRCH: Oh, hi, <Player.name>!)
@@ -137,17 +128,15 @@ version=2
 	@Register.change(12\LittleRootTown\ProfBirchLab\006000003,2)
 	@Register.change(12\OldaleTown\PokeMart\002000002,2)
 	@Register.change(12\LittleRootTown,3)
+	@Register.change(12\LittleRootTown\ProfBirchLab\009000007,3)
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\ProfBirchLab)>=4
 	:if:<NPC.exists(006000003)>=false
 		@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,Prof. Birch,false,2,,006000003,Still)
 	:endif
-	:if:<NPC.exists(007000003)>=false <and> <Register.value(System.PlayerGender)>=Male
-		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,May,false,2,,007000003,Still)
-	:endif
-	:if:<NPC.exists(007000003)>=false <and> <Register.value(System.PlayerGender)>=Female
-		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,Brendan,false,2,,007000003,Still)
+	:if:<NPC.exists(007000003)>=false
+		@NPC.spawn(7,0,3,1,12\LittleRootTown\ProfBirchLab\007000003,<Rival.name>,false,2,,007000003,Still)
 	:endif
 	:end
 :endif

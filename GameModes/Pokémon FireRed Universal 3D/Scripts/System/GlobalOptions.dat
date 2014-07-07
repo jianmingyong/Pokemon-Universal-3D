@@ -1,8 +1,8 @@
 version=2
 @Register.change(Options.System.Auto Save,0)
-@Register.change(Options.System.Skip Intro,1)
-@Register.change(Options.System.Skip Mom Story,1)
-@Register.change(Options.System.Skip Rival Story,1)
+@Register.change(Options.System.Skip Intro,0)
+@Register.change(Options.System.Skip Mom Story,0)
+@Register.change(Options.System.Skip Rival Story,0)
 @Register.change(Options.System.Test Mode,0)
 :if:<Register.value(Options.System.Game ID)>=8
 	:if:<not><Register.value(System.Game ID)>=8

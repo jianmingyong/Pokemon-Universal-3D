@@ -6,10 +6,14 @@ version=2
 	@Register.register(System.12.Starter,int,1)
 :endif
 :if:<Register.value(System.PlayerGender)>=Female
-	@Player.setrivalname(Brendan)
+	:if:<not><Rival.name>=Brendan
+		@Player.setrivalname(Brendan)
+	:endif
 :endif
 :if:<Register.value(System.PlayerGender)>=Male
-	@Player.setrivalname(May)
+	:if:<not><Rival.name>=May
+		@Player.setrivalname(May)
+	:endif
 :endif
 :if:<Register.registered(System\Intro\12\Intro)>=false
 	@Register.register(System\Intro\12\Intro,int,1)
@@ -181,6 +185,15 @@ version=2
 :endif
 :if:<Register.registered(12\LittleRootTown\ProfBirchLab\007000003)>=false
 	@Register.register(12\LittleRootTown\ProfBirchLab\007000003,int,1)
+:endif
+:if:<Register.registered(12\LittleRootTown\ProfBirchLab\009000007)>=false
+	@Register.register(12\LittleRootTown\ProfBirchLab\009000007,int,1)
+:endif
+:if:<Register.value(12\LittleRootTown\ProfBirchLab\009000007)>=1 <and> <Register.value(12\LittleRootTown\ProfBirchLab)>=2
+	@Register.change(12\LittleRootTown\ProfBirchLab\009000007,2)
+:endif
+:if:<Register.value(12\LittleRootTown\ProfBirchLab\009000007)>=1 <and> <Register.value(12\LittleRootTown\ProfBirchLab)>=4
+	@Register.change(12\LittleRootTown\ProfBirchLab\009000007,3)
 :endif
 :if:<Register.registered(12\LittleRootTown\ProfBirchLab)>=false
 	@Register.register(12\LittleRootTown\ProfBirchLab,int,1)
