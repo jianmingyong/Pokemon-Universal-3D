@@ -1,4 +1,5 @@
 version=2
+@Script.start(System\ErrorLog\Errorint)
 :if:<Register.value(System.ErrorLog.ErrorID0)>=2
 	@Script.start(System\ErrorLog\ErrorID0)
 :endif

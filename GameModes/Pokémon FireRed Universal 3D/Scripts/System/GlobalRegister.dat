@@ -47,6 +47,12 @@ version=2
 :if:<Register.registered(System.Test Mode)>=false
 	@Register.register(System.Test Mode,int,0)
 :endif
+:if:<Register.registered(Options.System.Skip GlobalRegisterValidation)>=false
+	@Register.register(Options.System.Skip GlobalRegisterValidation,int,0)
+:endif
+:if:<Register.registered(System.Skip GlobalRegisterValidation)>=false
+	@Register.register(System.Skip GlobalRegisterValidation,int,0)
+:endif
 :if:<Register.registered(System.ErrorLog.ErrorID0)>=false
 	@Register.register(System.ErrorLog.ErrorID0,int,1)
 :endif

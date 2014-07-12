@@ -20,7 +20,9 @@ version=2
 	@Player.save
 	:end
 :endif
-@Script.start(System\GlobalRegisterValidation)
+:if:<Register.value(System.Skip GlobalRegisterValidation)>=0
+	@Script.start(System\GlobalRegisterValidation)
+:endif
 @Script.start(System\GlobalLastMap)
 @Script.start(System\GlobalOptions)
 @Script.start(System\GlobalParallelProcess)
