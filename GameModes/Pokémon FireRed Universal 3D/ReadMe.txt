@@ -14,7 +14,7 @@ Table of contents:
 ==================================================
 1.	License
 ==================================================
-Pokémon FireRed Universal 3D v0.49.1.0.0.5 BT2
+Pokémon FireRed Universal 3D v0.49.1.0.0.6
 Copyright © 2014 jianmingyong
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
@@ -29,7 +29,7 @@ All the resources that are available in this installer are made by me unless oth
 ==================================================
 3.	Contacting
 ==================================================
-The easiest way to contact me privately is by PM. Please make the title as sensible as possible for example: “[v0.49.1.0.0.5] Pokémon FireRed Universal 3D suggestions.”
+The easiest way to contact me privately is by PM. Please make the title as sensible as possible for example: “[v0.49.1.0.0.6] Pokémon FireRed Universal 3D suggestions.”
 
 http://pokemon3d.net/forum/conversations/add?to=jianmingyong
 
