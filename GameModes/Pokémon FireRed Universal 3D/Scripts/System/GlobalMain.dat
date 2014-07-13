@@ -3,13 +3,14 @@ version=2
 :if:<Storage.count(integer)>=0
 	@Storage.set(integer,System.Update Checked,0)
 	@Script.start(System\GlobalRegister)
+	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
 	@Script.start(System\GlobalRegisterValidation)
 	@Script.start(System\GlobalLastMap)
 	@Script.start(System\GlobalOptions)
 	@Script.start(System\GlobalParallelProcess)
 	@Script.start(System\GlobalBankInterest)
 	:if:<not><Register.value(System.P3D Version)>=0.49.1
-		:if:<not><Register.value(System.Game Version)>=0.0.5.BT1
+		:if:<not><Register.value(System.Game Version)>=0.0.5.BT2
 			@Register.change(System.ErrorLog.ErrorID1,2)
 			@Script.start(System\GlobalErrorLog)
 			@Player.warp(System\GlobalValidation.dat,0,0,0,0)

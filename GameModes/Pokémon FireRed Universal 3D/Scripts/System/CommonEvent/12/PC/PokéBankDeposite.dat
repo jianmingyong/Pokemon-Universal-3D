@@ -1,40 +1,14 @@
 ﻿version=2
 @Text.show(You have $<Player.money> in your pocket.~How much would you like to deposite?)
-:if:<Player.money><0
+:if:<Player.money><0 <or> <Register.value(System.BankMoney)><0
 	@Player.save
 	@Register.change(System.ErrorLog.ErrorID5,2)
 	@Script.start(System\GlobalErrorLog)
 	@Player.warp(System\GlobalValidation.dat,0,0,0,0)
 	:end
 :endif
-:if:<Player.money>>0 <and> <Player.money><10
-	@Screen.input(<Player.money>,0,<Player.money>,1)
-:endif
-:if:<Player.money>>9 <and> <Player.money><100
-	@Screen.input(<Player.money>,0,<Player.money>,2)
-:endif
-:if:<Player.money>>99 <and> <Player.money><1000
-	@Screen.input(<Player.money>,0,<Player.money>,3)
-:endif
-:if:<Player.money>>999 <and> <Player.money><10000
-	@Screen.input(<Player.money>,0,<Player.money>,4)
-:endif
-:if:<Player.money>>9999 <and> <Player.money><100000
-	@Screen.input(<Player.money>,0,<Player.money>,5)
-:endif
-:if:<Player.money>>99999 <and> <Player.money><1000000
-	@Screen.input(<Player.money>,0,<Player.money>,6)
-:endif
-:if:<Player.money>>999999 <and> <Player.money><10000000
-	@Screen.input(<Player.money>,0,<Player.money>,7)
-:endif
-:if:<Player.money>>9999999 <and> <Player.money><100000000
-	@Screen.input(<Player.money>,0,<Player.money>,8)
-:endif
-:if:<Player.money>>99999999 <and> <Player.money><1000000000
-	@Screen.input(<Player.money>,0,<Player.money>,9)
-:endif
-:if:<Player.money>>999999999 <and> <Player.money><10000000000
+:if:<Player.money>>0
+	:if:<not><Player.money>>2147483648
 	@Screen.input(<Player.money>,0,<Player.money>,10)
 :endif
 @Sound.play(Select)
@@ -48,13 +22,18 @@
 		@Script.start(System\CommonEvent\12\PC\PokéBankDeposite)
 		:end
 	:endif
+	:if:<Math.sng(<Register.value(System.BankMoney)>+<System.lastinput>)>>2147483648
+		@Text.show(Too much moeney inserted into the bank.)
+		@Script.start(System\CommonEvent\12\PC\PokéBankDeposite)
+		:end
+	:endif
 	:if:<Player.money><<System.lastinput>
 		@Text.show(You do not have that much money.)
 		@Script.start(System\CommonEvent\12\PC\PokéBankDeposite)
 		:end
 	:endif
 	@Player.addmoney(-<System.lastinput>)
-	@Register.change(System.BankMoney,<Math.sng(<Register.value(System.BankMoney)>+<System.lastinput>)>)
+	@Register.change(System.BankMoney,<Register.value(System.BankMoney)>+<System.lastinput>)
 	@Player.save
 	@Sound.play(Save)
 	@Text.show(You have deposited successfully.)

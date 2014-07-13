@@ -5,16 +5,6 @@ version=2
 :if:<Register.registered(System.12.Starter)>=false
 	@Register.register(System.12.Starter,int,1)
 :endif
-:if:<Register.value(System.PlayerGender)>=Female
-	:if:<not><Rival.name>=Brendan
-		@Player.setrivalname(Brendan)
-	:endif
-:endif
-:if:<Register.value(System.PlayerGender)>=Male
-	:if:<not><Rival.name>=May
-		@Player.setrivalname(May)
-	:endif
-:endif
 :if:<Register.registered(System\Intro\12\Intro)>=false
 	@Register.register(System\Intro\12\Intro,int,1)
 :endif
@@ -189,17 +179,8 @@ version=2
 :if:<Register.registered(12\LittleRootTown\ProfBirchLab\009000007)>=false
 	@Register.register(12\LittleRootTown\ProfBirchLab\009000007,int,1)
 :endif
-:if:<Register.value(12\LittleRootTown\ProfBirchLab\009000007)>=1 <and> <Register.value(12\LittleRootTown\ProfBirchLab)>=2
-	@Register.change(12\LittleRootTown\ProfBirchLab\009000007,2)
-:endif
-:if:<Register.value(12\LittleRootTown\ProfBirchLab\009000007)>=1 <and> <Register.value(12\LittleRootTown\ProfBirchLab)>=4
-	@Register.change(12\LittleRootTown\ProfBirchLab\009000007,3)
-:endif
 :if:<Register.registered(12\LittleRootTown\ProfBirchLab)>=false
 	@Register.register(12\LittleRootTown\ProfBirchLab,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\ProfBirchLab)>=true <and> <Register.value(12\LittleRootTown\ProfBirchLab)>=4
-	@Register.change(12\OldaleTown\PokeMart\002000002,2)
 :endif
 :if:<Register.registered(12\Route101\024000008)>=false
 	@Register.register(12\Route101\024000008,int,1)
@@ -234,20 +215,8 @@ version=2
 :if:<Register.registered(12\Route101)>=false
 	@Register.register(12\Route101,int,1)
 :endif
-:if:<Register.registered(12\OldaleTown\015000006)>=false
-	@Register.register(12\OldaleTown\015000006,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\016000006)>=false
-	@Register.register(12\OldaleTown\016000006,int,1)
-:endif
 :if:<Register.registered(12\OldaleTown\011000009)>=false
 	@Register.register(12\OldaleTown\011000009,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\007000016)>=false
-	@Register.register(12\OldaleTown\007000016,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\008000016)>=false
-	@Register.register(12\OldaleTown\008000016,int,1)
 :endif
 :if:<Register.registered(12\OldaleTown\008000019)>=false
 	@Register.register(12\OldaleTown\008000019,int,1)
@@ -264,29 +233,8 @@ version=2
 :if:<Register.registered(12\OldaleTown)>=false
 	@Register.register(12\OldaleTown,int,1)
 :endif
-:if:<Register.registered(12\OldaleTown\PokeCenter\011000000)>=false
-	@Register.register(12\OldaleTown\PokeCenter\011000000,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\PokeCenter\012000000)>=false
-	@Register.register(12\OldaleTown\PokeCenter\012000000,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\PokeCenter\010000001)>=false
-	@Register.register(12\OldaleTown\PokeCenter\010000001,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\PokeCenter\007000002)>=false
-	@Register.register(12\OldaleTown\PokeCenter\007000002,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\PokeCenter\001000005)>=false
-	@Register.register(12\OldaleTown\PokeCenter\001000005,int,1)
-:endif
 :if:<Register.registered(12\OldaleTown\PokeMart\002000002)>=false
 	@Register.register(12\OldaleTown\PokeMart\002000002,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\PokeMart\000000003)>=false
-	@Register.register(12\OldaleTown\PokeMart\000000003,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\PokeMart\000000005)>=false
-	@Register.register(12\OldaleTown\PokeMart\000000005,int,1)
 :endif
 :if:<Register.registered(12\Route103\018000011)>=false
 	@Register.register(12\Route103\018000011,int,1)

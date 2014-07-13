@@ -8,8 +8,8 @@ version=2
 :if:<Register.registered(System.Game Version)>=false
 	@Register.register(System.Game Version,str,0.0.5.BT1)
 :endif
-:if:<not><Register.value(System.Game Version)>=0.0.5.BT1
-	@Register.change(System.Game Version,0.0.5.BT1)
+:if:<not><Register.value(System.Game Version)>=0.0.5.BT2
+	@Register.change(System.Game Version,0.0.5.BT2)
 :endif
 :if:<Register.registered(Options.System.Game ID)>=false
 	@Register.register(Options.System.Game ID,int,12)

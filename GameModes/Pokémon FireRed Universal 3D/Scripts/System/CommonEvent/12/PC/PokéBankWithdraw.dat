@@ -1,40 +1,14 @@
 ﻿version=2
 @Text.show(Your bank have $<Register.value(System.BankMoney)>.~How much would you like to withdraw?)
-:if:<Player.money><0
+:if:<Player.money><0 <or> <Register.value(System.BankMoney)><0
 	@Player.save
 	@Register.change(System.ErrorLog.ErrorID5,2)
 	@Script.start(System\GlobalErrorLog)
 	@Player.warp(System\GlobalValidation.dat,0,0,0,0)
 	:end
 :endif
-:if:<Register.value(System.BankMoney)>>0 <and> <Register.value(System.BankMoney)><10
-	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,1)
-:endif
-:if:<Register.value(System.BankMoney)>>9 <and> <Register.value(System.BankMoney)><100
-	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,2)
-:endif
-:if:<Register.value(System.BankMoney)>>99 <and> <Register.value(System.BankMoney)><1000
-	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,3)
-:endif
-:if:<Register.value(System.BankMoney)>>999 <and> <Register.value(System.BankMoney)><10000
-	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,4)
-:endif
-:if:<Register.value(System.BankMoney)>>9999 <and> <Register.value(System.BankMoney)><100000
-	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,5)
-:endif
-:if:<Register.value(System.BankMoney)>>99999 <and> <Register.value(System.BankMoney)><1000000
-	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,6)
-:endif
-:if:<Register.value(System.BankMoney)>>999999 <and> <Register.value(System.BankMoney)><10000000
-	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,7)
-:endif
-:if:<Register.value(System.BankMoney)>>9999999 <and> <Register.value(System.BankMoney)><100000000
-	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,8)
-:endif
-:if:<Register.value(System.BankMoney)>>99999999 <and> <Register.value(System.BankMoney)><1000000000
-	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,9)
-:endif
-:if:<Register.value(System.BankMoney)>>999999999 <and> <Register.value(System.BankMoney)><10000000000
+:if:<Register.value(System.BankMoney)>>0
+	:if:<not><Register.value(System.BankMoney)>>2147483648
 	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,10)
 :endif
 @Sound.play(Select)
@@ -46,6 +20,11 @@
 	:if:<Math.isint(<System.lastinput>.0)>=false
 		@Text.show(Please insert a integer number.)
 		@Script.start(System\CommonEvent\12\PC\PokéBankWithdraw)
+		:end
+	:endif
+	:if:<Math.sng(<Player.money>+<System.lastinput>)>>2147483648
+		@Text.show(Too much moeney withdraw from the bank.)
+		@Script.start(System\CommonEvent\12\PC\PokéBankDeposite)
 		:end
 	:endif
 	:if:<Register.value(System.BankMoney)><<System.lastinput>

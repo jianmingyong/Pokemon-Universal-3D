@@ -65,7 +65,6 @@ version=2
 	@Script.start(System\GlobalMain)
 	:end
 :endif
-
 @Player.save
 @Register.change(System.ErrorLog.ErrorID0,2)
 @Register.change(System.ActionScript,12\OldaleTown\PokeMart\002000002.dat)

@@ -1292,40 +1292,6 @@ version=2
 		:endif
 	:endif
 :endif
-:if:<Register.registered(12\OldaleTown\015000006)>=false
-	:if:<Register.registered(System.ErrorLogInit)>=false
-		@Register.change(System.ErrorLog.ErrorID2,2)
-		@Script.start(System\GlobalErrorLog)
-		@Register.register(System.ErrorLogInit)
-	:endif
-	@Text.log([Register validation result: "12\OldaleTown\015000006" does not exist.])
-:else
-	:if:<not><Register.value(12\OldaleTown\015000006)>=1
-		:if:<Register.registered(System.ErrorLogInit)>=false
-			@Register.change(System.ErrorLog.ErrorID2,2)
-			@Script.start(System\GlobalErrorLog)
-			@Register.register(System.ErrorLogInit)
-		:endif
-		@Text.log([Register validation result: "12\OldaleTown\015000006" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\015000006)>])
-	:endif
-:endif
-:if:<Register.registered(12\OldaleTown\016000006)>=false
-	:if:<Register.registered(System.ErrorLogInit)>=false
-		@Register.change(System.ErrorLog.ErrorID2,2)
-		@Script.start(System\GlobalErrorLog)
-		@Register.register(System.ErrorLogInit)
-	:endif
-	@Text.log([Register validation result: "12\OldaleTown\016000006" does not exist.])
-:else
-	:if:<not><Register.value(12\OldaleTown\016000006)>=1
-		:if:<Register.registered(System.ErrorLogInit)>=false
-			@Register.change(System.ErrorLog.ErrorID2,2)
-			@Script.start(System\GlobalErrorLog)
-			@Register.register(System.ErrorLogInit)
-		:endif
-		@Text.log([Register validation result: "12\OldaleTown\016000006" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\016000006)>])
-	:endif
-:endif
 :if:<Register.registered(12\OldaleTown\011000009)>=false
 	:if:<Register.registered(System.ErrorLogInit)>=false
 		@Register.change(System.ErrorLog.ErrorID2,2)
@@ -1341,40 +1307,6 @@ version=2
 			@Register.register(System.ErrorLogInit)
 		:endif
 		@Text.log([Register validation result: "12\OldaleTown\011000009" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\011000009)>])
-	:endif
-:endif
-:if:<Register.registered(12\OldaleTown\007000016)>=false
-	:if:<Register.registered(System.ErrorLogInit)>=false
-		@Register.change(System.ErrorLog.ErrorID2,2)
-		@Script.start(System\GlobalErrorLog)
-		@Register.register(System.ErrorLogInit)
-	:endif
-	@Text.log([Register validation result: "12\OldaleTown\007000016" does not exist.])
-:else
-	:if:<not><Register.value(12\OldaleTown\007000016)>=1
-		:if:<Register.registered(System.ErrorLogInit)>=false
-			@Register.change(System.ErrorLog.ErrorID2,2)
-			@Script.start(System\GlobalErrorLog)
-			@Register.register(System.ErrorLogInit)
-		:endif
-		@Text.log([Register validation result: "12\OldaleTown\007000016" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\007000016)>])
-	:endif
-:endif
-:if:<Register.registered(12\OldaleTown\008000016)>=false
-	:if:<Register.registered(System.ErrorLogInit)>=false
-		@Register.change(System.ErrorLog.ErrorID2,2)
-		@Script.start(System\GlobalErrorLog)
-		@Register.register(System.ErrorLogInit)
-	:endif
-	@Text.log([Register validation result: "12\OldaleTown\008000016" does not exist.])
-:else
-	:if:<not><Register.value(12\OldaleTown\008000016)>=1
-		:if:<Register.registered(System.ErrorLogInit)>=false
-			@Register.change(System.ErrorLog.ErrorID2,2)
-			@Script.start(System\GlobalErrorLog)
-			@Register.register(System.ErrorLogInit)
-		:endif
-		@Text.log([Register validation result: "12\OldaleTown\008000016" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\008000016)>])
 	:endif
 :endif
 :if:<Register.registered(12\OldaleTown\008000019)>=false
@@ -1464,91 +1396,6 @@ version=2
 		:endif
 	:endif
 :endif
-:if:<Register.registered(12\OldaleTown\PokeCenter\011000000)>=false
-	:if:<Register.registered(System.ErrorLogInit)>=false
-		@Register.change(System.ErrorLog.ErrorID2,2)
-		@Script.start(System\GlobalErrorLog)
-		@Register.register(System.ErrorLogInit)
-	:endif
-	@Text.log([Register validation result: "12\OldaleTown\PokeCenter\011000000" does not exist.])
-:else
-	:if:<not><Register.value(12\OldaleTown\PokeCenter\011000000)>=1
-		:if:<Register.registered(System.ErrorLogInit)>=false
-			@Register.change(System.ErrorLog.ErrorID2,2)
-			@Script.start(System\GlobalErrorLog)
-			@Register.register(System.ErrorLogInit)
-		:endif
-		@Text.log([Register validation result: "12\OldaleTown\PokeCenter\011000000" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\PokeCenter\011000000)>])
-	:endif
-:endif
-:if:<Register.registered(12\OldaleTown\PokeCenter\012000000)>=false
-	:if:<Register.registered(System.ErrorLogInit)>=false
-		@Register.change(System.ErrorLog.ErrorID2,2)
-		@Script.start(System\GlobalErrorLog)
-		@Register.register(System.ErrorLogInit)
-	:endif
-	@Text.log([Register validation result: "12\OldaleTown\PokeCenter\012000000" does not exist.])
-:else
-	:if:<not><Register.value(12\OldaleTown\PokeCenter\012000000)>=1
-		:if:<Register.registered(System.ErrorLogInit)>=false
-			@Register.change(System.ErrorLog.ErrorID2,2)
-			@Script.start(System\GlobalErrorLog)
-			@Register.register(System.ErrorLogInit)
-		:endif
-		@Text.log([Register validation result: "12\OldaleTown\PokeCenter\012000000" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\PokeCenter\012000000)>])
-	:endif
-:endif
-:if:<Register.registered(12\OldaleTown\PokeCenter\010000001)>=false
-	:if:<Register.registered(System.ErrorLogInit)>=false
-		@Register.change(System.ErrorLog.ErrorID2,2)
-		@Script.start(System\GlobalErrorLog)
-		@Register.register(System.ErrorLogInit)
-	:endif
-	@Text.log([Register validation result: "12\OldaleTown\PokeCenter\010000001" does not exist.])
-:else
-	:if:<not><Register.value(12\OldaleTown\PokeCenter\010000001)>=1
-		:if:<Register.registered(System.ErrorLogInit)>=false
-			@Register.change(System.ErrorLog.ErrorID2,2)
-			@Script.start(System\GlobalErrorLog)
-			@Register.register(System.ErrorLogInit)
-		:endif
-		@Text.log([Register validation result: "12\OldaleTown\PokeCenter\010000001" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\PokeCenter\010000001)>])
-	:endif
-:endif
-:if:<Register.registered(12\OldaleTown\PokeCenter\007000002)>=false
-	:if:<Register.registered(System.ErrorLogInit)>=false
-		@Register.change(System.ErrorLog.ErrorID2,2)
-		@Script.start(System\GlobalErrorLog)
-		@Register.register(System.ErrorLogInit)
-	:endif
-	@Text.log([Register validation result: "12\OldaleTown\PokeCenter\007000002" does not exist.])
-:else
-	:if:<not><Register.value(12\OldaleTown\PokeCenter\007000002)>=1
-		:if:<Register.registered(System.ErrorLogInit)>=false
-			@Register.change(System.ErrorLog.ErrorID2,2)
-			@Script.start(System\GlobalErrorLog)
-			@Register.register(System.ErrorLogInit)
-		:endif
-		@Text.log([Register validation result: "12\OldaleTown\PokeCenter\007000002" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\PokeCenter\007000002)>])
-	:endif
-:endif
-:if:<Register.registered(12\OldaleTown\PokeCenter\001000005)>=false
-	:if:<Register.registered(System.ErrorLogInit)>=false
-		@Register.change(System.ErrorLog.ErrorID2,2)
-		@Script.start(System\GlobalErrorLog)
-		@Register.register(System.ErrorLogInit)
-	:endif
-	@Text.log([Register validation result: "12\OldaleTown\PokeCenter\001000005" does not exist.])
-:else
-	:if:<not><Register.value(12\OldaleTown\PokeCenter\001000005)>=1
-		:if:<Register.registered(System.ErrorLogInit)>=false
-			@Register.change(System.ErrorLog.ErrorID2,2)
-			@Script.start(System\GlobalErrorLog)
-			@Register.register(System.ErrorLogInit)
-		:endif
-		@Text.log([Register validation result: "12\OldaleTown\PokeCenter\001000005" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\PokeCenter\001000005)>])
-	:endif
-:endif
 :if:<Register.registered(12\OldaleTown\PokeMart\002000002)>=false
 	:if:<Register.registered(System.ErrorLogInit)>=false
 		@Register.change(System.ErrorLog.ErrorID2,2)
@@ -1557,8 +1404,8 @@ version=2
 	:endif
 	@Text.log([Register validation result: "12\OldaleTown\PokeMart\002000002" does not exist.])
 :else
-	:if:<not><Register.value(12\OldaleTown\PokeMart\000000005)>=1
-		:if:<not><Register.value(12\OldaleTown\PokeMart\000000005)>=2
+	:if:<not><Register.value(12\OldaleTown\PokeMart\002000002)>=1
+		:if:<not><Register.value(12\OldaleTown\PokeMart\002000002)>=2
 			:if:<Register.registered(System.ErrorLogInit)>=false
 				@Register.change(System.ErrorLog.ErrorID2,2)
 				@Script.start(System\GlobalErrorLog)
@@ -1566,40 +1413,6 @@ version=2
 			:endif
 			@Text.log([Register validation result: "12\OldaleTown\PokeMart\002000002" cannot be less than 1 and more than 2. Current value: <Register.value(12\OldaleTown\PokeMart\002000002)>])
 		:endif
-	:endif
-:endif
-:if:<Register.registered(12\OldaleTown\PokeMart\000000003)>=false
-	:if:<Register.registered(System.ErrorLogInit)>=false
-		@Register.change(System.ErrorLog.ErrorID2,2)
-		@Script.start(System\GlobalErrorLog)
-		@Register.register(System.ErrorLogInit)
-	:endif
-	@Text.log([Register validation result: "12\OldaleTown\PokeMart\000000003" does not exist.])
-:else
-	:if:<not><Register.value(12\OldaleTown\PokeMart\000000005)>=1
-		:if:<Register.registered(System.ErrorLogInit)>=false
-			@Register.change(System.ErrorLog.ErrorID2,2)
-			@Script.start(System\GlobalErrorLog)
-			@Register.register(System.ErrorLogInit)
-		:endif
-		@Text.log([Register validation result: "12\OldaleTown\PokeMart\000000003" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\PokeMart\000000003)>])
-	:endif
-:endif
-:if:<Register.registered(12\OldaleTown\PokeMart\000000005)>=false
-	:if:<Register.registered(System.ErrorLogInit)>=false
-		@Register.change(System.ErrorLog.ErrorID2,2)
-		@Script.start(System\GlobalErrorLog)
-		@Register.register(System.ErrorLogInit)
-	:endif
-	@Text.log([Register validation result: "12\OldaleTown\PokeMart\000000005" does not exist.])
-:else
-	:if:<not><Register.value(12\OldaleTown\PokeMart\000000005)>=1
-		:if:<Register.registered(System.ErrorLogInit)>=false
-			@Register.change(System.ErrorLog.ErrorID2,2)
-			@Script.start(System\GlobalErrorLog)
-			@Register.register(System.ErrorLogInit)
-		:endif
-		@Text.log([Register validation result: "12\OldaleTown\PokeMart\000000005" cannot be less than 1 and more than 1. Current value: <Register.value(12\OldaleTown\PokeMart\000000005)>])
 	:endif
 :endif
 :if:<Register.registered(12\Route103\018000011)>=false
