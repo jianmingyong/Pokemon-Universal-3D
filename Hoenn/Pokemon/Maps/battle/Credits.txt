@@ -1,4 +1,0 @@
-battle0 - Offical P3d team, used in case of missing battle file
-Route101 - Prince Vade
-Route102 - Prince Vade
-Route103 - Prince Vade
