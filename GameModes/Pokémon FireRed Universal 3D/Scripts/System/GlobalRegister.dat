@@ -98,9 +98,15 @@ version=2
 :if:<Register.registered(System.PlayerGender)>=false
 	:if:<Player.skin>=trchar000 <or> <Player.skin>=Brendan
 		@Register.register(System.PlayerGender,str,Male)
+		:if:<not><Rival.name>=May
+			@Player.setrivalname(May)
+		:endif
 	:endif
 	:if:<Player.skin>=trchar001 <or> <Player.skin>=May
 		@Register.register(System.PlayerGender,str,Female)
+		:if:<not><Rival.name>=Brendan
+			@Player.setrivalname(Brendan)
+		:endif
 	:endif
 :endif
 :if:<Register.registered(System.BankMoney)>=false

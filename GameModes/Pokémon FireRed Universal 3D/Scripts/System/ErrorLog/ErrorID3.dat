@@ -6,7 +6,6 @@
 @Text.log(Message: You are trying to heal your Pokémon. This might be triggered if you do not have a valid Pokémon in your party.)
 @Text.log(HelpLink: No helplink available.)
 @Text.log(Data: "Pokemon\GameModes\Pokémon FireRed Universal 3D\Scripts\<Register.value(System.ActionScript)>")
-@Text.log(Pokémon Count: <Pokemon.count>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()

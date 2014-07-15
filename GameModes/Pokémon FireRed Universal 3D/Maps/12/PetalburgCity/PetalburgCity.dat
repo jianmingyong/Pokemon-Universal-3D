@@ -126,7 +126,7 @@ Floor.Layer.24
 {"Floor"{ENT[{"Size"{intArr[8,1]}}{"Position"{intArr[17,0,24]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[25,0,24]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[0,272,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[26,0,24]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,272,16,16]}}]}}
-{"Floor"{ENT[{"Size"{intArr[3,1]}}{"Position"{intArr[27,0,24]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
+{"Floor"{ENT[{"Size"{intArr[4,1]}}{"Position"{intArr[27,0,24]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.25
 {"Floor"{ENT[{"Size"{intArr[2,1]}}{"Position"{intArr[0,0,25]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[8,1]}}{"Position"{intArr[7,0,25]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
@@ -135,7 +135,7 @@ Floor.Layer.25
 {"Floor"{ENT[{"Size"{intArr[8,1]}}{"Position"{intArr[17,0,25]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[16,256,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[2,1]}}{"Position"{intArr[25,0,25]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[16,272,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[27,0,25]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,256,16,16]}}]}}
-{"Floor"{ENT[{"Size"{intArr[2,1]}}{"Position"{intArr[28,0,25]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
+{"Floor"{ENT[{"Size"{intArr[3,1]}}{"Position"{intArr[28,0,25]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.26
 {"Floor"{ENT[{"Size"{intArr[2,1]}}{"Position"{intArr[0,0,26]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[8,1]}}{"Position"{intArr[7,0,26]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
@@ -143,13 +143,13 @@ Floor.Layer.26
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[16,0,26]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[16,272,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[10,1]}}{"Position"{intArr[17,0,26]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[16,288,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[27,0,26]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,288,16,16]}}]}}
-{"Floor"{ENT[{"Size"{intArr[2,1]}}{"Position"{intArr[28,0,26]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
+{"Floor"{ENT[{"Size"{intArr[3,1]}}{"Position"{intArr[28,0,26]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.27
 {"Floor"{ENT[{"Size"{intArr[2,1]}}{"Position"{intArr[0,0,27]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[8,1]}}{"Position"{intArr[7,0,27]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[15,0,27]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[0,272,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[16,0,27]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,272,16,16]}}]}}
-{"Floor"{ENT[{"Size"{intArr[13,1]}}{"Position"{intArr[17,0,27]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
+{"Floor"{ENT[{"Size"{intArr[14,1]}}{"Position"{intArr[17,0,27]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.28
 {"Floor"{ENT[{"Size"{intArr[2,1]}}{"Position"{intArr[0,0,28]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[3,1]}}{"Position"{intArr[7,0,28]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
@@ -438,5 +438,14 @@ PokéCenter_Invisible.wall
 PokéCenter.Door.Layer.24.Floor.1
 {"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[21,0,24]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\PetalburgCity\PetalburgCity.PokeCenter.dat,7,0,8,0]}}{"Rotation"{int[0]}}]}}
 
+NPC.Layer.20
+{"NPC"{NPC[{"Position"{sngArr[0,0,20]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Position"{sngArr[0,0,21]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+
 OffsetMap.Layer.24
 {"OffsetMap"{MAP[{"Map"{str[12\Route102\Route102.dat]}}{"Offset"{intArr[30,0,10]}}]}}
+Warp.Layer.24
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[30,0,24]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route102\Route102.dat,-1,0,14,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[30,0,25]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route102\Route102.dat,-1,0,15,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[30,0,26]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route102\Route102.dat,-1,0,16,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[30,0,27]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route102\Route102.dat,-1,0,17,0]}}{"Rotation"{int[0]}}]}}

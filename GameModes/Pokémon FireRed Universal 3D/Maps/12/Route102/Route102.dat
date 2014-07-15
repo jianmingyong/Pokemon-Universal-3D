@@ -58,23 +58,23 @@ Floor.Layer.13
 {"Floor"{ENT[{"Size"{intArr[20,1]}}{"Position"{intArr[20,0,13]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[4,1]}}{"Position"{intArr[46,0,13]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.14
-{"Floor"{ENT[{"Size"{intArr[11,1]}}{"Position"{intArr[0,0,14]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
+{"Floor"{ENT[{"Size"{intArr[12,1]}}{"Position"{intArr[-1,0,14]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[11,0,14]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[0,80,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[12,0,14]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[16,80,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[13,0,14]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,96,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[26,1]}}{"Position"{intArr[14,0,14]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[4,1]}}{"Position"{intArr[46,0,14]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.15
-{"Floor"{ENT[{"Size"{intArr[11,1]}}{"Position"{intArr[0,0,15]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
+{"Floor"{ENT[{"Size"{intArr[12,1]}}{"Position"{intArr[-1,0,15]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[11,0,15]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[0,96,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[12,0,15]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,96,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[27,1]}}{"Position"{intArr[13,0,15]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[6,1]}}{"Position"{intArr[40,0,15]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[48,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[4,1]}}{"Position"{intArr[46,0,15]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.16
-{"Floor"{ENT[{"Size"{intArr[50,1]}}{"Position"{intArr[0,0,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
+{"Floor"{ENT[{"Size"{intArr[51,1]}}{"Position"{intArr[-1,0,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.17
-{"Floor"{ENT[{"Size"{intArr[50,1]}}{"Position"{intArr[0,0,17]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
+{"Floor"{ENT[{"Size"{intArr[51,1]}}{"Position"{intArr[-1,0,17]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.18
 {"Floor"{ENT[{"Size"{intArr[41,1]}}{"Position"{intArr[0,0,18]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
 {"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[41,0,18]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[0,64,16,16]}}]}}
@@ -341,12 +341,6 @@ Ledge.Layer.16
 Ledge.Layer.21
 {"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[8,0,21]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[32,0,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}{"Rotation"{int[0]}}]}}
 
-NPC.Layer.14
-{"NPC"{NPC[{"Name"{str[000000014]}}{"ID"{int[000000014]}}{"Position"{sngArr[0,0,14]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
-{"NPC"{NPC[{"Name"{str[000000015]}}{"ID"{int[000000015]}}{"Position"{sngArr[0,0,15]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
-{"NPC"{NPC[{"Name"{str[000000016]}}{"ID"{int[000000016]}}{"Position"{sngArr[0,0,16]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
-{"NPC"{NPC[{"Name"{str[000000017]}}{"ID"{int[000000017]}}{"Position"{sngArr[0,0,17]}}{"TextureID"{str[Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\ComingSoon]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
-
 Trainer.Layer.12
 {"NPC"{NPC[{"Name"{str[019000012]}}{"ID"{int[019000012]}}{"Position"{sngArr[19,0,12]}}{"TextureID"{str[14]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\Route102\019000012]}}{"Rotation"{int[2]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
 Trainer.Layer.15
@@ -372,6 +366,14 @@ ActionScript.Layer.12
 {"EntityField"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[014000012]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[14,0,12]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[0]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route102\014000012]}}]}}
 ActionScript.Layer.13
 {"EntityField"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[014000013]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[14,0,13]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[0]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route102\014000013]}}]}}
+
+OffsetMap.Layer.14
+{"OffsetMap"{MAP[{"Map"{str[12\PetalburgCity\PetalburgCity.dat]}}{"Offset"{intArr[-30,0,-10]}}]}}
+Warp.Layer.14
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[-1,0,14]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\PetalburgCity\PetalburgCity.dat,30,0,24,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[-1,0,15]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\PetalburgCity\PetalburgCity.dat,30,0,25,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[-1,0,16]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\PetalburgCity\PetalburgCity.dat,30,0,26,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[-1,0,17]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\PetalburgCity\PetalburgCity.dat,30,0,27,0]}}{"Rotation"{int[0]}}]}}
 
 OffsetMap.Layer.18
 {"OffsetMap"{MAP[{"Map"{str[12\OldaleTown\OldaleTown.dat]}}{"Offset"{intArr[50,0,8]}}]}}

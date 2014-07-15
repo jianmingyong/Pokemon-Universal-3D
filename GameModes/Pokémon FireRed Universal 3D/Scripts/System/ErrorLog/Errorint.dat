@@ -45,18 +45,47 @@
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()
-@Text.log(This is the latest backup before this crash happens:)
+@Text.log(This is the latest data before this crash happens:)
 @Text.log()
-:if:<not><Pokemon.count>=0
-	@Text.log(Data: Pokemon\Save\<Player.name>*\Party.dat)
-	@Text.log()
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log(Data: Pokemon\Save\<Player.name>*\Player.dat)
+@Text.log(Note: Not all data are captured in the backup file.)
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log(Name|<Player.name>)
+@Text.log(Position|<Player.position>)
+@Text.log(MapFile|<Level.mapfile>)
+@Text.log(Rotation|<Player.facing>)
+@Text.log(RivalName|<Rival.name>)
+@Text.log(Money|<Player.money>)
+@Text.log(Badges|<Player.badges>)
+@Text.log(Gender|<Register.value(System.PlayerGender)>)
+@Text.log(OT|<Player.ot>)
+:if:<Register.value(12\LittleRootTown\ProfBirchLab)>=4
+	@Text.log(hasPokedex|1)
+:else
+	@Text.log(hasPokedex|0)
 :endif
-@Storage.set(int,i,0)
-:while:<Storage.get(int,i)><<Pokemon.count>
-	@Text.log(<Pokemon.data(0)>)
-	@Storage.update(int,i,add,1)
+@Text.log(hasPokegear|0)
+@Text.log(skin|<Player.skin>)
+@Text.log(location|<Level.filename>)
+@Text.log(DiagonalMovement|0)
+@Text.log(saveCreated|Indev <Register.value(System.P3D Version)>)
+@Text.log(GameMode|Pokémon FireRed Universal 3D)
+:if:<Level.surfing>=false
+	@Text.log(Surfing|0)
+:else
+	@Text.log(Surfing|1)
+:endif
+@Text.log(BP|<Player.bp>)
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log(Data: Pokemon\Save\<Player.name>*\Party.dat)
+@Text.log(Note: Not all data are captured in the backup file.)
+@Text.log(---------------------------------------------------------------------------------)
+@Storage.set(int,BackupLog.Party.i,0)
+:while:<Storage.get(int,BackupLog.Party.i)><<Pokemon.count>
+	@Storage.update(int,BackupLog.Party.i,add,1)
+	@Text.log(<Pokemon.data(<Storage.get(int,BackupLog.Party.i)>-1)>)
 :endwhile
-@storage.clear
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()

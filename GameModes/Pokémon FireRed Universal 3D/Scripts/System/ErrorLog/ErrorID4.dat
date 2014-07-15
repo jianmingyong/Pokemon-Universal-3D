@@ -5,7 +5,6 @@
 @Text.log()
 @Text.log(Message: You are walking to the grass without a valid Pokémon in your own party.)
 @Text.log(HelpLink: No helplink available.)
-@Text.log(Pokémon Count: <Pokemon.count>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()

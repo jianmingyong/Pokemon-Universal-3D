@@ -6,7 +6,6 @@
 @Text.log(Message: Player/Bank money is out of range. You are hitting out of the Positive Int32 value range.)
 @Text.log(HelpLink: No helplink available.)
 @Text.log(Data: "Pokemon\Save\<Player.name>*\Player.dat")
-@Text.log(Player Money: $<Player.money>)
 @Text.log(Bank Money: $<Register.value(System.BankMoney)>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
