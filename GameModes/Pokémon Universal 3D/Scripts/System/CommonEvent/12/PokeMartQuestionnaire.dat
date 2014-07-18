@@ -1,0 +1,11 @@
+version=2
+@Sound.play(Select)
+@Text.show(There is a questionnaire.~Would you like to fill it out?)
+@Options.setcancelindex(1)
+@Options.show(YES,NO)
+:when:YES
+	@Script.start(System\CommonEvent\12\Questionnaireinput)
+:when:NO
+:endwhen
+@Script.start(System\GlobalMain)
+:end

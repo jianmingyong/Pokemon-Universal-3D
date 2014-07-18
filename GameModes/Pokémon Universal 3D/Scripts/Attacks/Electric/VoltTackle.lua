@@ -1,0 +1,16 @@
+SetAttackBaseDamage(344,120)
+SetAttackMaxPP(344,15)
+SetAttackCategory(344,0)
+SetAttackCategory(344,1)
+SetAttackContestCategory(344,3)
+SetAttackType(344,12)
+SetAttackPriority(344,0)
+SetAttackAccuracy(344,255)
+SetAttackSpecialAttackDelegate(344, "ATTACKS_ELECTRIC_VOLT_TACKLE_SPECIAL")
+
+function ATTACKS_ELECTRIC_VOLT_TACKLE_SPECIAL()
+    Attacks_TryToParalyze(10, "target")
+    local recoil = math.floor(Attacks_DamageDealt / 3)
+    Attacks_AddBattleStep("DrainHP", Attacks_TargetString .. "|" .. tostring(recoil))
+    Attacks_AddBattleStep("Message", Attacks_MyName .. " is damaged~by recoil!")
+end

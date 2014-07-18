@@ -1,0 +1,12 @@
+version=2
+@Screen.input(,0,,999)
+@Sound.play(Select)
+@Text.show(The code you inserted is correct?)
+@Options.setcancelindex(1)
+@Options.show(YES,NO)
+:when:YES
+	@Register.register(<System.lastinput>,int,0)
+:when:NO
+	@Script.start(System\MysteryGift\MysteryGift)
+:endwhen
+:end

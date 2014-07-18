@@ -1,0 +1,8 @@
+SetAttackBaseDamage(15,50)
+SetAttackMaxPP(15,30)
+SetAttackCategory(15,0)
+SetAttackContestCategory(15,3)
+SetAttackType(15,0)
+SetAttackPriority(15,0)
+SetAttackAccuracy(15,242)
+SetAttackIsHMMove(15, true)

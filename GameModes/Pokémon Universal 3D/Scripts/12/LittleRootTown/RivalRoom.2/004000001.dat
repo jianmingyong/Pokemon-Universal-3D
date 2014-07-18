@@ -1,0 +1,9 @@
+﻿version=2
+:if:<Player.position>=4,0,2
+	@Sound.play(Select)
+	@Text.show(DAD might like this program.~................................................)
+	@Sound.play(Select)
+	@Text.show(Better get going!)
+:endif
+@Script.start(System\GlobalMain)
+:end

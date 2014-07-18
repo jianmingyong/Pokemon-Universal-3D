@@ -1,0 +1,27 @@
+﻿version=2
+:if:<Register.value(12\LittleRootTown\PlayerRoom.2\004000001)>=1
+	:if:<Player.position>=4,0,2
+		@Sound.play(Select)
+		@Text.show(DAD might like this program.~................................................)
+		@Sound.play(Select)
+		@Text.show(Better get going!)
+	:endif
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+:if:<Register.value(12\LittleRootTown\PlayerRoom.2\004000001)>=2
+	:if:<Player.position>=4,0,2
+		@Sound.play(Select)
+		@Text.show(MOM might like this program.~................................................)
+		@Sound.play(Select)
+		@Text.show(Better get going!)
+	:endif
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\LittleRootTown\PlayerRoom.2\004000001.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

@@ -1,0 +1,55 @@
+﻿version=2
+:if:<Register.value(12\Route102\014000012)>=1
+	@Sound.play(jumptoball)
+	@NPC.spawn(18,0,14,0,,nilllzz,false,0,,018000014,Still)
+	@Player.turnto(3)
+	@Music.play(P_R_S_E Brendan's Theme)
+	@NPC.move(018000014,2)
+	@NPC.turn(018000014,1)
+	@NPC.move(018000014,3)
+	@Text.show(Hi <Player.name>, I am jianmingyong.~Prof. Birch gave me a Pokémon as well.)
+	@Sound.play(Select)
+	@Text.show(Since we're here, let's have a quick~battle!)
+	@Sound.play(Select)
+	@Text.show(Lets give it a shot!)
+	:if:<Register.value(System.12.Starter)>=252
+		@Battle.trainer(12\Route102\015000010.M.258)
+	:endif
+	:if:<Register.value(System.12.Starter)>=255
+		@Battle.trainer(12\Route102\015000010.M.252)
+	:endif
+	:if:<Register.value(System.12.Starter)>=258
+		@Battle.trainer(12\Route102\015000010.M.255)
+	:endif
+	@Music.play(PMD_EOT_D_S Through The Sea Of Time)
+	@Text.show(jianmingyong: Thank you for the battle,~I though it would be easy.)
+	@Sound.play(Select)
+	@Text.show(I live in Pallet Town, a place where~it is far from here.)
+	@Sound.play(Select)
+	@Text.show(Looks like I can't stay here for long.~Lets meet up next time.)
+	@Sound.play(Select)
+	@Text.show(jianmingyong was teleported to an~unknown place.)
+	@NPC.turn(018000014,0)
+	@NPC.turn(018000014,1)
+	@NPC.turn(018000014,2)
+	@NPC.turn(018000014,3)
+	@NPC.turn(018000014,0)
+	@NPC.turn(018000014,1)
+	@NPC.turn(018000014,2)
+	@NPC.turn(018000014,3)
+	@NPC.turn(018000014,0)
+	@NPC.turn(018000014,1)
+	@NPC.turn(018000014,2)
+	@NPC.turn(018000014,3)
+	@NPC.remove(018000014)
+	@Register.change(12\Route102,2)
+	@Music.play(P_R_S_E Route 101)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\Route102\014000012.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

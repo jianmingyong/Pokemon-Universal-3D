@@ -1,0 +1,8 @@
+Main:
+{"Level"{LEV[{"Name"{str[LITTLEROOT TOWN]}}{"MusicLoop"{str[P_R_S_E Littleroot Town]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
+{"Actions"{LEV[{"CanTeleport"{bool[0]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[1]}}{"Weather"{int[1]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}]}}
+
+Floor.Layer.0
+{"Floor"{ENT[{"Size"{intArr[50,50]}}{"Position"{intArr[0,0,0]}}{"TexturePath"{str[12\Tileset0001]}}{"Texture"{rec[32,0,16,16]}}]}}
+
+{"EntityField"{ENT[{"EntityID"{str[ModelEntity]}}{"Size"{intArr[50,50]}}{"Position"{sngArr[0.5,-0.5,0]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[Models\12\Entity\Rock straight\Rock straight]}}{"Steps"{sngArr[2,1,5]}}]}}

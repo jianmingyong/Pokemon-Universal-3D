@@ -1,0 +1,8 @@
+version=2
+:if:<Player.facing>=0
+	@Sound.play(computeropen)
+	@Text.show(<Player.name> booted up the PC.)
+	@Script.start(System\CommonEvent\12\PC\PCOption1)
+:endif
+@Script.start(System\GlobalMain)
+:end

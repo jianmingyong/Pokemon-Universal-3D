@@ -1,0 +1,30 @@
+version=2
+@Level.update
+:if:<Storage.count(integer)>=0
+	@Storage.set(integer,System.GlobalMain,0)
+	@Script.start(System\GlobalRegister)
+	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
+	@Script.start(System\GlobalRegisterValidation)
+	@Script.start(System\GlobalLastMap)
+	@Script.start(System\GlobalOptions)
+	@Script.start(System\GlobalParallelProcess)
+	@Script.start(System\GlobalBankInterest)
+	:if:<not><Register.value(System.P3D Version)>=0.49.1
+		:if:<not><Register.value(System.Game Version)>=0.0.6
+			@Register.change(System.ErrorLog.ErrorID1,2)
+			@Script.start(System\GlobalErrorLog)
+			@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+			:end
+		:endif
+	:endif
+	@Storage.update(integer,System.GlobalMain,add,1)
+	@Player.save
+	:end
+:endif
+:if:<Register.value(System.Skip GlobalRegisterValidation)>=0
+	@Script.start(System\GlobalRegisterValidation)
+:endif
+@Script.start(System\GlobalLastMap)
+@Script.start(System\GlobalOptions)
+@Script.start(System\GlobalParallelProcess)
+:end

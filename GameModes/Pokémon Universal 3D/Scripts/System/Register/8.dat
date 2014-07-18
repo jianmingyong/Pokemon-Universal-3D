@@ -1,0 +1,32 @@
+version=2
+:if:<Register.registered(System\Intro\8\Intro)>=false
+	@Register.register(System\Intro\8\Intro,int,1)
+:endif
+:if:<Register.registered(System\Intro\8\Intro.1)>=false
+	@Register.register(System\Intro\8\Intro.1,int,1)
+:endif
+:if:<Register.registered(System\Intro\8\Intro.2)>=false
+	@Register.register(System\Intro\8\Intro.2,int,1)
+:endif
+:if:<Register.registered(System\Intro\8\Intro.2.1)>=false
+	@Register.register(System\Intro\8\Intro.2.1,int,1)
+:endif
+:if:<Register.registered(System\Intro\8\Intro.2.2)>=false
+	@Register.register(System\Intro\8\Intro.2.2,int,1)
+:endif
+:if:<Register.registered(System\Intro\8\Intro.2.3)>=false
+	@Register.register(System\Intro\8\Intro.2.3,int,1)
+:endif
+:if:<Register.registered(System\Intro\8\Intro.3.background)>=false
+	@Register.register(System\Intro\8\Intro.3.background,int,1)
+:endif
+:if:<Register.registered(System\Intro\8\Intro.3.base)>=false
+	@Register.register(System\Intro\8\Intro.3.base,int,1)
+:endif
+:if:<Register.registered(System\Intro\8\Intro.3.poke)>=false
+	@Register.register(System\Intro\8\Intro.3.poke,int,1)
+:endif
+:if:<Register.registered(System\Intro\8\Intro.3.profoak)>=false
+	@Register.register(System\Intro\8\Intro.3.profoak,int,1)
+:endif
+:end

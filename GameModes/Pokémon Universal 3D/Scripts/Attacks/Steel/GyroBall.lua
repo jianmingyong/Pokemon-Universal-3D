@@ -1,0 +1,7 @@
+SetAttackBaseDamage(360,1)
+SetAttackMaxPP(360,5)
+SetAttackCategory(360,0)
+SetAttackContestCategory(360,2)
+SetAttackType(360,8)
+SetAttackPriority(360,0)
+SetAttackAccuracy(360,255)

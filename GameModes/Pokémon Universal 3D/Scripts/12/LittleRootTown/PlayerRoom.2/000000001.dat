@@ -1,0 +1,54 @@
+version=2
+:if:<Register.value(12\LittleRootTown\PlayerRoom.2\000000001)>=1
+	@Sound.play(Select)
+	@Sound.play(computeropen)
+	@Text.show(<Player.name> booted up the PC.)
+	@Sound.play(Select)
+	@Text.show(What would you like to do?)
+	@Options.setcancelindex(3)
+	@Options.show(ITEM STORAGE,MAILBOX,DECORATION,TURN OFF)
+	:when:ITEM STORAGE
+		@Sound.play(Select)
+		@Text.show(There is no ITEM STORAGE at the moment.~Sorry for any inconvenience caused.)
+		@Item.give(18,1)
+		@Item.messagegive(18,1)
+		@Register.change(12\LittleRootTown\PlayerRoom.2\000000001,2)
+	:when:MAILBOX
+		@Screen.mailsystem
+	:when:DECORATION
+		@Sound.play(Select)
+		@Text.show(There is no DECORATION at the moment.~Sorry for any inconvenience caused.)
+	:when:TURN OFF
+	:endwhen
+	@Sound.play(computerclose)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+:if:<Register.value(12\LittleRootTown\PlayerRoom.2\000000001)>=2
+	@Sound.play(Select)
+	@Sound.play(computeropen)
+	@Text.show(<Player.name> booted up the PC.)
+	@Sound.play(Select)
+	@Text.show(What would you like to do?)
+	@Options.setcancelindex(3)
+	@Options.show(ITEM STORAGE,MAILBOX,DECORATION,TURN OFF)
+	:when:ITEM STORAGE
+		@Sound.play(Select)
+		@Text.show(There is no ITEM STORAGE at the moment.~Sorry for any inconvenience caused.)
+	:when:MAILBOX
+		@Screen.mailsystem
+	:when:DECORATION
+		@Sound.play(Select)
+		@Text.show(There is no DECORATION at the moment.~Sorry for any inconvenience caused.)
+	:when:TURN OFF
+	:endwhen
+	@Sound.play(computerclose)
+	@Script.start(System\GlobalMain)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\LittleRootTown\PlayerRoom.2\000000001.dat)
+@Script.start(System\GlobalErrorLog)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

@@ -1,0 +1,9 @@
+﻿version=2
+:if:<Player.position>=3,0,2
+	@Sound.play(Select)
+	@Text.show(It's a Nintendo GameCube.)
+	@Sound.play(Select)
+	@Text.show(A Game Boy Advance is connected to~serve as the Controller.)
+:endif
+@Script.start(System\GlobalMain)
+:end

@@ -1,0 +1,11 @@
+version=2
+@Sound.play(Select)
+@Text.show(<Player.name> flipped open the notebook.)
+@Sound.play(Select)
+@Text.show(ADVENTURE RULE NO. 1~Open the MENU with START.)
+@Sound.play(Select)
+@Text.show(ADVENTURE RULE NO. 2~Record your progress with SAVE.)
+@Sound.play(Select)
+@Text.show(The remaining pages are blank...)
+@Script.start(System\GlobalMain)
+:end

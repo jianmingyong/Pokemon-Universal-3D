@@ -1,0 +1,118 @@
+version=2
+:if:<Register.registered(System.P3D Version)>=false
+	@Register.register(System.P3D Version,str,0.49.1)
+:endif
+:if:<not><Register.value(System.P3D Version)>=0.49.1
+	@Register.change(System.P3D Version,0.49.1)
+:endif
+:if:<Register.registered(System.Game Version)>=false
+	@Register.register(System.Game Version,str,0.0.6)
+:endif
+:if:<not><Register.value(System.Game Version)>=0.0.6
+	@Register.change(System.Game Version,0.0.6)
+:endif
+:if:<Register.registered(Options.System.Game ID)>=false
+	@Register.register(Options.System.Game ID,int,12)
+:endif
+:if:<Register.registered(System.Game ID)>=false
+	@Register.register(System.Game ID,int,12)
+:endif
+:if:<Register.registered(Options.System.Auto Save)>=false
+	@Register.register(Options.System.Auto Save,int,1)
+:endif
+:if:<Register.registered(System.Auto Save)>=false
+	@Register.register(System.Auto Save,int,1)
+:endif
+:if:<Register.registered(Options.System.Skip Intro)>=false
+	@Register.register(Options.System.Skip Intro,int,0)
+:endif
+:if:<Register.registered(System.Skip Intro)>=false
+	@Register.register(System.Skip Intro,int,0)
+:endif
+:if:<Register.registered(Options.System.Skip Mom Story)>=false
+	@Register.register(Options.System.Skip Mom Story,int,0)
+:endif
+:if:<Register.registered(System.Skip Mom Story)>=false
+	@Register.register(System.Skip Mom Story,int,0)
+:endif
+:if:<Register.registered(Options.System.Skip Rival Story)>=false
+	@Register.register(Options.System.Skip Rival Story,int,0)
+:endif
+:if:<Register.registered(System.Skip Rival Story)>=false
+	@Register.register(System.Skip Rival Story,int,0)
+:endif
+:if:<Register.registered(Options.System.Test Mode)>=false
+	@Register.register(Options.System.Test Mode,int,0)
+:endif
+:if:<Register.registered(System.Test Mode)>=false
+	@Register.register(System.Test Mode,int,0)
+:endif
+:if:<Register.registered(Options.System.Skip GlobalRegisterValidation)>=false
+	@Register.register(Options.System.Skip GlobalRegisterValidation,int,0)
+:endif
+:if:<Register.registered(System.Skip GlobalRegisterValidation)>=false
+	@Register.register(System.Skip GlobalRegisterValidation,int,0)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID0)>=false
+	@Register.register(System.ErrorLog.ErrorID0,int,1)
+:endif
+:if:<not><Register.value(System.ErrorLog.ErrorID0)>=1
+	@Register.change(System.ErrorLog.ErrorID0,1)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID1)>=false
+	@Register.register(System.ErrorLog.ErrorID1,int,1)
+:endif
+:if:<not><Register.value(System.ErrorLog.ErrorID1)>=1
+	@Register.change(System.ErrorLog.ErrorID1,1)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID2)>=false
+	@Register.register(System.ErrorLog.ErrorID2,int,1)
+:endif
+:if:<not><Register.value(System.ErrorLog.ErrorID2)>=1
+	@Register.change(System.ErrorLog.ErrorID2,1)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID3)>=false
+	@Register.register(System.ErrorLog.ErrorID3,int,1)
+:endif
+:if:<not><Register.value(System.ErrorLog.ErrorID3)>=1
+	@Register.change(System.ErrorLog.ErrorID3,1)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID4)>=false
+	@Register.register(System.ErrorLog.ErrorID4,int,1)
+:endif
+:if:<not><Register.value(System.ErrorLog.ErrorID4)>=1
+	@Register.change(System.ErrorLog.ErrorID4,1)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID5)>=false
+	@Register.register(System.ErrorLog.ErrorID5,int,1)
+:endif
+:if:<not><Register.value(System.ErrorLog.ErrorID5)>=1
+	@Register.change(System.ErrorLog.ErrorID5,1)
+:endif
+:if:<Register.registered(System.ActionScript)>=false
+	@Register.register(System.ActionScript,str,System\GlobalRegister.dat)
+:endif
+:if:<Register.registered(System.MysteryGift)>=false
+	@Register.register(System.MysteryGift,int,0)
+:endif
+:if:<Register.registered(System.PlayerGender)>=false
+	:if:<Player.skin>=trchar000 <or> <Player.skin>=Brendan
+		@Register.register(System.PlayerGender,str,Male)
+		:if:<not><Rival.name>=May
+			@Player.setrivalname(May)
+		:endif
+	:endif
+	:if:<Player.skin>=trchar001 <or> <Player.skin>=May
+		@Register.register(System.PlayerGender,str,Female)
+		:if:<not><Rival.name>=Brendan
+			@Player.setrivalname(Brendan)
+		:endif
+	:endif
+:endif
+:if:<Register.registered(System.BankMoney)>=false
+	@Register.register(System.BankMoney,sng,0)
+:endif
+@Script.start(System\Register\8)
+@Script.start(System\Register\12)
+@Script.start(System\Register\15)
+:end
