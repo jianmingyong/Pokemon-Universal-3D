@@ -97,7 +97,7 @@ Plant.Layer.2
 {"EntityField"{ENT[{"Size"{intArr[1,1]}}{"EntityID"{str[WallBill]}}{"Position"{sngArr[10,0.9,2]}}{"TexturePath"{str[Center]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 
 GlassTable:
-{"Entity"{ENT[{"Scale"{sngArr[1,0.4,1]}}{"EntityID"{str[ScriptBlock]}}{"Position"{sngArr[0,-0.3,3]}}{"TexturePath"{str[Mart]}}{"Textures"{recArr[[16,29,16,9][16,16,16,13][16,38,16,9]]}}{"TextureIndex"{intArr[0,0,2,2,2,2,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\PokeMartQuestionnaire]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"Scale"{sngArr[1,0.4,1]}}{"EntityID"{str[ScriptBlock]}}{"Position"{sngArr[0,-0.3,3]}}{"TexturePath"{str[Mart]}}{"Textures"{recArr[[16,29,16,9][16,16,16,13][16,38,16,9]]}}{"TextureIndex"{intArr[0,0,2,2,2,2,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_PokeMart_Questionnaire]}}{"Rotation"{int[0]}}]}}
 {"Entity"{ENT[{"Scale"{sngArr[1,0.4,1]}}{"EntityID"{str[WallBlock]}}{"Position"{sngArr[1,-0.3,3]}}{"TexturePath"{str[Mart]}}{"Textures"{recArr[[32,29,16,9][32,16,16,13][16,38,16,9]]}}{"TextureIndex"{intArr[0,0,0,0,2,2,0,0,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 
 Table:
@@ -243,4 +243,4 @@ Showcases.9:
 NPC.Layer.2
 {"NPC"{NPC[{"Name"{str[001000002]}}{"ID"{int[001000002]}}{"Position"{sngArr[1,0.2,2]}}{"TextureID"{str[12]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[3]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}]}}
 NPC.Layer.5
-{"NPC"{NPC[{"Name"{str[000000005]}}{"ID"{int[000000005]}}{"Position"{sngArr[0,0,5]}}{"TextureID"{str[Primal Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[System\CommonEvent\12\PokeMartDialga]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}]}}
+{"NPC"{NPC[{"Name"{str[000000005]}}{"ID"{int[000000005]}}{"Position"{sngArr[0,0,5]}}{"TextureID"{str[Primal Dialga]}}{"Action"{int[1]}}{"AdditionalValue"{str[GlobalCE_PokeMart_MysteryGift]}}{"Rotation"{int[3]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}]}}

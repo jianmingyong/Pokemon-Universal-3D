@@ -8,9 +8,8 @@
 @Options.setcancelindex(1)
 @Options.show(YES,NO)
 :when:YES
-	@Sound.play(Save)
-	@Text.show(Game Saved! Please Copy Paste the~random code into the input.)
-	@Script.start(System\MysteryGift\MysteryGift)
+	@Text.show(Please Copy Paste the~random code into the input.)
+	@Script.start(GlobalCE_PokeMart_MysteryGiftinput)
 	@Text.show(Checking for Mystery Gift Data...)
 	:if:<Register.registered(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=true <and> <Register.value(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=0
 		@Pokemon.add(483,100,Apparently had a fateful encounter,1,at Mystery Gift,0,Mystery Gift)
@@ -20,6 +19,7 @@
 		@Text.show(Thank you for using Dialga Mystery Gift~Transporter.)
 		@Register.change(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal,1)
 		@Player.save
+		@Sound.play(Save)
 		:end
 	:endif
 	:if:<System.lastinput>=QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal <and> <Register.registered(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=true <and> <Register.value(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=1
@@ -28,9 +28,10 @@
 		@Sound.play(Select)
 		@Text.show(Thank you for using Dialga Mystery Gift~Transporter.)
 		@Player.save
+		@Sound.play(Save)
 		:end
 	:endif
-	@Text.show(No valid Pokémon Data found in~System\GlobalMysteryGift.dat)
+	@Text.show(No valid Pokémon Data found.)
 	@Register.unregister(<System.lastinput>)
 	@Player.save
 :when:NO

@@ -16,9 +16,11 @@ version=2
 	@Options.setcancelindex(1)
 	@Options.show(Nothing,Exit)
 	:when:Nothing
+		@Script.start(System\Intro\Intro)
 		@Script.start(System\Intro\15\Intro)
 	:when:Exit
 		@Register.change(Options.System.Game ID,12)
+		@Script.start(System\Intro\Intro)
 		@Script.start(System\GlobalMain)
 	:endwhen
 	:end

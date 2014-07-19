@@ -1,15 +1,7 @@
 ﻿version=2
-:if:<Register.value(12\Route101\024000008)>=1
-	@Sound.play(Select)
-	@Text.show(If POKéMON get tired, take them to~a POKéMON CENTER.)
-	@Sound.play(Select)
-	@Text.show(There's a POKéMON CENTER in OLDALE~TOWN right close by.)
-	@Script.start(System\GlobalMain)
-	:end
-:endif
-@Player.save
-@Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,12\Route101\024000008.dat)
-@Script.start(System\GlobalErrorLog)
-@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+@Sound.play(Select)
+@Text.show(If POKéMON get tired, take them to~a POKéMON CENTER.)
+@Sound.play(Select)
+@Text.show(There's a POKéMON CENTER in OLDALE~TOWN right close by.)
+@Script.start(System\GlobalMain)
 :end

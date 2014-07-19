@@ -20,53 +20,11 @@ version=2
 :if:<Register.registered(System\Intro\12\Intro.4)>=false
 	@Register.register(System\Intro\12\Intro.4,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\018000001)>=false
-	@Register.register(12\LittleRootTown\018000001,int,1)
-:endif
 :if:<Register.registered(12\LittleRootTown\019000001)>=false
 	@Register.register(12\LittleRootTown\019000001,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\018000002)>=false
-	@Register.register(12\LittleRootTown\018000002,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\019000002)>=false
-	@Register.register(12\LittleRootTown\019000002,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\020000008)>=false
-	@Register.register(12\LittleRootTown\020000008,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\020000013)>=false
-	@Register.register(12\LittleRootTown\020000013,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\015000008)>=false
-	@Register.register(12\LittleRootTown\015000008,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\013000009)>=false
-	@Register.register(12\LittleRootTown\013000009,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\016000009)>=false
-	@Register.register(12\LittleRootTown\016000009,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\017000009)>=false
-	@Register.register(12\LittleRootTown\017000009,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\018000009)>=false
-	@Register.register(12\LittleRootTown\018000009,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\019000009)>=false
-	@Register.register(12\LittleRootTown\019000009,int,1)
-:endif
 :if:<Register.registered(12\LittleRootTown\024000010)>=false
 	@Register.register(12\LittleRootTown\024000010,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\023000013)>=false
-	@Register.register(12\LittleRootTown\023000013,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\014000017)>=false
-	@Register.register(12\LittleRootTown\014000017,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\022000017)>=false
-	@Register.register(12\LittleRootTown\022000017,int,1)
 :endif
 :if:<Register.registered(12\LittleRootTown)>=false
 	@Register.register(12\LittleRootTown,int,1)
@@ -101,18 +59,6 @@ version=2
 :if:<Register.registered(12\LittleRootTown\RivalRoom.1)>=false
 	@Register.register(12\LittleRootTown\RivalRoom.1,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\RivalRoom.2\006000000)>=false
-	@Register.register(12\LittleRootTown\RivalRoom.2\006000000,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\RivalRoom.2\005000001)>=false
-	@Register.register(12\LittleRootTown\RivalRoom.2\005000001,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\RivalRoom.2\007000001)>=false
-	@Register.register(12\LittleRootTown\RivalRoom.2\007000001,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\RivalRoom.2\008000001)>=false
-	@Register.register(12\LittleRootTown\RivalRoom.2\008000001,int,1)
-:endif
 :if:<Register.registered(12\LittleRootTown\RivalRoom.2\005000003)>=false
 	@Register.register(12\LittleRootTown\RivalRoom.2\005000003,int,1)
 :endif
@@ -128,53 +74,8 @@ version=2
 :if:<Register.registered(12\LittleRootTown\ProfBirchLab)>=false
 	@Register.register(12\LittleRootTown\ProfBirchLab,int,1)
 :endif
-:if:<Register.registered(12\Route101\024000008)>=false
-	@Register.register(12\Route101\024000008,int,1)
-:endif
-:if:<Register.registered(12\Route101\013000009)>=false
-	@Register.register(12\Route101\013000009,int,1)
-:endif
-:if:<Register.registered(12\Route101\010000013)>=false
-	@Register.register(12\Route101\010000013,int,1)
-:endif
-:if:<Register.registered(12\Route101\015000014)>=false
-	@Register.register(12\Route101\015000014,int,1)
-:endif
-:if:<Register.registered(12\Route101\014000015)>=false
-	@Register.register(12\Route101\014000015,int,1)
-:endif
-:if:<Register.registered(12\Route101\014000016)>=false
-	@Register.register(12\Route101\014000016,int,1)
-:endif
-:if:<Register.registered(12\Route101\014000017)>=false
-	@Register.register(12\Route101\014000017,int,1)
-:endif
-:if:<Register.registered(12\Route101\014000018)>=false
-	@Register.register(12\Route101\014000018,int,1)
-:endif
-:if:<Register.registered(12\Route101\018000018)>=false
-	@Register.register(12\Route101\018000018,int,1)
-:endif
-:if:<Register.registered(12\Route101\019000018)>=false
-	@Register.register(12\Route101\019000018,int,1)
-:endif
 :if:<Register.registered(12\Route101)>=false
 	@Register.register(12\Route101,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\011000009)>=false
-	@Register.register(12\OldaleTown\011000009,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\008000019)>=false
-	@Register.register(12\OldaleTown\008000019,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\009000019)>=false
-	@Register.register(12\OldaleTown\009000019,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\010000019)>=false
-	@Register.register(12\OldaleTown\010000019,int,1)
-:endif
-:if:<Register.registered(12\OldaleTown\011000019)>=false
-	@Register.register(12\OldaleTown\011000019,int,1)
 :endif
 :if:<Register.registered(12\OldaleTown)>=false
 	@Register.register(12\OldaleTown,int,1)
@@ -182,29 +83,8 @@ version=2
 :if:<Register.registered(12\OldaleTown\PokeMart\002000002)>=false
 	@Register.register(12\OldaleTown\PokeMart\002000002,int,1)
 :endif
-:if:<Register.registered(12\Route103\018000011)>=false
-	@Register.register(12\Route103\018000011,int,1)
-:endif
 :if:<Register.registered(12\Route103)>=false
 	@Register.register(12\Route103,int,1)
-:endif
-:if:<Register.registered(12\Route102\014000010)>=false
-	@Register.register(12\Route102\014000010,int,1)
-:endif
-:if:<Register.registered(12\Route102\017000010)>=false
-	@Register.register(12\Route102\017000010,int,1)
-:endif
-:if:<Register.registered(12\Route102\014000011)>=false
-	@Register.register(12\Route102\014000011,int,1)
-:endif
-:if:<Register.registered(12\Route102\014000012)>=false
-	@Register.register(12\Route102\014000012,int,1)
-:endif
-:if:<Register.registered(12\Route102\014000013)>=false
-	@Register.register(12\Route102\014000013,int,1)
-:endif
-:if:<Register.registered(12\Route102\040000017)>=false
-	@Register.register(12\Route102\040000017,int,1)
 :endif
 :if:<Register.registered(12\Route102)>=false
 	@Register.register(12\Route102,int,1)

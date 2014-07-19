@@ -105,4 +105,127 @@ version=2
 :if:<Register.registered(12\LittleRootTown\RivalRoom.2\004000001)>=true
 	@Register.unregister(12\LittleRootTown\RivalRoom.2\004000001,int)
 :endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\006000000)>=true
+	@Register.unregister(12\LittleRootTown\RivalRoom.2\006000000,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\007000001)>=true
+	@Register.unregister(12\LittleRootTown\RivalRoom.2\007000001,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\005000001)>=true
+	@Register.unregister(12\LittleRootTown\RivalRoom.2\005000001,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.2\008000001)>=true
+	@Register.unregister(12\LittleRootTown\RivalRoom.2\008000001,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\013000009)>=true
+	@Register.unregister(12\LittleRootTown\013000009,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\014000017)>=true
+	@Register.unregister(12\LittleRootTown\014000017,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\015000008)>=true
+	@Register.unregister(12\LittleRootTown\015000008,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\016000009)>=true
+	@Register.unregister(12\LittleRootTown\016000009,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\017000009)>=true
+	@Register.unregister(12\LittleRootTown\017000009,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\018000001)>=true
+	@Register.unregister(12\LittleRootTown\018000001,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\018000002)>=true
+	@Register.unregister(12\LittleRootTown\018000002,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\018000009)>=true
+	@Register.unregister(12\LittleRootTown\018000009,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\019000002)>=true
+	@Register.unregister(12\LittleRootTown\019000002,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\019000009)>=true
+	@Register.unregister(12\LittleRootTown\019000009,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\020000008)>=true
+	@Register.unregister(12\LittleRootTown\020000008,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\020000013)>=true
+	@Register.unregister(12\LittleRootTown\020000013,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\022000017)>=true
+	@Register.unregister(12\LittleRootTown\022000017,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\023000013)>=true
+	@Register.unregister(12\LittleRootTown\023000013,int)
+:endif
+:if:<Register.registered(12\Route101\024000008)>=true
+	@Register.unregister(12\Route101\024000008,int)
+:endif
+:if:<Register.registered(12\Route101\013000009)>=true
+	@Register.unregister(12\Route101\013000009,int)
+:endif
+:if:<Register.registered(12\Route101\010000013)>=true
+	@Register.unregister(12\Route101\010000013,int)
+:endif
+:if:<Register.registered(12\Route101\010000013)>=true
+	@Register.unregister(12\Route101\010000013,int)
+:endif
+:if:<Register.registered(12\Route101\015000014)>=true
+	@Register.unregister(12\Route101\015000014,int)
+:endif
+:if:<Register.registered(12\Route101\014000015)>=true
+	@Register.unregister(12\Route101\014000015,int)
+:endif
+:if:<Register.registered(12\Route101\014000016)>=true
+	@Register.unregister(12\Route101\014000016,int)
+:endif
+:if:<Register.registered(12\Route101\014000017)>=true
+	@Register.unregister(12\Route101\014000017,int)
+:endif
+:if:<Register.registered(12\Route101\014000018)>=true
+	@Register.unregister(12\Route101\014000018,int)
+:endif
+:if:<Register.registered(12\Route101\018000018)>=true
+	@Register.unregister(12\Route101\018000018,int)
+:endif
+:if:<Register.registered(12\Route101\019000018)>=true
+	@Register.unregister(12\Route101\019000018,int)
+:endif
+:if:<Register.registered(12\OldaleTown\011000009)>=true
+	@Register.unregister(12\OldaleTown\011000009,int)
+:endif
+:if:<Register.registered(12\OldaleTown\008000019)>=true
+	@Register.unregister(12\OldaleTown\008000019,int)
+:endif
+:if:<Register.registered(12\OldaleTown\009000019)>=true
+	@Register.unregister(12\OldaleTown\009000019,int)
+:endif
+:if:<Register.registered(12\OldaleTown\010000019)>=true
+	@Register.unregister(12\OldaleTown\010000019,int)
+:endif
+:if:<Register.registered(12\OldaleTown\011000019)>=true
+	@Register.unregister(12\OldaleTown\011000019,int)
+:endif
+:if:<Register.registered(12\Route103\018000011)>=true
+	@Register.unregister(12\Route103\018000011,int)
+:endif
+:if:<Register.registered(12\Route102\014000010)>=true
+	@Register.unregister(12\Route102\014000010,int)
+:endif
+:if:<Register.registered(12\Route102\017000010)>=true
+	@Register.unregister(12\Route102\017000010,int)
+:endif
+:if:<Register.registered(12\Route102\014000011)>=true
+	@Register.unregister(12\Route102\014000011,int)
+:endif
+:if:<Register.registered(12\Route102\014000012)>=true
+	@Register.unregister(12\Route102\014000012,int)
+:endif
+:if:<Register.registered(12\Route102\014000013)>=true
+	@Register.unregister(12\Route102\014000013,int)
+:endif
+:if:<Register.registered(12\Route102\040000017)>=true
+	@Register.unregister(12\Route102\040000017,int)
+:endif
 :end

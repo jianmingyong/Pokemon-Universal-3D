@@ -1,13 +1,5 @@
 ﻿version=2
-:if:<Register.value(12\Route101\013000009)>=1
-	@Sound.play(Select)
-	@Text.show(ROUTE 101~UP OLDALE TOWN)
-	@Script.start(System\GlobalMain)
-	:end
-:endif
-@Player.save
-@Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,12\Route101\013000009.dat)
-@Script.start(System\GlobalErrorLog)
-@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+@Sound.play(Select)
+@Text.show(ROUTE 101~UP OLDALE TOWN)
+@Script.start(System\GlobalMain)
 :end

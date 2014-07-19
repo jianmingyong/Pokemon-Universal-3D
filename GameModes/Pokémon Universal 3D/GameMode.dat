@@ -13,7 +13,7 @@ StartMap|System\GlobalIntro.dat
 StartPosition|0,0,0
 StartRotation|0
 StartLocationName|Intro
-StartDialogue|Welcome to~Pokémon Universal 3D!|I will skip this intro.|~Press Space Bar/Enter to start
+StartDialogue|Welcome to Pokémon Universal 3D!|I will skip this intro.|~Press Space Bar/Enter to start
 StartColor|127,127,255
 PokemonAppear|0
 IntroMusic|PMD_EOT_D_S Dialga's Fight To The Finish!

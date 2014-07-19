@@ -1,0 +1,10 @@
+version=2
+:if:<Register.value(System.MysteryGift)>=1
+	@Script.start(System\GlobalMysteryGift)
+	@Script.start(System\GlobalMain)
+	:end
+:else
+	@Text.show(Primal Dialga: Due to some unstable issue~in other place, I could not operate.)
+	@Script.start(System\GlobalMain)
+	:end
+:endif

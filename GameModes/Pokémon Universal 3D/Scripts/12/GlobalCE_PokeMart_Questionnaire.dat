@@ -1,0 +1,11 @@
+version=2
+@Sound.play(Select)
+@Text.show(There is a questionnaire.~Would you like to fill it out?)
+@Options.setcancelindex(1)
+@Options.show(YES,NO)
+:when:YES
+	@Script.start(12\GlobalCE_PokeMart_Questionnaireinput)
+:when:NO
+:endwhen
+@Script.start(System\GlobalMain)
+:end
