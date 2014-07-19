@@ -1,17 +1,17 @@
-Table of contents:<br />
-1.		License<br />
-2.		About<br />
-3.		Contacting<br />
-4.		Supported platforms<br />
-5.		Installing and running Pokémon 3D<br />
-5.1.	Installing prerequisites<br />
-5.2.	Installing precautions<br />
-6.		Installing Pokémon Universal 3D<br />
-7.		Credits<br />
-7.1.	Music<br />
-7.2.	Graphic<br />
-7.3.	Others<br />
-<br />
+Table of contents:
+1.		License
+2.		About
+3.		Contacting
+4.		Supported platforms
+5.		Installing and running Pokémon 3D
+5.1.	Installing prerequisites
+5.2.	Installing precautions
+6.		Installing Pokémon Universal 3D
+7.		Credits
+7.1.	Music
+7.2.	Graphic
+7.3.	Others
+
 ==================================================
 1.	License
 ==================================================
