@@ -37,7 +37,7 @@
 @Title.add(Pokémon Universal 3D NPC drawn by:,30,255,255,255,2,true,0,-25.5)
 @Title.add(Wesley,30,255,255,255,2,true,0,25.5)
 @Level.wait(300)
-@Title.add(Pokémon Universal 3D NPC Rip From:,30,255,255,255,2,true,0,-25.5)
+@Title.add(Pokémon Universal 3D NPC Rip by:,30,255,255,255,2,true,0,-25.5)
 @Title.add(Smasher,30,255,255,255,2,true,0,25.5)
 @Level.wait(300)
 @Title.add(Pokémon Universal 3D NPC Rip From:,30,255,255,255,2,true,0,-25.5)
