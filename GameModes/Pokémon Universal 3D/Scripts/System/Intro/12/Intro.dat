@@ -1,18 +1,6 @@
 version=2
-:if:<Register.value(System\Intro\12\Intro)>=1
+:if:<Register.value(System\Intro\12\Intro)>=2
 	@Music.play(P_R_S_E Opening Selection)
-	@Text.show(jianmingyong: Sorry for the interuption.~Before the game start, please answer)
-	@Sound.play(Select)
-	@Text.show(the following question truefully.~Can you hear background music?)
-	@Options.setcancelindex(1)
-	@Options.show(YES,NO)
-	:when:YES
-	:when:NO
-		@Register.change(System.ErrorLog.ErrorID6,2)
-		@Script.start(System\GlobalErrorLog)
-		@Player.warp(System\GlobalValidation.dat,0,0,0,0)
-		:end
-	:endwhen
 	@Script.start(System\Intro\12\Intro.1)
 	@Script.start(System\Intro\12\Intro.2)
 	@Script.start(System\Intro\12\Intro.3)
@@ -63,6 +51,7 @@ version=2
 	@Script.start(System\Intro\12\Intro.3)
 	@Script.start(System\Intro\12\Intro.2)
 	@Script.start(System\Intro\12\Intro.1)
+	@Camera.defix
 	@Player.warp(12\LittleRootTown\LittleRootTown.Truck.dat,2,0,3,0)
 	:end
 :endif

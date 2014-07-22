@@ -1,0 +1,27 @@
+version=2
+:while:<Entity.opacity(121)><100
+	@Entity.setopacity(121,<Entity.opacity(121)>+10)
+	@Level.wait(1)
+	@Level.update
+:endwhile
+@Music.play(PMD_EOT_D_S Pokemon Exploration Team Theme)
+@Title.add(Game Verification System,2147483648,255,255,255,2,true,0,-255)
+@Title.add(This is a game verification system. You are require to answer them only once.,2147483648,255,255,255,2,true,0,-25.5)
+@Title.add(Please answer them truefully. It will affect the game based on your answer.,2147483648,255,255,255,2,true,0,25.5)
+@Text.show(1. Can you hear the background music?)
+@Options.setcancelindex(1)
+@Options.show(YES,NO)
+:when:YES
+:when:NO
+	@Register.change(System.ErrorLog.ErrorID6,2)
+	@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+	:end
+:endwhen
+@Register.change(System\Intro\12\Intro,2)
+@Title.clear
+:while:<Entity.opacity(121)>>0
+	@Entity.setopacity(121,<Entity.opacity(121)>-10)
+	@Level.wait(1)
+	@Level.update
+:endwhile
+:end

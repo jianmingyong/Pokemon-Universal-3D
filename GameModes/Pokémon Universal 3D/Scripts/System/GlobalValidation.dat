@@ -1,58 +1,122 @@
 version=2
-:if:<Register.value(System.ErrorLog.ErrorID0)>=2
-	@Entity.setopacity(1,0)
-	@Entity.setopacity(2,0)
-	@Entity.setopacity(3,0)
-	@Entity.setopacity(4,0)
-	@Entity.setopacity(5,0)
-:endif
-:if:<Register.value(System.ErrorLog.ErrorID1)>=2
-	@Entity.setopacity(0,0)
-	@Entity.setopacity(2,0)
-	@Entity.setopacity(3,0)
-	@Entity.setopacity(4,0)
-	@Entity.setopacity(5,0)
-:endif
-:if:<Register.value(System.ErrorLog.ErrorID2)>=2 <or> <Register.value(System.ErrorLog.ErrorID2)>=3
-	@Entity.setopacity(0,0)
-	@Entity.setopacity(1,0)
-	@Entity.setopacity(3,0)
-	@Entity.setopacity(4,0)
-	@Entity.setopacity(5,0)
-:endif
-:if:<Register.value(System.ErrorLog.ErrorID3)>=2
-	@Entity.setopacity(0,0)
-	@Entity.setopacity(1,0)
-	@Entity.setopacity(2,0)
-	@Entity.setopacity(4,0)
-	@Entity.setopacity(5,0)
-:endif
-:if:<Register.value(System.ErrorLog.ErrorID4)>=2
-	@Entity.setopacity(0,0)
-	@Entity.setopacity(1,0)
-	@Entity.setopacity(2,0)
-	@Entity.setopacity(3,0)
-	@Entity.setopacity(5,0)
-:endif
-:if:<Register.value(System.ErrorLog.ErrorID5)>=2
-	@Entity.setopacity(0,0)
-	@Entity.setopacity(1,0)
-	@Entity.setopacity(2,0)
-	@Entity.setopacity(3,0)
-	@Entity.setopacity(4,0)
-:endif
-:if:<Register.value(System.ErrorLog.ErrorID6)>=2
-	@Entity.setopacity(0,0)
-	@Entity.setopacity(1,0)
-	@Entity.setopacity(2,0)
-	@Entity.setopacity(3,0)
-	@Entity.setopacity(4,0)
-	@Entity.setopacity(5,0)
-:endif
 @Sound.play(Windows Critical Stop)
 @Camera.set(0,0,0,0,0)
+@Camera.fix
 @Level.update
+:if:<Register.value(System.ErrorLog.ErrorID0)>=2
+	@Title.clear
+	@Title.add(> Pokémon Universal 3D Crash Log V <Register.value(System.Game Version)>,2147483648,255,255,255,2,false,0,0)
+	@Title.add(> Pokémon Universal 3D has crashed!,2147483648,255,255,255,2,false,0,25)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,50)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,75)
+	@Title.add(> Error information:,2147483648,255,255,255,2,false,0,100)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,125)
+	@Title.add(> Message: There are some problem reading the game script. It might be wrong syntax or the register does not exist causing this error to trigger.,2147483648,255,255,255,2,false,0,150)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,175)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,200)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,225)
+	@Title.add(> Error solution:,2147483648,255,255,255,2,false,0,250)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,275)
+	@Title.add(> Error ID: 0,2147483648,255,255,255,2,false,0,300)
+	@Title.add(> Error Type: Syntax Error,2147483648,255,255,255,2,false,0,325)
+	@Title.add(> Error Description: There are some problem reading the game script. It might be wrong syntax or the register does not exist causing this error to trigger.,2147483648,255,255,255,2,false,0,350)
+	@Title.add(> Error Solution: Report this bug at "http://pokemon3d.net/forum/threads/6297/".,2147483648,255,255,255,2,false,0,375)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,400)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,425)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,450)
+	@Title.add(> Generating Crash Log... Please wait before Quiting the game!,2147483648,255,255,255,2,false,0,475)
+	@Script.start(System\GlobalErrorLog)
+	@Title.add(> Crash Log Saved at: Pokemon\Log.dat,2147483648,255,255,255,2,false,0,500)
+	@Title.add(> "For more info, please refer to the crash log in Pokemon\Log.dat",2147483648,255,255,255,2,false,0,525)
+:endif
+:if:<Register.value(System.ErrorLog.ErrorID1)>=2
+	@Title.clear
+	@Title.add(> Pokémon Universal 3D Crash Log V <Register.value(System.Game Version)>,2147483648,255,255,255,2,false,0,0)
+	@Title.add(> Pokémon Universal 3D has crashed!,2147483648,255,255,255,2,false,0,25)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,50)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,75)
+	@Title.add(> Error information:,2147483648,255,255,255,2,false,0,100)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,125)
+	@Title.add(> Message: The update system fails to update. This might be triggered if your save is corrupted or a syntax error.,2147483648,255,255,255,2,false,0,150)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,175)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,200)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,225)
+	@Title.add(> Error solution:,2147483648,255,255,255,2,false,0,250)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,275)
+	@Title.add(> Error ID: 1,2147483648,255,255,255,2,false,0,300)
+	@Title.add(> Error Type: Update Error,2147483648,255,255,255,2,false,0,325)
+	@Title.add(> Error Description: The update system fails to update. This might be triggered if your save is corrupted or a syntax error.,2147483648,255,255,255,2,false,0,350)
+	@Title.add(> Error Solution: Make sure that you are playing the lastest version of Pokémon FireRed Universal 3D and try again.,2147483648,255,255,255,2,false,0,375)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,400)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,425)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,450)
+	@Title.add(> Generating Crash Log... Please wait before Quiting the game!,2147483648,255,255,255,2,false,0,475)
+	@Script.start(System\GlobalErrorLog)
+	@Title.add(> Crash Log Saved at: Pokemon\Log.dat,2147483648,255,255,255,2,false,0,500)
+	@Title.add(> "For more info, please refer to the crash log in Pokemon\Log.dat",2147483648,255,255,255,2,false,0,525)
+:endif
+:if:<Register.value(System.ErrorLog.ErrorID2)>=2 <or> <Register.value(System.ErrorLog.ErrorID2)>=3
+	@Title.clear
+	@Title.add(> Pokémon Universal 3D Crash Log V <Register.value(System.Game Version)>,2147483648,255,255,255,2,false,0,0)
+	@Title.add(> Pokémon Universal 3D has crashed!,2147483648,255,255,255,2,false,0,25)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,50)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,75)
+	@Title.add(> Error information:,2147483648,255,255,255,2,false,0,100)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,125)
+	@Title.add(> Message: The register validation system detected invalid or missing value in the register.dat file.,2147483648,255,255,255,2,false,0,150)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,175)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,200)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,225)
+	@Title.add(> Error solution:,2147483648,255,255,255,2,false,0,250)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,275)
+	@Title.add(> Error ID: 2,2147483648,255,255,255,2,false,0,300)
+	@Title.add(> Error Type: Register Error,2147483648,255,255,255,2,false,0,325)
+	@Title.add(> Error Description: The register validation system detected invalid or missing value in the register.dat file.,2147483648,255,255,255,2,false,0,350)
+	@Title.add(> Error Solution: Make sure that you didn't modify anything in the register.dat,2147483648,255,255,255,2,false,0,375)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,400)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,425)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,450)
+	@Title.add(> Generating Crash Log... Please wait before Quiting the game!,2147483648,255,255,255,2,false,0,475)
+	@Script.start(System\GlobalErrorLog)
+	@Title.add(> Crash Log Saved at: Pokemon\Log.dat,2147483648,255,255,255,2,false,0,500)
+	@Title.add(> "For more info, please refer to the crash log in Pokemon\Log.dat",2147483648,255,255,255,2,false,0,525)
+:endif
+:if:<Register.value(System.ErrorLog.ErrorID3)>=2
+	
+:endif
+:if:<Register.value(System.ErrorLog.ErrorID4)>=2
+	
+:endif
+:if:<Register.value(System.ErrorLog.ErrorID5)>=2
+	
+:endif
+:if:<Register.value(System.ErrorLog.ErrorID6)>=2
+	@Title.clear
+	@Title.add(> Pokémon Universal 3D Crash Log V <Register.value(System.Game Version)>,2147483648,255,255,255,2,false,0,0)
+	@Title.add(> Pokémon Universal 3D has crashed!,2147483648,255,255,255,2,false,0,25)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,50)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,75)
+	@Title.add(> Error information:,2147483648,255,255,255,2,false,0,100)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,125)
+	@Title.add(> Message: You did not enable the "Pokémon Universal 3D" content pack from the main menu.,2147483648,255,255,255,2,false,0,150)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,175)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,200)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,225)
+	@Title.add(> Error solution:,2147483648,255,255,255,2,false,0,250)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,275)
+	@Title.add(> Error ID: 6,2147483648,255,255,255,2,false,0,300)
+	@Title.add(> Error Type: Content Pack,2147483648,255,255,255,2,false,0,325)
+	@Title.add(> Error Description: You did not enable the "Pokémon Universal 3D" content pack from the main menu.,2147483648,255,255,255,2,false,0,350)
+	@Title.add(> Error Solution: Make sure that you have activated "Pokémon Universal 3D" content pack from the main menu.,2147483648,255,255,255,2,false,0,375)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,400)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,425)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,450)
+	@Title.add(> Generating Crash Log... Please wait before Quiting the game!,2147483648,255,255,255,2,false,0,475)
+	@Script.start(System\GlobalErrorLog)
+	@Title.add(> Crash Log Saved at: Pokemon\Log.dat,2147483648,255,255,255,2,false,0,500)
+	@Title.add(> "For more info, please refer to the crash log in Pokemon\Log.dat",2147483648,255,255,255,2,false,0,525)
+:endif
 :while:<Storage.count(integer)>>0
-	@Level.wait(100)
+	@Level.wait(2147483647)
 :endwhile
 :end

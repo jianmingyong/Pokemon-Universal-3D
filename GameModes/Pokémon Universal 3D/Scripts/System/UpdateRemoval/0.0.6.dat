@@ -228,4 +228,7 @@ version=2
 :if:<Register.registered(12\Route102\040000017)>=true
 	@Register.unregister(12\Route102\040000017,int)
 :endif
+:if:<Register.registered(Options.System.Skip Intro)>=true
+	@Register.unregister(Options.System.Skip Intro,int)
+:endif
 :end

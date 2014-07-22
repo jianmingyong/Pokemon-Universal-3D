@@ -28,14 +28,4 @@ version=2
 		@Script.start(System\ParallelProcess\12\Route102\Route102)
 	:endif
 :endif
-:if:<Register.value(System.Game ID)>=13
-	:if:<Level.filename>=BarkTown.PlayerRoom.1
-		@Script.start(System\ParallelProcess\13\PlayerRoom.1\008000000)
-	:endif
-	:if:<Level.filename>=BarkTown
-		@Script.start(System\ParallelProcess\13\007000014)
-		@Script.start(System\ParallelProcess\13\007000015)
-	:endif
-:endif
-@Register.unregister(System.GlobalValidation)
 :end

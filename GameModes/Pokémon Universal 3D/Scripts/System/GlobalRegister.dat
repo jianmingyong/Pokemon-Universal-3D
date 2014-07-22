@@ -118,7 +118,6 @@ version=2
 :if:<Register.registered(System.BankMoney)>=false
 	@Register.register(System.BankMoney,sng,0)
 :endif
-@Script.start(System\Register\8)
 @Script.start(System\Register\12)
 @Script.start(System\Register\15)
 :end
