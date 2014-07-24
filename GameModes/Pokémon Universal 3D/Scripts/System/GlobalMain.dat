@@ -9,6 +9,7 @@ version=2
 	@Script.start(System\GlobalOptions)
 	@Script.start(System\GlobalParallelProcess)
 	@Script.start(System\GlobalBankInterest)
+	@Script.start(System\GlobalMysteryEvents)
 	:if:<not><Register.value(System.P3D Version)>=0.50.0
 		:if:<not><Register.value(System.Game Version)>=0.0.6
 			@Register.change(System.ErrorLog.ErrorID1,2)
@@ -17,6 +18,7 @@ version=2
 			:end
 		:endif
 	:endif
+	@Register.unregister(System.EncounterStep.fix)
 	@Storage.update(integer,System.GlobalMain,add,1)
 	@Player.save
 	:end

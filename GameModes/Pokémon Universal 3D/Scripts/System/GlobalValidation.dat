@@ -82,13 +82,58 @@ version=2
 	@Title.add(> "For more info, please refer to the crash log in Pokemon\Log.dat",2147483648,255,255,255,2,false,0,525)
 :endif
 :if:<Register.value(System.ErrorLog.ErrorID3)>=2
-	
+	@Title.clear
+	@Title.add(> Pokémon Universal 3D Crash Log V <Register.value(System.Game Version)>,2147483648,255,255,255,2,false,0,0)
+	@Title.add(> Pokémon Universal 3D has crashed!,2147483648,255,255,255,2,false,0,25)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,50)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,75)
+	@Title.add(> Error information:,2147483648,255,255,255,2,false,0,100)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,125)
+	@Title.add(> Message: The game have detacted invalid Pokémon in your party.,2147483648,255,255,255,2,false,0,150)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,175)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,200)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,225)
+	@Title.add(> Error solution:,2147483648,255,255,255,2,false,0,250)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,275)
+	@Title.add(> Error ID: 3,2147483648,255,255,255,2,false,0,300)
+	@Title.add(> Error Type: Invalid Pokémon Error,2147483648,255,255,255,2,false,0,325)
+	@Title.add(> Error Description: The game have detacted invalid Pokémon in your party.,2147483648,255,255,255,2,false,0,350)
+	@Title.add(> Error Solution: Make sure that you have a valid Pokémon in your party.,2147483648,255,255,255,2,false,0,375)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,400)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,425)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,450)
+	@Title.add(> Generating Crash Log... Please wait before Quiting the game!,2147483648,255,255,255,2,false,0,475)
+	@Script.start(System\GlobalErrorLog)
+	@Title.add(> Crash Log Saved at: Pokemon\Log.dat,2147483648,255,255,255,2,false,0,500)
+	@Title.add(> "For more info, please refer to the crash log in Pokemon\Log.dat",2147483648,255,255,255,2,false,0,525)
 :endif
 :if:<Register.value(System.ErrorLog.ErrorID4)>=2
-	
 :endif
 :if:<Register.value(System.ErrorLog.ErrorID5)>=2
-	
+	@Title.clear
+	@Title.add(> Pokémon Universal 3D Crash Log V <Register.value(System.Game Version)>,2147483648,255,255,255,2,false,0,0)
+	@Title.add(> Pokémon Universal 3D has crashed!,2147483648,255,255,255,2,false,0,25)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,50)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,75)
+	@Title.add(> Error information:,2147483648,255,255,255,2,false,0,100)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,125)
+	@Title.add(> Message: Player/Bank money is out of range. You are hitting out of the Positive Int32 value range.,2147483648,255,255,255,2,false,0,150)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,175)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,200)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,225)
+	@Title.add(> Error solution:,2147483648,255,255,255,2,false,0,250)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,275)
+	@Title.add(> Error ID: 5,2147483648,255,255,255,2,false,0,300)
+	@Title.add(> Error Type: Invalid Player/Bank Money,2147483648,255,255,255,2,false,0,325)
+	@Title.add(> Error Description: Player/Bank money is out of range. You are hitting out of the Positive Int32 value range.,2147483648,255,255,255,2,false,0,350)
+	@Title.add(> Error Solution: Make sure that you do not have negative amount of money in your save.,2147483648,255,255,255,2,false,0,375)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,400)
+	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,425)
+	@Title.add(> ,2147483648,255,255,255,2,false,0,450)
+	@Title.add(> Generating Crash Log... Please wait before Quiting the game!,2147483648,255,255,255,2,false,0,475)
+	@Script.start(System\GlobalErrorLog)
+	@Title.add(> Crash Log Saved at: Pokemon\Log.dat,2147483648,255,255,255,2,false,0,500)
+	@Title.add(> "For more info, please refer to the crash log in Pokemon\Log.dat",2147483648,255,255,255,2,false,0,525)
 :endif
 :if:<Register.value(System.ErrorLog.ErrorID6)>=2
 	@Title.clear

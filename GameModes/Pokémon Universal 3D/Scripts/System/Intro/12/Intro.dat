@@ -51,7 +51,6 @@ version=2
 	@Script.start(System\Intro\12\Intro.3)
 	@Script.start(System\Intro\12\Intro.2)
 	@Script.start(System\Intro\12\Intro.1)
-	@Camera.defix
 	@Player.warp(12\LittleRootTown\LittleRootTown.Truck.dat,2,0,3,0)
 	:end
 :endif

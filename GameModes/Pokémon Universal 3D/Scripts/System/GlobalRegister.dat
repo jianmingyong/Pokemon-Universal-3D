@@ -29,18 +29,6 @@ version=2
 :if:<Register.registered(System.Skip Intro)>=false
 	@Register.register(System.Skip Intro,int,0)
 :endif
-:if:<Register.registered(Options.System.Skip Mom Story)>=false
-	@Register.register(Options.System.Skip Mom Story,int,0)
-:endif
-:if:<Register.registered(System.Skip Mom Story)>=false
-	@Register.register(System.Skip Mom Story,int,0)
-:endif
-:if:<Register.registered(Options.System.Skip Rival Story)>=false
-	@Register.register(Options.System.Skip Rival Story,int,0)
-:endif
-:if:<Register.registered(System.Skip Rival Story)>=false
-	@Register.register(System.Skip Rival Story,int,0)
-:endif
 :if:<Register.registered(Options.System.Test Mode)>=false
 	@Register.register(Options.System.Test Mode,int,0)
 :endif
@@ -117,6 +105,150 @@ version=2
 :endif
 :if:<Register.registered(System.BankMoney)>=false
 	@Register.register(System.BankMoney,sng,0)
+:endif
+:if:<Register.registered(System.EncounterStep.num1)>=false
+	@Register.register(System.EncounterStep.num1,int,5)
+:endif
+:if:<Register.registered(System.EncounterStep.num2)>=false
+	@Register.register(System.EncounterStep.num2,int,12)
+:endif
+:if:<Register.registered(System.EncounterRate.num1)>=false
+	@Register.register(System.EncounterRate.num1,int,0)
+:endif
+:if:<Register.registered(System.EncounterRate.num2.1)>=false
+	@Register.register(System.EncounterRate.num2.1,int,0)
+:endif
+:if:<Register.registered(System.EncounterRate.num2.2)>=false
+	@Register.register(System.EncounterRate.num2.2,int,0)
+:endif
+:if:<Register.registered(System.EncounterRate.num3)>=false
+	@Register.register(System.EncounterRate.num3,sng,0.00)
+:endif
+:if:<Register.registered(System.Encounter.ExperienceMultiplier)>=false
+	@Register.register(System.Encounter.ExperienceMultiplier,int,1)
+:endif
+:if:<Register.registered(System.Encounter.LevelMultiplier)>=false
+	@Register.register(System.Encounter.LevelMultiplier,int,1)
+:endif
+:if:<Register.registered(System.Encounter.FriendshipMultiplier)>=false
+	@Register.register(System.Encounter.FriendshipMultiplier,int,1)
+:endif
+:if:<Register.registered(System.Encounter.HPMultiplier)>=false
+	@Register.register(System.Encounter.HPMultiplier,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EVMultiplier.HP)>=false
+	@Register.register(System.Encounter.EVMultiplier.HP,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EVMultiplier.Atk)>=false
+	@Register.register(System.Encounter.EVMultiplier.Atk,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EVMultiplier.Def)>=false
+	@Register.register(System.Encounter.EVMultiplier.Def,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EVMultiplier.SpAtk)>=false
+	@Register.register(System.Encounter.EVMultiplier.SpAtk,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EVMultiplier.SpDef)>=false
+	@Register.register(System.Encounter.EVMultiplier.SpDef,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EVMultiplier.Speed)>=false
+	@Register.register(System.Encounter.EVMultiplier.Speed,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IVMultiplier.HP)>=false
+	@Register.register(System.Encounter.IVMultiplier.HP,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IVMultiplier.Atk)>=false
+	@Register.register(System.Encounter.IVMultiplier.Atk,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IVMultiplier.Def)>=false
+	@Register.register(System.Encounter.IVMultiplier.Def,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IVMultiplier.SpAtk)>=false
+	@Register.register(System.Encounter.IVMultiplier.SpAtk,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IVMultiplier.SpDef)>=false
+	@Register.register(System.Encounter.IVMultiplier.SpDef,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IVMultiplier.Speed)>=false
+	@Register.register(System.Encounter.IVMultiplier.Speed,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon)>=false
+	@Register.register(System.Encounter.Pokemon,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Experience)>=false
+	@Register.register(System.Encounter.Experience,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Gender)>=false
+	@Register.register(System.Encounter.Gender,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EggSteps)>=false
+	@Register.register(System.Encounter.EggSteps,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Item)>=false
+	@Register.register(System.Encounter.Item,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Level)>=false
+	@Register.register(System.Encounter.Level,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Ability)>=false
+	@Register.register(System.Encounter.Ability,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Nature)>=false
+	@Register.register(System.Encounter.Nature,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Friendship)>=false
+	@Register.register(System.Encounter.Friendship,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Attack1)>=false
+	@Register.register(System.Encounter.Attack1,str,"test,test,test")
+:endif
+:if:<Register.registered(System.Encounter.Attack2)>=false
+	@Register.register(System.Encounter.Attack2,str,"test,test,test")
+:endif
+:if:<Register.registered(System.Encounter.Attack3)>=false
+	@Register.register(System.Encounter.Attack3,str,"test,test,test")
+:endif
+:if:<Register.registered(System.Encounter.Attack4)>=false
+	@Register.register(System.Encounter.Attack4,str,"test,test,test")
+:endif
+:if:<Register.registered(System.Encounter.HP)>=false
+	@Register.register(System.Encounter.HP,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EV.HP)>=false
+	@Register.register(System.Encounter.EV.HP,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EV.Atk)>=false
+	@Register.register(System.Encounter.EV.Atk,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EV.Def)>=false
+	@Register.register(System.Encounter.EV.Def,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EV.SpAtk)>=false
+	@Register.register(System.Encounter.EV.SpAtk,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EV.SpDef)>=false
+	@Register.register(System.Encounter.EV.SpDef,int,1)
+:endif
+:if:<Register.registered(System.Encounter.EV.Speed)>=false
+	@Register.register(System.Encounter.EV.Speed,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IV.Atk)>=false
+	@Register.register(System.Encounter.IV.Atk,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IV.Def)>=false
+	@Register.register(System.Encounter.IV.Def,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IV.SpAtk)>=false
+	@Register.register(System.Encounter.IV.SpAtk,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IV.SpDef)>=false
+	@Register.register(System.Encounter.IV.SpDef,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IV.Speed)>=false
+	@Register.register(System.Encounter.IV.Speed,int,1)
+:endif
+:if:<Register.registered(System.Encounter.AdditionalData)>=false
+	@Register.register(System.Encounter.AdditionalData,str,1)
 :endif
 @Script.start(System\Register\12)
 @Script.start(System\Register\15)

@@ -1,0 +1,56 @@
+version=2
+:if:<Register.registered(System.EncounterStep.fix)>=false
+	@Register.change(System.EncounterStep.num2,12)
+	@Register.change(System.EncounterStep.num1,5)
+	@Register.register(System.EncounterStep.fix)
+:endif
+@Register.change(System.EncounterStep.num2,<Register.value(System.EncounterStep.num2)>-1)
+:if:<System.random(0,<Register.value(System.EncounterStep.num2)>)>=<System.random(0,2)>
+	:if:<Pokemon.count>=0
+		@Pokemon.add(999,100)
+		@Battle.wild(999,1)
+		@Register.change(System.ErrorLog.ErrorID3,2)
+		@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+		:end
+	:endif
+	@Register.change(System.EncounterRate.num1,<System.random(0,100)>)
+	:if:<Register.value(System.EncounterRate.num1)>=100
+		@Register.change(System.EncounterRate.num2.1,0)
+		@Register.change(System.EncounterRate.num2.2,0)
+	:else
+		@Register.change(System.EncounterRate.num2.1,<System.random(0,9)>)
+		@Register.change(System.EncounterRate.num2.2,<System.random(0,9)>)
+	:endif
+	@Register.change(System.EncounterRate.num3,<Register.value(System.EncounterRate.num1)>+0.<Register.value(System.EncounterRate.num2.1)><Register.value(System.EncounterRate.num2.2)>)
+	:if:<not><Register.value(System.EncounterRate.num3)>>100
+		@Register.change(System.Encounter.Pokemon,265)
+		@Register.change(System.Encounter.Experience,39)
+		@Register.change(System.Encounter.Gender,<system.random(0,1)>)
+		@Register.change(System.Encounter.EggSteps,<system.random(4080,4334)>)
+		@Register.change(System.Encounter.Item,1)
+		@Register.change(System.Encounter.Level,1)
+		@Register.change(System.Encounter.Ability,1)
+		@Register.change(System.Encounter.Nature,1)
+		@Register.change(System.Encounter.Friendship,1)
+		@Register.change(System.Encounter.Attack1,"1,10,10")
+		@Register.change(System.Encounter.Attack2,"1,10,10")
+		@Register.change(System.Encounter.Attack3,"1,10,10")
+		@Register.change(System.Encounter.HP,10)
+		@Register.change(System.Encounter.EV.HP,10)
+		@Register.change(System.Encounter.EV.Atk,10)
+		@Register.change(System.Encounter.EV.Def,10)
+		@Register.change(System.Encounter.EV.SpAtk,10)
+		@Register.change(System.Encounter.EV.SpDef,10)
+		@Register.change(System.Encounter.EV.Speed,10)
+		@Register.change(System.Encounter.IV.HP,10)
+		@Register.change(System.Encounter.IV.Atk,10)
+		@Register.change(System.Encounter.IV.Def,10)
+		@Register.change(System.Encounter.IV.SpAtk,10)
+		@Register.change(System.Encounter.IV.SpDef,10)
+		@Register.change(System.Encounter.IV.Speed,10)
+		@Register.change(System.Encounter.AdditionalData,"")
+		@Script.start(System\Encounter\Battleinit)
+	:endif
+	@Register.unregister(System.EncounterStep.fix)
+:endif
+:end

@@ -17,6 +17,41 @@ version=2
 	@Player.warp(System\GlobalValidation.dat,0,0,0,0)
 	:end
 :endwhen
+@Text.show(2. Did the text in this question go out~of textbox?)
+@Options.setcancelindex(1)
+@Options.show(YES,NO)
+:when:YES
+	@Register.change(System.ErrorLog.ErrorID6,2)
+	@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+	:end
+:when:NO
+:endwhen
+@Text.show(3. Have you play this gamemode before?)
+@Options.setcancelindex(1)
+@Options.show(YES,NO)
+:when:YES
+	@Register.change(System.Skip Intro,1)
+:when:NO
+	@Register.change(System.Skip Intro,0)
+:endwhen
+@Text.show(4. Do you want to skip starting Mom~Story?)
+@Options.setcancelindex(1)
+@Options.show(YES,NO)
+:when:YES
+	@Register.change(12\LittleRootTown,2)
+	@Register.change(12\LittleRootTown\PlayerRoom.1,4)
+	@Register.change(12\LittleRootTown\PlayerRoom.2\004000001,2)
+:when:NO
+:endwhen
+@Text.show(5. Do you want to skip starting Rival~Story?)
+@Options.setcancelindex(1)
+@Options.show(YES,NO)
+:when:YES
+	@Register.change(12\LittleRootTown\RivalRoom.1,2)
+	@Register.change(12\LittleRootTown\RivalRoom.2,2)
+	@Register.change(12\LittleRootTown\RivalRoom.1\003000002,2)
+:when:NO
+:endwhen
 @Register.change(System\Intro\12\Intro,2)
 @Title.clear
 :while:<Entity.opacity(121)>>0

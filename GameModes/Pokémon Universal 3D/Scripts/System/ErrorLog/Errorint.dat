@@ -156,8 +156,6 @@
 @Text.log(Pokemon Universal 3D Indev version: <Register.value(System.Game Version)>)
 @Text.log(Active Game ID: <Register.value(System.Game ID)>)
 @Text.log(Auto Save?: <Register.value(System.Auto Save)>)
-@Text.log(Skip Mom Story?: <Register.value(System.Skip Mom Story)>)
-@Text.log(Skip Rival Story?: <Register.value(System.Skip Rival Story)>)
 @Text.log(Test Mode?: <Register.value(System.Test Mode)>)
 @Text.log(Skip GlobalRegisterValidation?: <Register.value(System.Skip GlobalRegisterValidation)>)
 @Text.log()
