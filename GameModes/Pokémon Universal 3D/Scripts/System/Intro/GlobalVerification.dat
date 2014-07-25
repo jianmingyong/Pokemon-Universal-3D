@@ -52,6 +52,7 @@ version=2
 	@Register.change(12\LittleRootTown\RivalRoom.1\003000002,2)
 :when:NO
 :endwhen
+@Text.show(6. Please remember to update your files~Berry.dat if you want berry.)
 @Register.change(System\Intro\12\Intro,2)
 @Title.clear
 :while:<Entity.opacity(121)>>0
