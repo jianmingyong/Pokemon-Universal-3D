@@ -2,9 +2,9 @@
 *.xnb binary
 *.psd binary
 *.png binary
-*.rtf binary
 *.dat text
 *.txt text
 *.lua text
 *.wma binary
 *.wav binary
+*.mp3 binary
