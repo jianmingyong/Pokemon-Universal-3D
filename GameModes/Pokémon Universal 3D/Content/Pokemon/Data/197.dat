@@ -10,6 +10,7 @@ EggGroup1|Field
 EggGroup2|None
 BaseEggSteps|9180
 EggPokemon|133
+Devolution|133
 IsGenderLess|0
 IsMale|87.5
 Ability1|28
@@ -29,7 +30,7 @@ FPSpDefense|2
 FPSpeed|0
 CanFly|0
 CanSwim|0
-Pokedex|When agitated protects itself by spraying poisonous sweat from its pores.\Moonlight Pokémon\27\1\0,148,0
+Pokedex|When agitated, this Pokémon protects itself by spraying poisonous sweat from its pores.\Moonlight Pokémon\27\1\0,148,0
 Scale|1
 Move|5,28
 Move|1,33

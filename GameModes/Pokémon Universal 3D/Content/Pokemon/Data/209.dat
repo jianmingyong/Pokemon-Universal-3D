@@ -14,7 +14,7 @@ IsGenderLess|0
 IsMale|25
 Ability1|22
 Ability2|50
-Eggmoves|370,242,38,185,424,423,118,102,217,265,173,422
+Eggmoves|370,242,38,185,424,423,118,102,217,265,173,422,264
 Machines|46,53,70,76,85,86,87,89,91,92,104,115,126,156,164,168,182,188,207,213,216,218,237,240,241,247,249,259,263,269,280,315,339,371,374,496,510,514,523,526,528,555,29,189,9,7,8
 BaseHP|60
 BaseAttack|80
@@ -30,7 +30,7 @@ FPSpDefense|0
 FPSpeed|0
 CanFly|0
 CanSwim|0
-Pokedex|Although it looks frightening is actually kind and affectionate. It is very popular among women.\Fairy Pokémon\7.8\0.6\0,148,0
+Pokedex|Although it looks frightening, it is actually kind and affectionate. It is very popular among women.\Fairy Pokémon\7.8\0.6\0,148,0
 Scale|0.84
 Move|19,29
 Move|1,33

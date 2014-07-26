@@ -15,11 +15,20 @@ version=2
 	@Sound.play(Select)
 	@Text.show(Oh, you're <Player.name>, our new next-door~neighbor! Hi!)
 	@Sound.play(Select)
-	@Text.show(We have a daughter about the same~age as you.)
-	@Sound.play(Select)
-	@Text.show(Our daughter was excited about making~a new friend.)
-	@Sound.play(Select)
-	@Text.show(Our daughter is upstairs, I think.)
+	:if:<Register.value(System.PlayerGender)>=Male
+		@Text.show(We have a daughter about the same~age as you.)
+		@Sound.play(Select)
+		@Text.show(Our daughter was excited about making~a new friend.)
+		@Sound.play(Select)
+		@Text.show(Our daughter is upstairs, I think.)
+	:endif
+	:if:<Register.value(System.PlayerGender)>=Female
+		@Text.show(We have a son about the same~age as you.)
+		@Sound.play(Select)
+		@Text.show(Our son was excited about making~a new friend.)
+		@Sound.play(Select)
+		@Text.show(Our son is upstairs, I think.)
+	:endif
 	@Player.turnto(0)
 	@Player.warp(2,0.1,8)
 	@Level.update

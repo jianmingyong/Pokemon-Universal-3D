@@ -10,6 +10,7 @@ EggGroup1|Field
 EggGroup2|Fairy
 BaseEggSteps|2805
 EggPokemon|172
+Devolution|172
 IsGenderLess|0
 IsMale|50
 Ability1|9
@@ -18,9 +19,9 @@ EggMoves|516,117,268,3,227,203,252,175,381,217,179,9,321,344,273
 Machines|70,85,86,87,91,92,104,113,148,156,164,182,207,213,216,218,237,240,249,263,280,374,447,451,496,497,521,528,29,189,9
 BaseHP|35
 BaseAttack|55
-BaseDefense|30
+BaseDefense|40
 BaseSpAttack|50
-BaseSpDefense|40
+BaseSpDefense|50
 BaseSpeed|90
 FPHP|0
 FPAttack|0

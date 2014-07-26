@@ -15,6 +15,7 @@ IsMale|50
 Ability1|43
 Ability2|111
 Machines|76,85,86,87,92,94,104,113,115,138,148,156,164,168,182,207,213,216,218,219,237,240,241,244,247,259,263,269,280,347,374,433,447,451,473,477,496
+EggMoves|204,109,252,248,361,95,196,478,102,417,471,298,271,358
 BaseHP|20
 BaseAttack|25
 BaseDefense|45
@@ -29,7 +30,7 @@ FPSpDefense|1
 FPSpeed|0
 CanFly|0
 CanSwim|0
-Pokedex|In an attempt to confuse its enemy it mimics the enemy’s movements. Then it wastes no time in making itself scarce!\Mime Pokémon\13\0.6\0,148,0
+Pokedex|In an attempt to confuse its enemy it mimics the enemy's movements. Then it wastes no time in making itself scarce!\Mime Pokémon\13\0.6\0,148,0
 Scale|0.84
 Move|11,3
 Move|25,60

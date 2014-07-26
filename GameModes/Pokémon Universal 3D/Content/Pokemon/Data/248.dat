@@ -29,7 +29,7 @@ FPSpDefense|0
 FPSpeed|0
 CanFly|0
 CanSwim|0
-Pokedex|Its body can’t be harmed by any sort of attack, so it is very eager to make challenges against enemies.\Armor Pokémon\202\2\0,148,0
+Pokedex|Its body can't be harmed by any sort of attack, so it is very eager to make challenges against enemies.\Armor Pokémon\202\2\0,148,0
 Scale|1.4
 Move|28,37
 Move|1,43
@@ -51,4 +51,4 @@ Move|1,423
 Move|1,424
 Move|63,444
 Move|14,498
-TradeValue|45
+TradeValue|75

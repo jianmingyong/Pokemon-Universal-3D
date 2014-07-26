@@ -187,6 +187,9 @@ version=2
 :if:<Register.registered(System.Encounter.Item)>=false
 	@Register.register(System.Encounter.Item,int,1)
 :endif
+:if:<Register.registered(System.Encounter.NickName)>=false
+	@Register.register(System.Encounter.NickName,str,Test)
+:endif
 :if:<Register.registered(System.Encounter.Level)>=false
 	@Register.register(System.Encounter.Level,int,1)
 :endif
@@ -199,17 +202,41 @@ version=2
 :if:<Register.registered(System.Encounter.Friendship)>=false
 	@Register.register(System.Encounter.Friendship,int,1)
 :endif
-:if:<Register.registered(System.Encounter.Attack1)>=false
-	@Register.register(System.Encounter.Attack1,str,"test,test,test")
+:if:<Register.registered(System.Encounter.Attack1.1)>=false
+	@Register.register(System.Encounter.Attack1.1,int,1)
 :endif
-:if:<Register.registered(System.Encounter.Attack2)>=false
-	@Register.register(System.Encounter.Attack2,str,"test,test,test")
+:if:<Register.registered(System.Encounter.Attack1.2)>=false
+	@Register.register(System.Encounter.Attack1.2,int,1)
 :endif
-:if:<Register.registered(System.Encounter.Attack3)>=false
-	@Register.register(System.Encounter.Attack3,str,"test,test,test")
+:if:<Register.registered(System.Encounter.Attack1.3)>=false
+	@Register.register(System.Encounter.Attack1.3,int,1)
 :endif
-:if:<Register.registered(System.Encounter.Attack4)>=false
-	@Register.register(System.Encounter.Attack4,str,"test,test,test")
+:if:<Register.registered(System.Encounter.Attack2.1)>=false
+	@Register.register(System.Encounter.Attack2.1,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Attack2.2)>=false
+	@Register.register(System.Encounter.Attack2.2,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Attack2.3)>=false
+	@Register.register(System.Encounter.Attack2.3,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Attack3.1)>=false
+	@Register.register(System.Encounter.Attack3.1,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Attack3.2)>=false
+	@Register.register(System.Encounter.Attack3.2,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Attack3.3)>=false
+	@Register.register(System.Encounter.Attack3.3,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Attack4.1)>=false
+	@Register.register(System.Encounter.Attack4.1,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Attack4.2)>=false
+	@Register.register(System.Encounter.Attack4.2,int,1)
+:endif
+:if:<Register.registered(System.Encounter.Attack4.3)>=false
+	@Register.register(System.Encounter.Attack4.3,int,1)
 :endif
 :if:<Register.registered(System.Encounter.HP)>=false
 	@Register.register(System.Encounter.HP,int,1)
@@ -231,6 +258,9 @@ version=2
 :endif
 :if:<Register.registered(System.Encounter.EV.Speed)>=false
 	@Register.register(System.Encounter.EV.Speed,int,1)
+:endif
+:if:<Register.registered(System.Encounter.IV.HP)>=false
+	@Register.register(System.Encounter.IV.HP,int,1)
 :endif
 :if:<Register.registered(System.Encounter.IV.Atk)>=false
 	@Register.register(System.Encounter.IV.Atk,int,1)

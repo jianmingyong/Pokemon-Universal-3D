@@ -17,7 +17,7 @@ Ability2|Nothing
 Machines|63,70,85,86,87,92,104,113,148,156,164,182,207,213,216,218,219,237,240,249,263,280,374,411,416,451,496,497,521,523,528,29,9,7
 BaseHP|90
 BaseAttack|75
-BaseDefense|75
+BaseDefense|85
 BaseSpAttack|115
 BaseSpDefense|90
 BaseSpeed|55
@@ -29,7 +29,7 @@ FPSpDefense|0
 FPSpeed|0
 CanFly|0
 CanSwim|0
-Pokedex|The tail’s tip shines brightly and can be seen from far away. It acts as a beacon for lost people.\Light Pokémon\61.5\1.4\0,148,0
+Pokedex|The tail's tip shines brightly and can be seen from far away. It acts as a beacon for lost people.\Light Pokémon\61.5\1.4\0,148,0
 Scale|1.16
 Move|1,7
 Move|30,9

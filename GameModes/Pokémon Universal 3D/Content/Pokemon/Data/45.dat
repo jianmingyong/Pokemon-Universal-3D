@@ -18,7 +18,7 @@ Machines|14,15,63,76,92,104,148,156,164,182,188,207,213,216,218,237,241,263,374,
 BaseHP|75
 BaseAttack|80
 BaseDefense|85
-BaseSpAttack|100
+BaseSpAttack|110
 BaseSpDefense|90
 BaseSpeed|50
 FPHP|0
@@ -29,7 +29,7 @@ FPSpDefense|0
 FPSpeed|0
 CanFly|0
 CanSwim|0
-Pokedex|It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.\Flower Pokémon\18.6\1.2\0,148,0
+Pokedex|It has the world's largest petals. With every step, the petals shake out heavy clouds of toxic pollen.\Flower Pokémon\18.6\1.2\0,148,0
 Scale|1.08
 Move|1,72
 Move|65,76

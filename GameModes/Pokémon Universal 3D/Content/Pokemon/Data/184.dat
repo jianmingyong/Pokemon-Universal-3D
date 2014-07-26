@@ -10,6 +10,7 @@ EggGroup1|Water1
 EggGroup2|Fairy
 BaseEggSteps|2805
 EggPokemon|298
+Devolution|183
 IsGenderLess|0
 IsMale|50
 Ability1|47
@@ -18,7 +19,7 @@ Machines|57,58,59,63,70,91,92,104,113,127,156,164,182,207,213,216,218,237,240,24
 BaseHP|100
 BaseAttack|50
 BaseDefense|80
-BaseSpAttack|50
+BaseSpAttack|60
 BaseSpDefense|80
 BaseSpeed|50
 FPHP|3

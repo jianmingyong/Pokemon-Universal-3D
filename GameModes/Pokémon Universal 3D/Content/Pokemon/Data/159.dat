@@ -14,7 +14,7 @@ IsGenderLess|0
 IsMale|87.5
 Ability1|67
 Ability2|Nothing
-Machines|8,14,15,29,46,57,58,59,70,91,92,104,127,156,157,164,173,174,182,183,189,196,197,203,207,210,213,214,216,218,223,231,237,240,249,250,258,263,264,280,290,291,317,332,337,352,362,363,374,421,445,468,496
+Machines|8,14,15,29,46,57,58,59,70,91,92,104,127,156,157,164,173,174,182,183,189,196,197,203,207,210,213,214,216,218,223,231,237,240,249,250,258,263,264,280,290,291,317,332,337,352,362,363,374,421,445,468,496,560
 BaseHP|65
 BaseAttack|80
 BaseDefense|80
@@ -29,7 +29,7 @@ FPSpDefense|0
 FPSpeed|0
 CanFly|0
 CanSwim|0
-Pokedex|If it loses a fang grows back in its place. There are always 48 fangs lining its mouth.\Big Jaw Pokémon\25\1.1\0,148,0
+Pokedex|If it loses a fang, a new one grows back in its place. There are always 48 fangs lining its mouth.\Big Jaw Pokémon\25\1.1\0,148,0
 Scale|1.04
 Move|1,10
 Move|48,37

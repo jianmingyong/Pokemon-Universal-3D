@@ -6,10 +6,11 @@ Type1|Psychic
 Type2|Fighting
 CatchRate|45
 BaseFriendship|35
-EggGroup1|Undiscovered
+EggGroup1|Amorphous
 EggGroup2|None
 BaseEggSteps|5355
 EggPokemon|280
+Devolution|281
 IsGenderLess|0
 IsMale|100
 Ability1|80

@@ -6,10 +6,11 @@ Type1|Ghost
 Type2|
 CatchRate|45
 BaseFriendship|35
-EggGroup1|Undiscovered
+EggGroup1|Amorphous
 EggGroup2|None
 BaseEggSteps|6630
 EggPokemon|355
+Devolution|356
 IsGenderLess|0
 IsMale|50
 Ability1|46

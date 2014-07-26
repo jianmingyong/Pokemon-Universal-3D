@@ -32,19 +32,19 @@ CanFly|0
 CanSwim|0
 Pokedex|The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows.\Seed Pokémon\6.9\0.7\0,148,0
 Scale|0.88
-Move|9,22
 Move|1,33
-Move|15,36
-Move|27,38
 Move|3,45
 Move|7,73
-Move|25,74
-Move|19,75
+Move|9,22
 Move|13,77
 Move|13,79
+Move|15,36
+Move|19,75
 Move|21,230
-Move|33,235
+Move|25,74
+Move|27,38
 Move|31,388
+Move|33,235
 Move|37,402
 EvolutionCondition|2,Level,16,Level
 TradeValue|50

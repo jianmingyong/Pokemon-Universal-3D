@@ -95,6 +95,7 @@
 @Text.log([INT|<Register.value(System.ErrorLog.ErrorID3)>]System.ErrorLog.ErrorID3)
 @Text.log([INT|<Register.value(System.ErrorLog.ErrorID4)>]System.ErrorLog.ErrorID4)
 @Text.log([INT|<Register.value(System.ErrorLog.ErrorID5)>]System.ErrorLog.ErrorID5)
+@Text.log([INT|<Register.value(System.ErrorLog.ErrorID6)>]System.ErrorLog.ErrorID6)
 @Text.log([STR|<Register.value(System.ActionScript)>]System.ActionScript)
 @Text.log([INT|<Register.value(System.MysteryGift)>]System.MysteryGift)
 @Text.log([STR|<Register.value(System.PlayerGender)>]System.PlayerGender)

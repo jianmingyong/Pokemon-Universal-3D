@@ -10,6 +10,7 @@ EggGroup1|Mineral
 EggGroup2|None
 BaseEggSteps|5355
 EggPokemon|137
+Devolution|137
 IsGenderLess|1
 IsMale|0.0
 Ability1|36
@@ -29,7 +30,7 @@ FPSpDefense|0
 FPSpeed|0
 CanFly|0
 CanSwim|0
-Pokedex|This upgraded version of PORYGON is designed for space exploration. It can’t fly, however.\Virtual Pokémon\32.5\0.6\0,148,0
+Pokedex|This upgraded version of PORYGON is designed for space exploration. It can't fly, however.\Virtual Pokémon\32.5\0.6\0,148,0
 Scale|0.84
 Move|1,33
 Move|7,60

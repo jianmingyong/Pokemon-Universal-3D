@@ -10,6 +10,7 @@ EggGroup1|Grass
 EggGroup2|None
 BaseEggSteps|5355
 EggPokemon|114
+Devolution|114
 IsGenderLess|0
 IsMale|50
 Ability1|34
@@ -29,7 +30,7 @@ FPSpDefense|0
 FPSpeed|0
 CanFly|0
 CanSwim|0
-Pokedex|When it remains still large shrub. Unsuspecting prey that wander near get ensnared by its vines.\Vine Pokémon\128.6\2\0,148,0
+Pokedex|When it remains still, it appears to be a large shrub. Unsuspecting prey that wander near get ensnared by its vines.\Vine Pokémon\128.6\2\0,148,0
 Scale|1.4
 Move|17,20
 Move|43,21
