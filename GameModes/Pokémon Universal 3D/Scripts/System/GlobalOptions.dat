@@ -1,6 +1,4 @@
 version=2
-@Register.change(Options.System.Auto Save,0)
-@Register.change(Options.System.Test Mode,0)
 @Register.change(Options.System.Skip GlobalRegisterValidation,1)
 :if:<Register.value(Options.System.Game ID)>=12
 	:if:<not><Register.value(System.Game ID)>=12
@@ -12,27 +10,6 @@ version=2
 	:if:<not><Register.value(System.Game ID)>=15
 		@Register.change(System.Game ID,15)
 		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
-	:endif
-:endif
-:if:<Register.value(Options.System.Auto Save)>=0
-	:if:<not><Register.value(System.Auto Save)>=0
-		@Register.change(System.Auto Save,0)
-	:endif
-:endif
-:if:<Register.value(Options.System.Auto Save)>=1
-	:if:<not><Register.value(System.Auto Save)>=1
-		@Register.change(System.Auto Save,1)
-	:endif
-:endif
-:if:<Register.value(Options.System.Test Mode)>=0
-	:if:<not><Register.value(System.Test Mode)>=0
-		@Register.change(System.Test Mode,0)
-	:endif
-:endif
-:if:<Register.value(Options.System.Test Mode)>=1
-	:if:<not><Register.value(System.Test Mode)>=1
-		@Register.change(System.Test Mode,1)
-		@Player.warp(test.dat,15,0,15,0)
 	:endif
 :endif
 :if:<Register.value(Options.System.Skip GlobalRegisterValidation)>=0

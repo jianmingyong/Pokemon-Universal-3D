@@ -17,23 +17,11 @@ version=2
 :if:<Register.registered(System.Game ID)>=false
 	@Register.register(System.Game ID,int,12)
 :endif
-:if:<Register.registered(Options.System.Auto Save)>=false
-	@Register.register(Options.System.Auto Save,int,1)
-:endif
-:if:<Register.registered(System.Auto Save)>=false
-	@Register.register(System.Auto Save,int,1)
-:endif
 :if:<Register.registered(Options.System.Skip Intro)>=false
 	@Register.register(Options.System.Skip Intro,int,0)
 :endif
 :if:<Register.registered(System.Skip Intro)>=false
 	@Register.register(System.Skip Intro,int,0)
-:endif
-:if:<Register.registered(Options.System.Test Mode)>=false
-	@Register.register(Options.System.Test Mode,int,0)
-:endif
-:if:<Register.registered(System.Test Mode)>=false
-	@Register.register(System.Test Mode,int,0)
 :endif
 :if:<Register.registered(Options.System.Skip GlobalRegisterValidation)>=false
 	@Register.register(Options.System.Skip GlobalRegisterValidation,int,0)
@@ -82,6 +70,12 @@ version=2
 :endif
 :if:<not><Register.value(System.ErrorLog.ErrorID6)>=1
 	@Register.change(System.ErrorLog.ErrorID6,1)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID7)>=false
+	@Register.register(System.ErrorLog.ErrorID7,int,1)
+:endif
+:if:<not><Register.value(System.ErrorLog.ErrorID7)>=1
+	@Register.change(System.ErrorLog.ErrorID7,1)
 :endif
 :if:<Register.registered(System.ActionScript)>=false
 	@Register.register(System.ActionScript,str,System\GlobalRegister.dat)

@@ -63,9 +63,6 @@
 @Title.add(PMD_EOT_D_S Music: Martin Zanter,30,255,255,255,2,true,0,-200)
 @Title.add(P_R_S_E Music: PocketMonstersMusic,30,255,255,255,2,true,0,-160)
 @Title.add(Title Music: Justin Baxter,30,255,255,255,2,true,0,-120)
-
-
-
 @Level.wait(300)
 @Title.add(Pokémon 3D Map design,30,255,255,255,2,true,0,-280)
 @Title.add(Nils Drescher,30,255,255,255,2,true,0,-200)

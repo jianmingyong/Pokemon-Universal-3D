@@ -21,4 +21,7 @@ version=2
 :if:<Register.value(System.ErrorLog.ErrorID6)>=2
 	@Script.start(System\ErrorLog\ErrorID6)
 :endif
+:if:<Register.value(System.ErrorLog.ErrorID7)>=2
+	@Script.start(System\ErrorLog\ErrorID7)
+:endif
 :end
