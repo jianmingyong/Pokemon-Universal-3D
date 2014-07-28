@@ -15,16 +15,10 @@ version=2
 	@Register.register(Options.System.Game ID,int,12)
 :endif
 :if:<Register.registered(System.Game ID)>=false
-	@Register.register(System.Game ID,int,12)
-:endif
-:if:<Register.registered(Options.System.Skip Intro)>=false
-	@Register.register(Options.System.Skip Intro,int,0)
+	@Register.register(System.Game ID,int,0)
 :endif
 :if:<Register.registered(System.Skip Intro)>=false
 	@Register.register(System.Skip Intro,int,0)
-:endif
-:if:<Register.registered(Options.System.Skip GlobalRegisterValidation)>=false
-	@Register.register(Options.System.Skip GlobalRegisterValidation,int,0)
 :endif
 :if:<Register.registered(System.Skip GlobalRegisterValidation)>=false
 	@Register.register(System.Skip GlobalRegisterValidation,int,0)
@@ -107,172 +101,64 @@ version=2
 	@Register.register(System.EncounterStep.num2,int,12)
 :endif
 :if:<Register.registered(System.EncounterRate.num1)>=false
-	@Register.register(System.EncounterRate.num1,int,0)
+	@Register.register(System.EncounterRate.num1,sng,0)
 :endif
 :if:<Register.registered(System.EncounterRate.num2.1)>=false
-	@Register.register(System.EncounterRate.num2.1,int,0)
+	@Register.register(System.EncounterRate.num2.1,sng,0)
 :endif
 :if:<Register.registered(System.EncounterRate.num2.2)>=false
-	@Register.register(System.EncounterRate.num2.2,int,0)
+	@Register.register(System.EncounterRate.num2.2,sng,0)
 :endif
 :if:<Register.registered(System.EncounterRate.num3)>=false
 	@Register.register(System.EncounterRate.num3,sng,0.00)
 :endif
-:if:<Register.registered(System.Encounter.ExperienceMultiplier)>=false
-	@Register.register(System.Encounter.ExperienceMultiplier,int,1)
+:if:<Register.registered(System.Encounter.Level)>=false
+	@Register.register(System.Encounter.Level,int,1)
 :endif
 :if:<Register.registered(System.Encounter.LevelMultiplier)>=false
 	@Register.register(System.Encounter.LevelMultiplier,int,1)
 :endif
-:if:<Register.registered(System.Encounter.FriendshipMultiplier)>=false
-	@Register.register(System.Encounter.FriendshipMultiplier,int,1)
-:endif
-:if:<Register.registered(System.Encounter.HPMultiplier)>=false
-	@Register.register(System.Encounter.HPMultiplier,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EVMultiplier.HP)>=false
-	@Register.register(System.Encounter.EVMultiplier.HP,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EVMultiplier.Atk)>=false
-	@Register.register(System.Encounter.EVMultiplier.Atk,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EVMultiplier.Def)>=false
-	@Register.register(System.Encounter.EVMultiplier.Def,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EVMultiplier.SpAtk)>=false
-	@Register.register(System.Encounter.EVMultiplier.SpAtk,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EVMultiplier.SpDef)>=false
-	@Register.register(System.Encounter.EVMultiplier.SpDef,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EVMultiplier.Speed)>=false
-	@Register.register(System.Encounter.EVMultiplier.Speed,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IVMultiplier.HP)>=false
-	@Register.register(System.Encounter.IVMultiplier.HP,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IVMultiplier.Atk)>=false
-	@Register.register(System.Encounter.IVMultiplier.Atk,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IVMultiplier.Def)>=false
-	@Register.register(System.Encounter.IVMultiplier.Def,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IVMultiplier.SpAtk)>=false
-	@Register.register(System.Encounter.IVMultiplier.SpAtk,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IVMultiplier.SpDef)>=false
-	@Register.register(System.Encounter.IVMultiplier.SpDef,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IVMultiplier.Speed)>=false
-	@Register.register(System.Encounter.IVMultiplier.Speed,int,1)
-:endif
-:if:<Register.registered(System.Encounter.Pokemon)>=false
-	@Register.register(System.Encounter.Pokemon,int,1)
+:if:<Register.registered(System.Encounter.ExperienceMultiplier)>=false
+	@Register.register(System.Encounter.ExperienceMultiplier,int,1)
 :endif
 :if:<Register.registered(System.Encounter.Experience)>=false
-	@Register.register(System.Encounter.Experience,int,1)
+	@Register.register(System.Encounter.Experience,int,0)
 :endif
-:if:<Register.registered(System.Encounter.Gender)>=false
-	@Register.register(System.Encounter.Gender,int,1)
+:if:<Register.registered(System.Encounter.Experience.1)>=false
+	@Register.register(System.Encounter.Experience.1,int,0)
 :endif
-:if:<Register.registered(System.Encounter.EggSteps)>=false
-	@Register.register(System.Encounter.EggSteps,int,1)
+:if:<Register.registered(System.Encounter.Experience.2)>=false
+	@Register.register(System.Encounter.Experience.2,int,0)
 :endif
-:if:<Register.registered(System.Encounter.Item)>=false
-	@Register.register(System.Encounter.Item,int,1)
+:if:<Register.registered(System.Encounter.Experience.3)>=false
+	@Register.register(System.Encounter.Experience.3,int,0)
 :endif
-:if:<Register.registered(System.Encounter.NickName)>=false
-	@Register.register(System.Encounter.NickName,str,Test)
+:if:<Register.registered(System.Encounter.Experience.4)>=false
+	@Register.register(System.Encounter.Experience.4,int,0)
 :endif
-:if:<Register.registered(System.Encounter.Level)>=false
-	@Register.register(System.Encounter.Level,int,1)
+:if:<Register.registered(System.Encounter.Experience.5)>=false
+	@Register.register(System.Encounter.Experience.5,int,0)
 :endif
-:if:<Register.registered(System.Encounter.Ability)>=false
-	@Register.register(System.Encounter.Ability,int,1)
+:if:<Register.registered(System.Encounter.Experience.6)>=false
+	@Register.register(System.Encounter.Experience.6,int,0)
 :endif
-:if:<Register.registered(System.Encounter.Nature)>=false
-	@Register.register(System.Encounter.Nature,int,1)
+:if:<Register.registered(System.Encounter.Pokemon.1.TotalEXP)>=false
+	@Register.register(System.Encounter.Pokemon.1.TotalEXP,int,0)
 :endif
-:if:<Register.registered(System.Encounter.Friendship)>=false
-	@Register.register(System.Encounter.Friendship,int,1)
+:if:<Register.registered(System.Encounter.Pokemon.2.TotalEXP)>=false
+	@Register.register(System.Encounter.Pokemon.2.TotalEXP,int,0)
 :endif
-:if:<Register.registered(System.Encounter.Attack1.1)>=false
-	@Register.register(System.Encounter.Attack1.1,int,1)
+:if:<Register.registered(System.Encounter.Pokemon.3.TotalEXP)>=false
+	@Register.register(System.Encounter.Pokemon.3.TotalEXP,int,0)
 :endif
-:if:<Register.registered(System.Encounter.Attack1.2)>=false
-	@Register.register(System.Encounter.Attack1.2,int,1)
+:if:<Register.registered(System.Encounter.Pokemon.4.TotalEXP)>=false
+	@Register.register(System.Encounter.Pokemon.4.TotalEXP,int,0)
 :endif
-:if:<Register.registered(System.Encounter.Attack1.3)>=false
-	@Register.register(System.Encounter.Attack1.3,int,1)
+:if:<Register.registered(System.Encounter.Pokemon.5.TotalEXP)>=false
+	@Register.register(System.Encounter.Pokemon.5.TotalEXP,int,0)
 :endif
-:if:<Register.registered(System.Encounter.Attack2.1)>=false
-	@Register.register(System.Encounter.Attack2.1,int,1)
-:endif
-:if:<Register.registered(System.Encounter.Attack2.2)>=false
-	@Register.register(System.Encounter.Attack2.2,int,1)
-:endif
-:if:<Register.registered(System.Encounter.Attack2.3)>=false
-	@Register.register(System.Encounter.Attack2.3,int,1)
-:endif
-:if:<Register.registered(System.Encounter.Attack3.1)>=false
-	@Register.register(System.Encounter.Attack3.1,int,1)
-:endif
-:if:<Register.registered(System.Encounter.Attack3.2)>=false
-	@Register.register(System.Encounter.Attack3.2,int,1)
-:endif
-:if:<Register.registered(System.Encounter.Attack3.3)>=false
-	@Register.register(System.Encounter.Attack3.3,int,1)
-:endif
-:if:<Register.registered(System.Encounter.Attack4.1)>=false
-	@Register.register(System.Encounter.Attack4.1,int,1)
-:endif
-:if:<Register.registered(System.Encounter.Attack4.2)>=false
-	@Register.register(System.Encounter.Attack4.2,int,1)
-:endif
-:if:<Register.registered(System.Encounter.Attack4.3)>=false
-	@Register.register(System.Encounter.Attack4.3,int,1)
-:endif
-:if:<Register.registered(System.Encounter.HP)>=false
-	@Register.register(System.Encounter.HP,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EV.HP)>=false
-	@Register.register(System.Encounter.EV.HP,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EV.Atk)>=false
-	@Register.register(System.Encounter.EV.Atk,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EV.Def)>=false
-	@Register.register(System.Encounter.EV.Def,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EV.SpAtk)>=false
-	@Register.register(System.Encounter.EV.SpAtk,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EV.SpDef)>=false
-	@Register.register(System.Encounter.EV.SpDef,int,1)
-:endif
-:if:<Register.registered(System.Encounter.EV.Speed)>=false
-	@Register.register(System.Encounter.EV.Speed,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IV.HP)>=false
-	@Register.register(System.Encounter.IV.HP,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IV.Atk)>=false
-	@Register.register(System.Encounter.IV.Atk,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IV.Def)>=false
-	@Register.register(System.Encounter.IV.Def,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IV.SpAtk)>=false
-	@Register.register(System.Encounter.IV.SpAtk,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IV.SpDef)>=false
-	@Register.register(System.Encounter.IV.SpDef,int,1)
-:endif
-:if:<Register.registered(System.Encounter.IV.Speed)>=false
-	@Register.register(System.Encounter.IV.Speed,int,1)
-:endif
-:if:<Register.registered(System.Encounter.AdditionalData)>=false
-	@Register.register(System.Encounter.AdditionalData,str,1)
+:if:<Register.registered(System.Encounter.Pokemon.6.TotalEXP)>=false
+	@Register.register(System.Encounter.Pokemon.6.TotalEXP,int,0)
 :endif
 @Script.start(System\Register\12)
 @Script.start(System\Register\15)

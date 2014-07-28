@@ -256,4 +256,10 @@ version=2
 :if:<Register.registered(System.Auto Save)>=true
 	@Register.unregister(System.Auto Save,int)
 :endif
+:if:<Register.registered(Options.System.Skip GlobalRegisterValidation)>=true
+	@Register.unregister(Options.System.Skip GlobalRegisterValidation,int)
+:endif
+:if:<Register.registered(Options.System.Skip Intro)>=true
+	@Register.unregister(Options.System.Skip Intro,int)
+:endif
 :end

@@ -1,0 +1,3 @@
+﻿listen channels (range)|overwrite channels (range)|channel name|Region|TimeOfDay (range)|Card Requirements (range)|Music|[SPECIAL]/(Script)/Text|CanBeOverwritten|Activation (0=Always,1=LevelChannel)|Activation Register (0=no register)
+
+{0.0-21.0|0.0-21.0|Oracion|12.Hoenn|0,3|RADIO|P_The Rise of Darkrai Oracion|Nothing...|1|0|0}

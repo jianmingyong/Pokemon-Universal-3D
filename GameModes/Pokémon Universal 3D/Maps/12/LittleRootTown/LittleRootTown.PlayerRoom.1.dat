@@ -1,6 +1,6 @@
 Main:
 {"Level"{LEV[{"Name"{str[Littleroot Town]}}{"MusicLoop"{str[P_R_S_E Littleroot Town]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
-{"Actions"{LEV[{"CanTeleport"{bool[1]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[1]}}{"Weather"{int[1]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System/GlobalMain]}}]}}
+{"Actions"{LEV[{"CanTeleport"{bool[1]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[1]}}{"Weather"{int[1]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System\GlobalMain]}}]}}
 
 Floor.Layer.1
 {"Floor"{ENT[{"Size"{intArr[11,1]}}{"Position"{intArr[0,0,1]}}{"TexturePath"{str[12\Tileset1642]}}{"Texture"{rec[32,0,16,16]}}]}}

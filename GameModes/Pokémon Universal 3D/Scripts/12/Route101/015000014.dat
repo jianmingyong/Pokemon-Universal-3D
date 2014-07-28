@@ -31,7 +31,7 @@
 		@Text.show(This is not the place to chat, so come~by my POKéMON LAB later, okay?)
 		@Register.change(12\Route101,3)
 		@Register.change(System.12.Starter,252)
-		@Player.warp(12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,6,0,4,0)
+		@Player.warp(12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,6,0.1,4,0)
 	:when:NO
 		@Script.start(12\Route101\015000014)
 	:endwhen
@@ -64,7 +64,7 @@
 		@Text.show(This is not the place to chat, so come~by my POKéMON LAB later, okay?)
 		@Register.change(12\Route101,3)
 		@Register.change(System.12.Starter,255)
-		@Player.warp(12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,6,0,4,0)
+		@Player.warp(12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,6,0.1,4,0)
 	:when:NO
 		@Script.start(12\Route101\015000014)
 	:endwhen
@@ -97,10 +97,9 @@
 		@Text.show(This is not the place to chat, so come~by my POKéMON LAB later, okay?)
 		@Register.change(12\Route101,3)
 		@Register.change(System.12.Starter,258)
-		@Player.warp(12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,6,0,4,0)
+		@Player.warp(12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,6,0.1,4,0)
 	:when:NO
 		@Script.start(12\Route101\015000014)
 	:endwhen
 :endwhen
-@Script.start(System\GlobalMain)
 :end

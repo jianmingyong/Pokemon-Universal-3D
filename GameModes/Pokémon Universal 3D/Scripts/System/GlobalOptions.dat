@@ -1,25 +1,3 @@
 version=2
-@Register.change(Options.System.Skip GlobalRegisterValidation,1)
-:if:<Register.value(Options.System.Game ID)>=12
-	:if:<not><Register.value(System.Game ID)>=12
-		@Register.change(System.Game ID,12)
-		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
-	:endif
-:endif
-:if:<Register.value(Options.System.Game ID)>=15
-	:if:<not><Register.value(System.Game ID)>=15
-		@Register.change(System.Game ID,15)
-		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
-	:endif
-:endif
-:if:<Register.value(Options.System.Skip GlobalRegisterValidation)>=0
-	:if:<not><Register.value(System.Skip GlobalRegisterValidation)>=0
-		@Register.change(System.Skip GlobalRegisterValidation,0)
-	:endif
-:endif
-:if:<Register.value(Options.System.Skip GlobalRegisterValidation)>=1
-	:if:<not><Register.value(System.Skip GlobalRegisterValidation)>=1
-		@Register.change(System.Skip GlobalRegisterValidation,1)
-	:endif
-:endif
+@Register.change(System.Skip GlobalRegisterValidation,1)
 :end

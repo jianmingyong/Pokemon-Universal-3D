@@ -26,7 +26,6 @@ version=2
 @Camera.deactivethirdperson
 @Camera.set(0,0,0,0,0)
 @Camera.fix
-@Script.start(System\GlobalMain)
 :if:<Register.value(System.Game ID)>=12
 	:if:<Register.value(System\Intro\12\Intro)>=1
 		@Script.start(System\Intro\GlobalVerification)
@@ -34,7 +33,7 @@ version=2
 			@Script.start(System\Intro\12\Intro)
 			@Camera.defix
 		:else
-			@Player.warp(12\LittleRootTown\LittleRootTown.Truck.dat,2,0,3,0)
+			@Player.warp(12\LittleRootTown\LittleRootTown.Truck.dat,2,0.1,3,0)
 			@Camera.defix
 		:endif
 		:end

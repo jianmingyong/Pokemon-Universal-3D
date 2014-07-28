@@ -1,6 +1,6 @@
 ﻿Main:
 {"Level"{LEV[{"Name"{str[Littleroot Town]}}{"MusicLoop"{str[P_R_S_E Professor Birch's Laboratory]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
-{"Actions"{LEV[{"CanTeleport"{bool[1]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[1]}}{"Weather"{int[1]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System/GlobalMain]}}]}}
+{"Actions"{LEV[{"CanTeleport"{bool[1]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[1]}}{"Weather"{int[1]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System\GlobalMain]}}]}}
 
 Floor.Layer.1
 {"Floor"{ENT[{"Size"{intArr[13,1]}}{"Position"{intArr[0,0,1]}}{"TexturePath"{str[12\Tileset1643]}}{"Texture"{rec[32,0,16,16]}}]}}
@@ -104,7 +104,7 @@ Wall.Layer.11.Floor.2
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[13,1,11]}}{"TexturePath"{str[12\Tileset1643]}}{"Textures"{recArr[[0,16,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,0,0,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[12]}}]}}
 Wall.Layer.12.Floor.1
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[6,1]}}{"Position"{sngArr[0,0,12]}}{"TexturePath"{str[12\Tileset1643]}}{"Textures"{recArr[[0,32,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,0,0,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[12]}}]}}
-{"EntityField"{ENT[{"EntityID"{str[WarpBlock]}}{"Size"{intArr[2,1]}}{"Position"{sngArr[6,0,12]}}{"TexturePath"{str[BarkTown]}}{"Textures"{recArr[[16,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,0,0,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\LittleRootTown.dat,15,0,16,0]}}{"Rotation"{int[0]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[WarpBlock]}}{"Size"{intArr[2,1]}}{"Position"{sngArr[6,0,12]}}{"TexturePath"{str[BarkTown]}}{"Textures"{recArr[[16,0,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,0,0,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\LittleRootTown.dat,15,0.1,16,0]}}{"Rotation"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[5,1]}}{"Position"{sngArr[8,0,12]}}{"TexturePath"{str[12\Tileset1643]}}{"Textures"{recArr[[0,32,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,0,0,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[12]}}]}}
 Wall.Layer.12.Floor.2
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[13,1]}}{"Position"{sngArr[0,1,12]}}{"TexturePath"{str[12\Tileset1643]}}{"Textures"{recArr[[0,16,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,0,0,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[12]}}]}}
