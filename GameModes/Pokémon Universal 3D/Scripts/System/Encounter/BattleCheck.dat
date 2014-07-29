@@ -7,4 +7,44 @@ version=2
         :endif
     :endif
 :endif
+:if:<Pokemon.count>>1
+    :if:<Pokemon.needexp(1)><0 <or> <Pokemon.needexp(1)>=0
+        @Pokemon.changelevel(1,<Pokemon.level(1)>+1)
+        :if:<Pokemon.canevolve(1)>=true
+            @Pokemon.evolve(1)
+        :endif
+    :endif
+:endif
+:if:<Pokemon.count>>2
+    :if:<Pokemon.needexp(2)><0 <or> <Pokemon.needexp(2)>=0
+        @Pokemon.changelevel(2,<Pokemon.level(2)>+1)
+        :if:<Pokemon.canevolve(2)>=true
+            @Pokemon.evolve(2)
+        :endif
+    :endif
+:endif
+:if:<Pokemon.count>>3
+    :if:<Pokemon.needexp(3)><0 <or> <Pokemon.needexp(3)>=0
+        @Pokemon.changelevel(3,<Pokemon.level(3)>+1)
+        :if:<Pokemon.canevolve(3)>=true
+            @Pokemon.evolve(3)
+        :endif
+    :endif
+:endif
+:if:<Pokemon.count>>4
+    :if:<Pokemon.needexp(4)><0 <or> <Pokemon.needexp(4)>=0
+        @Pokemon.changelevel(4,<Pokemon.level(4)>+1)
+        :if:<Pokemon.canevolve(4)>=true
+            @Pokemon.evolve(4)
+        :endif
+    :endif
+:endif
+:if:<Pokemon.count>>5
+    :if:<Pokemon.needexp(5)><0 <or> <Pokemon.needexp(5)>=0
+        @Pokemon.changelevel(5,<Pokemon.level(5)>+1)
+        :if:<Pokemon.canevolve(5)>=true
+            @Pokemon.evolve(5)
+        :endif
+    :endif
+:endif
 :end
