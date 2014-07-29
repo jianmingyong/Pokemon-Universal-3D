@@ -1,7 +1,0 @@
-Youngster	14
-Bug Catcher	bugcatcher
-Lass		PinkShirtGirl
-
-Hiker		2
-POKÈFan		11
-Beauty		15

@@ -1,5 +1,0 @@
-version=2
-@Sound.play(Select)
-@Text.show(Dialga: Palkia is distorting the next area,~you have to wait for the next version.)
-@Script.start(System\GlobalMain)
-:end

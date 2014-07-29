@@ -1,4 +1,0 @@
-﻿version=2
-@Battle.starttrainer(12\Route102\033000022)
-@Script.start(System\GlobalMain)
-:end
