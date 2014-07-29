@@ -1,10 +1,10 @@
 version=2
 :if:<Pokemon.count>>0
-  :if:<Pokemon.needexp(0)><0 <or> <Pokemon.needexp(0)>=0
-    @Pokemon.changelevel(0,<Pokemon.level(0)>+1)
-    :if:<Pokemon.canevolve(0)>=true
-      @Pokemon.evolve(0)
+    :if:<Pokemon.needexp(0)><0 <or> <Pokemon.needexp(0)>=0
+        @Pokemon.changelevel(0,<Pokemon.level(0)>+1)
+        :if:<Pokemon.canevolve(0)>=true
+            @Pokemon.evolve(0)
+        :endif
     :endif
-  :endif
 :endif
 :end
