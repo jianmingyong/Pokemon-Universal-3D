@@ -22,12 +22,29 @@ version=2
 		@Register.change(System.EncounterRate.num2.2,<System.random(0,9)>)
 	:endif
 	@Register.change(System.EncounterRate.num3,<Register.value(System.EncounterRate.num1)>+0.<Register.value(System.EncounterRate.num2.1)><Register.value(System.EncounterRate.num2.2)>)
-	:if:<not><Register.value(System.EncounterRate.num3)>>100.00
-		@Register.change(System.Encounter.Level,2*<Register.value(System.Encounter.LevelMultiplier)>)
+	:if:<not><Register.value(System.EncounterRate.num3)>>45.00
+		@Register.change(System.Encounter.Level,<System.random(2,3)>*<Register.value(System.Encounter.LevelMultiplier)>)
 		@Script.start(System\Encounter\Battleint)
 		@Battle.wild(265,<Register.value(System.Encounter.Level)>)
+		@Script.start(System\Encounter\Battleend)
+		@Register.unregister(System.EncounterStep.fix)
+		:end
 	:endif
-	@Script.start(System\Encounter\Battleend)
-	@Register.unregister(System.EncounterStep.fix)
+	:if:<not><Register.value(System.EncounterRate.num3)>>66.67
+		@Register.change(System.Encounter.Level,<System.random(2,3)>*<Register.value(System.Encounter.LevelMultiplier)>)
+		@Script.start(System\Encounter\Battleint)
+		@Battle.wild(261,<Register.value(System.Encounter.Level)>)
+		@Script.start(System\Encounter\Battleend)
+		@Register.unregister(System.EncounterStep.fix)
+		:end
+	:endif
+	:if:<not><Register.value(System.EncounterRate.num3)>>100.00
+		@Register.change(System.Encounter.Level,<System.random(2,3)>*<Register.value(System.Encounter.LevelMultiplier)>)
+		@Script.start(System\Encounter\Battleint)
+		@Battle.wild(263,<Register.value(System.Encounter.Level)>)
+		@Script.start(System\Encounter\Battleend)
+		@Register.unregister(System.EncounterStep.fix)
+		:end
+	:endif
 :endif
 :end

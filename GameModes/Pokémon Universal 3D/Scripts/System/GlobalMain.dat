@@ -1,6 +1,5 @@
 version=2
 @Level.update
-@Register.register(pokegear_card_radio)
 :if:<Register.registered(Options.System.Game ID)>=false <and> <Register.registered(System.Game ID)>=false
 	@Script.start(System\GlobalRegister)
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
