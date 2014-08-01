@@ -1,0 +1,50 @@
+version=2
+:if:<Register.registered(System.EncounterStep.fix)>=false
+	@Register.change(System.EncounterStep.num2,12)
+	@Register.change(System.EncounterStep.num1,5)
+	@Register.register(System.EncounterStep.fix)
+:endif
+@Register.change(System.EncounterStep.num2,<Register.value(System.EncounterStep.num2)>-1)
+:if:<System.random(0,<Register.value(System.EncounterStep.num2)>)>=<System.random(0,2)> <or> <Register.value(System.EncounterStep.num2)>=0
+	:if:<Pokemon.count>=0
+		@Pokemon.add(999,100)
+		@Battle.wild(999,1)
+		@Register.change(System.ErrorLog.ErrorID3,2)
+		@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+		:end
+	:endif
+	@Register.change(System.EncounterRate.num1,<System.random(0,100)>)
+	:if:<Register.value(System.EncounterRate.num1)>=100
+		@Register.change(System.EncounterRate.num2.1,0)
+		@Register.change(System.EncounterRate.num2.2,0)
+	:else
+		@Register.change(System.EncounterRate.num2.1,<System.random(0,9)>)
+		@Register.change(System.EncounterRate.num2.2,<System.random(0,9)>)
+	:endif
+	@Register.change(System.EncounterRate.num3,<Register.value(System.EncounterRate.num1)>+0.<Register.value(System.EncounterRate.num2.1)><Register.value(System.EncounterRate.num2.2)>)
+	:if:<not><Register.value(System.EncounterRate.num3)>>40.00
+		@Register.change(System.Encounter.Level,<System.random(2,4)>*<Register.value(System.Encounter.LevelMultiplier)>)
+		@Script.start(System\Encounter\Battleint)
+		@Battle.wild(261,<Register.value(System.Encounter.Level)>)
+		@Script.start(System\Encounter\Battleend)
+		@Register.unregister(System.EncounterStep.fix)
+		:end
+	:endif
+	:if:<not><Register.value(System.EncounterRate.num3)>>80.00
+		@Register.change(System.Encounter.Level,<System.random(2,4)>*<Register.value(System.Encounter.LevelMultiplier)>)
+		@Script.start(System\Encounter\Battleint)
+		@Battle.wild(278,<Register.value(System.Encounter.Level)>)
+		@Script.start(System\Encounter\Battleend)
+		@Register.unregister(System.EncounterStep.fix)
+		:end
+	:endif
+	:if:<not><Register.value(System.EncounterRate.num3)>>100.00
+		@Register.change(System.Encounter.Level,<System.random(2,4)>*<Register.value(System.Encounter.LevelMultiplier)>)
+		@Script.start(System\Encounter\Battleint)
+		@Battle.wild(263,<Register.value(System.Encounter.Level)>)
+		@Script.start(System\Encounter\Battleend)
+		@Register.unregister(System.EncounterStep.fix)
+		:end
+	:endif
+:endif
+:end

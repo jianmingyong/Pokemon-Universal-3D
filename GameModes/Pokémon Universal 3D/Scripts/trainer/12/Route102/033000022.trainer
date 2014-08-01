@@ -5,7 +5,7 @@ Money|80
 IntroMessage|If you have POKéMON with you, then~you're an official POKéMON TRAINER!*You can't say no to my challenge!
 OutroMessage|Arrgh, I lost...~I should have trained mine more...
 DefeatMessage|Listen, you. If you're strong,~you should have told me before!
-TextureID|14
+TextureID|Youngster
 Region|12.Hoenn
 IniMusic|P_R_S_E Trainer Battle_intro
 DefeatMusic|P_R_S_E Victory! Trainer

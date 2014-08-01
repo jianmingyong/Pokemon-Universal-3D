@@ -1,5 +1,59 @@
 ﻿version=2
 @Register.change(System.Encounter.Pokemon.MoveID,0)
+:if:<Register.value(System.Encounter.Pokemon.ID)>=1
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=3
+		@Register.change(System.Encounter.Pokemon.MoveID,45)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=7
+		@Register.change(System.Encounter.Pokemon.MoveID,73)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=9
+		@Register.change(System.Encounter.Pokemon.MoveID,22)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=13
+		@Register.change(System.Encounter.Pokemon.MoveID,77)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=14
+		@Register.change(System.Encounter.Pokemon.MoveID,79)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=15
+		@Register.change(System.Encounter.Pokemon.MoveID,36)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=19
+		@Register.change(System.Encounter.Pokemon.MoveID,75)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=21
+		@Register.change(System.Encounter.Pokemon.MoveID,230)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=25
+		@Register.change(System.Encounter.Pokemon.MoveID,74)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=27
+		@Register.change(System.Encounter.Pokemon.MoveID,38)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=31
+		@Register.change(System.Encounter.Pokemon.MoveID,388)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=33
+		@Register.change(System.Encounter.Pokemon.MoveID,235)
+		:end
+	:endif
+	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=37
+		@Register.change(System.Encounter.Pokemon.MoveID,402)
+		:end
+	:endif
+:endif
 :if:<Register.value(System.Encounter.Pokemon.ID)>=252
 	:if:<Pokemon.level(<Register.value(System.Encounter.Pokemon.Index)>)>=6
 		@Register.change(System.Encounter.Pokemon.MoveID,71)

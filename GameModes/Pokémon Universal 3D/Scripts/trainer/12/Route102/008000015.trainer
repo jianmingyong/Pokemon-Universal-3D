@@ -5,7 +5,7 @@ Money|64
 IntroMessage|I'm going to keep winning and aim~to be the best TRAINER.*Help me further my career!
 OutroMessage|I ended up furthering your career...
 DefeatMessage|To keep winning my way up, I see that~I have to catch more POKéMON.
-TextureID|PinkShirtGirl
+TextureID|Lass
 Region|12.Hoenn
 IniMusic|P_R_S_E Trainer Battle_intro
 DefeatMusic|P_R_S_E Victory! Trainer
