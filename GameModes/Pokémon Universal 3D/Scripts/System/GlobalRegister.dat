@@ -169,6 +169,9 @@ version=2
 :if:<Register.registered(System.Encounter.Pokemon.MoveID)>=false
 	@Register.register(System.Encounter.Pokemon.MoveID,int,0)
 :endif
+:if:<Register.registered(System.SandBoxMode)>=false
+	@Register.register(System.SandBoxMode,int,0)
+:endif
 :if:<Register.registered(pokegear_card_radio)>=false
 	@Register.register(pokegear_card_radio)
 :endif

@@ -1,3 +1,4 @@
 version=2
 @Register.change(System.Skip GlobalRegisterValidation,1)
+@Register.change(System.SandBoxMode,1)
 :end

@@ -1,8 +1,8 @@
 version=2
 @Level.update
 :if:<Register.registered(Options.System.Game ID)>=false <and> <Register.registered(System.Game ID)>=false
+	@Script.start(System\Intro\GlobalBackground)
 	@Script.start(System\GlobalRegister)
-	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
 	@Script.start(System\GlobalRegisterValidation)
 	:if:<not><Register.value(System.P3D Version)>=0.50.0
 		:if:<not><Register.value(System.Game Version)>=0.0.6
@@ -22,8 +22,6 @@ version=2
 		@Level.update
 		@Script.start(System\GlobalIntro)
 	:endif
-	@Player.save
-	:end
 :endif
 :if:<Register.value(System.P3D Version)>=0.50.0 <and> <Register.value(System.Game Version)>=0.0.6
 	:if:<Storage.count(Integer)>=0
@@ -46,6 +44,7 @@ version=2
 			@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
 			@Player.warp(System\GlobalIntro.dat,0,0,0,0)
 			@Level.update
+			@Script.start(System\Intro\GlobalBackground)
 			@Script.start(System\GlobalIntro)
 		:endif
 	:endif
@@ -72,6 +71,7 @@ version=2
 			@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
 			@Player.warp(System\GlobalIntro.dat,0,0,0,0)
 			@Level.update
+			@Script.start(System\Intro\GlobalBackground)
 			@Script.start(System\GlobalIntro)
 		:endif
 	:endif
@@ -81,6 +81,5 @@ version=2
 	:if:<Register.registered(System.EncounterStep.fix)=true
 		@Register.unregister(System.EncounterStep.fix)
 	:endif
-	@Player.save
 	:end
 :endif

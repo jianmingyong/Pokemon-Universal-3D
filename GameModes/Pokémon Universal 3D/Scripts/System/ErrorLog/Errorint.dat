@@ -68,13 +68,6 @@
 @Text.log(hasPokegear|0)
 @Text.log(skin|<Player.skin>)
 @Text.log(location|<Level.filename>)
-@Text.log(saveCreated|Indev <Register.value(System.P3D Version)>)
-@Text.log(GameMode|Pokémon Universal 3D)
-:if:<Level.surfing>=false
-	@Text.log(Surfing|0)
-:else
-	@Text.log(Surfing|1)
-:endif
 @Text.log(BP|<Player.bp>)
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log(Data: Pokemon\Save\<Player.name>*\Party.dat)
@@ -139,8 +132,6 @@
 @Text.log(Compatible Pokémon 3D Indev version: <Register.value(System.P3D Version)>)
 @Text.log(Pokemon Universal 3D Indev version: <Register.value(System.Game Version)>)
 @Text.log(Active Game ID: <Register.value(System.Game ID)>)
-@Text.log(Auto Save?: <Register.value(System.Auto Save)>)
-@Text.log(Test Mode?: <Register.value(System.Test Mode)>)
 @Text.log(Skip GlobalRegisterValidation?: <Register.value(System.Skip GlobalRegisterValidation)>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
