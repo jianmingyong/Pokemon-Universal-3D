@@ -1,0 +1,15 @@
+version=2
+:if:<Register.value(12\PetalburgCity\Gym.Main)>=1
+	:if:<NPC.exists(004000002)>=false
+		@NPC.spawn(4,0,2,1,12\PetalburgCity\Gym.Main\004000002,Norman,false,2,,004000002,Still)
+	:endif
+	:end
+:endif
+:if:<Register.value(12\PetalburgCity\Gym.Main)>=2
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,System\ParallelProcess\12\PetalburgCity\Gym\Main.dat)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

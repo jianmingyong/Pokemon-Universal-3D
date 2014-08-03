@@ -57,6 +57,5 @@
 @Player.save
 @Register.change(System.ErrorLog.ErrorID0,2)
 @Register.change(System.ActionScript,12\LittleRootTown\RivalRoom.1\001000002.dat)
-@Script.start(System\GlobalErrorLog)
 @Player.warp(System\GlobalValidation.dat,0,0,0,0)
 :end

@@ -27,5 +27,8 @@ version=2
 	:if:<Level.filename>=Route102
 		@Script.start(System\ParallelProcess\12\Route102\Route102)
 	:endif
+	:if:<Level.filename>=PetalburgCity.Gym.Main
+		@Script.start(System\ParallelProcess\12\PetalburgCity\Gym\Main)
+	:endif
 :endif
 :end

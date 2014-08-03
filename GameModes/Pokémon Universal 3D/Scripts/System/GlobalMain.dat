@@ -4,14 +4,6 @@ version=2
 	@Script.start(System\Intro\GlobalBackground)
 	@Script.start(System\GlobalRegister)
 	@Script.start(System\GlobalRegisterValidation)
-	:if:<not><Register.value(System.P3D Version)>=0.50.0
-		:if:<not><Register.value(System.Game Version)>=0.0.6
-			@Register.change(System.ErrorLog.ErrorID1,2)
-			@Script.start(System\GlobalErrorLog)
-			@Player.warp(System\GlobalValidation.dat,0,0,0,0)
-			:end
-		:endif
-	:endif
 	@Script.start(System\GlobalOptions)
 	:if:<Level.mapfile>=System\GlobalIntro.dat
 		@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
@@ -23,7 +15,7 @@ version=2
 		@Script.start(System\GlobalIntro)
 	:endif
 :endif
-:if:<Register.value(System.P3D Version)>=0.50.0 <and> <Register.value(System.Game Version)>=0.0.6
+:if:<Register.value(System.P3D Version)>=0.50.0 <and> <Register.value(System.Game Version)>=0.0.6 BT 5
 	:if:<Storage.count(Integer)>=0
 		@Script.start(System\GlobalBankInterest)
 		@Script.start(System\GlobalMysteryEvents)
@@ -55,7 +47,7 @@ version=2
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
 	@Script.start(System\GlobalRegisterValidation)
 	:if:<not><Register.value(System.P3D Version)>=0.50.0
-		:if:<not><Register.value(System.Game Version)>=0.0.6
+		:if:<not><Register.value(System.Game Version)>=0.0.6 BT 5
 			@Register.change(System.ErrorLog.ErrorID1,2)
 			@Script.start(System\GlobalErrorLog)
 			@Player.warp(System\GlobalValidation.dat,0,0,0,0)

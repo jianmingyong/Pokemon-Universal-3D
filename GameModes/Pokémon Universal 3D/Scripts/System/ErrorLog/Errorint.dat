@@ -116,6 +116,7 @@
 @Text.log([INT|<Register.value(12\OldaleTown\PokeMart\002000002)>]12\OldaleTown\PokeMart\002000002)
 @Text.log([INT|<Register.value(12\Route103)>]12\Route103)
 @Text.log([INT|<Register.value(12\Route102)>]12\Route102)
+@Text.log([INT|<Register.value(12\PetalburgCity\PokeMart\002000002)>]12\PetalburgCity\PokeMart\002000002)
 @Text.log([INT|<Register.value(System\Intro\15\Intro)>]System\Intro\15\Intro)
 @Text.log([INT|<Register.value(System\Intro\15\Intro.1)>]System\Intro\15\Intro.1)
 @Text.log([INT|<Register.value(System\Intro\15\Intro.2)>]System\Intro\15\Intro.2)

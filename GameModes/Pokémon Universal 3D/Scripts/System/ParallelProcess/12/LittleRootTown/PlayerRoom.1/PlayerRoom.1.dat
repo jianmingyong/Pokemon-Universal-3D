@@ -100,6 +100,5 @@ version=2
 @Player.save
 @Register.change(System.ErrorLog.ErrorID0,2)
 @Register.change(System.ActionScript,System\ParallelProcess\12\LittleRootTown\PlayerRoom.1\PlayerRoom.1.dat)
-@Script.start(System\GlobalErrorLog)
 @Player.warp(System\GlobalValidation.dat,0,0,0,0)
 :end
