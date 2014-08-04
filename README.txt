@@ -100,7 +100,7 @@ Pokémon Universal 3D is created, compiled and edited by jianmingyong.
 ==================================================
 7.1.	Music
 ==================================================
-PMD_EOT_D_S	Rip From: Martin Zanter
+PMD_EOT_D_S Rip From: Martin Zanter
 P_FR_LR Rip From: Ra2rd93
 P_R_S_E Rip From: PocketMonstersMusic
 Title Music Rip From: Justin Baxter
