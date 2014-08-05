@@ -77,7 +77,7 @@ version=2
 	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,425)
 	@Title.add(> ,2147483648,255,255,255,2,false,0,450)
 	@Title.add(> Generating Crash Log... Please wait before Quiting the game!,2147483648,255,255,255,2,false,0,475)
-	@Script.start(System\GlobalErrorLog)
+	@Script.start(System\ErrorLog\ErrorID2)
 	@Title.add(> Crash Log Saved at: Pokemon\Log.dat,2147483648,255,255,255,2,false,0,500)
 	@Title.add(> "For more info, please refer to the crash log in Pokemon\Log.dat",2147483648,255,255,255,2,false,0,525)
 :endif
