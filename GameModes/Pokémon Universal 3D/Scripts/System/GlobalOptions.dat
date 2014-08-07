@@ -1,4 +1,5 @@
 version=2
-@Register.change(System.Skip GlobalRegisterValidation,0)
-@Register.change(System.SandBoxMode,1)
+@Register.change(System.GlobalRegister Validation,false)
+@Register.change(System.New BattleV2 Exp,true)
+@Register.change(System.SandBoxMode,false)
 :end

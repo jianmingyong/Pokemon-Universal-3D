@@ -20,8 +20,8 @@ version=2
 :if:<Register.registered(System.Skip Intro)>=false
 	@Register.register(System.Skip Intro,int,0)
 :endif
-:if:<Register.registered(System.Skip GlobalRegisterValidation)>=false
-	@Register.register(System.Skip GlobalRegisterValidation,int,0)
+:if:<Register.registered(System.GlobalRegister Validation)>=false
+	@Register.register(System.GlobalRegister Validation,bool,0)
 :endif
 :if:<Register.registered(System.ErrorLog.ErrorID0)>=false
 	@Register.register(System.ErrorLog.ErrorID0,int,1)
@@ -170,7 +170,10 @@ version=2
 	@Register.register(System.Encounter.Pokemon.MoveID,int,0)
 :endif
 :if:<Register.registered(System.SandBoxMode)>=false
-	@Register.register(System.SandBoxMode,int,0)
+	@Register.register(System.SandBoxMode,bool,false)
+:endif
+:if:<Register.registered(System.New BattleV2 Exp)>=false
+	@Register.register(System.New BattleV2 Exp,bool,false)
 :endif
 :if:<Register.registered(pokegear_card_radio)>=false
 	@Register.register(pokegear_card_radio)
