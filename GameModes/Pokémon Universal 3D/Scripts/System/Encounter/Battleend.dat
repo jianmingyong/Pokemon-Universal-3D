@@ -1,5 +1,5 @@
 version=2
-:if:<Register.value(System.New BattleV2 Exp)=true
+:if:<Register.value(System.New BattleV2 Exp)>=true
 	@Register.change(System.Encounter.Experience,0)
 	@Register.change(System.Encounter.Experience.1,0)
 	@Register.change(System.Encounter.Experience.2,0)

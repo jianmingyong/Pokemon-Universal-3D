@@ -176,7 +176,7 @@ version=2
 	@Title.add(> Error ID: 6,2147483648,255,255,255,2,false,0,300)
 	@Title.add(> Error Type: Content Pack,2147483648,255,255,255,2,false,0,325)
 	@Title.add(> Error Description: You did not enable the "Pokémon Universal 3D" content pack from the main menu.,2147483648,255,255,255,2,false,0,350)
-	@Title.add(> Error Solution: Make sure that you have activated "Pokémon Universal 3D" content pack from the main menu.,2147483648,255,255,255,2,false,0,375)
+	@Title.add(> Error Solution: Make sure that you have activated "Pokémon Universal 3D" content pack from the main menu and reopen the game again.,2147483648,255,255,255,2,false,0,375)
 	@Title.add(> ,2147483648,255,255,255,2,false,0,400)
 	@Title.add(> ---------------------------------------------------------------------------------,2147483648,255,255,255,2,false,0,425)
 	@Title.add(> ,2147483648,255,255,255,2,false,0,450)

@@ -1,10 +1,15 @@
 version=2
 @Level.update
 :if:<Register.registered(Options.System.Game ID)>=false <and> <Register.registered(System.Game ID)>=false
+	@Text.log(> Initiate System\Intro\GlobalBackground)
 	@Script.start(System\Intro\GlobalBackground)
+	@Text.log(> Initiate System\Intro\GlobalRegister)
 	@Script.start(System\GlobalRegister)
+	@Text.log(> Initiate System\GlobalRegisterValidation)
 	@Script.start(System\GlobalRegisterValidation)
+	@Text.log(> Initiate System\GlobalOptions)
 	@Script.start(System\GlobalOptions)
+	@Text.log(> Initiate System\GlobalIntro)
 	:if:<Level.mapfile>=System\GlobalIntro.dat
 		@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
 		@Script.start(System\GlobalIntro)
@@ -14,6 +19,8 @@ version=2
 		@Level.update
 		@Script.start(System\GlobalIntro)
 	:endif
+	@Text.log(> Successfully started the game.)
+	:end
 :endif
 :if:<Register.value(System.P3D Version)>=0.50.0 <and> <Register.value(System.Game Version)>=0.0.6 BT 5
 	:if:<Register.value(System.GlobalRegister Validation)>=true

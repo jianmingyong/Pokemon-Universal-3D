@@ -15,7 +15,7 @@
 @Text.log(Error ID: 6)
 @Text.log(Error Type: Content Pack)
 @Text.log(Error Description: You did not enable the "Pokémon Universal 3D" content pack from the main menu.)
-@Text.log(Error Solution: Make sure that you have activated "Pokémon Universal 3D" content pack from the main menu before reporting this bug at "http://pokemon3d.net/forum/threads/6297/".)
+@Text.log(Error Solution: Make sure that you have activated "Pokémon Universal 3D" content pack from the main menu and reopen the game again before reporting this bug at "http://pokemon3d.net/forum/threads/6297/".)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()
