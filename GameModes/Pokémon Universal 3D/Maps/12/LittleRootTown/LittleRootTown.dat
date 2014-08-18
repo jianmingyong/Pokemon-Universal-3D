@@ -311,11 +311,11 @@ RivalHouse.Door.Layer.8.Floor.1
 {"Entity"{ENT[{"ID"{int[0210000052]}}{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[22,-10,8]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\LittleRootTown.RivalRoom.1.dat,2,0.1,8,0]}}{"Rotation"{int[0]}}]}}
 
 NPC.Layer.10
-{"NPC"{NPC[{"Name"{str[024000010]}}{"ID"{int[024000010]}}{"Position"{sngArr[24,0,10]}}{"TextureID"{str[LittleGirl]}}{"Rotation"{int[2]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\LittleRootTown\024000010]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[22,9,5,5]]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Name"{str[024000010]}}{"ID"{int[024000010]}}{"Position"{sngArr[24,0,10]}}{"TextureID"{str[NPC 6]}}{"Rotation"{int[2]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\LittleRootTown\024000010]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[22,9,5,5]]}}{"AnimateIdle"{bool[0]}}]}}
 NPC.Layer.13
-{"NPC"{NPC[{"Name"{str[020000013]}}{"ID"{int[020000013]}}{"Position"{sngArr[20,0,13]}}{"TextureID"{str[28]}}{"Rotation"{int[2]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\LittleRootTown\020000013]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[18,11,5,5]]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Name"{str[020000013]}}{"ID"{int[020000013]}}{"Position"{sngArr[20,0,13]}}{"TextureID"{str[NPC 17]}}{"Rotation"{int[2]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\LittleRootTown\020000013]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[18,11,5,5]]}}{"AnimateIdle"{bool[0]}}]}}
 NPC.Layer.17
-{"NPC"{NPC[{"Name"{str[022000017]}}{"ID"{int[022000017]}}{"Position"{sngArr[22,0,17]}}{"TextureID"{str[8]}}{"Rotation"{int[2]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\LittleRootTown\022000017]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[19,15,5,5]]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Name"{str[022000017]}}{"ID"{int[022000017]}}{"Position"{sngArr[22,0,17]}}{"TextureID"{str[NPC 9]}}{"Rotation"{int[2]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\LittleRootTown\022000017]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[19,15,5,5]]}}{"AnimateIdle"{bool[0]}}]}}
 
 ActionScript.Layer.1
 {"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[018000001]}}{"Position"{sngArr[18,0,1]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\LittleRootTown\018000001]}}{"Rotation"{int[0]}}]}}
