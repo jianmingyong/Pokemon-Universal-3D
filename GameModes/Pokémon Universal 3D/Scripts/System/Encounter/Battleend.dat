@@ -65,5 +65,6 @@ version=2
 		@Text.show(All your Pokémon have gained~Additional <Register.value(System.Encounter.Experience)> EXP from battle.)
 		@Script.start(System\Encounter\BattleCheck)
 	:endif
+	@Script.start(System\Encounter\Battleint)
 :endif
 :end

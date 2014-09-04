@@ -6,7 +6,7 @@ version=2
 		@Entity.warp(010000010,10,-0.5,10)
 	:endif
 	:if:<NPC.exists(013000008)>=false
-		@NPC.spawn(13,0,8,0,,3,false,2,Mom,013000008,Still)
+		@NPC.spawn(13,0,8,0,,NPC 215,false,2,NPC 215,013000008,Still)
 	:endif
 	@Player.warp(12,0,10)
 	@Level.update
@@ -84,7 +84,7 @@ version=2
 	@Entity.remove(018000001)
 	@Entity.remove(019000001)
 	:if:<NPC.exists(013000009)>=false
-		@NPC.spawn(13,0,9,1,12\LittleRootTown\013000009,3,false,2,,013000009,Still)
+		@NPC.spawn(13,0,9,1,12\LittleRootTown\013000009,NPC 215,false,2,,013000009,Still)
 	:endif
 	:end
 :endif

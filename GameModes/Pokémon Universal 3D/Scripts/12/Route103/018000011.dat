@@ -12,13 +12,19 @@
 @Sound.play(Select)
 @Text.show(I'll give you a taste of what being~a TRAINER is like.)
 :if:<Register.value(System.12.Starter)>=252
+	@Script.start(System\Encounter\Battleint)
 	@Battle.trainer(12\Route103\018000011.255)
+	@Script.start(System\Encounter\Battleend)
 :endif
 :if:<Register.value(System.12.Starter)>=255
+	@Script.start(System\Encounter\Battleint)
 	@Battle.trainer(12\Route103\018000011.258)
+	@Script.start(System\Encounter\Battleend)
 :endif
 :if:<Register.value(System.12.Starter)>=258
+	@Script.start(System\Encounter\Battleint)
 	@Battle.trainer(12\Route103\018000011.252)
+	@Script.start(System\Encounter\Battleend)
 :endif
 @Music.play(P_R_S_E <Rival.name>'s Theme)
 @Text.show(<Rival.name>: I think I know why my dad has~an eye out for you now.)

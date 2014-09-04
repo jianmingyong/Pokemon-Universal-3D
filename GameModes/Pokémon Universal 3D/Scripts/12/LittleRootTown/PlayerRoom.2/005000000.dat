@@ -7,7 +7,7 @@
 	@Sound.play(Select)
 	@Text.show(Due to the Game Limitation, it will~be using your system default time.)
 	:if:<NPC.exists(005000000)>=false
-		@NPC.spawn(7,0,0,0,,3,false,2,Mom,005000000,Still)
+		@NPC.spawn(7,0,0,0,,NPC 215,false,2,NPC 215,005000000,Still)
 	:endif
 	@NPC.move(005000000,1)
 	@NPC.turn(005000000,1)

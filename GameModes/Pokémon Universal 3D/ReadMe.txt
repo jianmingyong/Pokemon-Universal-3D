@@ -15,7 +15,7 @@ Table of contents:
 ==================================================
 1.	License
 ==================================================
-Pokémon Universal 3D v0.49.1.0.0.6
+Pokémon Universal 3D v0.50.0.0.0.6
 Copyright © 2014 jianmingyong
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.

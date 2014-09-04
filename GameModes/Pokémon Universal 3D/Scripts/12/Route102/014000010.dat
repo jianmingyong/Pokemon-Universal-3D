@@ -16,13 +16,19 @@
 @Sound.play(Select)
 @Text.show(Lets give it a shot!)
 :if:<Register.value(System.12.Starter)>=252
+	@Script.start(System\Encounter\Battleint)
 	@Battle.trainer(12\Route102\015000010.M.258)
+	@Script.start(System\Encounter\Battleend)
 :endif
 :if:<Register.value(System.12.Starter)>=255
+	@Script.start(System\Encounter\Battleint)
 	@Battle.trainer(12\Route102\015000010.M.252)
+	@Script.start(System\Encounter\Battleend)
 :endif
 :if:<Register.value(System.12.Starter)>=258
+	@Script.start(System\Encounter\Battleint)
 	@Battle.trainer(12\Route102\015000010.M.255)
+	@Script.start(System\Encounter\Battleend)
 :endif
 @Music.play(PMD_EOT_D_S Through The Sea Of Time)
 @Text.show(jianmingyong: Thank you for the battle,~I thought it would be easy.)

@@ -1,4 +1,5 @@
 ﻿version=2
 @Battle.starttrainer(12\Route102\025000023)
+@Script.start(System\Encounter\Battleend)
 @Script.start(System\GlobalMain)
 :end
