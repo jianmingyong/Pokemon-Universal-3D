@@ -1,8 +1,0 @@
-SetAttackBaseDamage(183, 35)
-SetAttackMaxPP(183, 30)
-SetAttackCategory(183, 0)
-SetAttackContestCategory(183, 0)
-SetAttackAttackCategory(183, 0)
-SetAttackType(183, Attacks_GetTypeIndexByName("fighting"))
-SetAttackPriority(183, 0)
-SetAttackAccuracy(183, 255)
