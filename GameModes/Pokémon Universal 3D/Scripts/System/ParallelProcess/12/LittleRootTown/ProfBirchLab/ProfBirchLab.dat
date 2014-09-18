@@ -58,7 +58,18 @@ version=2
 		@Sound.play(Select)
 		@Text.show(My kid, <Rival.name>, is also studying~POKéMON while helping me out.)
 		@Sound.play(Select)
-		@Script.start(System\ParallelProcess\12\LittleRootTown\ProfBirchLab\ProfBirchLab.1)
+		@Script.start(Function\Return.false)
+		:while:<System.return>=false
+		@Text.show(<Player.name>, don't you think it might be~a good idea to go see <Rival.name>?)
+			@Options.setcancelindex(1)
+			@Options.show(YES,NO)
+			:when:YES
+				@Text.show(PROF. BIRCH: Great!~<Rival.name> should be happy, too.)
+				@Script.start(Function\Return.true)
+			:when:NO
+				@Text.show(PROF. BIRCH: Oh, don't be that way.~You should go meet my kid.)
+			:endwhen
+		:endwhile
 		@Text.show(Get <Rival.name> to teach you what it~means to be a TRAINER.)
 		@Register.change(12\LittleRootTown\ProfBirchLab,2)
 		@Register.change(12\LittleRootTown\RivalRoom.1\008000006,2)

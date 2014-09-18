@@ -211,7 +211,4 @@ version=2
 	@Title.add(> Crash Log Saved at: Pokemon\Log.dat,2147483648,255,255,255,2,false,0,500)
 	@Title.add(> "For more info, please refer to the crash log in Pokemon\Log.dat",2147483648,255,255,255,2,false,0,525)
 :endif
-:while:<Storage.count(integer)>>0
-	@Level.wait(2147483647)
-:endwhile
 :end
