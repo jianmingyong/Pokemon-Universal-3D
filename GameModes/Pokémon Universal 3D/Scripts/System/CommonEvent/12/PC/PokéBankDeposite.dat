@@ -8,32 +8,31 @@
 	:end
 :endif
 :if:<Player.money>>0
-	:if:<not><Player.money>>2147483648
 	@Screen.input(<Player.money>,0,<Player.money>,10)
 :endif
 @Sound.play(Select)
-@Text.show(Are you sure you want to deposite~$<System.lastinput>?)
+@Text.show(Are you sure you want to deposite~$<Math.clamp(<System.lastinput>,0,<Player.money>)>?)
 @Options.setcancelindex(1)
 @Options.show(YES,NO)
 :when:YES
 	@Sound.play(Select)
-	:if:<Math.isint(<System.lastinput>.0)>=false
+	:if:<Math.isint(<Math.clamp(<System.lastinput>,0,<Player.money>)>.0)>=false
 		@Text.show(Please insert a integer number.)
 		@Script.start(System\CommonEvent\12\PC\PokéBankDeposite)
 		:end
 	:endif
-	:if:<Math.sng(<Register.value(System.BankMoney)>+<System.lastinput>)>>2147483648
+	:if:<Math.sng(<Register.value(System.BankMoney)>+<Math.clamp(<System.lastinput>,0,<Player.money>)>)>>2147483648
 		@Text.show(Too much moeney inserted into the bank.)
 		@Script.start(System\CommonEvent\12\PC\PokéBankDeposite)
 		:end
 	:endif
-	:if:<Player.money><<System.lastinput>
+	:if:<Player.money><<Math.clamp(<System.lastinput>,0,<Player.money>)>
 		@Text.show(You do not have that much money.)
 		@Script.start(System\CommonEvent\12\PC\PokéBankDeposite)
 		:end
 	:endif
-	@Player.addmoney(-<System.lastinput>)
-	@Register.change(System.BankMoney,<Register.value(System.BankMoney)>+<System.lastinput>)
+	@Player.addmoney(-<Math.clamp(<System.lastinput>,0,<Player.money>)>)
+	@Register.change(System.BankMoney,<Register.value(System.BankMoney)>+<Math.clamp(<System.lastinput>,0,<Player.money>)>)
 	@Player.save
 	@Sound.play(Save)
 	@Text.show(You have deposited successfully.)

@@ -1,0 +1,12 @@
+version=2
+:if:<Register.value(System.SandBoxMode)>=false
+	:if:<Register.registered(System.EncounterStep.fix)>=false
+		@Register.change(System.EncounterStep.num2,12)
+		@Register.change(System.EncounterStep.num1,5)
+		@Register.register(System.EncounterStep.fix)
+	:endif
+	@Register.change(System.EncounterStep.num2,<Math.clamp(<Register.value(System.EncounterStep.num2)>-1,0,12)>)
+:else
+	@Register.change(System.EncounterStep.num2,12)
+:endif
+:end

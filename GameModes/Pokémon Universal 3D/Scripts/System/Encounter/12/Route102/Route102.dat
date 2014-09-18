@@ -1,11 +1,6 @@
 version=2
-:if:<Register.registered(System.EncounterStep.fix)>=false
-	@Register.change(System.EncounterStep.num2,12)
-	@Register.change(System.EncounterStep.num1,5)
-	@Register.register(System.EncounterStep.fix)
-:endif
-@Register.change(System.EncounterStep.num2,<Register.value(System.EncounterStep.num2)>-1)
-:if:<System.random(0,<Register.value(System.EncounterStep.num2)>)>=<System.random(0,2)> <or> <Register.value(System.EncounterStep.num2)>=0
+@Script.start(System\Encounter\BattleStep)
+:if:<System.random(0,<Register.value(System.EncounterStep.num2)>)>=<System.random(0,2)> <and> <Register.value(System.SandBoxMode)>=false
 	:if:<Pokemon.count>=0
 		@Pokemon.add(999,100)
 		@Battle.wild(999,1)
