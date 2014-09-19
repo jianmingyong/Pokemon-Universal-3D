@@ -1,0 +1,217 @@
+version=2
+:if:<Register.registered(System\Intro\15\Intro)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\15\Intro" does not exist.])
+:else
+	:if:<not><Register.value(System\Intro\15\Intro)>=1
+		:if:<not><Register.value(System\Intro\15\Intro)>=2
+			:if:<Register.registered(System.ErrorLogInit)>=false
+				@Register.change(System.ErrorLog.ErrorID2,2)
+				@Script.start(System\GlobalErrorLog)
+				@Register.register(System.ErrorLogInit)
+			:endif
+			@Text.log([Register validation result: "System\Intro\15\Intro" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\15\Intro)>])
+		:endif
+	:endif
+:endif
+:if:<Register.registered(System\Intro\15\Intro.1)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\15\Intro.1" does not exist.])
+:else
+	:if:<not><Register.value(System\Intro\15\Intro.1)>=1
+		:if:<not><Register.value(System\Intro\15\Intro.1)>=2
+			:if:<Register.registered(System.ErrorLogInit)>=false
+				@Register.change(System.ErrorLog.ErrorID2,2)
+				@Script.start(System\GlobalErrorLog)
+				@Register.register(System.ErrorLogInit)
+			:endif
+			@Text.log([Register validation result: "System\Intro\15\Intro.1" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\15\Intro.1)>])
+		:endif
+	:endif
+:endif
+:if:<Register.registered(System\Intro\15\Intro.2)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\15\Intro.2" does not exist.])
+:else
+	:if:<not><Register.value(System\Intro\15\Intro.2)>=1
+		:if:<not><Register.value(System\Intro\15\Intro.2)>=2
+			:if:<Register.registered(System.ErrorLogInit)>=false
+				@Register.change(System.ErrorLog.ErrorID2,2)
+				@Script.start(System\GlobalErrorLog)
+				@Register.register(System.ErrorLogInit)
+			:endif
+			@Text.log([Register validation result: "System\Intro\15\Intro.2" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\15\Intro.2)>])
+		:endif
+	:endif
+:endif
+:if:<Register.registered(System\Intro\15\Intro.3)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\15\Intro.3" does not exist.])
+:else
+	:if:<not><Register.value(System\Intro\15\Intro.3)>=1
+		:if:<not><Register.value(System\Intro\15\Intro.3)>=2
+			:if:<Register.registered(System.ErrorLogInit)>=false
+				@Register.change(System.ErrorLog.ErrorID2,2)
+				@Script.start(System\GlobalErrorLog)
+				@Register.register(System.ErrorLogInit)
+			:endif
+			@Text.log([Register validation result: "System\Intro\15\Intro.3" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\15\Intro.3)>])
+		:endif
+	:endif
+:endif
+:if:<Register.registered(System\Intro\15\Intro.4)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\15\Intro.4" does not exist.])
+:else
+	:if:<not><Register.value(System\Intro\15\Intro.4)>=1
+		:if:<not><Register.value(System\Intro\15\Intro.4)>=2
+			:if:<Register.registered(System.ErrorLogInit)>=false
+				@Register.change(System.ErrorLog.ErrorID2,2)
+				@Script.start(System\GlobalErrorLog)
+				@Register.register(System.ErrorLogInit)
+			:endif
+			@Text.log([Register validation result: "System\Intro\15\Intro.4" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\15\Intro.4)>])
+		:endif
+	:endif
+:endif
+:if:<Register.registered(System\Intro\15\Intro.5)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\15\Intro.5" does not exist.])
+:else
+	:if:<not><Register.value(System\Intro\15\Intro.5)>=1
+		:if:<not><Register.value(System\Intro\15\Intro.5)>=2
+			:if:<Register.registered(System.ErrorLogInit)>=false
+				@Register.change(System.ErrorLog.ErrorID2,2)
+				@Script.start(System\GlobalErrorLog)
+				@Register.register(System.ErrorLogInit)
+			:endif
+			@Text.log([Register validation result: "System\Intro\15\Intro.5" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\15\Intro.5)>])
+		:endif
+	:endif
+:endif
+:if:<Register.registered(System\Intro\15\Intro.6)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\15\Intro.6" does not exist.])
+:else
+	:if:<not><Register.value(System\Intro\15\Intro.6)>=1
+		:if:<not><Register.value(System\Intro\15\Intro.6)>=2
+			:if:<Register.registered(System.ErrorLogInit)>=false
+				@Register.change(System.ErrorLog.ErrorID2,2)
+				@Script.start(System\GlobalErrorLog)
+				@Register.register(System.ErrorLogInit)
+			:endif
+			@Text.log([Register validation result: "System\Intro\15\Intro.6" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\15\Intro.6)>])
+		:endif
+	:endif
+:endif
+:if:<Register.registered(System\Intro\15\Intro.7)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\15\Intro.7" does not exist.])
+:else
+	:if:<not><Register.value(System\Intro\15\Intro.7)>=1
+		:if:<not><Register.value(System\Intro\15\Intro.7)>=2
+			:if:<Register.registered(System.ErrorLogInit)>=false
+				@Register.change(System.ErrorLog.ErrorID2,2)
+				@Script.start(System\GlobalErrorLog)
+				@Register.register(System.ErrorLogInit)
+			:endif
+			@Text.log([Register validation result: "System\Intro\15\Intro.7" cannot be less than 1 and more than 2. Current value: <Register.value(System\Intro\15\Intro.7)>])
+		:endif
+	:endif
+:endif
+:if:<Register.registered(System\Intro\15\LostForest.Season)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\15\LostForest.Season" does not exist.])
+:else
+	:if:<not><Register.value(System\Intro\15\LostForest.Season)>=Spring
+		:if:<not><Register.value(System\Intro\15\LostForest.Season)>=Summer
+			:if:<not><Register.value(System\Intro\15\LostForest.Season)>=Fall
+				:if:<not><Register.value(System\Intro\15\LostForest.Season)>=Winter
+					:if:<Register.registered(System.ErrorLogInit)>=false
+						@Register.change(System.ErrorLog.ErrorID2,2)
+						@Script.start(System\GlobalErrorLog)
+						@Register.register(System.ErrorLogInit)
+					:endif
+					@Text.log([Register validation result: "System\Intro\15\LostForest.Season" must be "Spring, Summer, Fall or Winter." Current value: <Register.value(System\Intro\15\LostForest.Season)>])
+				:endif
+			:endif
+		:endif
+	:endif
+:endif
+:if:<Register.registered(System\Intro\15\LostForest.Puzzle)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\15\LostForest.Puzzle" does not exist.])
+:else
+	:if:<not><Register.value(System\Intro\15\LostForest.Puzzle)>=1
+		:if:<not><Register.value(System\Intro\15\LostForest.Puzzle)>=2
+			:if:<not><Register.value(System\Intro\15\LostForest.Puzzle)>=3
+				:if:<Register.registered(System.ErrorLogInit)>=false
+					@Register.change(System.ErrorLog.ErrorID2,2)
+					@Script.start(System\GlobalErrorLog)
+					@Register.register(System.ErrorLogInit)
+				:endif
+				@Text.log([Register validation result: "System\Intro\15\LostForest.Puzzle" cannot be less than 1 and more than 3. Current value: <Register.value(System\Intro\15\LostForest.Puzzle)>])
+			:endif
+		:endif
+	:endif
+:endif
+:if:<Register.registered(System\Intro\15\LostForest.AttemptWrong)>=false
+	:if:<Register.registered(System.ErrorLogInit)>=false
+		@Register.change(System.ErrorLog.ErrorID2,2)
+		@Script.start(System\GlobalErrorLog)
+		@Register.register(System.ErrorLogInit)
+	:endif
+	@Text.log([Register validation result: "System\Intro\15\LostForest.AttemptWrong" does not exist.])
+:else
+	:if:<not><Register.value(System\Intro\15\LostForest.AttemptWrong)>=true
+		:if:<not><Register.value(System\Intro\15\LostForest.AttemptWrong)>=false
+			:if:<Register.registered(System.ErrorLogInit)>=false
+				@Register.change(System.ErrorLog.ErrorID2,2)
+				@Script.start(System\GlobalErrorLog)
+				@Register.register(System.ErrorLogInit)
+			:endif
+			@Text.log([Register validation result: "System\Intro\15\LostForest.AttemptWrong" must be true or false. Current value: <Register.value(System\Intro\15\LostForest.AttemptWrong)>])
+		:endif
+	:endif
+:endif
+:end

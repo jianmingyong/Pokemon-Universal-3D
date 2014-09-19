@@ -1,0 +1,192 @@
+version=2
+@Text.show(Are you sure you want to walk this way?)
+@Options.setcancelindex(1)
+@Options.show(Yes,No)
+:when:No
+	@Player.turnto(0)
+	@Player.move(1)
+:when:Yes
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=1 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Spring
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Summer.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		:if:<not><Register.value(System\Intro\15\LostForest.NumberofAttempts)>=0
+			@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+		:else
+			@Register.change(System\Intro\15\LostForest.AttemptWrong,false)
+		:endif
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		@Register.change(System\Intro\15\LostForest.Season,Summer)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=2 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Spring
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Summer.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		:if:<not><Register.value(System\Intro\15\LostForest.NumberofAttempts)>=1
+			@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+		:else
+			@Register.change(System\Intro\15\LostForest.AttemptWrong,false)
+		:endif
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		@Register.change(System\Intro\15\LostForest.Season,Summer)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=3 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Spring
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Summer.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		@Register.change(System\Intro\15\LostForest.Season,Summer)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=1 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Summer
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Spring.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		@Register.change(System\Intro\15\LostForest.Season,Spring)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=2 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Summer
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Spring.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		@Register.change(System\Intro\15\LostForest.Season,Spring)
+		@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=3 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Summer
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Spring.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		:if:<not><Register.value(System\Intro\15\LostForest.NumberofAttempts)>=4
+			@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+		:else
+			@Player.warp(System\GlobalIntro.dat,0,0,0,0)
+			@Level.update
+			@Script.start(System\Intro\GlobalBackground)
+			@Script.start(System\GlobalIntro)
+		:endif
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		@Register.change(System\Intro\15\LostForest.Season,Spring)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=1 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Fall
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Winter.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		@Register.change(System\Intro\15\LostForest.Season,Winter)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=2 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Fall
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Winter.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		:if:<not><Register.value(System\Intro\15\LostForest.NumberofAttempts)>=3
+			@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+			@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		:else
+			@Register.change(System\Intro\15\LostForest.AttemptWrong,false)
+			@Register.change(System\Intro\15\LostForest.Puzzle,3)
+			@Register.change(System\Intro\15\LostForest.NumberofAttempts,0)
+		:endif
+		@Register.change(System\Intro\15\LostForest.Season,Winter)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=3 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Fall
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Winter.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		@Register.change(System\Intro\15\LostForest.Season,Winter)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=1 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Winter
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Fall.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		@Register.change(System\Intro\15\LostForest.Season,Fall)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=2 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Winter
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Fall.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		@Register.change(System\Intro\15\LostForest.Season,Fall)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.Puzzle)>=3 <and> <Register.value(System\Intro\15\LostForest.AttemptWrong)>=false <and> <Register.value(System\Intro\15\LostForest.Season)>=Winter
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Fall.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		:if:<not><Register.value(System\Intro\15\LostForest.NumberofAttempts)>=0
+			@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
+		:else
+			@Register.change(System\Intro\15\LostForest.AttemptWrong,false)
+		:endif
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
+		@Register.change(System\Intro\15\LostForest.Season,Fall)
+		:end
+	:endif
+	:if:<Register.value(System\Intro\15\LostForest.AttemptWrong)>=true
+		@Player.move(4)
+		@Screen.fadeout
+		@Player.warp(15\LostForest\LostForest.Spring.dat,13,0,25,2)
+		@Level.update
+		@Screen.fadein
+		@Player.move(12)
+		@Register.change(System\Intro\15\LostForest.AttemptWrong,false)
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,0)
+		@Register.change(System\Intro\15\LostForest.Season,Spring)
+		@Register.change(System\Intro\15\LostForest.Puzzle,1)
+		:end
+	:endif
+:endwhen
+:end

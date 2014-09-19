@@ -14,10 +14,15 @@ version=2
 	@Text.show(Welcome to Pokémon Mystery Dungeon~Universal Rescue Team)
 	@Text.show(Please choose an option.)
 	@Options.setcancelindex(1)
-	@Options.show(Nothing,Exit)
-	:when:Nothing
-		@Register.change(Options.System.Game ID,12)
-		@Script.start(System\GlobalMain)
+	@Options.show(Lost Forest,Exit)
+	:when:Lost Forest
+		@Player.warp(15\LostForest\LostForest.Spring.dat,13,0.1,25,0)
+		@Level.update
+		@Player.move(12)
+		@Register.change(System\Intro\15\LostForest.AttemptWrong,false)
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,0)
+		@Register.change(System\Intro\15\LostForest.Season,Spring)
+		@Register.change(System\Intro\15\LostForest.Puzzle,1)
 	:when:Exit
 		@Register.change(Options.System.Game ID,12)
 		@Script.start(System\GlobalMain)

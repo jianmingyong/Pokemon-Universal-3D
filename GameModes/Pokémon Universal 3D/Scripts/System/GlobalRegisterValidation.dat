@@ -2,6 +2,9 @@ version=2
 :if:<Register.value(System.Game ID)>=12
 	@Script.start(System\RegisterValidation\12)
 :endif
+:if:<Register.value(System.Game ID)>=15
+	@Script.start(System\RegisterValidation\15)
+:endif
 :if:<Register.registered(System.ErrorLogInit)>=true
 	@Register.change(System.ErrorLog.ErrorID2,3)
 	@Register.unregister(System.ErrorLogInit)

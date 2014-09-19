@@ -5,9 +5,13 @@ version=2
 	@Level.update
 :endwhile
 @Music.play(PMD_EOT_D_S Pokemon Exploration Team Theme)
-@Title.add(Game Verification System,2147483648,255,255,255,2,true,0,-255)
-@Title.add(This is a game verification system. You are require to answer them only once.,2147483648,255,255,255,2,true,0,-25.5)
-@Title.add(Please answer them truefully. It will affect the game based on your answer.,2147483648,255,255,255,2,true,0,25.5)
+@Title.add(Game Verification System,2147483647,255,255,255,2,true,0,-280)
+@Title.add(This is a game verification system. You are require to answer them only once.,2147483647,255,255,255,2,true,0,-200)
+@Title.add(Please answer them truefully. It will affect the game based on your answer.,2147483647,255,255,255,2,true,0,-160)
+@Title.add(Pre-Check List:,2147483647,255,255,255,2,true,0,-80)
+@Title.add(1. Activate Pokémon Universal 3D Content Pack.,2147483647,255,255,255,2,true,0,-40)
+@Title.add(2. Restart the game through the launcher after activating.,2147483647,255,255,255,2,true,0,0)
+@Title.add("If you have not done so, please do it as you might experience glitches.",2147483647,255,255,255,2,true,0,80)
 @Text.show(1. Can you hear the background music?)
 @Options.setcancelindex(1)
 @Options.show(YES,NO)
@@ -34,7 +38,7 @@ version=2
 :when:NO
 	@Register.change(System.Skip Intro,0)
 :endwhen
-@Text.show(4. Do you want to skip starting Mom~Story?)
+@Text.show(4. Do you want to skip starting~Story?)
 @Options.setcancelindex(1)
 @Options.show(YES,NO)
 :when:YES

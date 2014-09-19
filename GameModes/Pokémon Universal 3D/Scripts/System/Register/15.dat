@@ -23,4 +23,16 @@ version=2
 :if:<Register.registered(System\Intro\15\Intro.7)>=false
 	@Register.register(System\Intro\15\Intro.7,int,1)
 :endif
+:if:<Register.registered(System\Intro\15\LostForest.Season)>=false
+	@Register.register(System\Intro\15\LostForest.Season,str,Spring)
+:endif
+:if:<Register.registered(System\Intro\15\LostForest.Puzzle)>=false
+	@Register.register(System\Intro\15\LostForest.Puzzle,int,1)
+:endif
+:if:<Register.registered(System\Intro\15\LostForest.AttemptWrong)>=false
+	@Register.register(System\Intro\15\LostForest.AttemptWrong,str,false)
+:endif
+:if:<Register.registered(System\Intro\15\LostForest.NumberofAttempts)>=false
+	@Register.register(System\Intro\15\LostForest.NumberofAttempts,int,0)
+:endif
 :end

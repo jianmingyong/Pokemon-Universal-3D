@@ -1,17 +1,21 @@
 version=2
 @Level.update
 :if:<Register.registered(Options.System.Game ID)>=false <and> <Register.registered(System.Game ID)>=false
-	@Script.start(System\Intro\GlobalBackground)
-	@Script.start(System\GlobalRegister)
-	@Script.start(System\GlobalRegisterValidation)
-	@Script.start(System\GlobalOptions)
 	:if:<Level.mapfile>=System\GlobalIntro.dat
+		@Script.start(System\Intro\GlobalBackground)
+		@Script.start(System\GlobalRegister)
+		@Script.start(System\GlobalRegisterValidation)
+		@Script.start(System\GlobalOptions)
 		@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
 		@Script.start(System\GlobalIntro)
 	:else
-		@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
 		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
 		@Level.update
+		@Script.start(System\Intro\GlobalBackground)
+		@Script.start(System\GlobalRegister)
+		@Script.start(System\GlobalRegisterValidation)
+		@Script.start(System\GlobalOptions)
+		@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
 		@Script.start(System\GlobalIntro)
 	:endif
 	:end
