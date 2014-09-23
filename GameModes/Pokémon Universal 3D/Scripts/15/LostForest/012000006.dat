@@ -1,5 +1,5 @@
 ﻿version=2
-@Text.show(Are you sure you want to walk this way?)
+@Text.show(Are you sure you want to walk this~way?)
 @Options.setcancelindex(1)
 @Options.show(Yes,No)
 :when:No
