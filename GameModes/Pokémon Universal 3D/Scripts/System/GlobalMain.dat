@@ -1,14 +1,38 @@
 version=2
 @Level.update
-:if:<Register.registered(Options.System.Game ID)>=false <and> <Register.registered(System.Game ID)>=false
+:if:<Storage.count(int)>=0
+	@Script.start(System\GlobalRegister)
+	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
+	:if:<Register.value(System.GlobalRegister Validation)>=true
+		@Script.start(System\GlobalRegisterValidation)
+	:endif
+	:if:<not><Register.value(System.P3D Version)>=0.50.1 <or> <not><Register.value(System.Game Version)>=0.0.6 BT 7
+		@Register.change(System.ErrorLog.ErrorID1,2)
+		@Script.start(System\GlobalErrorLog)
+		@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+		:end
+	:endif
+	@Script.start(System\GlobalOptions)
+	@Script.start(System\GlobalBankInterest)
+	@Script.start(System\GlobalMysteryEvents)
+	:if:<Register.registered(System.EncounterStep.fix)=true
+		@Register.unregister(System.EncounterStep.fix)
+	:endif
+	@Player.save
+	@Storage.set(int,System.GlobalMain,0)
+:endif
+:if:<not><Register.value(Options.System.Game ID)>=<Register.value(System.Game ID)>
 	:if:<Level.mapfile>=System\GlobalIntro.dat
+		@Screen.fadeout
 		@Script.start(System\Intro\GlobalBackground)
 		@Script.start(System\GlobalRegister)
 		@Script.start(System\GlobalRegisterValidation)
 		@Script.start(System\GlobalOptions)
 		@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
+		@Screen.fadein
 		@Script.start(System\GlobalIntro)
 	:else
+		@Screen.fadeout
 		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
 		@Level.update
 		@Script.start(System\Intro\GlobalBackground)
@@ -16,68 +40,9 @@ version=2
 		@Script.start(System\GlobalRegisterValidation)
 		@Script.start(System\GlobalOptions)
 		@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
+		@Screen.fadein
 		@Script.start(System\GlobalIntro)
 	:endif
-	:end
 :endif
-:if:<Register.value(System.P3D Version)>=0.50.1 <and> <Register.value(System.Game Version)>=0.0.6 BT 7
-	:if:<Register.value(System.GlobalRegister Validation)>=true
-		@Script.start(System\GlobalRegisterValidation)
-	:endif
-	@Script.start(System\GlobalOptions)
-	:if:<Storage.count(Integer)>=0
-		@Script.start(System\GlobalBankInterest)
-		@Script.start(System\GlobalMysteryEvents)
-		:if:<Register.registered(System.EncounterStep.fix)=true
-			@Register.unregister(System.EncounterStep.fix)
-		:endif
-		@Player.save
-		@Storage.set(integer,System.GlobalMain,0)
-	:endif
-	:if:<not><Register.value(Options.System.Game ID)>=<Register.value(System.Game ID)>
-		:if:<Level.mapfile>=System\GlobalIntro.dat
-			@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
-			@Script.start(System\GlobalIntro)
-		:else
-			@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
-			@Player.warp(System\GlobalIntro.dat,0,0,0,0)
-			@Level.update
-			@Script.start(System\Intro\GlobalBackground)
-			@Script.start(System\GlobalIntro)
-		:endif
-	:endif
-	@Script.start(System\GlobalParallelProcess)
-	:end
-:else
-	@Script.start(System\GlobalRegister)
-	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
-	@Script.start(System\GlobalRegisterValidation)
-	:if:<not><Register.value(System.P3D Version)>=0.50.1
-		:if:<not><Register.value(System.Game Version)>=0.0.6 BT 7
-			@Register.change(System.ErrorLog.ErrorID1,2)
-			@Script.start(System\GlobalErrorLog)
-			@Player.warp(System\GlobalValidation.dat,0,0,0,0)
-			:end
-		:endif
-	:endif
-	@Script.start(System\GlobalOptions)
-	:if:<not><Register.value(Options.System.Game ID)>=<Register.value(System.Game ID)>
-		:if:<Level.mapfile>=System\GlobalIntro.dat
-			@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
-			@Script.start(System\GlobalIntro)
-		:else
-			@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
-			@Player.warp(System\GlobalIntro.dat,0,0,0,0)
-			@Level.update
-			@Script.start(System\Intro\GlobalBackground)
-			@Script.start(System\GlobalIntro)
-		:endif
-	:endif
-	@Script.start(System\GlobalParallelProcess)
-	@Script.start(System\GlobalBankInterest)
-	@Script.start(System\GlobalMysteryEvents)
-	:if:<Register.registered(System.EncounterStep.fix)=true
-		@Register.unregister(System.EncounterStep.fix)
-	:endif
-	:end
-:endif
+@Script.start(System\GlobalParallelProcess)
+:end

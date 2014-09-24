@@ -30,7 +30,7 @@ version=2
 	@Register.register(System\Intro\15\LostForest.Puzzle,int,1)
 :endif
 :if:<Register.registered(System\Intro\15\LostForest.AttemptWrong)>=false
-	@Register.register(System\Intro\15\LostForest.AttemptWrong,str,false)
+	@Register.register(System\Intro\15\LostForest.AttemptWrong,bool,false)
 :endif
 :if:<Register.registered(System\Intro\15\LostForest.NumberofAttempts)>=false
 	@Register.register(System\Intro\15\LostForest.NumberofAttempts,int,0)

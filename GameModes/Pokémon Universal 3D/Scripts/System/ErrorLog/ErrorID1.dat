@@ -6,7 +6,7 @@ version=2
 @Text.log(Message: The update system fails to update. This might be triggered if your save is corrupted or a syntax error.)
 @Text.log(HelpLink: No helplink available.)
 @Text.log(Data: "Pokemon\Save\<Player.name>*\Register.dat")
-@Text.log([Update Validation result: "System.Game Version" must be 0.0.5 Current value: <Register.value(System.Game Version)>])
+@Text.log([Update Validation result: "System.Game Version" must be 0.0.6 BT 7 Current value: <Register.value(System.Game Version)>])
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()

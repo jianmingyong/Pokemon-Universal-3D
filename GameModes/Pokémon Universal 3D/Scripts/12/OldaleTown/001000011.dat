@@ -1,12 +1,12 @@
 version=2
-:if:<Register.value(12\OldaleTown\000000011)>=1
+:if:<Register.value(12\OldaleTown\001000011)>=1
 	@Sound.play(Select)
 	@Text.show(I just discovered the footprints of~a rare POKéMON!)
 	@Sound.play(Select)
 	@Text.show(Wait until I finish sketching~them, okay?)
 	:end
 :endif
-:if:<Register.value(12\OldaleTown\000000011)>=2
+:if:<Register.value(12\OldaleTown\001000011)>=2
 	@Sound.play(Select)
 	@Text.show(I finished sketching the footprints of~a rare POKéMON.)
 	@Sound.play(Select)
@@ -15,6 +15,6 @@ version=2
 :endif
 @Player.save
 @Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,12\OldaleTown\000000011.dat)
+@Register.change(System.ActionScript,12\OldaleTown\001000011.dat)
 @Player.warp(System\GlobalValidation.dat,0,0,0,0)
 :end

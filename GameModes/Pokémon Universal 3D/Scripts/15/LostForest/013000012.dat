@@ -51,7 +51,7 @@ version=2
 	@Sound.play(Select)
 	@Text.show(E: .......... ..........~W: .......... Flowers)
 	@Sound.play(Select)
-	@Text.show(Spring, summer, fall and winter...)
+	@Text.show(Spring, Summer, Fall and Winter...)
 	@Sound.play(Select)
 	@Text.show(The path will be opened.~Fail, and all will be undone.)
 :endif
@@ -93,7 +93,7 @@ version=2
 	@Sound.play(Select)
 	@Text.show(E: .......... ..........~W: .......... ..........)
 	@Sound.play(Select)
-	@Text.show(fall, Spring, winter and summer...)
+	@Text.show(Fall, Spring, Winter and Summer...)
 	@Sound.play(Select)
 	@Text.show(The path will be opened.~Fail, and all will be undone.)
 :endif
