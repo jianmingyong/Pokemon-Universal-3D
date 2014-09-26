@@ -1,4 +1,14 @@
 version=2
+# This is a API for Random Dugeon Generator.
+
+# Registers Used:
+# Prefix: System\Intro\15\MysteryDungeon.
+
+# MinRoomSizeX
+# MaxRoomSizeX
+# MinRoomSizeZ
+# MaxRoomSizeZ
+
 # Define Room Size.
 @Register.change(System\Intro\15\MysteryDungeon.MinRoomSizeX,5)
 @Register.change(System\Intro\15\MysteryDungeon.MaxRoomSizeX,10)
