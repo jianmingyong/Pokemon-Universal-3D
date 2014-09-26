@@ -35,4 +35,39 @@ version=2
 :if:<Register.registered(System\Intro\15\LostForest.NumberofAttempts)>=false
 	@Register.register(System\Intro\15\LostForest.NumberofAttempts,int,0)
 :endif
+
+# Mystery Dungeon Test.
+:if:<Register.registered(System\Intro\15\MysteryDungeon.MinRoomSizeX)>=false
+	@Register.register(System\Intro\15\MysteryDungeon.MinRoomSizeX,int,0)
+:endif
+:if:<Register.registered(System\Intro\15\MysteryDungeon.MinRoomSizeY)>=false
+	@Register.register(System\Intro\15\MysteryDungeon.MinRoomSizeZ,int,0)
+:endif
+:if:<Register.registered(System\Intro\15\MysteryDungeon.MaxRoomSizeX)>=false
+	@Register.register(System\Intro\15\MysteryDungeon.MaxRoomSizeX,int,0)
+:endif
+:if:<Register.registered(System\Intro\15\MysteryDungeon.MaxRoomSizeY)>=false
+	@Register.register(System\Intro\15\MysteryDungeon.MaxRoomSizeZ,int,0)
+:endif
+:if:<Register.registered(System\Intro\15\MysteryDungeon.FinalRoomSizeX)>=false
+	@Register.register(System\Intro\15\MysteryDungeon.FinalRoomSizeX,int,0)
+:endif
+:if:<Register.registered(System\Intro\15\MysteryDungeon.FinalRoomSizeZ)>=false
+	@Register.register(System\Intro\15\MysteryDungeon.FinalRoomSizeZ,int,0)
+:endif
+:if:<Register.registered(System\Intro\15\MysteryDungeon.CurrentDigRoomX)>=false
+	@Register.register(System\Intro\15\MysteryDungeon.CurrentDigRoomX,int,0)
+:endif
+:if:<Register.registered(System\Intro\15\MysteryDungeon.CurrentDigRoomZ)>=false
+	@Register.register(System\Intro\15\MysteryDungeon.CurrentDigRoomZ,int,0)
+:endif
+:if:<Register.registered(System\Intro\15\MysteryDungeon.CurrentRoomLocationX)>=false
+	@Register.register(System\Intro\15\MysteryDungeon.CurrentRoomLocationX,int,0)
+:endif
+:if:<Register.registered(System\Intro\15\MysteryDungeon.CurrentRoomLocationZ)>=false
+	@Register.register(System\Intro\15\MysteryDungeon.CurrentRoomLocationZ,int,0)
+:endif
+:if:<Register.registered(System\Intro\15\MysteryDungeon.CurrentRoomLocationID)>=false
+	@Register.register(System\Intro\15\MysteryDungeon.CurrentRoomLocationID,int,0)
+:endif
 :end
