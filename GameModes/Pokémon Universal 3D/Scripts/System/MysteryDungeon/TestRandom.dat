@@ -8,12 +8,19 @@ version=2
 # MaxRoomSizeX
 # MinRoomSizeZ
 # MaxRoomSizeZ
+# MinRoom
+# MaxRoom
 
 # Define Room Size.
 @Register.change(System\Intro\15\MysteryDungeon.MinRoomSizeX,5)
 @Register.change(System\Intro\15\MysteryDungeon.MaxRoomSizeX,10)
 @Register.change(System\Intro\15\MysteryDungeon.MinRoomSizeZ,5)
 @Register.change(System\Intro\15\MysteryDungeon.MaxRoomSizeZ,10)
+
+# Define Number of Room.
+@Register.change(System\Intro\15\MysteryDungeon.MinRoom,5)
+@Register.change(System\Intro\15\MysteryDungeon.MaxRoom,5)
+
 # Dig a Random Location.
 @Title.add(Generating... Please wait for a while.,2147483647,255,255,255,2,true,0,0)
 @Script.start(System\MysteryDungeon\RoomGenerator)
