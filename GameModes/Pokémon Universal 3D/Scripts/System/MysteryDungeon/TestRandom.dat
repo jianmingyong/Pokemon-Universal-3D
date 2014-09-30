@@ -19,72 +19,29 @@ version=2
 # Max value is 10.
 @Storage.set(int,Processor,10)
 
+:if:<Register.registered(MysteryDungeon.SaveMap)>=false
+	@Register.register(MysteryDungeon.SaveMap)
+:endif
+
 # Dig a Random Location.
 @Title.add(Generating... Please wait for a while.,2147483647,255,255,255,2,true,0,0)
 # Do not touch anything beyond this line...
 @Storage.set(int,MultiProcessor,<Math.clamp(<Storage.get(int,Processor)>,1,10)>)
 @Storage.set(int,FinalRoom,<System.random(<Storage.get(int,MinRoom)>,<Storage.get(int,MaxRoom)>)>)
 
-@Storage.set(int,FinalRoomSizeX,<System.random(<Storage.get(int,MinRoomSizeX)>,<Storage.get(int,MaxRoomSizeX)>)>)
-@Storage.set(int,FinalRoomSizeZ,<System.random(<Storage.get(int,MinRoomSizeZ)>,<Storage.get(int,MaxRoomSizeZ)>)>)
-@Storage.set(int,CurrentRoomLocationX,<System.random(1,<Storage.get(int,MapSizeX)>-1-<Storage.get(int,MaxRoomSizeX)>)>)
-@Storage.set(int,CurrentRoomLocationZ,<System.random(1,<Storage.get(int,MapSizeZ)>-1-<Storage.get(int,MaxRoomSizeZ)>)>)
-@Storage.set(int,CurrentDigRoomX,0)
-@Storage.set(int,CurrentDigRoomZ,0)
+#. :if:<Register.registered(MysteryDungeon.SaveMap)>=false
+	@Storage.set(int,FinalRoomSizeX,<System.random(<Storage.get(int,MinRoomSizeX)>,<Storage.get(int,MaxRoomSizeX)>)>)
+	@Storage.set(int,FinalRoomSizeZ,<System.random(<Storage.get(int,MinRoomSizeZ)>,<Storage.get(int,MaxRoomSizeZ)>)>)
+	@Storage.set(int,CurrentRoomLocationX,<System.random(1,<Storage.get(int,MapSizeX)>-1-<Storage.get(int,MaxRoomSizeX)>)>)
+	@Storage.set(int,CurrentRoomLocationZ,<System.random(1,<Storage.get(int,MapSizeZ)>-1-<Storage.get(int,MaxRoomSizeZ)>)>)
+#. :else
+#.	@Storage.set(int,FinalRoomSizeX,<Register.value(Room1.CurrentRoomLocationX)>)
+#.	@Storage.set(int,FinalRoomSizeZ,<Register.value(Room1.CurrentRoomLocationZ)>)
+#.	@Storage.set(int,CurrentRoomLocationX,<Register.value(Room1.CurrentRoomLocationX)>)
+#.	@Storage.set(int,CurrentRoomLocationZ,<Register.value(Room1.CurrentRoomLocationZ)>)
+#. :endif
 
-# Dig First Room.
-:while:<not><Storage.get(int,CurrentDigRoomZ)>=<Storage.get(int,FinalRoomSizeZ)>
-	@Storage.set(int,FinalRoomLocationID,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,FinalRoomSizeX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,FinalRoomSizeZ)>)
-	@Storage.set(int,CurrentRoomLocationID.1,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>)
-	@Storage.set(int,CurrentRoomLocationID.2,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>+1000000)
-	@Storage.set(int,CurrentRoomLocationID.3,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>+2000000)
-	@Storage.set(int,CurrentRoomLocationID.4,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>+3000000)
-	@Storage.set(int,CurrentRoomLocationID.5,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>+4000000)
-	@Storage.set(int,CurrentRoomLocationID.6,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>+5000000)
-	@Storage.set(int,CurrentRoomLocationID.7,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>+6000000)
-	@Storage.set(int,CurrentRoomLocationID.8,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>+7000000)
-	@Storage.set(int,CurrentRoomLocationID.9,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>+8000000)
-	@Storage.set(int,CurrentRoomLocationID.10,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>+9000000)
-	@Storage.set(int,CurrentFinalRoomLocationID,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,FinalRoomSizeX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>)
-	:if:<not><Storage.get(int,CurrentRoomLocationID.1)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.1)>><Storage.get(int,CurrentFinalRoomLocationID)>
-		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.1)>)
-	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.2)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.2)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>1
-		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.2)>)
-	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.3)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.3)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>2
-		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.3)>)
-	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.4)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.4)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>3
-		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.4)>)
-	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.5)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.5)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>4
-		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.5)>)
-	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.6)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.6)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>5
-		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.6)>)
-	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.7)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.7)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>6
-		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.7)>)
-	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.8)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.8)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>7
-		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.8)>)
-	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.9)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.9)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>8
-		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.9)>)
-	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.10)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.10)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>9
-		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.10)>)
-	:endif
-	@Level.update
-	:if:<Storage.get(int,CurrentDigRoomX)><<Storage.get(int,FinalRoomSizeX)> <and> <not><Storage.get(int,CurrentDigRoomZ)>=<Storage.get(int,FinalRoomSizeZ)>
-		@Storage.set(int,CurrentDigRoomX,<Storage.get(int,CurrentDigRoomX)>+<Storage.get(int,MultiProcessor)>)
-	:endif
-	:if:<Storage.get(int,CurrentDigRoomX)>=<Storage.get(int,FinalRoomSizeX)> <or> <Storage.get(int,CurrentDigRoomX)>><Storage.get(int,FinalRoomSizeX)>
-		@Storage.set(int,CurrentDigRoomX,0)
-		@Storage.set(int,CurrentDigRoomZ,<Storage.get(int,CurrentDigRoomZ)>+1)
-	:endif
-:endwhile
+@Script.start(System\MysteryDungeon\GenerateRoom)
 
 # Register Room Location.
 :if:<Register.registered(Room1.CurrentRoomLocationX)>=false
@@ -99,51 +56,55 @@ version=2
 :if:<Register.registered(Room1.FinalRoomSizeZ)>=false
 	@Register.register(Room1.FinalRoomSizeZ,int,0)
 :endif
-@Storage.set(int,Room1.CurrentRoomLocationX,<Storage.get(int,CurrentRoomLocationX)>)
-@Storage.set(int,Room1.CurrentRoomLocationZ,<Storage.get(int,CurrentRoomLocationZ)>)
-@Storage.set(int,Room1.FinalRoomSizeX,<Storage.get(int,FinalRoomSizeX)>)
-@Storage.set(int,Room1.FinalRoomSizeZ,<Storage.get(int,FinalRoomSizeZ)>)
 @Register.change(Room1.CurrentRoomLocationX,<Storage.get(int,CurrentRoomLocationX)>)
 @Register.change(Room1.CurrentRoomLocationZ,<Storage.get(int,CurrentRoomLocationZ)>)
 @Register.change(Room1.FinalRoomSizeX,<Storage.get(int,FinalRoomSizeX)>)
 @Register.change(Room1.FinalRoomSizeZ,<Storage.get(int,FinalRoomSizeZ)>)
 
 # Check For Valid Walls to Dig.
-@Storage.set(int,Room1.ValidWallN.X,<Storage.get(int,CurrentRoomLocationX)>)
-@Storage.set(int,Room1.ValidWallN.Z,<Storage.get(int,CurrentRoomLocationZ)>-1)
-@Storage.set(int,Room1.ValidWallS.X,<Storage.get(int,CurrentRoomLocationX)>)
-@Storage.set(int,Room1.ValidWallS.Z,<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,FinalRoomSizeZ)>)
-@Storage.set(int,Room1.ValidWallE.X,<Storage.get(int,CurrentRoomLocationX)>+<Storage.get(int,FinalRoomSizeX)>)
-@Storage.set(int,Room1.ValidWallE.Z,<Storage.get(int,CurrentRoomLocationZ)>)
-@Storage.set(int,Room1.ValidWallW.X,<Storage.get(int,CurrentRoomLocationX)>-1)
-@Storage.set(int,Room1.ValidWallW.Z,<Storage.get(int,CurrentRoomLocationZ)>)
-@Storage.set(int,Room1.WallDig,<System.random(5,15)>)
-:if:<not><Math.int(<Storage.get(int,Room1.ValidWallN.Z)>-<Storage.get(int,Room1.WallDig)>)>=0 <and> <not><Math.int(<Storage.get(int,Room1.ValidWallN.Z)>-<Storage.get(int,Room1.WallDig)>)><0
-	@Storage.set(int,Room1.ValidWallN,1)
+@Storage.set(int,ValidWallN.X,<Storage.get(int,CurrentRoomLocationX)>)
+@Storage.set(int,ValidWallN.Z,<Storage.get(int,CurrentRoomLocationZ)>-1)
+@Storage.set(int,ValidWallS.X,<Storage.get(int,CurrentRoomLocationX)>)
+@Storage.set(int,ValidWallS.Z,<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,FinalRoomSizeZ)>)
+@Storage.set(int,ValidWallE.X,<Storage.get(int,CurrentRoomLocationX)>+<Storage.get(int,FinalRoomSizeX)>)
+@Storage.set(int,ValidWallE.Z,<Storage.get(int,CurrentRoomLocationZ)>)
+@Storage.set(int,ValidWallW.X,<Storage.get(int,CurrentRoomLocationX)>-1)
+@Storage.set(int,ValidWallW.Z,<Storage.get(int,CurrentRoomLocationZ)>)
+
+@Storage.set(int,CurrentWallN.X,<System.random(<Storage.get(int,ValidWallN.X)>,<Storage.get(int,ValidWallN.X)>+<Storage.get(int,FinalRoomSizeX)>-1)>)
+@Storage.set(int,CurrentWallN.Z,<Storage.get(int,ValidWallN.Z)>)
+@Storage.set(int,CurrentWallS.X,<System.random(<Storage.get(int,ValidWallS.X)>,<Storage.get(int,ValidWallS.X)>+<Storage.get(int,FinalRoomSizeX)>-1)>)
+@Storage.set(int,CurrentWallS.Z,<Storage.get(int,ValidWallS.Z)>)
+@Storage.set(int,CurrentWallE.X,<Storage.get(int,ValidWallE.X)>)
+@Storage.set(int,CurrentWallE.Z,<System.random(<Storage.get(int,ValidWallE.Z)>,<Storage.get(int,ValidWallE.Z)>+<Storage.get(int,FinalRoomSizeZ)>-1)>)
+@Storage.set(int,CurrentWallW.X,<Storage.get(int,ValidWallW.X)>)
+@Storage.set(int,CurrentWallW.Z,<System.random(<Storage.get(int,ValidWallW.Z)>,<Storage.get(int,ValidWallW.Z)>+<Storage.get(int,FinalRoomSizeZ)>-1)>)
+
+@Storage.set(int,WallDig,<System.random(5,15)>)
+
+:if:<not><Math.int(<Storage.get(int,ValidWallN.Z)>-<Storage.get(int,WallDig)>)>=0 <and> <not><Math.int(<Storage.get(int,ValidWallN.Z)>-<Storage.get(int,WallDig)>)><0
+	@Storage.set(int,ValidWallN,1)
 :else
-	@Storage.set(int,Room1.ValidWallN,0)
+	@Storage.set(int,ValidWallN,0)
 :endif
-:if:<not><Math.int(<Storage.get(int,Room1.ValidWallS.Z)>+<Storage.get(int,Room1.WallDig)>)>=<Math.int(<Storage.get(int,MapSizeZ)>-1)> <and> <not><Math.int(<Storage.get(int,Room1.ValidWallS.Z)>+<Storage.get(int,Room1.WallDig)>)>><Math.int(<Storage.get(int,MapSizeZ)>-1)>
-	@Storage.set(int,Room1.ValidWallS,2)
+:if:<not><Math.int(<Storage.get(int,ValidWallS.Z)>+<Storage.get(int,WallDig)>)>=<Math.int(<Storage.get(int,MapSizeZ)>-1)> <and> <not><Math.int(<Storage.get(int,ValidWallS.Z)>+<Storage.get(int,WallDig)>)>><Math.int(<Storage.get(int,MapSizeZ)>-1)>
+	@Storage.set(int,ValidWallS,1)
 :else
-	@Storage.set(int,Room1.ValidWallS,0)
+	@Storage.set(int,ValidWallS,0)
 :endif
-:if:<not><Math.int(<Storage.get(int,Room1.ValidWallE.X)>+<Storage.get(int,Room1.WallDig)>)>=<Math.int(<Storage.get(int,MapSizeX)>-1)> <and> <not><Math.int(<Storage.get(int,Room1.ValidWallE.X)>+<Storage.get(int,Room1.WallDig)>)>><Math.int(<Storage.get(int,MapSizeX)>-1)>
-	@Storage.set(int,Room1.ValidWallE,3)
+:if:<not><Math.int(<Storage.get(int,ValidWallE.X)>+<Storage.get(int,WallDig)>)>=<Math.int(<Storage.get(int,MapSizeX)>-1)> <and> <not><Math.int(<Storage.get(int,ValidWallE.X)>+<Storage.get(int,WallDig)>)>><Math.int(<Storage.get(int,MapSizeX)>-1)>
+	@Storage.set(int,ValidWallE,1)
 :else
-	@Storage.set(int,Room1.ValidWallE,0)
+	@Storage.set(int,ValidWallE,0)
 :endif
-:if:<not><Math.int(<Storage.get(int,Room1.ValidWallW.X)>-<Storage.get(int,Room1.WallDig)>)>=0 <and> <not><Math.int(<Storage.get(int,Room1.ValidWallW.X)>-<Storage.get(int,Room1.WallDig)>)><0
-	@Storage.set(int,Room1.ValidWallW,4)
+:if:<not><Math.int(<Storage.get(int,ValidWallW.X)>-<Storage.get(int,WallDig)>)>=0 <and> <not><Math.int(<Storage.get(int,ValidWallW.X)>-<Storage.get(int,WallDig)>)><0
+	@Storage.set(int,ValidWallW,1)
 :else
-	@Storage.set(int,Room1.ValidWallW,0)
+	@Storage.set(int,ValidWallW,0)
 :endif
 
-# Dig Wall.
-@Storage.set(int,Room1.WallDigDir,<System.random(1,4)>)
-:while:<not><Storage.get(int,Room1.ValidWallN)>=<Storage.get(int,Room1.WallDigDir)>
-
-
+@Storage.set(int,WallDigDir,<System.random(1,4)>)
+@Script.start(System\MysteryDungeon\GenerateWall)
 
 # Warp Player to a walkable zone.
 @Player.warp(<System.random(<Storage.get(int,CurrentRoomLocationX)>,<Storage.get(int,CurrentRoomLocationX)>+<Storage.get(int,FinalRoomSizeX)>-1)>,0.1,<System.random(<Storage.get(int,CurrentRoomLocationZ)>,<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,FinalRoomSizeZ)>-1)>)
