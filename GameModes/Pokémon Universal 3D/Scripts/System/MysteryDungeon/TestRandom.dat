@@ -70,7 +70,6 @@ version=2
 @Storage.set(int,ValidWallE.Z,<Storage.get(int,CurrentRoomLocationZ)>)
 @Storage.set(int,ValidWallW.X,<Storage.get(int,CurrentRoomLocationX)>-1)
 @Storage.set(int,ValidWallW.Z,<Storage.get(int,CurrentRoomLocationZ)>)
-
 @Storage.set(int,CurrentWallN.X,<System.random(<Storage.get(int,ValidWallN.X)>,<Storage.get(int,ValidWallN.X)>+<Storage.get(int,FinalRoomSizeX)>-1)>)
 @Storage.set(int,CurrentWallN.Z,<Storage.get(int,ValidWallN.Z)>)
 @Storage.set(int,CurrentWallS.X,<System.random(<Storage.get(int,ValidWallS.X)>,<Storage.get(int,ValidWallS.X)>+<Storage.get(int,FinalRoomSizeX)>-1)>)
@@ -79,9 +78,7 @@ version=2
 @Storage.set(int,CurrentWallE.Z,<System.random(<Storage.get(int,ValidWallE.Z)>,<Storage.get(int,ValidWallE.Z)>+<Storage.get(int,FinalRoomSizeZ)>-1)>)
 @Storage.set(int,CurrentWallW.X,<Storage.get(int,ValidWallW.X)>)
 @Storage.set(int,CurrentWallW.Z,<System.random(<Storage.get(int,ValidWallW.Z)>,<Storage.get(int,ValidWallW.Z)>+<Storage.get(int,FinalRoomSizeZ)>-1)>)
-
 @Storage.set(int,WallDig,<System.random(5,15)>)
-
 :if:<not><Math.int(<Storage.get(int,ValidWallN.Z)>-<Storage.get(int,WallDig)>)>=0 <and> <not><Math.int(<Storage.get(int,ValidWallN.Z)>-<Storage.get(int,WallDig)>)><0
 	@Storage.set(int,ValidWallN,1)
 :else
@@ -102,8 +99,6 @@ version=2
 :else
 	@Storage.set(int,ValidWallW,0)
 :endif
-
-@Storage.set(int,WallDigDir,<System.random(1,4)>)
 @Script.start(System\MysteryDungeon\GenerateWall)
 
 # Warp Player to a walkable zone.
