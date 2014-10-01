@@ -19,13 +19,14 @@ version=2
 # Max value is 10.
 @Storage.set(int,Processor,10)
 
+##########################################################################################
+######################## Do not touch anything beyond this line... #######################
+##########################################################################################.
 :if:<Register.registered(MysteryDungeon.SaveMap)>=false
 	@Register.register(MysteryDungeon.SaveMap)
 :endif
-
-# Dig a Random Location.
 @Title.add(Generating... Please wait for a while.,2147483647,255,255,255,2,true,0,0)
-# Do not touch anything beyond this line...
+# Dig a Random Location.
 @Storage.set(int,MultiProcessor,<Math.clamp(<Storage.get(int,Processor)>,1,10)>)
 @Storage.set(int,FinalRoom,<System.random(<Storage.get(int,MinRoom)>,<Storage.get(int,MaxRoom)>)>)
 
@@ -78,7 +79,7 @@ version=2
 @Storage.set(int,CurrentWallE.Z,<System.random(<Storage.get(int,ValidWallE.Z)>,<Storage.get(int,ValidWallE.Z)>+<Storage.get(int,FinalRoomSizeZ)>-1)>)
 @Storage.set(int,CurrentWallW.X,<Storage.get(int,ValidWallW.X)>)
 @Storage.set(int,CurrentWallW.Z,<System.random(<Storage.get(int,ValidWallW.Z)>,<Storage.get(int,ValidWallW.Z)>+<Storage.get(int,FinalRoomSizeZ)>-1)>)
-@Storage.set(int,WallDig,<System.random(5,15)>)
+@Storage.set(int,WallDig,<System.random(5,10)>)
 :if:<not><Math.int(<Storage.get(int,ValidWallN.Z)>-<Storage.get(int,WallDig)>)>=0 <and> <not><Math.int(<Storage.get(int,ValidWallN.Z)>-<Storage.get(int,WallDig)>)><0
 	@Storage.set(int,ValidWallN,1)
 :else
