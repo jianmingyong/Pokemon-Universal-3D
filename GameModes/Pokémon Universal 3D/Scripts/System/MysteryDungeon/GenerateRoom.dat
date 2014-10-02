@@ -16,34 +16,34 @@ version=2
 	@Storage.set(int,CurrentRoomLocationID.9,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>+8000000)
 	@Storage.set(int,CurrentRoomLocationID.10,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>+9000000)
 	@Storage.set(int,CurrentFinalRoomLocationID,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,FinalRoomSizeX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>)
-	:if:<not><Storage.get(int,CurrentRoomLocationID.1)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.1)>><Storage.get(int,CurrentFinalRoomLocationID)>
+	:if:<Storage.get(int,CurrentRoomLocationID.1)><<Storage.get(int,CurrentFinalRoomLocationID)>
 		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.1)>)
 	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.2)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.2)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>1
+	:if:<Storage.get(int,CurrentRoomLocationID.2)><<Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>1
 		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.2)>)
 	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.3)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.3)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>2
+	:if:<Storage.get(int,CurrentRoomLocationID.3)><<Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>2
 		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.3)>)
 	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.4)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.4)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>3
+	:if:<Storage.get(int,CurrentRoomLocationID.4)><<Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>3
 		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.4)>)
 	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.5)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.5)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>4
+	:if:<Storage.get(int,CurrentRoomLocationID.5)><<Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>4
 		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.5)>)
 	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.6)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.6)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>5
+	:if:<Storage.get(int,CurrentRoomLocationID.6)><<Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>5
 		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.6)>)
 	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.7)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.7)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>6
+	:if:<Storage.get(int,CurrentRoomLocationID.7)><<Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>6
 		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.7)>)
 	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.8)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.8)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>7
+	:if:<Storage.get(int,CurrentRoomLocationID.8)><<Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>7
 		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.8)>)
 	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.9)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.9)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>8
+	:if:<Storage.get(int,CurrentRoomLocationID.9)><<Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>8
 		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.9)>)
 	:endif
-	:if:<not><Storage.get(int,CurrentRoomLocationID.10)>=<Storage.get(int,CurrentFinalRoomLocationID)> <and> <not><Storage.get(int,CurrentRoomLocationID.10)>><Storage.get(int,CurrentFinalRoomLocationID)> <and> <Storage.get(int,MultiProcessor)>>9
+	:if:<Storage.get(int,CurrentRoomLocationID.10)><<Storage.get(int,CurrentFinalRoomLocationID)> <and> <and> <Storage.get(int,MultiProcessor)>>9
 		@Entity.remove(<Storage.get(int,CurrentRoomLocationID.10)>)
 	:endif
 	@Level.update
