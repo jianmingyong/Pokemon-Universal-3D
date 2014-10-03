@@ -55,4 +55,5 @@ version=2
 		@Storage.set(int,CurrentDigRoomZ,<Storage.get(int,CurrentDigRoomZ)>+1)
 	:endif
 :endwhile
+@Storage.set(int,NumberOfRoomProcess,<Storage.get(int,NumberOfRoomProcess)>+1)
 :end

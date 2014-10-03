@@ -197,6 +197,7 @@ version=2
 		@Storage.set(int,CurrentWallDig,<Storage.get(int,CurrentWallDig)>+<Storage.get(int,MultiProcessor)>)
 	:endif
 	:if:<Storage.get(int,CurrentWallDig)>=<Storage.get(int,WallDig)> <or> <Storage.get(int,CurrentWallDig)>><Storage.get(int,WallDig)>
+		@Storage.set(int,NumberOfWallProcess,<Storage.get(int,NumberOfWallProcess)>+1)
 		:exitwhile
 	:endif
 	:if:<Storage.get(int,ValidWallN)>=0 <and> <Storage.get(int,ValidWallS)>=0 <and> <Storage.get(int,ValidWallE)>=0 <and> <Storage.get(int,ValidWallW)>=0
