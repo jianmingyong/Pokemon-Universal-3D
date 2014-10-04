@@ -22,6 +22,7 @@ version=2
 	@Register.register(MysteryDungeon.SaveMap)
 :endif
 @Title.add(Generating... Please wait for a while.,2147483647,255,255,255,2,true,0,0)
+
 # Init Variable.
 @Storage.set(int,NumberOfRoomProcess,0)
 @Storage.set(int,NumberOfWallProcess,0)
@@ -79,14 +80,17 @@ version=2
 @Storage.set(int,FinalRoomSizeX,<System.random(<Storage.get(int,MinRoomSizeX)>,<Storage.get(int,MaxRoomSizeX)>)>)
 @Storage.set(int,FinalRoomSizeZ,<System.random(<Storage.get(int,MinRoomSizeZ)>,<Storage.get(int,MaxRoomSizeZ)>)>)
 :if:<Storage.get(int,WallDigDir)>=1
-	@Storage.set(int,CurrentRoomLocationX,<System.random(<Storage.get(int,CurrentWallN.X)>-<Storage.get(int,FinalRoomSizeX)>+1,<Storage.get(int,CurrentWallN.X)>)
-	@Storage.set(int,CurrentRoomLocationZ,<Storage.get(int,CurrentWallN.Z)>-<Storage.get(int,WallDig)>+1-<Storage.get(int,FinalRoomSizeZ)>)
+	@Storage.set(int,CurrentRoomLocationX,<System.random(<Math.int(<Storage.get(int,CurrentWallN.X)>-<Storage.get(int,FinalRoomSizeX)>)>+1,<Storage.get(int,CurrentWallN.X)>)>)
+	@Storage.set(int,CurrentRoomLocationZ,<Math.int(<Storage.get(int,CurrentWallN.Z)>-<Storage.get(int,WallDig)>-<Storage.get(int,FinalRoomSizeZ)>)>+1)
+	@Text.show(<Storage.get(int,CurrentRoomLocationX)> <Storage.get(int,CurrentRoomLocationZ)>)
+	@Storage.set(int,ValidRoom,0)
+	@Script.start(System\MysteryDungeon\ValidatorRoom)
+	@Script.start(System\MysteryDungeon\GenerateRoom)
+	@Script.start(System\MysteryDungeon\RegisterRoomLocation)
 :endif
-@Storage.set(int,ValidRoom,0)
-@Script.start(System\MysteryDungeon\ValidatorRoom)
-:while:<Storage.get(int,ValidRoom)>=1 <or> <Storage.get(int,ValidWallN)>=1 <or> <Storage.get(int,ValidWallS)>=1 <or> <Storage.get(int,ValidWallE)>=1 <or> <Storage.get(int,ValidWallW)>=1
-	:exitwhile
-:endwhile
+#. :while:<Storage.get(int,ValidRoom)>=1 <or> <Storage.get(int,ValidWallN)>=1 <or> <Storage.get(int,ValidWallS)>=1 <or> <Storage.get(int,ValidWallE)>=1 <or> <Storage.get(int,ValidWallW)>=1
+#.	:exitwhile
+#. :endwhile
 
 # Warp Player to a walkable zone.
 @Player.warp(<System.random(<Storage.get(int,CurrentRoomLocationX)>,<Storage.get(int,CurrentRoomLocationX)>+<Storage.get(int,FinalRoomSizeX)>-1)>,0.1,<System.random(<Storage.get(int,CurrentRoomLocationZ)>,<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,FinalRoomSizeZ)>-1)>)

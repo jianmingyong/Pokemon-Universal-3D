@@ -1,20 +1,5 @@
 version=2
-@Storage.set(int,EntityProcess,1)
-@Storage.set(int,CurrentEntityProcess.X,<Register.value(Room<Storage.get(int,EntityProcess)>.CurrentRoomLocationX)>)
-@Storage.set(int,CurrentEntityProcess.Z,<Register.value(Room<Storage.get(int,EntityProcess)>.CurrentRoomLocationZ)>)
-:while:<Register.registered(Room<Storage.get(int,EntityProcess)>.CurrentRoomLocationX)>=true <and> <Register.registered(Room<Storage.get(int,EntityProcess)>.CurrentRoomLocationZ)>=true <and> <Register.registered(Room<Storage.get(int,EntityProcess)>.FinalRoomSizeX)>=true <and> <Register.registered(Room<Storage.get(int,EntityProcess)>.FinalRoomSizeZ)>=true
-	:if:<not><Storage.get(int,CurrentEntityProcess.X)>><Register.value(Room<Storage.get(int,EntityProcess)>.FinalRoomSizeX)>
-		@Storage.set(int,EntityRemove.<Math.int(<Math.int(<Storage.get(int,CurrentEntityProcess.X)>*1000000)>+<Storage.get(int,EntityRemove.Z)>)>,1)
-		@Storage.set(int,CurrentEntityProcess.X,<Storage.get(int,CurrentEntityProcess.X)>+1)
-	:endif
-	:if:<Storage.get(int,CurrentEntityProcess.X)>><Register.value(Room<Storage.get(int,EntityProcess)>.FinalRoomSizeX)> <and> <not><Storage.get(int,CurrentEntityProcess.Z)>><Register.value(Room<Storage.get(int,EntityProcess)>.FinalRoomSizeZ)>
-		@Storage.set(int,CurrentEntityProcess.X,<Register.value(Room<Storage.get(int,EntityProcess)>.CurrentRoomLocationX)>)
-		@Storage.set(int,CurrentEntityProcess.Z,<Storage.get(int,CurrentEntityProcess.Z)>+1)
-	:endif
-	:if:<Storage.get(int,CurrentEntityProcess.X)>><Register.value(Room<Storage.get(int,EntityProcess)>.FinalRoomSizeX)> <and> <Storage.get(int,CurrentEntityProcess.Z)>><Register.value(Room<Storage.get(int,EntityProcess)>.FinalRoomSizeZ)>
-		@Storage.set(int,EntityProcess,<Storage.get(int,EntityProcess)>+1)
-	:endif
-:endwhile
+# This is a API for Random Dungeon Generator.
 @Storage.set(int,CurrentEntityProcess.X,<Storage.get(int,CurrentRoomLocationX)>)
 @Storage.set(int,CurrentEntityProcess.Z,<Storage.get(int,CurrentRoomLocationZ)>)
 :while:<not><Storage.get(int,CurrentEntityProcess.X)>><Storage.get(int,FinalRoomSizeX)> <and> <not><Storage.get(int,CurrentEntityProcess.Z)>><Storage.get(int,FinalRoomSizeZ)>
@@ -31,4 +16,5 @@ version=2
 		@Storage.set(int,CurrentEntityProcess.X,<Storage.get(int,CurrentRoomLocationX)>)
 		@Storage.set(int,CurrentEntityProcess.Z,<Storage.get(int,CurrentEntityProcess.Z)>+1)
 	:endif
+:endwhile
 :end
