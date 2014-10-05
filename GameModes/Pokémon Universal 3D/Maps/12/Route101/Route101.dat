@@ -237,10 +237,9 @@ ActionScript.Layer.18
 {"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[019000018]}}{"Position"{sngArr[19,0,18]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route101\CE_RoadBlock_0]}}{"Rotation"{int[0]}}]}}
 
 Pokéball.Layer.14
-{"NPC"{NPC[{"Scale"{sngArr[0.5,0.5,0.5]}}{"Position"{sngArr[15,-0.25,14]}}{"TextureID"{str[Pokeball]}}{"ID"{int[015000014]}}{"Name"{str[015000014]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route101\015000014]}}{"Rotation"{int[0]}}{"Movement"{str[Pokeball]}}{"MoveRectangles"{recArr[]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WallBill]}}{"ID"{int[015000014]}}{"Position"{sngArr[15,-1.25,14]}}{"TexturePath"{str[NPC\Pokeball]}}{"Textures"{recArr[[0,0,32,32]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route101\015000014]}}{"Rotation"{int[0]}}{"Scale"{sngArr[0.5,0.5,0.5]}}]}}
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[015000014]}}{"Position"{sngArr[15,-1,14]}}{"TexturePath"{str[NPC\Pokeball]}}{"Textures"{recArr[[0,0,32,32]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route101\015000014]}}{"Rotation"{int[0]}}]}}
 
-NPC.Layer.8
-{"NPC"{NPC[{"Name"{str[024000008]}}{"ID"{int[024000008]}}{"Position"{sngArr[24,0,8]}}{"TextureID"{str[NPC 35]}}{"Rotation"{int[3]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route101\024000008]}}{"Movement"{str[Looking]}}{"AnimateIdle"{bool[0]}}]}}
 NPC.Layer.13
 {"NPC"{NPC[{"Name"{str[010000013]}}{"ID"{int[010000013]}}{"Position"{sngArr[10,0,13]}}{"TextureID"{str[NPC 9]}}{"Rotation"{int[3]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route101\010000013]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[10,13,2,1]]}}{"AnimateIdle"{bool[0]}}]}}
 

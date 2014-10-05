@@ -15,7 +15,7 @@ Table of contents:
 ==================================================
 1.	License
 ==================================================
-Pokémon Universal 3D v0.50.1.0.0.6
+Pokémon Universal 3D v0.50.0.0.0.6
 Copyright © 2014 jianmingyong
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
@@ -62,11 +62,11 @@ Installing prerequisites for Pokémon 3D.
 1.	Hardware support for DirectX 9 or higher
 2.	Windows Media Player
 3.	Microsoft .NET Framework 4.5 or higher
-4.	Microsoft XNA Framework 4.0 or higher
+4.	Microsoft XNA Framework 4.0
+5.	Xbox 360 Controller * Optional
 
 Installing prerequisites for Pokémon Universal 3D.
-1.	Pokémon 3D Game (Version 0.50.1 and above)
-* Pokémon 3D Game version 0.50.1 are not supported due to some new scripts added in that require you to have latest version.
+1.	Pokémon 3D Game (Version 0.48.0 and above)
 
 ==================================================
 5.2.	Installing precautions
@@ -100,7 +100,7 @@ Pokémon Universal 3D is created, compiled and edited by jianmingyong.
 ==================================================
 7.1.	Music
 ==================================================
-PMD_EOT_D_S Rip From: Martin Zanter
+PMD_EOT_D_S	Rip From: Martin Zanter
 P_FR_LR Rip From: Ra2rd93
 P_R_S_E Rip From: PocketMonstersMusic
 Title Music Rip From: Justin Baxter

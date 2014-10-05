@@ -45,5 +45,5 @@ version=2
 	:endif
 :endif
 @Script.start(System\GlobalParallelProcess)
-@Script.start(System\MysteryDungeon\Main)
+#. @Script.start(System\MysteryDungeon\Main)
 :end

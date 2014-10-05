@@ -1,7 +1,7 @@
-version=2
+﻿version=2
 @Sound.play(Select)
 @Text.show(Hi, neighbor!)
 @Sound.play(Select)
-@Text.show(Do you already have your~own POK�MON?)
+@Text.show(Do you already have your~own POKéMON?)
 @Script.start(System\GlobalMain)
 :end

@@ -1,0 +1,4 @@
+version=2
+@Sound.play(Select)
+@Text.show(I want to take a rest, so I'm saving my~progress.)
+:end

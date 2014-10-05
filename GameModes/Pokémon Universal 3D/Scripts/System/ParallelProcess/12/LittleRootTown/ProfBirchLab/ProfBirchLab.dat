@@ -138,6 +138,7 @@ version=2
 	@Register.change(12\LittleRootTown\ProfBirchLab,4)
 	@Register.change(12\LittleRootTown\ProfBirchLab\006000003,2)
 	@Register.change(12\OldaleTown\PokeMart\002000002,2)
+	@Register.change(12\OldaleTown\001000011,2)
 	@Register.change(12\LittleRootTown,3)
 	@Register.change(12\LittleRootTown\ProfBirchLab\009000007,3)
 	:end

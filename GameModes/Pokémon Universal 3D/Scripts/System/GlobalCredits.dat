@@ -64,6 +64,7 @@
 @Title.add(P_R_S_E Music: PocketMonstersMusic,30,255,255,255,2,true,0,-160)
 @Title.add(Title Music: Justin Baxter,30,255,255,255,2,true,0,-120)
 @Title.add(Riviera Music: Paineity,30,255,255,255,2,true,0,-80)
+@Title.add(Mega Man Battle Network 6 Music: Frygoon,30,255,255,255,2,true,0,-40)
 @Level.wait(300)
 @Title.add(Pokémon 3D Map design,30,255,255,255,2,true,0,-280)
 @Title.add(Nils Drescher,30,255,255,255,2,true,0,-200)

@@ -21,6 +21,9 @@ version=2
 	:if:<Level.filename>=OldaleTown
 		@Script.start(System\ParallelProcess\12\OldaleTown\OldaleTown)
 	:endif
+	:if:<Level.filename>=OldaleTown.PokeMart
+		@Script.start(System\ParallelProcess\12\OldaleTown\PokeMart\PokeMart)
+	:endif
 	:if:<Level.filename>=Route103
 		@Script.start(System\ParallelProcess\12\Route103\Route103)
 	:endif

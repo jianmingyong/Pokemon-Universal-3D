@@ -1,0 +1,63 @@
+version=2
+:if:<Register.value(12\OldaleTown\013000007)>=1
+	@Sound.play(Select)
+	@Text.show(Hi!~I work at a POKéMON MART.)
+	@Sound.play(Select)
+	@Text.show(Can I get you to come with me?)
+	@Sound.play(Select)
+	@Music.play(P_R_S_E Come Along)
+	:if:<Player.position>=13,0,15
+		@NPC.turn(013000007,0)
+		@NPC.moveasync(013000007,7)
+		@Player.turnto(0)
+		@Player.move(7)
+		@NPC.turn(013000007,2)
+	:endif
+	:if:<Player.position>=12,0,14
+		@NPC.turn(013000007,0)
+		@NPC.move(013000007,1)
+		@Player.turnto(3)
+		@Player.move(1)
+		@Player.turnto(0)
+		@NPC.moveasync(013000007,6)
+		@Player.move(6)
+		@NPC.turn(013000007,2)
+	:endif
+	:if:<Player.position>=13,0,13
+		@Player.turnto(1)
+		@Player.move(1)
+		@Player.turnto(3)
+		@NPC.turn(013000007,0)
+		@NPC.move(013000007,2)
+		@Player.move(1)
+		@Player.turnto(0)
+		@NPC.moveasync(013000007,5)
+		@Player.move(5)
+		@NPC.turn(013000007,2)
+	:endif
+	@Text.show(This is a POKéMON MART.~Just look for our blue roof.)
+	@Sound.play(Select)
+	@Text.show(We sell a variety of goods including~POKé BALLS for catching POKéMON.)
+	@Sound.play(Select)
+	@Text.show(Here, I'd like you to have this as~a promotional item.)
+	@Item.give(18,1)
+	@Item.messagegive(18,1)
+	@Text.show(A POTION can be used anytime, so it's~even more useful than a POKéMON CENTER)
+	@Sound.play(Select)
+	@Text.show(in certain situations.)
+	@Music.play(P_R_S_E Oldale Town)
+	@Register.change(12\OldaleTown\013000007,2)
+	:end
+:endif
+:if:<Register.value(12\OldaleTown\013000007)>=2
+	@Sound.play(Select)
+	@Text.show(A POTION can be used anytime, so it's~even more useful than a POKéMON CENTER)
+	@Sound.play(Select)
+	@Text.show(in certain situations.)
+	:end
+:endif
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,12\OldaleTown\013000007.dat)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+:end

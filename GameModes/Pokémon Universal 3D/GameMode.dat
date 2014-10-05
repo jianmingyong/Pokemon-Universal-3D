@@ -16,7 +16,7 @@ StartLocationName|Intro
 StartDialogue|Welcome to Pokémon Universal 3D!|Please choose a character.~It will determine your starting game.|~Press Space Bar/Enter to start
 StartColor|127,127,255
 PokemonAppear|0
-IntroMusic|PMD_EOT_D_S Dialga's Fight To The Finish!
+IntroMusic|Mega Man Battle Network 6 - Theme Of Mega Man Battle Network 6
 SkinColors|255;127;127,127;255;127,255;127;127,127;127;255
 SkinFiles|trchar000,trchar001,Brendan,May
 SkinNames|Red,Leaf,Brendan,May

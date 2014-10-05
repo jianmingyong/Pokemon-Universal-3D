@@ -1,2 +1,7 @@
 version=2
+:if:<Register.value(12\LittleRootTown\ProfBirchLab)>=4
+	:if:<Register.value(12\OldaleTown\001000011)>=1
+		@Register.change(12\OldaleTown\001000011,2)
+	:endif
+:endif
 :end
