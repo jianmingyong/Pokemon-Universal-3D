@@ -105,6 +105,8 @@ P_FR_LR Rip From: Ra2rd93
 P_R_S_E Rip From: PocketMonstersMusic
 Title Music Rip From: Justin Baxter
 Sound Effect Rip From: Pokémon Essentials v13 2012-12-02 (Flameguru, Poccil (Peter O.), Maruno)
+Pokémon Theme Song Rip From: Filizew
+
 
 ==================================================
 7.2.	Graphic

@@ -1,0 +1,37 @@
+﻿version=2
+:while:<Storage.get(int,System.ScreenState)>=0
+	:if:<not><Level.filename>=GlobalMain
+		@Screen.fadeout
+		@Player.turnto(0)
+		@Player.warp(System\GlobalMain.dat,0,0,0,0)
+		@Level.update
+	:endif
+	@Music.play(Mega Man Battle Network 6 - Theme Of Mega Man Battle Network 6)
+	@camera.deactivethirdperson
+	@Camera.fix
+	@Entity.setvisible(0,1)
+	@Screen.fadein
+	@Text.show(Please Choose an option.)
+	@Options.show(New Game,Load Game,Options)
+	:when:New Game
+		@Text.show(Please Choose an option.)
+		@Options.setcancelindex(3)
+		@Options.show(Pokémon FireRed [8],Pokémon Emerald [12],Mystery Dungeon [15],Back)
+		:when:Pokémon FireRed [8]
+			@Text.show(Game not available yet.~Sorry for the inconvenience caused.)
+		:when:Pokémon Emerald [12]
+			@Storage.set(int,System.ScreenState,1)
+			@Register.change(System.Game ID,12)
+			@Script.start(System\ScreenState\ScreenState.1)
+		:when:Mystery Dungeon [15]
+			@Text.show(Game not available yet.~Sorry for the inconvenience caused.)
+		:when:Back
+		:endwhen
+	:when:Load Game
+		@Storage.set(int,System.ScreenState,2)
+	:when:Options
+		@Storage.set(int,System.ScreenState,3)
+		@Script.start(System\ScreenState\ScreenState.3)
+	:endwhen
+:endwhile
+:end

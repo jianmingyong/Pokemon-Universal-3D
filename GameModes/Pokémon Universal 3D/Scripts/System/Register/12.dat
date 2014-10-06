@@ -2,6 +2,15 @@ version=2
 :if:<Register.registered(System.LastMap.12)>=false
 	@Register.register(System.LastMap.12,str,Nothing)
 :endif
+:if:<Register.registered(System.PlayerPosition.X.12)>=false
+	@Register.register(System.PlayerPosition.X.12,int,<Player.position(x)>)
+:endif
+:if:<Register.registered(System.PlayerPosition.Y.12)>=false
+	@Register.register(System.PlayerPosition.Y.12,int,<Player.position(u)>)
+:endif
+:if:<Register.registered(System.PlayerPosition.Z.12)>=false
+	@Register.register(System.PlayerPosition.Z.12,int,<Player.position(z)>)
+:endif
 :if:<Register.registered(System.12.Starter)>=false
 	@Register.register(System.12.Starter,int,1)
 :endif

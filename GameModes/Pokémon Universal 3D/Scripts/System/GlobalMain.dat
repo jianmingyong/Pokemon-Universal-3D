@@ -1,18 +1,24 @@
 version=2
+#############################################################
+# Welcome to the Pokémon Universal 3D Main Initialize File. #
+#############################################################
+# Main Menu - @Storage.set(int,System.ScreenState,0)
+# Intro Screen - @Storage.set(int,System.ScreenState,1)
+# World - @Storage.set(int,System.ScreenState,2)
+# Options - @Storage.set(int,System.ScreenState,3)
 @Level.update
 :if:<Storage.count(int)>=0
+	@Storage.set(int,System.ScreenState,0)
 	@Script.start(System\GlobalRegister)
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
 	:if:<Register.value(System.GlobalRegister Validation)>=true
 		@Script.start(System\GlobalRegisterValidation)
 	:endif
-	:if:<not><Register.value(System.P3D Version)>=0.50.1 <or> <not><Register.value(System.Game Version)>=0.0.6 BT 7
+	:if:<not><Register.value(System.P3D Version)>=0.50.1 <or> <not><Register.value(System.Game Version)>=0.0.6 BT 8
 		@Register.change(System.ErrorLog.ErrorID1,2)
-		@Script.start(System\GlobalErrorLog)
 		@Player.warp(System\GlobalValidation.dat,0,0,0,0)
 		:end
 	:endif
-	@Script.start(System\GlobalOptions)
 	@Script.start(System\GlobalBankInterest)
 	@Script.start(System\GlobalMysteryEvents)
 	:if:<Register.registered(System.EncounterStep.fix)=true
@@ -20,6 +26,7 @@ version=2
 	:endif
 	@Player.save
 	@Storage.set(int,System.GlobalMain,0)
+	@Script.start(System\ScreenState\ScreenState.0)
 :endif
 :if:<not><Register.value(Options.System.Game ID)>=<Register.value(System.Game ID)>
 	:if:<Level.mapfile>=System\GlobalIntro.dat

@@ -1,0 +1,27 @@
+﻿version=2
+:while:<Storage.get(int,System.ScreenState)>=1
+	:if:<not><Level.filename>=GlobalMain
+		@Screen.fadeout
+		@Player.turnto(0)
+		@Player.warp(System\GlobalMain.dat,0,0,0,0)
+		@Level.update
+	:endif
+	@Screen.fadeout
+	@camera.deactivethirdperson
+	@Camera.fix
+	:if:<Register.value(System.Game ID)>=12
+		@Entity.setvisible(0,0)
+		@Entity.setvisible(121,1)
+		@Entity.setvisible(122,1)
+		@Entity.setvisible(123,1)
+		@Entity.setvisible(124,1)
+		@Entity.setopacity(121,0)
+		@Entity.setopacity(122,0)
+		@Entity.setopacity(123,0)
+		@Entity.setopacity(124,0)
+		@Screen.fadein
+		@Script.start(System\Intro\GlobalVerification)
+		@Script.start(System\Intro\12\Intro)
+	:endif
+:endwhile
+:end
