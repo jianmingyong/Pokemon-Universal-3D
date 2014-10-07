@@ -9,7 +9,7 @@
 	@Music.play(Mega Man Battle Network 6 - Theme Of Mega Man Battle Network 6)
 	@camera.deactivethirdperson
 	@Camera.fix
-	@Entity.setvisible(0,1)
+	@Script.start(System\ScreenState\Entity.Visible)
 	@Screen.fadein
 	@Text.show(Choose an option to change.)
 	@Options.setcancelindex(2)

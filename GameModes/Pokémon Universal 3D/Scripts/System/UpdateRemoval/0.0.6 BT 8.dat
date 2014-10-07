@@ -4,4 +4,31 @@ version=2
 		@Register.change(12\OldaleTown\001000011,2)
 	:endif
 :endif
+:if:<Register.registered(System.ErrorLog.ErrorID0)>=true
+	@Register.unregister(System.ErrorLog.ErrorID0,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID1)>=true
+	@Register.unregister(System.ErrorLog.ErrorID1,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID2)>=true
+	@Register.unregister(System.ErrorLog.ErrorID2,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID3)>=true
+	@Register.unregister(System.ErrorLog.ErrorID3,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID4)>=true
+	@Register.unregister(System.ErrorLog.ErrorID4,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID5)>=true
+	@Register.unregister(System.ErrorLog.ErrorID5,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID6)>=true
+	@Register.unregister(System.ErrorLog.ErrorID6,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID7)>=true
+	@Register.unregister(System.ErrorLog.ErrorID7,int)
+:endif
+:if:<Register.registered(System\Intro\12\Intro)>=true
+	@Register.unregister(System\Intro\12\Intro,int)
+:endif
 :end

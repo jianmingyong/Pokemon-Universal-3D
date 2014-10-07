@@ -1,0 +1,8 @@
+version=2
+#. Useage:
+#. @Storage.set(int,Title.line,0)
+#. @Script.start(Function\Title.NextLine)
+#. <System.return>
+@Storage.set(int,Title.line,<Storage.get(int,Title.line)>+25)
+:return:<Storage.get(int,Title.line)>
+:end

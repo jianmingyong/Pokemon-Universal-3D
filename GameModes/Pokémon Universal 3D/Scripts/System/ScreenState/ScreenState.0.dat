@@ -9,11 +9,14 @@
 	@Music.play(Mega Man Battle Network 6 - Theme Of Mega Man Battle Network 6)
 	@camera.deactivethirdperson
 	@Camera.fix
-	@Entity.setvisible(0,1)
+	@Script.start(System\ScreenState\Entity.Visible)
 	@Screen.fadein
 	@Text.show(Please Choose an option.)
 	@Options.show(New Game,Load Game,Options)
 	:when:New Game
+		:if:<Register.registered(System.Load.12)>=true
+			@Text.show(You are warn that your current save will~be overwrite if you choose a game that*has a save.)
+		:endif
 		@Text.show(Please Choose an option.)
 		@Options.setcancelindex(3)
 		@Options.show(Pokémon FireRed [8],Pokémon Emerald [12],Mystery Dungeon [15],Back)
@@ -28,7 +31,18 @@
 		:when:Back
 		:endwhen
 	:when:Load Game
-		@Storage.set(int,System.ScreenState,2)
+		:if:<Register.registered(System.Load.12)>=true
+			@Text.show(Please Choose an option.)
+			@Options.setcancelindex(3)
+			@Options.show(Pokémon Emerald [12],Back)
+			:when:Pokémon Emerald [12]
+				@Player.warp(<Register.value(System.LastMap.12)>,<Register.value(System.PlayerPosition.X.12)>,<Register.value(System.PlayerPosition.Y.12)>,<Register.value(System.PlayerPosition.Z.12)>,<Register.value(System.PlayerFacing.12)>)
+				@Storage.set(int,System.ScreenState,2)
+			:when:Back
+			:endwhen
+		:else
+			@Text.show(No valid save found.)
+		:endif
 	:when:Options
 		@Storage.set(int,System.ScreenState,3)
 		@Script.start(System\ScreenState\ScreenState.3)

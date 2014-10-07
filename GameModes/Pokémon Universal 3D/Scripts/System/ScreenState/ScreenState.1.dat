@@ -9,19 +9,129 @@
 	@Screen.fadeout
 	@camera.deactivethirdperson
 	@Camera.fix
+	@Script.start(System\ScreenState\Entity.Visible)
+	@Screen.fadein
+	# Verification System.
+	:while:<Entity.opacity(121)><100
+		@Entity.setopacity(121,<Entity.opacity(121)>+10)
+		@Level.wait(1)
+		@Level.update
+	:endwhile
+	@Music.play(Mega Man Battle Network 6 - Theme Of Mega Man Battle Network 6)
+	@Title.add(Game Verification System,2147483647,255,255,255,2,true,0,-280)
+	@Title.add(This is a game verification system. You are require to answer them only once.,2147483647,255,255,255,2,true,0,-200)
+	@Title.add(Please answer them truefully. It will affect the game based on your answer.,2147483647,255,255,255,2,true,0,-160)
+	@Title.add(Pre-Check List:,2147483647,255,255,255,2,true,0,-80)
+	@Title.add(1. Activate Pokémon Universal 3D Content Pack.,2147483647,255,255,255,2,true,0,-40)
+	@Title.add(2. Restart the game through the launcher after activating.,2147483647,255,255,255,2,true,0,0)
+	@Title.add("If you have not done so, please do it as you might experience glitches.",2147483647,255,255,255,2,true,0,40)
+	@Text.show(1. Can you hear the background music?)
+	@Options.setcancelindex(1)
+	@Options.show(YES,NO)
+	:when:YES
+	:when:NO
+		@Storage.set(int,System.ErrorLog.ErrorID0,1)
+		@Storage.set(int,System.ScreenState,4)
+		@Script.start(System\ScreenState\ScreenState.4)
+		:end
+	:endwhen
+	@Text.show(2. Did the text in this question go out~of textbox?)
+	@Options.setcancelindex(1)
+	@Options.show(YES,NO)
+	:when:YES
+		@Storage.set(int,System.ErrorLog.ErrorID0,1)
+		@Storage.set(int,System.ScreenState,4)
+		@Script.start(System\ScreenState\ScreenState.4)
+		:end
+	:when:NO
+	:endwhen
+	@Text.show(3. Do you want to skip starting~Story?)
+	@Options.setcancelindex(1)
+	@Options.show(YES,NO)
+	:when:YES
+		@Register.change(12\LittleRootTown,2)
+		@Register.change(12\LittleRootTown\PlayerRoom.1,4)
+		@Register.change(12\LittleRootTown\PlayerRoom.2\004000001,2)
+		@Register.change(12\LittleRootTown\RivalRoom.1,2)
+		@Register.change(12\LittleRootTown\RivalRoom.2,2)
+		@Register.change(12\LittleRootTown\RivalRoom.1\003000002,2)
+		@Player.warp(12\LittleRootTown\LittleRootTown.Truck.dat,2,0.1,3,0)
+		@Storage.set(int,System.ScreenState,2)
+		:end
+	:when:NO
+	:endwhen
+	@Title.clear
+	:while:<Entity.opacity(121)>>0
+		@Entity.setopacity(121,<Entity.opacity(121)>-10)
+		@Level.wait(1)
+		@Level.update
+	:endwhile
 	:if:<Register.value(System.Game ID)>=12
-		@Entity.setvisible(0,0)
-		@Entity.setvisible(121,1)
-		@Entity.setvisible(122,1)
-		@Entity.setvisible(123,1)
-		@Entity.setvisible(124,1)
-		@Entity.setopacity(121,0)
-		@Entity.setopacity(122,0)
-		@Entity.setopacity(123,0)
-		@Entity.setopacity(124,0)
-		@Screen.fadein
-		@Script.start(System\Intro\GlobalVerification)
-		@Script.start(System\Intro\12\Intro)
+		@Music.play(P_R_S_E Opening Selection)
+		@Script.start(System\Intro\12\Intro.1)
+		@Script.start(System\Intro\12\Intro.2)
+		@Script.start(System\Intro\12\Intro.3)
+		@Text.show(Hi! Sorry to keep you waiting!)
+		@Sound.play(Select)
+		@Text.show(Welcome to the world of POKéMON!)
+		@Sound.play(Select)
+		@Text.show(My name is BIRCH.)
+		@Sound.play(Select)
+		@Text.show(But everyone calls me the POKéMON~PROFESSOR.)
+		@Sound.play(Select)
+		@Script.start(System\Intro\12\Intro.4)
+		@Pokemon.cry(270)
+		@Text.show(This is what we call a "POKéMON.")
+		@Sound.play(Select)
+		@Text.show(This world is widely inhabited by~creatures known as POKéMON.)
+		@Sound.play(Select)
+		@Text.show(We humans live alongside POKéMON,~at times as friendly playmates, and)
+		@Sound.play(Select)
+		@Text.show(at times as cooperative workmates.)
+		@Sound.play(Select)
+		@Text.show(And sometimes, we band together~and battle others like us.)
+		@Sound.play(Select)
+		@Text.show(But despite our closeness, we don't~know everything about POKéMON.)
+		@Sound.play(Select)
+		@Text.show(In fact, there are many, many~secrets surrounding POKéMON.)
+		@Sound.play(Select)
+		@Text.show(To unravel POKéMON mysteries,~I've been undertaking research.)
+		@Sound.play(Select)
+		@Text.show(That's what I do.)
+		@Sound.play(Select)
+		@Text.show(And you are?)
+		@Sound.play(Select)
+		@Text.show(Are you a boy?~Or are you a girl?)
+		@Options.show(BOY,GIRL)
+		:when:BOY
+			@Register.change(System.PlayerGender.12,Boy)
+			@Player.wearskin(Brendan)
+		:when:GIRL
+			@Register.change(System.PlayerGender.12,Girl)
+			@Player.wearskin(May)
+		:endwhen
+		@Sound.play(Select)
+		@Text.show(All right.~What's your name?)
+		@Sound.play(Select)
+		@Text.show(You're <Player.name> who's moving to my~hometown of LITTLEROOT.)
+		@Sound.play(Select)
+		@Text.show(I get it now!)
+		@Sound.play(Select)
+		@Script.start(System\Intro\12\Intro.4)
+		@Text.show(All right, are you ready?)
+		@Sound.play(Select)
+		@Text.show(Your very own adventure is about~to unfold.)
+		@Sound.play(Select)
+		@Text.show(Take courage, and leap into the~world of POKéMON where dreams,)
+		@Sound.play(Select)
+		@Text.show(adventure, and friendships await!)
+		@Sound.play(Select)
+		@Text.show(Well, I'll be expecting you later.~Come see me in my POKéMON LAB.)
+		@Script.start(System\Intro\12\Intro.3)
+		@Script.start(System\Intro\12\Intro.2)
+		@Script.start(System\Intro\12\Intro.1)
+		@Player.warp(12\LittleRootTown\LittleRootTown.Truck.dat,2,0.1,3,0)
 	:endif
+	@Storage.set(int,System.ScreenState,2)
 :endwhile
 :end

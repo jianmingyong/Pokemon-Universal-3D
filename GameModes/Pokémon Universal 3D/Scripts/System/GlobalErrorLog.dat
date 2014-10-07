@@ -1,27 +1,27 @@
 version=2
 @Script.start(System\ErrorLog\Errorint)
-:if:<Register.value(System.ErrorLog.ErrorID0)>=2
+:if:<Storage.get(int,System.ErrorLog.ErrorID0)>=1
 	@Script.start(System\ErrorLog\ErrorID0)
 :endif
-:if:<Register.value(System.ErrorLog.ErrorID1)>=2
+:if:<Storage.get(int,System.ErrorLog.ErrorID1)>=1
 	@Script.start(System\ErrorLog\ErrorID1)
 :endif
-:if:<Register.value(System.ErrorLog.ErrorID2)>=2 <or> <Register.value(System.ErrorLog.ErrorID2)>=3
+:if::if:<Storage.get(int,System.ErrorLog.ErrorID2)>=1 <or> <Storage.get(int,System.ErrorLog.ErrorID2)>=2
 	@Script.start(System\ErrorLog\ErrorID2)
 :endif
-:if:<Register.value(System.ErrorLog.ErrorID3)>=2
+:if::if:<Storage.get(int,System.ErrorLog.ErrorID3)>=1
 	@Script.start(System\ErrorLog\ErrorID3)
 :endif
-:if:<Register.value(System.ErrorLog.ErrorID4)>=2
+:if::if:<Storage.get(int,System.ErrorLog.ErrorID4)>=1
 	@Script.start(System\ErrorLog\ErrorID4)
 :endif
-:if:<Register.value(System.ErrorLog.ErrorID5)>=2
+:if::if:<Storage.get(int,System.ErrorLog.ErrorID5)>=1
 	@Script.start(System\ErrorLog\ErrorID5)
 :endif
-:if:<Register.value(System.ErrorLog.ErrorID6)>=2
+:if::if:<Storage.get(int,System.ErrorLog.ErrorID6)>=1
 	@Script.start(System\ErrorLog\ErrorID6)
 :endif
-:if:<Register.value(System.ErrorLog.ErrorID7)>=2
+:if::if:<Storage.get(int,System.ErrorLog.ErrorID7)>=1
 	@Script.start(System\ErrorLog\ErrorID7)
 :endif
 :end

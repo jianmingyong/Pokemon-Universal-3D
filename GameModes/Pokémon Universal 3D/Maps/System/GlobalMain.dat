@@ -5,6 +5,7 @@ Main:
 ScreenState 0:
 {"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[0]}}{"Position"{sngArr[0,-0.1,-1]}}{"Textures"{recArr[[0,0,2048,1152]]}}{"TexturePath"{str[System\Main]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.75,1,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[0]}}{"Rotation"{int[0]}}{"Shader"{sngArr[1,1,1]}}]}}
 
+ScreenState 1:
 12\Intro.1:
 {"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[121]}}{"Position"{sngArr[0,-0.1,-1]}}{"Textures"{recArr[[0,0,512,384]]}}{"TexturePath"{str[System\Intro12]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.75,1,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[0]}}]}}
 12\Intro.2:
@@ -13,3 +14,6 @@ ScreenState 0:
 {"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[123]}}{"Position"{sngArr[0,-0.1,-1]}}{"Textures"{recArr[[1024,0,512,384]]}}{"TexturePath"{str[System\Intro12]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.75,1,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[0]}}]}}
 12\Intro.4:
 {"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[124]}}{"Position"{sngArr[0,-0.1,-1]}}{"Textures"{recArr[[1536,0,512,384]]}}{"TexturePath"{str[System\Intro12]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.75,1,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[0]}}]}}
+
+ScreenState 4:
+{"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[4]}}{"Position"{sngArr[0,0,-1]}}{"Textures"{recArr[[0,0,512,384]]}}{"TexturePath"{str[System\BlankScreen]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.66,0.935,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[0]}}]}}

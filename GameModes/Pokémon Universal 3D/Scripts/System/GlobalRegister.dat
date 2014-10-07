@@ -23,54 +23,6 @@ version=2
 :if:<Register.registered(System.GlobalRegister Validation)>=false
 	@Register.register(System.GlobalRegister Validation,bool,true)
 :endif
-:if:<Register.registered(System.ErrorLog.ErrorID0)>=false
-	@Register.register(System.ErrorLog.ErrorID0,int,1)
-:endif
-:if:<not><Register.value(System.ErrorLog.ErrorID0)>=1
-	@Register.change(System.ErrorLog.ErrorID0,1)
-:endif
-:if:<Register.registered(System.ErrorLog.ErrorID1)>=false
-	@Register.register(System.ErrorLog.ErrorID1,int,1)
-:endif
-:if:<not><Register.value(System.ErrorLog.ErrorID1)>=1
-	@Register.change(System.ErrorLog.ErrorID1,1)
-:endif
-:if:<Register.registered(System.ErrorLog.ErrorID2)>=false
-	@Register.register(System.ErrorLog.ErrorID2,int,1)
-:endif
-:if:<not><Register.value(System.ErrorLog.ErrorID2)>=1
-	@Register.change(System.ErrorLog.ErrorID2,1)
-:endif
-:if:<Register.registered(System.ErrorLog.ErrorID3)>=false
-	@Register.register(System.ErrorLog.ErrorID3,int,1)
-:endif
-:if:<not><Register.value(System.ErrorLog.ErrorID3)>=1
-	@Register.change(System.ErrorLog.ErrorID3,1)
-:endif
-:if:<Register.registered(System.ErrorLog.ErrorID4)>=false
-	@Register.register(System.ErrorLog.ErrorID4,int,1)
-:endif
-:if:<not><Register.value(System.ErrorLog.ErrorID4)>=1
-	@Register.change(System.ErrorLog.ErrorID4,1)
-:endif
-:if:<Register.registered(System.ErrorLog.ErrorID5)>=false
-	@Register.register(System.ErrorLog.ErrorID5,int,1)
-:endif
-:if:<not><Register.value(System.ErrorLog.ErrorID5)>=1
-	@Register.change(System.ErrorLog.ErrorID5,1)
-:endif
-:if:<Register.registered(System.ErrorLog.ErrorID6)>=false
-	@Register.register(System.ErrorLog.ErrorID6,int,1)
-:endif
-:if:<not><Register.value(System.ErrorLog.ErrorID6)>=1
-	@Register.change(System.ErrorLog.ErrorID6,1)
-:endif
-:if:<Register.registered(System.ErrorLog.ErrorID7)>=false
-	@Register.register(System.ErrorLog.ErrorID7,int,1)
-:endif
-:if:<not><Register.value(System.ErrorLog.ErrorID7)>=1
-	@Register.change(System.ErrorLog.ErrorID7,1)
-:endif
 :if:<Register.registered(System.ActionScript)>=false
 	@Register.register(System.ActionScript,str,System\GlobalRegister.dat)
 :endif

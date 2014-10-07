@@ -1,5 +1,5 @@
 ﻿Name|Pokemon Universal 3D
-Description|Pokemon Universal in 3D - Emerald Edition
+Description|Pokemon Universal in 3D
 Version|0.50.1.0.0.6
 Author|jianmingyong
 MapPath|$Mode\Maps\
@@ -13,10 +13,10 @@ StartMap|System\GlobalMain.dat
 StartPosition|0,0,0
 StartRotation|0
 StartLocationName|Intro
-StartDialogue|Welcome to Pokémon Universal 3D!|Please choose a character.~It will determine your starting game.|~Press Space Bar/Enter to start
+StartDialogue|Welcome to Pokémon Universal 3D!|Please enter your name.|~Press Space Bar/Enter to start
 StartColor|127,127,255
 PokemonAppear|0
 IntroMusic|Mega Man Battle Network 6 - Theme Of Mega Man Battle Network 6
 SkinColors|255;127;127,127;255;127,255;127;127,127;127;255
-SkinFiles|trchar000,trchar001,Brendan,May
-SkinNames|Red,Leaf,Brendan,May
+SkinFiles|Dialga
+SkinNames|Please Enter your name.

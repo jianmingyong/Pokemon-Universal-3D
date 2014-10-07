@@ -2,21 +2,47 @@ version=2
 #############################################################
 # Welcome to the Pokémon Universal 3D Main Initialize File. #
 #############################################################
-# Main Menu - @Storage.set(int,System.ScreenState,0)
-# Intro Screen - @Storage.set(int,System.ScreenState,1)
-# World - @Storage.set(int,System.ScreenState,2)
-# Options - @Storage.set(int,System.ScreenState,3)
+#. Main Menu - @Storage.set(int,System.ScreenState,0)
+#. Intro Screen - @Storage.set(int,System.ScreenState,1)
+#. World - @Storage.set(int,System.ScreenState,2)
+#. Options - @Storage.set(int,System.ScreenState,3)
+#. Error - @Storage.set(int,System.ScreenState,4)
 @Level.update
+@Title.clear
+@Camera.defix
 :if:<Storage.count(int)>=0
+	#Define Variable.
 	@Storage.set(int,System.ScreenState,0)
+	@Storage.set(int,System.ErrorLog.ErrorID0,0)
+	@Storage.set(int,System.ErrorLog.ErrorID1,0)
+	@Storage.set(int,System.ErrorLog.ErrorID2,0)
+	@Storage.set(int,System.ErrorLog.ErrorID3,0)
+	@Storage.set(int,System.ErrorLog.ErrorID4,0)
+	@Storage.set(int,System.ErrorLog.ErrorID5,0)
+	@Storage.set(int,System.ErrorLog.ErrorID6,0)
+	@Storage.set(int,System.ErrorLog.ErrorID7,0)
+	#End Define Variable.
 	@Script.start(System\GlobalRegister)
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
+	#Define Store Variable.
+	:if:<Register.value(System.Game ID)>=12
+		@Register.change(System.PlayerPosition.X.12,<Player.position(x)>)
+		@Register.change(System.PlayerPosition.Y.12,<Player.position(y)>)
+		@Register.change(System.PlayerPosition.Z.12,<Player.position(z)>)
+		@Register.change(System.PlayerFacing.12,<Player.facing>)
+		@Register.change(System.LastMap.12,<Level.mapfile>)
+		:if:<Register.registered(System.Load.12)>=false
+			@Register.register(System.Load.12)
+		:endif
+	:endif
+	#End Define Variable.
 	:if:<Register.value(System.GlobalRegister Validation)>=true
-		@Script.start(System\GlobalRegisterValidation)
+		#. @Script.start(System\GlobalRegisterValidation)
 	:endif
 	:if:<not><Register.value(System.P3D Version)>=0.50.1 <or> <not><Register.value(System.Game Version)>=0.0.6 BT 8
-		@Register.change(System.ErrorLog.ErrorID1,2)
-		@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+		@Storage.set(int,System.ErrorLog.ErrorID1,1)
+		@Storage.set(int,System.ScreenState,4)
+		@Script.start(System\ScreenState\ScreenState.4)
 		:end
 	:endif
 	@Script.start(System\GlobalBankInterest)
@@ -27,29 +53,6 @@ version=2
 	@Player.save
 	@Storage.set(int,System.GlobalMain,0)
 	@Script.start(System\ScreenState\ScreenState.0)
-:endif
-:if:<not><Register.value(Options.System.Game ID)>=<Register.value(System.Game ID)>
-	:if:<Level.mapfile>=System\GlobalIntro.dat
-		@Screen.fadeout
-		@Script.start(System\Intro\GlobalBackground)
-		@Script.start(System\GlobalRegister)
-		@Script.start(System\GlobalRegisterValidation)
-		@Script.start(System\GlobalOptions)
-		@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
-		@Screen.fadein
-		@Script.start(System\GlobalIntro)
-	:else
-		@Screen.fadeout
-		@Player.warp(System\GlobalIntro.dat,0,0,0,0)
-		@Level.update
-		@Script.start(System\Intro\GlobalBackground)
-		@Script.start(System\GlobalRegister)
-		@Script.start(System\GlobalRegisterValidation)
-		@Script.start(System\GlobalOptions)
-		@Register.change(System.Game ID,<Register.value(Options.System.Game ID)>)
-		@Screen.fadein
-		@Script.start(System\GlobalIntro)
-	:endif
 :endif
 @Script.start(System\GlobalParallelProcess)
 #. @Script.start(System\MysteryDungeon\Main)

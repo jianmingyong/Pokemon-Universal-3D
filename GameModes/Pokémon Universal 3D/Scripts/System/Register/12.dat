@@ -6,16 +6,19 @@ version=2
 	@Register.register(System.PlayerPosition.X.12,int,<Player.position(x)>)
 :endif
 :if:<Register.registered(System.PlayerPosition.Y.12)>=false
-	@Register.register(System.PlayerPosition.Y.12,int,<Player.position(u)>)
+	@Register.register(System.PlayerPosition.Y.12,int,<Player.position(y)>)
 :endif
 :if:<Register.registered(System.PlayerPosition.Z.12)>=false
 	@Register.register(System.PlayerPosition.Z.12,int,<Player.position(z)>)
 :endif
+:if:<Register.registered(System.PlayerFacing.12)>=false
+	@Register.register(System.PlayerFacing.12,int,<Player.facing>)
+:endif
+:if:<Register.registered(System.PlayerGender.12)>=false
+	@Register.register(System.PlayerGender.12,str,nothing)
+:endif
 :if:<Register.registered(System.12.Starter)>=false
 	@Register.register(System.12.Starter,int,1)
-:endif
-:if:<Register.registered(System\Intro\12\Intro)>=false
-	@Register.register(System\Intro\12\Intro,int,1)
 :endif
 :if:<Register.registered(System\Intro\12\Intro.1)>=false
 	@Register.register(System\Intro\12\Intro.1,int,1)
