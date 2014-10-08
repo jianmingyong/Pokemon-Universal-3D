@@ -1,5 +1,5 @@
 version=2
-:if:<Storage.get(int,System.ScreenState)>=0 <or> <Storage.get(int,System.ScreenState)>=3
+:if:<Storage.get(int,System.ScreenState)>=0
 	@Entity.setvisible(0,1)
 	@Entity.setvisible(121,0)
 	@Entity.setvisible(122,0)
@@ -21,7 +21,7 @@ version=2
 		@Entity.setopacity(124,0)
 	:endif
 :endif
-:if:<Storage.get(int,System.ScreenState)>=4
+:if:<Storage.get(int,System.ScreenState)>=3
 	@Entity.setvisible(0,0)
 	@Entity.setvisible(121,0)
 	@Entity.setvisible(122,0)

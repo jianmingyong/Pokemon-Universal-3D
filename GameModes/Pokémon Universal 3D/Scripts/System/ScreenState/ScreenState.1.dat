@@ -2,7 +2,7 @@
 :while:<Storage.get(int,System.ScreenState)>=1
 	:if:<not><Level.filename>=GlobalMain
 		@Screen.fadeout
-		@Player.turnto(0)
+		@Camera.set(0,0,0,0,0)
 		@Player.warp(System\GlobalMain.dat,0,0,0,0)
 		@Level.update
 	:endif
@@ -30,18 +30,18 @@
 	@Options.show(YES,NO)
 	:when:YES
 	:when:NO
-		@Storage.set(int,System.ErrorLog.ErrorID0,1)
-		@Storage.set(int,System.ScreenState,4)
-		@Script.start(System\ScreenState\ScreenState.4)
+		@Storage.set(int,System.ErrorLog.ErrorID6,1)
+		@Storage.set(int,System.ScreenState,3)
+		@Script.start(System\ScreenState\ScreenState.3)
 		:end
 	:endwhen
 	@Text.show(2. Did the text in this question go out~of textbox?)
 	@Options.setcancelindex(1)
 	@Options.show(YES,NO)
 	:when:YES
-		@Storage.set(int,System.ErrorLog.ErrorID0,1)
-		@Storage.set(int,System.ScreenState,4)
-		@Script.start(System\ScreenState\ScreenState.4)
+		@Storage.set(int,System.ErrorLog.ErrorID6,1)
+		@Storage.set(int,System.ScreenState,3)
+		@Script.start(System\ScreenState\ScreenState.3)
 		:end
 	:when:NO
 	:endwhen
@@ -55,7 +55,10 @@
 		@Register.change(12\LittleRootTown\RivalRoom.1,2)
 		@Register.change(12\LittleRootTown\RivalRoom.2,2)
 		@Register.change(12\LittleRootTown\RivalRoom.1\003000002,2)
+		@Register.change(System.PlayerGender.12,Boy)
+		@Player.wearskin(Brendan)
 		@Player.warp(12\LittleRootTown\LittleRootTown.Truck.dat,2,0.1,3,0)
+		@Level.update
 		@Storage.set(int,System.ScreenState,2)
 		:end
 	:when:NO

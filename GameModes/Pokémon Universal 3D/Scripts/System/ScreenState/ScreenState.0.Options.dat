@@ -1,0 +1,20 @@
+﻿version=2
+:while:<Storage.get(int,System.ScreenState)>=0
+	@Text.show(Choose an option to change.)
+	@Options.setcancelindex(2)
+	@Options.show(New Battle System [<Register.value(System.New BattleV2 Exp)>],Sandbox Mode [<Register.value(System.SandBoxMode)>],Back)
+	:when:New Battle System [true]
+		@Register.change(System.New BattleV2 Exp,false)
+	:when:New Battle System [false]
+		@Register.change(System.New BattleV2 Exp,true)
+	:when:Sandbox Mode [true]
+		@Register.change(System.SandBoxMode,false)
+	:when:Sandbox Mode [false]
+		@Register.change(System.SandBoxMode,true)
+	:when:Back
+		@Player.save
+		:exitwhile
+	:endwhen
+:endwhile
+@Script.start(System\ScreenState\ScreenState.0)
+:end

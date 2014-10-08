@@ -5,8 +5,7 @@ version=2
 #. Main Menu - @Storage.set(int,System.ScreenState,0)
 #. Intro Screen - @Storage.set(int,System.ScreenState,1)
 #. World - @Storage.set(int,System.ScreenState,2)
-#. Options - @Storage.set(int,System.ScreenState,3)
-#. Error - @Storage.set(int,System.ScreenState,4)
+#. Error - @Storage.set(int,System.ScreenState,3)
 @Level.update
 @Title.clear
 @Camera.defix
@@ -25,7 +24,7 @@ version=2
 	@Script.start(System\GlobalRegister)
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
 	#Define Store Variable.
-	:if:<Register.value(System.Game ID)>=12
+	:if:<Register.value(System.Game ID)>=12 <and> <not><Level.filename>=GlobalMain
 		@Register.change(System.PlayerPosition.X.12,<Player.position(x)>)
 		@Register.change(System.PlayerPosition.Y.12,<Player.position(y)>)
 		@Register.change(System.PlayerPosition.Z.12,<Player.position(z)>)
@@ -41,8 +40,8 @@ version=2
 	:endif
 	:if:<not><Register.value(System.P3D Version)>=0.50.1 <or> <not><Register.value(System.Game Version)>=0.0.6 BT 8
 		@Storage.set(int,System.ErrorLog.ErrorID1,1)
-		@Storage.set(int,System.ScreenState,4)
-		@Script.start(System\ScreenState\ScreenState.4)
+		@Storage.set(int,System.ScreenState,3)
+		@Script.start(System\ScreenState\ScreenState.3)
 		:end
 	:endif
 	@Script.start(System\GlobalBankInterest)

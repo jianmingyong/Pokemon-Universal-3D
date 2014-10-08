@@ -1,27 +1,197 @@
 version=2
-@Script.start(System\ErrorLog\Errorint)
+@Text.log([CODE])
+@Text.log(Pokémon Universal 3D Crash Log V <Register.value(System.Game Version)>)
+@Text.log(Pokémon Universal 3D has crashed!)
+:select:<System.random(1,19)>
+:when:1
+	@Text.log(// I AM ERROR!)
+:when:2
+	@Text.log(// Minecraft crashed.)
+:when:3
+	@Text.log(// Missingno.)
+:when:4
+	@Text.log(// 1 ERROR)
+:when:5
+	@Text.log(// GET TO DA CHOPPA)
+:when:6
+	@Text.log(// Fire attacks might be super effective...)
+:when:7
+	@Text.log(// Does this help?)
+:when:8
+	@Text.log(// Work! Pleeeeeeeease?)
+:when:9
+	@Text.log(// WHAT IS THIS?)
+:when:10
+	@Text.log(// I find your lack of [ERROR] disturbing.)
+:when:11
+	@Text.log(// Blame Darkfire.)
+:when:12
+	@Text.log(// RTFM)
+:when:13
+	@Text.log(// FEZ II announced.)
+:when:14
+	@Text.log(// At least it's not a Blue Screen.)
+:when:15
+	@Text.log(// Kernel PANIC)
+:when:16
+	@Text.log(// I'm sorry, Dave, I'm afraid I can't do that.)
+:when:17
+	@Text.log(// Never gonna give you up ~)
+:when:18
+	@Text.log(// Wouldn't have happend with Swift.)
+:when:19
+	@Text.log(// Team Rocket blasting off again!)
+:endwhen
+@Text.log()
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log()
+@Text.log(This is the latest data before this crash happens:)
+@Text.log()
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log(Data: Pokemon\Save\<Player.name>*\Player.dat)
+@Text.log(Note: Not all data are captured in the backup file.)
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log(Name|<Player.name>)
+@Text.log(Position|<Player.position>)
+@Text.log(MapFile|<Level.mapfile>)
+@Text.log(Rotation|<Player.facing>)
+@Text.log(RivalName|<Rival.name>)
+@Text.log(Money|<Player.money>)
+@Text.log(Badges|<Player.badges>)
+@Text.log(Gender|<Register.value(System.PlayerGender)>)
+@Text.log(OT|<Player.ot>)
+:if:<Register.value(12\LittleRootTown\ProfBirchLab)>=4
+	@Text.log(hasPokedex|1)
+:else
+	@Text.log(hasPokedex|0)
+:endif
+@Text.log(hasPokegear|0)
+@Text.log(skin|<Player.skin>)
+@Text.log(location|<Level.filename>)
+@Text.log(BP|<Player.bp>)
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log(Data: Pokemon\Save\<Player.name>*\Party.dat)
+@Text.log(Note: Not all data are captured in the backup file.)
+@Text.log(---------------------------------------------------------------------------------)
+@Storage.set(int,BackupLog.Party.i,0)
+:while:<Storage.get(int,BackupLog.Party.i)><<Pokemon.count>
+	@Storage.update(int,BackupLog.Party.i,add,1)
+	@Text.log(<Pokemon.data(<Storage.get(int,BackupLog.Party.i)>-1)>)
+:endwhile
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log(Data: Pokemon\Save\<Player.name>*\Register.dat)
+@Text.log(Note: Not all data are captured in the backup file.)
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log()
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log()
+@Text.log(Game information:)
+@Text.log()
+@Text.log(Compatible Pokémon 3D Indev version: <Register.value(System.P3D Version)>)
+@Text.log(Pokemon Universal 3D Indev version: <Register.value(System.Game Version)>)
+@Text.log(Active Game ID: <Register.value(System.Game ID)>)
+@Text.log(System.New BattleV2 Exp: <Register.value(System.New BattleV2 Exp)>)
+@Text.log(System.SandBoxMode: <Register.value(System.SandBoxMode)>)
+@Text.log()
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log()
+@Text.log(System specifications:)
+@Text.log()
+@Text.log(System time (unix timestamp): <System.unixtimestamp>)
+@Text.log()
 :if:<Storage.get(int,System.ErrorLog.ErrorID0)>=1
-	@Script.start(System\ErrorLog\ErrorID0)
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error information:)
+	@Text.log()
+	@Text.log(Message: There are some problem reading the game script. It might be wrong syntax or the register does not exist causing this error to trigger.)
+	@Text.log(HelpLink: No helplink available.)
+	@Text.log(Data: "Pokemon\GameModes\Pokémon FireRed Universal 3D\Scripts\<Register.value(System.ActionScript)>")
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error solution:)
+	@Text.log((The provided solution might not work for your problem))
+	@Text.log()
+	@Text.log(Error ID: 0)
+	@Text.log(Error Type: Syntax Error)
+	@Text.log(Error Description: There are some problem reading the game script. It might be wrong syntax or the register does not exist causing this error to trigger.)
+	@Text.log(Error Solution: Report this bug at "http://pokemon3d.net/forum/threads/6297/".)
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(You should report this error.)
+	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
+	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
+	@Text.log([/CODE])
 :endif
 :if:<Storage.get(int,System.ErrorLog.ErrorID1)>=1
-	@Script.start(System\ErrorLog\ErrorID1)
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error information:)
+	@Text.log()
+	@Text.log(Message: The update system fails to update. This might be triggered if your save is corrupted or a syntax error.)
+	@Text.log(HelpLink: No helplink available.)
+	@Text.log(Data: "Pokemon\Save\<Player.name>\Register.dat")
+	@Text.log([Update Validation result: "System.Game Version" must be 0.0.6 BT 8 Current value: <Register.value(System.Game Version)>])
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error solution:)
+	@Text.log((The provided solution might not work for your problem))
+	@Text.log()
+	@Text.log(Error ID: 1)
+	@Text.log(Error Type: Update Error)
+	@Text.log(Error Description: The update system fails to update. This might be triggered if your save is corrupted or a syntax error.)
+	@Text.log(Error Solution: Make sure that you are playing the lastest version of Pokémon FireRed Universal 3D before reporting this bug at "http://pokemon3d.net/forum/threads/6297/".)
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(You should report this error.)
+	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
+	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
+	@Text.log([/CODE])
 :endif
-:if::if:<Storage.get(int,System.ErrorLog.ErrorID2)>=1 <or> <Storage.get(int,System.ErrorLog.ErrorID2)>=2
-	@Script.start(System\ErrorLog\ErrorID2)
+:if:<Storage.get(int,System.ErrorLog.ErrorID2)>=1
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error information:)
+	@Text.log()
+	@Text.log(Message: The register validation system detected invalid or missing value in the register.dat file.)
+	@Text.log(HelpLink: No helplink available.)
+	@Text.log(Data: "Pokemon\Save\<Player.name>\Register.dat")
+	# Some Script.
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error solution:)
+	@Text.log((The provided solution might not work for your problem))
+	@Text.log()
+	@Text.log(Error ID: 2)
+	@Text.log(Error Type: Register Error)
+	@Text.log(Error Description: The register validation system detected invalid or missing value in the register.dat file.)
+	@Text.log(Error Solution: Make sure that you didn't modify anything in the register.dat before reporting this bug at "http://pokemon3d.net/forum/threads/6297/".)
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(You should report this error.)
+	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
+	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
+	@Text.log([/CODE])
 :endif
-:if::if:<Storage.get(int,System.ErrorLog.ErrorID3)>=1
+:if:<Storage.get(int,System.ErrorLog.ErrorID3)>=1
 	@Script.start(System\ErrorLog\ErrorID3)
 :endif
-:if::if:<Storage.get(int,System.ErrorLog.ErrorID4)>=1
+:if:<Storage.get(int,System.ErrorLog.ErrorID4)>=1
 	@Script.start(System\ErrorLog\ErrorID4)
 :endif
-:if::if:<Storage.get(int,System.ErrorLog.ErrorID5)>=1
+:if:<Storage.get(int,System.ErrorLog.ErrorID5)>=1
 	@Script.start(System\ErrorLog\ErrorID5)
 :endif
-:if::if:<Storage.get(int,System.ErrorLog.ErrorID6)>=1
+:if:<Storage.get(int,System.ErrorLog.ErrorID6)>=1
 	@Script.start(System\ErrorLog\ErrorID6)
 :endif
-:if::if:<Storage.get(int,System.ErrorLog.ErrorID7)>=1
+:if:<Storage.get(int,System.ErrorLog.ErrorID7)>=1
 	@Script.start(System\ErrorLog\ErrorID7)
 :endif
 :end
