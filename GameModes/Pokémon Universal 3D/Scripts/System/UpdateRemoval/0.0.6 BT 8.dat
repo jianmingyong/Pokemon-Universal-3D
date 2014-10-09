@@ -31,4 +31,13 @@ version=2
 :if:<Register.registered(System\Intro\12\Intro)>=true
 	@Register.unregister(System\Intro\12\Intro,int)
 :endif
+:if:<Register.registered(Options.System.Game ID)>=true
+	@Register.unregister(Options.System.Game ID,int)
+:endif
+:if:<Register.registered(System.Skip Intro)>=true
+	@Register.register(System.Skip Intro,int)
+:endif
+:if:<Register.registered(System.PlayerGender)>=true
+	@Register.unregister(System.PlayerGender,str)
+:endif 
 :end

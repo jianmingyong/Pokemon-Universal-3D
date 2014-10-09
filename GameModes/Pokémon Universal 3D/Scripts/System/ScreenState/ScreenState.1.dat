@@ -57,6 +57,7 @@
 		@Register.change(12\LittleRootTown\RivalRoom.1\003000002,2)
 		@Register.change(System.PlayerGender.12,Boy)
 		@Player.wearskin(Brendan)
+		@Player.setrivalname(May)
 		@Player.warp(12\LittleRootTown\LittleRootTown.Truck.dat,2,0.1,3,0)
 		@Level.update
 		@Storage.set(int,System.ScreenState,2)
@@ -109,9 +110,11 @@
 		:when:BOY
 			@Register.change(System.PlayerGender.12,Boy)
 			@Player.wearskin(Brendan)
+			@Player.setrivalname(May)
 		:when:GIRL
 			@Register.change(System.PlayerGender.12,Girl)
 			@Player.wearskin(May)
+			@Player.setrivalname(Brendan)
 		:endwhen
 		@Sound.play(Select)
 		@Text.show(All right.~What's your name?)
