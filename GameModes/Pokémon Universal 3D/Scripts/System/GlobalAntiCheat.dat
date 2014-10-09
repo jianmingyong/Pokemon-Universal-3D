@@ -1,0 +1,9 @@
+version=2
+##################################
+# Anti Cheat Initialization File # 
+##################################.
+# 1. Check Register.
+# 2. Check Valid Pokémon.
+# 3. Check Save Component.
+# 4. Others.
+:end
