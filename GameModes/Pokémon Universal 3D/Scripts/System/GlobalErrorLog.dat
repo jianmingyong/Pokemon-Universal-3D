@@ -48,37 +48,6 @@ version=2
 @Text.log(This is the latest data before this crash happens:)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
-@Text.log(Data: Pokemon\Save\<Player.name>*\Player.dat)
-@Text.log(Note: Not all data are captured in the backup file.)
-@Text.log(---------------------------------------------------------------------------------)
-@Text.log(Name|<Player.name>)
-@Text.log(Position|<Player.position>)
-@Text.log(MapFile|<Level.mapfile>)
-@Text.log(Rotation|<Player.facing>)
-@Text.log(RivalName|<Rival.name>)
-@Text.log(Money|<Player.money>)
-@Text.log(Badges|<Player.badges>)
-@Text.log(Gender|<Register.value(System.PlayerGender)>)
-@Text.log(OT|<Player.ot>)
-:if:<Register.value(12\LittleRootTown\ProfBirchLab)>=4
-	@Text.log(hasPokedex|1)
-:else
-	@Text.log(hasPokedex|0)
-:endif
-@Text.log(hasPokegear|0)
-@Text.log(skin|<Player.skin>)
-@Text.log(location|<Level.filename>)
-@Text.log(BP|<Player.bp>)
-@Text.log(---------------------------------------------------------------------------------)
-@Text.log(Data: Pokemon\Save\<Player.name>*\Party.dat)
-@Text.log(Note: Not all data are captured in the backup file.)
-@Text.log(---------------------------------------------------------------------------------)
-@Storage.set(int,BackupLog.Party.i,0)
-:while:<Storage.get(int,BackupLog.Party.i)><<Pokemon.count>
-	@Storage.update(int,BackupLog.Party.i,add,1)
-	@Text.log(<Pokemon.data(<Storage.get(int,BackupLog.Party.i)>-1)>)
-:endwhile
-@Text.log(---------------------------------------------------------------------------------)
 @Text.log(Data: Pokemon\Save\<Player.name>*\Register.dat)
 @Text.log(Note: Not all data are captured in the backup file.)
 @Text.log(---------------------------------------------------------------------------------)
@@ -104,9 +73,9 @@ version=2
 	@Text.log()
 	@Text.log(Error information:)
 	@Text.log()
-	@Text.log(Message: There are some problem reading the game script. It might be wrong syntax or the register does not exist causing this error to trigger.)
+	@Text.log(Message: The game is unable to process a conditional script. It might be a syntax error.)
 	@Text.log(HelpLink: No helplink available.)
-	@Text.log(Data: "Pokemon\GameModes\Pokémon FireRed Universal 3D\Scripts\<Register.value(System.ActionScript)>")
+	@Text.log(Data: "Pokemon\GameModes\Pokémon Universal 3D\Scripts\<Storage.get(str,System.ActionScript)>")
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
@@ -114,9 +83,9 @@ version=2
 	@Text.log((The provided solution might not work for your problem))
 	@Text.log()
 	@Text.log(Error ID: 0)
-	@Text.log(Error Type: Syntax Error)
-	@Text.log(Error Description: There are some problem reading the game script. It might be wrong syntax or the register does not exist causing this error to trigger.)
-	@Text.log(Error Solution: Report this bug at "http://pokemon3d.net/forum/threads/6297/".)
+	@Text.log(Error Type: Script Error)
+	@Text.log(Error Description: The game crashed trying to process a script.)
+	@Text.log(Error Solution: Make sure the syntax in the script is correct.)
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
@@ -126,14 +95,18 @@ version=2
 	@Text.log([/CODE])
 :endif
 :if:<Storage.get(int,System.ErrorLog.ErrorID1)>=1
+	@Storage.set(int,System.GlobalUpdateValidation.Error,0)
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
 	@Text.log(Error information:)
 	@Text.log()
-	@Text.log(Message: The update system fails to update. This might be triggered if your save is corrupted or a syntax error.)
+	@Text.log(Message: The update validation system detected invalid value in a sensitive game environment.)
 	@Text.log(HelpLink: No helplink available.)
 	@Text.log(Data: "Pokemon\Save\<Player.name>\Register.dat")
-	@Text.log([Update Validation result: "System.Game Version" must be 0.0.6 BT 8 Current value: <Register.value(System.Game Version)>])
+	:while:<Storage.get(int,System.GlobalUpdateValidation.Error)><<Storage.get(int,System.GlobalUpdateValidation.TotalError)>
+		@Text.log(<Storage.get(str,System.GlobalUpdateValidation.<Storage.get(int,System.GlobalUpdateValidation.Error)>)>)
+		@Storage.set(int,System.GlobalUpdateValidation.Error,<Storage.get(int,System.GlobalUpdateValidation.Error)>+1)
+	:endwhile
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
@@ -142,8 +115,8 @@ version=2
 	@Text.log()
 	@Text.log(Error ID: 1)
 	@Text.log(Error Type: Update Error)
-	@Text.log(Error Description: The update system fails to update. This might be triggered if your save is corrupted or a syntax error.)
-	@Text.log(Error Solution: Make sure that you are playing the lastest version of Pokémon FireRed Universal 3D before reporting this bug at "http://pokemon3d.net/forum/threads/6297/".)
+	@Text.log(Error Description: The game detected edited or missing files.)
+	@Text.log(Error Solution: For offline play, ensure that you are running the unmodded version of Pokémon Universal 3D. You can enable Content Packs.)
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
@@ -153,14 +126,18 @@ version=2
 	@Text.log([/CODE])
 :endif
 :if:<Storage.get(int,System.ErrorLog.ErrorID2)>=1
+	@Storage.set(int,System.GlobalRegisterValidation.Error,0)
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
 	@Text.log(Error information:)
 	@Text.log()
-	@Text.log(Message: The register validation system detected invalid or missing value in the register.dat file.)
+	@Text.log(Message: The register validation system detected invalid in a sensitive game environment.)
 	@Text.log(HelpLink: No helplink available.)
 	@Text.log(Data: "Pokemon\Save\<Player.name>\Register.dat")
-	# Some Script.
+	:while:<Storage.get(int,System.GlobalRegisterValidation.Error)><<Storage.get(int,System.GlobalRegisterValidation.TotalError)>
+		@Text.log(<Storage.get(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.Error)>)>)
+		@Storage.set(int,System.GlobalRegisterValidation.Error,<Storage.get(int,System.GlobalRegisterValidation.Error)>+1)
+	:endwhile
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
@@ -169,8 +146,8 @@ version=2
 	@Text.log()
 	@Text.log(Error ID: 2)
 	@Text.log(Error Type: Register Error)
-	@Text.log(Error Description: The register validation system detected invalid or missing value in the register.dat file.)
-	@Text.log(Error Solution: Make sure that you didn't modify anything in the register.dat before reporting this bug at "http://pokemon3d.net/forum/threads/6297/".)
+	@Text.log(Error Description: The game detected edited or missing files.)
+	@Text.log(Error Solution: For offline play, ensure that you are running the unmodded version of Pokémon Universal 3D. You can enable Content Packs.)
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
@@ -180,18 +157,34 @@ version=2
 	@Text.log([/CODE])
 :endif
 :if:<Storage.get(int,System.ErrorLog.ErrorID3)>=1
-	@Script.start(System\ErrorLog\ErrorID3)
-:endif
-:if:<Storage.get(int,System.ErrorLog.ErrorID4)>=1
-	@Script.start(System\ErrorLog\ErrorID4)
-:endif
-:if:<Storage.get(int,System.ErrorLog.ErrorID5)>=1
-	@Script.start(System\ErrorLog\ErrorID5)
-:endif
-:if:<Storage.get(int,System.ErrorLog.ErrorID6)>=1
-	@Script.start(System\ErrorLog\ErrorID6)
-:endif
-:if:<Storage.get(int,System.ErrorLog.ErrorID7)>=1
-	@Script.start(System\ErrorLog\ErrorID7)
+	@Storage.set(int,System.GlobalPokémonValidation.Error,0)
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error information:)
+	@Text.log()
+	@Text.log(Message: The pokémon validation system detected invalid in a sensitive game environment.)
+	@Text.log(HelpLink: No helplink available.)
+	@Text.log(Data: "Pokemon\Save\<Player.name>\Party.dat")
+	:while:<Storage.get(int,System.GlobalPokémonValidation.Error)><<Storage.get(int,System.GlobalPokémonValidation.TotalError)>
+		@Text.log(<Storage.get(str,System.GlobalPokémonValidation.<Storage.get(int,System.GlobalPokémonValidation.Error)>)>)
+		@Storage.set(int,System.GlobalPokémonValidation.Error,<Storage.get(int,System.GlobalPokémonValidation.Error)>+1)
+	:endwhile
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error solution:)
+	@Text.log((The provided solution might not work for your problem))
+	@Text.log()
+	@Text.log(Error ID: 3)
+	@Text.log(Error Type: Pokémon Error)
+	@Text.log(Error Description: The game detected edited or missing files.)
+	@Text.log(Error Solution: For offline play, ensure that you are running the unmodded version of Pokémon Universal 3D. You can enable Content Packs.)
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(You should report this error.)
+	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
+	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
+	@Text.log([/CODE])
 :endif
 :end

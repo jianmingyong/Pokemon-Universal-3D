@@ -14,12 +14,6 @@ version=2
 :if:<Register.registered(System.Game ID)>=false
 	@Register.register(System.Game ID,int,0)
 :endif
-:if:<Register.registered(System.GlobalRegister Validation)>=false
-	@Register.register(System.GlobalRegister Validation,bool,true)
-:endif
-:if:<Register.registered(System.ActionScript)>=false
-	@Register.register(System.ActionScript,str,System\GlobalRegister.dat)
-:endif
 :if:<Register.registered(System.MysteryGift)>=false
 	@Register.register(System.MysteryGift,int,0)
 :endif
@@ -42,7 +36,7 @@ version=2
 	@Register.register(System.EncounterRate.num2.2,sng,0)
 :endif
 :if:<Register.registered(System.EncounterRate.num3)>=false
-	@Register.register(System.EncounterRate.num3,sng,0.00)
+	@Register.register(System.EncounterRate.num3,sng,0)
 :endif
 :if:<Register.registered(System.Encounter.Level)>=false
 	@Register.register(System.Encounter.Level,int,1)

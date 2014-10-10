@@ -1,0 +1,29 @@
+﻿version=2
+##################################
+# Anti Cheat Initialization File # 
+##################################.
+# Define Variable.
+@Storage.set(int,System.GlobalRegisterValidation.TotalError,0)
+# End Define Variable.
+:if:<Register.registered(System.MysteryGift)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.MysteryGift" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<not><Register.value(System.MysteryGift)>=0 <and> <not><Register.value(System.MysteryGift)>=1
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.MysteryGift" has an invalid value.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<Register.registered(System.BankMoney)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.BankMoney" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<not><Register.value(System.BankMoney)>=0 <and> <not><Register.value(System.BankMoney)>>0 
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.BankMoney" has an invalid value.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<Storage.get(int,System.GlobalRegisterValidation.TotalError)>>0
+	@Storage.set(int,System.ErrorLog.ErrorID2,1)
+	@Storage.set(int,System.ScreenState,3)
+	@Script.start(System\ScreenState\ScreenState.3)
+:endif
+:end

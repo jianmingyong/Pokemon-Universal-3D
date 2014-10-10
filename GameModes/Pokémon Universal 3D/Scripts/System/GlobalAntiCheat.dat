@@ -2,8 +2,9 @@ version=2
 ##################################
 # Anti Cheat Initialization File # 
 ##################################.
-# 1. Check Register.
-# 2. Check Valid Pokémon.
-# 3. Check Save Component.
-# 4. Others.
+:if:<Register.value(System.SandBoxMode)>=false
+	@Script.start(System\AntiCheat\GlobalUpdateValidation)
+	@Script.start(System\AntiCheat\GlobalRegisterValidation)
+	@Script.start(System\AntiCheat\GlobalPokémonValidation)
+:endif
 :end
