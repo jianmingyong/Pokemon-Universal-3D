@@ -18,19 +18,7 @@ version=2
 	@Register.register(System.PlayerGender.12,str,nothing)
 :endif
 :if:<Register.registered(System.12.Starter)>=false
-	@Register.register(System.12.Starter,int,1)
-:endif
-:if:<Register.registered(System\Intro\12\Intro.1)>=false
-	@Register.register(System\Intro\12\Intro.1,int,1)
-:endif
-:if:<Register.registered(System\Intro\12\Intro.2)>=false
-	@Register.register(System\Intro\12\Intro.2,int,1)
-:endif
-:if:<Register.registered(System\Intro\12\Intro.3)>=false
-	@Register.register(System\Intro\12\Intro.3,int,1)
-:endif
-:if:<Register.registered(System\Intro\12\Intro.4)>=false
-	@Register.register(System\Intro\12\Intro.4,int,1)
+	@Register.register(System.12.Starter,int,252)
 :endif
 :if:<Register.registered(12\LittleRootTown\019000001)>=false
 	@Register.register(12\LittleRootTown\019000001,int,1)

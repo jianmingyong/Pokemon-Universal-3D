@@ -1,16 +1,11 @@
 version=2
 :if:<Register.value(12\LittleRootTown)>=1
-	:if:<Register.value(12\LittleRootTown\PlayerRoom.1)>=4
-		@Entity.remove(010000010)
-	:else
-		@Entity.warp(010000010,10,-0.5,10)
-	:endif
+	@Entity.remove(010000010)
 	:if:<NPC.exists(013000008)>=false
-		@NPC.spawn(13,0,8,0,,NPC 215,false,2,NPC 215,013000008,Still)
+		@NPC.spawn(13,0,8,0,,NPC 215,false,2,,013000008,Still)
 	:endif
-	@Player.warp(12,0,10)
-	@Level.update
-	@Player.turnto(3)
+	@Player.stopmovement
+	@Player.move(1)
 	@Sound.play(enter)
 	@NPC.move(013000008,2)
 	@NPC.turn(013000008,1)
@@ -27,14 +22,13 @@ version=2
 	@Text.show(And, you get your own room, <Player.name>!~Let's go inside.)
 	@NPC.turn(013000008,0)
 	@NPC.moveasync(013000008,1)
-	@Player.warp(11,0,10)
-	@Level.update
 	@Player.move(1)
 	@Player.turnto(0)
 	@NPC.moveasync(013000008,1)
 	@Player.move(2)
 	@NPC.remove(013000008)
 	@Player.warp(12\LittleRootTown\LittleRootTown.PlayerRoom.1.dat,8,0,7,0)
+	@Level.update
 	@Register.change(12\LittleRootTown,2)
 	:end
 :endif
@@ -49,7 +43,7 @@ version=2
 			@NPC.remove(024000010)
 		:endif
 		:if:<NPC.exists(015000002)>=false
-			@NPC.spawn(15,0,2,1,12\LittleRootTown\024000010,NPC 6,false,2,NPC 6,015000002,Still)
+			@NPC.spawn(15,0,2,1,12\LittleRootTown\024000010,NPC 6,false,2,,015000002,Still)
 		:endif
 	:else
 		:if:<Register.value(12\LittleRootTown\RivalRoom.1)>=2 <and> <Register.value(12\LittleRootTown\RivalRoom.2)>=2 <and> <Register.value(12\LittleRootTown\ProfBirchLab)>=1
@@ -64,7 +58,7 @@ version=2
 				@NPC.remove(024000010)
 			:endif
 			:if:<NPC.exists(018000001)>=false
-				@NPC.spawn(18,0,1,1,12\LittleRootTown\024000010,NPC 6,false,0,NPC 6,018000001,Still)
+				@NPC.spawn(18,0,1,1,12\LittleRootTown\024000010,NPC 6,false,0,,018000001,Still)
 			:endif
 		:else
 			@Entity.remove(018000001)
@@ -100,9 +94,8 @@ version=2
 	@Entity.remove(019000002)
 	:end
 :endif
-@Player.save
-@Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,System\ParallelProcess\12\LittleRootTown.dat)
-@Script.start(System\GlobalErrorLog)
-@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+@Storage.set(str,System.ActionScript,12\LittleRootTown\LittleRootTown.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
 :end

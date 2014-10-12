@@ -1,19 +1,17 @@
 version=2
-:if:<Register.value(System\Intro\12\Intro.4)>=1
-	:while:<Entity.opacity(124)><100
-		@Entity.setopacity(124,<Entity.opacity(124)>+10)
-		@Level.wait(1)
-		@Level.update
-	:endwhile
-	@Register.change(System\Intro\12\Intro.4,2)
-	:end
-:endif
-:if:<Register.value(System\Intro\12\Intro.4)>=2
-	:while:<Entity.opacity(124)>>0
-		@Entity.setopacity(124,<Entity.opacity(124)>-10)
-		@Level.wait(1)
-		@Level.update
-	:endwhile
-	@Register.change(System\Intro\12\Intro.4,1)
-	:end
-:endif
+:while:<Entity.opacity(124)><100
+	@Entity.setopacity(124,<Entity.opacity(124)>+10)
+	@Level.wait(1)
+	@Level.update
+	:if:<Entity.opacity(124)>=100
+		:end
+	:endif
+:endwhile
+:while:<Entity.opacity(124)>>0
+	@Entity.setopacity(124,<Entity.opacity(124)>-10)
+	@Level.wait(1)
+	@Level.update
+	:if:<Entity.opacity(124)>=0
+		:end
+	:endif
+:endwhile

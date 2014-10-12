@@ -3,8 +3,6 @@ version=2
 	:if:<NPC.exists(002000005)>=false
 		@NPC.spawn(9,0,7,1,12\LittleRootTown\PlayerRoom.1\009000007,NPC 215,false,0,NPC 215,002000005,Still)
 	:endif
-	@Level.wait(50)
-	@Level.update
 	@Text.show(MOM: See, <Player.name>?~Isn't it nice in here, too?)
 	@Sound.play(Select)
 	@Player.turnto(3)
@@ -26,19 +24,19 @@ version=2
 :endif
 :if:<Register.value(12\LittleRootTown\PlayerRoom.1)>=2
 	:if:<Player.position>=8,0,1 <and> <Player.facing>=2
-		@Player.warp(8,0,2)
-		@Level.update
 		:if:<NPC.exists(002000005)>=false
-			@NPC.spawn(8,0,3,0,,NPC 215,false,0,NPC 215,002000005,Still)
+			@NPC.spawn(8,0,3,0,,NPC 215,false,0,,002000005,Still)
 		:endif
+		@Player.stopmovement
+		@Player.move(1)
 		@Text.show(MOM: <Player.name>.)
 		@Sound.play(Select)
 		@Text.show(Go set the clock in your room, honey.)
 		@Player.turnto(0)
-		@Player.warp(8,0,1)
-		@Level.update
+		@Player.move(1)
 		@Sound.play(enter)
 		@Player.warp(12\LittleRootTown\LittleRootTown.PlayerRoom.2.dat,7,0,1,2)
+		@Level.update
 		:end
 	:else
 		:if:<NPC.exists(002000005)>=false
@@ -97,8 +95,8 @@ version=2
 	@Entity.remove(008000007)
 	:end
 :endif
-@Player.save
-@Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,System\ParallelProcess\12\LittleRootTown\PlayerRoom.1\PlayerRoom.1.dat)
-@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+@Storage.set(str,System.ActionScript,12\LittleRootTown\LittleRootTown.PlayerRoom.1.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
 :end

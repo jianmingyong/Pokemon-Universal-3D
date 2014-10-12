@@ -2,7 +2,7 @@
 :while:<Storage.get(int,System.ScreenState)>=0
 	@Text.show(Choose an option to change.)
 	@Options.setcancelindex(2)
-	@Options.show(New Battle System [<Register.value(System.New BattleV2 Exp)>],Sandbox Mode [<Register.value(System.SandBoxMode)>],Back)
+	@Options.show(New Battle System [<Register.value(System.New BattleV2 Exp)>],Sandbox Mode [<Register.value(System.SandBoxMode)>],3D Building [<Register.value(System.3D Buildings)>],Back)
 	:when:New Battle System [true]
 		@Register.change(System.New BattleV2 Exp,false)
 	:when:New Battle System [false]
@@ -11,6 +11,10 @@
 		@Register.change(System.SandBoxMode,false)
 	:when:Sandbox Mode [false]
 		@Register.change(System.SandBoxMode,true)
+	:when:3D Building [true]
+		@Register.change(System.3D Buildings,true)
+	:when:3D Building [false]
+		@Register.change(System.3D Buildings,false)
 	:when:Back
 		@Player.save
 		:exitwhile

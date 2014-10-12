@@ -20,86 +20,20 @@ version=2
 :if:<Register.registered(System.BankMoney)>=false
 	@Register.register(System.BankMoney,sng,0)
 :endif
-:if:<Register.registered(System.EncounterStep.num1)>=false
-	@Register.register(System.EncounterStep.num1,int,5)
-:endif
-:if:<Register.registered(System.EncounterStep.num2)>=false
-	@Register.register(System.EncounterStep.num2,int,12)
-:endif
-:if:<Register.registered(System.EncounterRate.num1)>=false
-	@Register.register(System.EncounterRate.num1,sng,0)
-:endif
-:if:<Register.registered(System.EncounterRate.num2.1)>=false
-	@Register.register(System.EncounterRate.num2.1,sng,0)
-:endif
-:if:<Register.registered(System.EncounterRate.num2.2)>=false
-	@Register.register(System.EncounterRate.num2.2,sng,0)
-:endif
-:if:<Register.registered(System.EncounterRate.num3)>=false
-	@Register.register(System.EncounterRate.num3,sng,0)
-:endif
-:if:<Register.registered(System.Encounter.Level)>=false
-	@Register.register(System.Encounter.Level,int,1)
-:endif
 :if:<Register.registered(System.Encounter.LevelMultiplier)>=false
 	@Register.register(System.Encounter.LevelMultiplier,int,1)
 :endif
 :if:<Register.registered(System.Encounter.ExperienceMultiplier)>=false
 	@Register.register(System.Encounter.ExperienceMultiplier,int,1)
 :endif
-:if:<Register.registered(System.Encounter.Experience)>=false
-	@Register.register(System.Encounter.Experience,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Experience.1)>=false
-	@Register.register(System.Encounter.Experience.1,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Experience.2)>=false
-	@Register.register(System.Encounter.Experience.2,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Experience.3)>=false
-	@Register.register(System.Encounter.Experience.3,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Experience.4)>=false
-	@Register.register(System.Encounter.Experience.4,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Experience.5)>=false
-	@Register.register(System.Encounter.Experience.5,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Experience.6)>=false
-	@Register.register(System.Encounter.Experience.6,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Pokemon.1.TotalEXP)>=false
-	@Register.register(System.Encounter.Pokemon.1.TotalEXP,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Pokemon.2.TotalEXP)>=false
-	@Register.register(System.Encounter.Pokemon.2.TotalEXP,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Pokemon.3.TotalEXP)>=false
-	@Register.register(System.Encounter.Pokemon.3.TotalEXP,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Pokemon.4.TotalEXP)>=false
-	@Register.register(System.Encounter.Pokemon.4.TotalEXP,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Pokemon.5.TotalEXP)>=false
-	@Register.register(System.Encounter.Pokemon.5.TotalEXP,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Pokemon.6.TotalEXP)>=false
-	@Register.register(System.Encounter.Pokemon.6.TotalEXP,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Pokemon.ID)>=false
-	@Register.register(System.Encounter.Pokemon.ID,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Pokemon.Index)>=false
-	@Register.register(System.Encounter.Pokemon.Index,int,0)
-:endif
-:if:<Register.registered(System.Encounter.Pokemon.MoveID)>=false
-	@Register.register(System.Encounter.Pokemon.MoveID,int,0)
-:endif
 :if:<Register.registered(System.SandBoxMode)>=false
 	@Register.register(System.SandBoxMode,bool,false)
 :endif
 :if:<Register.registered(System.New BattleV2 Exp)>=false
 	@Register.register(System.New BattleV2 Exp,bool,true)
+:endif
+:if:<Register.registered(System.3D Buildings)>=false
+	@Register.register(System.3D Buildings,bool,false)
 :endif
 :if:<Register.registered(pokegear_card_radio)>=false
 	@Register.register(pokegear_card_radio)

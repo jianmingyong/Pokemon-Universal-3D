@@ -46,4 +46,85 @@ version=2
 :if:<Register.registered(System.GlobalRegister Validation)>=true
 	@Register.unregister(System.GlobalRegister Validation,bool)
 :endif
+:if:<Register.registered(System\Intro\12\Intro.1)>=true
+	@Register.unregister(System\Intro\12\Intro.1,int)
+:endif
+:if:<Register.registered(System\Intro\12\Intro.2)>=true
+	@Register.unregister(System\Intro\12\Intro.2,int)
+:endif
+:if:<Register.registered(System\Intro\12\Intro.3)>=true
+	@Register.unregister(System\Intro\12\Intro.3,int)
+:endif
+:if:<Register.registered(System\Intro\12\Intro.4)>=true
+	@Register.unregister(System\Intro\12\Intro.4,int)
+:endif
+:if:<Register.registered(System.EncounterStep.num1)>=true
+	@Register.unregister(System.EncounterStep.num1,int)
+:endif
+:if:<Register.registered(System.EncounterStep.num2)>=true
+	@Register.unregister(System.EncounterStep.num2,int)
+:endif
+:if:<Register.registered(System.EncounterRate.num1)>=true
+	@Register.unregister(System.EncounterRate.num1,sng)
+:endif
+:if:<Register.registered(System.EncounterRate.num2.1)>=true
+	@Register.unregister(System.EncounterRate.num2.1,sng)
+:endif
+:if:<Register.registered(System.EncounterRate.num2.2)>=true
+	@Register.unregister(System.EncounterRate.num2.2,sng)
+:endif
+:if:<Register.registered(System.EncounterRate.num3)>=true
+	@Register.unregister(System.EncounterRate.num3,sng)
+:endif
+:if:<Register.registered(System.Encounter.Level)>=true
+	@Register.unregister(System.Encounter.Level,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience)>=true
+	@Register.unregister(System.Encounter.Experience,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.1)>=true
+	@Register.unregister(System.Encounter.Experience.1,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.2)>=true
+	@Register.unregister(System.Encounter.Experience.2,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.3)>=true
+	@Register.unregister(System.Encounter.Experience.3,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.4)>=true
+	@Register.unregister(System.Encounter.Experience.4,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.5)>=true
+	@Register.unregister(System.Encounter.Experience.5,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.6)>=true
+	@Register.unregister(System.Encounter.Experience.6,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.1.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.1.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.2.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.2.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.3.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.3.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.4.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.4.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.5.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.5.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.6.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.6.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.ID)>=true
+	@Register.unregister(System.Encounter.Pokemon.ID,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.Index)>=true
+	@Register.unregister(System.Encounter.Pokemon.Index,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.MoveID)>=true
+	@Register.unregister(System.Encounter.Pokemon.MoveID,int)
+:endif
 :end

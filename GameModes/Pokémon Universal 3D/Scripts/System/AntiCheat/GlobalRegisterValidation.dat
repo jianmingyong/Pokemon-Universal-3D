@@ -5,6 +5,7 @@
 # Define Variable.
 @Storage.set(int,System.GlobalRegisterValidation.TotalError,0)
 # End Define Variable.
+# Define System Variable.
 :if:<Register.registered(System.MysteryGift)>=false
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.MysteryGift" does not exist.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
@@ -21,6 +22,65 @@
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.BankMoney" has an invalid value.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
 :endif
+:if:<Register.registered(System.SandBoxMode)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.SandBoxMode" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<not><Register.value(System.SandBoxMode)>=true <and> <not><Register.value(System.SandBoxMode)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.SandBoxMode" has an invalid value.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<Register.registered(System.New BattleV2 Exp)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.New BattleV2 Exp" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<not><Register.value(System.New BattleV2 Exp)>=true <and> <not><Register.value(System.New BattleV2 Exp)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.New BattleV2 Exp" has an invalid value.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<Register.registered(System.3D Buildings)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.3D Buildings" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<not><Register.value(System.3D Buildings)>=true <and> <not><Register.value(System.3D Buildings)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.3D Buildings" has an invalid value.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+# End Define System Variable.
+# Define GameMode ID 12 Variable.
+:if:<Register.registered(System.LastMap.12)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.LastMap.12" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<Register.registered(System.PlayerPosition.X.12)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.PlayerPosition.X.12" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<Register.registered(System.PlayerPosition.Y.12)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.PlayerPosition.Y.12" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<Register.registered(System.PlayerPosition.Z.12)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.PlayerPosition.Z.12" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<Register.registered(System.PlayerFacing.12)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.PlayerFacing.12" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<not><Register.value(System.PlayerFacing.12)>=0 <and> <not><Register.value(System.PlayerFacing.12)>=1 <and> <not><Register.value(System.PlayerFacing.12)>=2 <and> <not><Register.value(System.PlayerFacing.12)>=3
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.PlayerFacing.12" has an invalid value.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<Register.registered(System.PlayerGender.12)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.PlayerGender.12" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<not><Register.value(System.PlayerGender.12)>=boy <and> <not><Register.value(System.PlayerGender.12)>=girl
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.PlayerGender.12" has an invalid value.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+# End Define GameMode ID 12 Variable.
 :if:<Storage.get(int,System.GlobalRegisterValidation.TotalError)>>0
 	@Storage.set(int,System.ErrorLog.ErrorID2,1)
 	@Storage.set(int,System.ScreenState,3)

@@ -1,11 +1,11 @@
 version=2
 :if:<Register.value(12\LittleRootTown\RivalRoom.1)>=1
-	@Player.warp(2,0.1,7)
-	@Level.update
-	@Sound.play(jumptoball)
+	@Player.stopmovement
+	@Player.move(1)
 	:if:<NPC.exists(008000006)>=false
 		@NPC.spawn(8,0,6,1,12\LittleRootTown\RivalRoom.1\008000006,NPC 26,false,2,,008000006,Still)
 	:endif
+	@Sound.play(jumptoball)
 	@Entity.showmessagebulb(1|8|0.8|6)
 	@Player.turnto(3)
 	@NPC.turn(008000006,2)
@@ -18,14 +18,14 @@ version=2
 	@Sound.play(Select)
 	@Text.show(Oh, you're <Player.name>, our new next-door~neighbor! Hi!)
 	@Sound.play(Select)
-	:if:<Register.value(System.PlayerGender)>=Male
+	:if:<Register.value(System.PlayerGender.12)>=Boy
 		@Text.show(We have a daughter about the same~age as you.)
 		@Sound.play(Select)
 		@Text.show(Our daughter was excited about making~a new friend.)
 		@Sound.play(Select)
 		@Text.show(Our daughter is upstairs, I think.)
 	:endif
-	:if:<Register.value(System.PlayerGender)>=Female
+	:if:<Register.value(System.PlayerGender.12)>=Girl
 		@Text.show(We have a son about the same~age as you.)
 		@Sound.play(Select)
 		@Text.show(Our son was excited about making~a new friend.)
@@ -33,8 +33,6 @@ version=2
 		@Text.show(Our son is upstairs, I think.)
 	:endif
 	@Player.turnto(0)
-	@Player.warp(2,0.1,8)
-	@Level.update
 	@Entity.remove(001000002)
 	@Entity.remove(003000002)
 	@Entity.remove(002000003)
@@ -56,8 +54,8 @@ version=2
 	:endif
 	:end
 :endif
-@Player.save
-@Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,System\ParallelProcess\12\LittleRootTown\RivalRoom.1\RivalRoom.1.dat)
-@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+@Storage.set(str,System.ActionScript,12\LittleRootTown\LittleRootTown.RivalRoom.1.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
 :end

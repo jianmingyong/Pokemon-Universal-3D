@@ -1,7 +1,7 @@
-version=2
+Ôªøversion=2
 @Sound.play(Select)
-@Text.show(The box is printed with a POKÈMON logo.)
+@Text.show(The box is printed with a POK√©MON logo.)
 @Sound.play(Select)
-@Text.show(It's a POKÈMON brand moving and~delivery service.)
+@Text.show(It's a POK√©MON brand moving and~delivery service.)
 @Script.start(System\GlobalMain)
 :end
