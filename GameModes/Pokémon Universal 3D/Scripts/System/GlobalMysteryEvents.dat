@@ -1,4 +1,0 @@
-version=2
-@Register.change(System.Encounter.ExperienceMultiplier,1)
-@Register.change(System.Encounter.LevelMultiplier,1)
-:end

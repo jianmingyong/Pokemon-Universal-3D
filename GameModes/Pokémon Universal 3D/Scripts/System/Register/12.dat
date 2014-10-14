@@ -44,15 +44,6 @@ version=2
 :if:<Register.registered(12\LittleRootTown\PlayerRoom.2\004000001)>=false
 	@Register.register(12\LittleRootTown\PlayerRoom.2\004000001,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\RivalRoom.1\001000002)>=false
-	@Register.register(12\LittleRootTown\RivalRoom.1\001000002,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\RivalRoom.1\003000002)>=false
-	@Register.register(12\LittleRootTown\RivalRoom.1\003000002,int,1)
-:endif
-:if:<Register.registered(12\LittleRootTown\RivalRoom.1\002000003)>=false
-	@Register.register(12\LittleRootTown\RivalRoom.1\002000003,int,1)
-:endif
 :if:<Register.registered(12\LittleRootTown\RivalRoom.1\008000006)>=false
 	@Register.register(12\LittleRootTown\RivalRoom.1\008000006,int,1)
 :endif

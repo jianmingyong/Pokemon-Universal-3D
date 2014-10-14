@@ -11,7 +11,7 @@ version=2
 	@Entity.setopacity(123,<Entity.opacity(123)>-10)
 	@Level.wait(1)
 	@Level.update
-	:if:<Entity.opacity(122)>=0
+	:if:<Entity.opacity(123)>=0
 		:end
 	:endif
 :endwhile

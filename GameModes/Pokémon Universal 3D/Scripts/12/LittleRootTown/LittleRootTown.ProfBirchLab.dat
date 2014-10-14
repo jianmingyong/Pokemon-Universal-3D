@@ -65,6 +65,7 @@ version=2
 			@Options.show(YES,NO)
 			:when:YES
 				@Text.show(PROF. BIRCH: Great!~<Rival.name> should be happy, too.)
+				@Sound.play(Select)
 				@Script.start(Function\Return.true)
 			:when:NO
 				@Text.show(PROF. BIRCH: Oh, don't be that way.~You should go meet my kid.)
@@ -152,8 +153,8 @@ version=2
 	:endif
 	:end
 :endif
-@Player.save
-@Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,System\ParallelProcess\12\LittleRootTown\ProfBirchLab\ProfBirchLab.dat)
-@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+@Storage.set(str,System.ActionScript,12\LittleRootTown\LittleRootTown.ProfBirchLab.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
 :end

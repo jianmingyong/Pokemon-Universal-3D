@@ -1,12 +1,13 @@
 version=2
 :if:<Register.value(System.SandBoxMode)>=false
-	:if:<Register.registered(System.EncounterStep.fix)>=false
-		@Register.change(System.EncounterStep.num2,12)
-		@Register.change(System.EncounterStep.num1,5)
-		@Register.register(System.EncounterStep.fix)
+	:if:<Storage.get(bool,System.EncounterStep.fix)>=false
+		@Storage.set(int,System.EncounterStep.num1,12)
+		@Storage.set(int,System.EncounterStep.num2,5)
+		@Storage.set(int,System.EncounterStep.WalkedStep,1)
+		@Storage.set(int,System.EncounterStep.num3,<Math.clamp(<Storage.get(int,System.EncounterStep.num1)>-<Storage.get(int,System.EncounterStep.WalkedStep)>,5,12)>)
+		@Storage.set(bool,System.EncounterStep.fix,true)
 	:endif
-	@Register.change(System.EncounterStep.num2,<Math.clamp(<Register.value(System.EncounterStep.num2)>-1,0,12)>)
-:else
-	@Register.change(System.EncounterStep.num2,12)
+	@Storage.set(int,System.EncounterStep.WalkedStep,<Storage.get(int,System.EncounterStep.WalkedStep)>+1)
+	@Storage.set(int,System.EncounterStep.num3,<Math.clamp(<Storage.get(int,System.EncounterStep.num1)>-<Storage.get(int,System.EncounterStep.WalkedStep)>,5,12)>)
 :endif
 :end

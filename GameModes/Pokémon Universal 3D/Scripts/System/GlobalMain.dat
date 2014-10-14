@@ -21,6 +21,9 @@ version=2
 	@Storage.set(int,System.ErrorLog.ErrorID6,0)
 	@Storage.set(int,System.ErrorLog.ErrorID7,0)
 	@Storage.set(str,System.ActionScript,GlobalMain.dat)
+	@Storage.set(int,System.Encounter.ExperienceMultiplier,1)
+	@Storage.set(int,System.Encounter.LevelMultiplier,1)
+	@Storage.set(bool,System.EncounterStep.fix,false)
 	#End Define Variable.
 	@Script.start(System\GlobalRegister)
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
@@ -37,12 +40,7 @@ version=2
 	:endif
 	#End Define Variable.
 	@Script.start(System\GlobalBankInterest)
-	@Script.start(System\GlobalMysteryEvents)
-	:if:<Register.registered(System.EncounterStep.fix)=true
-		@Register.unregister(System.EncounterStep.fix)
-	:endif
 	@Player.save
-	@Storage.set(int,System.GlobalMain,0)
 	@Script.start(System\ScreenState\ScreenState.0)
 :endif
 @Script.start(<filesystem.pathup(<Level.mapfile>)>\<Level.filename>)

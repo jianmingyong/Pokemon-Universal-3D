@@ -1,182 +1,26 @@
 version=2
 :if:<Pokemon.count>>0
-    :if:<Pokemon.needexp(0)><0 <or> <Pokemon.needexp(0)>=0
-        @Pokemon.changelevel(0,<Pokemon.level(0)>+1)
-		@Sound.play(Battle\exp_max)
-		@Text.show(<Pokemon.name(0)> reached level <Pokemon.level(0)> !)
-		@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(0)>)
-		@Register.change(System.Encounter.Pokemon.Index,0)
-		@Script.start(System\Encounter\BattleMoveCheck)
-		:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-			:if:<Pokemon.countattacks(0)>=4
-				@Pokemon.learnattack(0,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:else
-				@Pokemon.addattack(0,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:endif
-		:endif
-        :if:<Pokemon.canevolve(0)>=true
-            @Pokemon.evolve(0)
-			@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(0)>)
-			@Register.change(System.Encounter.Pokemon.Index,0)
-			@Script.start(System\Encounter\BattleMoveCheck)
-			:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-				:if:<Pokemon.countattacks(0)>=4
-					@Pokemon.learnattack(0,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:else
-					@Pokemon.addattack(0,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:endif
-			:endif
-        :endif
-    :endif
+	@Storage.set(int,System.Encounter.Pokemon.index,0)
+	@Script.start(System\Encounter\BattleLevelCheck)
 :endif
 :if:<Pokemon.count>>1
-    :if:<Pokemon.needexp(1)><0 <or> <Pokemon.needexp(1)>=0
-        @Pokemon.changelevel(1,<Pokemon.level(1)>+1)
-		@Sound.play(Battle\exp_max)
-		@Text.show(<Pokemon.name(1)> reached level <Pokemon.level(1)> !)
-		@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(1)>)
-		@Register.change(System.Encounter.Pokemon.Index,1)
-		@Script.start(System\Encounter\BattleMoveCheck)
-		:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-			:if:<Pokemon.countattacks(1)>=4
-				@Pokemon.learnattack(1,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:else
-				@Pokemon.addattack(1,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:endif
-		:endif
-        :if:<Pokemon.canevolve(1)>=true
-            @Pokemon.evolve(1)
-			@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(1)>)
-			@Register.change(System.Encounter.Pokemon.Index,1)
-			@Script.start(System\Encounter\BattleMoveCheck)
-			:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-				:if:<Pokemon.countattacks(1)>=4
-					@Pokemon.learnattack(1,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:else
-					@Pokemon.addattack(1,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:endif
-			:endif
-        :endif
-    :endif
+	@Storage.set(int,System.Encounter.Pokemon.index,1)
+	@Script.start(System\Encounter\BattleLevelCheck)
 :endif
 :if:<Pokemon.count>>2
-    :if:<Pokemon.needexp(2)><0 <or> <Pokemon.needexp(2)>=0
-        @Pokemon.changelevel(2,<Pokemon.level(2)>+1)
-		@Sound.play(Battle\exp_max)
-		@Text.show(<Pokemon.name(2)> reached level <Pokemon.level(2)> !)
-		@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(2)>)
-		@Register.change(System.Encounter.Pokemon.Index,2)
-		@Script.start(System\Encounter\BattleMoveCheck)
-		:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-			:if:<Pokemon.countattacks(2)>=4
-				@Pokemon.learnattack(2,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:else
-				@Pokemon.addattack(2,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:endif
-		:endif
-        :if:<Pokemon.canevolve(2)>=true
-            @Pokemon.evolve(2)
-			@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(2)>)
-			@Register.change(System.Encounter.Pokemon.Index,2)
-			@Script.start(System\Encounter\BattleMoveCheck)
-			:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-				:if:<Pokemon.countattacks(2)>=4
-					@Pokemon.learnattack(2,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:else
-					@Pokemon.addattack(2,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:endif
-			:endif
-        :endif
-    :endif
+	@Storage.set(int,System.Encounter.Pokemon.index,2)
+	@Script.start(System\Encounter\BattleLevelCheck)
 :endif
 :if:<Pokemon.count>>3
-    :if:<Pokemon.needexp(3)><0 <or> <Pokemon.needexp(3)>=0
-        @Pokemon.changelevel(3,<Pokemon.level(3)>+1)
-		@Sound.play(Battle\exp_max)
-		@Text.show(<Pokemon.name(3)> reached level <Pokemon.level(3)> !)
-		@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(3)>)
-		@Register.change(System.Encounter.Pokemon.Index,3)
-		@Script.start(System\Encounter\BattleMoveCheck)
-		:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-			:if:<Pokemon.countattacks(3)>=4
-				@Pokemon.learnattack(3,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:else
-				@Pokemon.addattack(3,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:endif
-		:endif
-        :if:<Pokemon.canevolve(3)>=true
-            @Pokemon.evolve(3)
-			@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(3)>)
-			@Register.change(System.Encounter.Pokemon.Index,3)
-			@Script.start(System\Encounter\BattleMoveCheck)
-			:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-				:if:<Pokemon.countattacks(3)>=4
-					@Pokemon.learnattack(3,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:else
-					@Pokemon.addattack(3,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:endif
-			:endif
-        :endif
-    :endif
+	@Storage.set(int,System.Encounter.Pokemon.index,3)
+	@Script.start(System\Encounter\BattleLevelCheck)
 :endif
 :if:<Pokemon.count>>4
-    :if:<Pokemon.needexp(4)><0 <or> <Pokemon.needexp(4)>=0
-        @Pokemon.changelevel(4,<Pokemon.level(4)>+1)
-		@Sound.play(Battle\exp_max)
-		@Text.show(<Pokemon.name(4)> reached level <Pokemon.level(4)> !)
-		@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(4)>)
-		@Register.change(System.Encounter.Pokemon.Index,4)
-		@Script.start(System\Encounter\BattleMoveCheck)
-		:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-			:if:<Pokemon.countattacks(4)>=4
-				@Pokemon.learnattack(4,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:else
-				@Pokemon.addattack(4,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:endif
-		:endif
-        :if:<Pokemon.canevolve(4)>=true
-            @Pokemon.evolve(4)
-			@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(4)>)
-			@Register.change(System.Encounter.Pokemon.Index,4)
-			@Script.start(System\Encounter\BattleMoveCheck)
-			:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-				:if:<Pokemon.countattacks(4)>=4
-					@Pokemon.learnattack(4,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:else
-					@Pokemon.addattack(4,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:endif
-			:endif
-        :endif
-    :endif
+	@Storage.set(int,System.Encounter.Pokemon.index,4)
+	@Script.start(System\Encounter\BattleLevelCheck)
 :endif
 :if:<Pokemon.count>>5
-    :if:<Pokemon.needexp(5)><0 <or> <Pokemon.needexp(5)>=0
-        @Pokemon.changelevel(5,<Pokemon.level(5)>+1)
-		@Sound.play(Battle\exp_max)
-		@Text.show(<Pokemon.name(5)> reached level <Pokemon.level(5)> !)
-		@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(5)>)
-		@Register.change(System.Encounter.Pokemon.Index,5)
-		@Script.start(System\Encounter\BattleMoveCheck)
-		:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-			:if:<Pokemon.countattacks(5)>=4
-				@Pokemon.learnattack(5,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:else
-				@Pokemon.addattack(5,<Register.value(System.Encounter.Pokemon.MoveID)>)
-			:endif
-		:endif
-        :if:<Pokemon.canevolve(5)>=true
-            @Pokemon.evolve(5)
-			@Register.change(System.Encounter.Pokemon.ID,<Pokemon.id(5)>)
-			@Register.change(System.Encounter.Pokemon.Index,5)
-			@Script.start(System\Encounter\BattleMoveCheck)
-			:if:<not><Register.value(System.Encounter.Pokemon.MoveID)>=0
-				:if:<Pokemon.countattacks(5)>=4
-					@Pokemon.learnattack(5,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:else
-					@Pokemon.addattack(5,<Register.value(System.Encounter.Pokemon.MoveID)>)
-				:endif
-			:endif
-        :endif
-    :endif
+	@Storage.set(int,System.Encounter.Pokemon.index,5)
+	@Script.start(System\Encounter\BattleLevelCheck)
 :endif
 :end

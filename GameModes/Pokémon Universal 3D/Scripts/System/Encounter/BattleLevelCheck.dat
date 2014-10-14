@@ -1,0 +1,12 @@
+﻿version=2
+:while:<not><Pokemon.needexp(<Storage.get(int,System.Encounter.Pokemon.index)>)>>0
+	@Pokemon.changelevel(<Storage.get(int,System.Encounter.Pokemon.index)>,<Pokemon.level(<Storage.get(int,System.Encounter.Pokemon.index)>)>+1)
+	@Sound.play(Battle\exp_max)
+	@Text.show(<Pokemon.name(<Storage.get(int,System.Encounter.Pokemon.index)>)> reached level <Pokemon.level(<Storage.get(int,System.Encounter.Pokemon.index)>)>!)
+	:if:<Pokemon.canevolve(<Storage.get(int,System.Encounter.Pokemon.index)>)>=true <and> <not><Pokemon.itemname(<Storage.get(int,System.Encounter.Pokemon.index)>)>=Everstone
+		@Script.start(System\Encounter\BattleEvolutionCheck)
+		:exitwhile
+	:endif
+	@Script.start(System\Encounter\BattleMoveCheck)
+:endwhile
+:end

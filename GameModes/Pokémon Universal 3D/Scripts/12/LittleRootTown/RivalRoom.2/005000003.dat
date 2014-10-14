@@ -198,7 +198,6 @@
 	@Text.show(It's <Rival.name>'s POKé BALL!)
 	@Sound.play(Select)
 	@Text.show(Better leave it right where it is.)
-	@Script.start(System\GlobalMain)
 	:end
 :endif
 @Storage.set(str,System.ActionScript,12\LittleRootTown\RivalRoom.2\005000003.dat)

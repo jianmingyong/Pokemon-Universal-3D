@@ -21,7 +21,7 @@
 			@Options.setcancelindex(3)
 			@Options.show(Pokémon Emerald [12],Back)
 			:when:Pokémon Emerald [12]
-				@Player.warp(<Register.value(System.LastMap.12)>,<Register.value(System.PlayerPosition.X.12)>,<Register.value(System.PlayerPosition.Y.12)>,<Register.value(System.PlayerPosition.Z.12)>,<Register.value(System.PlayerFacing.12)>)
+				@Player.warp(<Register.value(System.LastMap.12)>,<Register.value(System.PlayerPosition.X.12)>,<Register.value(System.PlayerPosition.Y.12)>+0.1,<Register.value(System.PlayerPosition.Z.12)>,<Register.value(System.PlayerFacing.12)>)
 				@Storage.set(int,System.ScreenState,2)
 				@Script.start(System\GlobalAntiCheat)
 			:when:Back

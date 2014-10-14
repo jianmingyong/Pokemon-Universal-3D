@@ -1,68 +1,44 @@
 version=2
 :if:<Register.value(System.New BattleV2 Exp)>=true
-	@Register.change(System.Encounter.Experience,0)
-	@Register.change(System.Encounter.Experience.1,0)
-	@Register.change(System.Encounter.Experience.2,0)
-	@Register.change(System.Encounter.Experience.3,0)
-	@Register.change(System.Encounter.Experience.4,0)
-	@Register.change(System.Encounter.Experience.5,0)
-	@Register.change(System.Encounter.Experience.6,0)
-	:if:<Pokemon.count>>0
-		:if:<not><Pokemon.totalexp(0)>=<Register.value(System.Encounter.Pokemon.1.TotalEXP)>
-			@Register.change(System.Encounter.Experience.1,<Pokemon.totalexp(0)>-<Register.value(System.Encounter.Pokemon.1.TotalEXP)>)
-		:endif
-		@Register.change(System.Encounter.Experience,<System.sort(descending,0,<Register.value(System.Encounter.Experience.1)>)>*<Register.value(System.Encounter.ExperienceMultiplier)>)
+	@Storage.set(int,System.Encounter.Experience,0)
+	:if:<Pokemon.count>>0 <and> <not><Pokemon.totalexp(0)>=<Storage.get(int,System.Encounter.Pokemon.1.TotalEXP)>
+		@Storage.set(int,System.Encounter.Experience,<Storage.get(int,System.Encounter.Experience)>+<Math.int(<Pokemon.totalexp(0)>-<Storage.get(int,System.Encounter.Pokemon.1.TotalEXP)>)>)
 	:endif
-	:if:<Pokemon.count>>1
-		:if:<not><Pokemon.totalexp(1)>=<Register.value(System.Encounter.Pokemon.2.TotalEXP)>
-			@Register.change(System.Encounter.Experience.2,<Pokemon.totalexp(1)>-<Register.value(System.Encounter.Pokemon.2.TotalEXP)>)
-		:endif
-		@Register.change(System.Encounter.Experience,<System.sort(descending,0,<Register.value(System.Encounter.Experience.1)>,<Register.value(System.Encounter.Experience.2)>)>*<Register.value(System.Encounter.ExperienceMultiplier)>)
+	:if:<Pokemon.count>>1 <and> <not><Pokemon.totalexp(1)>=<Storage.get(int,System.Encounter.Pokemon.2.TotalEXP)>
+		@Storage.set(int,System.Encounter.Experience,<Storage.get(int,System.Encounter.Experience)>+<Math.int(<Pokemon.totalexp(1)>-<Storage.get(int,System.Encounter.Pokemon.2.TotalEXP)>)>)
 	:endif
-	:if:<Pokemon.count>>2
-		:if:<not><Pokemon.totalexp(2)>=<Register.value(System.Encounter.Pokemon.3.TotalEXP)>
-			@Register.change(System.Encounter.Experience.3,<Pokemon.totalexp(2)>-<Register.value(System.Encounter.Pokemon.3.TotalEXP)>)
-		:endif
-		@Register.change(System.Encounter.Experience,<System.sort(descending,0,<Register.value(System.Encounter.Experience.1)>,<Register.value(System.Encounter.Experience.2)>,<Register.value(System.Encounter.Experience.3)>)>*<Register.value(System.Encounter.ExperienceMultiplier)>)
+	:if:<Pokemon.count>>2 <and> <not><Pokemon.totalexp(2)>=<Storage.get(int,System.Encounter.Pokemon.3.TotalEXP)>
+		@Storage.set(int,System.Encounter.Experience,<Storage.get(int,System.Encounter.Experience)>+<Math.int(<Pokemon.totalexp(2)>-<Storage.get(int,System.Encounter.Pokemon.3.TotalEXP)>)>)
 	:endif
-	:if:<Pokemon.count>>3
-		:if:<not><Pokemon.totalexp(3)>=<Register.value(System.Encounter.Pokemon.4.TotalEXP)>
-			@Register.change(System.Encounter.Experience.4,<Pokemon.totalexp(3)>-<Register.value(System.Encounter.Pokemon.4.TotalEXP)>)
-		:endif
-		@Register.change(System.Encounter.Experience,<System.sort(descending,0,<Register.value(System.Encounter.Experience.1)>,<Register.value(System.Encounter.Experience.2)>,<Register.value(System.Encounter.Experience.3)>,<Register.value(System.Encounter.Experience.4)>)>*<Register.value(System.Encounter.ExperienceMultiplier)>)
+	:if:<Pokemon.count>>3 <and> <not><Pokemon.totalexp(3)>=<Storage.get(int,System.Encounter.Pokemon.4.TotalEXP)>
+		@Storage.set(int,System.Encounter.Experience,<Storage.get(int,System.Encounter.Experience)>+<Math.int(<Pokemon.totalexp(3)>-<Storage.get(int,System.Encounter.Pokemon.4.TotalEXP)>)>)
 	:endif
-	:if:<Pokemon.count>>4
-		:if:<not><Pokemon.totalexp(4)>=<Register.value(System.Encounter.Pokemon.5.TotalEXP)>
-			@Register.change(System.Encounter.Experience.5,<Pokemon.totalexp(4)>-<Register.value(System.Encounter.Pokemon.5.TotalEXP)>)
-		:endif
-		@Register.change(System.Encounter.Experience,<System.sort(descending,0,<Register.value(System.Encounter.Experience.1)>,<Register.value(System.Encounter.Experience.2)>,<Register.value(System.Encounter.Experience.3)>,<Register.value(System.Encounter.Experience.4)>,<Register.value(System.Encounter.Experience.5)>)>*<Register.value(System.Encounter.ExperienceMultiplier)>)
+	:if:<Pokemon.count>>4 <and> <not><Pokemon.totalexp(4)>=<Storage.get(int,System.Encounter.Pokemon.5.TotalEXP)>
+		@Storage.set(int,System.Encounter.Experience,<Storage.get(int,System.Encounter.Experience)>+<Math.int(<Pokemon.totalexp(4)>-<Storage.get(int,System.Encounter.Pokemon.5.TotalEXP)>)>)
 	:endif
-	:if:<Pokemon.count>>5
-		:if:<not><Pokemon.totalexp(5)>=<Register.value(System.Encounter.Pokemon.6.TotalEXP)>
-			@Register.change(System.Encounter.Experience.6,<Pokemon.totalexp(5)>-<Register.value(System.Encounter.Pokemon.6.TotalEXP)>)
-		:endif
-		@Register.change(System.Encounter.Experience,<System.sort(descending,0,<Register.value(System.Encounter.Experience.1)>,<Register.value(System.Encounter.Experience.2)>,<Register.value(System.Encounter.Experience.3)>,<Register.value(System.Encounter.Experience.4)>,<Register.value(System.Encounter.Experience.5)>,<Register.value(System.Encounter.Experience.6)>)>*<Register.value(System.Encounter.ExperienceMultiplier)>)
+	:if:<Pokemon.count>>5 <and> <not><Pokemon.totalexp(5)>=<Storage.get(int,System.Encounter.Pokemon.6.TotalEXP)>
+		@Storage.set(int,System.Encounter.Experience,<Storage.get(int,System.Encounter.Experience)>+<Math.int(<Pokemon.totalexp(5)>-<Storage.get(int,System.Encounter.Pokemon.6.TotalEXP)>)>)
 	:endif
-	:if:<not><Register.value(System.Encounter.Experience)>=0
+	:if:<not><Storage.get(int,System.Encounter.Experience)>=0
 		:if:<Pokemon.count>>0
-			@Pokemon.gainexp(0,<Register.value(System.Encounter.Experience)>)
+			@Pokemon.gainexp(0,<Storage.get(int,System.Encounter.Experience)>)
 		:endif
 		:if:<Pokemon.count>>1
-			@Pokemon.gainexp(1,<Register.value(System.Encounter.Experience)>)
+			@Pokemon.gainexp(1,<Storage.get(int,System.Encounter.Experience)>)
 		:endif
 		:if:<Pokemon.count>>2
-			@Pokemon.gainexp(2,<Register.value(System.Encounter.Experience)>)
+			@Pokemon.gainexp(2,<Storage.get(int,System.Encounter.Experience)>)
 		:endif
 		:if:<Pokemon.count>>3
-			@Pokemon.gainexp(3,<Register.value(System.Encounter.Experience)>)
+			@Pokemon.gainexp(3,<Storage.get(int,System.Encounter.Experience)>)
 		:endif
 		:if:<Pokemon.count>>4
-			@Pokemon.gainexp(4,<Register.value(System.Encounter.Experience)>)
+			@Pokemon.gainexp(4,<Storage.get(int,System.Encounter.Experience)>)
 		:endif
 		:if:<Pokemon.count>>5
-			@Pokemon.gainexp(5,<Register.value(System.Encounter.Experience)>)
+			@Pokemon.gainexp(5,<Storage.get(int,System.Encounter.Experience)>)
 		:endif
-		@Text.show(All your Pokémon have gained~Additional <Register.value(System.Encounter.Experience)> EXP from battle.)
+		@Text.show(All your Pokémon have gained~Additional <Storage.get(int,System.Encounter.Experience)> EXP from battle.)
 		@Script.start(System\Encounter\BattleCheck)
 	:endif
 	@Script.start(System\Encounter\Battleint)

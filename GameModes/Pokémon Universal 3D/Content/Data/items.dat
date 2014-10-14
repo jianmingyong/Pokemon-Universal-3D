@@ -1,0 +1,2 @@
+ {Id|Name|Price|ItemType|CatchMultiplier|SortValue|Description|TextureRectangle|TextureSource|ScriptBinding|CanBeUsed,CanBeTraded,CanBeHold,isBall} 
+ {1002|TM 171|1000|Machines|1|5|Teaches the move Boil.|0,0,24,24|Textures\Items\WaterTM|Test|1,1,0,0}

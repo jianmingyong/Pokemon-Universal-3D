@@ -173,8 +173,8 @@ version=2
 	:endif
 	:end
 :endif
-@Storage.set(str,System.ActionScript,12\Route101\Route101.dat)
-@Storage.set(int,System.ErrorLog.ErrorID0,1)
-@Storage.set(int,System.ScreenState,3)
-@Script.start(System\ScreenState\ScreenState.3)
+@Player.save
+@Register.change(System.ErrorLog.ErrorID0,2)
+@Register.change(System.ActionScript,System\ParallelProcess\12\Route101.dat)
+@Player.warp(System\GlobalValidation.dat,0,0,0,0)
 :end

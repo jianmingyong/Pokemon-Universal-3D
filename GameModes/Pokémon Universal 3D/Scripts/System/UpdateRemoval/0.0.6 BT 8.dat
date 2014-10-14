@@ -127,4 +127,13 @@ version=2
 :if:<Register.registered(System.Encounter.Pokemon.MoveID)>=true
 	@Register.unregister(System.Encounter.Pokemon.MoveID,int)
 :endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1\001000002)>=true
+	@Register.unregister(12\LittleRootTown\RivalRoom.1\001000002,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1\003000002)>=true
+	@Register.unregister(12\LittleRootTown\RivalRoom.1\003000002,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1\002000003)>=true
+	@Register.unregister(12\LittleRootTown\RivalRoom.1\002000003,int)
+:endif
 :end
