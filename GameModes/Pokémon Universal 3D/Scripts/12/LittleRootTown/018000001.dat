@@ -24,5 +24,4 @@
 @NPC.turn(015000002,0)
 @NPC.move(015000002,1)
 @NPC.turn(015000002,2)
-@Script.start(System\GlobalMain)
 :end

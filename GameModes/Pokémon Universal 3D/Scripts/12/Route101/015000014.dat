@@ -34,7 +34,7 @@
 		@Sound.play(Select)
 		@Text.show(This is not the place to chat, so come~by my POKéMON LAB later, okay?)
 		@Register.change(12\Route101,3)
-		@Register.change(System.12.Starter,252)
+		@Register.change(System.Starter.12,252)
 		@Player.warp(12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,6,0.1,4,0)
 		@Level.update
 	:when:NO
@@ -72,7 +72,7 @@
 		@Sound.play(Select)
 		@Text.show(This is not the place to chat, so come~by my POKéMON LAB later, okay?)
 		@Register.change(12\Route101,3)
-		@Register.change(System.12.Starter,255)
+		@Register.change(System.Starter.12,255)
 		@Player.warp(12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,6,0.1,4,0)
 		@Level.update
 	:when:NO
@@ -110,7 +110,7 @@
 		@Sound.play(Select)
 		@Text.show(This is not the place to chat, so come~by my POKéMON LAB later, okay?)
 		@Register.change(12\Route101,3)
-		@Register.change(System.12.Starter,258)
+		@Register.change(System.Starter.12,258)
 		@Player.warp(12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,6,0.1,4,0)
 		@Level.update
 	:when:NO

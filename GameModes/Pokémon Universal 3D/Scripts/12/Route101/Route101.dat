@@ -12,7 +12,7 @@ version=2
 		@NPC.spawn(9,0,15,0,,[POKEMON|N]263,true,3,,009000015,Still)
 	:endif
 	:if:<NPC.exists(024000008)>=false
-		@NPC.spawn(24,0,8,0,,NPC 35,false,2,,024000008,Looking)
+		@NPC.spawn(24,0,8,1,12\Route101\024000008,NPC 35,false,2,,024000008,Looking)
 	:endif
 	@Entity.warp(015000014,15,-0.25,14)
 	@NPC.setspeed(010000015,2)
@@ -173,8 +173,8 @@ version=2
 	:endif
 	:end
 :endif
-@Player.save
-@Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,System\ParallelProcess\12\Route101.dat)
-@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+@Storage.set(str,System.ActionScript,12\Route101\Route101.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
 :end

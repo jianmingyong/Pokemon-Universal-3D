@@ -5,5 +5,4 @@
 	@Sound.play(Select)
 	@Text.show(Better get going!)
 :endif
-@Script.start(System\GlobalMain)
 :end

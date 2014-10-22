@@ -22,11 +22,11 @@ version=2
 				@Sound.play(success)
 				@Text.show(You have unlocked Mystery Gift feature!~The dialga will operate now.)
 				@Register.change(System.MysteryGift,1)
+				@Script.start(System\GlobalMain)
 			:endif
 		:when:NO
 		:endwhen
 	:endwhile
 :when:NO
 :endwhen
-@Script.start(System\GlobalMain)
 :end

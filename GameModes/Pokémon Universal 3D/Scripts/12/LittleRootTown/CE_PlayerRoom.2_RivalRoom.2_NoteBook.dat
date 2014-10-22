@@ -7,5 +7,4 @@ version=2
 @Text.show(ADVENTURE RULE NO. 2~Record your progress with SAVE.)
 @Sound.play(Select)
 @Text.show(The remaining pages are blank...)
-@Script.start(System\GlobalMain)
 :end

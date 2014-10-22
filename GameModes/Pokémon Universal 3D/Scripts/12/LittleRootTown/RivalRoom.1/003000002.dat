@@ -45,4 +45,5 @@
 @Music.play(P_R_S_E Littleroot Town)
 @Register.change(12\LittleRootTown\RivalRoom.2,2)
 @Register.change(12\LittleRootTown\RivalRoom.1,2)
+@Script.start(System\GlobalMain)
 :end

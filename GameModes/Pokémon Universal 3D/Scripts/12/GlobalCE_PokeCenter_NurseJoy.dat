@@ -79,5 +79,4 @@
 	@Sound.play(Select)
 	@Text.show(We hope to see you again!)
 :endwhen
-@Script.start(System\GlobalMain)
 :end

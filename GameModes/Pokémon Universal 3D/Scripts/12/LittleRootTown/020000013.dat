@@ -3,5 +3,4 @@
 @Text.show(If you use a PC, you can store items~and POKéMON.)
 @Sound.play(Select)
 @Text.show(The power of science is staggering!)
-@Script.start(System\GlobalMain)
 :end

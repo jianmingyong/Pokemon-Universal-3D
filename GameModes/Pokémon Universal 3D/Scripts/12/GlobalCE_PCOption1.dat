@@ -6,11 +6,11 @@
 	@Sound.play(accesspc)
 	@Text.show(Accessed SOMEONE's PC.)
 	@Text.show(POKéMON Storage System opened.)
-	@Script.start(System\CommonEvent\12\PC\PCOption2)
+	@Script.start(12\GlobalCE_PCOption2)
 :when:<Player.name>'s PC
 	@Sound.play(accesspc)
 	@Text.show(Accessed <Player.name>'s PC.)
-	@Script.start(System\CommonEvent\12\PC\PCOption3)
+	@Script.start(12\GlobalCE_PCOption3)
 :when:LOG OFF
 @Sound.play(computerclose)
 :endwhen

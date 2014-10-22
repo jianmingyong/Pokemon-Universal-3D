@@ -7,27 +7,14 @@ version=2
 	@Options.show(BUY,SELL,QUIT)
 	:when:BUY
 		@Sound.play(Select)
-		:if:<Player.money><0
-			@Player.save
-			@Register.change(System.ErrorLog.ErrorID5,2)
-			@Player.warp(System\GlobalValidation.dat,0,0,0,0)
-			:end
-		:endif
 		@Screen.trade({18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1},1,0)
 	:when:SELL
-		:if:<Player.money><0
-			@Player.save
-			@Register.change(System.ErrorLog.ErrorID5,2)
-			@Player.warp(System\GlobalValidation.dat,0,0,0,0)
-			:end
-		:endif
 		@Sound.play(Select)
 		@Screen.trade({0|0|0},0,1)
 	:when:QUIT
 		@Sound.play(Select)
 		@Text.show(Please come again!)
 	:endwhen
-	@Script.start(System\GlobalMain)
 	:end
 :endif
 :if:<Register.value(12\OldaleTown\PokeMart\002000002)>=2
@@ -37,32 +24,19 @@ version=2
 	@Text.show(How may I serve you?)
 	@Options.show(BUY,SELL,QUIT)
 	:when:BUY
-		:if:<Player.money><0
-			@Player.save
-			@Register.change(System.ErrorLog.ErrorID5,2)
-			@Player.warp(System\GlobalValidation.dat,0,0,0,0)
-			:end
-		:endif
 		@Sound.play(Select)
 		@Screen.trade({5|99-<Inventory.countitem(5)>|-1}{18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1},1,0)
 	:when:SELL
-		:if:<Player.money><0
-			@Player.save
-			@Register.change(System.ErrorLog.ErrorID5,2)
-			@Player.warp(System\GlobalValidation.dat,0,0,0,0)
-			:end
-		:endif
 		@Sound.play(Select)
 		@Screen.trade({0|0|0},0,1)
 	:when:QUIT
 		@Sound.play(Select)
 		@Text.show(Please come again!)
 	:endwhen
-	@Script.start(System\GlobalMain)
 	:end
 :endif
-@Player.save
-@Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,12\OldaleTown\PokeMart\002000002.dat)
-@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+@Storage.set(str,System.ActionScript,12\OldaleTown\PokeMart\002000002.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
 :end

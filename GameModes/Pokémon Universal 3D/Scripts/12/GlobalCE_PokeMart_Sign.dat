@@ -3,5 +3,4 @@
 	@Sound.play(Select)
 	@Text.show("Selected items for your convenience!"~POKéMON MART)
 :endif
-@Script.start(System\GlobalMain)
 :end

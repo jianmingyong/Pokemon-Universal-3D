@@ -9,17 +9,17 @@
 	@Sound.play(Select)
 	:if:<Player.money>=0
 		@Text.show(You have $<Player.money> in your pocket.~you cannot deposite...)
-		@Script.start(System\CommonEvent\12\PC\PCOption4)
+		@Script.start(12\GlobalCE_PCOption4)
 	:endif
-	@Script.start(System\CommonEvent\12\PC\PokéBankDeposite)
+	@Script.start(12\GlobalCE_PokéBankDeposite)
 :when:WITHDRAW
 	@Sound.play(Select)
 	:if:<Register.value(System.BankMoney)>=0
 		@Text.show(You have $<Player.money> in your bank.~you cannot withdraw...)
-		@Script.start(System\CommonEvent\12\PC\PCOption4)
+		@Script.start(12\GlobalCE_PCOption4)
 	:endif
-	@Script.start(System\CommonEvent\12\PC\PokéBankWithdraw)
+	@Script.start(12\GlobalCE_PokéBankWithdraw)
 :when:CANCEL
-	@Script.start(System\CommonEvent\12\PC\PCOption3)
+	@Script.start(12\GlobalCE_PCOption3)
 :endwhen
 :end

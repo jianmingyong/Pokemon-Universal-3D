@@ -1,5 +1,4 @@
 ﻿version=2
 @Sound.play(Select)
 @Text.show(PROF. BIRCH'S HOUSE)
-@Script.start(System\GlobalMain)
 :end

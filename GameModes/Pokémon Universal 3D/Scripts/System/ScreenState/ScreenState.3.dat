@@ -2,6 +2,7 @@
 # ErrorID1 - Completed.
 :while:<Storage.get(int,System.ScreenState)>=3
 	:if:<not><Level.filename>=GlobalMain
+		@Script.start(System\GlobalEmergencySave)
 		@Screen.fadeout
 		@Camera.set(0,0,0,0,0)
 		@Player.warp(System\GlobalMain.dat,0,0,0,0)

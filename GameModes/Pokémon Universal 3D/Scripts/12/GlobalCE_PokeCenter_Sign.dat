@@ -3,5 +3,4 @@
 	@Sound.play(Select)
 	@Text.show("Rejuvenate your tired partners!"~POKéMON CENTER)
 :endif
-@Script.start(System\GlobalMain)
 :end

@@ -1,6 +1,6 @@
 version=2
 :if:<Register.value(12\LittleRootTown\ProfBirchLab)>=1
-	:if:<Register.value(System.12.Starter)>=252 <or> <Register.value(System.12.Starter)>=255 <or> <Register.value(System.12.Starter)>=258
+	:if:<Register.value(System.Starter.12)>=252 <or> <Register.value(System.Starter.12)>=255 <or> <Register.value(System.Starter.12)>=258
 		:if:<NPC.exists(006000003)>=false
 			@NPC.spawn(6,0,3,1,12\LittleRootTown\ProfBirchLab\006000003,Prof. Birch,false,2,,006000003,Still)
 		:endif
@@ -19,7 +19,7 @@ version=2
 		@Sound.play(Select)
 		@Text.show(used earlier.)
 		@Sound.play(item_found)
-		:if:<Register.value(System.12.Starter)>=252
+		:if:<Register.value(System.Starter.12)>=252
 			@Text.show(<Player.name> received the TREECKO!)
 			@Sound.play(Select)
 			@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that TREECKO?)
@@ -30,7 +30,7 @@ version=2
 			:when:NO
 			:endwhen
 		:endif
-		:if:<Register.value(System.12.Starter)>=255
+		:if:<Register.value(System.Starter.12)>=255
 			@Text.show(<Player.name> received the TORCHIC!)
 			@Sound.play(Select)
 			@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that TORCHIC?)
@@ -41,7 +41,7 @@ version=2
 			:when:NO
 			:endwhen
 		:endif
-		:if:<Register.value(System.12.Starter)>=258
+		:if:<Register.value(System.Starter.12)>=258
 			@Text.show(<Player.name> received the MUDKIP!)
 			@Sound.play(Select)
 			@Text.show(PROF. BIRCH: While you're at it, why not~give a nickname to that MUDKIP?)

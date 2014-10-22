@@ -190,7 +190,6 @@
 	@Register.change(12\LittleRootTown\RivalRoom.2\005000003,2)
 	@Register.change(12\LittleRootTown\RivalRoom.2,2)
 	@Register.change(12\LittleRootTown\RivalRoom.1,2)
-	@Script.start(System\GlobalMain)
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\RivalRoom.2\005000003)>=2

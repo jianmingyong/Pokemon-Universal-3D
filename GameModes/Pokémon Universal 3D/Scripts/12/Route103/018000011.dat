@@ -11,17 +11,17 @@
 @Text.show(Since we're here, let's have a quick~battle!)
 @Sound.play(Select)
 @Text.show(I'll give you a taste of what being~a TRAINER is like.)
-:if:<Register.value(System.12.Starter)>=252
+:if:<Register.value(System.Starter.12)>=252
 	@Script.start(System\Encounter\Battleint)
 	@Battle.trainer(12\Route103\018000011.255)
 	@Script.start(System\Encounter\Battleend)
 :endif
-:if:<Register.value(System.12.Starter)>=255
+:if:<Register.value(System.Starter.12)>=255
 	@Script.start(System\Encounter\Battleint)
 	@Battle.trainer(12\Route103\018000011.258)
 	@Script.start(System\Encounter\Battleend)
 :endif
-:if:<Register.value(System.12.Starter)>=258
+:if:<Register.value(System.Starter.12)>=258
 	@Script.start(System\Encounter\Battleint)
 	@Battle.trainer(12\Route103\018000011.252)
 	@Script.start(System\Encounter\Battleend)
@@ -58,5 +58,4 @@
 @Music.play(P_R_S_E Route 101)
 @Register.change(12\Route103,2)
 @Register.change(12\OldaleTown,2)
-@Script.start(System\GlobalMain)
 :end

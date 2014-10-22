@@ -1,5 +1,4 @@
 version=2
 @Sound.play(Select)
 @Text.show(OLDALE TOWN~"Where things start off scarce.")
-@Script.start(System\GlobalMain)
 :end

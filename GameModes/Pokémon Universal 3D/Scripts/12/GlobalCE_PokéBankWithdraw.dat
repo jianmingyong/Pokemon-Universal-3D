@@ -1,12 +1,5 @@
 ﻿version=2
 @Text.show(Your bank have $<Register.value(System.BankMoney)>.~How much would you like to withdraw?)
-:if:<Player.money><0 <or> <Register.value(System.BankMoney)><0
-	@Player.save
-	@Register.change(System.ErrorLog.ErrorID5,2)
-	@Script.start(System\GlobalErrorLog)
-	@Player.warp(System\GlobalValidation.dat,0,0,0,0)
-	:end
-:endif
 :if:<Register.value(System.BankMoney)>>0
 	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,10)
 :endif
@@ -18,17 +11,17 @@
 	@Sound.play(Select)
 	:if:<Math.isint(<Math.clamp(<System.lastinput>,0,<Math.int(<Register.value(System.BankMoney)>)>)>.0)>=false
 		@Text.show(Please insert a integer number.)
-		@Script.start(System\CommonEvent\12\PC\PokéBankWithdraw)
+		@Script.start(12\GlobalCE_PokéBankWithdraw)
 		:end
 	:endif
 	:if:<Math.sng(<Player.money>+<Math.clamp(<System.lastinput>,0,<Math.int(<Register.value(System.BankMoney)>)>)>>2147483648
-		@Text.show(Too much moeney withdraw from the bank.)
-		@Script.start(System\CommonEvent\12\PC\PokéBankDeposite)
+		@Text.show(Too much money withdraw from the bank.)
+		@Script.start(12\GlobalCE_PokéBankWithdraw)
 		:end
 	:endif
 	:if:<Register.value(System.BankMoney)><<Math.clamp(<System.lastinput>,0,<Math.int(<Register.value(System.BankMoney)>)>)>
 		@Text.show(You do not have that much money in your bank.)
-		@Script.start(System\CommonEvent\12\PC\PokéBankWithdraw)
+		@Script.start(12\GlobalCE_PokéBankWithdraw)
 		:end
 	:endif
 	@Player.addmoney(<Math.clamp(<System.lastinput>,0,<Math.int(<Register.value(System.BankMoney)>)>)>)
@@ -36,9 +29,9 @@
 	@Player.save
 	@Sound.play(Save)
 	@Text.show(You have withdraw successfully.)
-	@Script.start(System\CommonEvent\12\PC\PCOption4)
+	@Script.start(12\GlobalCE_PCOption4)
 :when:NO
 	@Sound.play(Select)
-	@Script.start(System\CommonEvent\12\PC\PokéBankWithdraw)
+	@Script.start(12\GlobalCE_PokéBankWithdraw)
 :endwhen
 :end

@@ -6,6 +6,5 @@
 	@Text.show(Two men are dancing on a big piano~keyboard.)
 	@Sound.play(Select)
 	@Text.show(Better get going!)
-	@Script.start(System\GlobalMain)
 :endif
 :end

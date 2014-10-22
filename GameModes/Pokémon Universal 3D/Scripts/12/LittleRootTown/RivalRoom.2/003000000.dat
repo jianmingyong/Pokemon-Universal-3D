@@ -1,5 +1,4 @@
 ﻿version=2
 @Sound.play(Select)
 @Text.show(The time now is: <Environment.dayinformation>.)
-@Script.start(System\GlobalMain)
 :end

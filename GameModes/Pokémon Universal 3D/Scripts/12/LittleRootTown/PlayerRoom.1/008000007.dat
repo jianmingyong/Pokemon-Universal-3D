@@ -4,5 +4,4 @@
 @Text.show(very own room?)
 @Player.turnto(0)
 @Player.move(1)
-@Script.start(System\GlobalMain)
 :end

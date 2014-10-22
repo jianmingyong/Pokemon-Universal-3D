@@ -3,5 +3,4 @@
 @Text.show(Hi, neighbor!)
 @Sound.play(Select)
 @Text.show(Do you already have your~own POKéMON?)
-@Script.start(System\GlobalMain)
 :end

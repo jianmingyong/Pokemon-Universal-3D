@@ -5,5 +5,4 @@
 	@Sound.play(Select)
 	@Text.show(A Game Boy Advance is connected to~serve as the Controller.)
 :endif
-@Script.start(System\GlobalMain)
 :end

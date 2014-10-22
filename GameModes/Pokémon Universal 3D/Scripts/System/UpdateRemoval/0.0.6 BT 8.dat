@@ -136,4 +136,14 @@ version=2
 :if:<Register.registered(12\LittleRootTown\RivalRoom.1\002000003)>=true
 	@Register.unregister(12\LittleRootTown\RivalRoom.1\002000003,int)
 :endif
+:if:<Register.registered(System.Encounter.LevelMultiplier)>=true
+	@Register.unregister(System.Encounter.LevelMultiplier,int)
+:endif
+:if:<Register.registered(System.Encounter.ExperienceMultiplier)>=true
+	@Register.unregister(System.Encounter.ExperienceMultiplier,int)
+:endif
+:if:<Register.registered(System.12.Starter)>=true
+	@Register.register(System.Starter.12,int,<Register.value(System.12.Starter)>)
+	@Register.unregister(System.12.Starter,int)
+:endif
 :end

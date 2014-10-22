@@ -5,9 +5,13 @@ version=2
 	@Entity.remove(010000019)
 	:if:<NPC.exists(001000011)>=false
 		:if:<not><Register.value(12\LittleRootTown\ProfBirchLab)>=4
-			@NPC.spawn(1,0,11,1,12\OldaleTown\001000011,NPC 39,false,1,,001000011,Still)
+			:if:<NPC.exists(001000011)>=false <and> <NPC.exists(008000009)>=false
+				@NPC.spawn(1,0,11,1,12\OldaleTown\001000011,NPC 39,false,1,,001000011,Still)
+			:endif
 		:else
-			@NPC.spawn(8,0,9,1,12\OldaleTown\001000011,NPC 39,false,3,,008000009,Still)
+			:if:<NPC.exists(001000011)>=false <and> <NPC.exists(008000009)>=false
+				@NPC.spawn(8,0,9,1,12\OldaleTown\001000011,NPC 39,false,3,,008000009,Still)
+			:endif
 		:endif
 	:endif
 	:if:<Register.value(12\LittleRootTown\ProfBirchLab)>=4
@@ -18,16 +22,17 @@ version=2
 	:endif
 	:if:<NPC.exists(013000007)>=false <and> <Register.value(12\OldaleTown\013000007)>=1
 		@NPC.spawn(13,0,14,1,12\OldaleTown\013000007,NPC 83,false,2,,013000007,Still)
-	:else
+	:endif
+	:if:<NPC.exists(013000007)>=false <and> <Register.value(12\OldaleTown\013000007)>=2
 		@NPC.spawn(13,0,7,1,12\OldaleTown\013000007,NPC 83,false,2,,013000007,Still)
 	:endif
 	:end
 :endif
 :if:<Register.value(12\OldaleTown)>=2
-	:if:<NPC.exists(011000019)>=false <and> <Register.value(System.PlayerGender)>=Male
+	:if:<NPC.exists(011000019)>=false <and> <Register.value(System.PlayerGender.12)>=Boy
 		@NPC.spawn(11,0,19,1,12\OldaleTown\011000019,May,false,0,,011000019,Still)
 	:endif
-	:if:<NPC.exists(011000019)>=false <and> <Register.value(System.PlayerGender)>=Female
+	:if:<NPC.exists(011000019)>=false <and> <Register.value(System.PlayerGender.12)>=Girl
 		@NPC.spawn(11,0,19,1,12\OldaleTown\011000019,Brendan,false,0,,011000019,Still)
 	:endif
 	:if:<NPC.exists(001000011)>=false
@@ -45,8 +50,8 @@ version=2
 	:endif
 	:end
 :endif
-@Player.save
-@Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,System\ParallelProcess\12\OldaleTown.dat)
-@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+@Storage.set(str,System.ActionScript,12\OldaleTown\OldaleTown.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
 :end

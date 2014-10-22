@@ -20,12 +20,6 @@ version=2
 :if:<Register.registered(System.BankMoney)>=false
 	@Register.register(System.BankMoney,sng,0)
 :endif
-:if:<Register.registered(System.Encounter.LevelMultiplier)>=false
-	@Register.register(System.Encounter.LevelMultiplier,int,1)
-:endif
-:if:<Register.registered(System.Encounter.ExperienceMultiplier)>=false
-	@Register.register(System.Encounter.ExperienceMultiplier,int,1)
-:endif
 :if:<Register.registered(System.SandBoxMode)>=false
 	@Register.register(System.SandBoxMode,bool,false)
 :endif

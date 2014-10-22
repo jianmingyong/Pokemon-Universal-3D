@@ -11,14 +11,14 @@ version=2
 		@Item.messagegive(18,1)
 		@Register.change(12\LittleRootTown\PlayerRoom.2\000000001,2)
 	:endif
-	@Script.start(System\CommonEvent\12\PC\PCOption3)
+	@Script.start(12\GlobalCE_PCOption3)
 :when:BANK
-	@Script.start(System\CommonEvent\12\PC\PCOption4)
+	@Script.start(12\GlobalCE_PCOption4)
 :when:MAILBOX
 	@Sound.play(Select)
 	@Screen.mailsystem
-	@Script.start(System\CommonEvent\12\PC\PCOption3)
+	@Script.start(12\GlobalCE_PCOption3)
 :when:TURN OFF
-	@Script.start(System\CommonEvent\12\PC\PCOption1)
+	@Script.start(12\GlobalCE_PCOption1)
 :endwhen
 :end

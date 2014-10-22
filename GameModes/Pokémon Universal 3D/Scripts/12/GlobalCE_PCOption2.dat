@@ -1,13 +1,13 @@
 version=2
 @Sound.play(Select)
 @Text.show(What would you like to do?)
-@Options.setcancelindex(2)
+@Options.setcancelindex(1)
 @Options.show(MANAGE POKéMON,TURN OFF)
 :when:MANAGE POKéMON
 	@Sound.play(Select)
 	@Screen.storagesystem
-	@Script.start(System\CommonEvent\12\PC\PCOption2)
+	@Script.start(12\GlobalCE_PCOption2)
 :when:TURN OFF
-	@Script.start(System\CommonEvent\12\PC\PCOption1)
+	@Script.start(12\GlobalCE_PCOption1)
 :endwhen
 :end

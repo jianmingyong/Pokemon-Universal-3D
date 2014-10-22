@@ -1,5 +1,5 @@
 ﻿version=2
-# @Player.warp(system/globalcredits.dat,0,0,0,0) #
+#. @Player.warp(system/globalcredits.dat,0,0,0,0)
 @Camera.deactivethirdperson
 @Camera.set(0,0,0,0,0)
 @Camera.fix
@@ -66,6 +66,7 @@
 @Title.add(Riviera Music: Paineity,30,255,255,255,2,true,0,-80)
 @Title.add(Mega Man Battle Network 6 Music: Frygoon,30,255,255,255,2,true,0,-40)
 @Title.add(Pokémon Theme Song Rip From: Filizew,30,255,255,255,2,true,0,0)
+@Title.add(Shing Soul II Rip From: 葉昱廷,30,255,255,255,2,true,0,0)
 @Level.wait(300)
 @Title.add(Pokémon 3D Map design,30,255,255,255,2,true,0,-280)
 @Title.add(Nils Drescher,30,255,255,255,2,true,0,-200)

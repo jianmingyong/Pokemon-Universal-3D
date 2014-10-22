@@ -1,5 +1,4 @@
 ﻿version=2
 @Sound.play(Select)
 @Text.show(LITTLEROOT TOWN~"A town that can't be shaded any hue.")
-@Script.start(System\GlobalMain)
 :end

@@ -9,5 +9,4 @@ version=2
 @Text.show(A TRAINER's expertise is tested on the~move sets chosen for POKéMON.)
 @Sound.play(Select)
 @Text.show(..................)
-@Script.start(System\GlobalMain)
 :end

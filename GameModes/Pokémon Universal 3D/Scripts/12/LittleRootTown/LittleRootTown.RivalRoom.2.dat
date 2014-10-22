@@ -18,7 +18,6 @@ version=2
 	:endif
 	:end
 :endif
-@Player.save
 @Storage.set(str,System.ActionScript,12\LittleRootTown\LittleRootTown.RivalRoom.2.dat)
 @Storage.set(int,System.ErrorLog.ErrorID0,1)
 @Storage.set(int,System.ScreenState,3)

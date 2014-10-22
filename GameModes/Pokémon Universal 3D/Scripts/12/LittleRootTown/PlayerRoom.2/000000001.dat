@@ -1,6 +1,5 @@
 version=2
 :if:<Register.value(12\LittleRootTown\PlayerRoom.2\000000001)>=1
-	@Sound.play(Select)
 	@Sound.play(computeropen)
 	@Text.show(<Player.name> booted up the PC.)
 	@Sound.play(Select)
@@ -21,11 +20,9 @@ version=2
 	:when:TURN OFF
 	:endwhen
 	@Sound.play(computerclose)
-	@Script.start(System\GlobalMain)
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\PlayerRoom.2\000000001)>=2
-	@Sound.play(Select)
 	@Sound.play(computeropen)
 	@Text.show(<Player.name> booted up the PC.)
 	@Sound.play(Select)
@@ -43,11 +40,10 @@ version=2
 	:when:TURN OFF
 	:endwhen
 	@Sound.play(computerclose)
-	@Script.start(System\GlobalMain)
 	:end
 :endif
-@Player.save
-@Register.change(System.ErrorLog.ErrorID0,2)
-@Register.change(System.ActionScript,12\LittleRootTown\PlayerRoom.2\000000001.dat)
-@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+@Storage.set(str,System.ActionScript,12\LittleRootTown\PlayerRoom.2\000000001.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
 :end

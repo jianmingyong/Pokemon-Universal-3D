@@ -5,5 +5,4 @@
 @Text.show(the wild to do more research...)
 @Sound.play(Select)
 @Text.show(When does PROF. BIRCH spend time~at home?)
-@Script.start(System\GlobalMain)
 :end

@@ -3,5 +3,4 @@
 @Text.show(The box is printed with a POKéMON logo.)
 @Sound.play(Select)
 @Text.show(It's a POKéMON brand moving and~delivery service.)
-@Script.start(System\GlobalMain)
 :end

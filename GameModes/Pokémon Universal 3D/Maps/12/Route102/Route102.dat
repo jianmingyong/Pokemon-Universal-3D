@@ -386,6 +386,8 @@ Trainer.Layer.23
 Pokéball.Layer.23
 {"EntityField"{ENT[{"EntityID"{str[ItemObject]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,-0.25,23]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,0.5]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}{"Action"{int[0]}}{"AdditionalValue"{str[011000023,18]}}]}}
 
+Berry.Layer.10
+
 Sign.Layer.10
 {"EntityField"{ENT[{"EntityID"{str[SignBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[17,0,10]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[64,0,16,16][80,0,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route102\017000010]}}]}}
 Sign.Layer.17
