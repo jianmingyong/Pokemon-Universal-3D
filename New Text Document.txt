@@ -1,0 +1,138 @@
+Public Shared Sub CheckForRandomPickup()
+    If (((((net.Pokemon3D.Game.Core.Player.Pokemons.Count > 0) And Not net.Pokemon3D.Game.Screen.Level.Surfing) And Not net.Pokemon3D.Game.Screen.Level.Riding) And net.Pokemon3D.Game.Screen.Level.ShowOverworldPokemon) And (net.Pokemon3D.Game.Core.Player.GetWalkPokemon() > Nothing)) Then
+        If (Me.PickupIndividualValue <> net.Pokemon3D.Game.Core.Player.GetWalkPokemon().IndividualValue) Then
+            Me.PickupItemID = -1
+        End If
+        If (net.Pokemon3D.Game.Core.Random.Next(0, 270) < net.Pokemon3D.Game.Core.Player.GetWalkPokemon().Friendship) Then
+            Dim num1 As Integer = -1
+            If (net.Pokemon3D.Game.PokemonInteractions.IsOutside()) Then
+                If ((net.Pokemon3D.Game.Core.Player.GetWalkPokemon().Item Is Not Nothing AndAlso net.Pokemon3D.Game.Core.Player.GetWalkPokemon().Item.ID = 261) AndAlso (net.Pokemon3D.Game.Core.Random.Next(0, 100) < 90)) Then
+                    num1 = net.Pokemon3D.Game.Core.Random.Next(254, 261)
+                ElseIf (net.Pokemon3D.Game.PokemonInteractions.IceAround()) Then
+                    If (net.Pokemon3D.Game.Core.Random.Next(0, 100) < 20) Then
+                        num1 = 107
+                    Else
+                        num1 = 2004
+                    End If
+                ElseIf (net.Pokemon3D.Game.PokemonInteractions.LoamySoilAround() And (net.Pokemon3D.Game.Core.Random.Next(0, 100) < 50)) Then
+                    num1 = net.Pokemon3D.Game.Core.Random.Next(2000, 2064)
+                ElseIf (net.Pokemon3D.Game.PokemonInteractions.GrassAround() And (net.Pokemon3D.Game.Core.Random.Next(0, 100) < 50)) Then
+                    Dim num2 As Integer = net.Pokemon3D.Game.Core.Random.Next(0, 100)
+                    If (num2 < 10) Then
+                        num1 = 34
+                    ElseIf ((num2 >= 10) And (num2 < 60)) Then
+                        num1 = 122
+                    ElseIf ((num2 >= 60) And (num2 < 75)) Then
+                        num1 = 124
+                    Else
+                        num1 = 123
+                    End If
+                ElseIf (net.Pokemon3D.Game.PokemonInteractions.WaterAround() And (net.Pokemon3D.Game.Core.Random.Next(0, 100) < 50)) Then
+                    Dim num3 As Integer = net.Pokemon3D.Game.Core.Random.Next(0, 100)
+                    If (num3 < 10) Then
+                        num1 = 24
+                    ElseIf ((num3 >= 10) And (num3 < 50)) Then
+                        num1 = 110
+                    ElseIf ((num3 >= 50) And (num3 < 60)) Then
+                        num1 = 190
+                    Else
+                        num1 = 111
+                    End If
+                Else
+                    Dim num4 As Integer = net.Pokemon3D.Game.Core.Random.Next(0, 100)
+                    If (num4 < 45) Then
+                        num1 = net.Pokemon3D.Game.Core.Random.Next(2000, 2011)
+                    ElseIf ((num4 >= 45) And (num4 < 90)) Then
+                        num1 = net.Pokemon3D.Game.Core.Random.Next(254, 262)
+                    ElseIf ((num4 >= 90) And (num4 < 92)) Then
+                        num1 = 75
+                    Else
+                        num1 = 60
+                    End If
+                End If
+            ElseIf (net.Pokemon3D.Game.PokemonInteractions.IsInside()) Then
+                Dim num5 As Integer = net.Pokemon3D.Game.Core.Random.Next(0, 100)
+                If (num5 < 5) Then
+                    num1 = 146
+                ElseIf ((num5 >= 5) And (num5 < 25)) Then
+                    num1 = 7
+                ElseIf ((num5 >= 25) And (num5 < 45)) Then
+                    Dim num6 As Integer = net.Pokemon3D.Game.Core.Player.Badges.Count
+                    If (num6 <= 1) Then
+                        num1 = 18
+                    ElseIf ((num6 >= 2) And (num6 <= 4)) Then
+                        num1 = 17
+                    ElseIf ((num6 >= 5) And (num6 <= 7)) Then
+                        num1 = 16
+                    Else
+                        num1 = 15
+                    End If
+                ElseIf ((num5 >= 45) And (num5 < 65)) Then
+                    num1 = 63
+                ElseIf ((num5 >= 65) And (num5 < 85)) Then
+                    num1 = 65
+                ElseIf ((num5 >= 85) And (num5 < 93)) Then
+                    num1 = 73
+                ElseIf ((num5 >= 93) And (num5 < 95)) Then
+                    num1 = 75
+                Else
+                    num1 = 60
+                End If
+            ElseIf (net.Pokemon3D.Game.PokemonInteractions.IsCave()) Then
+                If ((net.Pokemon3D.Game.Core.Player.GetWalkPokemon().Item Is Not Nothing AndAlso net.Pokemon3D.Game.Core.Player.GetWalkPokemon().Item.ID = 262) AndAlso (net.Pokemon3D.Game.Core.Random.Next(0, 100) < 90)) Then
+                    Dim num7 As Integer = net.Pokemon3D.Game.Core.Random.Next(0, 100)
+                    If (num7 < 20) Then
+                        num1 = 22
+                    ElseIf ((num7 >= 20) And (num7 < 40)) Then
+                        num1 = 23
+                    ElseIf ((num7 >= 40) And (num7 < 60)) Then
+                        num1 = 24
+                    ElseIf ((num7 >= 60) And (num7 < 80)) Then
+                        num1 = 34
+                    ElseIf ((num7 >= 80) And (num7 < 90)) Then
+                        num1 = 8
+                    Else
+                        num1 = 169
+                    End If
+                ElseIf (net.Pokemon3D.Game.PokemonInteractions.WaterAround() And (net.Pokemon3D.Game.Core.Random.Next(0, 100) < 65)) Then
+                    Dim num8 As Integer = net.Pokemon3D.Game.Core.Random.Next(0, 100)
+                    If (num8 < 30) Then
+                        num1 = 24
+                    ElseIf ((num8 >= 30) And (num8 < 70)) Then
+                        num1 = 110
+                    ElseIf ((num8 >= 70) And (num8 < 80)) Then
+                        num1 = 190
+                    Else
+                        num1 = 111
+                    End If
+                Else
+                    Dim num9 As Integer = net.Pokemon3D.Game.Core.Random.Next(0, 100)
+                    If (num9 < 10) Then
+                        num1 = 22
+                    ElseIf ((num9 >= 10) And (num9 < 20)) Then
+                        num1 = 23
+                    ElseIf ((num9 >= 20) And (num9 < 50)) Then
+                        num1 = 110
+                    ElseIf ((num9 >= 50) And (num9 < 60)) Then
+                        num1 = 125
+                    ElseIf ((num9 >= 60) And (num9 < 70)) Then
+                        num1 = 112
+                    ElseIf ((num9 >= 70) And (num9 < 90)) Then
+                        num1 = net.Pokemon3D.Game.Core.Random.Next(2000, 2011)
+                    Else
+                        num1 = 262
+                    End If
+                End If
+            End If
+            If (num1 > -1) Then
+                net.Pokemon3D.Game.Logger.Debug("Pokémon picks up item (" & net.Pokemon3D.Game.Item.GetItemByID(num1).Name & ")")
+                Me.PickupItemID = num1
+                Me.PickupIndividualValue = net.Pokemon3D.Game.Core.Player.GetWalkPokemon().IndividualValue
+                net.Pokemon3D.Game.SoundManager.PlaySound("pickup")
+            End If
+        End If
+    Else
+        Me.PickupItemID = -1
+        Me.PickupIndividualValue = ""
+    End If
+End Sub
