@@ -84,6 +84,12 @@ version=2
 	@Register.register(12\Route103,int,1)
 :endif
 
+:if:<Register.registered(12\Route102\024000010)>=false
+	@Register.register(12\Route102\024000010,int,1)
+:endif
+:if:<Register.registered(12\Route102\025000010)>=false
+	@Register.register(12\Route102\025000010,int,1)
+:endif
 :if:<Register.registered(12\Route102)>=false
 	@Register.register(12\Route102,int,1)
 :endif

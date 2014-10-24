@@ -1,5 +1,17 @@
 version=2
 :if:<Register.value(12\Route102)>=1
+	:if:<Register.value(12\Route102\024000010)>=1
+		@Entity.remove(0240000102)
+	:endif
+	:if:<Register.value(12\Route102\024000010)>=2
+		@Entity.remove(0240000101)
+	:endif
+	:if:<Register.value(12\Route102\025000010)>=1
+		@Entity.remove(0250000102)
+	:endif
+	:if:<Register.value(12\Route102\025000010)>=2
+		@Entity.remove(0250000101)
+	:endif
 	:end
 :endif
 :if:<Register.value(12\Route102)>=2
@@ -7,6 +19,18 @@ version=2
 	@Entity.remove(014000011)
 	@Entity.remove(014000012)
 	@Entity.remove(014000013)
+	:if:<Register.value(12\Route102\024000010)>=1
+		@Entity.remove(0240000102)
+	:endif
+	:if:<Register.value(12\Route102\024000010)>=2
+		@Entity.remove(0240000101)
+	:endif
+	:if:<Register.value(12\Route102\025000010)>=1
+		@Entity.remove(0250000102)
+	:endif
+	:if:<Register.value(12\Route102\025000010)>=2
+		@Entity.remove(0250000101)
+	:endif
 	:end
 :endif
 @Storage.set(str,System.ActionScript,12\Route102\Route102.dat)

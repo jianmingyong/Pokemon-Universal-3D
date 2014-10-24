@@ -1,2 +1,5 @@
 ﻿version=2
+:if:<NPC.exists(006000003)>=false
+	@NPC.spawn(6,0,3,1,12\OldaleTown\House1\006000003,NPC 20,false,2,,006000003,Still)
+:endif
 :end

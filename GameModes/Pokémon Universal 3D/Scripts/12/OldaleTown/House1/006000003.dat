@@ -1,0 +1,10 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(When a POKéMON battle starts, the one~at the left of the list goes out first.)
+@Sound.play(Select)
+@Text.show(So, when you get more POKéMON in your~party, try switching around the order)
+@Sound.play(Select)
+@Text.show(of your POKéMON.)
+@Sound.play(Select)
+@Text.show(It could give you an advantage.)
+:end
