@@ -1,0 +1,6 @@
+version=2
+:if:<Register.value(12\OldaleTown\PokeMart\005000004)>=1
+	@Sound.play(Select)
+	@Text.show(The clerk says they're all sold out.~I can't buy any POKé BALLS.)
+	:end
+:endif

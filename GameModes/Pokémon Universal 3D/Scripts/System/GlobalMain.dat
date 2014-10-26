@@ -45,4 +45,5 @@ version=2
 	@Script.start(System\ScreenState\ScreenState.0)
 :endif
 @Script.start(<filesystem.pathup(<Level.mapfile>)>\<Level.filename>)
+@Environment.setweather(5)
 :end
