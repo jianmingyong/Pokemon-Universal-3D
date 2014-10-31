@@ -1,4 +1,4 @@
-﻿Name|Cascoon
+Name|Cascoon
 Number|268
 ExperienceType|1
 BaseExperience|41
@@ -10,11 +10,13 @@ EggGroup1|Bug
 EggGroup2|None
 BaseEggSteps|4080
 EggPokemon|265
-Devolution|265
 IsGenderLess|0
+CanBreed|1
+Devolution|265
 IsMale|50
-Ability1|65
+Ability1|61
 Ability2|Nothing
+HiddenAbility|68
 Machines|
 BaseHP|50
 BaseAttack|35
@@ -34,5 +36,5 @@ Pokedex|It endures attacks with patience because the more pain before evolution,
 Scale|0.88
 Move|1,106
 Move|7,106
-EvolutionCondition|269,Level,10,Level
 TradeValue|10
+EvolutionCondition|269,Level,10,Level

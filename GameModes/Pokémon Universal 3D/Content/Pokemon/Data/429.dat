@@ -10,12 +10,15 @@ EggGroup1|Amorphous
 EggGroup2|None
 BaseEggSteps|6630
 EggPokemon|200
-Devolution|200
 IsGenderLess|0
+CanBreed|1
+Devolution|200
 IsMale|50
 Ability1|26
 Ability2|Nothing
-Machines|63,85,86,87,92,94,104,138,148,156,164,168,182,207,213,216,218,237,240,241,244,247,259,261,263,269,332,347,371,373,412,416,433,451,477,496,497
+HiddenAbility|Nothing
+EggMoves|174,194,286,262,417,466,103,425,285,180,389,472,244
+Machines|174,92,244,237,241,173,63,196,182,240,203,218,87,216,94,247,104,207,214,129,138,197,156,213,168,171,99,85,102,117,86,149,164,347,269,351,332,259,263,290,285,289,412,451,261,373,371,416,445,399,363,433,477,496,497,605,590,148
 BaseHP|60
 BaseAttack|60
 BaseDefense|60
@@ -32,10 +35,12 @@ CanFly|0
 CanSwim|0
 Pokedex|Its cries sound like incantations to torment the foe. It appears where you least expect it.\Magical Pokémon\4.4\0.9\0,148,0
 Scale|0.96
+Move|1,408
+Move|1,566
+Move|1,381
+Move|1,345
 Move|1,45
 Move|1,149
 Move|1,180
 Move|1,310
-Move|1,345
-Move|1,381
 TradeValue|55

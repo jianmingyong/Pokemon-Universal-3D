@@ -1,4 +1,4 @@
-﻿Name|Pangoro
+Name|Pangoro
 Number|675
 ExperienceType|1
 BaseExperience|173
@@ -10,12 +10,14 @@ EggGroup1|Field
 EggGroup2|Human-like
 BaseEggSteps|6400
 EggPokemon|674
-Devolution|674
 IsGenderLess|0
+CanBreed|1
+Devolution|674
 IsMale|50
 Ability1|89
 Ability2|104
-Ability3|113
+HiddenAbility|113
+EggMoves|492,382,511,501,480
 Machines|14,15,46,57,63,70,89,91,92,104,156,157,164,168,182,188,206,207,213,216,218,237,240,241,249,259,263,269,280,317,332,337,339,365,371,373,374,398,404,411,416,421,444,447,468,490,496,497,511,514,523,526,555,612,590
 BaseHP|95
 BaseAttack|124
@@ -33,6 +35,8 @@ CanFly|0
 CanSwim|0
 Pokedex|Although it posses a violent temperament, it won't put up with bullying. It uses the leaf in its mouth to sense the movements of its enemies.\Daunting Pokémon\136.0\2.1\0,148,0
 Scale|1
+Move|1,494
+Move|1,359
 Move|1,33
 Move|1,43
 Move|7,292

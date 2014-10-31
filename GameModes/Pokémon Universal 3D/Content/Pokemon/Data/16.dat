@@ -1,4 +1,4 @@
-﻿Name|Pidgey
+Name|Pidgey
 Number|16
 ExperienceType|2
 BaseExperience|50
@@ -14,8 +14,9 @@ IsGenderLess|0
 IsMale|50
 Ability1|51
 Ability2|77
+HiddenAbility|145
 EggMoves|314,403,413,432,185,193,228,211,253
-Machines|19,92,104,156,164,168,182,207,213,216,218,237,240,241,263,332,365,369,496,526,189
+Machines|174,92,237,241,173,63,182,203,218,216,189,104,207,214,129,197,156,213,168,211,13,18,36,99,102,117,143,164,332,263,290,355,416,432,445,363,365,369,496,526,590,19
 BaseHP|40
 BaseAttack|45
 BaseDefense|40
@@ -32,18 +33,18 @@ CanFly|0
 CanSwim|0
 Pokedex|It usually hides in tall grass. Because it dislikes fighting, it protects itself by kicking up sand.\Tiny Bird Pokémon\1.8\0.3\0,148,0
 Scale|0.7
-Move|9,16
-Move|33,17
-Move|17,18
-Move|5,28
 Move|1,33
-Move|29,97
+Move|5,28
+Move|9,16
 Move|13,98
-Move|45,119
+Move|17,18
 Move|21,239
 Move|25,297
+Move|29,97
+Move|33,17
 Move|37,355
 Move|41,366
+Move|45,119
 Move|49,403
 Move|53,542
 EvolutionCondition|17,Level,18,Level

@@ -1,4 +1,4 @@
-﻿Name|Metapod
+Name|Metapod
 Number|11
 ExperienceType|1
 BaseExperience|72
@@ -14,6 +14,7 @@ IsGenderLess|0
 IsMale|50
 Ability1|61
 Ability2|Nothing
+HiddenAbility|61
 Machines|
 BaseHP|50
 BaseAttack|20

@@ -11,12 +11,14 @@ EggGroup2|Dragon
 BaseEggSteps|5355
 EggPokemon|349
 IsGenderLess|0
+CanBreed|1
+Devolution|0
 IsMale|50
-Ability1|033
-Ability2|Nothing
-Ability3|091
-EggMoves|362,445,109,406,225,114,95,231,243,54,300,321
-Machines|57,58,59,92,104,113,127,156,164,182,203,207,213,214,216,218,237,240,250,258,263,290,291,352,363,445,496,503
+Ability1|33
+Ability2|12
+HiddenAbility|91
+EggMoves|362,445,109,406,225,114,95,231,243,54,300,321,113
+Machines|174,92,237,173,59,63,196,182,240,203,218,216,104,207,214,129,197,156,213,36,61,55,58,99,102,117,164,352,263,290,416,445,363,496,503,590,57,250,127,291
 BaseHP|20
 BaseAttack|15
 BaseDefense|20
@@ -33,8 +35,8 @@ CanFly|0
 CanSwim|0
 Pokedex|It is the shabbiest Pokémon of all. It forms in schools and lives at the bottom of rivers.\Fish Pokémon\7.4\0.6\0,148,0
 Scale|0.84
-Move|15,33
 Move|1,150
+Move|15,33
 Move|30,175
-EvolutionCondition|350,holditem,83,trade
 TradeValue|5
+EvolutionCondition|350,holditem,83,trade

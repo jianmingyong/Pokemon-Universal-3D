@@ -1,4 +1,4 @@
-﻿Name|Zubat
+Name|Zubat
 Number|41
 ExperienceType|1
 BaseExperience|49
@@ -14,8 +14,9 @@ IsGenderLess|0
 IsMale|50
 Ability1|39
 Ability2|Nothing
-EggMoves|413,174,432,185,202,16,95,417,228,98,211,18,428
-Machines|19,92,104,156,164,168,182,188,207,213,216,218,237,240,241,247,259,263,269,332,365,369,371,474,496,512
+HiddenAbility|151
+EggMoves|413,174,432,185,202,16,95,417,228,98,599,18,428,211
+Machines|174,92,237,241,173,63,182,202,203,218,216,247,104,207,214,188,129,197,156,213,168,211,13,18,36,99,72,102,117,164,269,332,259,263,290,289,355,371,416,432,445,363,365,369,474,496,512,590,19
 BaseHP|40
 BaseAttack|45
 BaseDefense|35
@@ -32,18 +33,18 @@ CanFly|1
 CanSwim|0
 Pokedex|While flying, it constantly emits ultrasonic waves from its mouth to check its surroundings.\Bat Pokémon\7.5\0.8\0,148,0
 Scale|0.92
-Move|15,17
-Move|12,44
-Move|4,48
-Move|19,109
-Move|41,114
-Move|23,129
 Move|1,141
+Move|4,48
+Move|8,310
+Move|12,44
+Move|15,17
+Move|19,109
+Move|23,129
+Move|26,314
+Move|30,512
 Move|34,212
 Move|37,305
-Move|8,310
-Move|26,314
+Move|41,114
 Move|45,403
-Move|30,512
 EvolutionCondition|42,Level,22,Level
 TradeValue|5

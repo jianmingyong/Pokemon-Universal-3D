@@ -1,4 +1,4 @@
-﻿Name|Magby
+Name|Magby
 Number|240
 ExperienceType|1
 BaseExperience|73
@@ -11,11 +11,14 @@ EggGroup2|None
 BaseEggSteps|6630
 EggPokemon|240
 IsGenderLess|0
+CanBreed|1
+Devolution|0
 IsMale|75
 Ability1|49
 Ability2|Nothing
-Eggmoves|112,238,223,116,231,2,183,5,103,9
-Machines|53,92,94,104,126,156,164,168,182,207,213,216,218,237,241,249,261,263,280,315,374,488,496,510,29,189,9,7
+HiddenAbility|72
+EggMoves|112,562,187,238,223,394,116,231,2,183,5,384,103,9
+Machines|223,29,174,92,249,237,241,173,63,182,203,218,231,216,94,189,104,207,214,126,9,197,156,213,168,7,5,34,36,66,68,69,99,102,117,130,149,164,264,280,53,263,290,374,261,416,445,363,488,496,510,612,590
 BaseHP|45
 BaseAttack|75
 BaseDefense|37
@@ -46,5 +49,5 @@ Move|36,241
 Move|33,436
 Move|22,481
 Move|19,499
-EvolutionCondition|126,level,30,level
 TradeValue|20
+EvolutionCondition|126,level,30,level

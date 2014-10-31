@@ -1,4 +1,4 @@
-﻿Name|Treecko
+Name|Treecko
 Number|252
 ExperienceType|2
 BaseExperience|62
@@ -11,11 +11,14 @@ EggGroup2|Dragon
 BaseEggSteps|5355
 EggPokemon|252
 IsGenderLess|0
+CanBreed|1
+Devolution|0
 IsMale|87.5
 Ability1|65
 Ability2|Nothing
-EggMoves|13,24,73,225,235,242,283,300,306,320,331,345,363,388,437
-Machines|14,15,70,76,91,92,104,148,156,157,164,182,202,203,207,213,214,216,218,219,231,237,241,249,263,264,280,290,317,331,332,363,374,409,412,445,447,496,512
+HiddenAbility|84
+EggMoves|331,242,306,24,225,283,320,580,437,73,345,300,363,13,235,388,202
+Machines|223,174,92,249,237,241,173,63,182,202,203,218,76,231,216,91,189,104,207,214,129,9,197,156,213,210,5,25,34,36,66,68,69,99,72,102,117,130,164,264,331,280,317,332,263,290,412,374,409,416,445,363,490,496,267,612,590,15,70
 BaseHP|40
 BaseAttack|45
 BaseDefense|35
@@ -33,16 +36,16 @@ CanSwim|0
 Pokedex|Small hooks on the bottom of its feet catch on walls and ceilings. That is how it can hang from above.\Wood Gecko Pokémon\5\0.5\0,148,0
 Scale|0.7
 Move|1,1
-Move|36,21
 Move|1,43
 Move|6,71
+Move|11,98
+Move|16,228
+Move|21,103
 Move|26,72
 Move|31,97
-Move|11,98
-Move|21,103
+Move|36,21
 Move|41,197
 Move|46,202
-Move|16,228
-Move|51,412
-EvolutionCondition|253,level,16,level
+Move|50,412
 TradeValue|50
+EvolutionCondition|253,level,16,level

@@ -9,6 +9,6 @@ version=2
 	@NPC.spawn(0,0,5,1,12\GlobalCE_PokeMart_MysteryGift,Dialga,false,3,,000000005,FacePlayer)
 :endif
 :if:<NPC.exists(005000004)>=false
-	@NPC.spawn(5,0,4,1,12\OldaleTown\PokeMart\005000004,NPC 83,false,3,,005000004,Still)
+	@NPC.spawn(5,0,4,1,12\OldaleTown\PokeMart\005000004,NPC 34,false,3,,005000004,Still)
 :endif
 :end

@@ -1,4 +1,4 @@
-﻿Name|Tynamo
+Name|Tynamo
 Number|602
 ExperienceType|3
 BaseExperience|55
@@ -11,12 +11,13 @@ EggGroup2|None
 BaseEggSteps|5355
 EggPokemon|602
 IsGenderLess|0
+CanBreed|1
+Devolution|0
 IsMale|50
 Ability1|26
 Ability2|Nothing
-Ability3|Nothing
+HiddenAbility|Nothing
 Machines|
-EggMoves|
 BaseHP|35
 BaseAttack|55
 BaseDefense|40
@@ -37,5 +38,5 @@ Move|1,33
 Move|1,86
 Move|1,209
 Move|1,451
-EvolutionCondition|603,Level,39,Level
 TradeValue|35
+EvolutionCondition|603,Level,39,Level

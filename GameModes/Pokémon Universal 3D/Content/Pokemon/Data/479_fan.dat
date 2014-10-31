@@ -15,7 +15,7 @@ EggPokemon|479
 Devolution|0
 Ability1|026
 Ability2|Nothing
-Ability3|Nothing
+HiddenAbility|Nothing
 Machines|85,86,87,92,104,113,115,138,148,156,164,168,182,203,207,214,216,218,237,240,241,244,247,261,263,289,290,351,363,365,399,451,477,496,521,590
 EggMoves|
 BaseHP|50

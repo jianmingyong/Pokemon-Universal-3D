@@ -1,4 +1,4 @@
-﻿Name|Weedle
+Name|Weedle
 Number|13
 ExperienceType|1
 BaseExperience|39
@@ -14,6 +14,7 @@ IsGenderLess|0
 IsMale|50
 Ability1|19
 Ability2|Nothing
+HiddenAbility|50
 Machines|
 BaseHP|40
 BaseAttack|35

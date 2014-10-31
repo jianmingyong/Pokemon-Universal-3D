@@ -9,10 +9,14 @@ BaseFriendship|70
 EggGroup1|Bug
 EggGroup2|None
 BaseEggSteps|4080
+EggPokemon|401
 IsGenderLess|0
+CanBreed|1
+Devolution|0
 IsMale|50
-Ability1|65
+Ability1|61
 Ability2|Nothing
+HiddenAbility|50
 Machines|
 BaseHP|37
 BaseAttack|25
@@ -32,5 +36,6 @@ Pokedex|When its antennae hit each other it sounds like the music of a xylophone
 Scale|0.7
 Move|1,45
 Move|1,117
-Move|16,450
 Move|6,522
+Move|16,450
+TradeValue|20

@@ -1,4 +1,4 @@
-﻿Name|Kakuna
+Name|Kakuna
 Number|14
 ExperienceType|1
 BaseExperience|72
@@ -14,6 +14,7 @@ IsGenderLess|0
 IsMale|50
 Ability1|61
 Ability2|Nothing
+HiddenAbility|Nothing
 Machines|
 BaseHP|45
 BaseAttack|25

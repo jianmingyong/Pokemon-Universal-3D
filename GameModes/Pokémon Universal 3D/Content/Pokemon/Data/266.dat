@@ -1,4 +1,4 @@
-﻿Name|Silcoon
+Name|Silcoon
 Number|266
 ExperienceType|1
 BaseExperience|72
@@ -11,10 +11,12 @@ EggGroup2|None
 BaseEggSteps|4080
 EggPokemon|265
 IsGenderLess|0
+CanBreed|1
+Devolution|265
 IsMale|50
-Ability1|65
+Ability1|61
 Ability2|Nothing
-Ability3|65
+HiddenAbility|68
 Machines|
 BaseHP|50
 BaseAttack|35
@@ -34,5 +36,5 @@ Pokedex|Having wrapped silk around the branches of a tree, it quiescently awaits
 Scale|0.84
 Move|1,106
 Move|7,106
-EvolutionCondition|267,Level,10,Level
 TradeValue|10
+EvolutionCondition|267,Level,10,Level

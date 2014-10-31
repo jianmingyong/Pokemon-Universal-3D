@@ -8,13 +8,15 @@ CatchRate|120
 BaseFriendship|70
 EggGroup1|Bug
 EggGroup2|None
-EggPokemon|415
 BaseEggSteps|4080
+EggPokemon|415
 IsGenderLess|0
+CanBreed|1
+Devolution|0
 IsMale|87.5
 Ability1|118
 Ability2|Nothing
-Ability3|55
+HiddenAbility|55
 Machines|
 BaseHP|30
 BaseAttack|30
@@ -32,10 +34,10 @@ CanFly|0
 CanSwim|0
 Pokedex|At night about a thousand, packed closely together in a lump.\Tiny Bee Pokémon\5.5\0.3\0,148,0
 Scale|0.7
-Move|1,16
 Move|1,230
-Move|29,405
+Move|1,16
 Move|13,450
+Move|29,405
+TradeValue|30
 EvolutionCondition|416,level,21,level
 EvolutionCondition|416,gender,1,level
-TradeValue|30

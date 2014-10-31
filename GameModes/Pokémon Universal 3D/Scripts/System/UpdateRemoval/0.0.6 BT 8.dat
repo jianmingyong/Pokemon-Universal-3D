@@ -146,4 +146,7 @@ version=2
 	@Register.register(System.Starter.12,int,<Register.value(System.12.Starter)>)
 	@Register.unregister(System.12.Starter,int)
 :endif
+:if:<Register.value(12\OldaleTown\PokeMart\002000002)>=2
+	@Register.change(12\OldaleTown\PokeMart\005000004,2)
+:endif
 :end

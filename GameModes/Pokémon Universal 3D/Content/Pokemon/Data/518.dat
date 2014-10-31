@@ -9,11 +9,16 @@ BaseFriendship|70
 EggGroup1|Field
 EggGroup2|None
 BaseEggSteps|2805
+EggPokemon|517
 IsGenderLess|0
+CanBreed|1
+Devolution|517
 IsMale|50
-Ability1|65
-Ability2|Nothing
-Machines|63,86,92,94,104,113,115,138,148,156,157,164,182,207,213,216,218,219,237,240,244,247,259,263,317,347,360,412,416,433,451,473,477,496
+Ability1|108
+Ability2|28
+HiddenAbility|140
+EggMoves|112,226,174,361,270,277,290,214,49,129
+Machines|174,205,92,244,237,173,63,182,203,218,216,94,247,104,207,214,111,138,197,156,213,171,99,100,102,117,118,120,149,161,164,347,259,263,290,285,412,416,445,363,433,473,477,496,605,590,148
 BaseHP|116
 BaseAttack|55
 BaseDefense|85
@@ -30,7 +35,8 @@ CanFly|0
 CanSwim|0
 Pokedex|The dream mist coming from its forehead changes into many different colors depending on the dream that was eaten.\Drowsing Pokémon\60.5\1.1\0,148,0
 Scale|1.04
-Move|1,60
-Move|1,95
 Move|1,111
 Move|1,381
+Move|1,60
+Move|1,95
+TradeValue|50

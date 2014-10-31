@@ -1,4 +1,4 @@
-﻿Name|Eevee
+Name|Eevee
 Number|133
 ExperienceType|1
 BaseExperience|65
@@ -11,11 +11,14 @@ EggGroup2|None
 BaseEggSteps|9180
 EggPokemon|133
 IsGenderLess|0
+CanBreed|1
+Devolution|0
 IsMale|87.5
 Ability1|50
 Ability2|91
-Eggmoves|204,343,203,313,175,363,321,273,281
-Machines|91,92,104,156,164,182,207,213,216,218,237,240,241,247,263,496,497,514,526,29,189
+HiddenAbility|107
+EggMoves|445,204,343,174,197,203,313,175,363,500,485,321,273,281
+Machines|29,174,92,237,241,173,63,182,240,203,218,76,231,216,91,247,189,104,207,214,129,197,156,213,25,34,36,99,102,117,130,164,263,290,416,445,363,496,497,514,526,590
 BaseHP|55
 BaseAttack|55
 BaseDefense|50
@@ -32,20 +35,24 @@ CanFly|0
 CanSwim|0
 Pokedex|It has the ability to alter the composition of its body to suit its surrounding environment.\Evolution Pokémon\6.5\0.3\0,148,0
 Scale|0.7
-Move|5,28
+Move|1,270
+Move|1,45
 Move|1,33
-Move|25,36
-Move|37,38
 Move|1,39
-Move|17,44
-Move|9,45
+Move|5,28
+Move|9,608
+Move|10,129
 Move|13,98
+Move|17,44
+Move|20,287
+Move|23,343
+Move|25,36
 Move|29,204
 Move|33,226
-Move|1,270
-Move|21,343
-Move|45,376
+Move|37,38
 Move|41,387
+Move|45,376
+TradeValue|25
 EvolutionCondition|136,item,22,item
 EvolutionCondition|135,item,23,item
 EvolutionCondition|134,item,24,item
@@ -55,4 +62,3 @@ EvolutionCondition|196,daytime,1;2,level
 EvolutionCondition|196,friendship,220,level
 EvolutionCondition|470,location,Ilex Forest,level
 EvolutionCondition|471,location,Ice Path,level
-TradeValue|25

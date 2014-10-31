@@ -11,9 +11,12 @@ EggGroup2|None
 BaseEggSteps|10455
 EggPokemon|201
 IsGenderLess|1
+CanBreed|1
+Devolution|0
 IsMale|0.0
 Ability1|26
 Ability2|Nothing
+HiddenAbility|Nothing
 Machines|
 BaseHP|48
 BaseAttack|72

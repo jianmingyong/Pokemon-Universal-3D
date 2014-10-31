@@ -9,11 +9,16 @@ BaseFriendship|70
 EggGroup1|Grass
 EggGroup2|None
 BaseEggSteps|5355
+EggPokemon|549
 IsGenderLess|0
+CanBreed|1
+Devolution|548
 IsMale|0
-Ability1|65
-Ability2|Nothing
-Machines|14,15,63,76,92,104,113,138,148,156,164,182,207,213,216,218,219,237,241,263,412,416,447,496
+Ability1|34
+Ability2|20
+HiddenAbility|102
+EggMoves|117,204,203,320,361,275,363,230,388
+Machines|174,92,237,241,230,173,63,182,202,203,218,76,216,104,207,214,197,156,213,34,36,99,72,102,117,164,331,263,290,412,416,445,363,496,267,590,148
 BaseHP|70
 BaseAttack|60
 BaseDefense|75
@@ -30,10 +35,12 @@ CanFly|0
 CanSwim|0
 Pokedex|The fragrance of the garland on its head has a relaxing effect, but taking care of it is very difficult.\Flowering Pokémon\16.3\1.1\0,148,0
 Scale|1.04
-Move|1,72
-Move|1,73
 Move|1,74
-Move|46,80
+Move|1,73
+Move|1,72
 Move|1,235
 Move|10,298
 Move|28,483
+Move|46,80
+Move|50,572
+TradeValue|45

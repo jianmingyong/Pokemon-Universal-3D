@@ -1,4 +1,4 @@
-﻿Name|Phantump
+Name|Phantump
 Number|708
 ExperienceType|1
 BaseExperience|67
@@ -10,14 +10,15 @@ EggGroup1|Grass
 EggGroup2|Amorphous
 BaseEggSteps|5120
 EggPokemon|708
-Devolution|0
 IsGenderLess|0
+CanBreed|1
+Devolution|0
 IsMale|50
 Ability1|30
 Ability2|119
-Ability3|139
-Machines|15,70,76,91,92,94,104,115,138,156,157,164,168,182,207,213,216,218,219,237,241,247,249,261,263,365,398,412,421,433,447,496,523,590
+HiddenAbility|139
 EggMoves|516,288,286,599
+Machines|174,92,249,237,241,230,173,63,182,202,203,218,76,216,94,247,104,207,214,138,197,156,213,168,171,99,72,102,115,117,149,157,164,331,219,351,263,290,289,412,261,421,416,445,399,363,398,447,433,477,496,523,267,590,15,70
 BaseHP|43
 BaseAttack|70
 BaseDefense|48

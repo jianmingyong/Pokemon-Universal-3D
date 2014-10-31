@@ -1,4 +1,4 @@
-﻿Name|Wobbuffet
+Name|Wobbuffet
 Number|202
 ExperienceType|1
 BaseExperience|142
@@ -10,11 +10,13 @@ EggGroup1|Amorphous
 EggGroup2|None
 BaseEggSteps|5355
 EggPokemon|360
-Devolution|360
 IsGenderLess|0
+CanBreed|1
+Devolution|360
 IsMale|50
 Ability1|23
 Ability2|Nothing
+HiddenAbility|140
 Machines|
 BaseHP|190
 BaseAttack|33
@@ -33,7 +35,7 @@ CanSwim|0
 Pokedex|It hates light and shock. If attacked, it inflates its body to build up its counterstrike.\Patient Pokémon\28.5\1.3\0,148,0
 Scale|1.12
 Move|1,68
-Move|1,194
-Move|1,219
 Move|1,243
+Move|1,219
+Move|1,194
 TradeValue|30

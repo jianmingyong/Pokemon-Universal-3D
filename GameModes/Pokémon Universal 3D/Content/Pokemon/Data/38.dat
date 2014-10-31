@@ -1,4 +1,4 @@
-﻿Name|Ninetales
+Name|Ninetales
 Number|38
 ExperienceType|1
 BaseExperience|177
@@ -14,7 +14,9 @@ IsGenderLess|0
 IsMale|25
 Ability1|18
 Ability2|Nothing
-Machines|46,53,63,76,91,92,104,126,138,156,164,182,207,213,216,218,219,237,241,244,261,263,315,347,371,412,416,473,488,496,510,29,560
+HiddenAbility|70
+EggMoves|445,50,326,185,175,394,257,506,336,95,384,290,180,541,412
+Machines|29,174,46,92,244,237,241,173,63,182,203,218,76,231,216,91,104,207,214,126,129,138,197,156,213,25,34,36,38,99,102,117,130,164,347,219,53,263,290,315,412,261,371,416,445,399,363,473,488,496,510,590,560
 BaseHP|73
 BaseAttack|76
 BaseDefense|75
@@ -31,10 +33,11 @@ CanFly|0
 CanSwim|0
 Pokedex|Some legends claim that each of its nine tails has its own unique type of special mystical power.\Fox Pokémon\19.9\1.1\0,148,0
 Scale|1.04
-Move|1,52
+Move|1,53
 Move|1,98
 Move|1,109
 Move|1,219
+Move|1,286
 Move|1,417
 Item|100,2003
 TradeValue|35

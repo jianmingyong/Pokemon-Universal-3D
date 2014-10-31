@@ -1,4 +1,4 @@
-﻿Name|Mew
+Name|Mew
 Number|151
 ExperienceType|2
 BaseExperience|270
@@ -10,12 +10,14 @@ EggGroup1|None
 EggGroup2|None
 BaseEggSteps|30855
 EggPokemon|151
-CanBreed|0
 IsGenderLess|1
+CanBreed|0
+Devolution|0
 IsMale|0.0
 Ability1|28
 Ability2|Nothing
-Machines|225,14,15,19,46,53,57,58,59,63,70,76,85,86,87,89,91,92,94,104,113,115,126,127,138,148,153,156,157,164,168,182,188,201,206,207,213,216,218,219,237,240,241,244,247,249,258,259,261,263,269,280,291,315,317,332,337,339,347,360,365,369,371,373,374,397,398,404,411,412,416,421,430,433,444,447,451,468,473,474,477,479,482,488,490,496,497,502,503,507,510,511,512,514,521,522,523,524,525,526,528,555,210,29,189,9,7,8,250
+HiddenAbility|Nothing
+Machines|-1
 BaseHP|100
 BaseAttack|100
 BaseDefense|100
@@ -33,17 +35,17 @@ CanSwim|0
 Pokedex|Apparently those people who are pure of heart and have a strong desire to see it.\New Species Pokémon\4\0.4\0,148,0
 Scale|0.7
 Move|1,1
+Move|1,513
+Move|1,144
 Move|10,5
+Move|20,118
 Move|30,94
 Move|40,112
-Move|20,118
-Move|60,133
-Move|1,144
-Move|80,226
 Move|50,246
+Move|60,133
 Move|70,382
-Move|100,396
+Move|80,226
 Move|90,417
-Move|1,513
-Item|100,2008
+Move|100,396
 TradeValue|120
+Item|100,2008

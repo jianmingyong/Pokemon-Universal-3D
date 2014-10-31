@@ -1,4 +1,4 @@
-﻿Name|Wynaut
+Name|Wynaut
 Number|360
 ExperienceType|1
 BaseExperience|52
@@ -11,9 +11,11 @@ EggGroup2|None
 BaseEggSteps|5355
 EggPokemon|360
 IsGenderLess|0
+CanBreed|1
 IsMale|50
 Ability1|23
 Ability2|Nothing
+HiddenAbility|140
 Machines|
 BaseHP|95
 BaseAttack|23
@@ -31,12 +33,12 @@ CanFly|0
 CanSwim|0
 Pokedex|It tends to move in a pack. Individuals squash against one another to toughen their spirits.\Bright Pokémon\14\0.6\0,148,0
 Scale|0.84
-Move|15,68
 Move|1,150
-Move|15,194
 Move|1,204
-Move|15,219
 Move|1,227
+Move|15,68
 Move|15,243
-EvolutionCondition|202,level,15,level
+Move|15,219
+Move|15,194
 TradeValue|25
+EvolutionCondition|202,level,15,level

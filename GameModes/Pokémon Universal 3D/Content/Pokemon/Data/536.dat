@@ -14,7 +14,7 @@ EggPokemon|535
 IsMale|50
 Ability1|33
 Ability2|93
-Ability3|11
+HiddenAbility|11
 Machines|57,92,104,156,164,182,188,207,213,216,218,237,240,249,258,263,362,482,496,497,523
 BaseHP|75
 BaseAttack|65
