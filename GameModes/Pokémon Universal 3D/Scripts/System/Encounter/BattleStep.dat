@@ -6,8 +6,12 @@ version=2
 		@Storage.set(int,System.EncounterStep.WalkedStep,1)
 		@Storage.set(int,System.EncounterStep.num3,<Math.clamp(<Storage.get(int,System.EncounterStep.num1)>-<Storage.get(int,System.EncounterStep.WalkedStep)>,5,12)>)
 		@Storage.set(bool,System.EncounterStep.fix,true)
+		:end
 	:endif
 	@Storage.set(int,System.EncounterStep.WalkedStep,<Storage.get(int,System.EncounterStep.WalkedStep)>+1)
 	@Storage.set(int,System.EncounterStep.num3,<Math.clamp(<Storage.get(int,System.EncounterStep.num1)>-<Storage.get(int,System.EncounterStep.WalkedStep)>,5,12)>)
+	:if:<not><System.random(0,<Storage.get(int,System.EncounterStep.num3)>*2)>>0
+		@Script.start(System\Encounter\<filesystem.pathup(<Level.mapfile>)>\<Level.filename>)
+	:endif
 :endif
 :end

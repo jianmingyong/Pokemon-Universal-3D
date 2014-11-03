@@ -264,6 +264,22 @@
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\Route103" has an invalid value.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
 :endif
+:if:<Register.registered(12\Route102\024000010)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\Route102\024000010" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<not><Register.value(12\Route102\024000010)>=1 <and> <not><Register.value(12\Route102\024000010)>=2
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\Route102\024000010" has an invalid value.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<Register.registered(12\Route102\025000010)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\Route102\025000010" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<not><Register.value(12\Route102\025000010)>=1 <and> <not><Register.value(12\Route102\025000010)>=2
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\Route102\025000010" has an invalid value.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
 # End Define GameMode ID 12 Variable.
 :if:<Storage.get(int,System.GlobalRegisterValidation.TotalError)>>0
 	@Storage.set(int,System.ErrorLog.ErrorID2,1)

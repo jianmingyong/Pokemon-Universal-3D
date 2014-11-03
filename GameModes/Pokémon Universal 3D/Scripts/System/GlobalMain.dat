@@ -39,11 +39,10 @@ version=2
 		:endif
 	:endif
 	#End Define Variable.
-	@Script.start(System\GlobalBankInterest)
+	#. @Script.start(System\GlobalBankInterest)
 	@Script.start(System\Encounter\Battleint)
 	@Player.save
 	@Script.start(System\ScreenState\ScreenState.0)
 :endif
 @Script.start(<filesystem.pathup(<Level.mapfile>)>\<Level.filename>)
-@Environment.setweather(5)
 :end

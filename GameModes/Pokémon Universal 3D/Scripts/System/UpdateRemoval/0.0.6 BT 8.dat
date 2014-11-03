@@ -149,4 +149,7 @@ version=2
 :if:<Register.value(12\OldaleTown\PokeMart\002000002)>=2
 	@Register.change(12\OldaleTown\PokeMart\005000004,2)
 :endif
+:if:<Register.registered(12\Route102)>=true
+	@Register.unregister(12\Route102,int)
+:endif
 :end

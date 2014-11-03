@@ -75,6 +75,7 @@ version=2
 			@Text.show(<Storage.get(int,System.Encounter.Experience.Gain)> of your Pokémon have gained~Additional <Storage.get(int,System.Encounter.Experience)> EXP from battle.)
 		:end
 	:endif
+	@Storage.set(bool,System.EncounterStep.fix,false)
 	@Script.start(System\Encounter\Battleint)
 :endif
 :end
