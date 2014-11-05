@@ -1,0 +1,82 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(Hello, and welcome to~the POKéMON CENTER.)
+@Sound.play(Select)
+@Text.show(We restore your tired POKéMON~to full health.)
+@Sound.play(Select)
+@Text.show(Would you like to rest your POKéMON?)
+@Options.setcancelindex(1)
+@Options.show(YES,NO)
+:when:YES
+	@Sound.play(Select)
+	@Text.show(Okay, I'll take your POKéMON~for a few seconds.)
+	@Level.update
+	@NPC.turn(007000001,1)
+	@Music.pause
+	:if:<Pokemon.count>=0
+		@Player.save
+		@Register.change(System.ErrorLog.ErrorID3,2)
+		@Register.change(System.ActionScript,System\CommonEvent\12\PokeCenterNurseJoy.dat)
+		@Script.start(System\GlobalErrorLog)
+		@Player.warp(System\GlobalValidation.dat,0,0,0,0)
+		:end
+	:endif
+	:if:<Pokemon.count>>0
+		@NPC.warp(0050000011,4.8,-0.05,1.05)
+		@Level.update
+		@Sound.play(pokeball_set)
+		@Level.wait(12)
+	:endif
+	:if:<Pokemon.count>>1
+		@NPC.warp(0050000012,5,-0.05,1.05)
+		@Level.update
+		@Sound.play(pokeball_set)
+		@Level.wait(12)
+	:endif
+	:if:<Pokemon.count>>2
+		@NPC.warp(0050000013,5.2,-0.05,1.05)
+		@Level.update
+		@Sound.play(pokeball_set)
+		@Level.wait(12)
+	:endif
+	:if:<Pokemon.count>>3
+		@NPC.warp(0050000014,4.8,-0.05,1.25)
+		@Level.update
+		@Sound.play(pokeball_set)
+		@Level.wait(12)
+	:endif
+	:if:<Pokemon.count>>4
+		@NPC.warp(0050000015,5,-0.05,1.25)
+		@Level.update
+		@Sound.play(pokeball_set)
+		@Level.wait(12)
+	:endif
+	:if:<Pokemon.count>>5
+		@NPC.warp(0050000016,5.2,-0.05,1.25)
+		@Level.update
+		@Sound.play(pokeball_set)
+		@Level.wait(12)
+	:endif
+	@Pokemon.heal
+	@Sound.play(Pokemon Recovery)
+	@Level.wait(180)
+	@NPC.warp(0050000011,4.8,-1.3,1.05)
+	@NPC.warp(0050000012,5,-1.3,1.05)
+	@NPC.warp(0050000013,5.2,-1.3,1.05)
+	@NPC.warp(0050000014,4.8,-1.3,1.25)
+	@NPC.warp(0050000015,5,-1.3,1.25)
+	@NPC.warp(0050000016,5.2,-1.3,1.25)
+	@Level.update
+	@Level.wait(20)
+	@Music.resume
+	@NPC.turn(007000001,2)
+	@Text.show(Thank you for waiting.)
+	@Sound.play(Select)
+	@Text.show(We've restored your POKéMON~to full health.)
+	@Sound.play(Select)
+	@Text.show(We hope to see you again!)
+:when:NO
+	@Sound.play(Select)
+	@Text.show(We hope to see you again!)
+:endwhen
+:end

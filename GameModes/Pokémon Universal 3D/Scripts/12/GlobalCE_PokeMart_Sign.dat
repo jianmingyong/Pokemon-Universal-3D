@@ -1,0 +1,6 @@
+﻿version=2
+:if:<Player.facing>=0
+	@Sound.play(Select)
+	@Text.show("Selected items for your convenience!"~POKéMON MART)
+:endif
+:end

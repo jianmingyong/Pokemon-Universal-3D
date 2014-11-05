@@ -1,0 +1,8 @@
+﻿version=2
+:if:<NPC.exists(003000003)>=false
+	@NPC.spawn(3,0,3,1,12\PetalburgCity\WallyHouse\003000003,NPC 25,false,3,,003000003,Still)
+:endif
+:if:<NPC.exists(007000004)>=false
+	@NPC.spawn(7,0,4,1,12\PetalburgCity\WallyHouse\007000004,NPC 26,false,1,,007000004,Still)
+:endif
+:end

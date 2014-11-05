@@ -1,0 +1,18 @@
+version=2
+:if:<Register.value(12\PetalburgCity\Gym.Main\007000000)>=1
+	@Sound.play(Select)
+	@Text.show(This door appears to be locked~right now...)
+	:end
+:endif
+:if:<Register.value(12\PetalburgCity\Gym.Main\007000000)>=2
+	@Sound.play(Select)
+	@Text.show("ACCURACY ROOM," the sign says.)
+	@Sound.play(Select)
+	@Text.show(Do you want to go through?)
+	:end
+:endif
+@Storage.set(str,System.ActionScript,12\PetalburgCity\Gym.Main\007000000.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
+:end

@@ -1,0 +1,6 @@
+version=2
+@Script.start(System\Encounter\Battleint)
+@Battle.setvar(custombattlemusic,PMD_EOT_D_S Legendary Boss Battle) 
+@Battle.wild(377,46,-1,PMD_EOT_D_S Boss Battle Intro,12)
+@Script.start(System\Encounter\Battleend)
+:end

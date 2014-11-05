@@ -1,0 +1,12 @@
+version=2
+@Sound.play(Select)
+@Text.show(There's an e-mail from POKéMON TRAINER~SCHOOL.)
+@Sound.play(Select)
+@Text.show(..................)
+@Sound.play(Select)
+@Text.show(A POKéMON may learn up to four moves.)
+@Sound.play(Select)
+@Text.show(A TRAINER's expertise is tested on the~move sets chosen for POKéMON.)
+@Sound.play(Select)
+@Text.show(..................)
+:end

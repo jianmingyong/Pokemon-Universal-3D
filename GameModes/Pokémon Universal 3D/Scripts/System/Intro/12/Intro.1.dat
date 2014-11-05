@@ -1,0 +1,17 @@
+version=2
+:while:<Entity.opacity(121)><100
+	@Entity.setopacity(121,<Entity.opacity(121)>+10)
+	@Level.wait(1)
+	@Level.update
+	:if:<Entity.opacity(121)>=100
+		:end
+	:endif
+:endwhile
+:while:<Entity.opacity(121)>>0
+	@Entity.setopacity(121,<Entity.opacity(121)>-10)
+	@Level.wait(1)
+	@Level.update
+	:if:<Entity.opacity(121)>=0
+		:end
+	:endif
+:endwhile

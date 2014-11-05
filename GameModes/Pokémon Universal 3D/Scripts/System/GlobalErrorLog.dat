@@ -1,0 +1,190 @@
+version=2
+@Text.log([CODE])
+@Text.log(Pokémon Universal 3D Crash Log V <Register.value(System.Game Version)>)
+@Text.log(Pokémon Universal 3D has crashed!)
+:select:<System.random(1,19)>
+:when:1
+	@Text.log(// I AM ERROR!)
+:when:2
+	@Text.log(// Minecraft crashed.)
+:when:3
+	@Text.log(// Missingno.)
+:when:4
+	@Text.log(// 1 ERROR)
+:when:5
+	@Text.log(// GET TO DA CHOPPA)
+:when:6
+	@Text.log(// Fire attacks might be super effective...)
+:when:7
+	@Text.log(// Does this help?)
+:when:8
+	@Text.log(// Work! Pleeeeeeeease?)
+:when:9
+	@Text.log(// WHAT IS THIS?)
+:when:10
+	@Text.log(// I find your lack of [ERROR] disturbing.)
+:when:11
+	@Text.log(// Blame Darkfire.)
+:when:12
+	@Text.log(// RTFM)
+:when:13
+	@Text.log(// FEZ II announced.)
+:when:14
+	@Text.log(// At least it's not a Blue Screen.)
+:when:15
+	@Text.log(// Kernel PANIC)
+:when:16
+	@Text.log(// I'm sorry, Dave, I'm afraid I can't do that.)
+:when:17
+	@Text.log(// Never gonna give you up ~)
+:when:18
+	@Text.log(// Wouldn't have happend with Swift.)
+:when:19
+	@Text.log(// Team Rocket blasting off again!)
+:endwhen
+@Text.log()
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log()
+@Text.log(This is the latest data before this crash happens:)
+@Text.log()
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log(Data: Pokemon\Save\<Player.name>*\Register.dat)
+@Text.log(Note: Not all data are captured in the backup file.)
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log()
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log()
+@Text.log(Game information:)
+@Text.log()
+@Text.log(Compatible Pokémon 3D Indev version: <Register.value(System.P3D Version)>)
+@Text.log(Pokemon Universal 3D Indev version: <Register.value(System.Game Version)>)
+@Text.log(Active Game ID: <Register.value(System.Game ID)>)
+@Text.log(System.New BattleV2 Exp: <Register.value(System.New BattleV2 Exp)>)
+@Text.log(System.SandBoxMode: <Register.value(System.SandBoxMode)>)
+@Text.log()
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log()
+@Text.log(System specifications:)
+@Text.log()
+@Text.log(System time (unix timestamp): <System.unixtimestamp>)
+@Text.log()
+:if:<Storage.get(int,System.ErrorLog.ErrorID0)>=1
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error information:)
+	@Text.log()
+	@Text.log(Message: The game is unable to process a conditional script. It might be a syntax error.)
+	@Text.log(HelpLink: No helplink available.)
+	@Text.log(Data: "Pokemon\GameModes\Pokémon Universal 3D\Scripts\<Storage.get(str,System.ActionScript)>")
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error solution:)
+	@Text.log((The provided solution might not work for your problem))
+	@Text.log()
+	@Text.log(Error ID: 0)
+	@Text.log(Error Type: Script Error)
+	@Text.log(Error Description: The game crashed trying to process a script.)
+	@Text.log(Error Solution: Make sure the syntax in the script is correct.)
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(You should report this error.)
+	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
+	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
+	@Text.log([/CODE])
+:endif
+:if:<Storage.get(int,System.ErrorLog.ErrorID1)>=1
+	@Storage.set(int,System.GlobalUpdateValidation.Error,0)
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error information:)
+	@Text.log()
+	@Text.log(Message: The update validation system detected invalid value in a sensitive game environment.)
+	@Text.log(HelpLink: No helplink available.)
+	@Text.log(Data: "Pokemon\Save\<Player.name>\Register.dat")
+	:while:<Storage.get(int,System.GlobalUpdateValidation.Error)><<Storage.get(int,System.GlobalUpdateValidation.TotalError)>
+		@Text.log(<Storage.get(str,System.GlobalUpdateValidation.<Storage.get(int,System.GlobalUpdateValidation.Error)>)>)
+		@Storage.set(int,System.GlobalUpdateValidation.Error,<Storage.get(int,System.GlobalUpdateValidation.Error)>+1)
+	:endwhile
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error solution:)
+	@Text.log((The provided solution might not work for your problem))
+	@Text.log()
+	@Text.log(Error ID: 1)
+	@Text.log(Error Type: Update Error)
+	@Text.log(Error Description: The game detected edited or missing files.)
+	@Text.log(Error Solution: For offline play, ensure that you are running the unmodded version of Pokémon Universal 3D. You can enable Content Packs.)
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(You should report this error.)
+	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
+	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
+	@Text.log([/CODE])
+:endif
+:if:<Storage.get(int,System.ErrorLog.ErrorID2)>=1
+	@Storage.set(int,System.GlobalRegisterValidation.Error,0)
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error information:)
+	@Text.log()
+	@Text.log(Message: The register validation system detected invalid in a sensitive game environment.)
+	@Text.log(HelpLink: No helplink available.)
+	@Text.log(Data: "Pokemon\Save\<Player.name>\Register.dat")
+	:while:<Storage.get(int,System.GlobalRegisterValidation.Error)><<Storage.get(int,System.GlobalRegisterValidation.TotalError)>
+		@Text.log(<Storage.get(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.Error)>)>)
+		@Storage.set(int,System.GlobalRegisterValidation.Error,<Storage.get(int,System.GlobalRegisterValidation.Error)>+1)
+	:endwhile
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error solution:)
+	@Text.log((The provided solution might not work for your problem))
+	@Text.log()
+	@Text.log(Error ID: 2)
+	@Text.log(Error Type: Register Error)
+	@Text.log(Error Description: The game detected edited or missing files.)
+	@Text.log(Error Solution: For offline play, ensure that you are running the unmodded version of Pokémon Universal 3D. You can enable Content Packs.)
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(You should report this error.)
+	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
+	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
+	@Text.log([/CODE])
+:endif
+:if:<Storage.get(int,System.ErrorLog.ErrorID3)>=1
+	@Storage.set(int,System.GlobalPokémonValidation.Error,0)
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error information:)
+	@Text.log()
+	@Text.log(Message: The pokémon validation system detected invalid in a sensitive game environment.)
+	@Text.log(HelpLink: No helplink available.)
+	@Text.log(Data: "Pokemon\Save\<Player.name>\Party.dat")
+	:while:<Storage.get(int,System.GlobalPokémonValidation.Error)><<Storage.get(int,System.GlobalPokémonValidation.TotalError)>
+		@Text.log(<Storage.get(str,System.GlobalPokémonValidation.<Storage.get(int,System.GlobalPokémonValidation.Error)>)>)
+		@Storage.set(int,System.GlobalPokémonValidation.Error,<Storage.get(int,System.GlobalPokémonValidation.Error)>+1)
+	:endwhile
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(Error solution:)
+	@Text.log((The provided solution might not work for your problem))
+	@Text.log()
+	@Text.log(Error ID: 3)
+	@Text.log(Error Type: Pokémon Error)
+	@Text.log(Error Description: The game detected edited or missing files.)
+	@Text.log(Error Solution: For offline play, ensure that you are running the unmodded version of Pokémon Universal 3D. You can enable Content Packs.)
+	@Text.log()
+	@Text.log(---------------------------------------------------------------------------------)
+	@Text.log()
+	@Text.log(You should report this error.)
+	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
+	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
+	@Text.log([/CODE])
+:endif
+:end

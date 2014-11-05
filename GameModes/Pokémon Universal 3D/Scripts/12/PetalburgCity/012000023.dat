@@ -1,0 +1,8 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(Hiya! Are you maybe...~A rookie TRAINER?)
+@Sound.play(Select)
+@Text.show(Do you know what POKéMON TRAINERS~do when they reach a new town?)
+@Sound.play(Select)
+@Text.show(They first check what kind of GYM~is in the town.)
+:end

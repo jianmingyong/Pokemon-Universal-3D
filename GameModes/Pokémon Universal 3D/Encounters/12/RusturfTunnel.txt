@@ -1,0 +1,3 @@
+name=Rusturf Tunnel
+type=Cave
+{0|293|100|-1|5,8}

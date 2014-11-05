@@ -1,0 +1,22 @@
+[TRAINER FORMAT]
+Name|Rick
+TrainerClass|Bug Catcher
+Money|64
+IntroMessage|Hahah! Our eyes met!~I'll take you on with my BUG POKéMON!
+OutroMessage|Ow! Down and out!
+DefeatMessage|If you lock eyes with a TRAINER,~you have to challenge! It's a rule!
+TextureID|Bug Catcher
+Region|12.Hoenn
+IniMusic|P_R_S_E Trainer Battle_intro
+DefeatMusic|P_R_S_E Victory! Trainer
+BattleMusic|P_R_S_E Trainer Battle
+Pokemon1|265,4
+Pokemon2|265,4
+Pokemon3|
+Pokemon4|
+Pokemon5|
+Pokemon6|
+Items|
+Gender|0
+AI|2
+IntroSequence|Green,Green

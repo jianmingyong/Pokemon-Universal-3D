@@ -1,0 +1,8 @@
+version=2
+@Sound.play(Select)
+@Text.show(I'm...not very tall, so I sink right~into tall grass.)
+@Sound.play(Select)
+@Text.show(The grass goes up my nose and...~Fwafwafwafwafwa...)
+@Sound.play(Select)
+@Text.show(Fwatchoo!)
+:end

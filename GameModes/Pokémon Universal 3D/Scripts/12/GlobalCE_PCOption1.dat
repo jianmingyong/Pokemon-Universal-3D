@@ -1,0 +1,17 @@
+﻿version=2
+@Text.show(Which PC should be accessed?)
+@Options.setcancelindex(2)
+@Options.show(SOMEONE'S PC,<Player.name>'s PC,LOG OFF)
+:when:SOMEONE'S PC
+	@Sound.play(accesspc)
+	@Text.show(Accessed SOMEONE's PC.)
+	@Text.show(POKéMON Storage System opened.)
+	@Script.start(12\GlobalCE_PCOption2)
+:when:<Player.name>'s PC
+	@Sound.play(accesspc)
+	@Text.show(Accessed <Player.name>'s PC.)
+	@Script.start(12\GlobalCE_PCOption3)
+:when:LOG OFF
+@Sound.play(computerclose)
+:endwhen
+:end

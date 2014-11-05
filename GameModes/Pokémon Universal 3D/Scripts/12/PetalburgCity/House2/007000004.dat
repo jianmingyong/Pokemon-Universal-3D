@@ -1,0 +1,8 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(I battled NORMAN once, but, whew,~he was way too strong.)
+@Sound.play(Select)
+@Text.show(How would I put it?)
+@Sound.play(Select)
+@Text.show(I just got the feeling that he~lives for POKéMON.)
+:end

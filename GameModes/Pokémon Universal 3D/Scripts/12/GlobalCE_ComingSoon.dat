@@ -1,0 +1,6 @@
+version=2
+@Sound.play(Select)
+@Text.show(We the Dialga team are investigating~the cause of map dissapearence.)
+@Sound.play(Select)
+@Text.show(We suggest that you keep clear as~there is a bottomless pit in front of you.)
+:end

@@ -1,0 +1,6 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(Traveling is wonderful!)
+@Sound.play(Select)
+@Text.show(When I was young, I roamed the seas~and the mountains!)
+:end

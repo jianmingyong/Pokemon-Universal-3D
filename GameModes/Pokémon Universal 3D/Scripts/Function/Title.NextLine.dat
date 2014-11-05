@@ -1,0 +1,4 @@
+version=2
+@Storage.set(int,Title.line,<Storage.get(int,Title.line)>+25)
+:return:<Storage.get(int,Title.line)>
+:end

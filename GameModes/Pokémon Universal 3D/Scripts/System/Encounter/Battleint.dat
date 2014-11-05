@@ -1,0 +1,20 @@
+version=2
+:if:<Pokemon.count>>0
+	@Storage.set(int,System.Encounter.Pokemon.1.TotalEXP,<Pokemon.totalexp(0)>)
+:endif
+:if:<Pokemon.count>>1
+	@Storage.set(int,System.Encounter.Pokemon.2.TotalEXP,<Pokemon.totalexp(1)>)
+:endif
+:if:<Pokemon.count>>2
+	@Storage.set(int,System.Encounter.Pokemon.3.TotalEXP,<Pokemon.totalexp(2)>)
+:endif
+:if:<Pokemon.count>>3
+	@Storage.set(int,System.Encounter.Pokemon.4.TotalEXP,<Pokemon.totalexp(3)>)
+:endif
+:if:<Pokemon.count>>4
+	@Storage.set(int,System.Encounter.Pokemon.5.TotalEXP,<Pokemon.totalexp(4)>)
+:endif
+:if:<Pokemon.count>>5
+	@Storage.set(int,System.Encounter.Pokemon.6.TotalEXP,<Pokemon.totalexp(5)>)
+:endif
+:end

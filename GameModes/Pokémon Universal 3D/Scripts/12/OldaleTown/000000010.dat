@@ -1,0 +1,18 @@
+﻿version=2
+@Player.turnto(3)
+@Player.move(1)
+@NPC.turn(001000011,3)
+@NPC.move(001000011,1)
+@NPC.turn(001000011,0)
+@NPC.move(001000011,1)
+@NPC.turn(001000011,1)
+@Text.show(Aaaaah! Wait!~Please don't come in here.)
+@Sound.play(Select)
+@Text.show(I just discovered the footprints of~a rare POKéMON!)
+@Sound.play(Select)
+@Text.show(Wait until I finish sketching~them, okay?)
+@NPC.turn(001000011,2)
+@NPC.move(001000011,1)
+@NPC.turn(001000011,1)
+@NPC.move(001000011,1)
+:end

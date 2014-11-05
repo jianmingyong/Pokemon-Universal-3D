@@ -1,0 +1,15 @@
+version=2
+@Sound.play(Select)
+@Text.show(Primal Dialga: Due to some unstable issue~in other place, I could not operate.)
+:end
+
+@Sound.play(Select)
+@Text.show(Primal Dialga: Welcome <Player.name>, I~can bring you to somewhere else.)
+@Options.setcancelindex(1)
+@Options.show(Mystery Dungeon,Exit)
+:when:Mystery Dungeon
+	@Register.change(System.LastMap.12,<Level.mapfile>)
+	@Register.change(Options.System.Game ID,15)
+:when:Exit
+:endwhen
+:end

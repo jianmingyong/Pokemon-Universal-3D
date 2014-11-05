@@ -1,0 +1,25 @@
+version=2
+:if:<Register.value(12\LittleRootTown\RivalRoom.2)>=1
+	@Register.change(12\LittleRootTown\RivalRoom.1,3)
+	:end
+:endif
+:if:<Register.value(12\LittleRootTown\RivalRoom.2)>=2
+	:if:<NPC.exists(001000000)>=false
+		@NPC.spawn(8,0,2,1,12\LittleRootTown\RivalRoom.2\001000000,<Rival.name>,false,0,,001000000,Still)
+	:endif
+	:if:<NPC.exists(005000003)>=true
+		@NPC.remove(005000003)
+	:endif
+	:end
+:endif
+:if:<Register.value(12\LittleRootTown\RivalRoom.2)>=3
+	:if:<NPC.exists(005000003)>=true
+		@NPC.remove(005000003)
+	:endif
+	:end
+:endif
+@Storage.set(str,System.ActionScript,12\LittleRootTown\LittleRootTown.RivalRoom.2.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
+:end

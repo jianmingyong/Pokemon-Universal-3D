@@ -1,0 +1,24 @@
+﻿version=2
+:if:<Register.value(12\LittleRootTown\ProfBirchLab\006000003)>=1
+	@Sound.play(Select)
+	@Text.show(PROF. BIRCH: <Rival.name>?~Gone home, I think.)
+	@Sound.play(Select)
+	@Text.show(Or maybe that kid's scrabbling around~in tall grass again somewhere...)
+	@Sound.play(Select)
+	@Text.show(If you or your POKéMON get tired,~you should get some rest at home.)
+	:end
+:endif
+:if:<Register.value(12\LittleRootTown\ProfBirchLab\006000003)>=2
+	@Sound.play(Select)
+	@Text.show(PROF. BIRCH: Countless POKéMON~await you!)
+	@Sound.play(Select)
+	@Text.show(Argh, I'm getting the itch to get out~and do fieldwork again!)
+	@Sound.play(Select)
+	@Text.show(If you or your POKéMON get tired,~you should get some rest at home.)
+	:end
+:endif
+@Storage.set(str,System.ActionScript,12\LittleRootTown\ProfBirchLab\006000003.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
+:end

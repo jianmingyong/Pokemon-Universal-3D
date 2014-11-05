@@ -1,0 +1,7 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(Wild POKéMON will jump out at you in~tall grass.)
+@Sound.play(Select)
+@Text.show(If you want to catch POKéMON, you have~to go into the tall grass and search.)
+@Script.start(System\GlobalMain)
+:end

@@ -1,0 +1,24 @@
+﻿version=2
+:if:<Register.value(12\PetalburgCity\WallyHouse\007000004)>=1
+	@Sound.play(Select)
+	@Text.show(WALLY was really happy when he told~us that he caught a POKéMON.)
+	@Sound.play(Select)
+	@Text.show(It's been ages since I've seen him~smile like that.)
+	:end
+:endif
+:if:<Register.value(12\PetalburgCity\WallyHouse\007000004)>=2
+	@Sound.play(Select)
+	@Text.show(I want you to keep this a secret~from my husband...)
+	@Sound.play(Select)
+	@Text.show(But our WALLY left VERDANTURF TOWN~without telling anyone.)
+	@Sound.play(Select)
+	@Text.show(You know, WALLY is frail, but~he's surprisingly strong-willed.)
+	@Sound.play(Select)
+	@Text.show(I'm sure that he'll come back safe~and sound one day!)
+	:end
+:endif
+@Storage.set(str,System.ActionScript,12\PetalburgCity\WallyHouse\007000004.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
+:end

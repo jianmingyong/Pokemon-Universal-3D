@@ -1,0 +1,4 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(WALLY'S HOUSE)
+:end

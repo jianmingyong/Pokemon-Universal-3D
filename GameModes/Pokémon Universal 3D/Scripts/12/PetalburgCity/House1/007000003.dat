@@ -1,0 +1,14 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(Sigh...)
+@Sound.play(Select)
+@Text.show(I wish I could go on an adventure~with some POKéMON...)
+@Sound.play(Select)
+@Text.show(Crawl through some damp grass...~Climb rocky, rugged mountains...)
+@Sound.play(Select)
+@Text.show(Cross the raging seas...~Wander about in dark caves...)
+@Sound.play(Select)
+@Text.show(And, sometimes, even get a little~homesick...)
+@Sound.play(Select)
+@Text.show(It must be fabulous to travel!)
+:end

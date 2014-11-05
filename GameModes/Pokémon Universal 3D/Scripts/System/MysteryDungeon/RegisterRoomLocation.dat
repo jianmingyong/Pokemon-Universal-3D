@@ -1,0 +1,18 @@
+version=2
+:if:<Register.registered(Room<Storage.get(int,NumberOfRoomProcess)>.CurrentRoomLocationX)>=false
+	@Register.register(Room<Storage.get(int,NumberOfRoomProcess)>.CurrentRoomLocationX,int,0)
+:endif
+:if:<Register.registered(Room<Storage.get(int,NumberOfRoomProcess)>.CurrentRoomLocationZ)>=false
+	@Register.register(Room<Storage.get(int,NumberOfRoomProcess)>.CurrentRoomLocationZ,int,0)
+:endif
+:if:<Register.registered(Room<Storage.get(int,NumberOfRoomProcess)>.FinalRoomSizeX)>=false
+	@Register.register(Room<Storage.get(int,NumberOfRoomProcess)>.FinalRoomSizeX,int,0)
+:endif
+:if:<Register.registered(Room<Storage.get(int,NumberOfRoomProcess)>.FinalRoomSizeZ)>=false
+	@Register.register(Room<Storage.get(int,NumberOfRoomProcess)>.FinalRoomSizeZ,int,0)
+:endif
+@Register.change(Room<Storage.get(int,NumberOfRoomProcess)>.CurrentRoomLocationX,<Storage.get(int,CurrentRoomLocationX)>)
+@Register.change(Room<Storage.get(int,NumberOfRoomProcess)>.CurrentRoomLocationZ,<Storage.get(int,CurrentRoomLocationZ)>)
+@Register.change(Room<Storage.get(int,NumberOfRoomProcess)>.FinalRoomSizeX,<Storage.get(int,FinalRoomSizeX)>)
+@Register.change(Room<Storage.get(int,NumberOfRoomProcess)>.FinalRoomSizeZ,<Storage.get(int,FinalRoomSizeZ)>)
+:end

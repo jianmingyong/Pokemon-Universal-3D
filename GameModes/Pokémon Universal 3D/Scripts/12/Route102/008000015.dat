@@ -1,0 +1,4 @@
+﻿version=2
+@Battle.starttrainer(12\Route102\008000015)
+@Script.start(System\Encounter\Battleend)
+:end

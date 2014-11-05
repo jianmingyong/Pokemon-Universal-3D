@@ -1,0 +1,61 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(<Rival.name>: Let's see... The POKéMON found~on ROUTE 103 include...)
+@Music.play(P_R_S_E <Rival.name>'s Theme)
+@Sound.play(jumptoball)
+@Entity.showmessagebulb(1|18|0.8|11)
+@Text.show(Oh, hi, <Player.name>!)
+@Sound.play(Select)
+@Text.show(...Oh, I see, my dad gave you~a POKéMON as a gift.)
+@Sound.play(Select)
+@Text.show(Since we're here, let's have a quick~battle!)
+@Sound.play(Select)
+@Text.show(I'll give you a taste of what being~a TRAINER is like.)
+:if:<Register.value(System.Starter.12)>=252
+	@Script.start(System\Encounter\Battleint)
+	@Battle.trainer(12\Route103\018000011.255)
+	@Script.start(System\Encounter\Battleend)
+:endif
+:if:<Register.value(System.Starter.12)>=255
+	@Script.start(System\Encounter\Battleint)
+	@Battle.trainer(12\Route103\018000011.258)
+	@Script.start(System\Encounter\Battleend)
+:endif
+:if:<Register.value(System.Starter.12)>=258
+	@Script.start(System\Encounter\Battleint)
+	@Battle.trainer(12\Route103\018000011.252)
+	@Script.start(System\Encounter\Battleend)
+:endif
+@Music.play(P_R_S_E <Rival.name>'s Theme)
+@Text.show(<Rival.name>: I think I know why my dad has~an eye out for you now.)
+@Sound.play(Select)
+@Text.show(I mean, you just got that POKéMON,~but it already likes you.)
+@Sound.play(Select)
+@Text.show(You might be able to befriend any~kind of POKéMON easily.)
+@Sound.play(Select)
+@Text.show(Well, it's time to head back to~the LAB.)
+:if:<Player.facing>=0
+	@NPC.turn(018000011,1)
+	@NPC.move(018000011,1)
+	@Player.turnto(2)
+	@NPC.turn(018000011,2)
+	@NPC.move(018000011,1)
+	@Sound.play(jump_ledge)
+	@NPC.move(018000011,6)
+	@Sound.play(jump_ledge)
+	@NPC.move(018000011,10)
+	@NPC.remove(018000011)
+:else
+	@NPC.turn(018000011,2)
+	@Player.turnto(2)
+	@NPC.move(018000011,1)
+	@Sound.play(jump_ledge)
+	@NPC.move(018000011,6)
+	@Sound.play(jump_ledge)
+	@NPC.move(018000011,10)
+	@NPC.remove(018000011)
+:endif
+@Music.play(P_R_S_E Route 101)
+@Register.change(12\Route103,2)
+@Register.change(12\OldaleTown,2)
+:end

@@ -1,0 +1,6 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(If you use a PC, you can store items~and POKéMON.)
+@Sound.play(Select)
+@Text.show(The power of science is staggering!)
+:end

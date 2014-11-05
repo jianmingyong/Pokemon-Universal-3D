@@ -1,0 +1,28 @@
+﻿version=2
+:if:<Register.value(12\PetalburgCity)>=1
+	:if:<NPC.exists(008000030)>=false
+		@NPC.spawn(8,0,30,1,12\PetalburgCity\008000030,NPC 7,false,2,,008000030,Still)
+	:endif
+	:if:<NPC.exists(005000019)>=false
+		@NPC.spawn(5,0,19,0,,NPC 9,false,2,,005000019,Looking)
+	:endif
+	:end
+:endif
+:if:<Register.value(12\PetalburgCity)>=2
+	:if:<NPC.exists(008000030)>=false
+		@NPC.spawn(8,0,30,1,12\PetalburgCity\008000030,NPC 7,false,2,,008000030,Still)
+	:endif
+	@Entity.remove(008000018)
+	@Entity.remove(008000019)
+	@Entity.remove(008000020)
+	@Entity.remove(008000021)
+	:if:<NPC.exists(012000023)>=false
+		@NPC.spawn(12,0,23,1,12\PetalburgCity\012000023,NPC 9,false,2,,012000023,Looking)
+	:endif
+	:end
+:endif
+@Storage.set(str,System.ActionScript,12\PetalburgCity\PetalburgCity.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
+:end
