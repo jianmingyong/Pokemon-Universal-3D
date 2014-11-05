@@ -1,4 +1,0 @@
-﻿version=2
-@Sound.play(Select)
-@Text.show(<Player.name>'s HOUSE)
-:end

@@ -1,8 +1,0 @@
-﻿version=2
-:if:<NPC.exists(004000003)>=false
-	@NPC.spawn(4,0,3,1,12\OldaleTown\House2\004000003,NPC 18,false,3,,004000003,Still)
-:endif
-:if:<NPC.exists(007000003)>=false
-	@NPC.spawn(7,0,3,1,12\OldaleTown\House2\007000003,NPC 38,false,1,,007000003,Still)
-:endif
-:end

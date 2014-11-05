@@ -1,6 +1,0 @@
-﻿version=2
-@Sound.play(Select)
-@Text.show(If a POKéMON gets hurt and loses its HP~and faints, it won't be able to battle.)
-@Sound.play(Select)
-@Text.show(To prevent your POKéMON from fainting,~restore its HP with a POTION.)
-:end

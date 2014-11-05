@@ -1,5 +1,0 @@
-﻿version=2
-@Sound.play(Select)
-@Text.show(PETALBURG CITY~"Where people mingle with nature.")
-@Script.start(System\GlobalMain)
-:end

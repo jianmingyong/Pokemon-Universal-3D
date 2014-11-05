@@ -1,5 +1,0 @@
-﻿version=2
-@Text.show(MOM: Well, <Player.name>?~Aren't you interested in seeing your)
-@Sound.play(Select)
-@Text.show(very own room?)
-:end

@@ -1,8 +1,0 @@
-Grassland
-Forest
-WatersEdge
-Sea
-Cave
-Mountain
-RoughTerrain
-City

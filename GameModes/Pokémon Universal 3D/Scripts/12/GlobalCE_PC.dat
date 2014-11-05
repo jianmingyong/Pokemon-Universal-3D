@@ -1,7 +1,0 @@
-version=2
-:if:<Player.facing>=0
-	@Sound.play(computeropen)
-	@Text.show(<Player.name> booted up the PC.)
-	@Script.start(12\GlobalCE_PCOption1)
-:endif
-:end

@@ -1,6 +1,0 @@
-﻿version=2
-@Sound.play(Select)
-@Text.show(That PC in the corner there is~for any POKéMON TRAINER to use.)
-@Sound.play(Select)
-@Text.show(Naturally, that means you're welcome~to use it, too.)
-:end

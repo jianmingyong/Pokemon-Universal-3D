@@ -1,4 +1,0 @@
-version=2
-@Sound.play(Select)
-@Text.show(POKéMON fully restored!~Items ready, and...)
-:end

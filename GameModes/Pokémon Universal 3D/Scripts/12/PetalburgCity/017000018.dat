@@ -1,7 +1,0 @@
-﻿version=2
-@Sound.play(Select)
-@Text.show(PETALBURG CITY POKéMON GYM~LEADER: NORMAN)
-@Sound.play(Select)
-@Text.show("A man in pursuit of power!")
-@Script.start(System\GlobalMain)
-:end

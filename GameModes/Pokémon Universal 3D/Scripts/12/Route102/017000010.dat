@@ -1,4 +1,0 @@
-﻿version=2
-@Sound.play(Select)
-@Text.show(ROUTE 102~LEFT PETALBURG CITY)
-:end
