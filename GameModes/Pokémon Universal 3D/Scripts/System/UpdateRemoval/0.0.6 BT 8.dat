@@ -158,4 +158,7 @@ version=2
 :if:<Register.registered(12\Route102)>=true
 	@Register.unregister(12\Route102,int)
 :endif
+:if:<Register.registered(System.New BattleV2 Exp)>=true
+	@Register.unregister(System.New BattleV2 Exp,bool)
+:endif
 :end

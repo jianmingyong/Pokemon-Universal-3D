@@ -1,3 +1,5 @@
+name=
+type=
 Grassland
 Forest
 WatersEdge
@@ -6,3 +8,15 @@ Cave
 Mountain
 RoughTerrain
 City
+
+{Encounter Methods|PKMN#|%|-1|Lv1,Lv2} 
+
+Encounter Methods:
+Land = 0
+Headbutt = 1
+Surfing = 2
+OldRod = 3
+GoodRod = 31
+SuperRod = 32
+Event = 4
+RockSmash = 5

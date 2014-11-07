@@ -41,7 +41,6 @@ version=2
 	:endif
 	#End Define Variable.
 	#. @Script.start(System\GlobalBankInterest)
-	@Script.start(System\Encounter\Battleint)
 	@Player.save
 	@Script.start(System\ScreenState\ScreenState.0)
 :endif

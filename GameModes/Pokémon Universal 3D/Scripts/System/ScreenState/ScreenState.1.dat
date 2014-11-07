@@ -30,7 +30,7 @@
 	@Options.show(YES,NO)
 	:when:YES
 	:when:NO
-		@Storage.set(int,System.ErrorLog.ErrorID6,1)
+		@Storage.set(int,System.ErrorLog.ErrorID0,1)
 		@Storage.set(int,System.ScreenState,3)
 		@Script.start(System\ScreenState\ScreenState.3)
 		:end
