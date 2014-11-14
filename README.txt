@@ -97,7 +97,7 @@ After completing the above step,
 To remove Pokémon Universal 3D, delete the content pack and gamemode folder.
 
 ==================================================
-7.	Updating Pokémon Universal 3D
+7.	Update Pokémon Universal 3D
 ==================================================
 To Update Pokémon Universal 3D, extract the file at the desktop and remove the old version first.
 Then place it to the respective folder.
@@ -113,7 +113,7 @@ After completing the above step,
 * You are advice to backup your current save at "Pokemon\Saves\<Player Name>\" before loading your saves.
 *	All in-game options can be found at "Pokemon\GameModes\Pokémon Universal 3D\Scripts\System\GlobalOptions.dat"
 *	I reserve the rights to reject your bug report if you have cheated causing bugs to happen.
-*	I am not responsible for your save so please BACKUP every update.
+*	If your save is corrupted or not working, please upload your log.dat file to http://pokemon3d.net/forum/threads/6297/
 
 ==================================================
 8.	Credits
@@ -128,6 +128,10 @@ P_FR_LR Rip From: Ra2rd93
 P_R_S_E Rip From: PocketMonstersMusic
 Title Music Rip From: Justin Baxter
 Sound Effect Rip From: Pokémon Essentials v13 2012-12-02 (Flameguru, Poccil (Peter O.), Maruno)
+Riviera Music: Paineity
+Mega Man Battle Network 6 Music: Frygoon
+Pokémon Theme Song Rip From: Filizew
+Shing Soul II Rip From: 葉昱廷
 
 ==================================================
 8.2.	Graphic
