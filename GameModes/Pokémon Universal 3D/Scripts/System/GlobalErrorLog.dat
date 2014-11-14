@@ -48,7 +48,7 @@ version=2
 :when:22
 	@Text.log(// Mojang buys Microsoft! Get your new Mojang operating system now. With more blocks and scrolls.)
 :when:23
-	@Text.log(// H?LF-LIFE 2 confirmed)
+	@Text.log(// HALF-LIFE 2 confirmed)
 :endwhen
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
