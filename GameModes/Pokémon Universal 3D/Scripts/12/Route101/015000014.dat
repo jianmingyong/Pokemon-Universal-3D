@@ -10,10 +10,7 @@
 	:when:YES
 		@Pokemon.add(252,5,met at Lv 5,5,at ROUTE 101,0,<Player.name>)
 		@Battle.setvar(canrun,false)
-		@Storage.set(int,System.Encounter.Level,2*<Storage.get(int,System.Encounter.LevelMultiplier)>)
-		@Script.start(System\Encounter\Battleint)
-		@Battle.wild(263,<Storage.get(int,System.Encounter.Level)>)
-		@Script.start(System\Encounter\Battleend)
+		@Battle.wild(263,2)
 		@Pokemon.heal
 		@Music.play(P_R_S_E Route 101)
 		@NPC.remove(009000015)
@@ -48,10 +45,7 @@
 	:when:YES
 		@Pokemon.add(255,5,met at Lv 5,5,at ROUTE 101,0,<Player.name>)
 		@Battle.setvar(canrun,false)
-		@Storage.set(int,System.Encounter.Level,2*<Storage.get(int,System.Encounter.LevelMultiplier)>)
-		@Script.start(System\Encounter\Battleint)
-		@Battle.wild(263,<Storage.get(int,System.Encounter.Level)>)
-		@Script.start(System\Encounter\Battleend)
+		@Battle.wild(263,2)
 		@Pokemon.heal
 		@Music.play(P_R_S_E Route 101)
 		@NPC.remove(009000015)
@@ -86,10 +80,7 @@
 	:when:YES
 		@Pokemon.add(258,5,met at Lv 5,5,at ROUTE 101,0,<Player.name>)
 		@Battle.setvar(canrun,false)
-		@Storage.set(int,System.Encounter.Level,2*<Storage.get(int,System.Encounter.LevelMultiplier)>)
-		@Script.start(System\Encounter\Battleint)
-		@Battle.wild(263,<Storage.get(int,System.Encounter.Level)>)
-		@Script.start(System\Encounter\Battleend)
+		@Battle.wild(263,2)
 		@Pokemon.heal
 		@Music.play(P_R_S_E Route 101)
 		@NPC.remove(009000015)

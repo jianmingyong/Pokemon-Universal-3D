@@ -733,6 +733,9 @@ ActionScript.Layer.20
 ActionScript.Layer.21
 {"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[008000021]}}{"Position"{sngArr[8,0,21]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\PetalburgCity\008000021]}}{"Rotation"{int[0]}}]}}
 
+OffsetMap.Layer.20
+{"OffsetMap"{MAP[{"Map"{str[12\Route104\Route104.dat]}}{"Offset"{intArr[-48,0,-42]}}]}}
+
 OffsetMap.Layer.24
 {"OffsetMap"{MAP[{"Map"{str[12\Route102\Route102.dat]}}{"Offset"{intArr[30,0,10]}}]}}
 Warp.Layer.24
