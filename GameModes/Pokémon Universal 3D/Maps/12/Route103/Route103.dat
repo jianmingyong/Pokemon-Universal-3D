@@ -147,11 +147,13 @@ Tree.Layer.29
 {"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"Size"{intArr[14,1]}}{"Position"{sngArr[20.5,0.5,28.5]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[48,16,112,128]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[2,2,1]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}{"Steps"{sngArr[2,1,2]}}]}}
 
 Ledge.Layer.13
-{"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[7,1]}}{"Position"{sngArr[14,0,13]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[32,0,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[7,1]}}{"Position"{sngArr[14,0,13]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[16,16,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[21,-0.37,13]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[16,16,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[0,0,0,0,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[5]}}{"Rotation"{int[0]}}{"Scale"{sngArr[1,0.25,1]}}]}}
 Ledge.Layer.14
-{"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[7,1]}}{"Position"{sngArr[21,0,14]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[32,0,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[21,0,14]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[16,16,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[8]}}{"Rotation"{int[0]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[6,1]}}{"Position"{sngArr[22,0,14]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[16,16,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}]}}
 Ledge.Layer.20
-{"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[10,1]}}{"Position"{sngArr[12,0,20]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[32,0,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[10,1]}}{"Position"{sngArr[12,0,20]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[16,16,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}]}}
 
 Grass.Layer.10
 {"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[6,1]}}{"Position"{sngArr[18,-0.25,10]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}]}}
@@ -298,7 +300,6 @@ Water.Layer.22
 Water.Stone.Layer.21
 {"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[32,0,21]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[32.5,-0.25,21.5]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[176,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}]}}
-
 
 
 OffsetMap.Layer.30
