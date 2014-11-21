@@ -16,7 +16,7 @@ Table of contents:
 ==================================================
 1.	License
 ==================================================
-Pokémon Universal 3D v0.52.0.0.0.6
+Pokémon Universal 3D v0.52.0.0.0.7
 Copyright © 2014 jianmingyong
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
@@ -69,7 +69,7 @@ Installing prerequisites for Pokémon 3D.
 
 Installing prerequisites for Pokémon Universal 3D.
 1.	Pokémon 3D Game (Version 0.51.1 and above)
-* Pokémon 3D Game version 0.50.1 and below will not work fully as it is not optimised or some feature are not implemented yet.
+* Pokémon 3D Game version 0.50.1 and below will not work fully as it is not optimised or some feature are not implemented in the old version resulting in crash.
 
 ==================================================
 5.2.	Installing precautions
@@ -146,7 +146,7 @@ NPC Rip From: Smasher and Pokémon Essentials v13 2012-12-02 (Flameguru, Poccil 
 8.3.	Others
 ==================================================
 Special thanks to the following people:
-1. oxtwlxo
+1. Fanta
 2. SViper
 
 And Probably those beta tester and suggestion makers.
