@@ -1,0 +1,17 @@
+﻿version=2
+@Player.warp(<Storage.get(str,CreditsCamera.Map)>,<Storage.get(sng,CreditsCamera.Start.X)>,<Storage.get(sng,CreditsCamera.Start.Y)>,<Storage.get(sng,CreditsCamera.Start.Z)>,0)
+@Level.update
+@Player.wearskin(Credits)
+@Camera.activatethirdperson
+@Camera.set(0,0,0,<Storage.get(sng,CreditsCamera.Yaw)>,<Storage.get(sng,CreditsCamera.Pitch)>)
+@Player.turnto(3)
+@Player.move(<Storage.get(int,CreditsCamera.Move)>)
+@Title.add(Pokémon3D staff,20,255,255,255,2,true,0,-280)
+@Level.wait(300)
+@Title.add(Pokémon,30,255,255,255,2,true,0,-280)
+@Title.add(made by,30,255,255,255,2,true,0,-200)
+@Title.add(Nintendo,30,255,255,255,2,true,0,-160)
+@Title.add(Game Freak,30,255,255,255,2,true,0,-120)
+@Title.add(The Pokémon Company,30,255,255,255,2,true,0,-80)
+
+:end

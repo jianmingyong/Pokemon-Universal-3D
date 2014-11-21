@@ -1,0 +1,4 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(When my POKéMON ate an~ORAN BERRY, it regained HP!)
+:end

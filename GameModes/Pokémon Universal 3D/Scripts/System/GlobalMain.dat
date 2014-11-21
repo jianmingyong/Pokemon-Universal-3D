@@ -18,13 +18,7 @@ version=2
 	@Storage.set(int,System.ErrorLog.ErrorID2,0)
 	@Storage.set(int,System.ErrorLog.ErrorID3,0)
 	@Storage.set(int,System.ErrorLog.ErrorID4,0)
-	@Storage.set(int,System.ErrorLog.ErrorID5,0)
-	@Storage.set(int,System.ErrorLog.ErrorID6,0)
-	@Storage.set(int,System.ErrorLog.ErrorID7,0)
 	@Storage.set(str,System.ActionScript,GlobalMain.dat)
-	@Storage.set(int,System.Encounter.ExperienceMultiplier,1)
-	@Storage.set(int,System.Encounter.LevelMultiplier,1)
-	@Storage.set(bool,System.EncounterStep.fix,false)
 	#End Define Variable.
 	@Script.start(System\GlobalRegister)
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)

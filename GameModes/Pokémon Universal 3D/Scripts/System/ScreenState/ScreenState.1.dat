@@ -17,7 +17,7 @@
 		@Level.wait(1)
 		@Level.update
 	:endwhile
-	@Music.play(Mega Man Battle Network 6_Theme Of Mega Man Battle Network 6)
+	@Music.play(PMD_EOT_D_S Dialga's Fight To The Finish!)
 	@Title.add(Game Verification System,2147483647,255,255,255,2,true,0,-280)
 	@Title.add(This is a game verification system. You are require to answer them only once.,2147483647,255,255,255,2,true,0,-200)
 	@Title.add(Please answer them truefully. It will affect the game based on your answer.,2147483647,255,255,255,2,true,0,-160)
@@ -30,7 +30,7 @@
 	@Options.show(YES,NO)
 	:when:YES
 	:when:NO
-		@Storage.set(int,System.ErrorLog.ErrorID0,1)
+		@Storage.set(int,System.ErrorLog.ErrorID4,1)
 		@Storage.set(int,System.ScreenState,3)
 		@Script.start(System\ScreenState\ScreenState.3)
 		:end
@@ -39,7 +39,7 @@
 	@Options.setcancelindex(1)
 	@Options.show(YES,NO)
 	:when:YES
-		@Storage.set(int,System.ErrorLog.ErrorID6,1)
+		@Storage.set(int,System.ErrorLog.ErrorID4,1)
 		@Storage.set(int,System.ScreenState,3)
 		@Script.start(System\ScreenState\ScreenState.3)
 		:end

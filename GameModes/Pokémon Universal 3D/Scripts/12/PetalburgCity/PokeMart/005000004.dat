@@ -1,0 +1,6 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(Even if a POKéMON is weak now,~it will grow stronger.)
+@Sound.play(Select)
+@Text.show(The most important thing is love!~Love for your POKéMON!)
+:end

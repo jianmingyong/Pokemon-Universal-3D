@@ -1,0 +1,20 @@
+﻿version=2
+:if:<NPC.exists(007000001)>=false
+	@NPC.spawn(7,0.2,1,0,,NPC 58,false,2,,007000001,Still)
+:endif
+:if:<NPC.exists(001000005)>=false
+	@NPC.spawn(1,0,5,1,12\GlobalCE_PokeCenter_MysteryDungeon,Primal Dialga,false,3,,001000005,FacePlayer)
+:endif
+:if:<NPC.exists(001000005)>=false
+	@NPC.spawn(1,0,5,1,12\GlobalCE_PokeCenter_MysteryDungeon,Dialga,false,3,,001000005,FacePlayer)
+:endif
+:if:<NPC.exists(002000002)>=false
+	@NPC.spawn(2,0,2,1,12\PetalburgCity\PokeCenter\002000002,NPC 17,false,2,,002000002,Still)
+:endif
+:if:<NPC.exists(005000003)>=false
+	@NPC.spawn(5,0,3,1,12\PetalburgCity\PokeCenter\005000003,NPC 34,false,2,,005000003,Looking)
+:endif
+:if:<NPC.exists(011000001)>=false
+	@NPC.spawn(11,0,1,1,12\PetalburgCity\PokeCenter\011000001,NPC 65,false,2,,011000001,Still)
+:endif
+:end

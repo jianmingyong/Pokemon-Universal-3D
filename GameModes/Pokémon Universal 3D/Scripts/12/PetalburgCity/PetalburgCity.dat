@@ -1,4 +1,10 @@
 ﻿version=2
+:if:<Register.value(System.3D Buildings)>=true
+	@Entity.remove(0240000181)
+	@Entity.addtoposition(0240000182,0,10,0)
+	@Entity.remove(0190000221)
+	@Entity.addtoposition(0190000222,0,10,0)
+:endif
 :if:<Register.value(12\PetalburgCity)>=1
 	:if:<NPC.exists(008000030)>=false
 		@NPC.spawn(8,0,30,1,12\PetalburgCity\008000030,NPC 7,false,2,,008000030,Still)
@@ -19,6 +25,23 @@
 	:if:<NPC.exists(012000023)>=false
 		@NPC.spawn(12,0,23,1,12\PetalburgCity\012000023,NPC 9,false,2,,012000023,Looking)
 	:endif
+	:end
+:endif
+:if:<Register.value(12\PetalburgCity)>=3
+	:if:<NPC.exists(008000030)>=false
+		@NPC.spawn(8,0,30,1,12\PetalburgCity\008000030,NPC 7,false,2,,008000030,Still)
+	:endif
+	:if:<NPC.exists(012000023)>=false
+		@NPC.spawn(12,0,23,1,12\PetalburgCity\012000023,NPC 9,false,2,,012000023,Looking)
+	:endif
+	@Entity.remove(004000018)
+	@Entity.remove(004000019)
+	@Entity.remove(004000020)
+	@Entity.remove(004000021)
+	@Entity.remove(008000018)
+	@Entity.remove(008000019)
+	@Entity.remove(008000020)
+	@Entity.remove(008000021)
 	:end
 :endif
 @Storage.set(str,System.ActionScript,12\PetalburgCity\PetalburgCity.dat)

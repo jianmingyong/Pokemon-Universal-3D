@@ -1,0 +1,30 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(There are many types of POKéMON.)
+@Sound.play(Select)
+@Text.show(All types have their strengths and~weaknesses against other types.)
+@Sound.play(Select)
+@Text.show(Depending on the types of POKéMON,~a battle could be easy or hard.)
+@Sound.play(Select)
+:if:<Register.value(System.Starter.12)>=252
+	@Text.show(For example, your TREECKO~is a GRASS type.)
+	@Sound.play(Select)
+	@Text.show(It's strong against the WATER and~GROUND types.)
+	@Sound.play(Select)
+	@Text.show(But, it's weak against FIRE-type~POKéMON.)
+:endif
+:if:<Register.value(System.Starter.12)>=255
+	@Text.show(For example, your TORCHIC~is a FIRE type.)
+	@Sound.play(Select)
+	@Text.show(It's strong against the GRASS and~BUG types.)
+	@Sound.play(Select)
+	@Text.show(But, it's weak against WATER-type~POKéMON.)
+:endif
+:if:<Register.value(System.Starter.12)>=258
+	@Text.show(For example, your MUDKIP~is a WATER type.)
+	@Sound.play(Select)
+	@Text.show(It's strong against the FIRE type.)
+	@Sound.play(Select)
+	@Text.show(But, it's weak against GRASS-type~and ELECTRIC-type POKéMON.)
+:endif
+:end

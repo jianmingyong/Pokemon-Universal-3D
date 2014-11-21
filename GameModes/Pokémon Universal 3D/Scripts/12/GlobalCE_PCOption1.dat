@@ -5,6 +5,7 @@
 :when:SOMEONE'S PC
 	@Sound.play(accesspc)
 	@Text.show(Accessed SOMEONE's PC.)
+	@Sound.play(Select)
 	@Text.show(POKéMON Storage System opened.)
 	@Script.start(12\GlobalCE_PCOption2)
 :when:<Player.name>'s PC

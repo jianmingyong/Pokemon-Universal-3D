@@ -20,6 +20,9 @@ version=2
 :if:<Register.registered(System.Starter.12)>=false
 	@Register.register(System.Starter.12,int,0)
 :endif
+:if:<Register.registered(System.PersonalProfile.12)>=false
+	@Register.register(System.PersonalProfile.12,str,Nothing)
+:endif
 :if:<Register.registered(12\LittleRootTown\019000001)>=false
 	@Register.register(12\LittleRootTown\019000001,int,1)
 :endif
@@ -92,7 +95,6 @@ version=2
 :if:<Register.registered(12\Route102\025000010)>=false
 	@Register.register(12\Route102\025000010,int,1)
 :endif
-
 :if:<Register.registered(12\PetalburgCity)>=false
 	@Register.register(12\PetalburgCity,int,1)
 :endif
@@ -114,9 +116,16 @@ version=2
 :if:<Register.registered(12\PetalburgCity\WallyHouse\007000004)>=false
 	@Register.register(12\PetalburgCity\WallyHouse\007000004,int,1)
 :endif
-
+:if:<Register.registered(12\PetalburgCity\PokeCenter\011000001)>=false
+	@Register.register(12\PetalburgCity\PokeCenter\011000001,int,1)
+:endif
 :if:<Register.registered(12\PetalburgCity\PokeMart\002000002)>=false
 	@Register.register(12\PetalburgCity\PokeMart\002000002,int,1)
 :endif
-
+:if:<Register.registered(12\Route104\030000041)>=false
+	@Register.register(12\Route104\030000041,int,1)
+:endif
+:if:<Register.registered(12\Route104\032000041)>=false
+	@Register.register(12\Route104\032000041,int,1)
+:endif
 :end

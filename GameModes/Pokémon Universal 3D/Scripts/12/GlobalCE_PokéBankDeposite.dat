@@ -9,12 +9,7 @@
 @Options.show(YES,NO)
 :when:YES
 	@Sound.play(Select)
-	:if:<Math.isint(<Math.clamp(<System.lastinput>,0,<Player.money>)>.0)>=false
-		@Text.show(Please insert a integer number.)
-		@Script.start(12\GlobalCE_PokéBankDeposite)
-		:end
-	:endif
-	:if:<Math.sng(<Register.value(System.BankMoney)>+<Math.clamp(<System.lastinput>,0,<Player.money>)>)>>2147483648
+	:if:<Math.sng(<Register.value(System.BankMoney)>+<Math.clamp(<System.lastinput>,0,<Player.money>)>)>>2147483647
 		@Text.show(Too much money inserted into the bank.)
 		@Script.start(12\GlobalCE_PokéBankDeposite)
 		:end
@@ -22,6 +17,11 @@
 	:if:<Player.money><<Math.clamp(<System.lastinput>,0,<Player.money>)>
 		@Text.show(You do not have that much money.)
 		@Script.start(12\GlobalCE_PokéBankDeposite)
+		:end
+	:endif
+	:if:<Math.clamp(<System.lastinput>,0,<Player.money>)>=0
+		@Text.show(Deposite canceled.)
+		@Script.start(12\GlobalCE_PCOption4)
 		:end
 	:endif
 	@Player.addmoney(-<Math.clamp(<System.lastinput>,0,<Player.money>)>)

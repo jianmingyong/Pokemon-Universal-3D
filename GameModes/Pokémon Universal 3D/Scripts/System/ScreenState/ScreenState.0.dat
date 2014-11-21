@@ -6,7 +6,7 @@
 		@Player.warp(System\GlobalMain.dat,0,0,0,0)
 		@Level.update
 	:endif
-	@Music.play(Mega Man Battle Network 6_Theme Of Mega Man Battle Network 6)
+	@Music.play(PMD_EOT_D_S Dialga's Fight To The Finish!)
 	@camera.deactivethirdperson
 	@Camera.fix
 	@Script.start(System\ScreenState\Entity.Visible)

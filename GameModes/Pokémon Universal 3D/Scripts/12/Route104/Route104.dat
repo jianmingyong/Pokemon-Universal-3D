@@ -1,0 +1,14 @@
+version=2
+:if:<Register.value(12\Route104\030000041)>=1
+	@Entity.remove(0300000412)
+:endif
+:if:<Register.value(12\Route104\030000041)>=2
+	@Entity.remove(0300000411)
+:endif
+:if:<Register.value(12\Route104\032000041)>=1
+	@Entity.remove(0320000412)
+:endif
+:if:<Register.value(12\Route104\032000041)>=2
+	@Entity.remove(0320000411)
+:endif
+:end

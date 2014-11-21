@@ -23,9 +23,6 @@ version=2
 :if:<Register.registered(System.SandBoxMode)>=false
 	@Register.register(System.SandBoxMode,bool,false)
 :endif
-:if:<Register.registered(System.New BattleV2 Exp)>=false
-	@Register.register(System.New BattleV2 Exp,bool,true)
-:endif
 :if:<Register.registered(System.3D Buildings)>=false
 	@Register.register(System.3D Buildings,bool,false)
 :endif
