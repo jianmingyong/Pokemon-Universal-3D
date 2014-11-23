@@ -6,10 +6,10 @@ version=2
 	@Register.change(System.P3D Version,0.51.1)
 :endif
 :if:<Register.registered(System.Game Version)>=false
-	@Register.register(System.Game Version,str,0.0.6 BT 8)
+	@Register.register(System.Game Version,str,0.0.7 BT 1)
 :endif
-:if:<not><Register.value(System.Game Version)>=0.0.6 BT 8
-	@Register.change(System.Game Version,0.0.6 BT 8)
+:if:<not><Register.value(System.Game Version)>=0.0.7 BT 1
+	@Register.change(System.Game Version,0.0.7 BT 1)
 :endif
 :if:<Register.registered(System.Game ID)>=false
 	@Register.register(System.Game ID,int,0)

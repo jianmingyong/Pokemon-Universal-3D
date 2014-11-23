@@ -1,0 +1,164 @@
+version=2
+:if:<Register.value(12\LittleRootTown\ProfBirchLab)>=4
+	:if:<Register.value(12\OldaleTown\001000011)>=1
+		@Register.change(12\OldaleTown\001000011,2)
+	:endif
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID0)>=true
+	@Register.unregister(System.ErrorLog.ErrorID0,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID1)>=true
+	@Register.unregister(System.ErrorLog.ErrorID1,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID2)>=true
+	@Register.unregister(System.ErrorLog.ErrorID2,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID3)>=true
+	@Register.unregister(System.ErrorLog.ErrorID3,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID4)>=true
+	@Register.unregister(System.ErrorLog.ErrorID4,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID5)>=true
+	@Register.unregister(System.ErrorLog.ErrorID5,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID6)>=true
+	@Register.unregister(System.ErrorLog.ErrorID6,int)
+:endif
+:if:<Register.registered(System.ErrorLog.ErrorID7)>=true
+	@Register.unregister(System.ErrorLog.ErrorID7,int)
+:endif
+:if:<Register.registered(System\Intro\12\Intro)>=true
+	@Register.unregister(System\Intro\12\Intro,int)
+:endif
+:if:<Register.registered(Options.System.Game ID)>=true
+	@Register.unregister(Options.System.Game ID,int)
+:endif
+:if:<Register.registered(System.Skip Intro)>=true
+	@Register.unregister(System.Skip Intro,int)
+:endif
+:if:<Register.registered(System.PlayerGender)>=true
+	:if:<Register.value(System.PlayerGender)>=Male
+		@Register.change(System.PlayerGender.12,boy)
+	:endif
+	:if:<Register.value(System.PlayerGender)>=Female
+		@Register.change(System.PlayerGender.12,girl)
+	:endif
+	@Register.unregister(System.PlayerGender,str)
+:endif 
+:if:<Register.registered(System.ActionScript)>=true
+	@Register.unregister(System.ActionScript,str)
+:endif
+:if:<Register.registered(System.GlobalRegister Validation)>=true
+	@Register.unregister(System.GlobalRegister Validation,bool)
+:endif
+:if:<Register.registered(System\Intro\12\Intro.1)>=true
+	@Register.unregister(System\Intro\12\Intro.1,int)
+:endif
+:if:<Register.registered(System\Intro\12\Intro.2)>=true
+	@Register.unregister(System\Intro\12\Intro.2,int)
+:endif
+:if:<Register.registered(System\Intro\12\Intro.3)>=true
+	@Register.unregister(System\Intro\12\Intro.3,int)
+:endif
+:if:<Register.registered(System\Intro\12\Intro.4)>=true
+	@Register.unregister(System\Intro\12\Intro.4,int)
+:endif
+:if:<Register.registered(System.EncounterStep.num1)>=true
+	@Register.unregister(System.EncounterStep.num1,int)
+:endif
+:if:<Register.registered(System.EncounterStep.num2)>=true
+	@Register.unregister(System.EncounterStep.num2,int)
+:endif
+:if:<Register.registered(System.EncounterRate.num1)>=true
+	@Register.unregister(System.EncounterRate.num1,sng)
+:endif
+:if:<Register.registered(System.EncounterRate.num2.1)>=true
+	@Register.unregister(System.EncounterRate.num2.1,sng)
+:endif
+:if:<Register.registered(System.EncounterRate.num2.2)>=true
+	@Register.unregister(System.EncounterRate.num2.2,sng)
+:endif
+:if:<Register.registered(System.EncounterRate.num3)>=true
+	@Register.unregister(System.EncounterRate.num3,sng)
+:endif
+:if:<Register.registered(System.Encounter.Level)>=true
+	@Register.unregister(System.Encounter.Level,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience)>=true
+	@Register.unregister(System.Encounter.Experience,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.1)>=true
+	@Register.unregister(System.Encounter.Experience.1,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.2)>=true
+	@Register.unregister(System.Encounter.Experience.2,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.3)>=true
+	@Register.unregister(System.Encounter.Experience.3,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.4)>=true
+	@Register.unregister(System.Encounter.Experience.4,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.5)>=true
+	@Register.unregister(System.Encounter.Experience.5,int)
+:endif
+:if:<Register.registered(System.Encounter.Experience.6)>=true
+	@Register.unregister(System.Encounter.Experience.6,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.1.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.1.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.2.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.2.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.3.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.3.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.4.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.4.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.5.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.5.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.6.TotalEXP)>=true
+	@Register.unregister(System.Encounter.Pokemon.6.TotalEXP,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.ID)>=true
+	@Register.unregister(System.Encounter.Pokemon.ID,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.Index)>=true
+	@Register.unregister(System.Encounter.Pokemon.Index,int)
+:endif
+:if:<Register.registered(System.Encounter.Pokemon.MoveID)>=true
+	@Register.unregister(System.Encounter.Pokemon.MoveID,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1\001000002)>=true
+	@Register.unregister(12\LittleRootTown\RivalRoom.1\001000002,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1\003000002)>=true
+	@Register.unregister(12\LittleRootTown\RivalRoom.1\003000002,int)
+:endif
+:if:<Register.registered(12\LittleRootTown\RivalRoom.1\002000003)>=true
+	@Register.unregister(12\LittleRootTown\RivalRoom.1\002000003,int)
+:endif
+:if:<Register.registered(System.Encounter.LevelMultiplier)>=true
+	@Register.unregister(System.Encounter.LevelMultiplier,int)
+:endif
+:if:<Register.registered(System.Encounter.ExperienceMultiplier)>=true
+	@Register.unregister(System.Encounter.ExperienceMultiplier,int)
+:endif
+:if:<Register.registered(System.12.Starter)>=true
+	@Register.register(System.Starter.12,int,<Register.value(System.12.Starter)>)
+	@Register.unregister(System.12.Starter,int)
+:endif
+:if:<Register.value(12\OldaleTown\PokeMart\002000002)>=2
+	@Register.change(12\OldaleTown\PokeMart\005000004,2)
+:endif
+:if:<Register.registered(12\Route102)>=true
+	@Register.unregister(12\Route102,int)
+:endif
+:if:<Register.registered(System.New BattleV2 Exp)>=true
+	@Register.unregister(System.New BattleV2 Exp,bool)
+:endif
+:end

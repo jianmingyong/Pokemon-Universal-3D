@@ -17,7 +17,7 @@
 		@Level.wait(1)
 		@Level.update
 	:endwhile
-	@Music.play(PMD_EOT_D_S Dialga's Fight To The Finish!)
+	@Music.play(title)
 	@Title.add(Game Verification System,2147483647,255,255,255,2,true,0,-280)
 	@Title.add(This is a game verification system. You are require to answer them only once.,2147483647,255,255,255,2,true,0,-200)
 	@Title.add(Please answer them truefully. It will affect the game based on your answer.,2147483647,255,255,255,2,true,0,-160)
@@ -71,7 +71,7 @@
 		@Level.update
 	:endwhile
 	:if:<Register.value(System.Game ID)>=12
-		@Music.play(P_R_S_E Opening Selection)
+		@Music.play(P_OR_AS Opening Selection)
 		@Script.start(System\Intro\12\Intro.1)
 		@Script.start(System\Intro\12\Intro.2)
 		@Script.start(System\Intro\12\Intro.3)

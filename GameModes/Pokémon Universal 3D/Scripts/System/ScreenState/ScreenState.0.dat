@@ -6,7 +6,7 @@
 		@Player.warp(System\GlobalMain.dat,0,0,0,0)
 		@Level.update
 	:endif
-	@Music.play(PMD_EOT_D_S Dialga's Fight To The Finish!)
+	@Music.play(title)
 	@camera.deactivethirdperson
 	@Camera.fix
 	@Script.start(System\ScreenState\Entity.Visible)

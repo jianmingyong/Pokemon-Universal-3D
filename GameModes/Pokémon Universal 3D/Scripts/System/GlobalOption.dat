@@ -1,0 +1,11 @@
+version=2
+#. This is a option file. It will affect the game.
+#. System.SkipMainMenu [true|false] => Skip Main Menu Screen?
+@Storage.set(bool,System.SkipMainMenu,true)
+:if:<Storage.get(bool,System.SkipMainMenu)>=true
+	#. System.SandBoxMode [true|false] => Activate SandBox Mode?
+	@Register.change(System.SandBoxMode,false)
+	#. System.3D Buildings [true|false] => Activate 3D Building?
+	@Register.change(System.3D Buildings,true)
+:endif
+:end

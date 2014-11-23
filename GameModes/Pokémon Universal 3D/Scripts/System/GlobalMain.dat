@@ -27,16 +27,30 @@ version=2
 		@Register.change(System.PlayerPosition.X.12,<Player.position(x)>)
 		@Register.change(System.PlayerPosition.Y.12,<Player.position(y)>+0.1)
 		@Register.change(System.PlayerPosition.Z.12,<Player.position(z)>)
-		@Register.change(System.PlayerFacing.12,<Player.facing>)
 		@Register.change(System.LastMap.12,<Level.mapfile>)
 		:if:<Register.registered(System.Load.12)>=false
 			@Register.register(System.Load.12)
 		:endif
 	:endif
 	#End Define Variable.
-	#. @Script.start(System\GlobalBankInterest)
+	@Script.start(System\GlobalOption)
 	@Player.save
-	@Script.start(System\ScreenState\ScreenState.0)
+	:if:<Storage.get(bool,System.SkipMainMenu)>=false
+		@Script.start(System\ScreenState\ScreenState.0)
+	:endif
+	:if:<Storage.get(bool,System.SkipMainMenu)>=true
+		:if:<Register.registered(System.Load.12)>=true
+			@Script.start(System\GlobalAntiCheat)
+			@Storage.set(int,System.ScreenState,2)
+			@Level.wait(1)
+			@Level.reload
+		:else
+			@Storage.set(int,System.ScreenState,1)
+			@Register.change(System.Game ID,12)
+			@Script.start(System\ScreenState\ScreenState.1)
+		:endif
+	:endif
+:else
+	@Script.start(<filesystem.pathup(<Level.mapfile>)>\<Level.filename>)
 :endif
-@Script.start(<filesystem.pathup(<Level.mapfile>)>\<Level.filename>)
 :end

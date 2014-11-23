@@ -1,6 +1,6 @@
 version=2
 :if:<Register.value(12\Route101)>=1
-	@Music.play(P_R_S_E Help!)
+	@Music.play(P_OR_AS Help!)
 	@Text.show(H-Help me!)
 	@Player.turnto(0)
 	@Player.move(4)
@@ -147,7 +147,7 @@ version=2
 	:end
 :endif
 :if:<Register.value(12\Route101)>=2
-	@Music.play(P_R_S_E Help!)
+	@Music.play(P_OR_AS Help!)
 	:if:<NPC.exists(010000015)>=false
 		@NPC.spawn(12,0,13,0,,Prof. Birch,true,3,,010000015,Still)
 	:endif
