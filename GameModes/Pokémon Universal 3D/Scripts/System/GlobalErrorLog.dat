@@ -64,7 +64,6 @@ version=2
 @Text.log(System.PlayerPosition.X.12: <Register.value(System.PlayerPosition.X.12)>)
 @Text.log(System.PlayerPosition.Y.12: <Register.value(System.PlayerPosition.Y.12)>)
 @Text.log(System.PlayerPosition.Z.12: <Register.value(System.PlayerPosition.Z.12)>)
-@Text.log(System.PlayerFacing.12: <Register.value(System.PlayerFacing.12)>)
 @Text.log(System.PlayerGender.12: <Register.value(System.PlayerGender.12)>)
 @Text.log(System.Starter.12: <Register.value(System.Starter.12)>)
 @Text.log(System.PersonalProfile.12: <Register.value(System.PersonalProfile.12)>)

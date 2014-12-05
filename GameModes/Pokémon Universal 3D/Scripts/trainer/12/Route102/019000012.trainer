@@ -7,9 +7,9 @@ OutroMessage|I called you because I thought~I could beat you...
 DefeatMessage|I haven't won once yet...~I wish I would win soon...
 TextureID|Youngster
 Region|12.Hoenn
-IniMusic|P_R_S_E Trainer Battle_intro
+IniMusic|P_OR_AS Trainer Battle_intro
 DefeatMusic|P_R_S_E Victory! Trainer
-BattleMusic|P_R_S_E Trainer Battle
+BattleMusic|P_OR_AS Trainer Battle
 Pokemon1|263,4
 Pokemon2|276,3
 Pokemon3|

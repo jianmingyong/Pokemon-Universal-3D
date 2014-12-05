@@ -7,9 +7,9 @@ OutroMessage|Wow! That's great!~<Player.name>, you're pretty good!
 DefeatMessage|
 TextureID|<Rival.name>
 Region|12.Hoenn
-IniMusic|P_R_S_E Rival Battle_intro
+IniMusic|P_OR_AS Rival Battle_intro
 DefeatMusic|P_R_S_E Victory! Trainer
-BattleMusic|P_R_S_E Rival Battle
+BattleMusic|P_OR_AS Rival Battle
 Pokemon1|258,5
 Pokemon2|
 Pokemon3|

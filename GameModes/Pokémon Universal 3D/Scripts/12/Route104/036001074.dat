@@ -1,0 +1,8 @@
+version=2
+@Sound.play(Select)
+@Text.show(Oh, no, I'm not a TRAINER.)
+@Sound.play(Select)
+@Text.show(But that's right, if TRAINERS lock eyes,~it's a challenge to battle.)
+@Sound.play(Select)
+@Text.show(If you don't want to battle, stay out~of their sight.)
+:end

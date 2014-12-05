@@ -16,7 +16,7 @@ StartLocationName|Intro
 StartDialogue|Welcome to Pokémon Universal 3D!|Please enter your name.|~Press Space Bar/Enter to start
 StartColor|127,127,255
 PokemonAppear|0
-IntroMusic|Mega Man Battle Network 6_Theme Of Mega Man Battle Network 6
+IntroMusic|P_OR_AS Opening Selection
 SkinColors|255;127;127,127;255;127,255;127;127,127;127;255
 SkinFiles|Dialga
 SkinNames|Please Enter your name.

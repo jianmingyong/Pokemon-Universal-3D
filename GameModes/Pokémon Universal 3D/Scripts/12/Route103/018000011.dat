@@ -49,7 +49,7 @@
 	@NPC.move(018000011,10)
 	@NPC.remove(018000011)
 :endif
-@Music.play(P_R_S_E Route 101)
+@Music.play(P_OR_AS Route 101)
 @Register.change(12\Route103,2)
 @Register.change(12\OldaleTown,2)
 :end

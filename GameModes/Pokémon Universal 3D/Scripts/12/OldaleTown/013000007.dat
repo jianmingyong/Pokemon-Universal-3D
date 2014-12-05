@@ -45,7 +45,7 @@ version=2
 	@Text.show(A POTION can be used anytime, so it's~even more useful than a POKéMON CENTER)
 	@Sound.play(Select)
 	@Text.show(in certain situations.)
-	@Music.play(P_R_S_E Oldale Town)
+	@Music.play(P_OR_AS Oldale Town)
 	@Register.change(12\OldaleTown\013000007,2)
 	:end
 :endif

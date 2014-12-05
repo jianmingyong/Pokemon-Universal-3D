@@ -7,9 +7,9 @@ OutroMessage|Ow! Down and out!
 DefeatMessage|If you lock eyes with a TRAINER,~you have to challenge! It's a rule!
 TextureID|Bug Catcher
 Region|12.Hoenn
-IniMusic|P_R_S_E Trainer Battle_intro
+IniMusic|P_OR_AS Trainer Battle_intro
 DefeatMusic|P_R_S_E Victory! Trainer
-BattleMusic|P_R_S_E Trainer Battle
+BattleMusic|P_OR_AS Trainer Battle
 Pokemon1|265,4
 Pokemon2|265,4
 Pokemon3|

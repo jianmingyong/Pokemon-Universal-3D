@@ -47,7 +47,7 @@
 		@NPC.turn(001000000,3)
 		@NPC.move(001000000,4)
 		@NPC.turn(001000000,0)
-		@Music.play(P_R_S_E Littleroot Town)
+		@Music.play(P_OR_AS Littleroot Town)
 	:endif
 	:if:<Player.facing>=1
 		@Sound.play(Select)
@@ -92,7 +92,7 @@
 		@NPC.turn(001000000,3)
 		@NPC.move(001000000,2)
 		@NPC.turn(001000000,0)
-		@Music.play(P_R_S_E Littleroot Town)
+		@Music.play(P_OR_AS Littleroot Town)
 	:endif
 	:if:<Player.facing>=2
 		@Sound.play(Select)
@@ -138,7 +138,7 @@
 		@NPC.turn(001000000,2)
 		@NPC.move(001000000,1)
 		@NPC.turn(001000000,0)
-		@Music.play(P_R_S_E Littleroot Town)
+		@Music.play(P_OR_AS Littleroot Town)
 	:endif
 	:if:<Player.facing>=3
 		@Sound.play(Select)
@@ -185,7 +185,7 @@
 		@NPC.turn(001000000,3)
 		@NPC.move(001000000,5)
 		@NPC.turn(001000000,0)
-		@Music.play(P_R_S_E Littleroot Town)
+		@Music.play(P_OR_AS Littleroot Town)
 	:endif
 	@Register.change(12\LittleRootTown\RivalRoom.2\005000003,2)
 	@Register.change(12\LittleRootTown\RivalRoom.2,2)

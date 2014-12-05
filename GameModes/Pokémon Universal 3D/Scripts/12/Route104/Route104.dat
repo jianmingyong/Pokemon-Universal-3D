@@ -11,4 +11,10 @@ version=2
 :if:<Register.value(12\Route104\032000041)>=2
 	@Entity.remove(0320000411)
 :endif
+:if:<NPC.exists(023001060)>=false
+	@NPC.spawn(23,-1,60,1,12\Route104\023001060,Bug Catcher,false,1,,023001060,Still)
+:endif
+:if:<NPC.exists(036001074)>=false
+	@NPC.spawn(36,-1,74,1,12\Route104\036001074,NPC 14,false,0,,036001074,Still)
+:endif
 :end

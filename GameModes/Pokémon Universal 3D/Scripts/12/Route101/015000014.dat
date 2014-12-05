@@ -12,7 +12,7 @@
 		@Battle.setvar(canrun,false)
 		@Battle.wild(263,2)
 		@Pokemon.heal
-		@Music.play(P_R_S_E Route 101)
+		@Music.play(P_OR_AS Route 101)
 		@NPC.remove(009000015)
 		@NPC.warp(010000015,12,0,13,3)
 		@Player.warp(14,0,13)
@@ -47,7 +47,7 @@
 		@Battle.setvar(canrun,false)
 		@Battle.wild(263,2)
 		@Pokemon.heal
-		@Music.play(P_R_S_E Route 101)
+		@Music.play(P_OR_AS Route 101)
 		@NPC.remove(009000015)
 		@NPC.warp(010000015,12,0,13,3)
 		@Player.warp(14,0,13)
@@ -82,7 +82,7 @@
 		@Battle.setvar(canrun,false)
 		@Battle.wild(263,2)
 		@Pokemon.heal
-		@Music.play(P_R_S_E Route 101)
+		@Music.play(P_OR_AS Route 101)
 		@NPC.remove(009000015)
 		@NPC.warp(010000015,12,0,13,3)
 		@Player.warp(14,0,13)

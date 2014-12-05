@@ -1,7 +1,7 @@
 Cities:
-{"PlaceType"[City]}{"Name"[Littleroot Town]}{"MapFiles"[12\LittleRootTown\LittleRootTown.dat,12\LittleRootTown\LittleRootTown.PlayerRoom.1.dat,12\LittleRootTown\LittleRootTown.PlayerRoom.2.dat,12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,12\LittleRootTown\LittleRootTown.RivalRoom.1.dat,12\LittleRootTown\LittleRootTown.RivalRoom.2.dat,12\LittleRootTown\LittleRootTown.Truck.dat,12\LittleRootTown\LittleRootTown.Truck.Offset.dat]}{"Position"[5,13]}{"Size"[Small]}
-{"PlaceType"[City]}{"Name"[Oldale Town]}{"MapFiles"[12\OldaleTown\OldaleTown.dat,12\OldaleTown\OldaleTown.House1,12\OldaleTown\OldaleTown.House2.dat,12\OldaleTown\OldaleTown.PokeCenter.dat,12\OldaleTown\OldaleTown.PokeMart.dat]}{"Position"[5,11]}{"Size"[Small]}
-{"PlaceType"[City]}{"Name"[Petalburg City]}{"MapFiles"[]}{"Position"[2,11]}{"Size"[Small]}
+{"PlaceType"[City]}{"Name"[Littleroot Town]}{"MapFiles"[12\LittleRootTown\LittleRootTown.dat,12\LittleRootTown\LittleRootTown.PlayerRoom.1.dat,12\LittleRootTown\LittleRootTown.PlayerRoom.2.dat,12\LittleRootTown\LittleRootTown.ProfBirchLab.dat,12\LittleRootTown\LittleRootTown.RivalRoom.1.dat,12\LittleRootTown\LittleRootTown.RivalRoom.2.dat,12\LittleRootTown\LittleRootTown.Truck.dat,12\LittleRootTown\LittleRootTown.Truck.Offset.dat]}{"Position"[5,13]}{"Size"[Small]}{"FlyTo"[12\LittleRootTown\LittleRootTown.dat,13,12.1,9]}
+{"PlaceType"[City]}{"Name"[Oldale Town]}{"MapFiles"[12\OldaleTown\OldaleTown.dat,12\OldaleTown\OldaleTown.House1,12\OldaleTown\OldaleTown.House2.dat,12\OldaleTown\OldaleTown.PokeCenter.dat,12\OldaleTown\OldaleTown.PokeMart.dat]}{"Position"[5,11]}{"Size"[Small]}{"FlyTo"[12\OldaleTown\OldaleTown.dat,6,12.1,17]}
+{"PlaceType"[City]}{"Name"[Petalburg City]}{"MapFiles"[12\PetalburgCity\PetalburgCity.dat,12\PetalburgCity\PetalburgCity.Gym.Main.dat,12\PetalburgCity\PetalburgCity.House1.dat,12\PetalburgCity\PetalburgCity.House2.dat,12\PetalburgCity\PetalburgCity.PokeCenter.dat,12\PetalburgCity\PetalburgCity.PokeMart.dat,12\PetalburgCity\PetalburgCity.WallyHouse.dat]}{"Position"[2,11]}{"Size"[Small]}{"FlyTo"[12\PetalburgCity\PetalburgCity.dat,20,12.1,25]}
 {"PlaceType"[City]}{"Name"[Rustboro City]}{"MapFiles"[]}{"Position"[1,7]}{"Size"[Vertical]}
 {"PlaceType"[City]}{"Name"[Dewford Town]}{"MapFiles"[]}{"Position"[3,16]}{"Size"[Small]}
 {"PlaceType"[City]}{"Name"[Slateport City]}{"MapFiles"[]}{"Position"[9,12]}{"Size"[Vertical]}
@@ -101,9 +101,9 @@ Routes:
 {"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[12\Route103\Route103.dat]}{"Position"[7,10]}{"Direction"[Horizontal]}{"RouteType"[Water]}
 {"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[12\Route103\Route103.dat]}{"Position"[8,10]}{"Direction"[Horizontal]}{"RouteType"[Land]}
 
-{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[]}{"Position"[1,11]}{"Direction"[TRight]}{"RouteType"[Water]}
-{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[]}{"Position"[1,10]}{"Direction"[Vertical]}{"RouteType"[Land]}
-{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[]}{"Position"[1,9]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[12\Route103\Route104.dat]}{"Position"[1,11]}{"Direction"[TRight]}{"RouteType"[Water]}
+{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[12\Route103\Route104.dat]}{"Position"[1,10]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[12\Route103\Route104.dat]}{"Position"[1,9]}{"Direction"[Vertical]}{"RouteType"[Land]}
 
 {"PlaceType"[Route]}{"Name"[Route 105]}{"MapFiles"[]}{"Position"[1,14]}{"Direction"[Vertical]}{"RouteType"[Water]}
 {"PlaceType"[Route]}{"Name"[Route 105]}{"MapFiles"[]}{"Position"[1,13]}{"Direction"[Vertical]}{"RouteType"[Water]}

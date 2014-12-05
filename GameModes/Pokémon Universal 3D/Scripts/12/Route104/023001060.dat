@@ -1,0 +1,6 @@
+version=2
+@Sound.play(Select)
+@Text.show(The sea, huh?)
+@Sound.play(Select)
+@Text.show(I wonder what it's like at the bottom~of the sea?)
+:end

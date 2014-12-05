@@ -67,7 +67,7 @@ version=2
 	@Player.turnto(0)
 	@Text.show(INTERVIEWER: ...We brought you this~report from in front of PETALBURG GYM.)
 	@Sound.play(Select)
-	@Music.play(P_R_S_E Littleroot Town)
+	@Music.play(P_OR_AS Littleroot Town)
 	@Player.turnto(1)
 	@Text.show(MOM: Oh... It's over.)
 	@Sound.play(Select)

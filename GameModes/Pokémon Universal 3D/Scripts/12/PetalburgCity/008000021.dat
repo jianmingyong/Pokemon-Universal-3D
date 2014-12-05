@@ -42,5 +42,5 @@
 @NPC.turn(005000019,1)
 @NPC.setspeed(005000019,3)
 @NPC.move(005000019,11)
-@Music.play(P_R_S_E Petalburg City)
+@Music.play(P_OR_AS Petalburg City)
 :end

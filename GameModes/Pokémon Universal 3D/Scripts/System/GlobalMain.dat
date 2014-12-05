@@ -1,16 +1,16 @@
-version=2
+﻿version=2
 #############################################################
 # Welcome to the Pokémon Universal 3D Main Initialize File. #
 #############################################################
-#. Main Menu - @Storage.set(int,System.ScreenState,0)
+#. Main Menu 	- @Storage.set(int,System.ScreenState,0)
 #. Intro Screen - @Storage.set(int,System.ScreenState,1)
-#. World - @Storage.set(int,System.ScreenState,2)
-#. Error - @Storage.set(int,System.ScreenState,3)
+#. World		- @Storage.set(int,System.ScreenState,2)
+#. Error		- @Storage.set(int,System.ScreenState,3)
+#. API: v0.51.1.0.0.7
 @Level.update
 @Title.clear
 @Camera.defix
 :if:<Storage.count(int)>=0
-	@Music.play(Stop)
 	#Define Variable.
 	@Storage.set(int,System.ScreenState,0)
 	@Storage.set(int,System.ErrorLog.ErrorID0,0)
@@ -36,14 +36,21 @@ version=2
 	@Script.start(System\GlobalOption)
 	@Player.save
 	:if:<Storage.get(bool,System.SkipMainMenu)>=false
+		@Music.play(Stop)
 		@Script.start(System\ScreenState\ScreenState.0)
 	:endif
 	:if:<Storage.get(bool,System.SkipMainMenu)>=true
 		:if:<Register.registered(System.Load.12)>=true
+			@Title.add(Loading save file. Please wait for a while.,2147483647,0,0,0,2,true,0,0)
 			@Script.start(System\GlobalAntiCheat)
 			@Storage.set(int,System.ScreenState,2)
-			@Level.wait(1)
-			@Level.reload
+			:if:<not><Level.mapfile>=<Register.value(System.LastMap.12)>
+				@Player.warp(<Register.value(System.LastMap.12)>,<Register.value(System.PlayerPosition.X.12)>,<Register.value(System.PlayerPosition.Y.12)>+0.1,<Register.value(System.PlayerPosition.Z.12)>,<Register.value(System.PlayerFacing.12)>)
+				@Level.update
+			:else
+				@Level.wait(1)
+				@Level.reload
+			:endif
 		:else
 			@Storage.set(int,System.ScreenState,1)
 			@Register.change(System.Game ID,12)

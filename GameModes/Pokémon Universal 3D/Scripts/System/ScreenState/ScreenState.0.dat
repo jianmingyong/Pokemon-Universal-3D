@@ -12,7 +12,7 @@
 	@Script.start(System\ScreenState\Entity.Visible)
 	@Screen.fadein
 	@Text.show(Please Choose an option.)
-	@Options.show(New Game,Load Game,Options)
+	@Options.show(New Game,Load Game,Options,Downloadable Content)
 	:when:New Game
 		@Script.start(System\ScreenState\ScreenState.0.NewGame)
 	:when:Load Game
@@ -32,6 +32,8 @@
 		:endif
 	:when:Options
 		@Script.start(System\ScreenState\ScreenState.0.Options)
+	:when:Downloadable Content
+		@Text.show(This is in beta feature right now.~It will not function.)
 	:endwhen
 :endwhile
 :end

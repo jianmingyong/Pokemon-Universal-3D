@@ -42,7 +42,7 @@
 @NPC.move(002000007,2)
 @NPC.remove(002000007)
 @Sound.play(Exit)
-@Music.play(P_R_S_E Littleroot Town)
+@Music.play(P_OR_AS Littleroot Town)
 @Register.change(12\LittleRootTown\RivalRoom.2,2)
 @Register.change(12\LittleRootTown\RivalRoom.1,2)
 @Script.start(System\GlobalMain)

@@ -7,9 +7,9 @@ OutroMessage|I ended up furthering your career...
 DefeatMessage|To keep winning my way up, I see that~I have to catch more POKéMON.
 TextureID|Lass
 Region|12.Hoenn
-IniMusic|P_R_S_E Trainer Battle_intro
+IniMusic|P_OR_AS Trainer Battle_intro
 DefeatMusic|P_R_S_E Victory! Trainer
-BattleMusic|P_R_S_E Trainer Battle
+BattleMusic|P_OR_AS Trainer Battle
 Pokemon1|263,4
 Pokemon2|285,4
 Pokemon3|
