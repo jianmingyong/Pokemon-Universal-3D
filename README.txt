@@ -124,13 +124,10 @@ Pokémon Universal 3D is created, compiled and edited by jianmingyong.
 8.1.	Music
 ==================================================
 PMD_EOT_D_S Rip From: Martin Zanter
-P_FR_LR Rip From: Ra2rd93
 P_R_S_E Rip From: PocketMonstersMusic
-Title Music Rip From: Justin Baxter
 Sound Effect Rip From: Pokémon Essentials v13 2012-12-02 (Flameguru, Poccil (Peter O.), Maruno)
 Riviera Music: Paineity
 Mega Man Battle Network 6 Music: Frygoon
-Pokémon Theme Song Rip From: Filizew
 Shing Soul II Rip From: 葉昱廷
 
 ==================================================
