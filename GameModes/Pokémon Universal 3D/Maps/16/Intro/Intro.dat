@@ -1,0 +1,16 @@
+﻿Main:
+{"Level"{LEV[{"Name"{str[???]}}{"MusicLoop"{str[Stop]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[16.Hoenn]}}]}}
+{"Actions"{LEV[{"CanTeleport"{bool[1]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[1]}}{"Weather"{int[1]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System\GlobalMain]}}]}}
+
+Floor.Layer.1
+{"Floor"{ENT[{"Size"{intArr[7,1]}}{"Position"{intArr[0,0,1]}}{"TexturePath"{str[House]}}{"Texture"{rec[16,0,8,8]}}]}}
+Floor.Layer.2
+{"Floor"{ENT[{"Size"{intArr[7,1]}}{"Position"{intArr[0,0,2]}}{"TexturePath"{str[House]}}{"Texture"{rec[16,0,8,8]}}]}}
+Floor.Layer.3
+{"Floor"{ENT[{"Size"{intArr[7,1]}}{"Position"{intArr[0,0,3]}}{"TexturePath"{str[House]}}{"Texture"{rec[16,0,8,8]}}]}}
+Floor.Layer.4
+{"Floor"{ENT[{"Size"{intArr[7,1]}}{"Position"{intArr[0,0,4]}}{"TexturePath"{str[House]}}{"Texture"{rec[16,0,8,8]}}]}}
+Floor.Layer.5
+{"Floor"{ENT[{"Size"{intArr[7,1]}}{"Position"{intArr[0,0,5]}}{"TexturePath"{str[House]}}{"Texture"{rec[16,0,8,8]}}]}}
+Floor.Layer.6
+{"Floor"{ENT[{"Size"{intArr[7,1]}}{"Position"{intArr[0,0,6]}}{"TexturePath"{str[House]}}{"Texture"{rec[16,0,8,8]}}]}}

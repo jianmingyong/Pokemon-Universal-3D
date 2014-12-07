@@ -1,0 +1,26 @@
+﻿version=2
+:while:<Storage.get(int,System.ScreenState)>=1
+	@Script.start(System\Intro\15\Intro.1)
+	@Script.start(System\Intro\15\Intro.<System.random(2,8)>)
+	@Camera.set(<Player.position>,0,0)
+	@Level.update
+	@Music.play(PMD_EOT_D_S Top Menu Theme)
+	@Text.show(Welcome to Pokémon Mystery Dungeon~Universal Rescue Team)
+	@Text.show(Please choose an option.)
+	@Options.setcancelindex(1)
+	@Options.show(Lost Forest,Exit)
+	:when:Lost Forest
+		@Storage.set(int,System.ScreenState,2)
+		@Player.warp(15\LostForest\LostForest.Spring.dat,13,0.1,25,0)
+		@Level.update
+		@Player.move(12)
+		@Register.change(System\Intro\15\LostForest.AttemptWrong,false)
+		@Register.change(System\Intro\15\LostForest.NumberofAttempts,0)
+		@Register.change(System\Intro\15\LostForest.Season,Spring)
+		@Register.change(System\Intro\15\LostForest.Puzzle,1)
+	:when:Exit
+		@Storage.set(int,System.ScreenState,0)
+		@Script.start(System\ScreenState\ScreenState.0)
+	:endwhen
+:endwhile
+:end

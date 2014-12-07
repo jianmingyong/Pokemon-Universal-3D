@@ -1,0 +1,20 @@
+version=2
+:if:<Register.value(System.Game ID)>=12 <and> <not><Level.filename>=GlobalMain
+	@Register.change(System.PlayerPosition.X.12,<Player.position(x)>)
+	@Register.change(System.PlayerPosition.Y.12,<Player.position(y)>+0.1)
+	@Register.change(System.PlayerPosition.Z.12,<Player.position(z)>)
+	@Register.change(System.LastMap.12,<Level.mapfile>)
+	:if:<Register.registered(System.Load.12)>=false
+		@Register.register(System.Load.12)
+	:endif
+:endif
+:if:<Register.value(System.Game ID)>=16 <and> <not><Level.filename>=GlobalMain
+	@Register.change(System.PlayerPosition.X.16,<Player.position(x)>)
+	@Register.change(System.PlayerPosition.Y.16,<Player.position(y)>+0.1)
+	@Register.change(System.PlayerPosition.Z.16,<Player.position(z)>)
+	@Register.change(System.LastMap.16,<Level.mapfile>)
+	:if:<Register.registered(System.Load.16)>=false
+		@Register.register(System.Load.16)
+	:endif
+:endif
+:end

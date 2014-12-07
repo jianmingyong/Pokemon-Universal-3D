@@ -16,8 +16,8 @@ Tree:
 {"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"Size"{intArr[12,8]}}{"Position"{sngArr[14.5,0.5,18.5]}}{"TexturePath"{str[15\Tileset0001]}}{"Textures"{recArr[[48,16,112,128]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[2,2,1]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}{"Steps"{sngArr[2,1,2]}}]}}
 
 Sign:
-{"EntityField"{ENT[{"EntityID"{str[SignBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[13,0,12]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[64,0,16,16][80,0,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[15\LostForest\013000012]}}]}}
-{"EntityField"{ENT[{"EntityID"{str[SignBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[12,0,12]}}{"TexturePath"{str[12\Tileset0001]}}{"Textures"{recArr[[64,0,16,16][80,0,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[15\LostForest\012000012]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[SignBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[13,0,12]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[64,0,16,16][80,0,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[15\LostForest\013000012]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[SignBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[12,0,12]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[64,0,16,16][80,0,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[15\LostForest\012000012]}}]}}
 
 ActionScript:
 North:

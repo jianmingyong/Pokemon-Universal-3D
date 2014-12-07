@@ -1,17 +1,19 @@
 version=2
-:while:<Entity.opacity(121)><100
+@Storage.set(bool,System.IsBusy,false)
+:while:<Entity.opacity(121)><100 <and> <Storage.get(bool,System.IsBusy)>=false
 	@Entity.setopacity(121,<Entity.opacity(121)>+10)
 	@Level.wait(1)
 	@Level.update
 	:if:<Entity.opacity(121)>=100
-		:end
+		@Storage.set(bool,System.IsBusy,true)
 	:endif
 :endwhile
-:while:<Entity.opacity(121)>>0
+:while:<Entity.opacity(121)>>0 <and> <Storage.get(bool,System.IsBusy)>=false
 	@Entity.setopacity(121,<Entity.opacity(121)>-10)
 	@Level.wait(1)
 	@Level.update
 	:if:<Entity.opacity(121)>=0
-		:end
+		@Storage.set(bool,System.IsBusy,true)
 	:endif
 :endwhile
+:end

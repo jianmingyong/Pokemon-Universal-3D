@@ -1,7 +1,13 @@
 version=2
 @Text.log([CODE])
-@Text.log(Pokémon Universal 3D Crash Log V <Register.value(System.Game Version)>)
-@Text.log(Pokémon Universal 3D has crashed!)
+:if:<Register.value(System.Game ID)>=12
+	@Text.log(Pokémon Universal 3D Crash Log V <Register.value(System.Game Version)>)
+	@Text.log(Pokémon Universal 3D has crashed!)
+:endif
+:if:<Register.value(System.Game ID)>=16
+	@Text.log(Pokémon Dark Energy 3D Crash Log V <Register.value(System.Game Version)>)
+	@Text.log(Pokémon Dark Energy 3D has crashed!)
+:endif
 :select:<System.random(1,23)>
 :when:1
 	@Text.log(// I AM ERROR!)
@@ -108,7 +114,12 @@ version=2
 @Text.log(Game information:)
 @Text.log()
 @Text.log(Compatible Pokémon 3D Indev version: <Register.value(System.P3D Version)>)
-@Text.log(Pokemon Universal 3D Indev version: <Register.value(System.Game Version)>)
+:if:<Register.value(System.Game ID)>=12
+	@Text.log(Pokémon Universal 3D Indev version: <Register.value(System.Game Version)>)
+:endif
+:if:<Register.value(System.Game ID)>=16
+	@Text.log(Pokémon Dark Energy 3D Indev version: <Register.value(System.Game Version)>)
+:endif
 @Text.log(Active Game ID: <Register.value(System.Game ID)>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
@@ -124,7 +135,12 @@ version=2
 	@Text.log()
 	@Text.log(Message: The game is unable to process a conditional script. It might be a syntax error.)
 	@Text.log(HelpLink: No helplink available.)
-	@Text.log(Data: "Pokemon\GameModes\Pokémon Universal 3D\Scripts\<Storage.get(str,System.ActionScript)>")
+	:if:<Register.value(System.Game ID)>=12
+		@Text.log(Data: "Pokemon\GameModes\Pokémon Universal 3D\Scripts\<Storage.get(str,System.ActionScript)>")
+	:endif
+	:if:<Register.value(System.Game ID)>=16
+		@Text.log(Data: "Pokemon\GameModes\Pokémon Dark Energy 3D\Scripts\<Storage.get(str,System.ActionScript)>")
+	:endif
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()

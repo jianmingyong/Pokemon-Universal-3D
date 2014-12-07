@@ -1,0 +1,34 @@
+version=2
+@Screen.fadeout
+:if:<Register.registered(System.Load.12)>=true <and> <Register.value(System.Game ID)>=12
+	@Title.add(Loading save file. Please wait for a while.,2147483647,255,255,255,4,true,0,0)
+	@Script.start(System\GlobalAntiCheat)
+	@Storage.set(int,System.ScreenState,2)
+	:if:<not><Level.mapfile>=<Register.value(System.LastMap.12)>
+		@Player.warp(<Register.value(System.LastMap.12)>,<Register.value(System.PlayerPosition.X.12)>,<Register.value(System.PlayerPosition.Y.12)>+0.1,<Register.value(System.PlayerPosition.Z.12)>,0)
+		@Level.update
+	:else
+		@Level.wait(1)
+		@Level.reload
+	:endif
+	@Screen.fadein
+	:end
+:endif
+:if:<Register.registered(System.Load.16)>=true <and> <Register.value(System.Game ID)>=16
+	@Title.add(Loading save file. Please wait for a while.,2147483647,255,255,255,4,true,0,0)
+	@Script.start(System\GlobalAntiCheat)
+	@Storage.set(int,System.ScreenState,2)
+	:if:<not><Level.mapfile>=<Register.value(System.LastMap.16)>
+		@Player.warp(<Register.value(System.LastMap.16)>,<Register.value(System.PlayerPosition.X.12)>,<Register.value(System.PlayerPosition.Y.12)>+0.1,<Register.value(System.PlayerPosition.Z.12)>,0)
+		@Level.update
+	:else
+		@Level.wait(1)
+		@Level.reload
+	:endif
+	@Screen.fadein
+	:end
+:endif
+@Text.show(No valid save found.~Game will attempt to restart.)
+@Storage.set(int,System.ScreenState,0)
+@Screen.fadein
+@Script.start(System\ScreenState\ScreenState.0)

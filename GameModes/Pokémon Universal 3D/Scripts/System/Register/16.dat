@@ -1,0 +1,14 @@
+version=2
+:if:<Register.registered(System.LastMap.16)>=false
+	@Register.register(System.LastMap.16,str,Nothing)
+:endif
+:if:<Register.registered(System.PlayerPosition.X.16)>=false
+	@Register.register(System.PlayerPosition.X.16,int,<Player.position(x)>)
+:endif
+:if:<Register.registered(System.PlayerPosition.Y.16)>=false
+	@Register.register(System.PlayerPosition.Y.16,int,<Player.position(y)>)
+:endif
+:if:<Register.registered(System.PlayerPosition.Z.16)>=false
+	@Register.register(System.PlayerPosition.Z.16,int,<Player.position(z)>)
+:endif
+:end

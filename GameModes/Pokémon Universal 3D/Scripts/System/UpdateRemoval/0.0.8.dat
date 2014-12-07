@@ -1,0 +1,26 @@
+version=2
+:if:<Register.registered(System\Intro\15\Intro)>=true
+	@Register.unregister(System\Intro\15\Intro,int)
+:endif
+:if:<Register.registered(System\Intro\15\Intro.1)>=true
+	@Register.unregister(System\Intro\15\Intro.1,int)
+:endif
+:if:<Register.registered(System\Intro\15\Intro.2)>=true
+	@Register.unregister(System\Intro\15\Intro.2,int)
+:endif
+:if:<Register.registered(System\Intro\15\Intro.3)>=true
+	@Register.unregister(System\Intro\15\Intro.3,int)
+:endif
+:if:<Register.registered(System\Intro\15\Intro.4)>=true
+	@Register.unregister(System\Intro\15\Intro.4,int)
+:endif
+:if:<Register.registered(System\Intro\15\Intro.5)>=true
+	@Register.unregister(System\Intro\15\Intro.5,int)
+:endif
+:if:<Register.registered(System\Intro\15\Intro.6)>=true
+	@Register.unregister(System\Intro\15\Intro.6,int)
+:endif
+:if:<Register.registered(System\Intro\15\Intro.7)>=true
+	@Register.unregister(System\Intro\15\Intro.7,int)
+:endif
+:end

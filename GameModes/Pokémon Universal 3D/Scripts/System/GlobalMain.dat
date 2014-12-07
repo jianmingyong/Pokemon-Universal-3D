@@ -6,7 +6,6 @@
 #. Intro Screen - @Storage.set(int,System.ScreenState,1)
 #. World		- @Storage.set(int,System.ScreenState,2)
 #. Error		- @Storage.set(int,System.ScreenState,3)
-#. API: v0.51.1.0.0.7
 @Level.update
 @Title.clear
 @Camera.defix
@@ -22,40 +21,15 @@
 	#End Define Variable.
 	@Script.start(System\GlobalRegister)
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
-	#Define Store Variable.
-	:if:<Register.value(System.Game ID)>=12 <and> <not><Level.filename>=GlobalMain
-		@Register.change(System.PlayerPosition.X.12,<Player.position(x)>)
-		@Register.change(System.PlayerPosition.Y.12,<Player.position(y)>+0.1)
-		@Register.change(System.PlayerPosition.Z.12,<Player.position(z)>)
-		@Register.change(System.LastMap.12,<Level.mapfile>)
-		:if:<Register.registered(System.Load.12)>=false
-			@Register.register(System.Load.12)
-		:endif
-	:endif
-	#End Define Variable.
 	@Script.start(System\GlobalOption)
+	@Script.start(System\GlobalSave)
 	@Player.save
 	:if:<Storage.get(bool,System.SkipMainMenu)>=false
 		@Music.play(Stop)
 		@Script.start(System\ScreenState\ScreenState.0)
 	:endif
 	:if:<Storage.get(bool,System.SkipMainMenu)>=true
-		:if:<Register.registered(System.Load.12)>=true
-			@Title.add(Loading save file. Please wait for a while.,2147483647,0,0,0,2,true,0,0)
-			@Script.start(System\GlobalAntiCheat)
-			@Storage.set(int,System.ScreenState,2)
-			:if:<not><Level.mapfile>=<Register.value(System.LastMap.12)>
-				@Player.warp(<Register.value(System.LastMap.12)>,<Register.value(System.PlayerPosition.X.12)>,<Register.value(System.PlayerPosition.Y.12)>+0.1,<Register.value(System.PlayerPosition.Z.12)>,<Register.value(System.PlayerFacing.12)>)
-				@Level.update
-			:else
-				@Level.wait(1)
-				@Level.reload
-			:endif
-		:else
-			@Storage.set(int,System.ScreenState,1)
-			@Register.change(System.Game ID,12)
-			@Script.start(System\ScreenState\ScreenState.1)
-		:endif
+		@Script.start(System\GlobalLoad)
 	:endif
 :else
 	@Script.start(<filesystem.pathup(<Level.mapfile>)>\<Level.filename>)

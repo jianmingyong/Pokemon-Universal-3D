@@ -10,6 +10,10 @@ version=2
 # Do not touch anything below this line unless you are skipping the main menu.
 #######################################################################################.
 :if:<Storage.get(bool,System.SkipMainMenu)>=true
+	#. To change which save to load.
+	#. Valid option: Pokémon Emerald [12], Pokémon Dark Energy [16]
+	@Register.change(System.Game ID,12)
+	
 	#. To change whether to skip the anti cheat checks.
 	#. Valid option: true, false
 	@Register.change(System.SandBoxMode,false)
