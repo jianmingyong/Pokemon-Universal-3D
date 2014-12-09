@@ -269,7 +269,7 @@ version=2
 	@Text.log(Error ID: 4)
 	@Text.log(Error Type: Content Pack Error)
 	@Text.log(Error Description: The game crashed trying to load inactive content pack.)
-	@Text.log(Error Solution: Make sure the content pack given in the message is activate and try again.)
+	@Text.log(Error Solution: Make sure the content pack given in the message is activated and try again.)
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()

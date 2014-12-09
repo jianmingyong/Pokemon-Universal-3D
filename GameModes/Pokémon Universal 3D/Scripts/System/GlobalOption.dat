@@ -1,25 +1,25 @@
 version=2
 #######################################################################################
-# This is a option file. It will affect the game.
+# This is a option file. It will affect the game
 #######################################################################################
-#. To change whether to skip the main menu screen in game.
-#. Valid option: true, false
+# To change whether to skip the main menu screen in game.
+# Valid option: true, false
 @Storage.set(bool,System.SkipMainMenu,false)
 
 #######################################################################################
-# Do not touch anything below this line unless you are skipping the main menu.
-#######################################################################################.
+# Do not touch anything below this line unless you are skipping the main menu
+#######################################################################################
 :if:<Storage.get(bool,System.SkipMainMenu)>=true
-	#. To change which save to load.
-	#. Valid option: Pokémon Emerald [12], Pokémon Dark Energy [16]
+	# To change which save to load.
+	# Valid option: Pokémon Emerald [12], Pokémon Dark Energy [16]
 	@Register.change(System.Game ID,12)
 	
-	#. To change whether to skip the anti cheat checks.
-	#. Valid option: true, false
+	# To change whether to skip the anti cheat checks.
+	# Valid option: true, false
 	@Register.change(System.SandBoxMode,false)
 	
-	#. To change whether to show 3D Buildings.
-	#. Valid option: true, false
+	# To change whether to show 3D Buildings.
+	# Valid option: true, false
 	@Register.change(System.3D Buildings,false)
 :endif
 :end
