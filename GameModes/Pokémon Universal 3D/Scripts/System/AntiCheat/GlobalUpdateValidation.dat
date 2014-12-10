@@ -1,10 +1,10 @@
 ﻿version=2
 ##################################
 # Anti Cheat Initialization File # 
-##################################.
-# Define Variable.
+##################################
+# Define Variable
 @Storage.set(int,System.GlobalUpdateValidation.TotalError,0)
-# End Define Variable.
+# End Define Variable
 :if:<Register.registered(System.P3D Version)>=false
 	@Storage.set(str,System.GlobalUpdateValidation.<Storage.get(int,System.GlobalUpdateValidation.TotalError)>,[Update validation result: "System.P3D Version" does not exist.])
 	@Storage.set(int,System.GlobalUpdateValidation.TotalError,<Storage.get(int,System.GlobalUpdateValidation.TotalError)>+1)

@@ -1,7 +1,7 @@
 version=2
 ##################################
 # Anti Cheat Initialization File # 
-##################################.
+##################################
 :if:<Register.value(System.SandBoxMode)>=false
 	@Script.start(System\AntiCheat\GlobalUpdateValidation)
 	@Script.start(System\AntiCheat\GlobalRegisterValidation)

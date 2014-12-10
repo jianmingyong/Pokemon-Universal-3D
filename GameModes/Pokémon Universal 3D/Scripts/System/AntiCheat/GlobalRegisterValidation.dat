@@ -1,11 +1,11 @@
 ﻿version=2
 ##################################
 # Anti Cheat Initialization File # 
-##################################.
-# Define Variable.
+##################################
+# Define Variable
 @Storage.set(int,System.GlobalRegisterValidation.TotalError,0)
-# End Define Variable.
-# Define System Variable.
+# End Define Variable
+# Define System Variable
 :if:<Register.registered(System.MysteryGift)>=false
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.MysteryGift" does not exist.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
@@ -38,8 +38,8 @@
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.3D Buildings" has an invalid value.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
 :endif
-# End Define System Variable.
-# Define GameMode ID 12 Variable.
+# End Define System Variable
+# Define GameMode ID 12 Variable
 :if:<Register.registered(System.LastMap.12)>=false
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.LastMap.12" does not exist.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
@@ -356,7 +356,7 @@
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\Route104\032000041" has an invalid value.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
 :endif
-# End Define GameMode ID 12 Variable.
+# End Define GameMode ID 12 Variable
 :if:<Storage.get(int,System.GlobalRegisterValidation.TotalError)>>0
 	@Storage.set(int,System.ErrorLog.ErrorID2,1)
 	@Storage.set(int,System.ScreenState,3)

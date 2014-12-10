@@ -10,7 +10,7 @@ Region|12.Hoenn
 IniMusic|P_OR_AS Rival Battle_intro
 DefeatMusic|P_R_S_E Victory! Trainer
 BattleMusic|P_OR_AS Rival Battle
-Pokemon1|258,5
+Pokemon1|{"Pokemon"[258]}{"Experience"[135]}{"Gender"[0]}{"EggSteps"[0]}{"Item"[0]}{"ItemData"[]}{"NickName"[]}{"Level"[5]}{"OT"[6837]}{"Ability"[67]}{"Status"[]}{"Nature"[2]}{"CatchLocation"[Littleroot Town]}{"CatchTrainer"[jianmingyong]}{"CatchBall"[1]}{"CatchMethod"[random reason]}{"Friendship"[70]}{"isShiny"[0]}{"Attack1"[33,35,35]}{"Attack2"[]}{"Attack3"[]}{"Attack4"[]}{"HP"[20]}{"EVs"[0,0,0,0,0,0]}{"IVs"[0,27,5,23,7,13]}{"AdditionalData"[]}{"IDValue"[Je1NMsvDfs5]}
 Pokemon2|
 Pokemon3|
 Pokemon4|

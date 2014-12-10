@@ -84,10 +84,8 @@ version=2
 		:if:<not><Register.value(System\Intro\15\LostForest.NumberofAttempts)>=4
 			@Register.change(System\Intro\15\LostForest.AttemptWrong,true)
 		:else
-			@Player.warp(System\GlobalIntro.dat,0,0,0,0)
-			@Level.update
-			@Script.start(System\Intro\GlobalBackground)
-			@Script.start(System\GlobalIntro)
+			@Storage.set(int,System.ScreenState,1)
+			@Script.start(System\ScreenState\ScreenState.1)
 		:endif
 		@Register.change(System\Intro\15\LostForest.NumberofAttempts,<Register.value(System\Intro\15\LostForest.NumberofAttempts)>+1)
 		@Register.change(System\Intro\15\LostForest.Season,Spring)

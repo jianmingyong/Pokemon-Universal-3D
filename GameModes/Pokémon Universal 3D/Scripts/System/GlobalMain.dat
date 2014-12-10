@@ -1,16 +1,16 @@
 ﻿version=2
 #############################################################
-# Welcome to the Pokémon Universal 3D Main Initialize File. #
+# Welcome to the Pokémon Universal 3D Main Initialize File  #
 #############################################################
-#. Main Menu 	- @Storage.set(int,System.ScreenState,0)
-#. Intro Screen - @Storage.set(int,System.ScreenState,1)
-#. World		- @Storage.set(int,System.ScreenState,2)
-#. Error		- @Storage.set(int,System.ScreenState,3)
+# Main Menu 	- @Storage.set(int,System.ScreenState,0)
+# Intro Screen	- @Storage.set(int,System.ScreenState,1)
+# World			- @Storage.set(int,System.ScreenState,2)
+# Error			- @Storage.set(int,System.ScreenState,3)
 @Level.update
 @Title.clear
 @Camera.defix
 :if:<Storage.count(int)>=0
-	#Define Variable.
+	# Define Variable
 	@Storage.set(int,System.ScreenState,0)
 	@Storage.set(int,System.ErrorLog.ErrorID0,0)
 	@Storage.set(int,System.ErrorLog.ErrorID1,0)
@@ -18,7 +18,7 @@
 	@Storage.set(int,System.ErrorLog.ErrorID3,0)
 	@Storage.set(int,System.ErrorLog.ErrorID4,0)
 	@Storage.set(str,System.ActionScript,GlobalMain.dat)
-	#End Define Variable.
+	# End Define Variable
 	@Script.start(System\GlobalRegister)
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
 	@Script.start(System\GlobalOption)
