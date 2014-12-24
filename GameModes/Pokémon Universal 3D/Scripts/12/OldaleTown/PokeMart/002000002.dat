@@ -4,17 +4,8 @@ version=2
 	@Text.show(Welcome!)
 	@Sound.play(Select)
 	@Text.show(How may I serve you?)
-	@Options.show(BUY,SELL,QUIT)
-	:when:BUY
-		@Sound.play(Select)
-		@Screen.trade({18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1},1,0)
-	:when:SELL
-		@Sound.play(Select)
-		@Screen.trade({0|0|0},0,1)
-	:when:QUIT
-		@Sound.play(Select)
-		@Text.show(Please come again!)
-	:endwhen
+	@Screen.trade({18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1},true,true)
+	@Text.show(Please come again!)
 	:end
 :endif
 :if:<Register.value(12\OldaleTown\PokeMart\002000002)>=2
@@ -22,17 +13,8 @@ version=2
 	@Text.show(Welcome!)
 	@Sound.play(Select)
 	@Text.show(How may I serve you?)
-	@Options.show(BUY,SELL,QUIT)
-	:when:BUY
-		@Sound.play(Select)
-		@Screen.trade({5|99-<Inventory.countitem(5)>|-1}{18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1},1,0)
-	:when:SELL
-		@Sound.play(Select)
-		@Screen.trade({0|0|0},0,1)
-	:when:QUIT
-		@Sound.play(Select)
-		@Text.show(Please come again!)
-	:endwhen
+	@Screen.trade({5|99-<Inventory.countitem(5)>|-1}{18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1},true,true)
+	@Text.show(Please come again!)
 	:end
 :endif
 @Storage.set(str,System.ActionScript,12\OldaleTown\PokeMart\002000002.dat)

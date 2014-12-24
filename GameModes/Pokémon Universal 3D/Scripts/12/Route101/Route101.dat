@@ -155,7 +155,7 @@ version=2
 		@NPC.spawn(13,0,13,0,,[POKEMON|N]263,true,1,,009000015,Still)
 	:endif
 	:if:<NPC.exists(024000008)>=false
-		@NPC.spawn(24,0,8,0,,NPC 35,false,2,,024000008,Looking)
+		@NPC.spawn(24,0,8,1,12\Route101\024000008,NPC 35,false,2,,024000008,Looking)
 	:endif
 	@Entity.warp(015000014,15,-0.25,14)
 	:end
@@ -169,7 +169,7 @@ version=2
 	@Entity.remove(018000018)
 	@Entity.remove(019000018)
 	:if:<NPC.exists(024000008)>=false
-		@NPC.spawn(24,0,8,0,,NPC 35,false,2,,024000008,Looking)
+		@NPC.spawn(24,0,8,1,12\Route101\024000008,NPC 35,false,2,,024000008,Looking)
 	:endif
 	:end
 :endif

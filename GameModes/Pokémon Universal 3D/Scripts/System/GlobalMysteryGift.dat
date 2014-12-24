@@ -1,8 +1,6 @@
 ﻿version=2
 @Sound.play(Select)
-@Text.show(Welcome to Dialga Mystery Gift~Transporter.)
-@Sound.play(Select)
-@Text.show(To use this feature, your game needs to~be saved.)
+@Text.show(Welcome to Dialga Mystery Gift Transporter.~Game will be saved after a proper redeem.)
 @Sound.play(Select)
 @Text.show(Do you want to continue?)
 @Options.setcancelindex(1)
@@ -34,18 +32,8 @@
 		@Sound.play(Save)
 		:end
 	:endif
-	:if:<System.lastinput>=QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal <and> <Register.registered(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=true <and> <Register.value(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal)>=1
-		@Sound.play(Select)
-		@Text.show(Sorry but the code is not valid anymore.)
-		@Sound.play(Select)
-		@Text.show(Thank you for using Dialga Mystery Gift~Transporter.)
-		@Player.save
-		@Sound.play(Save)
-		:end
-	:endif
-	@Text.show(No valid Pokémon Data found.)
+	@Text.show(The code you enter is not valid.)
 	@Register.unregister(<System.lastinput>)
-	@Player.save
 :when:NO
 :endwhen
 @Text.show(Thank you for using Dialga Mystery Gift~Transporter.)

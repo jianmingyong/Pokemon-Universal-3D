@@ -11,6 +11,9 @@ version=2
 :if:<Register.registered(System.PlayerPosition.Z.12)>=false
 	@Register.register(System.PlayerPosition.Z.12,int,<Player.position(z)>)
 :endif
+:if:<Register.registered(System.PlayerFacing.12)>=false
+	@Register.register(System.PlayerFacing.12,int,<Player.facing>)
+:endif
 :if:<Register.registered(System.PlayerGender.12)>=false
 	@Register.register(System.PlayerGender.12,str,nothing)
 :endif

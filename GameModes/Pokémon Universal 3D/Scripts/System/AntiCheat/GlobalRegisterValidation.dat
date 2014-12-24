@@ -56,6 +56,10 @@
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.PlayerPosition.Z.12" does not exist.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
 :endif
+:if:<Register.registered(System.PlayerFacing.12)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.PlayerFacing.12" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
 :if:<Register.registered(System.PlayerGender.12)>=false
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "System.PlayerGender.12" does not exist.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)

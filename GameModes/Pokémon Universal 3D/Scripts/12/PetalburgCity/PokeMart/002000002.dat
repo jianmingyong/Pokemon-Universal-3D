@@ -4,17 +4,9 @@ version=2
 	@Text.show(Welcome!)
 	@Sound.play(Select)
 	@Text.show(How may I serve you?)
-	@Options.show(BUY,SELL,QUIT)
-	:when:BUY
-		@Sound.play(Select)
-		@Screen.trade({5|99-<Inventory.countitem(5)>|-1}{18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1}{19|99-<Inventory.countitem(19)>|-1}{20|99-<Inventory.countitem(20)>|-1}{52|99-<Inventory.countitem(52)>|-1}{49|99-<Inventory.countitem(49)>|-1}{51|99-<Inventory.countitem(51)>|-1}{307|99-<Inventory.countitem(307)>|-1},1,0)
-	:when:SELL
-		@Sound.play(Select)
-		@Screen.trade({0|0|0},0,1)
-	:when:QUIT
-		@Sound.play(Select)
-		@Text.show(Please come again!)
-	:endwhen
+	@Sound.play(Select)
+	@Screen.trade({5|99-<Inventory.countitem(5)>|5}{18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1}{19|99-<Inventory.countitem(19)>|-1}{20|99-<Inventory.countitem(20)>|-1}{52|99-<Inventory.countitem(52)>|-1}{49|99-<Inventory.countitem(49)>|-1}{51|99-<Inventory.countitem(51)>|-1}{307|99-<Inventory.countitem(307)>|-1},true,true)
+	@Text.show(Please come again!)
 	:end
 :endif
 :if:<Register.value(12\PetalburgCity\PokeMart\002000002)>=2
@@ -22,17 +14,8 @@ version=2
 	@Text.show(Welcome!)
 	@Sound.play(Select)
 	@Text.show(How may I serve you?)
-	@Options.show(BUY,SELL,QUIT)
-	:when:BUY
-		@Sound.play(Select)
-		@Screen.trade({5|99-<Inventory.countitem(5)>|-1}{4|99-<Inventory.countitem(4)>|-1}{18|99-<Inventory.countitem(18)>|-1}{17|99-<Inventory.countitem(17)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1}{19|99-<Inventory.countitem(19)>|-1}{20|99-<Inventory.countitem(20)>|-1}{52|99-<Inventory.countitem(52)>|-1}{49|99-<Inventory.countitem(49)>|-1}{51|99-<Inventory.countitem(51)>|-1}{307|99-<Inventory.countitem(307)>|-1},1,0)
-	:when:SELL
-		@Sound.play(Select)
-		@Screen.trade({0|0|0},0,1)
-	:when:QUIT
-		@Sound.play(Select)
-		@Text.show(Please come again!)
-	:endwhen
+	@Screen.trade({5|99-<Inventory.countitem(5)>|-1}{4|99-<Inventory.countitem(4)>|-1}{18|99-<Inventory.countitem(18)>|-1}{17|99-<Inventory.countitem(17)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1}{19|99-<Inventory.countitem(19)>|-1}{20|99-<Inventory.countitem(20)>|-1}{52|99-<Inventory.countitem(52)>|-1}{49|99-<Inventory.countitem(49)>|-1}{51|99-<Inventory.countitem(51)>|-1}{307|99-<Inventory.countitem(307)>|-1},true,true)
+	@Text.show(Please come again!)
 	:end
 :endif
 @Storage.set(str,System.ActionScript,12\PetalburgCity\PokeMart\002000002.dat)

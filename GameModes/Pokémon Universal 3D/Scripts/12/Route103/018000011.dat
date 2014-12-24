@@ -1,7 +1,7 @@
 ﻿version=2
 @Sound.play(Select)
 @Text.show(<Rival.name>: Let's see... The POKéMON found~on ROUTE 103 include...)
-@Music.play(P_R_S_E <Rival.name>'s Theme)
+@Music.play(P_OR_AS <Rival.name>'s Theme)
 @Sound.play(jumptoball)
 @Entity.showmessagebulb(1|18|0.8|11)
 @Text.show(Oh, hi, <Player.name>!)
@@ -20,7 +20,7 @@
 :if:<Register.value(System.Starter.12)>=258
 	@Battle.trainer(12\Route103\018000011.252)
 :endif
-@Music.play(P_R_S_E <Rival.name>'s Theme)
+@Music.play(P_OR_AS <Rival.name>'s Theme)
 @Text.show(<Rival.name>: I think I know why my dad has~an eye out for you now.)
 @Sound.play(Select)
 @Text.show(I mean, you just got that POKéMON,~but it already likes you.)

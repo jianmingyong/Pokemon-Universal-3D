@@ -6,7 +6,7 @@
 :endif
 @Sound.play(jumptoball)
 @Entity.showmessagebulb(1|2|0.8|7)
-@Music.play(P_R_S_E <Rival.name>'s Theme)
+@Music.play(P_OR_AS <Rival.name>'s Theme)
 @NPC.turn(002000007,1)
 @NPC.move(002000007,1)
 @NPC.turn(002000007,0)
