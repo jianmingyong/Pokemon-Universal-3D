@@ -1,0 +1,22 @@
+[TRAINER FORMAT]
+Name|Darian
+TrainerClass|Fisherman
+Money|360
+IntroMessage|I fished up a tough-looking POKéMON!*It has this magical quality to it!~It surely looks tough, yes it does!
+OutroMessage|What the...
+DefeatMessage|Hey, MAGIKARP, you sure don't live up~to your name, do you?
+TextureID|Fisherman
+Region|12.Hoenn
+IniMusic|P_OR_AS Trainer Battle_intro
+DefeatMusic|P_R_S_E Victory! Trainer
+BattleMusic|P_OR_AS Trainer Battle
+Pokemon1|129,9
+Pokemon2|
+Pokemon3|
+Pokemon4|
+Pokemon5|
+Pokemon6|
+Items|
+Gender|0
+AI|2
+IntroSequence|Green,Green

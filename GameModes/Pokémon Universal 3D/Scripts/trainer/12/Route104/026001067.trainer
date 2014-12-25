@@ -1,0 +1,22 @@
+[TRAINER FORMAT]
+Name|Billy
+TrainerClass|Youngster
+Money|112
+IntroMessage|Leaving footprints in the sand is~so fun!
+OutroMessage|Waah! I got sand in my runners!~They're all gritty!
+DefeatMessage|I want to leave my footprints in~the sand everywhere, but they*disappear quickly...
+TextureID|Youngster
+Region|12.Hoenn
+IniMusic|P_OR_AS Trainer Battle_intro
+DefeatMusic|P_R_S_E Victory! Trainer
+BattleMusic|P_OR_AS Trainer Battle
+Pokemon1|263,5
+Pokemon2|273,7
+Pokemon3|
+Pokemon4|
+Pokemon5|
+Pokemon6|
+Items|
+Gender|0
+AI|2
+IntroSequence|Green,Green

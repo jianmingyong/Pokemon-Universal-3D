@@ -101,9 +101,9 @@ Routes:
 {"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[12\Route103\Route103.dat]}{"Position"[7,10]}{"Direction"[Horizontal]}{"RouteType"[Water]}
 {"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[12\Route103\Route103.dat]}{"Position"[8,10]}{"Direction"[Horizontal]}{"RouteType"[Land]}
 
-{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[12\Route103\Route104.dat]}{"Position"[1,11]}{"Direction"[TRight]}{"RouteType"[Water]}
-{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[12\Route103\Route104.dat]}{"Position"[1,10]}{"Direction"[Vertical]}{"RouteType"[Land]}
-{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[12\Route103\Route104.dat]}{"Position"[1,9]}{"Direction"[Vertical]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[12\Route103\Route104.dat]}{"Position"[1,11]}{"Direction"[TRight]}{"RouteType"[Water]}{"FlyTo"[12\Route104\Route104.dat,35,12.1,67]}
+{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[12\Route103\Route104.dat]}{"Position"[1,10]}{"Direction"[Vertical]}{"RouteType"[Land]}{"FlyTo"[12\Route104\Route104.dat,31,12.1,6]}
+{"PlaceType"[Route]}{"Name"[Route 104]}{"MapFiles"[12\Route103\Route104.dat]}{"Position"[1,9]}{"Direction"[Vertical]}{"RouteType"[Land]}{"FlyTo"[12\Route104\Route104.dat,31,12.1,6]}
 
 {"PlaceType"[Route]}{"Name"[Route 105]}{"MapFiles"[]}{"Position"[1,14]}{"Direction"[Vertical]}{"RouteType"[Water]}
 {"PlaceType"[Route]}{"Name"[Route 105]}{"MapFiles"[]}{"Position"[1,13]}{"Direction"[Vertical]}{"RouteType"[Water]}
@@ -257,3 +257,5 @@ Routes:
 
 Places:
 {"PlaceType"[Place]}{"Name"[Mystery Dungeon]}{"Mapfiles"[]}{"Position"[28,16]}{"Size"[Small]}
+
+{"PlaceType"[Place]}{"Name"[Petalburg Woods]}{"Mapfiles"[12\PetalburgWoods\PetalburgWoods.dat]}{"Position"[1,10]}{"Size"[Small]}

@@ -17,4 +17,7 @@ version=2
 :if:<NPC.exists(036001074)>=false
 	@NPC.spawn(36,-1,74,1,12\Route104\036001074,NPC 14,false,0,,036001074,Still)
 :endif
+:if:<NPC.exists(023001059)>=false
+	@NPC.spawn(23,-1,59,1,12\Route104\023001059,Fisherman,false,1,,023001059,Still)
+:endif
 :end

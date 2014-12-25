@@ -351,13 +351,13 @@ Ledge.Layer.21
 {"EntityField"{ENT[{"EntityID"{str[Step]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[8,0,21]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[16,16,16,16][128,0,16,16]]}}{"TextureIndex"{intArr[1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[7]}}{"Rotation"{int[0]}}]}}
 
 Trainer.Layer.12
-{"NPC"{NPC[{"Name"{str[019000012]}}{"ID"{int[019000012]}}{"Position"{sngArr[19,0,12]}}{"TextureID"{str[14]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\Route102\019000012]}}{"Rotation"{int[2]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Name"{str[019000012]}}{"ID"{int[019000012]}}{"Position"{sngArr[19,0,12]}}{"TextureID"{str[Youngster]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\Route102\019000012]}}{"Rotation"{int[2]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
 Trainer.Layer.15
-{"NPC"{NPC[{"Name"{str[008000015]}}{"ID"{int[008000015]}}{"Position"{sngArr[8,0,15]}}{"TextureID"{str[PinkShirtGirl]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\Route102\008000015]}}{"Rotation"{int[2]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Name"{str[008000015]}}{"ID"{int[008000015]}}{"Position"{sngArr[8,0,15]}}{"TextureID"{str[Lass]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\Route102\008000015]}}{"Rotation"{int[2]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
 Trainer.Layer.22
-{"NPC"{NPC[{"Name"{str[033000022]}}{"ID"{int[033000022]}}{"Position"{sngArr[33,0,22]}}{"TextureID"{str[14]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\Route102\033000022]}}{"Rotation"{int[2]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Name"{str[033000022]}}{"ID"{int[033000022]}}{"Position"{sngArr[33,0,22]}}{"TextureID"{str[Youngster]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\Route102\033000022]}}{"Rotation"{int[2]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
 Trainer.Layer.23
-{"NPC"{NPC[{"Name"{str[025000023]}}{"ID"{int[025000023]}}{"Position"{sngArr[25,0,23]}}{"TextureID"{str[bugcatcher]}}{"Action"{int[2]}}{"AdditionalValue"{str[2|12\Route102\025000023]}}{"Rotation"{int[0]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Name"{str[025000023]}}{"ID"{int[025000023]}}{"Position"{sngArr[25,0,23]}}{"TextureID"{str[Bug Catcher]}}{"Action"{int[2]}}{"AdditionalValue"{str[2|12\Route102\025000023]}}{"Rotation"{int[0]}}{"Movement"{str[Still]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
 
 Pokéball.Layer.23
 {"EntityField"{ENT[{"EntityID"{str[ItemObject]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,-0.25,23]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,0.5]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}{"Action"{int[0]}}{"AdditionalValue"{str[011000023,18]}}]}}
