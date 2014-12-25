@@ -1,32 +1,43 @@
 version=2
 # This is a API for Random Dungeon Generator.
 # Define Map Size.
-@Storage.set(int,MapSizeX,50)
-@Storage.set(int,MapSizeZ,50)
+@Storage.set(int,MysteryDungeon.MapSizeX,50)
+@Storage.set(int,MysteryDungeon.MapSizeZ,50)
 
 # Define Room Size.
-@Storage.set(int,MinRoomSizeX,5)
-@Storage.set(int,MaxRoomSizeX,10)
-@Storage.set(int,MinRoomSizeZ,5)
-@Storage.set(int,MaxRoomSizeZ,10)
+# By default, Min Room Size is 5 by 5.
+@Storage.set(int,MysteryDungeon.MaxRoomSizeX,10)
+@Storage.set(int,MysteryDungeon.MaxRoomSizeZ,10)
 
-# Define Number of Tiles to be removed at the same time.
-# The bigger the value, the faster it process but might lag at slow computer.
+# Define Number of Tiles to be Removed at the same time.
+# The bigger the value, the faster it process. 
 # Max value is 10.
-@Storage.set(int,Processor,10)
+@Storage.set(int,MysteryDungeon.MaxProcessor,10)
 
 ##########################################################################################
 ######################## Do not touch anything beyond this line... #######################
-##########################################################################################.
+##########################################################################################
 :if:<Register.registered(MysteryDungeon.SaveMap)>=false
 	@Register.register(MysteryDungeon.SaveMap)
 :endif
 @Title.add(Generating... Please wait for a while.,2147483647,255,255,255,2,true,0,0)
 
 # Init Variable.
-@Storage.set(int,NumberOfRoomProcess,0)
-@Storage.set(int,NumberOfWallProcess,0)
-@Storage.set(int,MultiProcessor,<Math.clamp(<Storage.get(int,Processor)>,1,10)>)
+@Storage.set(int,NumberOfRoomGenerated,0)
+@Storage.set(int,NumberOfWallGenerated,0)
+@Storage.set(int,Processor,<Math.clamp(<Storage.get(int,Processor)>,1,10)>)
+@Storage.set(int,MaxRoomSizeX,<Math.clamp(<Storage.get(int,MaxRoomSizeX)>,5,<Storage.get(int,MapSizeX)>-1)
+@Storage.set(int,MaxRoomSizeZ,<Math.clamp(<Storage.get(int,MaxRoomSizeZ)>,5,<Storage.get(int,MapSizeZ)>-1)
+@Storage.set(bool,MasterValid,true)
+
+
+:while:<Storage.get(bool,MasterValid)>=true
+	# Dig a Random Object.
+	@Storage.set(
+	:if:<Storage.get(int,NumberOfRoomGenerated)>=0
+		
+	
+:endwhile
 
 # Dig a Random Location.
 @Storage.set(int,FinalRoomSizeX,<System.random(<Storage.get(int,MinRoomSizeX)>,<Storage.get(int,MaxRoomSizeX)>)>)
