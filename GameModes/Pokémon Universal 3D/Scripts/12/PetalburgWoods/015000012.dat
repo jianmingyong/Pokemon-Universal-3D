@@ -1,0 +1,10 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(TRAINER TIPS)
+@Sound.play(Select)
+@Text.show(In addition to Hit Points (HP), POKéMON~have Power Points (PP) that are used to)
+@Sound.play(Select)
+@Text.show(make moves during battle.)
+@Sound.play(Select)
+@Text.show(If a POKéMON runs out of PP, it must be~taken to a POKéMON CENTER.)
+:end

@@ -1,0 +1,12 @@
+﻿version=2
+@Sound.play(Select)
+@Text.show(TRAINER TIPS)
+@Sound.play(Select)
+@Text.show(Any POKéMON that appears even once~in a battle is awarded EXP Points.)
+@Sound.play(Select)
+@Text.show(To raise a weak POKéMON, put it at the~left of the team list.)
+@Sound.play(Select)
+@Text.show(As soon as a battle starts, switch it~out. It will earn EXP Points without)
+@Sound.play(Select)
+@Text.show(being exposed to any harm.)
+:end
