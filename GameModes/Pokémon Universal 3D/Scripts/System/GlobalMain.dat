@@ -23,6 +23,7 @@
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
 	@Script.start(System\GlobalOption)
 	@Script.start(System\GlobalSave)
+	@Script.start(System\GlobalBankInterest)
 	@Player.save
 	:if:<Storage.get(bool,System.SkipMainMenu)>=false
 		@Music.play(Stop)

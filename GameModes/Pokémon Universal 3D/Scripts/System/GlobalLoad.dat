@@ -6,6 +6,9 @@ version=2
 	@Storage.set(int,System.ScreenState,2)
 	:if:<not><Level.mapfile>=<Register.value(System.LastMap.12)>
 		@Player.warp(<Register.value(System.LastMap.12)>,<Register.value(System.PlayerPosition.X.12)>,<Register.value(System.PlayerPosition.Y.12)>+0.1,<Register.value(System.PlayerPosition.Z.12)>,<Register.value(System.PlayerFacing.12)>)
+		:if:<Register.value(System.PlayerThirdPerson.12)>=true
+			@Camera.activatethirdperson
+		:endif
 		@Level.update
 	:else
 		@Level.reload

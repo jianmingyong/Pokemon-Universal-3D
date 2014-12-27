@@ -1,2 +1,8 @@
 version=2
+:if:<NPC.exists(030000024)>=false
+	@NPC.spawn(30,0,24,0,,Devon Researcher,false,2,,030000024,Looking)
+:endif
+:if:<NPC.exists(030000021)>=false
+	@NPC.spawn(30,0,21,0,,Team Aqua Grunt Male,false,3,,030000021,Still)
+:endif
 :end

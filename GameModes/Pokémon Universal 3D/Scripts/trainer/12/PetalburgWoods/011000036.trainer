@@ -1,0 +1,22 @@
+[TRAINER FORMAT]
+Name|Lyle
+TrainerClass|Bug Catcher
+Money|48
+IntroMessage|I caught a whole bunch of POKéMON!*Go, go, go!~My BUG POKéMON team!
+OutroMessage|I have all these POKéMON,~but I couldn't win...
+DefeatMessage|I caught a bunch of POKéMON.~Now I'm out of POKé BALLS.
+TextureID|Bug Catcher
+Region|12.Hoenn
+IniMusic|P_OR_AS Trainer Battle_intro
+DefeatMusic|P_R_S_E Victory! Trainer
+BattleMusic|P_OR_AS Trainer Battle
+Pokemon1|265,3
+Pokemon2|265,3
+Pokemon3|265,3
+Pokemon4|265,3
+Pokemon5|
+Pokemon6|
+Items|
+Gender|0
+AI|2
+IntroSequence|Green,Green

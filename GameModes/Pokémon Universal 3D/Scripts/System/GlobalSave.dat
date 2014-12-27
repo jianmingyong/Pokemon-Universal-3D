@@ -4,6 +4,7 @@ version=2
 	@Register.change(System.PlayerPosition.Y.12,<Player.position(y)>+0.1)
 	@Register.change(System.PlayerPosition.Z.12,<Player.position(z)>)
 	@Register.change(System.PlayerFacing.12,<Player.facing>)
+	@Register.change(System.PlayerThirdPerson.12,<Player.thirdperson>)
 	@Register.change(System.LastMap.12,<Level.mapfile>)
 	:if:<Register.registered(System.Load.12)>=false
 		@Register.register(System.Load.12)

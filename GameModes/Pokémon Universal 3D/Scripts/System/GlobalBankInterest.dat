@@ -1,7 +1,7 @@
 ﻿version=2
 :if:<Register.registered(System.BankMoneyInterestCountDown)>=false
 	:if:<not><Register.value(System.BankMoney)>=0
-		@Register.change(System.BankMoney,<Math.clamp(<Register.value(System.BankMoney)>*1.01,0,2147483647)>)
+		@Register.change(System.BankMoney,<Math.clamp(<Register.value(System.BankMoney)>*<Math.sng(<System.random(101,110)>%)>,0,2147483647)>)
 		@Text.show(Poké Bank have send you some money.~Your bank have $<Register.value(System.BankMoney)>.)
 	:endif
 	@Register.registertime(System.BankMoneyInterestCountDown,1,day)
