@@ -1,14 +1,14 @@
 ﻿version=2
 #############################################################
-# Welcome to the Pokémon Universal 3D Main Initialize File  #
+# Welcome to the Pokémon Universal 3D Main Initialize File
 #############################################################
 # Main Menu 	- @Storage.set(int,System.ScreenState,0)
 # Intro Screen	- @Storage.set(int,System.ScreenState,1)
 # World			- @Storage.set(int,System.ScreenState,2)
 # Error			- @Storage.set(int,System.ScreenState,3)
-@Level.update
 @Title.clear
 @Camera.defix
+@Level.update
 :if:<Storage.count(int)>=0
 	# Define Variable
 	@Storage.set(int,System.ScreenState,0)
