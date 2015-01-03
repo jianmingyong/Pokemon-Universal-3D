@@ -1,3 +1,11 @@
+<!-- 
+{{ScriptCommandV2|Command|Subcommand| Type = Command/Construct
+| Argument1 = {{ScriptArgumentV2|Name|ArgumentType|Value|Optional|Default Value|}}
+| Description1 = 
+| Input 1 = 
+}}
+-->
+
 Private Shared Sub DoBattle()
 ScriptLibrary.r(New ScriptCommand("battle", "starttrainer", Enumerable.ToList(Of ScriptArgument)(New ScriptArgument() { New ScriptArgument("trainerFile", ArgumentTypes.Str, False, "") }), "Initializes a trainer interaction and checks if the player has already beaten that trainer.", ",", False))
 ScriptLibrary.r(New ScriptCommand("battle", "trainer", Enumerable.ToList(Of ScriptArgument)(New ScriptArgument() { New ScriptArgument("trainerFile", ArgumentTypes.Str, False, "") }), "Initializes a trainer battle.", ",", False))
