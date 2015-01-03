@@ -8,7 +8,7 @@ DefeatMessage|I want to leave my footprints in~the sand everywhere, but they*dis
 TextureID|Youngster
 Region|12.Hoenn
 IniMusic|P_OR_AS Trainer Battle_intro
-DefeatMusic|P_R_S_E Victory! Trainer
+DefeatMusic|P_OR_AS Victory! Trainer
 BattleMusic|P_OR_AS Trainer Battle
 Pokemon1|263,5
 Pokemon2|273,7

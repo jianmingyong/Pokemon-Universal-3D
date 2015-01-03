@@ -1,0 +1,9 @@
+version=2
+:if:<NPC.exists(002000003)>=false
+	@NPC.spawn(2,0,3,0,,oldhatman,false,2,,002000003,Still)
+:endif
+@Text.show((??? Town,~East Suden,~Year 1571))
+@Entity.showmessagebulb(1|2|0.8|3)
+@Sound.play(enter)
+@Text.show(Whah!!*Oh for...... does~anybody in this~town knock~anymore?*???: Excuse me,~but are you~Mr.burton?*Burton: I~certainly am.*And who might you~be?*???: I am......~Maxime.)
+:end

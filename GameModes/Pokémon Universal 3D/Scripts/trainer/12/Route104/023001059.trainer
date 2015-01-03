@@ -8,7 +8,7 @@ DefeatMessage|Hey, MAGIKARP, you sure don't live up~to your name, do you?
 TextureID|Fisherman
 Region|12.Hoenn
 IniMusic|P_OR_AS Trainer Battle_intro
-DefeatMusic|P_R_S_E Victory! Trainer
+DefeatMusic|P_OR_AS Victory! Trainer
 BattleMusic|P_OR_AS Trainer Battle
 Pokemon1|129,9
 Pokemon2|

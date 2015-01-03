@@ -8,7 +8,7 @@ DefeatMessage|"Hello" is the beginning of "good-bye".~I hope we meet again.
 TextureID|Lady
 Region|12.Hoenn
 IniMusic|P_OR_AS Trainer Battle_intro
-DefeatMusic|P_R_S_E Victory! Trainer
+DefeatMusic|P_OR_AS Victory! Trainer
 BattleMusic|P_OR_AS Trainer Battle
 Pokemon1|263,7
 Pokemon2|

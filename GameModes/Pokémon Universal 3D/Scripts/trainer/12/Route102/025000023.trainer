@@ -8,7 +8,7 @@ DefeatMessage|If you lock eyes with a TRAINER,~you have to challenge! It's a rul
 TextureID|Bug Catcher
 Region|12.Hoenn
 IniMusic|P_OR_AS Trainer Battle_intro
-DefeatMusic|P_R_S_E Victory! Trainer
+DefeatMusic|P_OR_AS Victory! Trainer
 BattleMusic|P_OR_AS Trainer Battle
 Pokemon1|265,4
 Pokemon2|265,4

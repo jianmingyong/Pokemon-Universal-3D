@@ -8,7 +8,7 @@ DefeatMessage|I caught a bunch of POKéMON.~Now I'm out of POKé BALLS.
 TextureID|Bug Catcher
 Region|12.Hoenn
 IniMusic|P_OR_AS Trainer Battle_intro
-DefeatMusic|P_R_S_E Victory! Trainer
+DefeatMusic|P_OR_AS Victory! Trainer
 BattleMusic|P_OR_AS Trainer Battle
 Pokemon1|265,3
 Pokemon2|265,3
