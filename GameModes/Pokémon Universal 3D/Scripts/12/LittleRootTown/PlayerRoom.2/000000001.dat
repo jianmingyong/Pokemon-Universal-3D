@@ -1,13 +1,10 @@
 version=2
 :if:<Register.value(12\LittleRootTown\PlayerRoom.2\000000001)>=1
 	@Sound.play(computeropen)
-	@Text.show(<Player.name> booted up the PC.)
-	@Sound.play(Select)
-	@Text.show(What would you like to do?)
+	@Text.show(<Player.name> booted up the PC.*What would you like to do?)
 	@Options.setcancelindex(3)
 	@Options.show(ITEM STORAGE,MAILBOX,DECORATION,TURN OFF)
 	:when:ITEM STORAGE
-		@Sound.play(Select)
 		@Text.show(There is no ITEM STORAGE at the moment.~Sorry for any inconvenience caused.)
 		@Item.give(18,1)
 		@Item.messagegive(18,1)
@@ -15,7 +12,6 @@ version=2
 	:when:MAILBOX
 		@Screen.mailsystem
 	:when:DECORATION
-		@Sound.play(Select)
 		@Text.show(There is no DECORATION at the moment.~Sorry for any inconvenience caused.)
 	:when:TURN OFF
 	:endwhen
@@ -24,18 +20,14 @@ version=2
 :endif
 :if:<Register.value(12\LittleRootTown\PlayerRoom.2\000000001)>=2
 	@Sound.play(computeropen)
-	@Text.show(<Player.name> booted up the PC.)
-	@Sound.play(Select)
-	@Text.show(What would you like to do?)
+	@Text.show(<Player.name> booted up the PC.*What would you like to do?)
 	@Options.setcancelindex(3)
 	@Options.show(ITEM STORAGE,MAILBOX,DECORATION,TURN OFF)
 	:when:ITEM STORAGE
-		@Sound.play(Select)
 		@Text.show(There is no ITEM STORAGE at the moment.~Sorry for any inconvenience caused.)
 	:when:MAILBOX
 		@Screen.mailsystem
 	:when:DECORATION
-		@Sound.play(Select)
 		@Text.show(There is no DECORATION at the moment.~Sorry for any inconvenience caused.)
 	:when:TURN OFF
 	:endwhen

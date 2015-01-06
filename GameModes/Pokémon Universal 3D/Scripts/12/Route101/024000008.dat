@@ -1,6 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(If POKéMON get tired, take them to~a POKéMON CENTER.)
-@Sound.play(Select)
-@Text.show(There's a POKéMON CENTER in OLDALE~TOWN right close by.)
+@Text.show(If POKéMON get tired, take them to~a POKéMON CENTER.*There's a POKéMON CENTER in OLDALE~TOWN right close by.)
 :end

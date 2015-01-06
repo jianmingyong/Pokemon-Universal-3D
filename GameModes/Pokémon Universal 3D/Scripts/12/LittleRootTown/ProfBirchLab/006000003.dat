@@ -1,20 +1,15 @@
 ﻿version=2
 :if:<Register.value(12\LittleRootTown\ProfBirchLab\006000003)>=1
-	@Sound.play(Select)
-	@Text.show(PROF. BIRCH: <Rival.name>?~Gone home, I think.)
-	@Sound.play(Select)
-	@Text.show(Or maybe that kid's scrabbling around~in tall grass again somewhere...)
-	@Sound.play(Select)
-	@Text.show(If you or your POKéMON get tired,~you should get some rest at home.)
+	@Text.show(PROF. BIRCH: <Rival.name>?~Gone home, I think.*Or maybe that kid's scrabbling around~in tall grass again somewhere...*If you or your POKéMON get tired,~you should get some rest at home.)
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\ProfBirchLab\006000003)>=2
-	@Sound.play(Select)
-	@Text.show(PROF. BIRCH: Countless POKéMON~await you!)
-	@Sound.play(Select)
-	@Text.show(Argh, I'm getting the itch to get out~and do fieldwork again!)
-	@Sound.play(Select)
-	@Text.show(If you or your POKéMON get tired,~you should get some rest at home.)
+	@Text.show(PROF. BIRCH: Countless POKéMON~await you!*Argh, I'm getting the itch to get out~and do fieldwork again!*If you or your POKéMON get tired,~you should get some rest at home.)
+	:end
+:endif
+:if:<Register.value(12\LittleRootTown\ProfBirchLab\006000003)>=3
+	@Text.show(PROF. BIRCH: Ah, <Player.name>!*Are you curious about how your~POKéDEX is coming along?)
+	@Text.show(Hm? Oh, you haven't caught enough~POKéMON to make it worthwhile.)
 	:end
 :endif
 @Storage.set(str,System.ActionScript,12\LittleRootTown\ProfBirchLab\006000003.dat)

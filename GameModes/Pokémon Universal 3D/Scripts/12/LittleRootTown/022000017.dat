@@ -1,8 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(PROF. BIRCH spends days in his LAB~studying, then he'll suddenly go out in)
-@Sound.play(Select)
-@Text.show(the wild to do more research...)
-@Sound.play(Select)
-@Text.show(When does PROF. BIRCH spend time~at home?)
+@Text.show(PROF. BIRCH spends days in his LAB~studying, then he'll suddenly go out in~the wild to do more research...*When does PROF. BIRCH spend time~at home?)
 :end

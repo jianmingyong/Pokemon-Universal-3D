@@ -3,12 +3,10 @@
 :if:<Player.money>>0
 	@Screen.input(<Player.money>,0,<Player.money>,10)
 :endif
-@Sound.play(Select)
 @Text.show(Are you sure you want to deposite~$<Math.clamp(<System.lastinput>,0,<Player.money>)>?)
 @Options.setcancelindex(1)
 @Options.show(YES,NO)
 :when:YES
-	@Sound.play(Select)
 	:if:<Math.sng(<Register.value(System.BankMoney)>+<Math.clamp(<System.lastinput>,0,<Player.money>)>)>>2147483647
 		@Text.show(Too much money inserted into the bank.)
 		@Script.start(12\GlobalCE_PokéBankDeposite)
@@ -31,7 +29,6 @@
 	@Text.show(You have deposited successfully.)
 	@Script.start(12\GlobalCE_PCOption4)
 :when:NO
-	@Sound.play(Select)
 	@Script.start(12\GlobalCE_PokéBankDeposite)
 :endwhen
 :end

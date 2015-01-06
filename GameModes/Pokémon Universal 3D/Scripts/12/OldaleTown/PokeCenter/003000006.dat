@@ -1,6 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(The POKéMON WIRELESS CLUB on~the second floor was built recently.)
-@Sound.play(Select)
-@Text.show(But they say they're still making~adjustments.)
+@Text.show(The POKéMON WIRELESS CLUB on~the second floor was built recently.*But they say they're still making~adjustments.)
 :end

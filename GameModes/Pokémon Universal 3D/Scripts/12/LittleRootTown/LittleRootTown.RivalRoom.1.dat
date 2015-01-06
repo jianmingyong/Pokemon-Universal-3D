@@ -12,25 +12,12 @@ version=2
 	@NPC.move(008000006,1)
 	@NPC.turn(008000006,1)
 	@NPC.move(008000006,5)
-	@Text.show(Oh, hello. And you are?)
-	@Sound.play(Select)
-	@Text.show(...........................~...........................)
-	@Sound.play(Select)
-	@Text.show(Oh, you're <Player.name>, our new next-door~neighbor! Hi!)
-	@Sound.play(Select)
+	@Text.show(Oh, hello. And you are?*...........................~...........................*Oh, you're <Player.name>, our new next-door~neighbor! Hi!)
 	:if:<Register.value(System.PlayerGender.12)>=Boy
-		@Text.show(We have a daughter about the same~age as you.)
-		@Sound.play(Select)
-		@Text.show(Our daughter was excited about making~a new friend.)
-		@Sound.play(Select)
-		@Text.show(Our daughter is upstairs, I think.)
+		@Text.show(We have a daughter about the same~age as you.*Our daughter was excited about making~a new friend.*Our daughter is upstairs, I think.)
 	:endif
 	:if:<Register.value(System.PlayerGender.12)>=Girl
-		@Text.show(We have a son about the same~age as you.)
-		@Sound.play(Select)
-		@Text.show(Our son was excited about making~a new friend.)
-		@Sound.play(Select)
-		@Text.show(Our son is upstairs, I think.)
+		@Text.show(We have a son about the same~age as you.*Our son was excited about making~a new friend.*Our son is upstairs, I think.)
 	:endif
 	@Player.turnto(0)
 	@Entity.remove(001000002)

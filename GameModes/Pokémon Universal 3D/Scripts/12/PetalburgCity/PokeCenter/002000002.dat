@@ -1,6 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(That PC-based POKéMON Storage~System...)
-@Sound.play(Select)
-@Text.show(Whoever made it must be some kind~of a scientific wizard!)
+@Text.show(That PC-based POKéMON Storage~System...*Whoever made it must be some kind~of a scientific wizard!)
 :end

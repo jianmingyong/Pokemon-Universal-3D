@@ -1,6 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(Let's say you have six POKéMON.~If you catch another one...)
-@Sound.play(Select)
-@Text.show(It is automatically sent to a STORAGE~BOX over a PC connection.)
+@Text.show(Let's say you have six POKéMON.~If you catch another one...*It is automatically sent to a STORAGE~BOX over a PC connection.)
 :end

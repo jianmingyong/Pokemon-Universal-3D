@@ -1,6 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(The box is printed with a POKéMON logo.)
-@Sound.play(Select)
-@Text.show(It's a POKéMON brand moving and~delivery service.)
+@Text.show(The box is printed with a POKéMON logo.*It's a POKéMON brand moving and~delivery service.)
 :end

@@ -1,18 +1,12 @@
 version=2
 :if:<Register.value(12\OldaleTown\PokeMart\002000002)>=1
-	@Sound.play(Select)
-	@Text.show(Welcome!)
-	@Sound.play(Select)
-	@Text.show(How may I serve you?)
+	@Text.show(Welcome!*How may I serve you?)
 	@Screen.trade({18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1},true,true)
 	@Text.show(Please come again!)
 	:end
 :endif
 :if:<Register.value(12\OldaleTown\PokeMart\002000002)>=2
-	@Sound.play(Select)
-	@Text.show(Welcome!)
-	@Sound.play(Select)
-	@Text.show(How may I serve you?)
+	@Text.show(Welcome!*How may I serve you?)
 	@Screen.trade({5|99-<Inventory.countitem(5)>|-1}{18|99-<Inventory.countitem(18)>|-1}{9|99-<Inventory.countitem(9)>|-1}{13|99-<Inventory.countitem(13)>|-1}{12|99-<Inventory.countitem(12)>|-1},true,true)
 	@Text.show(Please come again!)
 	:end

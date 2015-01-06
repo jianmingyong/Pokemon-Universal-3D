@@ -1,39 +1,17 @@
 ﻿version=2
 :if:<Register.value(12\PetalburgCity\WallyHouse\003000003)>=1
-	@Sound.play(Select)
-	@Text.show(You're...~Ah, you must be <Player.name>, right?)
-	@Sound.play(Select)
-	@Text.show(Thank you for playing with WALLY a~little while ago.)
-	@Sound.play(Select)
-	@Text.show(He's been frail and sickly ever~since he was a baby.)
-	@Sound.play(Select)
-	@Text.show(We've sent him to stay with my relatives~in VERDANTURF TOWN for a while.)
-	@Sound.play(Select)
-	@Text.show(The air is a lot cleaner there~than it is here.)
-	@Sound.play(Select)
-	@Text.show(What's that? Where's WALLY?~He's already left, our WALLY.)
-	@Sound.play(Select)
-	@Text.show(I wonder where he could have~gotten by now?)
+	@Text.show(You're...~Ah, you must be <Player.name>, right?*Thank you for playing with WALLY a~little while ago.*He's been frail and sickly ever~since he was a baby.*We've sent him to stay with my relatives~in VERDANTURF TOWN for a while.*The air is a lot cleaner there~than it is here.*What's that? Where's WALLY?~He's already left, our WALLY.*I wonder where he could have~gotten by now?)
 	:end
 :endif
 :if:<Register.value(12\PetalburgCity\WallyHouse\003000003)>=2
-	@Sound.play(Select)
-	@Text.show(Oh? You met WALLY in~EVER GRANDE CITY?)
-	@Sound.play(Select)
-	@Text.show(Oh, <Player.name>, don't be silly.)
-	@Sound.play(Select)
-	@Text.show(He may have gotten healthy, but he~can't go somewhere far away like)
-	@Sound.play(Select)
-	@Text.show(that all by himself.)
+	@Text.show(Oh? You met WALLY in~EVER GRANDE CITY?*Oh, <Player.name>, don't be silly.*He may have gotten healthy, but he~can't go somewhere far away like~that all by himself.)
 	:end
 :endif
 :if:<Register.value(12\PetalburgCity\WallyHouse\003000003)>=3
-	@Sound.play(Select)
 	@Text.show(WALLY's coming home soon.~I'm looking forward to that.)
 	:end
 :endif
 :if:<Register.value(12\PetalburgCity\WallyHouse\003000003)>=4
-	@Sound.play(Select)
 	@Text.show(I wonder how our WALLY is doing?)
 	:end
 :endif

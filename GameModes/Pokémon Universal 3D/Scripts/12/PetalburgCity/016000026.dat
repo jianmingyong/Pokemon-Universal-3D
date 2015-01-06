@@ -1,6 +1,3 @@
 version=2
-@Sound.play(Select)
-@Text.show(Where has our WALLY gone?)
-@Sound.play(Select)
-@Text.show(We have to leave for VERDANTURF TOWN~very soon...)
+@Text.show(Where has our WALLY gone?*We have to leave for VERDANTURF TOWN~very soon...)
 :end

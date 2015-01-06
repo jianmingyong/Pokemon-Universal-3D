@@ -4,7 +4,6 @@ version=2
 @Options.setcancelindex(1)
 @Options.show(MANAGE POKéMON,TURN OFF)
 :when:MANAGE POKéMON
-	@Sound.play(Select)
 	@Screen.storagesystem
 	@Script.start(12\GlobalCE_PCOption2)
 :when:TURN OFF

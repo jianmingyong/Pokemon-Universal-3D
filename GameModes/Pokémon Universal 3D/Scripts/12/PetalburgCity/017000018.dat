@@ -1,6 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(PETALBURG CITY POKéMON GYM~LEADER: NORMAN)
-@Sound.play(Select)
-@Text.show("A man in pursuit of power!")
+@Text.show(PETALBURG CITY POKéMON GYM~LEADER: NORMAN*"A man in pursuit of power!")
 :end

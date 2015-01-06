@@ -1,6 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(If the POKéMON with you become~stronger, you'll be able to go farther)
-@Sound.play(Select)
-@Text.show(away from here.)
+@Text.show(If the POKéMON with you become~stronger, you'll be able to go farther~away from here.)
 :end

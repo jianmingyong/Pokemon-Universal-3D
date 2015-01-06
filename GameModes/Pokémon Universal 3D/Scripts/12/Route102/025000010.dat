@@ -1,15 +1,11 @@
 version=2
-@Text.show(There are 2 Pecha Berries!)
-@Sound.play(Select)
-@Text.show(Do you want to pick them?)
+@Text.show(There are 2 Pecha Berries!*Do you want to pick them?)
 @Options.setcancelindex(1)
 @Options.show(Yes,No)
 :when:Yes
 	@Item.give(2002,2)
 	@Sound.play(item_found)
-	@Text.show(<Player.name> picked the 2 Pecha Berries.)
-	@Sound.play(Select)
-	@Text.show(<Player.name> stored them in the Plants~pocket.)
+	@Text.show(<Player.name> picked the 2 Pecha Berries.*<Player.name> stored them in the Plants~pocket.)
 	@Entity.remove(025000010)
 	@Register.change(12\Route102\025000010,2)
 	@Level.reload

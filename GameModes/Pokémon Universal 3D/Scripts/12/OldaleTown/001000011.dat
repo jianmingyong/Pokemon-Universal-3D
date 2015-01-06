@@ -1,16 +1,10 @@
 version=2
 :if:<Register.value(12\OldaleTown\001000011)>=1
-	@Sound.play(Select)
-	@Text.show(I just discovered the footprints of~a rare POKéMON!)
-	@Sound.play(Select)
-	@Text.show(Wait until I finish sketching~them, okay?)
+	@Text.show(I just discovered the footprints of~a rare POKéMON!*Wait until I finish sketching~them, okay?)
 	:end
 :endif
 :if:<Register.value(12\OldaleTown\001000011)>=2
-	@Sound.play(Select)
-	@Text.show(I finished sketching the footprints of~a rare POKéMON.)
-	@Sound.play(Select)
-	@Text.show(But it turns out they were only my~own footprints...)
+	@Text.show(I finished sketching the footprints of~a rare POKéMON.*But it turns out they were only my~own footprints...)
 	:end
 :endif
 @Storage.set(str,System.ActionScript,12\OldaleTown\001000011.dat)

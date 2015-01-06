@@ -1,16 +1,18 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(<Rival.name>: Let's see... The POKéMON found~on ROUTE 103 include...)
-@Music.play(P_OR_AS <Rival.name>'s Theme)
-@Sound.play(jumptoball)
-@Entity.showmessagebulb(1|18|0.8|11)
-@Text.show(Oh, hi, <Player.name>!)
-@Sound.play(Select)
-@Text.show(...Oh, I see, my dad gave you~a POKéMON as a gift.)
-@Sound.play(Select)
-@Text.show(Since we're here, let's have a quick~battle!)
-@Sound.play(Select)
-@Text.show(I'll give you a taste of what being~a TRAINER is like.)
+:if:<Register.value(System.PlayerGender.12)>=Boy
+	@Text.show(<Rival.name>: Let's see... The POKéMON found~on ROUTE 103 include...)
+	@Music.play(P_OR_AS <Rival.name>'s Theme)
+	@Sound.play(jumptoball)
+	@Entity.showmessagebulb(1|18|0.8|11)
+	@Text.show(Oh, hi, <Player.name>!*...Oh, I see, my dad gave you~a POKéMON as a gift.*Since we're here, let's have a quick~battle!*I'll give you a taste of what being~a TRAINER is like.)
+:endif
+:if:<Register.value(System.PlayerGender.12)>=Girl
+	@Text.show(<Rival.name>: Okay, so it's this one and~that one that live on ROUTE 103...)
+	@Music.play(P_OR_AS <Rival.name>'s Theme)
+	@Sound.play(jumptoball)
+	@Entity.showmessagebulb(1|18|0.8|11)
+	@Text.show(Hey, it's <Player.name>!*...Oh, yeah, Dad gave you a POKéMON.*Since we're here, how about a little~battle?*I'll teach you what being a TRAINER's~about!)
+:endif
 :if:<Register.value(System.Starter.12)>=252
 	@Battle.trainer(12\Route103\018000011.255)
 :endif
@@ -21,13 +23,12 @@
 	@Battle.trainer(12\Route103\018000011.252)
 :endif
 @Music.play(P_OR_AS <Rival.name>'s Theme)
-@Text.show(<Rival.name>: I think I know why my dad has~an eye out for you now.)
-@Sound.play(Select)
-@Text.show(I mean, you just got that POKéMON,~but it already likes you.)
-@Sound.play(Select)
-@Text.show(You might be able to befriend any~kind of POKéMON easily.)
-@Sound.play(Select)
-@Text.show(Well, it's time to head back to~the LAB.)
+:if:<Register.value(System.PlayerGender.12)>=Boy
+	@Text.show(<Rival.name>: I think I know why my dad has~an eye out for you now.*I mean, you just got that POKéMON,~but it already likes you.*You might be able to befriend any~kind of POKéMON easily.*Well, it's time to head back to~the LAB.)
+:endif
+:if:<Register.value(System.PlayerGender.12)>=Girl
+	@Text.show(Huh, <Player.name>, you're not too shabby.*<Rival.name>: I think I get it.~I think I know why my dad has his eye~out for you now.*Look, your POKéMON already likes you,~even though you just got it.*<Player.name>, I get the feeling that you~could befriend any POKéMON with ease.*We should head back to the LAB.)
+:endif
 :if:<Player.facing>=0
 	@NPC.turn(018000011,1)
 	@NPC.move(018000011,1)

@@ -1,21 +1,16 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(Welcome to the PokéBank!~Your bank have $<Register.value(System.BankMoney)>.)
-@Sound.play(Select)
-@Text.show(What would you like to do?~Your game will be saved after transaction.)
+@Text.show(Welcome to the PokéBank!~Your bank have $<Register.value(System.BankMoney)>.*What would you like to do?~Your game will be saved after transaction.)
 @Options.setcancelindex(2)
 @Options.show(DEPOSITE,WITHDRAW,CANCEL)
 :when:DEPOSITE
-	@Sound.play(Select)
 	:if:<Player.money>=0
-		@Text.show(You have $<Player.money> in your pocket.~you cannot deposite...)
+		@Text.show(You have $<Player.money> in your pocket.~You cannot deposite...)
 		@Script.start(12\GlobalCE_PCOption4)
 	:endif
 	@Script.start(12\GlobalCE_PokéBankDeposite)
 :when:WITHDRAW
-	@Sound.play(Select)
 	:if:<Register.value(System.BankMoney)>=0
-		@Text.show(You have $<Player.money> in your bank.~you cannot withdraw...)
+		@Text.show(You have $<Player.money> in your bank.~You cannot withdraw...)
 		@Script.start(12\GlobalCE_PCOption4)
 	:endif
 	@Script.start(12\GlobalCE_PokéBankWithdraw)

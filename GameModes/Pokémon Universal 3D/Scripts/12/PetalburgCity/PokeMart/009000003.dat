@@ -1,8 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(Do you have any ANTIDOTES with~you?)
-@Sound.play(Select)
-@Text.show(If you walk around with a poisoned~POKéMON, it will lose HP until it faints.)
-@Sound.play(Select)
-@Text.show(Take some ANTIDOTES with you.)
+@Text.show(Do you have any ANTIDOTES with~you?*If you walk around with a poisoned~POKéMON, it will lose HP until it faints.*Take some ANTIDOTES with you.)
 :end

@@ -1,6 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(NORMAN became our town's new~GYM LEADER.)
-@Sound.play(Select)
-@Text.show(I think he called his family over from~somewhere far away.)
+@Text.show(NORMAN became our town's new~GYM LEADER.*I think he called his family over from~somewhere far away.)
 :end

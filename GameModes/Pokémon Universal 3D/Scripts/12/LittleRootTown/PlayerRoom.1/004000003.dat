@@ -1,10 +1,5 @@
 ﻿version=2
 :if:<Player.facing>=0
-	@Sound.play(Select)
-	@Text.show(There is a movie on TV.)
-	@Sound.play(Select)
-	@Text.show(Two men are dancing on a big piano~keyboard.)
-	@Sound.play(Select)
-	@Text.show(Better get going!)
+	@Text.show(There is a movie on TV.*Two men are dancing on a big piano~keyboard.*Better get going!)
 :endif
 :end

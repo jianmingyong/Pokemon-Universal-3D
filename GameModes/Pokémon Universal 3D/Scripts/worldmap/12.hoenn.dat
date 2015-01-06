@@ -96,8 +96,8 @@ Routes:
 {"PlaceType"[Route]}{"Name"[Route 102]}{"MapFiles"[12\Route102\Route102.dat]}{"Position"[4,11]}{"Direction"[Horizontal]}{"RouteType"[Land]}{"FlyTo"[12\Route102\Route102.dat,40,12.1,18]}
 {"PlaceType"[Route]}{"Name"[Route 102]}{"MapFiles"[12\Route102\Route102.dat]}{"Position"[3,11]}{"Direction"[Horizontal]}{"RouteType"[Land]}{"FlyTo"[12\Route102\Route102.dat,17,12.1,11]}
 
-{"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[12\Route103\Route103.dat]}{"Position"[5,10]}{"Direction"[CurveDownRight]}{"RouteType"[Land]}
-{"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[12\Route103\Route103.dat]}{"Position"[6,10]}{"Direction"[Horizontal]}{"RouteType"[Land]}
+{"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[12\Route103\Route103.dat]}{"Position"[5,10]}{"Direction"[CurveDownRight]}{"RouteType"[Land]}{"FlyTo"[12\Route103\Route103.dat,19,12.1,18]}
+{"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[12\Route103\Route103.dat]}{"Position"[6,10]}{"Direction"[Horizontal]}{"RouteType"[Land]}{"FlyTo"[12\Route103\Route103.dat,19,12.1,18]}
 {"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[12\Route103\Route103.dat]}{"Position"[7,10]}{"Direction"[Horizontal]}{"RouteType"[Water]}
 {"PlaceType"[Route]}{"Name"[Route 103]}{"MapFiles"[12\Route103\Route103.dat]}{"Position"[8,10]}{"Direction"[Horizontal]}{"RouteType"[Land]}
 

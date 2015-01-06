@@ -1,14 +1,10 @@
 version=2
 :if:<Register.value(12\PetalburgCity\Gym.Main\001000000)>=1
-	@Sound.play(Select)
 	@Text.show(This door appears to be locked~right now...)
 	:end
 :endif
 :if:<Register.value(12\PetalburgCity\Gym.Main\001000000)>=2
-	@Sound.play(Select)
-	@Text.show("SPEED ROOM," the sign says.)
-	@Sound.play(Select)
-	@Text.show(Do you want to go through?)
+	@Text.show("SPEED ROOM," the sign says.*Do you want to go through?)
 	:end
 :endif
 @Storage.set(str,System.ActionScript,12\PetalburgCity\Gym.Main\001000000.dat)

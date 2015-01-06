@@ -1,6 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(Hi, neighbor!)
-@Sound.play(Select)
-@Text.show(Do you already have your~own POKéMON?)
+@Text.show(Hi, neighbor!*Do you already have your~own POKéMON?)
 :end

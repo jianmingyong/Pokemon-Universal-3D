@@ -1,38 +1,14 @@
 ﻿version=2
 :if:<Register.value(12\LittleRootTown\ProfBirchLab\009000007)>=1
-	@Sound.play(Select)
-	@Text.show(Hunh? PROF. BIRCH?)
-	@Sound.play(Select)
-	@Text.show(The PROF's away on fieldwork.~Ergo, he isn't here.)
-	@Sound.play(Select)
-	@Text.show(Oh, let me explain what fieldwork is.)
-	@Sound.play(Select)
-	@Text.show(It is to study things in the natural~environment, like fields and mountains,)
-	@Sound.play(Select)
-	@Text.show(instead of a laboratory.)
-	@Sound.play(Select)
-	@Text.show(The PROF isn't one for doing desk work.~He's the type of person who would)
-	@Sound.play(Select)
-	@Text.show(rather go outside and experience)
-	@Sound.play(Select)
-	@Text.show(things than read about them here.)
-	@Script.start(System\GlobalMain)
+	@Text.show(Hunh? PROF. BIRCH?*The PROF's away on fieldwork.~Ergo, he isn't here.*Oh, let me explain what fieldwork is.*It is to study things in the natural~environment, like fields and mountains,~instead of a laboratory.*The PROF isn't one for doing desk work.~He's the type of person who would~rather go outside and experience~things than read about them here.)
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\ProfBirchLab\009000007)>=2
-	@Sound.play(Select)
-	@Text.show(PROF. BIRCH is studying the habitats~and distribution of POKéMON.)
-	@Sound.play(Select)
-	@Text.show(The PROF enjoys <Rival.name>'s help, too.~There's a lot of love there.)
+	@Text.show(PROF. BIRCH is studying the habitats~and distribution of POKéMON.*The PROF enjoys <Rival.name>'s help, too.~There's a lot of love there.)
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\ProfBirchLab\009000007)>=3
-	@Sound.play(Select)
-	@Text.show(The PROF isn't one for doing desk work.~He's the type of person who would)
-	@Sound.play(Select)
-	@Text.show(rather go outside and experience)
-	@Sound.play(Select)
-	@Text.show(things than read about them here.)
+	@Text.show(The PROF isn't one for doing desk work.~He's the type of person who would~rather go outside and experience~things than read about them here.)
 	:end
 :endif
 @Storage.set(str,System.ActionScript,12\LittleRootTown\ProfBirchLab\009000007.dat)

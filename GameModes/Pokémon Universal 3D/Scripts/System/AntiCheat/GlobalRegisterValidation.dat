@@ -104,7 +104,7 @@
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\LittleRootTown\024000010" does not exist.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
 :endif
-:if:<not><Register.value(12\LittleRootTown\024000010)>=1 <and> <not><Register.value(12\LittleRootTown\024000010)>=2
+:if:<not><Register.value(12\LittleRootTown\024000010)>=1 <and> <not><Register.value(12\LittleRootTown\024000010)>=2 <and> <not><Register.value(12\LittleRootTown\024000010)>=3 <and> <not><Register.value(12\LittleRootTown\024000010)>=4
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\LittleRootTown\024000010" has an invalid value.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
 :endif

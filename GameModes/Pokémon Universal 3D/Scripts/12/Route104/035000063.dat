@@ -1,6 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(If you're going to throw a POKé BALL,~weaken the wild POKéMON first.)
-@Sound.play(Select)
-@Text.show(It will be easier to catch if it's been~poisoned, burned, or lulled to sleep.)
+@Text.show(If you're going to throw a POKé BALL,~weaken the wild POKéMON first.*It will be easier to catch if it's been~poisoned, burned, or lulled to sleep.)
 :end

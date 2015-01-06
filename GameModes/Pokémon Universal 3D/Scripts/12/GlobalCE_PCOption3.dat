@@ -4,7 +4,6 @@ version=2
 @Options.setcancelindex(3)
 @Options.show(ITEM STORAGE,BANK,MAILBOX,TURN OFF)
 :when:ITEM STORAGE
-	@Sound.play(Select)
 	@Text.show(There is no ITEM STORAGE at the moment.~Sorry for any inconvenience caused.)
 	:if:<Register.value(12\LittleRootTown\PlayerRoom.2\000000001)>=1
 		@Item.give(18,1)
@@ -15,7 +14,6 @@ version=2
 :when:BANK
 	@Script.start(12\GlobalCE_PCOption4)
 :when:MAILBOX
-	@Sound.play(Select)
 	@Screen.mailsystem
 	@Script.start(12\GlobalCE_PCOption3)
 :when:TURN OFF

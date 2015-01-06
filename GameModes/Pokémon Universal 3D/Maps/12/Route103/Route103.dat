@@ -301,6 +301,11 @@ Water.Stone.Layer.21
 {"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[32,0,21]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[32.5,-0.25,21.5]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[176,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}]}}
 
+Sign.Layer.17
+{"EntityField"{ENT[{"EntityID"{str[SignBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[19,0,17]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[64,0,16,16][80,0,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route103\019000017]}}]}}
+
+NPC.Layer.18
+{"NPC"{NPC[{"Name"{str[026000018]}}{"ID"{int[026000018]}}{"Position"{sngArr[26,0,18]}}{"TextureID"{str[NPC 7]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route103\026000018]}}{"Rotation"{int[2]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[25,17,3,3]]}}{"AnimateIdle"{bool[0]}}]}}
 
 OffsetMap.Layer.30
 {"OffsetMap"{MAP[{"Map"{str[12\OldaleTown\OldaleTown.dat]}}{"Offset"{intArr[8,0,30]}}]}}

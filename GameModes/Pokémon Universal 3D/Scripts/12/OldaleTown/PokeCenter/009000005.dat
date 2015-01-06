@@ -1,8 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(POKéMON CENTERS are great!)
-@Sound.play(Select)
-@Text.show(You can use their services as much~as you like, and it's all for free.)
-@Sound.play(Select)
-@Text.show(You never have to worry!)
+@Text.show(POKéMON CENTERS are great!*You can use their services as much~as you like, and it's all for free.*You never have to worry!)
 :end

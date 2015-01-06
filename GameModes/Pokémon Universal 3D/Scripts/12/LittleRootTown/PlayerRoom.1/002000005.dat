@@ -1,14 +1,10 @@
 version=2
 :if:<Register.value(12\LittleRootTown\PlayerRoom.1\002000005)>=1
-	@Sound.play(Select)
 	@Text.show(MOM: Did you introduce yourself to~PROF. BIRCH?)
 	:end
 :endif
 :if:<Register.value(12\LittleRootTown\PlayerRoom.1\002000005)>=2
-	@Sound.play(Select)
-	@Text.show(MOM: How are you doing, <Player.name>?~You look a little tired.)
-	@Sound.play(Select)
-	@Text.show(I think you should rest a bit.)
+	@Text.show(MOM: How are you doing, <Player.name>?~You look a little tired.*I think you should rest a bit.)
 	@Screen.fadeout
 	@Sound.play(Pokemon Recovery)
 	@Pokemon.heal

@@ -1,11 +1,4 @@
 version=2
-@Sound.play(Select)
-@Text.show(My face is reflected in the water.)
-@Sound.play(Select)
-@Text.show(It's a shining grin full of hope...)
-@Sound.play(Select)
-@Text.show(Or it could be a look of somber silence~struggling with fear...)
-@Sound.play(Select)
-@Text.show(What do you see reflected in your face?)
+@Text.show(My face is reflected in the water.*It's a shining grin full of hope...*Or it could be a look of somber silence~struggling with fear...*What do you see reflected in your face?)
 @NPC.turn(008000030,2)
 :end

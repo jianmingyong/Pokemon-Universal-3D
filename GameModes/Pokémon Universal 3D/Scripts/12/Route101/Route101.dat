@@ -140,9 +140,7 @@ version=2
 	@NPC.moveasync(010000015,2)
 	@NPC.move(009000015,2)
 	@NPC.turn(010000015,3)
-	@Text.show(Hello! You over there!~Please! Help!)
-	@Sound.play(Select)
-	@Text.show(In my BAG!~There's a POKé BALL!)
+	@Text.show(Hello! You over there!~Please! Help!*In my BAG!~There's a POKé BALL!)
 	@Register.change(12\Route101,2)
 	:end
 :endif

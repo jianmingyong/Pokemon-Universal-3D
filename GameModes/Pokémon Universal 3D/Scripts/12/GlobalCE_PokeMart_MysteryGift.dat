@@ -2,7 +2,6 @@ version=2
 :if:<Register.value(System.MysteryGift)>=1
 	@Script.start(System\GlobalMysteryGift)
 :else
-	@Sound.play(Select)
 	@Text.show(Primal Dialga: Due to some unstable issue~in other place, I could not operate.)
 :endif
 :end

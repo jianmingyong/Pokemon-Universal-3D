@@ -1,4 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
 @Text.show(<Rival.name>: I wonder where I should go look~for POKéMON next?)
 :end

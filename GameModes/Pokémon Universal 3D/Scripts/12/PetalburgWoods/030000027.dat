@@ -8,7 +8,5 @@
 @Text.show(Hmmm...~Not a one to be found...)
 @NPC.turn(030000024,2)
 @NPc.move(030000024,2)
-@Text.show(Hello, have you seen any POKéMON~called SHROOMISH around here?)
-@Sound.play(Select)
-@Text.show(I really love that POKéMON.)
+@Text.show(Hello, have you seen any POKéMON~called SHROOMISH around here?*I really love that POKéMON.)
 :end

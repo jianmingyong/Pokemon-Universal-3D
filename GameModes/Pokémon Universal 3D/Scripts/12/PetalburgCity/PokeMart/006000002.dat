@@ -1,6 +1,3 @@
 ﻿version=2
-@Sound.play(Select)
-@Text.show(Do you use REPEL?~It keeps POKéMON away, so it's)
-@Sound.play(Select)
-@Text.show(useful when you're in a hurry.)
+@Text.show(Do you use REPEL?~It keeps POKéMON away, so it's~useful when you're in a hurry.)
 :end

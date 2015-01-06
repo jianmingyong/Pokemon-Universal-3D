@@ -3,12 +3,10 @@
 :if:<Register.value(System.BankMoney)>>0
 	@Screen.input(<Math.int(<Register.value(System.BankMoney)>)>,0,<Math.int(<Register.value(System.BankMoney)>)>,10)
 :endif
-@Sound.play(Select)
 @Text.show(Are you sure you want to withdraw~$<Math.clamp(<System.lastinput>,0,<Math.int(<Register.value(System.BankMoney)>)>)>?)
 @Options.setcancelindex(1)
 @Options.show(YES,NO)
 :when:YES
-	@Sound.play(Select)
 	:if:<Math.sng(<Player.money>+<Math.clamp(<System.lastinput>,0,<Math.int(<Register.value(System.BankMoney)>)>)>>2147483647
 		@Text.show(Too much money withdraw from the bank.)
 		@Script.start(12\GlobalCE_PokéBankWithdraw)
@@ -31,7 +29,6 @@
 	@Text.show(You have withdraw successfully.)
 	@Script.start(12\GlobalCE_PCOption4)
 :when:NO
-	@Sound.play(Select)
 	@Script.start(12\GlobalCE_PokéBankWithdraw)
 :endwhen
 :end

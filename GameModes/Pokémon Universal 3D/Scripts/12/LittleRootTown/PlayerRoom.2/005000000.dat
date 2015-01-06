@@ -1,10 +1,6 @@
 ﻿version=2
 :if:<Register.value(12\LittleRootTown\PlayerRoom.2\005000000)>=1
-	@Sound.play(Select)
-	@Text.show(The clock is stopped...)
-	@Sound.play(Select)
-	@Text.show(Better set it and start it!)
-	@Sound.play(Select)
+	@Text.show(The clock is stopped...*Better set it and start it!)
 	@Text.show(Due to the Game Limitation, it will~be using your system default time.)
 	:if:<NPC.exists(005000000)>=false
 		@NPC.spawn(7,0,0,0,,NPC 215,false,2,NPC 215,005000000,Still)
@@ -13,15 +9,7 @@
 	@NPC.turn(005000000,1)
 	@Player.turnto(3)
 	@NPC.move(005000000,1)
-	@Text.show(MOM: <Player.name>, how do you like your~new room?)
-	@Sound.play(Select)
-	@Text.show(Good! Everything's put away neatly!)
-	@Sound.play(Select)
-	@Text.show(They finished moving everything in~downstairs, too.)
-	@Sound.play(Select)
-	@Text.show(POKéMON movers are so convenient!)
-	@Sound.play(Select)
-	@Text.show(Oh, you should make sure that~everything's all there on your desk.)
+	@Text.show(MOM: <Player.name>, how do you like your~new room?*Good! Everything's put away neatly!*They finished moving everything in~downstairs, too.*POKéMON movers are so convenient!*Oh, you should make sure that~everything's all there on your desk.)
 	@NPC.turn(005000000,3)
 	@NPC.move(005000000,1)
 	@NPC.turn(005000000,0)
