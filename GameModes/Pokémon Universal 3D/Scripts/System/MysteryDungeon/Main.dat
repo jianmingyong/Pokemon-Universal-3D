@@ -1,5 +1,11 @@
 version=2
 # This is a API for Random Dungeon Generator.
+# You will require a compatible map to run this.
+
+##############################
+# Main Settings
+##############################
+
 # Define Map Size.
 @Storage.set(int,MysteryDungeon.MapSizeX,50)
 @Storage.set(int,MysteryDungeon.MapSizeZ,50)
@@ -14,22 +20,22 @@ version=2
 # Max value is 10.
 @Storage.set(int,MysteryDungeon.MaxProcessor,10)
 
-##########################################################################################
-######################## Do not touch anything beyond this line... #######################
-##########################################################################################
+##############################
+# Do not touch anything below here
+##############################
+
 :if:<Register.registered(MysteryDungeon.SaveMap)>=false
 	@Register.register(MysteryDungeon.SaveMap)
 :endif
 @Title.add(Generating... Please wait for a while.,2147483647,255,255,255,2,true,0,0)
 
 # Init Variable.
-@Storage.set(int,NumberOfRoomGenerated,0)
-@Storage.set(int,NumberOfWallGenerated,0)
-@Storage.set(int,Processor,<Math.clamp(<Storage.get(int,Processor)>,1,10)>)
-@Storage.set(int,MaxRoomSizeX,<Math.clamp(<Storage.get(int,MaxRoomSizeX)>,5,<Storage.get(int,MapSizeX)>-1)
-@Storage.set(int,MaxRoomSizeZ,<Math.clamp(<Storage.get(int,MaxRoomSizeZ)>,5,<Storage.get(int,MapSizeZ)>-1)
-@Storage.set(bool,MasterValid,true)
-
+@Storage.set(int,MysteryDungeon.NumberOfRoomGenerated,0)
+@Storage.set(int,MysteryDungeon.NumberOfWallGenerated,0)
+@Storage.set(int,MysteryDungeon.Processor,<Math.clamp(<Storage.get(int,Processor)>,1,10)>)
+@Storage.set(int,MysteryDungeon.MaxRoomSizeX,<Math.clamp(<Storage.get(int,MaxRoomSizeX)>,5,<Storage.get(int,MapSizeX)>-1)
+@Storage.set(int,MysteryDungeon.MaxRoomSizeZ,<Math.clamp(<Storage.get(int,MaxRoomSizeZ)>,5,<Storage.get(int,MapSizeZ)>-1)
+@Storage.set(bool,MysteryDungeon.MasterValid,true)
 
 :while:<Storage.get(bool,MasterValid)>=true
 	# Dig a Random Object.
