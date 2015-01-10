@@ -29,7 +29,11 @@ version=2
 :while:<Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 	@Storage.set(int,MysteryDungeon.CurrentDigRoomID.1,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>1
-		@Storage.set(int,MysteryDungeon.CurrentDigRoomID.2,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1000000)
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentRoomX)>+1)><<Storage.get(int,MysteryDungeon.RoomSizeX)> <or> <Math.int(<Storage.get(int,MysteryDungeon.CurrentRoomX)>+1)>=<Storage.get(int,MysteryDungeon.RoomSizeX)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.2,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1000000)
+		:else
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.2,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.int(<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentRoomX)>+1)>-<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>*1000000)>+1)
+		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>2
 		@Storage.set(int,MysteryDungeon.CurrentDigRoomID.3,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2000000)
