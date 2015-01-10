@@ -4,17 +4,49 @@ version=2
 # Init Variable.
 @Storage.set(int,MysteryDungeon.RoomSizeX,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeX)>)>
 @Storage.set(int,MysteryDungeon.RoomSizeZ,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeZ)>)>
-@Storage.set(int,MysteryDungeon.CurrentDigRoomX,0)
-@Storage.set(int,MysteryDungeon.CurrentDigRoomZ,0)
 @Storage.set(int,MysteryDungeon.RoomPositionX,<System.random(1,<Math.int(<Storage.get(int,MysteryDungeon.MaxSizeX)>-1-<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>)
 @Storage.set(int,MysteryDungeon.RoomPositionZ,<System.random(1,<Math.int(<Storage.get(int,MysteryDungeon.MaxSizeZ)>-1-<Storage.get(int,MysteryDungeon.RoomSizeZ)>)>)>)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomX,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomZ,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomID.1,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomID.2,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomID.3,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomID.4,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomID.5,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomID.6,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomID.7,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomID.8,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomID.9,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomID.10,0)
+@Storage.set(bool,MysteryDungeon.RoomDigCompleted,false)
 
 # Global Variable.
-@Register.register(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.ID,int,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>)>)
+@Register.register(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.ID,int,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>)
 @Register.register(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeX,int,<Storage.get(int,MysteryDungeon.RoomSizeX)>)
 @Register.register(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeZ,int,<Storage.get(int,MysteryDungeon.RoomSizeZ)>)
 
 # Dig Room Procedure.
+:while:<Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
+	@Storage.set(int,MysteryDungeon.CurrentDigRoomID.1,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
+	:if:<Storage.get(int,MysteryDungeon.Processor)>>1
+		@Storage.set(int,MysteryDungeon.CurrentDigRoomID.2,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1000000)
+	:endif
+	:if:<Storage.get(int,MysteryDungeon.Processor)>>2
+		@Storage.set(int,MysteryDungeon.CurrentDigRoomID.3,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2000000)
+	:endif
+	:if:<Storage.get(int,MysteryDungeon.Processor)>>3
+		@Storage.set(int,MysteryDungeon.CurrentDigRoomID.4,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+3000000)
+	:endif
+	:if:<Storage.get(int,MysteryDungeon.Processor)>>4
+		@Storage.set(int,MysteryDungeon.CurrentDigRoomID.5,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+4000000)
+	:endif
+:endwhile
+
+
+
+
+
+
 :while:<not><Storage.get(int,CurrentDigRoomZ)>=<Storage.get(int,FinalRoomSizeZ)>
 	@Storage.set(int,FinalRoomLocationID,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,FinalRoomSizeX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,FinalRoomSizeZ)>)
 	@Storage.set(int,CurrentRoomLocationID.1,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>)
