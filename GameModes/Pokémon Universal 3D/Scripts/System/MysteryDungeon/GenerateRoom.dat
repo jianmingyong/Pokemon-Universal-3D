@@ -1,6 +1,20 @@
 version=2
-@Storage.set(int,CurrentDigRoomX,0)
-@Storage.set(int,CurrentDigRoomZ,0)
+# This is part of the Mystery Dungeon Generator API.
+
+# Init Variable.
+@Storage.set(int,MysteryDungeon.RoomSizeX,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeX)>)>
+@Storage.set(int,MysteryDungeon.RoomSizeZ,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeZ)>)>
+@Storage.set(int,MysteryDungeon.CurrentDigRoomX,0)
+@Storage.set(int,MysteryDungeon.CurrentDigRoomZ,0)
+@Storage.set(int,MysteryDungeon.RoomPositionX,<System.random(1,<Math.int(<Storage.get(int,MysteryDungeon.MaxSizeX)>-1-<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>)
+@Storage.set(int,MysteryDungeon.RoomPositionZ,<System.random(1,<Math.int(<Storage.get(int,MysteryDungeon.MaxSizeZ)>-1-<Storage.get(int,MysteryDungeon.RoomSizeZ)>)>)>)
+
+# Global Variable.
+@Register.register(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.ID,int,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>)>)
+@Register.register(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeX,int,<Storage.get(int,MysteryDungeon.RoomSizeX)>)
+@Register.register(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeZ,int,<Storage.get(int,MysteryDungeon.RoomSizeZ)>)
+
+# Dig Room Procedure.
 :while:<not><Storage.get(int,CurrentDigRoomZ)>=<Storage.get(int,FinalRoomSizeZ)>
 	@Storage.set(int,FinalRoomLocationID,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,FinalRoomSizeX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,FinalRoomSizeZ)>)
 	@Storage.set(int,CurrentRoomLocationID.1,<Math.int(<Storage.get(int,CurrentRoomLocationX)>*1000000)>+<Math.int(<Storage.get(int,CurrentDigRoomX)>*1000000)>+<Storage.get(int,CurrentRoomLocationZ)>+<Storage.get(int,CurrentDigRoomZ)>)
