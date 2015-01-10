@@ -39,9 +39,8 @@ version=2
 
 :while:<Storage.get(bool,MasterValid)>=true
 	# Dig a Random Object.
-	@Storage.set(
 	:if:<Storage.get(int,NumberOfRoomGenerated)>=0
-		
+	:endif
 	
 :endwhile
 
