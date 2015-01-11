@@ -9,7 +9,7 @@
 	@Storage.set(str,System.GlobalUpdateValidation.<Storage.get(int,System.GlobalUpdateValidation.TotalError)>,[Update validation result: "System.P3D Version" does not exist.])
 	@Storage.set(int,System.GlobalUpdateValidation.TotalError,<Storage.get(int,System.GlobalUpdateValidation.TotalError)>+1)
 :endif
-:if:<not><Register.value(System.P3D Version)>=0.51.1
+:if:<not><Register.value(System.P3D Version)>=0.52.1
 	@Storage.set(str,System.GlobalUpdateValidation.<Storage.get(int,System.GlobalUpdateValidation.TotalError)>,[Update validation result: "System.P3D Version" has an invalid value.])
 	@Storage.set(int,System.GlobalUpdateValidation.TotalError,<Storage.get(int,System.GlobalUpdateValidation.TotalError)>+1)
 :endif
@@ -17,7 +17,7 @@
 	@Storage.set(str,System.GlobalUpdateValidation.<Storage.get(int,System.GlobalUpdateValidation.TotalError)>,[Update validation result: "System.Game Version" does not exist.])
 	@Storage.set(int,System.GlobalUpdateValidation.TotalError,<Storage.get(int,System.GlobalUpdateValidation.TotalError)>+1)
 :endif
-:if:<not><Register.value(System.Game Version)>=0.0.8
+:if:<not><Register.value(System.Game Version)>=0.0.9
 	@Storage.set(str,System.GlobalUpdateValidation.<Storage.get(int,System.GlobalUpdateValidation.TotalError)>,[Update validation result: "System.P3D Version" has an invalid value.])
 	@Storage.set(int,System.GlobalUpdateValidation.TotalError,<Storage.get(int,System.GlobalUpdateValidation.TotalError)>+1)
 :endif

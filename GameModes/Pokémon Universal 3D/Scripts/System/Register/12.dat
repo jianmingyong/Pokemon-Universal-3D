@@ -131,4 +131,7 @@ version=2
 :if:<Register.registered(12\Route104\032000041)>=false
 	@Register.register(12\Route104\032000041,int,1)
 :endif
+:if:<Register.registered(12\PetalburgWoods)>=false
+	@Register.register(12\PetalburgWoods,int,1)
+:endif
 :end

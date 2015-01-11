@@ -1,8 +1,18 @@
 version=2
-:if:<NPC.exists(030000024)>=false
-	@NPC.spawn(30,0,24,0,,Devon Researcher,false,2,,030000024,Looking)
+:if:<Register.value(12\PetalburgWoods)>=1
+	:if:<NPC.exists(030000024)>=false
+		@NPC.spawn(30,0,24,0,,Devon Researcher,false,2,,030000024,Looking)
+	:endif
+	:if:<NPC.exists(030000021)>=false
+		@NPC.spawn(30,0,21,0,,Team Aqua Grunt Male,false,3,,030000021,Still)
+	:endif
+	:end
 :endif
-:if:<NPC.exists(030000021)>=false
-	@NPC.spawn(30,0,21,0,,Team Aqua Grunt Male,false,3,,030000021,Still)
+:if:<Register.value(12\PetalburgWoods)>=2
+	:end
 :endif
+@Storage.set(str,System.ActionScript,12\PetalburgWoods\PetalburgWoods.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
 :end
