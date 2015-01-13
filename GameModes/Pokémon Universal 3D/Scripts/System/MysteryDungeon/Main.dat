@@ -44,7 +44,7 @@ version=2
 		@Storage.set(int,MysteryDungeon.RoomSizeZ,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeZ)>)>)
 		@Storage.set(int,MysteryDungeon.RoomPositionX,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeX)>-<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)
 		@Storage.set(int,MysteryDungeon.RoomPositionZ,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeZ)>-<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>)
-		#@Storage.set(int,MysteryDungeon.RoomSizeX,5)
+		#@Storage.set(int,MysteryDungeon.RoomSizeX,7)
 		#@Storage.set(int,MysteryDungeon.RoomSizeZ,5)
 		#@Storage.set(int,MysteryDungeon.RoomPositionX,1)
 		#@Storage.set(int,MysteryDungeon.RoomPositionZ,1)

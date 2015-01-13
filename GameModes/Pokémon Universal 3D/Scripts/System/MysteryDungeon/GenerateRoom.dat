@@ -17,249 +17,260 @@ version=2
 @Storage.set(bool,MysteryDungeon.RoomDigCompleted,false)
 
 # Global Variable.
+
+:if:<Register.registered(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.ID)>=true
+	@Register.unregister(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.ID,int)
+:endif
+:if:<Register.registered(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeX)>=true
+	@Register.unregister(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeX,int)
+:endif
+:if:<Register.registered(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeZ)>=true
+	@Register.unregister(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeZ,int)
+:endif
 @Register.register(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.ID,int,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>)
 @Register.register(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeX,int,<Storage.get(int,MysteryDungeon.RoomSizeX)>)
 @Register.register(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeZ,int,<Storage.get(int,MysteryDungeon.RoomSizeZ)>)
 
 # Dig Room Procedure.
 :while:<Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
-	:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)> <or> <Storage.get(int,MysteryDungeon.CurrentDigRoomX)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
-		@Storage.set(int,MysteryDungeon.CurrentDigRoomID.1,<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
-	:else
-		:if:<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>=1
-			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.1,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>-<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>*<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>)
-		:else
-			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.1,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)
-		:endif
+	:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>
+		@Storage.set(int,MysteryDungeon.CurrentDigRoomID.1,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
+	:endif
+	:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>
+		@Storage.set(int,MysteryDungeon.CurrentDigRoomID.1,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1)
+	:endif
+	:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*3)>)>
+		@Storage.set(int,MysteryDungeon.CurrentDigRoomID.1,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2)
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>1
-		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)> <or> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
-		:else
-			:if:<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>=1
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1-<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>*<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>)
-			:else
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)
-			:endif
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*3)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+1-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>2
-		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)> <or> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
-		:else
-			:if:<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>=1
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2-<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>*<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>)
-			:else
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)
-			:endif
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*3)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+2-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>3
-		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)> <or> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
-		:else
-			:if:<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>=1
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3-<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>*<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>)
-			:else
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)
-			:endif
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*3)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+3-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>4
-		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)> <or> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
-		:else
-			:if:<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>=1
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4-<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>*<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>)
-			:else
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)
-			:endif
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*3)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+4-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>5
-		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)> <or> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
-		:else
-			:if:<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>=1
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5-<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>*<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>)
-			:else
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)
-			:endif
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*3)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+5-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>6
-		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)> <or> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
-		:else
-			:if:<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>=1
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6-<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>*<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>)
-			:else
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)
-			:endif
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*3)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+6-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>7
-		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)> <or> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
-		:else
-			:if:<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>=1
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7-<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>*<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>)
-			:else
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)
-			:endif
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*3)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+7-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>8
-		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)> <or> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
-		:else
-			:if:<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>=1
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8-<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>*<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>)
-			:else
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)
-			:endif
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*3)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+8-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>9
-		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)> <or> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>)
-		:else
-			:if:<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>=1
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9-<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>*<Storage.get(int,MysteryDungeon.RoomSizeX)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>)
-			:else
-				@Storage.set(int,MysteryDungeon.CurrentDigRoomID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*<Math.int(<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)>)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+<Math.floor(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)>/<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)>-1)
-			:endif
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*1)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+1)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*3)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigRoomID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>+9-<Math.int(<Storage.get(int,MysteryDungeon.RoomSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>+2)
 		:endif
 	:endif
+	
 	# Digging Algorithm.
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>0 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.1)>)
-		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
+		:else
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomZ,add,1)
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
 			:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>
 				@Storage.set(bool,MysteryDungeon.RoomDigCompleted,true)
 				:exitwhile
 			:endif
-		:else
-			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>1 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.2)>)
-		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
+		:else
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomZ,add,1)
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
 			:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>
 				@Storage.set(bool,MysteryDungeon.RoomDigCompleted,true)
 				:exitwhile
 			:endif
-		:else
-			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>2 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.3)>)
-		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
+		:else
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomZ,add,1)
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
 			:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>
 				@Storage.set(bool,MysteryDungeon.RoomDigCompleted,true)
 				:exitwhile
 			:endif
-		:else
-			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>3 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.4)>)
-		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
+		:else
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomZ,add,1)
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
 			:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>
 				@Storage.set(bool,MysteryDungeon.RoomDigCompleted,true)
 				:exitwhile
 			:endif
-		:else
-			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>4 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.5)>)
-		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
+		:else
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomZ,add,1)
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
 			:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>
 				@Storage.set(bool,MysteryDungeon.RoomDigCompleted,true)
 				:exitwhile
 			:endif
-		:else
-			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>5 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.6)>)
-		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
+		:else
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomZ,add,1)
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
 			:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>
 				@Storage.set(bool,MysteryDungeon.RoomDigCompleted,true)
 				:exitwhile
 			:endif
-		:else
-			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>6 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.7)>)
-		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
+		:else
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomZ,add,1)
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
 			:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>
 				@Storage.set(bool,MysteryDungeon.RoomDigCompleted,true)
 				:exitwhile
 			:endif
-		:else
-			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>7 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.8)>)
-		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
+		:else
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomZ,add,1)
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
 			:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>
 				@Storage.set(bool,MysteryDungeon.RoomDigCompleted,true)
 				:exitwhile
 			:endif
-		:else
-			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>8 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.9)>)
-		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
+		:else
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomZ,add,1)
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
 			:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>
 				@Storage.set(bool,MysteryDungeon.RoomDigCompleted,true)
 				:exitwhile
 			:endif
-		:else
-			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>9 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.10)>)
-		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)>=<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
+			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
+		:else
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomZ,add,1)
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
 			:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomZ)>><Math.int(<Storage.get(int,MysteryDungeon.RoomPositionZ)>+<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>
 				@Storage.set(bool,MysteryDungeon.RoomDigCompleted,true)
 				:exitwhile
 			:endif
-		:else
-			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:endif
 	:endif
 	@Level.update
