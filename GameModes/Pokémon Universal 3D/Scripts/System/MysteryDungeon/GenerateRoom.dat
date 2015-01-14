@@ -1,6 +1,5 @@
 version=2
 # This is part of the Mystery Dungeon Generator API.
-
 # Init Variable.
 @Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
 @Storage.set(int,MysteryDungeon.CurrentDigRoomZ,<Storage.get(int,MysteryDungeon.RoomPositionZ)>)
@@ -17,14 +16,13 @@ version=2
 @Storage.set(bool,MysteryDungeon.RoomDigCompleted,false)
 
 # Global Variable.
-
-:if:<Register.registered(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.ID)>=true
+:if:<Register.registered(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.ID)>=true <and> <Register.registered(MysteryDungeon.SaveMap)>=true
 	@Register.unregister(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.ID,int)
 :endif
-:if:<Register.registered(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeX)>=true
+:if:<Register.registered(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeX)>=true <and> <Register.registered(MysteryDungeon.SaveMap)>=true
 	@Register.unregister(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeX,int)
 :endif
-:if:<Register.registered(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeZ)>=true
+:if:<Register.registered(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeZ)>=true <and> <Register.registered(MysteryDungeon.SaveMap)>=true
 	@Register.unregister(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.SizeZ,int)
 :endif
 @Register.register(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>.ID,int,<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>*1000000)>+<Storage.get(int,MysteryDungeon.RoomPositionZ)>)
@@ -273,7 +271,7 @@ version=2
 			:endif
 		:endif
 	:endif
-	@Level.update
 :endwhile
-@Storage.set(int,MysteryDungeon.NumberOfRoomGenerated,<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>+1)
+@Level.update
+@Storage.update(int,MysteryDungeon.NumberOfRoomGenerated,add,1)
 :end
