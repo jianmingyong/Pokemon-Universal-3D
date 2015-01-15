@@ -58,4 +58,5 @@
 @NPC.turn(030000024,1)
 @NPC.move(030000024,5)
 @NPC.remove(030000024)
+@Register.change(12\PetalburgWoods,2)
 :end

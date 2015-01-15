@@ -1,3 +1,12 @@
 version=2
-@Text.show(The Dialga team: Soon.)
+@Text.show(The Dialga team: Soon.*If you are stuck, I can bring you out.~Do you need my help?)
+@Options.setcancelindex(1)
+@Options.show(Yes,No)
+:when:Yes
+	@Screen.fadeout
+	@Player.warp(12\Route104\Route104.dat,35,0,67)
+	@Level.update
+	@Screen.fadein
+:when:No
+:endwhen
 :end

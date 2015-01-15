@@ -1112,6 +1112,12 @@ Sign.Layer.50
 Sign.Layer.66
 {"EntityField"{ENT[{"EntityID"{str[SignBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[35,0,66]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[64,0,16,16][80,0,16,16]]}}{"TextureIndex"{intArr[0,0,1,1,1,1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[4]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route104\035000066]}}]}}
 
+LoamySoil.Layer.25
+{"EntityField"{ENT[{"EntityID"{str[LoamySoil]}}{"ID"{int[0110000222]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,22]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[LoamySoil]}}{"ID"{int[0110000232]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,23]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[LoamySoil]}}{"ID"{int[0110000242]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,24]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[LoamySoil]}}{"ID"{int[0110000252]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,25]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
+
 LoamySoil.Layer.41
 {"EntityField"{ENT[{"EntityID"{str[Floor]}}{"ID"{int[0300000411]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[30,0,41]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[LoamySoil]}}{"ID"{int[0300000412]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[30,0,41]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
@@ -1125,6 +1131,28 @@ Berry.Layer.41
 {"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"ID"{int[0320000411]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[32,0,41]}}{"TexturePath"{str[Berries]}}{"Textures"{recArr[[352,0,32,32]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[0320000411]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[32,0,41]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route104\032000041]}}]}}
 
+Grass.Layer.4
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[2,1]}}{"Position"{sngArr[14,-0.25,4]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+Grass.Layer.5
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[15,-0.25,5]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+Grass.Layer.6
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[10,-0.25,6]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[3,1]}}{"Position"{sngArr[12,-0.25,6]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[2,1]}}{"Position"{sngArr[16,-0.25,6]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+Grass.Layer.7
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[7,1]}}{"Position"{sngArr[10,-0.25,7]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+Grass.Layer.8
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[3,1]}}{"Position"{sngArr[10,-0.25,8]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[14,-0.25,8]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+Grass.Layer.9
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[10,-0.25,9]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[12,-0.25,9]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+Grass.Layer.10
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[10,-0.25,10]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+Grass.Layer.11
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[10,-0.25,11]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
+Grass.Layer.12
+{"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,-0.25,12]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 North.poke]}}]}}
 Grass.Layer.41
 {"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[3,1]}}{"Position"{sngArr[15,-0.25,41]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 South.poke]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[Grass]}}{"Size"{intArr[4,1]}}{"Position"{sngArr[20,-0.25,41]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[112,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"AdditionalValue"{str[12\Route104\Route104 South.poke]}}]}}
@@ -1196,6 +1224,17 @@ Flower.Layer.53
 Flower.Layer.54
 {"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[39,-0.25,54]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[96,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[0.5,0.5,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}]}}
 
+NPC.Layer.16
+{"NPC"{NPC[{"Position"{sngArr[11,0,16]}}{"TextureID"{str[Palkia]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_ComingSoon]}}{"Rotation"{int[2]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+NPC.Layer.17
+{"NPC"{NPC[{"Position"{sngArr[11,0,17]}}{"TextureID"{str[Palkia]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_ComingSoon]}}{"Rotation"{int[2]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+NPC.Layer.18
+{"NPC"{NPC[{"Position"{sngArr[11,0,18]}}{"TextureID"{str[Palkia]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_ComingSoon]}}{"Rotation"{int[2]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Position"{sngArr[12,0,18]}}{"TextureID"{str[Palkia]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_ComingSoon]}}{"Rotation"{int[2]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Position"{sngArr[13,0,18]}}{"TextureID"{str[Palkia]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_ComingSoon]}}{"Rotation"{int[2]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Position"{sngArr[14,0,18]}}{"TextureID"{str[Palkia]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_ComingSoon]}}{"Rotation"{int[2]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Position"{sngArr[15,0,18]}}{"TextureID"{str[Palkia]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_ComingSoon]}}{"Rotation"{int[2]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
+{"NPC"{NPC[{"Position"{sngArr[16,0,18]}}{"TextureID"{str[Palkia]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_ComingSoon]}}{"Rotation"{int[2]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
 NPC.Layer.48
 {"NPC"{NPC[{"Position"{sngArr[23,0,48]}}{"TextureID"{str[Palkia]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_ComingSoon]}}{"Rotation"{int[2]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
 {"NPC"{NPC[{"Position"{sngArr[24,0,48]}}{"TextureID"{str[Palkia]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_ComingSoon]}}{"Rotation"{int[2]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}

@@ -498,11 +498,17 @@ CutTree.Layer.14
 CutTree.Layer.15
 {"EntityField"{ENT[{"EntityID"{str[CutTree]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[23,0,15]}}{"TexturePath"{str[viridianForest]}}{"Textures"{recArr[[0,32,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[3]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[0]}}]}}
 
+NPC.Layer.23
+{"NPC"{NPC[{"Name"{str[019000023]}}{"ID"{int[019000023]}}{"Position"{sngArr[19,0,23]}}{"TextureID"{str[NPC 9]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\PetalburgWoods\019000023]}}{"Rotation"{int[2]}}{"Movement"{str[Walk]}}{"MoveRectangles"{recArr[[19,21,1,5]]}}{"AnimateIdle"{bool[0]}}]}}
+
+Trainer.Layer.18
+{"NPC"{NPC[{"Name"{str[008000018]}}{"ID"{int[008000018]}}{"Position"{sngArr[8,0,18]}}{"TextureID"{str[Bug Catcher]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\PetalburgWoods\008000018]}}{"Rotation"{int[0]}}{"Movement"{str[Looking]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
 Trainer.Layer.44
 {"NPC"{NPC[{"Name"{str[011000036]}}{"ID"{int[011000036]}}{"Position"{sngArr[11,0,36]}}{"TextureID"{str[Bug Catcher]}}{"Action"{int[2]}}{"AdditionalValue"{str[3|12\PetalburgWoods\011000036]}}{"Rotation"{int[2]}}{"Movement"{str[Looking]}}{"MoveRectangles"{recArr[]}}{"AnimateIdle"{bool[0]}}]}}
 
 ActionScript.Layer.27
 {"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[030000027]}}{"Position"{sngArr[30,0,27]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\PetalburgWoods\030000027]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[031000027]}}{"Position"{sngArr[31,0,27]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\PetalburgWoods\031000027]}}{"Rotation"{int[0]}}]}}
 
 Warp.Layer.9
 {"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[18,0.1,9]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\Route104\Route104.dat,18,0.1,31,0]}}{"Rotation"{int[0]}}]}}
