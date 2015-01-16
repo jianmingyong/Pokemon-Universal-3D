@@ -1,5 +1,5 @@
 Table of contents:
-1.		License
+1.		Resource Details
 2.		About
 3.		Contacting
 4.		Supported platforms
@@ -14,13 +14,10 @@ Table of contents:
 8.3.	Others
 
 ==================================================
-1.	License
+1.	Resource Details
 ==================================================
-Pokémon Universal 3D v0.52.0.0.0.7
+Pokémon Universal 3D v0.53.0.0.0.9
 Copyright © 2014 jianmingyong
-
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 ==================================================
 2.	About
@@ -63,19 +60,19 @@ To run the game, use the launcher to start the game.
 Installing prerequisites for Pokémon 3D.
 1.	Hardware support for DirectX 9 or higher
 2.	Windows Media Player
-3.	Microsoft .NET Framework 4.5 or higher
+3.	Microsoft .NET Framework 4.0 Full or higher
 4.	Microsoft XNA Framework 4.0 or higher
-* You are recommended to get the newest Microsoft XNA Framework if there is as saving game require Microsoft XNA Framework 4.x
+* You are recommended to get the Microsoft .NET Framework 4.0 Full as Client version will not able to save the game.
 
 Installing prerequisites for Pokémon Universal 3D.
-1.	Pokémon 3D Game (Version 0.51.1 and above)
-* Pokémon 3D Game version 0.50.1 and below will not work fully as it is not optimised or some feature are not implemented in the old version resulting in crash.
+1.	Pokémon 3D Game (Version 0.53 and above)
+* Pokémon 3D Game version 0.52.1 and below will not work fully as it is not optimised or some feature are not implemented in the old version resulting in crash.
 
 ==================================================
 5.2.	Installing precautions
 ==================================================
 I am not responsible for any damage if you obtained the same file though other third party sites that I do not support it.
-You are to either download the file from pokemon3d.net that link to mega or use the Pokémon 3D Resource manager.
+I have only hosted these file at Mega or the Pokémon 3D Resource Manager. (Github inclusive)
 
 ==================================================
 6.	Installing Pokémon Universal 3D
@@ -85,7 +82,7 @@ To install Pokémon Universal 3D, extract the file at the desktop and place it t
 After completing the above step,
 1.	Open Pokémon 3D Game.
 2.	Press the Pokéball button on the top right.
-3.	Check that “Pokémon Universal 3D” is activated.
+3.	Check that "Pokémon Universal 3D" is activated.
 4.	Apply it if they are not activated by default.
 5.	Restart the game to take effect.
 6.	Either Start a new game or load your save and enjoy.
@@ -97,10 +94,13 @@ After completing the above step,
 To remove Pokémon Universal 3D, delete the content pack and gamemode folder.
 
 ==================================================
-7.	Update Pokémon Universal 3D
+7.	Update Pokémon Universal 3D ( Not Patch Files )
 ==================================================
 To Update Pokémon Universal 3D, extract the file at the desktop and remove the old version first.
 Then place it to the respective folder.
+
+To Patch Pokémon Universal 3D, extract the file at the desktop and replace the old version.
+Do not delete any folder or files when you replace.
 
 After completing the above step,
 1.	Open Pokémon 3D Game.
@@ -110,7 +110,7 @@ After completing the above step,
 5.	Restart the game to take effect.
 6.	Load your save and enjoy.
 
-* You are advice to backup your current save at "Pokemon\Saves\<Player Name>\" before loading your saves.
+*	You are advice to backup your current save at "Pokemon\Saves\<Player Name>\" before loading your saves.
 *	All in-game options can be found at "Pokemon\GameModes\Pokémon Universal 3D\Scripts\System\GlobalOptions.dat"
 *	I reserve the rights to reject your bug report if you have cheated causing bugs to happen.
 *	If your save is corrupted or not working, please upload your log.dat file to http://pokemon3d.net/forum/threads/6297/
@@ -125,17 +125,18 @@ Pokémon Universal 3D is created, compiled and edited by jianmingyong.
 ==================================================
 PMD_EOT_D_S Rip From: Martin Zanter
 P_R_S_E Rip From: PocketMonstersMusic
+P_OR_AS Rip From: Pokeli
 Sound Effect Rip From: Pokémon Essentials v13 2012-12-02 (Flameguru, Poccil (Peter O.), Maruno)
 Riviera Music: Paineity
 Mega Man Battle Network 6 Music: Frygoon
-Shing Soul II Rip From: 葉昱廷
+Shining Soul II Rip From: 葉昱廷
 
 ==================================================
 8.2.	Graphic
 ==================================================
 Tileset Rip using Advance Map.
 3D Models by: AgentPaperCraft
-All the other unimplemented Pokémon on P3D: Darkfire
+Overworld Sprites (Custom): jianmingyong
 NPC drawn by: Wesley
 NPC Rip From: Smasher and Pokémon Essentials v13 2012-12-02 (Flameguru, Poccil (Peter O.), Maruno)
 
@@ -145,6 +146,8 @@ NPC Rip From: Smasher and Pokémon Essentials v13 2012-12-02 (Flameguru, Poccil 
 Special thanks to the following people:
 1. Fanta
 2. SViper
+3. Smasher
+4. Haydos709
 
 And Probably those beta tester and suggestion makers.
 
