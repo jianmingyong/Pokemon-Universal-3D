@@ -2,6 +2,8 @@ Main:
 {"Level"{LEV[{"Name"{str[Route 104]}}{"MusicLoop"{str[P_OR_AS Route 104]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[12.Hoenn]}}]}}
 {"Actions"{LEV[{"CanTeleport"{bool[1]}}{"CanDig"{bool[0]}}{"CanFly"{bool[1]}}{"RideType"{int[0]}}{"EnviromentType"{int[0]}}{"Weather"{int[0]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System\GlobalMain]}}]}}
 
+Floor.Layer.-1
+{"Floor"{ENT[{"Size"{intArr[8,1]}}{"Position"{intArr[20,0,-1]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.0
 {"Floor"{ENT[{"Size"{intArr[48,1]}}{"Position"{intArr[0,0,0]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.1
@@ -1276,6 +1278,18 @@ Warp.Layer.38
 Warp.Layer.42
 {"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[40,0.1,42]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\PetalburgWoods\PetalburgWoods.dat,40,0.1,42,0]}}{"Rotation"{int[0]}}]}}
 {"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[41,0.1,42]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,80,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\PetalburgWoods\PetalburgWoods.dat,41,0.1,42,0]}}{"Rotation"{int[0]}}]}}
+
+OffsetMap.Layer.-1
+{"OffsetMap"{MAP[{"Map"{str[12\RustboroCity\RustboroCity.dat]}}{"Offset"{intArr[0,0,-60]}}]}}
+Warp.Layer.-1
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[20,0,-1]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,32,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\RustboroCity\RustboroCity.dat,20,0.1,60,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[21,0,-1]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,32,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\RustboroCity\RustboroCity.dat,21,0.1,60,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[22,0,-1]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,32,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\RustboroCity\RustboroCity.dat,22,0.1,60,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[23,0,-1]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,32,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\RustboroCity\RustboroCity.dat,23,0.1,60,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[24,0,-1]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,32,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\RustboroCity\RustboroCity.dat,24,0.1,60,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[25,0,-1]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,32,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\RustboroCity\RustboroCity.dat,25,0.1,60,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[26,0,-1]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,32,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\RustboroCity\RustboroCity.dat,26,0.1,60,0]}}{"Rotation"{int[0]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[27,0,-1]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,32,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[12\RustboroCity\RustboroCity.dat,27,0.1,60,0]}}{"Rotation"{int[0]}}]}}
 
 OffsetMap.Layer.62
 {"OffsetMap"{MAP[{"Map"{str[12\PetalburgCity\PetalburgCity.dat]}}{"Offset"{intArr[48,0,42]}}]}}
