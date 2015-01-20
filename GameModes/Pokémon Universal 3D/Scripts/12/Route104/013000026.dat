@@ -1,0 +1,17 @@
+version=2
+:if:<Register.value(12\Route104\013000026)>=1
+	@Text.show(I like filling my mouth with seeds,~then spitting them out fast!*You can have this, so you try it out!*Use it on a POKéMON, and it will learn~a move for firing seeds rapidly.)
+	@Item.give(TM 94,1)
+	@Item.messagegive(TM 94,1)
+	@Register.change(12\Route104\013000026,2)
+	:end
+:endif
+:if:<Register.value(12\Route104\013000026)>=2
+	@Text.show(A word of advice!*A TM, TECHNICAL MACHINE, is good only~for one-time use.*Once you use it, it's gone.~Think twice before using it!)
+	:end
+:endif
+@Storage.set(str,System.ActionScript,12\Route104\013000026.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
+:end

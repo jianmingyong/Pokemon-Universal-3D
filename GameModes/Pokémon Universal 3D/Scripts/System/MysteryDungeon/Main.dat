@@ -31,23 +31,32 @@ version=2
 
 # Init Variable.
 @Storage.set(int,MysteryDungeon.NumberOfRoomGenerated,0)
+@Storage.set(int,MysteryDungeon.MaxNumberOfRoomGenerated,<System.random(5,8)>)
 @Storage.set(int,MysteryDungeon.NumberOfWallGenerated,0)
 @Storage.set(int,MysteryDungeon.Processor,<Math.clamp(<Storage.get(int,MysteryDungeon.Processor)>,1,10)>)
 @Storage.set(int,MysteryDungeon.MaxRoomSizeX,<Math.clamp(<Storage.get(int,MysteryDungeon.MaxRoomSizeX)>,5,<Storage.get(int,MysteryDungeon.MapSizeX)>-1)>)
 @Storage.set(int,MysteryDungeon.MaxRoomSizeZ,<Math.clamp(<Storage.get(int,MysteryDungeon.MaxRoomSizeZ)>,5,<Storage.get(int,MysteryDungeon.MapSizeZ)>-1)>)
 @Storage.set(bool,MysteryDungeon.MasterValid,true)
 
-:while:<Storage.get(bool,MysteryDungeon.MasterValid)>=true
+# Generate Random Rooms.
+:if:<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>=0
+	@Storage.set(int,MysteryDungeon.RoomSizeX,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeX)>)>)
+	@Storage.set(int,MysteryDungeon.RoomSizeZ,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeZ)>)>)
+	@Storage.set(int,MysteryDungeon.RoomPositionX,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeX)>-<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)
+	@Storage.set(int,MysteryDungeon.RoomPositionZ,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeZ)>-<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>)
+	@Script.start(System\MysteryDungeon\GenerateRoom)
+:endif
+
+#:while:<Storage.get(bool,MysteryDungeon.MasterValid)>=true
 	# Dig a Random Object.
 	#:if:<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>=0
-		@Storage.set(int,MysteryDungeon.RoomSizeX,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeX)>)>)
-		@Storage.set(int,MysteryDungeon.RoomSizeZ,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeZ)>)>)
-		@Storage.set(int,MysteryDungeon.RoomPositionX,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeX)>-<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)
-		@Storage.set(int,MysteryDungeon.RoomPositionZ,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeZ)>-<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>)
-		@Script.start(System\MysteryDungeon\GenerateRoom)
-		@Script.start(System\MysteryDungeon\test)
+		#@Storage.set(int,MysteryDungeon.RoomSizeX,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeX)>)>)
+		#@Storage.set(int,MysteryDungeon.RoomSizeZ,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeZ)>)>)
+		#@Storage.set(int,MysteryDungeon.RoomPositionX,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeX)>-<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)
+		#@Storage.set(int,MysteryDungeon.RoomPositionZ,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeZ)>-<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>)
+		#@Script.start(System\MysteryDungeon\GenerateRoom)
 	#:endif
-:endwhile
+#:endwhile
 
 # Warp Player to a walkable zone.
 @Storage.set(int,MysteryDungeon.RandomRoomID,<System.random(0,<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>-1)>)

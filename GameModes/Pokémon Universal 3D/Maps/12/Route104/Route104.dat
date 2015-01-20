@@ -1116,10 +1116,11 @@ Sign.Layer.66
 
 LoamySoil.Layer.25
 {"EntityField"{ENT[{"EntityID"{str[LoamySoil]}}{"ID"{int[0110000222]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,22]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[Floor]}}{"ID"{int[0110000231]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,23]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[LoamySoil]}}{"ID"{int[0110000232]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,23]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[LoamySoil]}}{"ID"{int[0110000242]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,24]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[Floor]}}{"ID"{int[0110000251]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,25]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[LoamySoil]}}{"ID"{int[0110000252]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,25]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
-
 LoamySoil.Layer.41
 {"EntityField"{ENT[{"EntityID"{str[Floor]}}{"ID"{int[0300000411]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[30,0,41]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[LoamySoil]}}{"ID"{int[0300000412]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[30,0,41]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
@@ -1127,6 +1128,11 @@ LoamySoil.Layer.41
 {"EntityField"{ENT[{"EntityID"{str[Floor]}}{"ID"{int[0320000411]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[32,0,41]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[LoamySoil]}}{"ID"{int[0320000412]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[32,0,41]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1,1,1]}}{"Collision"{bool[1]}}{"ModelID"{int[0]}}]}}
 
+Berry.Layer.23
+{"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"ID"{int[0110000231]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,23]}}{"TexturePath"{str[Berries]}}{"Textures"{recArr[[352,32,32,32]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[0110000231]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,23]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route104\011000023]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"ID"{int[0110000251]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,25]}}{"TexturePath"{str[Berries]}}{"Textures"{recArr[[96,0,32,32]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[0110000251]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,25]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route104\011000025]}}]}}
 Berry.Layer.41
 {"EntityField"{ENT[{"EntityID"{str[WallBill]}}{"ID"{int[0300000411]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[30,0,41]}}{"TexturePath"{str[Berries]}}{"Textures"{recArr[[352,32,32,32]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[ScriptBlock]}}{"ID"{int[0300000411]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[30,0,41]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\Route104\030000041]}}]}}

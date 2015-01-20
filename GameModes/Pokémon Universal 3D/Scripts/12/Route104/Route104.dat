@@ -1,4 +1,10 @@
 version=2
+:if:<Register.value(12\Route104\011000023)>=1
+	@Entity.remove(0110000232)
+:endif
+:if:<Register.value(12\Route104\011000023)>=2
+	@Entity.remove(0110000231)
+:endif
 :if:<Register.value(12\Route104\030000041)>=1
 	@Entity.remove(0300000412)
 :endif
@@ -19,5 +25,8 @@ version=2
 :endif
 :if:<NPC.exists(023001059)>=false
 	@NPC.spawn(23,-1,59,1,12\Route104\023001059,Fisherman,false,1,,023001059,Still)
+:endif
+:if:<NPC.exists(013000026)>=false
+	@NPC.spawn(13,0,26,1,12\Route104\013000026,NPC 9,false,2,,013000026,Looking)
 :endif
 :end
