@@ -143,6 +143,8 @@ version=2
 	# Digging Algorithm.
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>0 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.1)>)
+		@Storage.set(int,MysteryDungeon.RoomEntityID.<Storage.get(int,MysteryDungeon.NumberofRoomEntityStore)>,<Storage.get(int,MysteryDungeon.CurrentDigRoomID.1)>)
+		@Storage.update(int,MysteryDungeon.NumberofRoomEntityStore,add,1)
 		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:else
@@ -158,6 +160,8 @@ version=2
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.2)>)
 		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
+			@Storage.set(int,MysteryDungeon.RoomEntityID.<Storage.get(int,MysteryDungeon.NumberofRoomEntityStore)>,<Storage.get(int,MysteryDungeon.CurrentDigRoomID.2)>)
+			@Storage.update(int,MysteryDungeon.NumberofRoomEntityStore,add,1)
 		:else
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomZ,add,1)
 			@Storage.set(int,MysteryDungeon.CurrentDigRoomX,<Storage.get(int,MysteryDungeon.RoomPositionX)>)
@@ -169,6 +173,8 @@ version=2
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>2 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.3)>)
+		@Storage.set(int,MysteryDungeon.RoomEntityID.<Storage.get(int,MysteryDungeon.NumberofRoomEntityStore)>,<Storage.get(int,MysteryDungeon.CurrentDigRoomID.3)>)
+		@Storage.update(int,MysteryDungeon.NumberofRoomEntityStore,add,1)
 		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:else
@@ -182,6 +188,8 @@ version=2
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>3 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.4)>)
+		@Storage.set(int,MysteryDungeon.RoomEntityID.<Storage.get(int,MysteryDungeon.NumberofRoomEntityStore)>,<Storage.get(int,MysteryDungeon.CurrentDigRoomID.4)>)
+		@Storage.update(int,MysteryDungeon.NumberofRoomEntityStore,add,1)
 		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:else
@@ -195,6 +203,8 @@ version=2
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>4 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.5)>)
+		@Storage.set(int,MysteryDungeon.RoomEntityID.<Storage.get(int,MysteryDungeon.NumberofRoomEntityStore)>,<Storage.get(int,MysteryDungeon.CurrentDigRoomID.5)>)
+		@Storage.update(int,MysteryDungeon.NumberofRoomEntityStore,add,1)
 		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:else
@@ -208,6 +218,8 @@ version=2
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>5 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.6)>)
+		@Storage.set(int,MysteryDungeon.RoomEntityID.<Storage.get(int,MysteryDungeon.NumberofRoomEntityStore)>,<Storage.get(int,MysteryDungeon.CurrentDigRoomID.6)>)
+		@Storage.update(int,MysteryDungeon.NumberofRoomEntityStore,add,1)
 		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:else
@@ -221,6 +233,8 @@ version=2
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>6 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.7)>)
+		@Storage.set(int,MysteryDungeon.RoomEntityID.<Storage.get(int,MysteryDungeon.NumberofRoomEntityStore)>,<Storage.get(int,MysteryDungeon.CurrentDigRoomID.7)>)
+		@Storage.update(int,MysteryDungeon.NumberofRoomEntityStore,add,1)
 		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:else
@@ -234,6 +248,8 @@ version=2
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>7 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.8)>)
+		@Storage.set(int,MysteryDungeon.RoomEntityID.<Storage.get(int,MysteryDungeon.NumberofRoomEntityStore)>,<Storage.get(int,MysteryDungeon.CurrentDigRoomID.8)>)
+		@Storage.update(int,MysteryDungeon.NumberofRoomEntityStore,add,1)
 		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:else
@@ -247,6 +263,8 @@ version=2
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>8 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.9)>)
+		@Storage.set(int,MysteryDungeon.RoomEntityID.<Storage.get(int,MysteryDungeon.NumberofRoomEntityStore)>,<Storage.get(int,MysteryDungeon.CurrentDigRoomID.9)>)
+		@Storage.update(int,MysteryDungeon.NumberofRoomEntityStore,add,1)
 		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:else
@@ -260,6 +278,8 @@ version=2
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>9 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
 		@Entity.remove(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.10)>)
+		@Storage.set(int,MysteryDungeon.RoomEntityID.<Storage.get(int,MysteryDungeon.NumberofRoomEntityStore)>,<Storage.get(int,MysteryDungeon.CurrentDigRoomID.10)>)
+		@Storage.update(int,MysteryDungeon.NumberofRoomEntityStore,add,1)
 		:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 			@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 		:else

@@ -1,7 +1,9 @@
 ﻿version=2
 # This is part of the Mystery Dungeon Generator API.
 # Init Variable.
-
+@Storage.set(bool,MysteryDungeon.CheckingRoomValid,true)
+@Storage.set(int,MysteryDungeon.TempNumberofRoomEntityStore,0)
+@Storage.set(int,MysteryDungeon.Temp.,0)
 # Global Variable.
 
 :if:<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>=0
@@ -10,6 +12,11 @@
 	@Storage.set(int,MysteryDungeon.RoomPositionX,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeX)>-<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)
 	@Storage.set(int,MysteryDungeon.RoomPositionZ,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeZ)>-<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>)
 :else
-	
+	@Storage.set(int,MysteryDungeon.RoomSizeX,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeX)>)>)
+	@Storage.set(int,MysteryDungeon.RoomSizeZ,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeZ)>)>)
+	@Storage.set(int,MysteryDungeon.RoomPositionX,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeX)>-<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)
+	@Storage.set(int,MysteryDungeon.RoomPositionZ,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeZ)>-<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>)
+	:while:<Storage.get(bool,MysteryDungeon.CheckingRoomValid)>=true
+		
 :endif
 :end

@@ -23,7 +23,7 @@ version=2
 ##############################
 # Do not touch anything below here
 ##############################
-
+@Script.start(System\MysteryDungeon\Test)
 :if:<Register.registered(MysteryDungeon.SaveMap)>=false
 	@Register.register(MysteryDungeon.SaveMap)
 :endif
@@ -37,6 +37,7 @@ version=2
 @Storage.set(int,MysteryDungeon.MaxRoomSizeX,<Math.clamp(<Storage.get(int,MysteryDungeon.MaxRoomSizeX)>,5,<Storage.get(int,MysteryDungeon.MapSizeX)>-1)>)
 @Storage.set(int,MysteryDungeon.MaxRoomSizeZ,<Math.clamp(<Storage.get(int,MysteryDungeon.MaxRoomSizeZ)>,5,<Storage.get(int,MysteryDungeon.MapSizeZ)>-1)>)
 @Storage.set(bool,MysteryDungeon.MasterValid,true)
+@Storage.set(int,MysteryDungeon.NumberofRoomEntityStore,0)
 
 # Generate Random Rooms.
 :if:<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>=0
