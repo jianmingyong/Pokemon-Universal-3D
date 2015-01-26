@@ -23,7 +23,6 @@ version=2
 ##############################
 # Do not touch anything below here
 ##############################
-@Script.start(System\MysteryDungeon\Test)
 :if:<Register.registered(MysteryDungeon.SaveMap)>=false
 	@Register.register(MysteryDungeon.SaveMap)
 :endif
@@ -40,13 +39,14 @@ version=2
 @Storage.set(int,MysteryDungeon.NumberofRoomEntityStore,0)
 
 # Generate Random Rooms.
-:if:<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>=0
-	@Storage.set(int,MysteryDungeon.RoomSizeX,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeX)>)>)
-	@Storage.set(int,MysteryDungeon.RoomSizeZ,<System.random(5,<Storage.get(int,MysteryDungeon.MaxRoomSizeZ)>)>)
-	@Storage.set(int,MysteryDungeon.RoomPositionX,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeX)>-<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>)
-	@Storage.set(int,MysteryDungeon.RoomPositionZ,<System.random(1,<Storage.get(int,MysteryDungeon.MapSizeZ)>-<Storage.get(int,MysteryDungeon.RoomSizeZ)>-1)>)
-	@Script.start(System\MysteryDungeon\GenerateRoom)
-:endif
+@Script.start(System\MysteryDungeon\ValidRoom)
+@Script.start(System\MysteryDungeon\GenerateRoom)
+@Script.start(System\MysteryDungeon\ValidRoom)
+@Script.start(System\MysteryDungeon\GenerateRoom)
+@Script.start(System\MysteryDungeon\ValidRoom)
+@Script.start(System\MysteryDungeon\GenerateRoom)
+@Script.start(System\MysteryDungeon\ValidRoom)
+@Script.start(System\MysteryDungeon\GenerateRoom)
 
 #:while:<Storage.get(bool,MysteryDungeon.MasterValid)>=true
 	# Dig a Random Object.

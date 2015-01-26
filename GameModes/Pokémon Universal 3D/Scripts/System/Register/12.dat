@@ -125,6 +125,9 @@ version=2
 :if:<Register.registered(12\PetalburgCity\PokeMart\002000002)>=false
 	@Register.register(12\PetalburgCity\PokeMart\002000002,int,1)
 :endif
+:if:<Register.registered(12\Route104\011000023)>=false
+	@Register.register(12\Route104\011000023,int,1)
+:endif
 :if:<Register.registered(12\Route104\013000026)>=false
 	@Register.register(12\Route104\013000026,int,1)
 :endif
