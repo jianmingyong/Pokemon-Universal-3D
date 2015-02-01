@@ -2,8 +2,8 @@ Name|Genesect
 Number|649
 ExperienceType|3
 BaseExperience|270
-Type1|Grass
-Type2|
+Type1|Bug
+Type2|Steel
 CatchRate|3
 BaseFriendship|0
 EggGroup1|None
@@ -32,7 +32,7 @@ FPSpDefense|0
 FPSpeed|1
 CanFly|0
 CanSwim|0
-Pokedex|This Pokémon existed 300 million years ago. Team Plasma altered it and attached a cannon to its back./Paleozoic Pokemon/85.2/1.5/0,148,0
+Pokedex|This Pokémon existed 300 million years ago. Team Plasma altered it and attached a cannon to its back.\Paleozoic Pokemon\85.2\1.5\0,148,0
 Scale|1.10
 Move|1,565
 Move|1,546

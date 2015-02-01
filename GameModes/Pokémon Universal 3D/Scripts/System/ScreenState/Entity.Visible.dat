@@ -6,10 +6,6 @@ version=2
 :endif
 :if:<Storage.get(int,System.ScreenState)>=1
 	:if:<Register.value(System.Game ID)>=12
-		@Entity.setopacity(121,0)
-		@Entity.setopacity(122,0)
-		@Entity.setopacity(123,0)
-		@Entity.setopacity(124,0)
 		@Entity.setvisible(121,1)
 		@Entity.setvisible(122,1)
 		@Entity.setvisible(123,1)
@@ -21,14 +17,6 @@ version=2
 		@Entity.setvisible(124,0)
 	:endif
 	:if:<Register.value(System.Game ID)>=15
-		@Entity.setopacity(151,0)
-		@Entity.setopacity(152,0)
-		@Entity.setopacity(153,0)
-		@Entity.setopacity(154,0)
-		@Entity.setopacity(155,0)
-		@Entity.setopacity(156,0)
-		@Entity.setopacity(157,0)
-		@Entity.setopacity(158,0)
 		@Entity.setvisible(151,1)
 		@Entity.setvisible(152,1)
 		@Entity.setvisible(153,1)
@@ -48,12 +36,6 @@ version=2
 		@Entity.setvisible(158,0)
 	:endif
 	:if:<Register.value(System.Game ID)>=16
-		@Entity.setopacity(161,0)
-		@Entity.setopacity(162,0)
-		@Entity.setopacity(163,0)
-		@Entity.setopacity(164,0)
-		@Entity.setopacity(165,0)
-		@Entity.setopacity(166,0)
 		@Entity.setvisible(161,1)
 		@Entity.setvisible(162,1)
 		@Entity.setvisible(163,1)

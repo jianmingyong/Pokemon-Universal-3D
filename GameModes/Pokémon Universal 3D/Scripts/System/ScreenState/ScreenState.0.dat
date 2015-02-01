@@ -20,7 +20,7 @@
 	:when:Options
 		@Script.start(System\ScreenState\ScreenState.0.Options)
 	:when:Downloadable Content
-		@Text.show(This is in beta feature right now.~It will not function.)
+		@Text.show(Still not working yet :))
 	:endwhen
 :endwhile
 :end

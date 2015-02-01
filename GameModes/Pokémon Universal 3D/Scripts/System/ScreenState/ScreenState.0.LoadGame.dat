@@ -2,10 +2,14 @@
 :while:<Storage.get(int,System.ScreenState)>=0
 	@Text.show(Please Choose an option.)
 	@Options.setcancelindex(2)
-	@Options.show(Pokémon Emerald [12],Pokémon Dark Energy [16],Back)
+	@Options.show(Pokémon Emerald [12],Mystery Dungeon [15],Pokémon Dark Energy [16],Back)
 	:when:Pokémon Emerald [12]
 		@Register.change(System.Game ID,12)
 		@Script.start(System\GlobalLoad)
+	:when:Mystery Dungeon [15]
+		@Register.change(System.Game ID,15)
+		@Storage.set(int,System.ScreenState,1)
+		@Script.start(System\ScreenState\ScreenState.1)
 	:when:Pokémon Dark Energy [16]
 		@Register.change(System.Game ID,16)
 		@Script.start(System\GlobalLoad)

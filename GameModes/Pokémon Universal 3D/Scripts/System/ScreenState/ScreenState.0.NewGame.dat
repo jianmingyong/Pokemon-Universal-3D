@@ -13,9 +13,10 @@ version=2
 		:endif
 	:when:Pokémon Dark Energy [16]
 		:if:<Register.registered(System.Load.16)>=false
-			@Storage.set(int,System.ScreenState,1)
-			@Register.change(System.Game ID,16)
-			@Script.start(System\ScreenState\ScreenState.1)
+			#@Storage.set(int,System.ScreenState,1)
+			#@Register.change(System.Game ID,16)
+			#@Script.start(System\ScreenState\ScreenState.1)
+			@Text.show(This is under development.~It is disabled for safty reasons.)
 		:else
 			@Text.show(Unable to restart.)
 		:endif

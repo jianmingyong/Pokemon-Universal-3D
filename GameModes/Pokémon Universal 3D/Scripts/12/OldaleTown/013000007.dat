@@ -1,6 +1,5 @@
 version=2
 :if:<Register.value(12\OldaleTown\013000007)>=1
-	@Sound.play(Select)
 	@Text.show(Hi!~I work at a POKéMON MART.*Can I get you to come with me?)
 	@Music.play(P_R_S_E Come Along)
 	:if:<Player.position>=13,0,15
