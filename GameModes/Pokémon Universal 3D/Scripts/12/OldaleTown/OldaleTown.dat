@@ -1,13 +1,22 @@
 version=2
 :if:<Register.value(System.3D Buildings)>=true
-	@Entity.remove(0130000041)
-	@Entity.addtoposition(0130000042,0,10,0)
-	@Entity.remove(0050000141)
-	@Entity.addtoposition(0050000142,0,10,0)
-	@Entity.remove(0040000051)
-	@Entity.addtoposition(0040000052,0,10,0)
-	@Entity.remove(0140000141)
-	@Entity.addtoposition(0140000142,0,10,0)
+	@Entity.setvisible(0130000041,0)
+	@Entity.setvisible(0130000042,1)
+	@Entity.setvisible(0050000141,0)
+	@Entity.setvisible(0050000142,1)
+	@Entity.setvisible(0040000051,0)
+	@Entity.setvisible(0040000052,1)
+	@Entity.setvisible(0140000141,0)
+	@Entity.setvisible(0140000142,1)
+:else
+	@Entity.setvisible(0130000041,1)
+	@Entity.setvisible(0130000042,0)
+	@Entity.setvisible(0050000141,1)
+	@Entity.setvisible(0050000142,0)
+	@Entity.setvisible(0040000051,1)
+	@Entity.setvisible(0040000052,0)
+	@Entity.setvisible(0140000141,1)
+	@Entity.setvisible(0140000142,0)
 :endif
 :if:<Register.value(12\OldaleTown)>=1
 	@Entity.remove(008000019)

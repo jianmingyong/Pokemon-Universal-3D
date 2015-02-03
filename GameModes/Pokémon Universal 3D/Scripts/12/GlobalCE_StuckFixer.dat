@@ -1,0 +1,6 @@
+version=2
+@Text.show(Palkia: Hey what are you doing here?~This is my fobidden space!*I see, you are stuck here... hmm~I can bring you out.)
+@Screen.fadeout
+@Player.warp(~,~+1,~)
+@Screen.fadein
+:end

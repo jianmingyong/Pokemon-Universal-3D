@@ -1,9 +1,14 @@
 ﻿version=2
 :if:<Register.value(System.3D Buildings)>=true
-	@Entity.remove(0240000181)
-	@Entity.addtoposition(0240000182,0,10,0)
-	@Entity.remove(0190000221)
-	@Entity.addtoposition(0190000222,0,10,0)
+	@Entity.setvisible(0240000181,0)
+	@Entity.setvisible(0240000182,1)
+	@Entity.setvisible(0190000221,0)
+	@Entity.setvisible(0190000222,1)
+:else
+	@Entity.setvisible(0240000181,1)
+	@Entity.setvisible(0240000182,0)
+	@Entity.setvisible(0190000221,1)
+	@Entity.setvisible(0190000222,0)
 :endif
 :if:<Register.value(12\PetalburgCity)>=1
 	:if:<NPC.exists(008000030)>=false

@@ -1,5 +1,4 @@
 version=2
-@Sound.play(Select)
 @Text.show(Are you sure you want to exit?)
 @Options.setcancelindex(1)
 @Options.show(Yes,No)

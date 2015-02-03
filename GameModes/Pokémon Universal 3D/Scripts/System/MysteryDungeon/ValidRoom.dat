@@ -129,7 +129,7 @@
 		
 		# Getting Room Entity ID.
 		:if:<Storage.get(int,MysteryDungeon.Processor)>>0 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
-			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.1)>)>=true
+			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.1)>+1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.1)>-1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.1)>+1000000)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.1)>-1000000)>)>=true
 				:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 					@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 				:else
@@ -145,7 +145,7 @@
 			:endif
 		:endif
 		:if:<Storage.get(int,MysteryDungeon.Processor)>>1 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
-			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.2)>)>=true
+			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.2)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.2)>+1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.2)>-1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.2)>+1000000)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.2)>-1000000)>)>=true
 				:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 					@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 				:else
@@ -161,7 +161,7 @@
 			:endif
 		:endif
 		:if:<Storage.get(int,MysteryDungeon.Processor)>>2 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
-			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.3)>)>=true
+			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.3)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.3)>+1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.3)>-1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.3)>+1000000)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.3)>-1000000)>)>=true
 				:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 					@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 				:else
@@ -177,7 +177,7 @@
 			:endif
 		:endif
 		:if:<Storage.get(int,MysteryDungeon.Processor)>>3 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
-			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.4)>)>=true
+			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.4)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.4)>+1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.4)>-1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.4)>+1000000)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.4)>-1000000)>)>=true
 				:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 					@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 				:else
@@ -193,7 +193,7 @@
 			:endif
 		:endif
 		:if:<Storage.get(int,MysteryDungeon.Processor)>>4 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
-			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.5)>)>=true
+			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.5)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.5)>+1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.5)>-1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.5)>+1000000)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.5)>-1000000)>)>=true
 				:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 					@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 				:else
@@ -209,7 +209,7 @@
 			:endif
 		:endif
 		:if:<Storage.get(int,MysteryDungeon.Processor)>>5 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
-			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.6)>)>=true
+			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.6)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.6)>+1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.6)>-1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.6)>+1000000)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.6)>-1000000)>)>=true
 				:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 					@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 				:else
@@ -225,7 +225,7 @@
 			:endif
 		:endif
 		:if:<Storage.get(int,MysteryDungeon.Processor)>>6 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
-			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.7)>)>=true
+			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.7)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.7)>+1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.7)>-1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.7)>+1000000)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.7)>-1000000)>)>=true
 				:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 					@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 				:else
@@ -241,7 +241,7 @@
 			:endif
 		:endif
 		:if:<Storage.get(int,MysteryDungeon.Processor)>>7 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
-			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.8)>)>=true
+			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.8)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.8)>+1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.8)>-1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.8)>+1000000)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.8)>-1000000)>)>=true
 				:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 					@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 				:else
@@ -257,7 +257,7 @@
 			:endif
 		:endif
 		:if:<Storage.get(int,MysteryDungeon.Processor)>>8 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
-			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.9)>)>=true
+			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.9)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.9)>+1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.9)>-1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.9)>+1000000)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.9)>-1000000)>)>=true
 				:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 					@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 				:else
@@ -273,7 +273,7 @@
 			:endif
 		:endif
 		:if:<Storage.get(int,MysteryDungeon.Processor)>>9 <and> <Storage.get(bool,MysteryDungeon.RoomDigCompleted)>=false
-			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.10)>)>=true
+			:if:<Entity.visible(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.10)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.10)>+1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.10)>-1)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.10)>+1000000)>)>=true <and> <Entity.visible(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigRoomID.10)>-1000000)>)>=true
 				:if:<Storage.get(int,MysteryDungeon.CurrentDigRoomX)><<Math.int(<Storage.get(int,MysteryDungeon.RoomPositionX)>+<Storage.get(int,MysteryDungeon.RoomSizeX)>-1)>
 					@Storage.update(int,MysteryDungeon.CurrentDigRoomX,add,1)
 				:else

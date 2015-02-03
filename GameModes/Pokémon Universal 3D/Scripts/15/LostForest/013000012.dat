@@ -1,106 +1,70 @@
 version=2
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=1 <and> <Register.value(System\Intro\15\LostForest.Season)>=Spring <and> <Register.value(System\Intro\15\LostForest.NumberofAttempts)>=0
-	@Sound.play(Select)
 	@Text.show(Summer, winter, spring and fall...)
-	@Sound.play(Select)
 	@Text.show(N: White Snow~S: Bright Sun)
-	@Sound.play(Select)
 	@Text.show(E: Blooming Flowers~W: Vivid Leaves)
-	@Sound.play(Select)
 	@Text.show(The forest shall move as the seasons~pass. Time passes in cycles.)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=1 <and> <Register.value(System\Intro\15\LostForest.Season)>=Spring <and> <Register.value(System\Intro\15\LostForest.NumberofAttempts)>>0
-	@Sound.play(Select)
 	@Text.show(N: White ..........~S: .......... Sun)
-	@Sound.play(Select)
 	@Text.show(E: Blooming ..........~W: .......... Leaves)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=1 <and> <Register.value(System\Intro\15\LostForest.Season)>=Summer
-	@Sound.play(Select)
 	@Text.show(N: Vivid ..........~S: .......... Flowers)
-	@Sound.play(Select)
 	@Text.show(E: White ..........~W: .......... Sun)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=1 <and> <Register.value(System\Intro\15\LostForest.Season)>=Fall
-	@Sound.play(Select)
 	@Text.show(N: Bright ..........~S: .......... Snow)
-	@Sound.play(Select)
 	@Text.show(E: Vivid ..........~W: .......... Flowers)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=1 <and> <Register.value(System\Intro\15\LostForest.Season)>=Winter
-	@Sound.play(Select)
 	@Text.show(N: Blooming ..........~S: .......... Leaves)
-	@Sound.play(Select)
 	@Text.show(E: Bright ..........~W: .......... Snow)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=2 <and> <Register.value(System\Intro\15\LostForest.Season)>=Spring
-	@Sound.play(Select)
 	@Text.show(N: .......... ..........~S: .......... Sun)
-	@Sound.play(Select)
 	@Text.show(E: .......... ..........~W: .......... Leaves)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=2 <and> <Register.value(System\Intro\15\LostForest.Season)>=Summer
-	@Sound.play(Select)
 	@Text.show(N: .......... Leaves~S: .......... ..........)
-	@Sound.play(Select)
 	@Text.show(E: .......... Snow~W: .......... ..........)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=2 <and> <Register.value(System\Intro\15\LostForest.Season)>=Fall <and> <Register.value(System\Intro\15\LostForest.NumberofAttempts)>=0
-	@Sound.play(Select)
 	@Text.show(N: .......... ..........~S: .......... Snow)
-	@Sound.play(Select)
 	@Text.show(E: .......... ..........~W: .......... Flowers)
-	@Sound.play(Select)
 	@Text.show(Spring, Summer, Fall and Winter...)
-	@Sound.play(Select)
 	@Text.show(The path will be opened.~Fail, and all will be undone.)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=2 <and> <Register.value(System\Intro\15\LostForest.Season)>=Fall <and> <Register.value(System\Intro\15\LostForest.NumberofAttempts)>>0
-	@Sound.play(Select)
 	@Text.show(N: .......... ..........~S: .......... Snow)
-	@Sound.play(Select)
 	@Text.show(E: .......... ..........~W: .......... Flowers)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=2 <and> <Register.value(System\Intro\15\LostForest.Season)>=Winter
-	@Sound.play(Select)
 	@Text.show(N: .......... Flowers~S: .......... ..........)
-	@Sound.play(Select)
 	@Text.show(E: .......... Sun~W: .......... ..........)
 :endif
 
 
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=3 <and> <Register.value(System\Intro\15\LostForest.Season)>=Spring
-	@Sound.play(Select)
 	@Text.show(N: .......... ..........~S: .......... ..........)
-	@Sound.play(Select)
 	@Text.show(E: .......... ..........~W: .......... ..........)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=3 <and> <Register.value(System\Intro\15\LostForest.Season)>=Summer
-	@Sound.play(Select)
 	@Text.show(N: .......... ..........~S: .......... ..........)
-	@Sound.play(Select)
 	@Text.show(E: .......... ..........~W: .......... ..........)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=3 <and> <Register.value(System\Intro\15\LostForest.Season)>=Fall 
-	@Sound.play(Select)
 	@Text.show(N: .......... ..........~S: .......... ..........)
-	@Sound.play(Select)
 	@Text.show(E: .......... ..........~W: .......... ..........)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=3 <and> <Register.value(System\Intro\15\LostForest.Season)>=Winter <and> <Register.value(System\Intro\15\LostForest.NumberofAttempts)>=0
-	@Sound.play(Select)
 	@Text.show(N: .......... ..........~S: .......... ..........)
-	@Sound.play(Select)
 	@Text.show(E: .......... ..........~W: .......... ..........)
-	@Sound.play(Select)
 	@Text.show(Fall, Spring, Winter and Summer...)
-	@Sound.play(Select)
 	@Text.show(The path will be opened.~Fail, and all will be undone.)
 :endif
 :if:<Register.value(System\Intro\15\LostForest.Puzzle)>=3 <and> <Register.value(System\Intro\15\LostForest.Season)>=Winter <and> <Register.value(System\Intro\15\LostForest.NumberofAttempts)>>0
-	@Sound.play(Select)
 	@Text.show(N: .......... ..........~S: .......... ..........)
-	@Sound.play(Select)
 	@Text.show(E: .......... ..........~W: .......... ..........)
 :endif
 :end

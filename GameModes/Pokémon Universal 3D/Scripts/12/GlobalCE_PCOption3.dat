@@ -1,5 +1,4 @@
 version=2
-@Sound.play(Select)
 @Text.show(What would you like to do?)
 @Options.setcancelindex(3)
 @Options.show(ITEM STORAGE,BANK,MAILBOX,TURN OFF)

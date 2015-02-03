@@ -66,7 +66,6 @@
 	@NPC.turn(007000001,2)
 	@Text.show(Thank you for waiting.*We've restored your POKéMON~to full health.*We hope to see you again!)
 :when:NO
-	@Sound.play(Select)
 	@Text.show(We hope to see you again!)
 :endwhen
 :end

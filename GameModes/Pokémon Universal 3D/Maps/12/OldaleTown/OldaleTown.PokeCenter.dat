@@ -38,6 +38,10 @@ Floor.Layer.7
 Floor.Layer.8
 {"Floor"{ENT[{"Size"{intArr[2,1]}}{"Position"{intArr[6,0,8]}}{"TexturePath"{str[12\Tileset1618]}}{"Texture"{rec[0,0,16,16]}}]}}
 
+FloorFix.Layer.0
+{"Floor"{ENT[{"Size"{intArr[14,8]}}{"Position"{intArr[0,-1,0]}}{"TexturePath"{str[12\Tileset_Outside]}}{"Texture"{rec[0,0,16,16]}}]}}
+{"NPC"{NPC[{"Name"{str[Palkia]}}{"ID"{int[000000000]}}{"Position"{sngArr[7,-1,4]}}{"TextureID"{str[Palkia]}}{"Rotation"{int[2]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_StuckFixer]}}{"Movement"{str[FacePlayer]}}{"MoveRectangles"{recArr[[22,9,5,5]]}}{"AnimateIdle"{bool[0]}}]}}
+
 Wall.Layer.0.Floor.1
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[11,1]}}{"Position"{sngArr[0,0,0]}}{"TexturePath"{str[12\Tileset1618]}}{"Textures"{recArr[[64,32,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[12]}}]}}
 {"EntityField"{ENT[{"EntityID"{str[ScriptBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[11,0,0]}}{"TexturePath"{str[12\Tileset1618]}}{"Textures"{recArr[[80,32,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[12]}}{"Action"{int[1]}}{"AdditionalValue"{str[12\GlobalCE_HoennMap]}}]}}

@@ -1,11 +1,18 @@
 version=2
 :if:<Register.value(System.3D Buildings)>=true
-	@Entity.remove(0110000161)
-	@Entity.addtoposition(0110000162,0,10,0)
-	@Entity.remove(0100000051)
-	@Entity.addtoposition(0100000052,0,10,0)
-	@Entity.remove(0210000051)
-	@Entity.addtoposition(0210000052,0,10,0)
+	@Entity.setvisible(0100000051,0)
+	@Entity.setvisible(0100000052,1)
+	@Entity.setvisible(0110000161,0)
+	@Entity.setvisible(0110000162,1)
+	@Entity.setvisible(0210000051,0)
+	@Entity.setvisible(0210000052,1)
+:else
+	@Entity.setvisible(0100000051,1)
+	@Entity.setvisible(0100000052,0)
+	@Entity.setvisible(0110000161,1)
+	@Entity.setvisible(0110000162,0)
+	@Entity.setvisible(0210000051,1)
+	@Entity.setvisible(0210000052,0)
 :endif
 :if:<Register.value(12\LittleRootTown)>=1
 	@Entity.remove(010000010)
