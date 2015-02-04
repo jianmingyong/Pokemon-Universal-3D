@@ -1,0 +1,22 @@
+[TRAINER FORMAT]
+Name|Calvin
+TrainerClass|Youngster
+Money|88
+IntroMessage|Ever since I lost to you, I desperately~trained my POKéMON.~You can't say no to my challenge!
+OutroMessage|Arrgh, I lost...~Is my training method not right?
+DefeatMessage|If you're going to get stronger,~I'll get stronger, too.
+TextureID|Youngster
+Region|12.Hoenn
+IniMusic|P_OR_AS Trainer Battle_intro
+DefeatMusic|P_OR_AS Victory! Trainer
+BattleMusic|P_OR_AS Trainer Battle
+Pokemon1|262,27
+Pokemon2|
+Pokemon3|
+Pokemon4|
+Pokemon5|
+Pokemon6|
+Items|
+Gender|0
+AI|2
+IntroSequence|Green,Green

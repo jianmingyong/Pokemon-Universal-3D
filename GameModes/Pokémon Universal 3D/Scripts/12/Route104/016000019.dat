@@ -1,0 +1,18 @@
+﻿version=2
+:if:<Register.value(12\Route104\016000019)>=1
+	@Text.show(This FLOWER SHOP started selling~saplings recently.*It made me so happy, I went overboard~shopping.*I don't need this WHITE HERB anymore.~Would you take it, please?)
+	@Text.show(There is no White Herb at the moment.~Sorry for any inconvenience caused.)
+	#@Item.give(White Herb,1)
+	#@Item.messagegive(White Herb,1)
+	#@Register.change(12\Route104\016000019,2)
+	:end
+:endif
+:if:<Register.value(12\Route104\016000019)>=2
+	@Text.show(This FLOWER SHOP started selling~saplings recently.*It made me so happy, I went overboard~shopping. Where should I put them?)
+	:end
+:endif
+@Storage.set(str,System.ActionScript,12\Route104\016000019.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
+:end

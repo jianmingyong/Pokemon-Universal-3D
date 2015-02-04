@@ -1,0 +1,15 @@
+version=2
+@Text.show(There are 2 Oran Berries!*Do you want to pick them?)
+@Options.setcancelindex(1)
+@Options.show(Yes,No)
+:when:Yes
+	@Item.give(2006,2)
+	@Sound.play(item_found)
+	@Text.show(<Player.name> picked the 2 Oran Berries.*<Player.name> stored them in the Plants~pocket.)
+	@Entity.remove(011000023)
+	@Register.change(12\Route104\011000023,2)
+	@Level.reload
+:when:No
+	:end
+:endwhen
+:end

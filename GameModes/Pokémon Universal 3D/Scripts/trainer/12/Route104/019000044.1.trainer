@@ -2,15 +2,15 @@
 Name|Cindy
 TrainerClass|Lady
 Money|1400
-IntroMessage|We must have been fated to meet.~May I ask you for a battle?
-OutroMessage|Oh, my!
-DefeatMessage|"Hello" is the beginning of "good-bye".~I hope we meet again.
+IntroMessage|Hello, we meet again.~May I ask you for a battle?
+OutroMessage|Oh, my...~I did the best that I could...
+DefeatMessage|"Hello" is the beginning of "good-bye."~I hope we meet again.
 TextureID|Lady
 Region|12.Hoenn
 IniMusic|P_OR_AS Trainer Battle_intro
 DefeatMusic|P_OR_AS Victory! Trainer
 BattleMusic|P_OR_AS Trainer Battle
-Pokemon1|263,7
+Pokemon1|263,11
 Pokemon2|
 Pokemon3|
 Pokemon4|

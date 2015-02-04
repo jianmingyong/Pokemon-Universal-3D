@@ -356,6 +356,22 @@
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\PetalburgCity\PokeMart\002000002" has an invalid value.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
 :endif
+:if:<Register.registered(12\Route104\016000019)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\Route104\016000019" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<not><Register.value(12\Route104\016000019)>=1 <and> <not><Register.value(12\Route104\016000019)>=2
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\Route104\016000019" has an invalid value.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<Register.registered(12\Route104\011000023)>=false
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\Route104\011000023" does not exist.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
+:if:<not><Register.value(12\Route104\011000023)>=1 <and> <not><Register.value(12\Route104\011000023)>=2
+	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\Route104\011000023" has an invalid value.])
+	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)
+:endif
 :if:<Register.registered(12\Route104\013000026)>=false
 	@Storage.set(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.TotalError)>,[Register validation result: "12\Route104\013000026" does not exist.])
 	@Storage.set(int,System.GlobalRegisterValidation.TotalError,<Storage.get(int,System.GlobalRegisterValidation.TotalError)>+1)

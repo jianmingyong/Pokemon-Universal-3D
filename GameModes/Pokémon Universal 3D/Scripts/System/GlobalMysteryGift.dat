@@ -1,7 +1,5 @@
 ﻿version=2
-@Sound.play(Select)
 @Text.show(Welcome to Dialga Mystery Gift Transporter.~Game will be saved after a proper redeem.)
-@Sound.play(Select)
 @Text.show(Do you want to continue?)
 @Options.setcancelindex(1)
 @Options.show(YES,NO)
@@ -10,7 +8,6 @@
 	@Script.start(Function\Return.False)
 	:while:<System.return>=false
 		@Screen.input(,0,,999)
-		@Sound.play(Select)
 		@Text.show(The code you inserted is correct?)
 		@Options.setcancelindex(1)
 		@Options.show(YES,NO)
@@ -25,7 +22,6 @@
 		@Pokemon.add(483,100,Apparently had a fateful encounter,1,at Mystery Gift,0,Mystery Gift)
 		@Sound.play(success)
 		@Text.show(<Player.name> received~Dialga from mystery gift.)
-		@Sound.play(Select)
 		@Text.show(Thank you for using Dialga Mystery Gift~Transporter.)
 		@Register.change(QFBva2Vtb24uYWRkKDQ4MywxMDAsQXBwYXJlbnRseSBoYWQgYSBmYXRlZnVsIGVuY291bnRlciwxLGF0IE15c3RlcnkgR2lmdCwwLE15c3RlcnkgR2lmdCkequal,1)
 		@Player.save

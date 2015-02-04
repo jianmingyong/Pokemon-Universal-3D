@@ -9,6 +9,8 @@ version=2
 	:end
 :endif
 :if:<Register.value(12\PetalburgWoods)>=2
+	@Entity.remove(030000027)
+	@Entity.remove(031000027)
 	:end
 :endif
 @Storage.set(str,System.ActionScript,12\PetalburgWoods\PetalburgWoods.dat)
