@@ -73,6 +73,27 @@ version=2
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigWallID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+2)
 		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+3)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+4)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+5)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+6)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+7)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+8)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*10)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.2,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+1-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+9)
+		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>2
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*1)>)>
@@ -83,6 +104,27 @@ version=2
 		:endif
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigWallID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+2)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+3)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+4)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+5)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+6)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+7)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+8)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*10)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.3,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+2-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+9)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>3
@@ -95,6 +137,27 @@ version=2
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigWallID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+2)
 		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+3)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+4)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+5)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+6)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+7)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+8)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*10)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.4,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+3-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+9)
+		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>4
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*1)>)>
@@ -105,6 +168,27 @@ version=2
 		:endif
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigWallID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+2)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+3)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+4)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+5)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+6)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+7)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+8)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*10)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.5,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+4-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+9)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>5
@@ -117,6 +201,27 @@ version=2
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigWallID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+2)
 		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+3)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+4)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+5)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+6)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+7)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+8)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*10)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.6,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+5-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+9)
+		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>6
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*1)>)>
@@ -127,6 +232,27 @@ version=2
 		:endif
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigWallID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+2)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+3)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+4)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+5)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+6)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+7)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+8)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*10)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.7,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+6-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+9)
 		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>7
@@ -139,6 +265,27 @@ version=2
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigWallID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+2)
 		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+3)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+4)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+5)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+6)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+7)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+8)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*10)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.8,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+7-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+9)
+		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>8
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*1)>)>
@@ -150,6 +297,27 @@ version=2
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigWallID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+2)
 		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+3)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+4)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+5)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+6)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+7)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+8)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*10)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.9,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+8-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+9)
+		:endif
 	:endif
 	:if:<Storage.get(int,MysteryDungeon.Processor)>>9
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*1)>)>
@@ -160,6 +328,27 @@ version=2
 		:endif
 		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>
 			@Storage.set(int,MysteryDungeon.CurrentDigWallID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*2)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+2)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*3)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+3)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*4)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+4)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*5)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+5)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*6)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+6)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*7)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+7)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*8)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+8)
+		:endif
+		:if:<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)>><Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>-1)> <and> <Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9)><<Math.int(<Storage.get(int,MysteryDungeon.WallPositionX)>+<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*10)>)>
+			@Storage.set(int,MysteryDungeon.CurrentDigWallID.10,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.CurrentDigWallX)>+9-<Math.int(<Storage.get(int,MysteryDungeon.WallSizeX)>*9)>)>*1000000)>+<Storage.get(int,MysteryDungeon.CurrentDigWallZ)>+9)
 		:endif
 	:endif
 	

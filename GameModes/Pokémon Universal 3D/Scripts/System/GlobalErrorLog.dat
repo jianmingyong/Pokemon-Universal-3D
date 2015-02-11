@@ -238,7 +238,7 @@ version=2
 	@Text.log(Data: "Pokemon\Save\<Player.name>\Party.dat")
 	:while:<Storage.get(int,System.GlobalPokémonValidation.Error)><<Storage.get(int,System.GlobalPokémonValidation.TotalError)>
 		@Text.log(<Storage.get(str,System.GlobalPokémonValidation.<Storage.get(int,System.GlobalPokémonValidation.Error)>)>)
-		@Storage.set(int,System.GlobalPokémonValidation.Error,<Storage.get(int,System.GlobalPokémonValidation.Error)>+1)
+		@Storage.update(int,System.GlobalPokémonValidation.Error,add,1)
 	:endwhile
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)

@@ -29,7 +29,7 @@ version=2
 	@Screen.fadein
 	:end
 :endif
-@Text.show(No valid save found.~Game will attempt to restart.)
+@Text.show(No valid save found.~Returning to main menu.)
 @Storage.set(int,System.ScreenState,0)
 @Screen.fadein
 @Script.start(System\ScreenState\ScreenState.0)
