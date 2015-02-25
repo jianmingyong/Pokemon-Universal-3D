@@ -23,6 +23,7 @@ version=2
 ##############################
 # Do not touch anything below here
 ##############################
+
 :if:<Register.registered(MysteryDungeon.SaveMap)>=false
 	@Register.register(MysteryDungeon.SaveMap)
 :endif
@@ -49,12 +50,6 @@ version=2
 @Script.start(System\MysteryDungeon\GenerateRoom)
 @Script.start(System\MysteryDungeon\ValidRoom)
 @Script.start(System\MysteryDungeon\GenerateRoom)
-@Script.start(System\MysteryDungeon\ValidRoom)
-@Script.start(System\MysteryDungeon\GenerateRoom)
-@Script.start(System\MysteryDungeon\ValidRoom)
-@Script.start(System\MysteryDungeon\GenerateRoom)
-@Script.start(System\MysteryDungeon\ValidRoom)
-@Script.start(System\MysteryDungeon\GenerateRoom)
 
 #:while:<Storage.get(bool,MysteryDungeon.MasterValid)>=true
 	# Dig a Random Object.
@@ -65,8 +60,8 @@ version=2
 @Storage.set(int,MysteryDungeon.WarpID,<Register.value(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.RandomRoomID)>.ID)>)
 @Storage.set(int,MysteryDungeon.WarpSizeX,<Register.value(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.RandomRoomID)>.SizeX)>)
 @Storage.set(int,MysteryDungeon.WarpSizeZ,<Register.value(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.RandomRoomID)>.SizeZ)>)
-@Storage.set(int,MysteryDungeon.WarpX,<System.random(<Math.floor(<Storage.get(int,MysteryDungeon.WarpID)>/1000000)>,<Math.int(<Math.floor(<Storage.get(int,MysteryDungeon.WarpID)>/1000000)>+<Storage.get(int,MysteryDungeon.WarpSizeX)>-1)>)>)
-@Storage.set(int,MysteryDungeon.WarpZ,<System.random(<Storage.get(int,MysteryDungeon.WarpID)>-<Math.int(<Math.floor(<Storage.get(int,MysteryDungeon.WarpID)>/1000000)>*1000000)>,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.WarpID)>-<Math.int(<Math.floor(<Storage.get(int,MysteryDungeon.WarpID)>/1000000)>*1000000)>)>+<Storage.get(int,MysteryDungeon.WarpSizeZ)>-1)>)>)
+@Storage.set(int,MysteryDungeon.WarpX,<System.random(<Math.floor(<Storage.get(int,MysteryDungeon.WarpID)>/1000)>,<Math.int(<Math.floor(<Storage.get(int,MysteryDungeon.WarpID)>/1000)>+<Storage.get(int,MysteryDungeon.WarpSizeX)>-1)>)>)
+@Storage.set(int,MysteryDungeon.WarpZ,<System.random(<Storage.get(int,MysteryDungeon.WarpID)>-<Math.int(<Math.floor(<Storage.get(int,MysteryDungeon.WarpID)>/1000)>*1000)>,<Math.int(<Math.int(<Storage.get(int,MysteryDungeon.WarpID)>-<Math.int(<Math.floor(<Storage.get(int,MysteryDungeon.WarpID)>/1000)>*1000)>)>+<Storage.get(int,MysteryDungeon.WarpSizeZ)>-1)>)>)
 @Player.warp(<Storage.get(int,MysteryDungeon.WarpX)>,0.1,<Storage.get(int,MysteryDungeon.WarpZ)>)
 @Level.update
 @Title.clear
