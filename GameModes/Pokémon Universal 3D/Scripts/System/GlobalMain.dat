@@ -20,6 +20,7 @@
 	@Storage.set(int,System.ErrorLog.ErrorID5,0)
 	@Storage.set(str,System.ActionScript,GlobalMain.dat)
 	# End Define Variable
+	@Script.start(System\GlobalVerification)
 	@Script.start(System\GlobalRegister)
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
 	@Script.start(System\GlobalOption)
