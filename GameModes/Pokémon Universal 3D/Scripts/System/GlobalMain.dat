@@ -17,6 +17,7 @@
 	@Storage.set(int,System.ErrorLog.ErrorID2,0)
 	@Storage.set(int,System.ErrorLog.ErrorID3,0)
 	@Storage.set(int,System.ErrorLog.ErrorID4,0)
+	@Storage.set(int,System.ErrorLog.ErrorID5,0)
 	@Storage.set(str,System.ActionScript,GlobalMain.dat)
 	# End Define Variable
 	@Script.start(System\GlobalRegister)
