@@ -1,6 +1,8 @@
 version=2
 @Storage.set(str,GlobalVerification.Math.dbl,<Math.dbl(123456789+1)>)
 :if:<not><Stoage.get(str,GlobalVerification.Math.dbl)>=123456790
-	#Return Crash
+	@Storage.set(int,System.ErrorLog.ErrorID5,1)
+	@Storage.set(int,System.ScreenState,3)
+	@Script.start(System\ScreenState\ScreenState.3)
 :endif
 :end
