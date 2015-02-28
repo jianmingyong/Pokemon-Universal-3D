@@ -1,0 +1,6 @@
+version=2
+@Storage.set(str,GlobalVerification.Math.dbl,<Math.dbl(123456789+1)>)
+:if:<not><Stoage.get(str,GlobalVerification.Math.dbl)>=123456790
+	#Return Crash
+:endif
+:end
