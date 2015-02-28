@@ -263,7 +263,7 @@ version=2
 	@Text.log()
 	@Text.log(Error information:)
 	@Text.log()
-	@Text.log(Message: Please activate "Pokémon Universal 3D" Content pack and make sure you have also restarted the game before launching the game.)
+	@Text.log(Message: The game is unable to process a content in contentpacks.)
 	@Text.log(HelpLink: No helplink available.)
 	@Text.log(Data: Nothing)
 	@Text.log()
