@@ -1,0 +1,67 @@
+version=2
+:if:<Register.value(16\GlobalCE_Radio)>=1
+	@Text.show(Turn the radio on?)
+	@Options.setcancelindex(1)
+	@Options.show(Yes,No)
+	:when:Yes
+		@Text.show(Select the track to play.)
+		@Options.show(1,2,3,4,5,6,7)
+		:when:1
+			@Music.play(RouteMusic10)
+		:when:2
+			@Music.play(kanto_leader)
+		:when:3
+			@Music.play(center)
+		:when:4
+			@Music.play(diglettscave)
+		:when:5
+			@Music.play(gamecorner)
+		:when:6
+			@Music.play(oakslab)
+		:when:7
+			@Music.play(ssaqua)
+		:endwhen
+		@Register.change(16\GlobalCE_Radio,2)
+	:when:No
+	:endwhen
+	:end
+:endif
+:if:<Register.value(16\GlobalCE_Radio)>=2
+	@Text.show(Switch the track?)
+	@Options.setcancelindex(1)
+	@Options.show(Yes,No)
+	:when:Yes
+		@Text.show(Select the track to play.)
+		@Options.show(1,2,3,4,5,6,7)
+		:when:1
+			@Music.play(RouteMusic10)
+		:when:2
+			@Music.play(kanto_leader)
+		:when:3
+			@Music.play(center)
+		:when:4
+			@Music.play(diglettscave)
+		:when:5
+			@Music.play(gamecorner)
+		:when:6
+			@Music.play(oakslab)
+		:when:7
+			@Music.play(ssaqua)
+		:endwhen
+	:when:No
+		@Text.show(Turn the radio off?)
+		@Options.setcancelindex(1)
+		@Options.show(Yes,No)
+		:when:Yes
+			@Music.play(Pokeflute)
+			@Register.change(16\GlobalCE_Radio,1)
+		:when:No
+		:endwhen
+	:endwhen
+	:end
+:endif
+@Storage.set(str,System.ActionScript,16\GlobalCE_Radio.dat)
+@Storage.set(int,System.ErrorLog.ErrorID0,1)
+@Storage.set(int,System.ScreenState,3)
+@Script.start(System\ScreenState\ScreenState.3)
+:end

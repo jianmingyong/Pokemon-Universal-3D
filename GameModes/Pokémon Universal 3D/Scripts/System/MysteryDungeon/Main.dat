@@ -40,19 +40,14 @@ version=2
 @Storage.set(int,MysteryDungeon.NumberofRoomEntityStore,0)
 
 # Generate Random Rooms.
-@Script.start(System\MysteryDungeon\ValidRoom)
-@Script.start(System\MysteryDungeon\GenerateRoom)
-@Script.start(System\MysteryDungeon\ValidRoom)
-@Script.start(System\MysteryDungeon\GenerateRoom)
-@Script.start(System\MysteryDungeon\ValidRoom)
-@Script.start(System\MysteryDungeon\GenerateRoom)
-@Script.start(System\MysteryDungeon\ValidRoom)
-@Script.start(System\MysteryDungeon\GenerateRoom)
-@Script.start(System\MysteryDungeon\ValidRoom)
-@Script.start(System\MysteryDungeon\GenerateRoom)
-
 #:while:<Storage.get(bool,MysteryDungeon.MasterValid)>=true
 	# Dig a Random Object.
+	@Script.start(System\MysteryDungeon\ValidRoom)
+	@Script.start(System\MysteryDungeon\GenerateRoom)
+	
+#	:if:<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>=5 <or> <Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>>5
+#		:exitwhile
+#	:endif
 #:endwhile
 
 # Warp Player to a walkable zone.

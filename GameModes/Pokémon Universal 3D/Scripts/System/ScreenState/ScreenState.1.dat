@@ -12,6 +12,7 @@
 	@Script.start(System\ScreenState\Entity.Visible)
 	@Screen.fadein
 	# Verification System.
+	#@Script.start(System\GlobalVerification)
 	:if:<Register.value(System.Game ID)>=12
 		@Script.start(System\ScreenState\ScreenState.1.ID.12)
 	:endif

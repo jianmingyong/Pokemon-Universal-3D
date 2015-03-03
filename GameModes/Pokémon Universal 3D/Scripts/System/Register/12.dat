@@ -18,7 +18,7 @@ version=2
 	@Register.register(System.PlayerThirdPerson.12,bool,<Player.thirdperson>)
 :endif
 :if:<Register.registered(System.PlayerGender.12)>=false
-	@Register.register(System.PlayerGender.12,str,nothing)
+	@Register.register(System.PlayerGender.12,str,boy)
 :endif
 :if:<Register.registered(System.Starter.12)>=false
 	@Register.register(System.Starter.12,int,0)
