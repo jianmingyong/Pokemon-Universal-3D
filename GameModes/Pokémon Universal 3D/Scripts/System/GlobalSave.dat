@@ -6,6 +6,36 @@ version=2
 	@Register.change(System.PlayerFacing.12,<Player.facing>)
 	@Register.change(System.PlayerThirdPerson.12,<Player.thirdperson>)
 	@Register.change(System.LastMap.12,<Level.mapfile>)
+	:if:<Pokemon.count>>0
+		@Register.change(System.Party.1.12,<Pokemon.data(0)>)
+	:else
+		@Register.change(System.Party.1.12,Nothing)
+	:endif
+	:if:<Pokemon.count>>1
+		@Register.change(System.Party.2.12,<Pokemon.data(1)>)
+	:else
+		@Register.change(System.Party.2.12,Nothing)
+	:endif
+	:if:<Pokemon.count>>2
+		@Register.change(System.Party.3.12,<Pokemon.data(2)>)
+	:else
+		@Register.change(System.Party.3.12,Nothing)
+	:endif
+	:if:<Pokemon.count>>3
+		@Register.change(System.Party.4.12,<Pokemon.data(3)>)
+	:else
+		@Register.change(System.Party.4.12,Nothing)
+	:endif
+	:if:<Pokemon.count>>4
+		@Register.change(System.Party.5.12,<Pokemon.data(4)>)
+	:else
+		@Register.change(System.Party.5.12,Nothing)
+	:endif
+	:if:<Pokemon.count>>5
+		@Register.change(System.Party.6.12,<Pokemon.data(5)>)
+	:else
+		@Register.change(System.Party.6.12,Nothing)
+	:endif
 	:if:<Register.registered(System.Load.12)>=false
 		@Register.register(System.Load.12)
 	:endif
@@ -17,6 +47,36 @@ version=2
 	@Register.change(System.PlayerFacing.16,<Player.facing>)
 	@Register.change(System.PlayerThirdPerson.16,<Player.thirdperson>)
 	@Register.change(System.LastMap.16,<Level.mapfile>)
+	:if:<Pokemon.count>>0
+		@Register.change(System.Party.1.16,<Pokemon.data(0)>)
+	:else
+		@Register.change(System.Party.1.16,Nothing)
+	:endif
+	:if:<Pokemon.count>>1
+		@Register.change(System.Party.2.16,<Pokemon.data(1)>)
+	:else
+		@Register.change(System.Party.2.16,Nothing)
+	:endif
+	:if:<Pokemon.count>>2
+		@Register.change(System.Party.3.16,<Pokemon.data(2)>)
+	:else
+		@Register.change(System.Party.3.16,Nothing)
+	:endif
+	:if:<Pokemon.count>>3
+		@Register.change(System.Party.4.16,<Pokemon.data(3)>)
+	:else
+		@Register.change(System.Party.4.16,Nothing)
+	:endif
+	:if:<Pokemon.count>>4
+		@Register.change(System.Party.5.16,<Pokemon.data(4)>)
+	:else
+		@Register.change(System.Party.5.16,Nothing)
+	:endif
+	:if:<Pokemon.count>>5
+		@Register.change(System.Party.6.16,<Pokemon.data(5)>)
+	:else
+		@Register.change(System.Party.6.16,Nothing)
+	:endif
 	:if:<Register.registered(System.Load.16)>=false
 		@Register.register(System.Load.16)
 	:endif

@@ -5,6 +5,63 @@ version=2
 	@Script.start(System\GlobalAntiCheat)
 	@Storage.set(int,System.ScreenState,2)
 :if:<Register.registered(System.Load.12)>=true <and> <Register.value(System.Game ID)>=12
+	#Restoring Save Data
+	@Player.removebadge(1)
+	@Player.removebadge(2)
+	@Player.removebadge(3)
+	@Player.removebadge(4)
+	@Player.removebadge(5)
+	@Player.removebadge(6)
+	@Player.removebadge(7)
+	@Player.removebadge(8)
+	#@Pokemon.remove(0)
+	#@Pokemon.remove(0)
+	#@Pokemon.remove(0)
+	#@Pokemon.remove(0)
+	#@Pokemon.remove(0)
+	#@Pokemon.remove(0)
+	:if:<Register.value(System.GymBadges.1.12)>=true
+		@Player.addbadge(1)
+	:endif
+	:if:<Register.value(System.GymBadges.2.12)>=true
+		@Player.addbadge(2)
+	:endif
+	:if:<Register.value(System.GymBadges.3.12)>=true
+		@Player.addbadge(3)
+	:endif
+	:if:<Register.value(System.GymBadges.4.12)>=true
+		@Player.addbadge(4)
+	:endif
+	:if:<Register.value(System.GymBadges.5.12)>=true
+		@Player.addbadge(5)
+	:endif
+	:if:<Register.value(System.GymBadges.6.12)>=true
+		@Player.addbadge(6)
+	:endif
+	:if:<Register.value(System.GymBadges.7.12)>=true
+		@Player.addbadge(7)
+	:endif
+	:if:<Register.value(System.GymBadges.8.12)>=true
+		@Player.addbadge(8)
+	:endif
+	:if:<not><Register.value(System.Party.1.12)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.1.12)>)
+	:endif
+	:if:<not><Register.value(System.Party.2.12)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.2.12)>)
+	:endif
+	:if:<not><Register.value(System.Party.3.12)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.3.12)>)
+	:endif
+	:if:<not><Register.value(System.Party.4.12)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.4.12)>)
+	:endif
+	:if:<not><Register.value(System.Party.5.12)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.5.12)>)
+	:endif
+	:if:<not><Register.value(System.Party.6.12)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.6.12)>)
+	:endif
 	:if:<not><Level.mapfile>=<Register.value(System.LastMap.12)>
 		@Player.warp(<Register.value(System.LastMap.12)>,<Register.value(System.PlayerPosition.X.12)>,<Register.value(System.PlayerPosition.Y.12)>+0.1,<Register.value(System.PlayerPosition.Z.12)>,<Register.value(System.PlayerFacing.12)>)
 		:if:<Register.value(System.PlayerThirdPerson.12)>=true
@@ -19,6 +76,38 @@ version=2
 	:end
 :endif
 :if:<Register.registered(System.Load.16)>=true <and> <Register.value(System.Game ID)>=16
+	@Player.removebadge(1)
+	@Player.removebadge(2)
+	@Player.removebadge(3)
+	@Player.removebadge(4)
+	@Player.removebadge(5)
+	@Player.removebadge(6)
+	@Player.removebadge(7)
+	@Player.removebadge(8)
+	#@Pokemon.remove(0)
+	#@Pokemon.remove(0)
+	#@Pokemon.remove(0)
+	#@Pokemon.remove(0)
+	#@Pokemon.remove(0)
+	#@Pokemon.remove(0)
+	:if:<not><Register.value(System.Party.1.16)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.1.16)>)
+	:endif
+	:if:<not><Register.value(System.Party.2.16)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.2.16)>)
+	:endif
+	:if:<not><Register.value(System.Party.3.16)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.3.16)>)
+	:endif
+	:if:<not><Register.value(System.Party.4.16)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.4.16)>)
+	:endif
+	:if:<not><Register.value(System.Party.5.16)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.5.16)>)
+	:endif
+	:if:<not><Register.value(System.Party.6.16)>=Nothing
+		@Pokemon.add(<Register.value(System.Party.6.16)>)
+	:endif
 	:if:<not><Level.mapfile>=<Register.value(System.LastMap.16)>
 		@Player.warp(<Register.value(System.LastMap.16)>,<Register.value(System.PlayerPosition.X.16)>,<Register.value(System.PlayerPosition.Y.16)>+0.1,<Register.value(System.PlayerPosition.Z.16)>,<Register.value(System.PlayerFacing.16)>)
 		:if:<Register.value(System.PlayerThirdPerson.16)>=true

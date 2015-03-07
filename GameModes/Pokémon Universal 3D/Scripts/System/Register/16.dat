@@ -17,6 +17,24 @@ version=2
 :if:<Register.registered(System.PlayerThirdPerson.16)>=false
 	@Register.register(System.PlayerThirdPerson.16,bool,<Player.thirdperson>)
 :endif
+:if:<Register.registered(System.Party.1.16)>=false
+	@Register.register(System.Party.1.16,str,Nothing)
+:endif
+:if:<Register.registered(System.Party.2.16)>=false
+	@Register.register(System.Party.2.16,str,Nothing)
+:endif
+:if:<Register.registered(System.Party.3.16)>=false
+	@Register.register(System.Party.3.16,str,Nothing)
+:endif
+:if:<Register.registered(System.Party.4.16)>=false
+	@Register.register(System.Party.4.16,str,Nothing)
+:endif
+:if:<Register.registered(System.Party.5.16)>=false
+	@Register.register(System.Party.5.16,str,Nothing)
+:endif
+:if:<Register.registered(System.Party.6.16)>=false
+	@Register.register(System.Party.6.16,str,Nothing)
+:endif
 :if:<Register.registered(16\GlobalCE_Radio)>=false
 	@Register.register(16\GlobalCE_Radio,int,1)
 :endif

@@ -18,13 +18,55 @@ version=2
 	@Register.register(System.PlayerThirdPerson.12,bool,<Player.thirdperson>)
 :endif
 :if:<Register.registered(System.PlayerGender.12)>=false
-	@Register.register(System.PlayerGender.12,str,boy)
+	@Register.register(System.PlayerGender.12,str,nothing)
 :endif
 :if:<Register.registered(System.Starter.12)>=false
 	@Register.register(System.Starter.12,int,0)
 :endif
 :if:<Register.registered(System.PersonalProfile.12)>=false
 	@Register.register(System.PersonalProfile.12,str,Nothing)
+:endif
+:if:<Register.registered(System.GymBadges.1.12)>=false
+	@Register.register(System.GymBadges.1.12,bool,false)
+:endif
+:if:<Register.registered(System.GymBadges.2.12)>=false
+	@Register.register(System.GymBadges.2.12,bool,false)
+:endif
+:if:<Register.registered(System.GymBadges.3.12)>=false
+	@Register.register(System.GymBadges.3.12,bool,false)
+:endif
+:if:<Register.registered(System.GymBadges.4.12)>=false
+	@Register.register(System.GymBadges.4.12,bool,false)
+:endif
+:if:<Register.registered(System.GymBadges.5.12)>=false
+	@Register.register(System.GymBadges.5.12,bool,false)
+:endif
+:if:<Register.registered(System.GymBadges.6.12)>=false
+	@Register.register(System.GymBadges.6.12,bool,false)
+:endif
+:if:<Register.registered(System.GymBadges.7.12)>=false
+	@Register.register(System.GymBadges.7.12,bool,false)
+:endif
+:if:<Register.registered(System.GymBadges.8.12)>=false
+	@Register.register(System.GymBadges.8.12,bool,false)
+:endif
+:if:<Register.registered(System.Party.1.12)>=false
+	@Register.register(System.Party.1.12,str,Nothing)
+:endif
+:if:<Register.registered(System.Party.2.12)>=false
+	@Register.register(System.Party.2.12,str,Nothing)
+:endif
+:if:<Register.registered(System.Party.3.12)>=false
+	@Register.register(System.Party.3.12,str,Nothing)
+:endif
+:if:<Register.registered(System.Party.4.12)>=false
+	@Register.register(System.Party.4.12,str,Nothing)
+:endif
+:if:<Register.registered(System.Party.5.12)>=false
+	@Register.register(System.Party.5.12,str,Nothing)
+:endif
+:if:<Register.registered(System.Party.6.12)>=false
+	@Register.register(System.Party.6.12,str,Nothing)
 :endif
 :if:<Register.registered(12\LittleRootTown\019000001)>=false
 	@Register.register(12\LittleRootTown\019000001,int,1)

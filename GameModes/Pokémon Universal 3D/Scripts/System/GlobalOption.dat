@@ -11,7 +11,7 @@ version=2
 #######################################################################################
 :if:<Storage.get(bool,System.SkipMainMenu)>=true
 	# To change which save to load.
-	# Valid option: Pokémon Emerald [12], Pokémon Dark Energy [16]
+	# Valid option: Pokémon Emerald [12], Mystery Dungeon [15], Pokémon Dark Energy [16]
 	@Register.change(System.Game ID,12)
 	
 	# To change whether to skip the anti cheat checks.

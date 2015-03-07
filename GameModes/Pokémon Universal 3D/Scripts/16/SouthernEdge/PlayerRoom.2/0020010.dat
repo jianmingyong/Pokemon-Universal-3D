@@ -1,0 +1,19 @@
+version=2
+@Sound.play(computeropen)
+@Text.show(<Player.name> turned on the Pc.*What would you like to do?)
+@Options.setcancelindex(5)
+@Options.show(Withdraw Item,Deposit Item,Toss Item,Mail Box,Decoration,Turn Off)
+:when:Withdraw Item
+	@Text.show(The Withdraw Item is not available yet.~Sorry for any inconvenience caused.)
+:when:Deposit Item
+	@Text.show(The Deposit Item is not available yet.~Sorry for any inconvenience caused.)
+:when:Toss Item
+	@Text.show(The Toss Item is not available yet.~Sorry for any inconvenience caused.)
+:when:Mail Box
+	@Screen.mailsystem
+:when:Decoration
+	@Text.show(The Decoration is not available yet.~Sorry for any inconvenience caused.)
+:when:Turn Off
+	:end
+:endwhen
+:end
