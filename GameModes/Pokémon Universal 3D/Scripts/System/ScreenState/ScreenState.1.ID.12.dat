@@ -1,6 +1,19 @@
 ﻿version=2
 :while:<Storage.get(int,System.ScreenState)>=1
 	@Script.start(System\Intro\12\Intro.1)
+	:if:<Pokemon.count>>0 <and> <not><Storage.get(int,System.LastPlayID)>=12
+		@Storage.set(bool,System.Load.Valid,false)
+		@Pokemon.add(999,1)
+		@Pokemon.setnickname(<Pokemon.count>-1,To Be Deleted)
+		:while:<Storage.get(bool,System.Load.Valid)>=false
+			@Text.show(Changing Game Detection Alert!~You are required to deposite your Pokémon.)
+			@Screen.storagesystem
+			:if:<Pokemon.name(0)>=MissingNo <and> <Pokemon.count>=1
+				@Pokemon.remove(0)
+				:exitwhile
+			:endif
+		:endwhile
+	:endif
 	@Music.play(title)
 	@Title.add(Game Verification System,2147483647,255,255,255,2,true,0,-280)
 	@Title.add(This is a game verification system. You are require to answer them only once.,2147483647,255,255,255,2,true,0,-200)

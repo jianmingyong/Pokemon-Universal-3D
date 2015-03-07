@@ -1,0 +1,4 @@
+version=2
+@Text.show(It's the Town Map.)
+#@Screen.townmap(12.hoenn)
+:end

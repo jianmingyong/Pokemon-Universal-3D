@@ -2,14 +2,14 @@
 :if:<Register.value(16\SouthernEdge\PlayerRoom.2)>=1
 	@Text.show(Around a year later......*(Southern Edge of The Capital,~Year 1572)*<Player.name>: I'd better not let the~professor wait too long!*Well, I guess it's time to head back~to the city, and university then.)
 	:if:<NPC.exists(0060010)>=false
-		@NPC.spawn(6,0,1,0,,[POKEMON|N]133,false,2,,0060010,Still)
+		@NPC.spawn(6,0,1,1,16\SouthernEdge\PlayerRoom.2\0060010,[POKEMON|N]133,false,2,,0060010,Still)
 	:endif
 	@Register.change(16\SouthernEdge\PlayerRoom.2,2)
 	:end
 :endif
 :if:<Register.value(16\SouthernEdge\PlayerRoom.2)>=2
 	:if:<NPC.exists(0060010)>=false
-		@NPC.spawn(6,0,1,0,,[POKEMON|N]133,false,2,,0060010,Still)
+		@NPC.spawn(6,0,1,1,16\SouthernEdge\PlayerRoom.2\0060010,[POKEMON|N]133,false,2,,0060010,Still)
 	:endif
 	:if:<not><Register.value(16\GlobalCE_Radio)>=1
 		@Register.change(16\GlobalCE_Radio,1)
@@ -17,6 +17,7 @@
 	:end
 :endif
 :if:<Register.value(16\SouthernEdge\PlayerRoom.2)>=3
+	@Entity.remove(0070010)
 	:if:<not><Register.value(16\GlobalCE_Radio)>=1
 		@Register.change(16\GlobalCE_Radio,1)
 	:endif

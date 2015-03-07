@@ -1,0 +1,22 @@
+version=2
+@Entity.showmessagebulb(1|6|0.7|1)
+@Music.play(show_me_around)
+@Text.show(Eevee: Hey, you were going to~leave without me, weren't you?)
+@Player.turnto(1)
+@Text.show(<Player.name>: I don't know what's going~to be up but it can't be anything~that major you'd have to come~along...*Eevee: I'm coming, either way!*<Player.name>: ......*Fine, you may come.*Eevee: Cool!*I'll get to meet your professor~and everyone else you study with.)
+@Sound.play(success,true)
+@Pokemon.add(133,5,<Player.name>'s Eevee,5)
+@Pokemon.setitem(0,2006)
+@Text.show(<Player.name> received Eevee!*Give a nickname to the Eevee you~received?)
+@Options.setcancelindex(1)
+@Options.show(Yes,No)
+:when:Yes
+	@Pokemon.rename(0)
+:when:No
+:endwhen
+@Text.show(<Player.name>: I'm going to put you inside~your Poké Ball now.*Kindly stay there, okay?)
+@NPC.remove(0060010)
+@Register.change(16\SouthernEdge\PlayerRoom.2,3)
+@Script.start(System\GlobalMain)
+@Music.play(Pokeflute)
+:end

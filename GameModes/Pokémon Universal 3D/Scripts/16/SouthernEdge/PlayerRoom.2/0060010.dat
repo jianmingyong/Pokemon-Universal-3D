@@ -1,0 +1,5 @@
+version=2
+@Entity.showmessagebulb(0|6|0.7|1)
+@Screen.showpokemon(133,0)
+@Text.show(It's your Eevee.*Seems to be sleeping...)
+:end
