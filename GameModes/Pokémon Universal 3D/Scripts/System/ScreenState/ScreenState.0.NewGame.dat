@@ -1,8 +1,20 @@
 version=2
 :while:<Storage.get(int,System.ScreenState)>=0
+	# New Game Initial Checks.
+	@Storage.set(str,System.LoadData.Data,)
+	@Storage.set(int,System.LoadData.Data.Count,0)
+	:if:<Register.registered(System.Load.12)>=false
+		@Storage.update(str,System.LoadData.Data,add,Pokémon Emerald [12],)
+		@Storage.update(int,System.LoadData.Data.Count,add,1)
+	:endif
+	:if:<Register.registered(System.Load.16)>=false
+		@Storage.update(str,System.LoadData.Data,add,Pokémon Dark Energy [16],)
+		@Storage.update(int,System.LoadData.Data.Count,add,1)
+	:endif
+	@Storage.update(str,System.LoadData.Data,add,Back)
 	@Text.show(Please Choose an option.)
-	@Options.setcancelindex(2)
-	@Options.show(Pokémon Emerald [12],Pokémon Dark Energy [16],Back)
+	@Options.setcancelindex(<Storage.get(int,System.LoadData.Data.Count)>)
+	@Options.show(<Storage.get(str,System.LoadData.Data)>)
 	:when:Pokémon Emerald [12]
 		:if:<Register.registered(System.Load.12)>=false
 			@Storage.set(int,System.ScreenState,1)
@@ -16,7 +28,6 @@ version=2
 			@Storage.set(int,System.ScreenState,1)
 			@Register.change(System.Game ID,16)
 			@Script.start(System\ScreenState\ScreenState.1)
-			#@Text.show(This is under development.~It is disabled for safty reasons.)
 		:else
 			@Text.show(Unable to restart.)
 		:endif

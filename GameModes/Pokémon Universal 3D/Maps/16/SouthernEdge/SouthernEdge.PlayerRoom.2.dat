@@ -2,6 +2,8 @@ Main:
 {"Level"{LEV[{"Name"{str[Southern Edge]}}{"MusicLoop"{str[Pokeflute]}}{"WildPokemon"{bool[0]}}{"CurrentRegion"{str[16.West]}}]}}
 {"Actions"{LEV[{"CanTeleport"{bool[1]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[1]}}{"Weather"{int[1]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[System\GlobalMain]}}]}}
 
+Floor.Layer.0
+{"Floor"{ENT[{"Size"{intArr[1,1]}}{"Position"{intArr[7,0,0]}}{"TexturePath"{str[House]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.1
 {"Floor"{ENT[{"Size"{intArr[8,1]}}{"Position"{intArr[0,0,1]}}{"TexturePath"{str[House]}}{"Texture"{rec[32,0,16,16]}}]}}
 Floor.Layer.2
@@ -15,6 +17,7 @@ Floor.Layer.5
 
 Wall.Layer.0.Floor.1
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[7,1]}}{"Position"{sngArr[0,0,0]}}{"TexturePath"{str[House]}}{"Textures"{recArr[[16,0,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[12]}}]}}
+{"Entity"{ENT[{"EntityID"{str[WarpBlock]}}{"Position"{sngArr[7,0,0]}}{"TexturePath"{str[House]}}{"Textures"{recArr[[0,0,16,16]]}}{"TextureIndex"{intArr[0,0,0,0,0,0,0,0,0,0]}}{"Collision"{bool[1]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[16\SouthernEdge\SouthernEdge.PlayerRoom.1.dat,9,0.1,0,2]}}{"Rotation"{int[0]}}]}}
 Wall.Layer.0.Floor.2
 {"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[8,1]}}{"Position"{sngArr[0,1,0]}}{"TexturePath"{str[House]}}{"Textures"{recArr[[16,0,16,16]]}}{"TextureIndex"{intArr[0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}}{"Collision"{bool[1]}}{"ModelID"{int[12]}}]}}
 Wall.Layer.1.Floor.1

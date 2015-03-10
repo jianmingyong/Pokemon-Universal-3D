@@ -1,8 +1,24 @@
 ﻿version=2
 :while:<Storage.get(int,System.ScreenState)>=0
+	# Load Game Initial Checks.
+	@Storage.set(str,System.LoadData.Data,)
+	@Storage.set(int,System.LoadData.Data.Count,0)
+	:if:<Register.registered(System.Load.12)>=true
+		@Storage.update(str,System.LoadData.Data,add,Pokémon Emerald [12],)
+		@Storage.update(int,System.LoadData.Data.Count,add,1)
+	:endif
+	:if:<Register.registered(System.Load.12)>=true <or> <Register.registered(System.Load.16)>=true
+		@Storage.update(str,System.LoadData.Data,add,Mystery Dungeon [15],)
+		@Storage.update(int,System.LoadData.Data.Count,add,1)
+	:endif
+	:if:<Register.registered(System.Load.16)>=true
+		@Storage.update(str,System.LoadData.Data,add,Pokémon Dark Energy [16],)
+		@Storage.update(int,System.LoadData.Data.Count,add,1)
+	:endif
+	@Storage.update(str,System.LoadData.Data,add,Back)
 	@Text.show(Please Choose an option.)
-	@Options.setcancelindex(3)
-	@Options.show(Pokémon Emerald [12],Mystery Dungeon [15],Pokémon Dark Energy [16],Back)
+	@Options.setcancelindex(<Storage.get(int,System.LoadData.Data.Count)>)
+	@Options.show(<Storage.get(str,System.LoadData.Data)>)
 	:when:Pokémon Emerald [12]
 		@Register.change(System.Game ID,12)
 		@Script.start(System\GlobalLoad)
