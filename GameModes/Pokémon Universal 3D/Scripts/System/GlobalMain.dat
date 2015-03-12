@@ -34,6 +34,6 @@
 		@Script.start(System\GlobalLoad)
 	:endif
 :else
-	@Script.start(<filesystem.pathup(<Level.mapfile>)>\<Level.filename>)
+	@Script.start(<Filesystem.pathup(<Level.mapfile>)>\<Level.filename>)
 :endif
 :end

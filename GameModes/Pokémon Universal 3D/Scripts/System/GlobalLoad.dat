@@ -26,9 +26,9 @@ version=2
 				:exitwhile
 			:endif
 		:endwhile
+		@Text.show(Please take your party for~Pokémon Universal 3D)
+		@Screen.storagesystem
 	:endif
-	@Text.show(Please take your party for~Pokémon Universal 3D)
-	@Screen.storagesystem
 	:if:<Register.value(System.GymBadges.1.12)>=true
 		@Player.addbadge(1)
 	:endif
@@ -87,9 +87,9 @@ version=2
 				:exitwhile
 			:endif
 		:endwhile
+		@Text.show(Please take your party for~Pokémon Dark Energy 3D)
+		@Screen.storagesystem
 	:endif
-	@Text.show(Please take your party for~Pokémon Dark Energy 3D)
-	@Screen.storagesystem
 	:if:<not><Level.mapfile>=<Register.value(System.LastMap.16)>
 		@Player.warp(<Register.value(System.LastMap.16)>,<Register.value(System.PlayerPosition.X.16)>,<Register.value(System.PlayerPosition.Y.16)>+0.1,<Register.value(System.PlayerPosition.Z.16)>,<Register.value(System.PlayerFacing.16)>)
 		:if:<Register.value(System.PlayerThirdPerson.16)>=true

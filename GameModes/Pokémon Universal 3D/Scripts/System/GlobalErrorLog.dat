@@ -144,6 +144,7 @@ version=2
 @Text.log(System.Party.6.16: <Register.value(System.Party.6.16)>)
 @Text.log(16\GlobalCE_Radio: <Register.value(16\GlobalCE_Radio)>)
 @Text.log(16\SouthernEdge\PlayerRoom.2: <Register.value(16\SouthernEdge\PlayerRoom.2)>)
+@Text.log(16\SouthernEdge\PlayerRoom.1: <Register.value(16\SouthernEdge\PlayerRoom.1)>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()

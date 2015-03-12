@@ -1,29 +1,109 @@
 ﻿version=2
-:if:<Register.value(16\SouthernEdge\PlayerRoom.2)>=1
-	@Text.show(Around a year later......*(Southern Edge of The Capital,~Year 1572)*<Player.name>: I'd better not let the~professor wait too long!*Well, I guess it's time to head back~to the city, and university then.)
-	:if:<NPC.exists(0060010)>=false
-		@NPC.spawn(6,0,1,1,16\SouthernEdge\PlayerRoom.2\0060010,[POKEMON|N]133,false,2,,0060010,Still)
+:if:<Register.value(16\SouthernEdge\PlayerRoom.1)>=1
+	:if:<NPC.exists(0040030)>=false
+		@NPC.spawn(4,0,3,1,16\SouthernEdge\PlayerRoom.1\0040030,LittleGirl,false,0,,0040030,Still)
 	:endif
-	@Register.change(16\SouthernEdge\PlayerRoom.2,2)
+	:if:<NPC.exists(0070030)>=false
+		@NPC.spawn(7,0,3,1,16\SouthernEdge\PlayerRoom.1\0070030,3,false,1,,0070030,Still)
+	:endif
+	:if:<NPC.exists(0040040)>=false
+		@NPC.spawn(4,0,4,1,16\SouthernEdge\PlayerRoom.1\0040040,11,false,3,,0040040,Still)
+	:endif
+	@Player.move(3)
+	@Player.turnto(1)
+	@Player.move(2)
+	@Text.show(Dad: Hi <Player.name>!*<Player.name>: Hi dad.*I just got a call from my professor.*He said he had some special quest~in mind and wanted me to get moving~to the university.)
+	@NPC.turn(0070030,2)
+	@Text.show(Mom: You'd better eat before you~leave though.*Would you like me to cook something~for you?)
+	@Options.setcancelindex(1)
+	@Options.show(Yes,No)
+	:when:Yes
+		@Player.turnto(0)
+		@Text.show(<Player.name>: Sure!*There's always time for a bite.*Mom: Okay.*I'll go to make you something.)
+		@NPC.turn(0070030,3)
+		@NPC.move(0070030,1)
+		@NPC.turn(0070030,2)
+		@NPC.move(0070030,2)
+		@NPC.turn(0070030,1)
+		@NPC.move(0070030,8)
+		@NPC.turn(0070030,0)
+		@NPC.move(0070030,3)
+		@NPC.turn(0040030,3)
+		@Text.show(Sis: Hey, <Player.name>!)
+		@NPC.turn(0040030,0)
+		@NPC.move(0040030,1)
+		@NPC.turn(0040030,3)
+		@NPC.move(0040030,3)
+		@NPC.turn(0040030,2)
+		@NPC.move(0040030,1)
+		@Text.show(There's something I'd like you to~have before you leave.*Mom bought some Poké Balls and a~PokéGear for both of us!*These here are for you!)
+		@Player.receivepokegear
+		@Item.give(5,5)
+		@Sound.play(item_found,true)
+		@Text.show(<Player.name> received PokéGear and~5 Poké Balls!)
+		@Text.show(<Player.name>: Thanks, sister.*Don't mention it.*But now, I'd like to have some~private time watching TV!*<Player.name>: Sure thing.)
+		@NPC.turn(0040030,0)
+		@NPC.move(0040030,1)
+		@NPC.turn(0040030,1)
+		@NPC.move(0040030,3)
+		@NPC.turn(0040030,2)
+		@NPC.move(0040030,1)
+		@NPC.turn(0040030,0)
+		@Text.show(Mom: The meal is ready, <Player.name>!*Come to pick up anything you like.)
+		@Player.turnto(1)
+		@Text.show(<Player.name>: Okay, cool!)
+		@Screen.fadeout
+		@Level.wait(30)
+		@Sound.play(success_small,true)
+		@Level.wait(50)
+		@Screen.fadein
+		@NPC.warp(0070030,7,0,3)
+		@NPC.turn(0070030,1)
+	:when:No
+		@Player.turnto(0)
+		@Text.show(<Player.name>: Sorry mom, I don't think~I have time for that right now.)
+		@NPC.turn(0070030,1)
+		@NPC.turn(0040030,3)
+		@Text.show(Sis: Hey, <Player.name>!)
+		@Player.turnto(1)
+		@NPC.turn(0040030,0)
+		@NPC.move(0040030,1)
+		@NPC.turn(0040030,3)
+		@NPC.move(0040030,4)
+		@NPC.turn(0040030,2)
+		@NPC.move(0040030,2)
+		@NPC.turn(0040030,1)
+		@Player.turnto(3)
+		@Text.show(There's something I'd like you to~have before you leave.*Mom bought some Poké Balls and a~PokéGear for both of us!*These here are for you!)
+		@Player.receivepokegear
+		@Item.give(5,5)
+		@Sound.play(item_found,true)
+		@Text.show(<Player.name> received PokéGear and~5 Poké Balls!)
+		@Text.show(<Player.name>: Thanks, sister.*Don't mention it.*But now, I'd like to have some~private time watching TV!*<Player.name>: Sure thing.)
+		@NPC.turn(0040030,0)
+		@NPC.move(0040030,2)
+		@NPC.turn(0040030,1)
+		@NPC.move(0040030,4)
+		@NPC.turn(0040030,2)
+		@NPC.move(0040030,1)
+		@NPC.turn(0040030,0)
+	:endwhen
+	@Register.change(16\SouthernEdge\PlayerRoom.1,2)
 	:end
 :endif
-:if:<Register.value(16\SouthernEdge\PlayerRoom.2)>=2
-	:if:<NPC.exists(0060010)>=false
-		@NPC.spawn(6,0,1,1,16\SouthernEdge\PlayerRoom.2\0060010,[POKEMON|N]133,false,2,,0060010,Still)
+:if:<Register.value(16\SouthernEdge\PlayerRoom.1)>=2
+	:if:<NPC.exists(0040030)>=false
+		@NPC.spawn(4,0,3,1,16\SouthernEdge\PlayerRoom.1\0040030,LittleGirl,false,0,,0040030,Still)
 	:endif
-	:if:<not><Register.value(16\GlobalCE_Radio)>=1
-		@Register.change(16\GlobalCE_Radio,1)
+	:if:<NPC.exists(0070030)>=false
+		@NPC.spawn(7,0,3,1,16\SouthernEdge\PlayerRoom.1\0070030,3,false,1,,0070030,Still)
 	:endif
-	:end
-:endif
-:if:<Register.value(16\SouthernEdge\PlayerRoom.2)>=3
-	@Entity.remove(0070010)
-	:if:<not><Register.value(16\GlobalCE_Radio)>=1
-		@Register.change(16\GlobalCE_Radio,1)
+	:if:<NPC.exists(0040040)>=false
+		@NPC.spawn(4,0,4,1,16\SouthernEdge\PlayerRoom.1\0040040,11,false,3,,0040040,Still)
 	:endif
 	:end
 :endif
-@Storage.set(str,System.ActionScript,16\SouthernEdge\SouthernEdge.PlayerRoom.2.dat)
+@Storage.set(str,System.ActionScript,16\SouthernEdge\SouthernEdge.PlayerRoom.1.dat)
 @Storage.set(int,System.ErrorLog.ErrorID0,1)
 @Storage.set(int,System.ScreenState,3)
 @Script.start(System\ScreenState\ScreenState.3)

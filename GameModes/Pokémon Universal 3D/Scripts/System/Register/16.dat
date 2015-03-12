@@ -23,4 +23,7 @@ version=2
 :if:<Register.registered(16\SouthernEdge\PlayerRoom.2)>=false
 	@Register.register(16\SouthernEdge\PlayerRoom.2,int,1)
 :endif
+:if:<Register.registered(16\SouthernEdge\PlayerRoom.1)>=false
+	@Register.register(16\SouthernEdge\PlayerRoom.1,int,1)
+:endif
 :end

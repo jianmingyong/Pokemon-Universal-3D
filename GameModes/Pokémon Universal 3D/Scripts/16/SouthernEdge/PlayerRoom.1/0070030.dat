@@ -1,0 +1,16 @@
+version=2
+@Text.show(Mom: What do you have in mind?)
+@Options.setcancelindex(2)
+@Options.show(Money saving,Heal Pokémon,Nothing really)
+:when:Money saving
+:when:Heal Pokémon
+	@Screen.fadein
+	@Pokemon.heal
+	@Sound.play(healing,true)
+	@Level.wait(180)
+	@Screen.fadeout
+	@Text.show(Mom: There, all done!*<Player.name>: Thanks!)
+:when:Nothing really
+	@Text.show(Mom: Take care of yourself <Player.name>!)
+:endwhen
+:end
