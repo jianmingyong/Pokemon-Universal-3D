@@ -1,3 +1,14 @@
+Dungeon Point computation:
+Battle Points: Total HP of targetted Pokémon.
+Time clear (Mins): 1,800 - Seconds Taken.
+Party Count: no. of party * 100
+Damage Taken: 100 - % Taken.
+
+Total Points * Exp Percentile * Event Percentile = Exp Count.
+
+Ranking (Vary): 4000 SSS | 3500 SS | 3000 S | 2500 A | 2000 B | 1500 C | 1000 D
+
+
 Route 101 Dungeon:
 
 Easy:
