@@ -1,0 +1,61 @@
+Route 101 Dungeon:
+
+Easy:
+Exp Gain 50% of total points.
+Item drop rate:
+=> Sell only item 10%.
+=> Healing item 50%.
+=> Misc item 0%.
+
+Fatigue Used: 10
+Pokemon count: 5
+Pokemon Level: 2
+Entry requirements: Lv 5 above.
+
+Normal:
+Exp Gain 100% of total points.
+Item drop rate:
+=> Sell only item 10%.
+=> Healing item 25%.
+=> Misc item 10%.
+
+Fatigue Used: 20
+Pokemon count: 5
+Pokemon Level: 2~3
+Entry requirements: Lv 5 above.
+
+Hard:
+Exp Gain 150% of total points.
+Item drop rate:
+=> Sell only item 10%.
+=> Healing item 13%.
+=> Misc item 20%.
+
+Fatigue Used: 30
+Pokemon count: 10
+Pokemon Level: 2~3
+Entry requirements: Lv 5 above + 2 Party Pokemon.
+
+Master:
+Exp Gain 200% of total points.
+Item drop rate:
+=> Sell only item 10%.
+=> Healing item 7%.
+=> Misc item 30%.
+
+Fatigue Used: 40
+Pokemon count: 10
+Pokemon Level: 3
+Entry requirements: Lv 5 above + 2 Party Pokemon.
+
+Abyss:
+Exp Gain 250% of total points.
+Item drop rate:
+=> Sell only item 10%.
+=> Healing item 4%.
+=> Misc item 40%.
+
+Fatigue Used: 50 
+Pokemon count: 20
+Pokemon Level: 3
+Entry requirements: Lv 5 above + 4 Party Pokemon.
