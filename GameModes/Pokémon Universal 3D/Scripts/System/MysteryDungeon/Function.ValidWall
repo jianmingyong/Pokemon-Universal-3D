@@ -1,0 +1,15 @@
+version=2
+# This is a API for Random Dungeon Generator.
+# You will require a compatible map to run this.
+
+# Init Variable
+# @Storage.set(int,MysteryDungeon.TargetRoom,0)
+@Storage.set(int,MysteryDungeon.TargetRoomID,<Register.value(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.TargetRoom)>.ID)>)
+@Storage.set(int,MysteryDungeon.TargetRoomSizeX,<Register.value(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.TargetRoom)>.SizeX)>)
+@Storage.set(int,MysteryDungeon.TargetRoomSizeZ,<Register.value(MysteryDungeon.Room<Storage.get(int,MysteryDungeon.TargetRoom)>.SizeZ)>)
+
+@Storage.set(int,MysteryDungeon.TargetToCheck,<Math.int(<Storage.get(int,MysteryDungeon.TargetRoomSizeX)>*2)>+<Math.int(<Storage.get(int,MysteryDungeon.TargetRoomSizeZ)>*2)>)
+@Stoage.set(int,MysteryDungeon.CurrentTargetToCheck,0)
+
+:while:<Storage.get(int,MysteryDungeon.CurrentTargetToCheck)><<Storage.get(int,MysteryDungeon.TargetToCheck)>
+@Storage.set(int,MysteryDungeon.TargetToCheck.ID.<Storage.get(int,MysteryDungeon.CurrentTargetToCheck)>,)
