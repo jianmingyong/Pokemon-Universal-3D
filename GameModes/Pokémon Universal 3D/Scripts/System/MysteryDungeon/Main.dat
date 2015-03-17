@@ -44,7 +44,14 @@ version=2
 	# Dig a Random Object.
 	@Script.start(System\MysteryDungeon\ValidRoom)
 	@Script.start(System\MysteryDungeon\GenerateRoom)
-	
+	@Script.start(System\MysteryDungeon\ValidRoom)
+	@Script.start(System\MysteryDungeon\GenerateRoom)
+	@Script.start(System\MysteryDungeon\ValidRoom)
+	@Script.start(System\MysteryDungeon\GenerateRoom)
+	@Script.start(System\MysteryDungeon\ValidRoom)
+	@Script.start(System\MysteryDungeon\GenerateRoom)
+	@Script.start(System\MysteryDungeon\ValidRoom)
+	@Script.start(System\MysteryDungeon\GenerateRoom)
 #	:if:<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>=5 <or> <Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>>5
 #		:exitwhile
 #	:endif

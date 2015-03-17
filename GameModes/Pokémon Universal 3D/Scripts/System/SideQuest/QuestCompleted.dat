@@ -1,0 +1,27 @@
+﻿version=2
+@Title.clear
+@Title.add(Stage Clear!,2147483647,255,255,255,5,true,0,-120)
+@Title.add(Please wait for 5 seconds...,2147483647,255,255,255,2,true,0,0)
+@Level.wait(60)
+@Title.clear
+@Title.add(Stage Clear!,2147483647,255,255,255,5,true,0,-120)
+@Title.add(Please wait for 4 seconds...,2147483647,255,255,255,2,true,0,0)
+@Level.wait(60)
+@Title.clear
+@Title.add(Stage Clear!,2147483647,255,255,255,5,true,0,-120)
+@Title.add(Please wait for 3 seconds...,2147483647,255,255,255,2,true,0,0)
+@Level.wait(60)
+@Title.clear
+@Title.add(Stage Clear!,2147483647,255,255,255,5,true,0,-120)
+@Title.add(Please wait for 2 seconds...,2147483647,255,255,255,2,true,0,0)
+@Level.wait(60)
+@Title.clear
+@Title.add(Stage Clear!,2147483647,255,255,255,5,true,0,-120)
+@Title.add(Please wait for 1 seconds...,2147483647,255,255,255,2,true,0,0)
+@Level.wait(60)
+@Title.clear
+@Title.add(Stage Clear!,2147483647,255,255,255,5,true,0,-120)
+@Level.wait(60)
+@Title.clear
+
+:end

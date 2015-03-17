@@ -11,6 +11,10 @@ version=2
 		@Storage.update(str,System.LoadData.Data,add,Pokémon Dark Energy [16],)
 		@Storage.update(int,System.LoadData.Data.Count,add,1)
 	:endif
+	#:if:<Register.registered(System.Load.17)>=false
+	#	@Storage.update(str,System.LoadData.Data,add,Pokémon Sunshore Isle [17],)
+	#	@Storage.update(int,System.LoadData.Data.Count,add,1)
+	#:endif
 	@Storage.update(str,System.LoadData.Data,add,Back)
 	@Text.show(Please Choose an option.)
 	@Options.setcancelindex(<Storage.get(int,System.LoadData.Data.Count)>)
@@ -27,6 +31,14 @@ version=2
 		:if:<Register.registered(System.Load.16)>=false
 			@Storage.set(int,System.ScreenState,1)
 			@Register.change(System.Game ID,16)
+			@Script.start(System\ScreenState\ScreenState.1)
+		:else
+			@Text.show(Unable to restart.)
+		:endif
+	:when:Pokémon Sunshore Isle [17]
+		:if:<Register.registered(System.Load.17)>=false
+			@Storage.set(int,System.ScreenState,1)
+			@Register.change(System.Game ID,17)
 			@Script.start(System\ScreenState\ScreenState.1)
 		:else
 			@Text.show(Unable to restart.)
