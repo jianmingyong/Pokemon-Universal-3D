@@ -1,2 +1,2 @@
 {Id|Name|Price|ItemType|CatchMultiplier|SortValue|Description|TextureRectangle|TextureSource|ScriptBinding|CanBeUsed,CanBeTraded,CanBeHold,isBall}
-{1000|Quest Book|KeyItems|0|0|An item for side quest|168,264,24,24|ItemSheet|System\SideQuest\12.Main|true|false|false|false}
+{1000|Quest Book|KeyItem|0|0|An item for side quest|168,264,24,24|ItemSheet|System\SideQuest\12.Main|true,false,false,false}
