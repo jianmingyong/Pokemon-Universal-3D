@@ -1,4 +1,3 @@
-﻿version=2
 #############################################################
 # Welcome to the Pokémon Universal 3D Main Initialize File
 #############################################################
@@ -10,7 +9,9 @@
 @Camera.defix
 @Level.update
 :if:<Storage.count(int)>=0
-	# Define Variable
+	@Music.play(Stop)
+
+	# Define Global Variable
 	@Storage.set(int,System.ScreenState,0)
 	@Storage.set(int,System.ErrorLog.ErrorID0,0)
 	@Storage.set(int,System.ErrorLog.ErrorID1,0)
@@ -19,21 +20,29 @@
 	@Storage.set(int,System.ErrorLog.ErrorID4,0)
 	@Storage.set(int,System.ErrorLog.ErrorID5,0)
 	@Storage.set(str,System.ActionScript,GlobalMain.dat)
-	# End Define Variable
+	@Storage.set(str,System.GlobalVerification,<Math.dbl(1+1)>)
+
+	# Game Version Validation
+	:if:<Storage.get(str,System.GlobalVerification)>=2
+	:else
+		@Storage.set(int,System.ErrorLog.ErrorID5,1)
+		@Storage.set(int,System.ScreenState,3)
+		@Script.start(System\ScreenState\ScreenState.3)
+		:exit
+	:endif
+
+	# Game Update Checks
 	@Script.start(System\GlobalRegister)
 	@Script.start(System\UpdateRemoval\<Register.value(System.Game Version)>)
 	@Script.start(System\GlobalSave)
 	@Script.start(System\GlobalOption)
 	@Script.start(System\GlobalBankInterest)
-	@Player.save
 	:if:<Storage.get(bool,System.SkipMainMenu)>=false
-		@Music.play(Stop)
 		@Script.start(System\ScreenState\ScreenState.0)
-	:endif
-	:if:<Storage.get(bool,System.SkipMainMenu)>=true
+	:elseif:<Storage.get(bool,System.SkipMainMenu)>=true
 		@Script.start(System\GlobalLoad)
 	:endif
 :else
-	@Script.start(<Filesystem.pathup(<Level.mapfile>)>\<Level.filename>)
+	@Script.start(<Filesystem.pathup(<Level.file>)>\<Level.filename>)
 :endif
 :end
