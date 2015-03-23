@@ -37,6 +37,7 @@
 	@Script.start(System\GlobalSave)
 	@Script.start(System\GlobalOption)
 	@Script.start(System\GlobalBankInterest)
+
 	:if:<Storage.get(bool,System.SkipMainMenu)>=false
 		@Script.start(System\ScreenState\ScreenState.0)
 	:elseif:<Storage.get(bool,System.SkipMainMenu)>=true
