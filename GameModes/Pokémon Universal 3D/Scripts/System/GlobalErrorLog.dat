@@ -164,7 +164,7 @@
 @Text.log()
 @Text.log(System time (unix timestamp): <System.unixtimestamp>)
 @Text.log()
-:if:<Storage.get(int,System.ErrorLog.ErrorID0)>=1
+:if:<Storage.get(int,System.ErrorLog.ErrorID)>=0
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
 	@Text.log(Error information:)
@@ -194,8 +194,7 @@
 	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
 	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
 	@Text.log([/CODE])
-:endif
-:if:<Storage.get(int,System.ErrorLog.ErrorID1)>=1
+:elseif:<Storage.get(int,System.ErrorLog.ErrorID)>=1
 	@Storage.set(int,System.GlobalUpdateValidation.Error,0)
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
@@ -206,7 +205,7 @@
 	@Text.log(Data: "Pokemon\Save\<Player.name>\Register.dat")
 	:while:<Storage.get(int,System.GlobalUpdateValidation.Error)><<Storage.get(int,System.GlobalUpdateValidation.TotalError)>
 		@Text.log(<Storage.get(str,System.GlobalUpdateValidation.<Storage.get(int,System.GlobalUpdateValidation.Error)>)>)
-		@Storage.set(int,System.GlobalUpdateValidation.Error,<Storage.get(int,System.GlobalUpdateValidation.Error)>+1)
+		@Storage.update(int,System.GlobalUpdateValidation.Error,add,1)
 	:endwhile
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
@@ -225,8 +224,7 @@
 	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
 	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
 	@Text.log([/CODE])
-:endif
-:if:<Storage.get(int,System.ErrorLog.ErrorID2)>=1
+:elseif:<Storage.get(int,System.ErrorLog.ErrorID)>=2
 	@Storage.set(int,System.GlobalRegisterValidation.Error,0)
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
@@ -237,7 +235,7 @@
 	@Text.log(Data: "Pokemon\Save\<Player.name>\Register.dat")
 	:while:<Storage.get(int,System.GlobalRegisterValidation.Error)><<Storage.get(int,System.GlobalRegisterValidation.TotalError)>
 		@Text.log(<Storage.get(str,System.GlobalRegisterValidation.<Storage.get(int,System.GlobalRegisterValidation.Error)>)>)
-		@Storage.set(int,System.GlobalRegisterValidation.Error,<Storage.get(int,System.GlobalRegisterValidation.Error)>+1)
+		@Storage.update(int,System.GlobalRegisterValidation.Error,add,1)
 	:endwhile
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
@@ -256,8 +254,7 @@
 	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
 	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
 	@Text.log([/CODE])
-:endif
-:if:<Storage.get(int,System.ErrorLog.ErrorID3)>=1
+:elseif:<Storage.get(int,System.ErrorLog.ErrorID)>=3
 	@Storage.set(int,System.GlobalPokémonValidation.Error,0)
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
@@ -287,8 +284,7 @@
 	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
 	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
 	@Text.log([/CODE])
-:endif
-:if:<Storage.get(int,System.ErrorLog.ErrorID4)>=1
+:elseif:<Storage.get(int,System.ErrorLog.ErrorID)>=4
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
 	@Text.log(Error information:)
@@ -313,8 +309,7 @@
 	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
 	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
 	@Text.log([/CODE])
-:endif
-:if:<Storage.get(int,System.ErrorLog.ErrorID5)>=1
+:elseif:<Storage.get(int,System.ErrorLog.ErrorID)>=5
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
 	@Text.log(Error information:)
@@ -340,4 +335,3 @@
 	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
 	@Text.log([/CODE])
 :endif
-:end
