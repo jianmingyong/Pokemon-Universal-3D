@@ -13,12 +13,7 @@
 
 	# Define Global Variable
 	@Storage.set(int,System.ScreenState,0)
-	@Storage.set(int,System.ErrorLog.ErrorID0,0)
-	@Storage.set(int,System.ErrorLog.ErrorID1,0)
-	@Storage.set(int,System.ErrorLog.ErrorID2,0)
-	@Storage.set(int,System.ErrorLog.ErrorID3,0)
-	@Storage.set(int,System.ErrorLog.ErrorID4,0)
-	@Storage.set(int,System.ErrorLog.ErrorID5,0)
+	@Storage.set(int,System.ErrorLog.ErrorID,-1)
 	@Storage.set(str,System.ActionScript,GlobalMain.dat)
 
 	# Game Update Checks
