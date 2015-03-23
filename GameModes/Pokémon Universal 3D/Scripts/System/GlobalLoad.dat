@@ -53,7 +53,6 @@
 :else
 	@Title.clear
 	@Text.show(No valid save found.~Returning to main menu.)
-	@Storage.set(int,System.ScreenState,0)
 	@Screen.fadein
 	@Script.start(System\ScreenState\ScreenState.0)
 :endif
