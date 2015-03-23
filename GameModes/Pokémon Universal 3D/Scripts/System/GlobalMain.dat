@@ -20,16 +20,6 @@
 	@Storage.set(int,System.ErrorLog.ErrorID4,0)
 	@Storage.set(int,System.ErrorLog.ErrorID5,0)
 	@Storage.set(str,System.ActionScript,GlobalMain.dat)
-	@Storage.set(str,System.GlobalVerification,<Math.dbl(1+1)>)
-
-	# Game Version Validation
-	:if:<Storage.get(str,System.GlobalVerification)>=2
-	:else
-		@Storage.set(int,System.ErrorLog.ErrorID5,1)
-		@Storage.set(int,System.ScreenState,3)
-		@Script.start(System\ScreenState\ScreenState.3)
-		:exit
-	:endif
 
 	# Game Update Checks
 	@Script.start(System\GlobalRegister)
