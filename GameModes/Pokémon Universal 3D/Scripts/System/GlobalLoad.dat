@@ -9,12 +9,13 @@
 @Title.add(Loading save file. Please wait for a while.,2147483647,255,255,255,4,true,0,0)
 @Script.start(System\GlobalAntiCheat)
 :if:<Register.exists(System.Load.12)>=true <and> <Register.value(System.Game ID)>=12
-	#Restoring Save Data
 	:while:<CurrentValue><<MaxValue>
 		<CurrentValue>+=1
 		@Player.removebadge(<CurrentValue>)
-		:if:<Register.value(System.GymBadges.<CurrentValue>.12>=true
-			@Player.addbadge(<CurrentValue>,false)
+		:if:<Register.exists(System.GymBadges.<CurrentValue>.12)>=true
+			:if:<Register.value(System.GymBadges.<CurrentValue>.12)>=true
+				@Player.addbadge(<CurrentValue>,false)
+			:endif
 		:endif
 	:endwhile
 	:if:!<Level.file>=<Register.value(System.LastMap.12)>
@@ -28,33 +29,17 @@
 	:endif
 	@Screen.fadein
 	@Title.clear
-	:end
-:endif
-:if:<Register.registered(System.Load.16)>=true <and> <Register.value(System.Game ID)>=16
-	@Player.removebadge(1)
-	@Player.removebadge(2)
-	@Player.removebadge(3)
-	@Player.removebadge(4)
-	@Player.removebadge(5)
-	@Player.removebadge(6)
-	@Player.removebadge(7)
-	@Player.removebadge(8)
-	:if:<Pokemon.count>>0 <and> <not><Storage.get(int,System.LastPlayID)>=16
-		@Storage.set(bool,System.Load.Valid,false)
-		@Pokemon.add(999,1)
-		@Pokemon.setnickname(<Pokemon.count>-1,To Be Deleted)
-		:while:<Storage.get(bool,System.Load.Valid)>=false
-			@Text.show(Changing Game Detection Alert!~You are required to deposite your Pokémon.)
-			@Screen.storagesystem
-			:if:<Pokemon.name(0)>=MissingNo <and> <Pokemon.count>=1
-				@Pokemon.remove(0)
-				:exitwhile
+:elseif:<Register.registered(System.Load.16)>=true <and> <Register.value(System.Game ID)>=16
+	:while:<CurrentValue><<MaxValue>
+		<CurrentValue>+=1
+		@Player.removebadge(<CurrentValue>)
+		:if:<Register.exists(System.GymBadges.<CurrentValue>.16)>=true
+			:if:<Register.value(System.GymBadges.<CurrentValue>.16)>=true
+				@Player.addbadge(<CurrentValue>,false)
 			:endif
-		:endwhile
-		@Text.show(Please take your party for~Pokémon Dark Energy 3D)
-		@Screen.storagesystem
-	:endif
-	:if:<not><Level.mapfile>=<Register.value(System.LastMap.16)>
+		:endif
+	:endwhile
+	:if:<not><Level.file>=<Register.value(System.LastMap.16)>
 		@Player.warp(<Register.value(System.LastMap.16)>,<Register.value(System.PlayerPosition.X.16)>,<Register.value(System.PlayerPosition.Y.16)>+0.1,<Register.value(System.PlayerPosition.Z.16)>,<Register.value(System.PlayerFacing.16)>)
 		:if:<Register.value(System.PlayerThirdPerson.16)>=true
 			@Camera.activatethirdperson
@@ -65,10 +50,10 @@
 	:endif
 	@Screen.fadein
 	@Title.clear
-	:end
+:else
+	@Title.clear
+	@Text.show(No valid save found.~Returning to main menu.)
+	@Storage.set(int,System.ScreenState,0)
+	@Screen.fadein
+	@Script.start(System\ScreenState\ScreenState.0)
 :endif
-@Title.clear
-@Text.show(No valid save found.~Returning to main menu.)
-@Storage.set(int,System.ScreenState,0)
-@Screen.fadein
-@Script.start(System\ScreenState\ScreenState.0)
