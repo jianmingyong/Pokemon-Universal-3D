@@ -1,0 +1,12 @@
+#############################################################
+# Using @Register.remove API
+#############################################################
+# @Storage.set(str,Register.remove,Name)
+# @Script.start(Function\Register.remove)
+:while:<Register.exists(<Storage.get(str,Register.remove)>)>=true
+	@Register.remove(<Storage.get(str,Register.remove)>)
+	@Register.remove(<Storage.get(str,Register.remove)>,str)
+	@Register.remove(<Storage.get(str,Register.remove)>,int)
+	@Register.remove(<Storage.get(str,Register.remove)>,sng)
+	@Register.remove(<Storage.get(str,Register.remove)>,bool)
+:endwhile
