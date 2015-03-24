@@ -1,6 +1,5 @@
-version=2
 #######################################################################################
-# This is a option file. It will affect the game
+# This is the options file. It will affect the game
 #######################################################################################
 # To change whether to skip the main menu screen in game
 # Valid option: true, false
@@ -22,4 +21,3 @@ version=2
 	# Valid option: true, false
 	@Register.change(System.3D Buildings,false)
 :endif
-:end
