@@ -1,170 +1,168 @@
-version=2
-:if:<Register.registered(System.LastMap.12)>=false
-	@Register.register(System.LastMap.12,str,Nothing)
+:if:<Register.exists(System.LastMap.12)>=false
+	@Register.new(System.LastMap.12,str,Nothing)
 :endif
-:if:<Register.registered(System.PlayerPosition.X.12)>=false
-	@Register.register(System.PlayerPosition.X.12,int,<Player.position(x)>)
+:if:<Register.exists(System.PlayerPosition.X.12)>=false
+	@Register.new(System.PlayerPosition.X.12,int,<Player.position(x)>)
 :endif
-:if:<Register.registered(System.PlayerPosition.Y.12)>=false
-	@Register.register(System.PlayerPosition.Y.12,int,<Player.position(y)>)
+:if:<Register.exists(System.PlayerPosition.Y.12)>=false
+	@Register.new(System.PlayerPosition.Y.12,int,<Player.position(y)>)
 :endif
-:if:<Register.registered(System.PlayerPosition.Z.12)>=false
-	@Register.register(System.PlayerPosition.Z.12,int,<Player.position(z)>)
+:if:<Register.exists(System.PlayerPosition.Z.12)>=false
+	@Register.new(System.PlayerPosition.Z.12,int,<Player.position(z)>)
 :endif
-:if:<Register.registered(System.PlayerFacing.12)>=false
-	@Register.register(System.PlayerFacing.12,int,<Player.facing>)
+:if:<Register.exists(System.PlayerFacing.12)>=false
+	@Register.new(System.PlayerFacing.12,int,<Player.facing>)
 :endif
-:if:<Register.registered(System.PlayerThirdPerson.12)>=false
-	@Register.register(System.PlayerThirdPerson.12,bool,<Player.thirdperson>)
+:if:<Register.exists(System.PlayerThirdPerson.12)>=false
+	@Register.new(System.PlayerThirdPerson.12,bool,<Player.thirdperson>)
 :endif
-:if:<Register.registered(System.PlayerGender.12)>=false
-	@Register.register(System.PlayerGender.12,str,boy)
+:if:<Register.exists(System.PlayerGender.12)>=false
+	@Register.new(System.PlayerGender.12,str,boy)
 :endif
-:if:<Register.registered(System.Starter.12)>=false
-	@Register.register(System.Starter.12,int,0)
+:if:<Register.exists(System.Starter.12)>=false
+	@Register.new(System.Starter.12,int,0)
 :endif
-:if:<Register.registered(System.PersonalProfile.12)>=false
-	@Register.register(System.PersonalProfile.12,str,Nothing)
+:if:<Register.exists(System.PersonalProfile.12)>=false
+	@Register.new(System.PersonalProfile.12,str,Nothing)
 :endif
-:if:<Register.registered(System.GymBadges.1.12)>=false
-	@Register.register(System.GymBadges.1.12,bool,false)
+:if:<Register.exists(System.GymBadges.1.12)>=false
+	@Register.new(System.GymBadges.1.12,bool,false)
 :endif
-:if:<Register.registered(System.GymBadges.2.12)>=false
-	@Register.register(System.GymBadges.2.12,bool,false)
+:if:<Register.exists(System.GymBadges.2.12)>=false
+	@Register.new(System.GymBadges.2.12,bool,false)
 :endif
-:if:<Register.registered(System.GymBadges.3.12)>=false
-	@Register.register(System.GymBadges.3.12,bool,false)
+:if:<Register.exists(System.GymBadges.3.12)>=false
+	@Register.new(System.GymBadges.3.12,bool,false)
 :endif
-:if:<Register.registered(System.GymBadges.4.12)>=false
-	@Register.register(System.GymBadges.4.12,bool,false)
+:if:<Register.exists(System.GymBadges.4.12)>=false
+	@Register.new(System.GymBadges.4.12,bool,false)
 :endif
-:if:<Register.registered(System.GymBadges.5.12)>=false
-	@Register.register(System.GymBadges.5.12,bool,false)
+:if:<Register.exists(System.GymBadges.5.12)>=false
+	@Register.new(System.GymBadges.5.12,bool,false)
 :endif
-:if:<Register.registered(System.GymBadges.6.12)>=false
-	@Register.register(System.GymBadges.6.12,bool,false)
+:if:<Register.exists(System.GymBadges.6.12)>=false
+	@Register.new(System.GymBadges.6.12,bool,false)
 :endif
-:if:<Register.registered(System.GymBadges.7.12)>=false
-	@Register.register(System.GymBadges.7.12,bool,false)
+:if:<Register.exists(System.GymBadges.7.12)>=false
+	@Register.new(System.GymBadges.7.12,bool,false)
 :endif
-:if:<Register.registered(System.GymBadges.8.12)>=false
-	@Register.register(System.GymBadges.8.12,bool,false)
+:if:<Register.exists(System.GymBadges.8.12)>=false
+	@Register.new(System.GymBadges.8.12,bool,false)
 :endif
-:if:<Register.registered(12\LittleRootTown\019000001)>=false
-	@Register.register(12\LittleRootTown\019000001,int,1)
+:if:<Register.exists(12\LittleRootTown\019000001)>=false
+	@Register.new(12\LittleRootTown\019000001,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\024000010)>=false
-	@Register.register(12\LittleRootTown\024000010,int,1)
+:if:<Register.exists(12\LittleRootTown\024000010)>=false
+	@Register.new(12\LittleRootTown\024000010,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown)>=false
-	@Register.register(12\LittleRootTown,int,1)
+:if:<Register.exists(12\LittleRootTown)>=false
+	@Register.new(12\LittleRootTown,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\PlayerRoom.1\002000005)>=false
-	@Register.register(12\LittleRootTown\PlayerRoom.1\002000005,int,1)
+:if:<Register.exists(12\LittleRootTown\PlayerRoom.1\002000005)>=false
+	@Register.new(12\LittleRootTown\PlayerRoom.1\002000005,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\PlayerRoom.1)>=false
-	@Register.register(12\LittleRootTown\PlayerRoom.1,int,1)
+:if:<Register.exists(12\LittleRootTown\PlayerRoom.1)>=false
+	@Register.new(12\LittleRootTown\PlayerRoom.1,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\PlayerRoom.2\005000000)>=false
-	@Register.register(12\LittleRootTown\PlayerRoom.2\005000000,int,1)
+:if:<Register.exists(12\LittleRootTown\PlayerRoom.2\005000000)>=false
+	@Register.new(12\LittleRootTown\PlayerRoom.2\005000000,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\PlayerRoom.2\000000001)>=false
-	@Register.register(12\LittleRootTown\PlayerRoom.2\000000001,int,1)
+:if:<Register.exists(12\LittleRootTown\PlayerRoom.2\000000001)>=false
+	@Register.new(12\LittleRootTown\PlayerRoom.2\000000001,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\PlayerRoom.2\004000001)>=false
-	@Register.register(12\LittleRootTown\PlayerRoom.2\004000001,int,1)
+:if:<Register.exists(12\LittleRootTown\PlayerRoom.2\004000001)>=false
+	@Register.new(12\LittleRootTown\PlayerRoom.2\004000001,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\RivalRoom.1\008000006)>=false
-	@Register.register(12\LittleRootTown\RivalRoom.1\008000006,int,1)
+:if:<Register.exists(12\LittleRootTown\RivalRoom.1\008000006)>=false
+	@Register.new(12\LittleRootTown\RivalRoom.1\008000006,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\RivalRoom.1)>=false
-	@Register.register(12\LittleRootTown\RivalRoom.1,int,1)
+:if:<Register.exists(12\LittleRootTown\RivalRoom.1)>=false
+	@Register.new(12\LittleRootTown\RivalRoom.1,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\RivalRoom.2\005000003)>=false
-	@Register.register(12\LittleRootTown\RivalRoom.2\005000003,int,1)
+:if:<Register.exists(12\LittleRootTown\RivalRoom.2\005000003)>=false
+	@Register.new(12\LittleRootTown\RivalRoom.2\005000003,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\RivalRoom.2)>=false
-	@Register.register(12\LittleRootTown\RivalRoom.2,int,1)
+:if:<Register.exists(12\LittleRootTown\RivalRoom.2)>=false
+	@Register.new(12\LittleRootTown\RivalRoom.2,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\ProfBirchLab\006000003)>=false
-	@Register.register(12\LittleRootTown\ProfBirchLab\006000003,int,1)
+:if:<Register.exists(12\LittleRootTown\ProfBirchLab\006000003)>=false
+	@Register.new(12\LittleRootTown\ProfBirchLab\006000003,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\ProfBirchLab\009000007)>=false
-	@Register.register(12\LittleRootTown\ProfBirchLab\009000007,int,1)
+:if:<Register.exists(12\LittleRootTown\ProfBirchLab\009000007)>=false
+	@Register.new(12\LittleRootTown\ProfBirchLab\009000007,int,1)
 :endif
-:if:<Register.registered(12\LittleRootTown\ProfBirchLab)>=false
-	@Register.register(12\LittleRootTown\ProfBirchLab,int,1)
+:if:<Register.exists(12\LittleRootTown\ProfBirchLab)>=false
+	@Register.new(12\LittleRootTown\ProfBirchLab,int,1)
 :endif
-:if:<Register.registered(12\Route101)>=false
-	@Register.register(12\Route101,int,1)
+:if:<Register.exists(12\Route101)>=false
+	@Register.new(12\Route101,int,1)
 :endif
-:if:<Register.registered(12\OldaleTown\013000007)>=false
-	@Register.register(12\OldaleTown\013000007,int,1)
+:if:<Register.exists(12\OldaleTown\013000007)>=false
+	@Register.new(12\OldaleTown\013000007,int,1)
 :endif
-:if:<Register.registered(12\OldaleTown\001000011)>=false
-	@Register.register(12\OldaleTown\001000011,int,1)
+:if:<Register.exists(12\OldaleTown\001000011)>=false
+	@Register.new(12\OldaleTown\001000011,int,1)
 :endif
-:if:<Register.registered(12\OldaleTown)>=false
-	@Register.register(12\OldaleTown,int,1)
+:if:<Register.exists(12\OldaleTown)>=false
+	@Register.new(12\OldaleTown,int,1)
 :endif
-:if:<Register.registered(12\OldaleTown\PokeMart\002000002)>=false
-	@Register.register(12\OldaleTown\PokeMart\002000002,int,1)
+:if:<Register.exists(12\OldaleTown\PokeMart\002000002)>=false
+	@Register.new(12\OldaleTown\PokeMart\002000002,int,1)
 :endif
-:if:<Register.registered(12\OldaleTown\PokeMart\005000004)>=false
-	@Register.register(12\OldaleTown\PokeMart\005000004,int,1)
+:if:<Register.exists(12\OldaleTown\PokeMart\005000004)>=false
+	@Register.new(12\OldaleTown\PokeMart\005000004,int,1)
 :endif
-:if:<Register.registered(12\Route103)>=false
-	@Register.register(12\Route103,int,1)
+:if:<Register.exists(12\Route103)>=false
+	@Register.new(12\Route103,int,1)
 :endif
-:if:<Register.registered(12\Route102\024000010)>=false
-	@Register.register(12\Route102\024000010,int,1)
+:if:<Register.exists(12\Route102\024000010)>=false
+	@Register.new(12\Route102\024000010,int,1)
 :endif
-:if:<Register.registered(12\Route102\025000010)>=false
-	@Register.register(12\Route102\025000010,int,1)
+:if:<Register.exists(12\Route102\025000010)>=false
+	@Register.new(12\Route102\025000010,int,1)
 :endif
-:if:<Register.registered(12\PetalburgCity)>=false
-	@Register.register(12\PetalburgCity,int,1)
+:if:<Register.exists(12\PetalburgCity)>=false
+	@Register.new(12\PetalburgCity,int,1)
 :endif
-:if:<Register.registered(12\PetalburgCity\Gym.Main\001000000)>=false
-	@Register.register(12\PetalburgCity\Gym.Main\001000000,int,1)
+:if:<Register.exists(12\PetalburgCity\Gym.Main\001000000)>=false
+	@Register.new(12\PetalburgCity\Gym.Main\001000000,int,1)
 :endif
-:if:<Register.registered(12\PetalburgCity\Gym.Main\004000002)>=false
-	@Register.register(12\PetalburgCity\Gym.Main\004000002,int,1)
+:if:<Register.exists(12\PetalburgCity\Gym.Main\004000002)>=false
+	@Register.new(12\PetalburgCity\Gym.Main\004000002,int,1)
 :endif
-:if:<Register.registered(12\PetalburgCity\Gym.Main\007000000)>=false
-	@Register.register(12\PetalburgCity\Gym.Main\007000000,int,1)
+:if:<Register.exists(12\PetalburgCity\Gym.Main\007000000)>=false
+	@Register.new(12\PetalburgCity\Gym.Main\007000000,int,1)
 :endif
-:if:<Register.registered(12\PetalburgCity\Gym.Main)>=false
-	@Register.register(12\PetalburgCity\Gym.Main,int,1)
+:if:<Register.exists(12\PetalburgCity\Gym.Main)>=false
+	@Register.new(12\PetalburgCity\Gym.Main,int,1)
 :endif
-:if:<Register.registered(12\PetalburgCity\WallyHouse\003000003)>=false
-	@Register.register(12\PetalburgCity\WallyHouse\003000003,int,1)
+:if:<Register.exists(12\PetalburgCity\WallyHouse\003000003)>=false
+	@Register.new(12\PetalburgCity\WallyHouse\003000003,int,1)
 :endif
-:if:<Register.registered(12\PetalburgCity\WallyHouse\007000004)>=false
-	@Register.register(12\PetalburgCity\WallyHouse\007000004,int,1)
+:if:<Register.exists(12\PetalburgCity\WallyHouse\007000004)>=false
+	@Register.new(12\PetalburgCity\WallyHouse\007000004,int,1)
 :endif
-:if:<Register.registered(12\PetalburgCity\PokeCenter\011000001)>=false
-	@Register.register(12\PetalburgCity\PokeCenter\011000001,int,1)
+:if:<Register.exists(12\PetalburgCity\PokeCenter\011000001)>=false
+	@Register.new(12\PetalburgCity\PokeCenter\011000001,int,1)
 :endif
-:if:<Register.registered(12\PetalburgCity\PokeMart\002000002)>=false
-	@Register.register(12\PetalburgCity\PokeMart\002000002,int,1)
+:if:<Register.exists(12\PetalburgCity\PokeMart\002000002)>=false
+	@Register.new(12\PetalburgCity\PokeMart\002000002,int,1)
 :endif
-:if:<Register.registered(12\Route104\016000019)>=false
-	@Register.register(12\Route104\016000019,int,1)
+:if:<Register.exists(12\Route104\016000019)>=false
+	@Register.new(12\Route104\016000019,int,1)
 :endif
-:if:<Register.registered(12\Route104\011000023)>=false
-	@Register.register(12\Route104\011000023,int,1)
+:if:<Register.exists(12\Route104\011000023)>=false
+	@Register.new(12\Route104\011000023,int,1)
 :endif
-:if:<Register.registered(12\Route104\013000026)>=false
-	@Register.register(12\Route104\013000026,int,1)
+:if:<Register.exists(12\Route104\013000026)>=false
+	@Register.new(12\Route104\013000026,int,1)
 :endif
-:if:<Register.registered(12\Route104\030000041)>=false
-	@Register.register(12\Route104\030000041,int,1)
+:if:<Register.exists(12\Route104\030000041)>=false
+	@Register.new(12\Route104\030000041,int,1)
 :endif
-:if:<Register.registered(12\Route104\032000041)>=false
-	@Register.register(12\Route104\032000041,int,1)
+:if:<Register.exists(12\Route104\032000041)>=false
+	@Register.new(12\Route104\032000041,int,1)
 :endif
-:if:<Register.registered(12\PetalburgWoods)>=false
-	@Register.register(12\PetalburgWoods,int,1)
+:if:<Register.exists(12\PetalburgWoods)>=false
+	@Register.new(12\PetalburgWoods,int,1)
 :endif
-:end
