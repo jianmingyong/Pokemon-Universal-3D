@@ -1,25 +1,30 @@
-version=2
-@Storage.set(int,System.LastPlayID,<Register.value(System.Game ID)>)
+# Declare Global Variable
+# @Storage.set(bool,System.MakeBackupSave,true)
+
+:if:<Storage.value(bool,System.MakeBackupSave)>=false
+	@Storage.set(int,System.LastPlayID,<Register.value(System.Game ID)>)
+:else
+	@Storage.set(int,System.BackupLastPlayID,<Register.value(System.Game ID)>)
+:endif
+
 :if:<Register.value(System.Game ID)>=12 <and> <not><Level.filename>=GlobalMain
 	@Register.change(System.PlayerPosition.X.12,<Player.position(x)>)
 	@Register.change(System.PlayerPosition.Y.12,<Player.position(y)>)
 	@Register.change(System.PlayerPosition.Z.12,<Player.position(z)>)
 	@Register.change(System.PlayerFacing.12,<Player.facing>)
 	@Register.change(System.PlayerThirdPerson.12,<Player.thirdperson>)
-	@Register.change(System.LastMap.12,<Level.mapfile>)
+	@Register.change(System.LastMap.12,<Level.file>)
 	:if:<Register.registered(System.Load.12)>=false
 		@Register.register(System.Load.12)
 	:endif
-:endif
-:if:<Register.value(System.Game ID)>=16 <and> <not><Level.filename>=GlobalMain
+:elseif:<Register.value(System.Game ID)>=16 <and> <not><Level.filename>=GlobalMain
 	@Register.change(System.PlayerPosition.X.16,<Player.position(x)>)
 	@Register.change(System.PlayerPosition.Y.16,<Player.position(y)>)
 	@Register.change(System.PlayerPosition.Z.16,<Player.position(z)>)
 	@Register.change(System.PlayerFacing.16,<Player.facing>)
 	@Register.change(System.PlayerThirdPerson.16,<Player.thirdperson>)
-	@Register.change(System.LastMap.16,<Level.mapfile>)
+	@Register.change(System.LastMap.16,<Level.file>)
 	:if:<Register.registered(System.Load.16)>=false
 		@Register.register(System.Load.16)
 	:endif
 :endif
-:end
