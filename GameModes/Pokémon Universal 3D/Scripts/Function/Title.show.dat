@@ -1,5 +1,5 @@
 #############################################################
-# Using Title.show API											#
+# Using Title.show API
 #############################################################
 # @Storage.set(int,Title.text.maxindex,1)
 # @Storage.set(str,Title.text.1,Text)
