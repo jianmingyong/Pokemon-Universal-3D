@@ -13,20 +13,11 @@
 :if:<Register.exists(System.Game ID)>=false
 	@Register.new(System.Game ID,int,0)
 :endif
-:if:<Register.exists(System.MysteryGift)>=false
-	@Register.new(System.MysteryGift,int,0)
-:endif
-:if:<Register.exists(System.BankMoney)>=false
-	@Register.new(System.BankMoney,int,0)
-:endif
 :if:<Register.exists(System.SandBoxMode)>=false
 	@Register.new(System.SandBoxMode,bool,false)
 :endif
 :if:<Register.exists(System.3D Buildings)>=false
 	@Register.new(System.3D Buildings,bool,false)
-:endif
-:if:<Register.exists(pokegear_card_radio)>=false
-	@Register.new(pokegear_card_radio)
 :endif
 @Script.start(System\Register\12)
 @Script.start(System\Register\15)
