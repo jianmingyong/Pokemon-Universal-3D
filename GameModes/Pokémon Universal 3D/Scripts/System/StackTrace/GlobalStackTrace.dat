@@ -1,0 +1,13 @@
+# Using StackTrace API
+# @Storage.set(str,System.StackTrace,)
+
+# Store Last 5 StackTrace
+:if:<Storage.exist(int,System.StackTrace.CurrentStore)=false
+	@Storage.set(int,System.StackTrace.CurrentStore,1)
+:elseif:<Storage.get(int,System.StackTrace.CurrentStore)>>5
+	@Storage.set(int,System.StackTrace.CurrentStore,1)
+:else
+	@Storage.update(int,System.StackTrace.CurrentStore,add,1)
+:endif
+
+@Storage.set(str,System.StackTrace.<Storage.get(int,System.StackTrace.CurrentStore)>,<Storage.get(str,System.StackTrace)>)
