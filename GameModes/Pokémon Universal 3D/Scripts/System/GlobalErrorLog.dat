@@ -189,11 +189,6 @@
 	@Text.log(Error Solution: Make sure the syntax in the script is correct.)
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
-	@Text.log()
-	@Text.log(You should report this error.)
-	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
-	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
-	@Text.log([/CODE])
 :elseif:<Storage.get(int,System.ErrorLog.ErrorID)>=1
 	@Storage.set(int,System.GlobalUpdateValidation.Error,0)
 	@Text.log(---------------------------------------------------------------------------------)
@@ -219,11 +214,6 @@
 	@Text.log(Error Solution: You might have mixed the gamefiles with an old version file. Try to redownlaod the game and delete the gamemode folder and reinsert.)
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
-	@Text.log()
-	@Text.log(You should report this error.)
-	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
-	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
-	@Text.log([/CODE])
 :elseif:<Storage.get(int,System.ErrorLog.ErrorID)>=2
 	@Storage.set(int,System.GlobalRegisterValidation.Error,0)
 	@Text.log(---------------------------------------------------------------------------------)
@@ -249,11 +239,6 @@
 	@Text.log(Error Solution: If you have legitmately cheated, try turn on the in-game sandbox mode in the main menu of Pokémon Universal 3D :) Otherwise, please report this error.)
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
-	@Text.log()
-	@Text.log(You should report this error if you did not legimately cheated.)
-	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
-	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
-	@Text.log([/CODE])
 :elseif:<Storage.get(int,System.ErrorLog.ErrorID)>=3
 	@Storage.set(int,System.GlobalPokémonValidation.Error,0)
 	@Text.log(---------------------------------------------------------------------------------)
@@ -279,11 +264,6 @@
 	@Text.log(Error Solution: If you have legitmately cheated, try turn on the in-game sandbox mode in Pokémon Universal 3D main menu. :) Otherwise, please report the error.)
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
-	@Text.log()
-	@Text.log(You should report this error if you did not legimately cheated.)
-	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
-	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
-	@Text.log([/CODE])
 :elseif:<Storage.get(int,System.ErrorLog.ErrorID)>=4
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
@@ -304,11 +284,6 @@
 	@Text.log(Error Solution: Make sure the content pack given in the message is activated and try again.)
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
-	@Text.log()
-	@Text.log(You should report this error if you still can reproduce this.)
-	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
-	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
-	@Text.log([/CODE])
 :elseif:<Storage.get(int,System.ErrorLog.ErrorID)>=5
 	@Text.log(---------------------------------------------------------------------------------)
 	@Text.log()
@@ -329,9 +304,31 @@
 	@Text.log(Error Solution: Make sure that you are playing version 0.54 and above of Pokémon 3D and try again.)
 	@Text.log()
 	@Text.log(---------------------------------------------------------------------------------)
-	@Text.log()
-	@Text.log(You should report this error if you still can reproduce this.)
-	@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
-	@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
-	@Text.log([/CODE])
 :endif
+@Text.log()
+@Text.log(Stack Trace:)
+@Text.log()
+<StartIndex>=<Storage.get(int,System.StackTrace.CurrentStore)>
+<CurrentIndex>=<StartIndex>
+<Stop>=false
+:while:<Stop>=false
+	:if:<Storage.exist(str,System.StackTrace.<CurrentIndex>)>=true
+		@Text.log(at <Storage.get(str,System.StackTrace.<CurrentIndex>)>)
+	:endif
+	:if:<CurrentIndex>=1
+		<CurrentIndex>=5
+	:else
+		<CurrentIndex>-=1
+	:endif
+	:if:<CurrentIndex>=<StartIndex>
+		<Stop>=true
+		:exitwhile
+	:endif
+:endwhile
+@Text.log()
+@Text.log(---------------------------------------------------------------------------------)
+@Text.log()
+@Text.log(You should report this error.)
+@Text.log(Go to "http://pokemon3d.net/forum/threads/6297/" to report this crash there.)
+@Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
+@Text.log([/CODE])
