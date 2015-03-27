@@ -1,0 +1,13 @@
+version=2
+#############################################################
+# Using Title API											#
+#############################################################
+# @Storage.set(int,Title.text.maxindex,1)
+# @Storage.set(str,Title.text.1,Text Index 1)
+# @Script.start(Function\Title)
+@Storage.set(int,Title.text.currentindex,1)
+:while:<not><Storage.get(int,Title.text.currentindex)>><Storage.get(int,Title.text.maxindex)>
+	@Title.add(<Storage.get(str,Title.text.<Storage.get(int,Title.text.currentindex)>)>,2147483648,255,255,255,2,false,0,<Math.int(<Storage.get(int,Title.text.currentindex)>*21)>-20)
+	@Storage.set(int,Title.text.currentindex,<Storage.get(int,Title.text.currentindex)>+1)
+:endwhile
+:end

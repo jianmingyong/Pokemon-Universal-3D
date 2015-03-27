@@ -1,24 +1,35 @@
-:if:<Register.exists(System.P3D Version)>=false
-	@Register.new(System.P3D Version,str,0.54.0)
+version=2
+:if:<Register.registered(System.P3D Version)>=false
+	@Register.register(System.P3D Version,str,0.53.0)
 :endif
-:if:!<Register.value(System.P3D Version)>=0.54.0
-	@Register.change(System.P3D Version,0.54.0)
+:if:<not><Register.value(System.P3D Version)>=0.53.0
+	@Register.change(System.P3D Version,0.53.0)
 :endif
-:if:<Register.exists(System.Game Version)>=false
-	@Register.new(System.Game Version,str,0.0.9)
+:if:<Register.registered(System.Game Version)>=false
+	@Register.register(System.Game Version,str,0.0.9)
 :endif
-:if:!<Register.value(System.Game Version)>=0.0.9
+:if:<not><Register.value(System.Game Version)>=0.0.9
 	@Register.change(System.Game Version,0.0.9)
 :endif
-:if:<Register.exists(System.Game ID)>=false
-	@Register.new(System.Game ID,int,0)
+:if:<Register.registered(System.Game ID)>=false
+	@Register.register(System.Game ID,int,0)
 :endif
-:if:<Register.exists(System.SandBoxMode)>=false
-	@Register.new(System.SandBoxMode,bool,false)
+:if:<Register.registered(System.MysteryGift)>=false
+	@Register.register(System.MysteryGift,int,0)
 :endif
-:if:<Register.exists(System.3D Buildings)>=false
-	@Register.new(System.3D Buildings,bool,false)
+:if:<Register.registered(System.BankMoney)>=false
+	@Register.register(System.BankMoney,sng,0)
+:endif
+:if:<Register.registered(System.SandBoxMode)>=false
+	@Register.register(System.SandBoxMode,bool,false)
+:endif
+:if:<Register.registered(System.3D Buildings)>=false
+	@Register.register(System.3D Buildings,bool,false)
+:endif
+:if:<Register.registered(pokegear_card_radio)>=false
+	@Register.register(pokegear_card_radio)
 :endif
 @Script.start(System\Register\12)
 @Script.start(System\Register\15)
 @Script.start(System\Register\16)
+:end

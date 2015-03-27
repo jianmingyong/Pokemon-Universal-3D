@@ -1,3 +1,4 @@
+version=2
 ##################################
 # Anti Cheat Initialization File
 ##################################
@@ -6,3 +7,4 @@
 	@Script.start(System\AntiCheat\GlobalRegisterValidation)
 	@Script.start(System\AntiCheat\GlobalPokémonValidation)
 :endif
+:end

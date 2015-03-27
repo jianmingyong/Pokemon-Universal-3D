@@ -1,4 +1,7 @@
-﻿This is part of the Pokémon Universal 3D Streetlight API:
+﻿This is part of the Pokémon Universal 3D Streetlight Entity.
+
+To use, simply add this at the position of the streetlight entity.
+{"Structure"{STR[{"Map"{str[Global\Lamp]}}{"Offset"{sngArr[0,0,0]}}]}}
 
 3x3:
 {"Shader"{SHA[{"Size"{intArr[1,1]}}{"Position"{intArr[0,0,-1]}}{"Shader"{sngArr[4,4,4]}}{"StopOnContact"{bool[0]}}{"DayTime"{intArr[0,1,3]}}]}}
