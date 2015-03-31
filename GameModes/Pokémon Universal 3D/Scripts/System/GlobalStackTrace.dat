@@ -1,5 +1,6 @@
 # Using StackTrace API
 # @Storage.set(str,System.StackTrace,)
+# @Script.start(System/GlobalStackTrace)
 
 # Store Last 5 StackTrace
 :if:<Storage.exist(int,System.StackTrace.CurrentStore)=false
