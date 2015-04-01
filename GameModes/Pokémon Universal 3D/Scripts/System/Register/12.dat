@@ -1,3 +1,6 @@
+@Storage.set(str,System.StackTrace,System\Register\12.dat)
+@Script.start(System/GlobalStackTrace)
+
 # Define System Variable
 :if:<Register.exists(12.System.LastMap)=false
 	@Register.new(12.System.LastMap,str,Nothing)
@@ -8,26 +11,30 @@
 :if:<Register.exists(12.System.PlayerPosition.x)=false
 	@Register.new(12.System.PlayerPosition.x,int,0)
 :endif
-:if:<Register.exists(12.System.LastMap.Backup)=false
-	@Register.new(12.System.LastMap.Backup,str,Nothing)
+:if:<Register.exists(12.System.PlayerPosition.x.Backup)=false
+	@Register.new(12.System.PlayerPosition.x.Backup,int,0)
+:endif
+:if:<Register.exists(12.System.PlayerPosition.y)=false
+	@Register.new(12.System.PlayerPosition.y,int,0)
+:endif
+:if:<Register.exists(12.System.PlayerPosition.y.Backup)=false
+	@Register.new(12.System.PlayerPosition.y.Backup,int,0)
+:endif
+:if:<Register.exists(12.System.PlayerPosition.z)=false
+	@Register.new(12.System.PlayerPosition.z,int,0)
+:endif
+:if:<Register.exists(12.System.PlayerPosition.z.Backup)=false
+	@Register.new(12.System.PlayerPosition.z.Backup,int,0)
+:endif
+:if:<Register.exists(12.System.PlayerFacing)>=false
+	@Register.new(12.System.PlayerFacing,int,0)
+:endif
+:if:<Register.exists(12.System.PlayerFacing.Backup)>=false
+	@Register.new(12.System.PlayerFacing.Backup,int,0)
 :endif
 
 
-:if:<Register.exists(System.LastMap.12)>=false
-	@Register.new(System.LastMap.12,str,Nothing)
-:endif
-:if:<Register.exists(System.PlayerPosition.X.12)>=false
-	@Register.new(System.PlayerPosition.X.12,int,<Player.position(x)>)
-:endif
-:if:<Register.exists(System.PlayerPosition.Y.12)>=false
-	@Register.new(System.PlayerPosition.Y.12,int,<Player.position(y)>)
-:endif
-:if:<Register.exists(System.PlayerPosition.Z.12)>=false
-	@Register.new(System.PlayerPosition.Z.12,int,<Player.position(z)>)
-:endif
-:if:<Register.exists(System.PlayerFacing.12)>=false
-	@Register.new(System.PlayerFacing.12,int,<Player.facing>)
-:endif
+
 :if:<Register.exists(System.PlayerThirdPerson.12)>=false
 	@Register.new(System.PlayerThirdPerson.12,bool,<Player.thirdperson>)
 :endif
