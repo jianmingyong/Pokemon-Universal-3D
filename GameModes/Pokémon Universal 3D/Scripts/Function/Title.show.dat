@@ -4,6 +4,8 @@
 # @Storage.set(int,Title.text.maxindex,1)
 # @Storage.set(str,Title.text.1,Text)
 # @Script.start(Function\Title.show)
+@Storage.set(str,System.StackTrace,Function\Title.show.dat)
+@Script.start(System/GlobalStackTrace)
 
 <CurrentIndex>=0
 
