@@ -3,6 +3,9 @@
 #############################################################
 # @Storage.set(str,Register.remove,Name)
 # @Script.start(Function\Register.remove)
+@Storage.set(str,System.StackTrace,Function\Register.remove.dat)
+@Script.start(System/GlobalStackTrace)
+
 :while:<Register.exists(<Storage.get(str,Register.remove)>)>=true
 	@Register.remove(<Storage.get(str,Register.remove)>)
 	@Register.remove(<Storage.get(str,Register.remove)>,str)
