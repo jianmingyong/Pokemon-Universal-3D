@@ -1,0 +1,17 @@
+@Storage.set(str,System.StackTrace,System\UpdateRemoval\0.0.10.dat)
+@Script.start(System/GlobalStackTrace)
+
+@Storage.set(str,Register.remove,System.LastMap.12)
+@Script.start(Function\Register.remove)
+
+@Storage.set(str,Register.remove,System.PlayerPosition.X.12)
+@Script.start(Function\Register.remove)
+
+@Storage.set(str,Register.remove,System.PlayerPosition.Y.12)
+@Script.start(Function\Register.remove)
+
+@Storage.set(str,Register.remove,System.PlayerPosition.Z.12)
+@Script.start(Function\Register.remove)
+
+@Storage.set(str,Register.remove,System.PlayerFacing.12)
+@Script.start(Function\Register.remove)
