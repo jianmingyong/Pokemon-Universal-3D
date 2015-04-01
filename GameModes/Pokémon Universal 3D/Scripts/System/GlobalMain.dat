@@ -5,6 +5,8 @@
 # Intro Screen	- @Storage.set(int,System.ScreenState,1)
 # World			- @Storage.set(int,System.ScreenState,2)
 # Error			- @Storage.set(int,System.ScreenState,3)
+@Storage.set(str,System.StackTrace,System\GlobalMain.dat)
+@Script.start(System/GlobalStackTrace)
 @Title.clear
 @Camera.defix
 @Level.update
@@ -14,7 +16,6 @@
 	# Define Global Variable
 	@Storage.set(int,System.ScreenState,0)
 	@Storage.set(int,System.ErrorLog.ErrorID,-1)
-	@Storage.set(str,System.ActionScript,GlobalMain.dat)
 
 	# Game Update Checks
 	@Script.start(System\GlobalRegister)
