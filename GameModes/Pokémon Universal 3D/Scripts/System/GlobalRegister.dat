@@ -1,3 +1,6 @@
+@Storage.set(str,System.StackTrace,System\GlobalRegister.dat)
+@Script.start(System/GlobalStackTrace)
+
 :if:<Register.exists(System.P3D Version)>=false
 	@Register.new(System.P3D Version,str,0.54.0)
 :endif
