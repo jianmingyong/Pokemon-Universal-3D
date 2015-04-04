@@ -1,6 +1,14 @@
-version=2
-# This is a API for Random Dungeon Generator.
-# You will require a compatible map to run this.
+##############################
+# Mystery Dungeon Generator
+# by: jianmingyong
+# Basic requirement: A custom map
+##############################
+
+# If using Pokémon Universal 3D API
+:if:<Storage.exist(System.StackTrace)>=true
+	@Storage.set(str,System.StackTrace,System\MysteryDungeon\Main.dat)
+	@Script.start(System\GlobalStackTrace)
+:endif
 
 ##############################
 # Main Settings
@@ -14,11 +22,6 @@ version=2
 # By default, Min Room Size is 5 by 5.
 @Storage.set(int,MysteryDungeon.MaxRoomSizeX,10)
 @Storage.set(int,MysteryDungeon.MaxRoomSizeZ,10)
-
-# Define Number of Tiles to be Removed at the same time.
-# The bigger the value, the faster it process. 
-# Max value is 10.
-@Storage.set(int,MysteryDungeon.Processor,10)
 
 ##############################
 # Do not touch anything below here
