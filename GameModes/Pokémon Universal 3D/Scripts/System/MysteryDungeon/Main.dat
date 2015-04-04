@@ -5,7 +5,7 @@
 ##############################
 
 # If using Pokémon Universal 3D API
-:if:<Storage.exist(System.StackTrace)>=true
+:if:<Storage.exists(System.StackTrace)>=true
 	@Storage.set(str,System.StackTrace,System\MysteryDungeon\Main.dat)
 	@Script.start(System\GlobalStackTrace)
 :endif
@@ -18,47 +18,49 @@
 @Storage.set(int,MysteryDungeon.MapSizeX,50)
 @Storage.set(int,MysteryDungeon.MapSizeZ,50)
 
-# Define Room Size.
-# By default, Min Room Size is 5 by 5.
-@Storage.set(int,MysteryDungeon.MaxRoomSizeX,10)
-@Storage.set(int,MysteryDungeon.MaxRoomSizeZ,10)
+# Define Level.
+# Pit Stop, Easy, Medium, Hard.
+# Easy (4) Medium (5-6) Hard (7-8)
+@Storage.set(str,MysteryDungeon.Level,Easy)
+
+# Define Directory.
+# Directory is relative to script folder. If the script are in a sub folder of scripts folder, define it below.
+# Else Nothing will define the default location.
+@Storage.set(str,MysteryDungeon.Directory,System\MysteryDungeon\)
 
 ##############################
 # Do not touch anything below here
 ##############################
 
-:if:<Register.registered(MysteryDungeon.SaveMap)>=false
-	@Register.register(MysteryDungeon.SaveMap)
+# Save Flag. This allow resume current map.
+:if:<Register.exists(MysteryDungeon.SaveMap)>=false
+	@Register.new(MysteryDungeon.SaveMap)
 :endif
 @Title.add(Generating... Please wait for a while.,2147483647,255,255,255,2,true,0,0)
 
-# Init Variable.
+# Initialization Global Variable.
 @Storage.set(int,MysteryDungeon.NumberOfRoomGenerated,0)
-@Storage.set(int,MysteryDungeon.MaxNumberOfRoomGenerated,<System.random(5,8)>)
+:switch:<Storage.get(str,MysteryDungeon.Level)>
+	:when:Pit Stop
+		@Storage.set(int,MysteryDungeon.MaxNumberOfRoomGenerated,1)
+	:when:Easy
+		@Storage.set(int,MysteryDungeon.MaxNumberOfRoomGenerated,4)
+	:when:Medium
+		@Storage.set(int,MysteryDungeon.MaxNumberOfRoomGenerated,<System.random(5,6)>)
+	:when:Hard
+		@Storage.set(int,MysteryDungeon.MaxNumberOfRoomGenerated,<System.random(7,8)>)
+:endswitch
 @Storage.set(int,MysteryDungeon.NumberOfWallGenerated,0)
-@Storage.set(int,MysteryDungeon.Processor,<Math.clamp(<Storage.get(int,MysteryDungeon.Processor)>,1,10)>)
-@Storage.set(int,MysteryDungeon.MaxRoomSizeX,<Math.clamp(<Storage.get(int,MysteryDungeon.MaxRoomSizeX)>,5,<Storage.get(int,MysteryDungeon.MapSizeX)>-1)>)
-@Storage.set(int,MysteryDungeon.MaxRoomSizeZ,<Math.clamp(<Storage.get(int,MysteryDungeon.MaxRoomSizeZ)>,5,<Storage.get(int,MysteryDungeon.MapSizeZ)>-1)>)
-@Storage.set(bool,MysteryDungeon.MasterValid,true)
+@Storage.set(int,MysteryDungeon.MaxRoomSizeX,<Math.int(<Math.floor((<Storage.get(int,MysteryDungeon.MapSizeX)>/<Storage.get(int,MysteryDungeon.MaxNumberOfRoomGenerated)>)*0.75)>)>)
+@Storage.set(int,MysteryDungeon.MaxRoomSizeZ,<Math.int(<Math.floor((<Storage.get(int,MysteryDungeon.MapSizeZ)>/<Storage.get(int,MysteryDungeon.MaxNumberOfRoomGenerated)>)*0.75)>)>)
 @Storage.set(int,MysteryDungeon.NumberofRoomEntityStore,0)
 
 # Generate Random Rooms.
-#:while:<Storage.get(bool,MysteryDungeon.MasterValid)>=true
+:while:!<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>=<Storage.get(int,MysteryDungeon.MaxNumberOfRoomGenerated)>
 	# Dig a Random Object.
 	@Script.start(System\MysteryDungeon\ValidRoom)
 	@Script.start(System\MysteryDungeon\GenerateRoom)
-	@Script.start(System\MysteryDungeon\ValidRoom)
-	@Script.start(System\MysteryDungeon\GenerateRoom)
-	@Script.start(System\MysteryDungeon\ValidRoom)
-	@Script.start(System\MysteryDungeon\GenerateRoom)
-	@Script.start(System\MysteryDungeon\ValidRoom)
-	@Script.start(System\MysteryDungeon\GenerateRoom)
-	@Script.start(System\MysteryDungeon\ValidRoom)
-	@Script.start(System\MysteryDungeon\GenerateRoom)
-#	:if:<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>=5 <or> <Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>>5
-#		:exitwhile
-#	:endif
-#:endwhile
+:endwhile
 
 # Warp Player to a walkable zone.
 @Storage.set(int,MysteryDungeon.RandomRoomID,<System.random(0,<Storage.get(int,MysteryDungeon.NumberOfRoomGenerated)>-1)>)
@@ -70,4 +72,3 @@
 @Player.warp(<Storage.get(int,MysteryDungeon.WarpX)>,0.1,<Storage.get(int,MysteryDungeon.WarpZ)>)
 @Level.update
 @Title.clear
-:end
