@@ -16,8 +16,8 @@ Table of contents:
 ==================================================
 1.	Resource Details
 ==================================================
-Pokémon Universal 3D v0.53.0.0.0.9
-Copyright © 2014 jianmingyong
+Pokémon Universal 3D v0.54.0.0.0.16
+Copyright © 2014 ~ 2015 jianmingyong
 
 ==================================================
 2.	About
@@ -39,8 +39,8 @@ For any bugs and crash due to my content pack or GameMode, please report those b
 ==================================================
 4.	Supported platforms
 ==================================================
-Both the game and server are intended to be run on the Windows operating system.
-However, we are planning on porting to Linux and possibly Mac OSX.
+Both the game and server are intended to be run on the Windows operating system only.
+However, there are alternate solution to run on Linux and possibly Mac OSX.
 
 Hence Pokémon Universal 3D is only meant for Windows operating system.
 Pokémon Universal 3D is also compatible in Mac OSX using a virtual Windows operating system. 
@@ -65,8 +65,8 @@ Installing prerequisites for Pokémon 3D.
 * You are recommended to get the Microsoft .NET Framework 4.0 Full as Client version will not able to save the game.
 
 Installing prerequisites for Pokémon Universal 3D.
-1.	Pokémon 3D Game (Version 0.53 and above)
-* Pokémon 3D Game version 0.52.1 and below will not work fully as it is not optimised or some feature are not implemented in the old version resulting in crash.
+1.	Pokémon 3D Game (Version 0.54 and above)
+* Pokémon 3D Game version 0.53 and below will not be able to play due to code upgrade project.
 
 ==================================================
 5.2.	Installing precautions
@@ -94,7 +94,7 @@ After completing the above step,
 To remove Pokémon Universal 3D, delete the content pack and gamemode folder.
 
 ==================================================
-7.	Update Pokémon Universal 3D ( Not Patch Files )
+7.	Update Pokémon Universal 3D
 ==================================================
 To Update Pokémon Universal 3D, extract the file at the desktop and remove the old version first.
 Then place it to the respective folder.
