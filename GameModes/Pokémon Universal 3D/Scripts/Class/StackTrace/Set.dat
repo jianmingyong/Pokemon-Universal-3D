@@ -2,5 +2,14 @@
 # Function StackTrace.Set
 ##############################
 # Usage Code:
-#
-#
+# @Storage.set(str,StackTrace.Set,)
+# @Script.start(Class\StackTrace\Set)
+
+# Store StackTrace
+:if:<Storage.exist(int,StackTrace.Set.CurrentStoreIndex)=false
+	@Storage.set(int,StackTrace.Set.CurrentStoreIndex,1)
+:else
+	@Storage.update(int,StackTrace.Set.CurrentStoreIndex,add,1)
+:endif
+
+@Storage.set(str,StackTrace.Set.<Storage.get(int,StackTrace.Set.CurrentStoreIndex)>,<Storage.get(str,StackTrace.Set)>)
