@@ -3,7 +3,7 @@
 ##############################
 
 @Storage.set(str,StackTrace.Set,Class\Security\FileValidation.dat)
-# @Script.start(Class\StackTrace\Set)
+@Script.start(Class\StackTrace\Set)
 
 # Set a flag to call for script checks.
 @Storage.set(bool,Security.FileValidation.Checks,true)
