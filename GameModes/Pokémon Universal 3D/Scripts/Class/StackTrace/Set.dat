@@ -5,6 +5,11 @@
 # @Storage.set(str,StackTrace.Set,)
 # @Script.start(Class\StackTrace\Set)
 
+# File Validation
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+:endif
+
 # Store StackTrace
 :if:<Storage.exist(int,StackTrace.Set.CurrentStoreIndex)=false
 	@Storage.set(int,StackTrace.Set.CurrentStoreIndex,1)
