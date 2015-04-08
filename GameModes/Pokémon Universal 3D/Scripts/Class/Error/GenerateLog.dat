@@ -1,1 +1,13 @@
+##############################
+# Sub Error.GenerateLog
+##############################
 
+@Storage.set(str,StackTrace.Set,Class\Error\GenerateLog.dat)
+@Script.start(Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+@Text.log([CODE])
