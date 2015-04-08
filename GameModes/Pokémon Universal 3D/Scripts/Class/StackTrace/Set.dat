@@ -1,5 +1,5 @@
 ##############################
-# Function StackTrace.Set
+# Sub StackTrace.Set
 ##############################
 # Usage Code:
 # @Storage.set(str,StackTrace.Set,)
