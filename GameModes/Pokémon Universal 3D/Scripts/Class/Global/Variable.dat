@@ -11,3 +11,6 @@
 :endif
 
 # Start Global Variable
+
+# Global Return Value.
+@Storage.set(str,Global.Variable.Return,Nothing)
