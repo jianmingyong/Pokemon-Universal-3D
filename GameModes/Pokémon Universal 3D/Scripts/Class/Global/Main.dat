@@ -24,4 +24,5 @@
 	@Script.start(Class\Security\FileValidation)
 
 	@ Update Game.
+	@Script.start(Class\Update\v0.54.0.0.0.16)
 	@Script.start(Class\Global\Register)
