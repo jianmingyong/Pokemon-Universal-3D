@@ -1,0 +1,36 @@
+##############################
+# Sub Save.SaveGame
+##############################
+
+@Storage.set(str,StackTrace.Set,Class\Save\SaveGame.dat)
+@Script.start(Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+:if:!<Level.filename>=GlobalMain
+
+
+:if:<Register.value(System.Game ID)>=12 <and> <not><Level.filename>=GlobalMain
+	@Register.change(System.PlayerPosition.X.12,<Player.position(x)>)
+	@Register.change(System.PlayerPosition.Y.12,<Player.position(y)>)
+	@Register.change(System.PlayerPosition.Z.12,<Player.position(z)>)
+	@Register.change(System.PlayerFacing.12,<Player.facing>)
+	@Register.change(System.PlayerThirdPerson.12,<Player.thirdperson>)
+	@Register.change(System.LastMap.12,<Level.file>)
+	:if:<Register.registered(System.Load.12)>=false
+		@Register.register(System.Load.12)
+	:endif
+:elseif:<Register.value(System.Game ID)>=16 <and> <not><Level.filename>=GlobalMain
+	@Register.change(System.PlayerPosition.X.16,<Player.position(x)>)
+	@Register.change(System.PlayerPosition.Y.16,<Player.position(y)>)
+	@Register.change(System.PlayerPosition.Z.16,<Player.position(z)>)
+	@Register.change(System.PlayerFacing.16,<Player.facing>)
+	@Register.change(System.PlayerThirdPerson.16,<Player.thirdperson>)
+	@Register.change(System.LastMap.16,<Level.file>)
+	:if:<Register.registered(System.Load.16)>=false
+		@Register.register(System.Load.16)
+	:endif
+:endif
