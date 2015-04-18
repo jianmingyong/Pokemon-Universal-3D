@@ -19,6 +19,7 @@
 :if:<Storage.exists(bool,Global.Main.Start)>=false
 	
 	@Music.play(Stop)
+	@Storage.set(bool,Global.Main.Start,true)
 
 	# File Validation.
 	@Script.start(Class\Security\FileValidation)
@@ -29,3 +30,13 @@
 	:if:!<String.replace(<Register.value(Global.Version)>,/,.)>=0.54.0.0.0.16
 		@Script.start(Class\Update\v<String.replace(<Register.value(Global.Version)>,/,.)>)
 	:endif
+	@Script.start(Class\Save\SaveGame)
+	@Script.start(Class\Global\Option)
+	:if:<Storage.get(bool,Global.Variable.SkipMainMenu)>=false
+
+	:else
+		@Script.start(Class\Save\LoadGame)
+	:endif
+:else
+	@Script.start(<Filesystem.pathup(<Level.file>)>\<Level.filename>)
+:endif
