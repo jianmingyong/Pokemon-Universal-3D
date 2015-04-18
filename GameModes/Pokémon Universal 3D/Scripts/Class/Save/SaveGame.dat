@@ -22,7 +22,6 @@
 		@Register.change(DeltaEmerald.Global.Player.Facing,<Player.facing>)
 		@Register.change(DeltaEmerald.Global.Player.ThirdPerson,<Camera.thirdperson>)
 		@Register.change(DeltaEmerald.Global.Player.Map,<Level.file>)
-		
 		:while:<i><6
 			<i>+=1
 			:if:!<i>><CurrentPartyCount>
@@ -38,7 +37,6 @@
 		@Register.change(DarkEnergy.Global.Player.Facing,<Player.facing>)
 		@Register.change(DarkEnergy.Global.Player.ThirdPerson,<Camera.thirdperson>)
 		@Register.change(DarkEnergy.Global.Player.Map,<Level.file>)
-		
 		:while:<i><6
 			<i>+=1
 			:if:!<i>><CurrentPartyCount>
