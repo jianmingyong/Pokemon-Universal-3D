@@ -23,7 +23,9 @@
 	# File Validation.
 	@Script.start(Class\Security\FileValidation)
 
-	@ Update Game.
+	# Update Game.
 	@Script.start(Class\Update\v0.54.0.0.0.16)
 	@Script.start(Class\Global\Register)
-	@Script.start(Class\Update\v<String.replace(<Register.value(Global.Version)>,/,.)>)
+	:if:!<String.replace(<Register.value(Global.Version)>,/,.)>=0.54.0.0.0.16
+		@Script.start(Class\Update\v<String.replace(<Register.value(Global.Version)>,/,.)>)
+	:endif
