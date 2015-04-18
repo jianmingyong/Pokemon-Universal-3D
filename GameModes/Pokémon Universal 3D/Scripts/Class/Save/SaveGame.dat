@@ -10,27 +10,42 @@
 	:end
 :endif
 
+# Private Variable
+<CurrentPartyCount>=<Pokemon.count>
+<i>=0
+
 :if:!<Level.filename>=GlobalMain
-
-
-:if:<Register.value(System.Game ID)>=12 <and> <not><Level.filename>=GlobalMain
-	@Register.change(System.PlayerPosition.X.12,<Player.position(x)>)
-	@Register.change(System.PlayerPosition.Y.12,<Player.position(y)>)
-	@Register.change(System.PlayerPosition.Z.12,<Player.position(z)>)
-	@Register.change(System.PlayerFacing.12,<Player.facing>)
-	@Register.change(System.PlayerThirdPerson.12,<Player.thirdperson>)
-	@Register.change(System.LastMap.12,<Level.file>)
-	:if:<Register.registered(System.Load.12)>=false
-		@Register.register(System.Load.12)
-	:endif
-:elseif:<Register.value(System.Game ID)>=16 <and> <not><Level.filename>=GlobalMain
-	@Register.change(System.PlayerPosition.X.16,<Player.position(x)>)
-	@Register.change(System.PlayerPosition.Y.16,<Player.position(y)>)
-	@Register.change(System.PlayerPosition.Z.16,<Player.position(z)>)
-	@Register.change(System.PlayerFacing.16,<Player.facing>)
-	@Register.change(System.PlayerThirdPerson.16,<Player.thirdperson>)
-	@Register.change(System.LastMap.16,<Level.file>)
-	:if:<Register.registered(System.Load.16)>=false
-		@Register.register(System.Load.16)
+	:if:<Register.value(Global.GameName)>=Pokémon Delta Emerald
+		@Register.change(DeltaEmerald.Global.Player.Position.X,<Player.position(x)>)
+		@Register.change(DeltaEmerald.Global.Player.Position.Y,<Player.position(y)>)
+		@Register.change(DeltaEmerald.Global.Player.Position.Z,<Player.position(z)>)
+		@Register.change(DeltaEmerald.Global.Player.Facing,<Player.facing>)
+		@Register.change(DeltaEmerald.Global.Player.ThirdPerson,<Camera.thirdperson>)
+		@Register.change(DeltaEmerald.Global.Player.Map,<Level.file>)
+		
+		:while:<i><6
+			<i>+=1
+			:if:!<i>><CurrentPartyCount>
+				@Register.change(DeltaEmerald.Global.Party.<i>,<Pokemon.data(<Math.int(<i>-1)>)>)
+			:else
+				@Register.change(DeltaEmerald.Global.Party.<i>,Nothing)
+			:endif
+		:endwhile
+	:elseif:<Register.value(Global.GameName)>=Pokémon Dark Energy
+		@Register.change(DarkEnergy.Global.Player.Position.X,<Player.position(x)>)
+		@Register.change(DarkEnergy.Global.Player.Position.Y,<Player.position(y)>)
+		@Register.change(DarkEnergy.Global.Player.Position.Z,<Player.position(z)>)
+		@Register.change(DarkEnergy.Global.Player.Facing,<Player.facing>)
+		@Register.change(DarkEnergy.Global.Player.ThirdPerson,<Camera.thirdperson>)
+		@Register.change(DarkEnergy.Global.Player.Map,<Level.file>)
+		
+		:while:<i><6
+			<i>+=1
+			:if:!<i>><CurrentPartyCount>
+				@Register.change(DarkEnergy.Global.Party.<i>,<Pokemon.data(<Math.int(<i>-1)>)>)
+			:else
+				@Register.change(DarkEnergy.Global.Party.<i>,Nothing)
+			:endif
+		:endwhile
 	:endif
 :endif
