@@ -30,6 +30,9 @@
 				@Register.change(DeltaEmerald.Global.Party.<i>,Nothing)
 			:endif
 		:endwhile
+		:if:<Register.exists(DeltaEmerald.Global.Save)>=false
+			@Register.new(DeltaEmerald.Global.Save)
+		:endif
 	:elseif:<Register.value(Global.GameName)>=Pokémon Dark Energy
 		@Register.change(DarkEnergy.Global.Player.Position.X,<Player.position(x)>)
 		@Register.change(DarkEnergy.Global.Player.Position.Y,<Player.position(y)>)
@@ -45,5 +48,8 @@
 				@Register.change(DarkEnergy.Global.Party.<i>,Nothing)
 			:endif
 		:endwhile
+		:if:<Register.exists(DarkEnergy.Global.Save)>=false
+			@Register.new(DarkEnergy.Global.Save)
+		:endif
 	:endif
 :endif
