@@ -16,3 +16,6 @@
 
 # Gamemode Version.
 @Register.change(Global.Version,0.54.0/0.0.9)
+
+# Define Gamemode Token.
+@Script.start(Class\Global\Gamemode\Pokémon Delta Emerald\Token_<Register.value(Global.Token)>.dat)
