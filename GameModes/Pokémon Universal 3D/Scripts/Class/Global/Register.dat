@@ -17,7 +17,7 @@
 	@Register.change(Global.Version,0.54.0/0.0.16)
 :endif
 :if:<Register.exists(Global.GameName)>=false
-	@Register.new(System.GameName,str,Nothing)
+	@Register.new(Global.GameName,str,Nothing)
 :endif
 :if:<Register.exists(Global.SandBoxMode)>=false
 	@Register.new(Global.SandBoxMode,bool,false)
