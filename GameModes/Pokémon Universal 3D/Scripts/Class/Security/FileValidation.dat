@@ -10,3 +10,12 @@
 
 # Insert a list of core script to check
 # All File have to return the value from a storage to valid the script have been called.
+
+# Reset Call Flag.
+@Storage.set(bool,Security.FileValidation.ScriptExist,false)
+
+# List of script in acending order.
+@Script.start(Class\Error\GenerateLog)
+
+:if:<Storage.get(bool,Security.FileValidation.ScriptExist)>=false
+	
