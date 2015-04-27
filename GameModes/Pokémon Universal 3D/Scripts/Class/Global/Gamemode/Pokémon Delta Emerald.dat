@@ -2,7 +2,7 @@
 # Sub Global.Gamemode.Pokémon Delta Emerald
 ##############################
 
-@Storage.set(str,StackTrace.Set,Class\Global\Register.dat)
+@Storage.set(str,StackTrace.Set,Class\Global\Gamemode\Pokémon Delta Emerald.dat)
 @Script.start(Class\StackTrace\Set)
 
 :if:<Storage.get(bool,Security.FileValidation.Checks)>=true
