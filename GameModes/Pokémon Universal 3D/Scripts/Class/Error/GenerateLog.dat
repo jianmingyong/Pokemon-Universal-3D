@@ -2,9 +2,6 @@
 # Sub Error.GenerateLog
 ##############################
 
-@Storage.set(str,StackTrace.Set,Class\Error\GenerateLog.dat)
-@Script.start(Class\StackTrace\Set)
-
 :if:<Storage.get(bool,Security.FileValidation.Checks)>=true
 	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
 	:end
@@ -35,8 +32,8 @@
 @Text.log()
 @Text.log(Error information:)
 @Text.log()
-@Text.log(Message: )
-@Text.log(HelpLink: )
+@Text.log(Message: <Storage.value(str,Error.Message)>)
+@Text.log(HelpLink: <Storage.value(str,Error.HelpLink)>)
 @Text.log(Data: )
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
@@ -44,10 +41,10 @@
 @Text.log(Error solution:)
 @Text.log((The provided solution might not work for your problem))
 @Text.log()
-@Text.log(Error ID: )
-@Text.log(Error Type: )
-@Text.log(Error Description: )
-@Text.log(Error Solution: )
+@Text.log(Error ID: <Storage.value(int,Error.ID)>)
+@Text.log(Error Type: <Storage.value(str,Error.Type)>)
+@Text.log(Error Description: <Storage.value(str,Error.Description)>)
+@Text.log(Error Solution: <Storage.value(str,Error.Solution)>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()
