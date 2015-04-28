@@ -12,7 +12,12 @@
 
 # Private Variable
 <i>=true
+<Token1>=<Storage.get(str,Class\Screen\TitleScreen.1)>
+<Token2>=<Storage.get(str,Class\Screen\TitleScreen.2)>
+@String.SetArgSeparator(;)
+<Token3>=<String.replace(<Token2>;,;|)
 
+@String.SetArgSeparator(,)
 :while:<i>=true
 	:if:<not><Level.filename>=GlobalMain
 		@Screen.fadeout
@@ -25,16 +30,16 @@
 	@Camera.fix
 	# @Script.start(System\ScreenState\Entity.Visible)
 	@Screen.fadein
-	@Text.show(Press space to start.*Move: W or S or arrow keys.~Select: Space bar or enter.)
-	@Options.show(New Game,Load Game,Options,Additional Content)
+	@Text.show(<Token1>)
+	@Options.show(<Token2>)
 	:select:<Options.result>
-		:when:New Game
+		:when:<String.split(<Token3>,|,0)
 			@Script.start(System\ScreenState\ScreenState.0.NewGame)
-		:when:Load Game
+		:when:<String.split(<Token3>,|,1)
 			@Script.start(System\ScreenState\ScreenState.0.LoadGame)
-		:when:Options
+		:when:<String.split(<Token3>,|,2)
 			@Script.start(System\ScreenState\ScreenState.0.Options)
-		:when:Additional Content
+		:when:<String.split(<Token3>,|,3)
 			@Text.show(Still not working yet :))
 	:endselect
 :endwhile
