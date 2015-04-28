@@ -25,3 +25,6 @@
 :if:<Register.exists(Global.3DBuildings)>=false
 	@Register.new(Global.3DBuildings,bool,false)
 :endif
+:if:<Register.exists(Global.Token)>=false
+	@Register.new(Global.Token,str,English)
+:endif
