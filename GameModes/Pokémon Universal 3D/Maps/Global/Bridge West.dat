@@ -1,0 +1,10 @@
+﻿This is part of the Pokémon Sunshore Isle Transparent Bridge Entity.
+
+To use, simply add this in the map code:
+{"Structure"{STR[{"Map"{str[Global\Bridge West]}}{"Offset"{sngArr[0,0,0]}}]}}
+
+West.Bridge.Layer.0
+{"EntityField"{ENT[{"EntityID"{str[Cube]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[0,-0.4995,0]}}{"TexturePath"{str[17\Tileset_Outside]}}{"Textures"{recArr[[0,96,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0]}}{"Collision"{bool[0]}}{"ModelID"{int[12]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[1]}}{"Scale"{sngArr[1,0.001,1]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[-0.376,-0.627,-1.376]}}{"TexturePath"{str[17\Tileset_Outside]}}{"Textures"{recArr[[32,96,16,16]]}}{"TextureIndex"{intArr[0,0,0,0,0,0,0,0,0,0,-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[1]}}{"Scale"{sngArr[0.25,0.25,0.25]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[Cube]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[0,-0.4995,-1]}}{"TexturePath"{str[17\Tileset_Outside]}}{"Textures"{recArr[[16,96,16,16]]}}{"TextureIndex"{intArr[-1,-1,-1,-1,-1,-1,-1,-1,0,0,-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[12]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[1]}}{"Scale"{sngArr[1,0.001,1]}}]}}
+{"EntityField"{ENT[{"EntityID"{str[WallBlock]}}{"Size"{intArr[1,1]}}{"Position"{sngArr[-0.376,-0.627,0.374]}}{"TexturePath"{str[17\Tileset_Outside]}}{"Textures"{recArr[[32,96,16,16]]}}{"TextureIndex"{intArr[0,0,0,0,0,0,0,0,0,0,-1,-1]}}{"Collision"{bool[0]}}{"ModelID"{int[1]}}{"Action"{int[0]}}{"AdditionalValue"{str[]}}{"Rotation"{int[1]}}{"Scale"{sngArr[0.25,0.25,0.25]}}]}}
