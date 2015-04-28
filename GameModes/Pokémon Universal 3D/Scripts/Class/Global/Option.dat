@@ -32,4 +32,8 @@
 	# To change whether to show 3D Buildings.
 	# Valid option: true, false
 	@Register.change(Global.3DBuildings,false)
+
+	# To change the language of the game
+	# Valid option: English, <Token Language define in Language.dat>
+	@Register.change(Global.Token,English)
 :endif
