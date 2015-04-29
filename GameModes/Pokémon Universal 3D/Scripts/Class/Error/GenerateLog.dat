@@ -21,9 +21,16 @@
 @Text.log(Pokémon Universal 3D Version: <Register.value(Global.Version)>)
 @Text.log(Content Pack Required: )
 @Text.log(Active GameMode: <Register.value(Global.GameName)>)
-@Text.log(Actionscript: )
-@Text.log(File Validation: )
+@Storage.set(int,StackTrace.Get,1)
+@Script.start(Class\StackTrace\Get)
+@Text.log(Actionscript: <Storage.get(str,Global.Return)>)
+:if:<Storage.get(int,Error.ID)>=1
+	@Text.log(File Validation: Fail)
+:else
+	@Text.log(File Validation: Pass)
+:endif
 @Text.log(SandBox Mode: <Register.value(Global.SandBoxMode)>)
+@Text.log(Token: <Register.value(Global.Token)>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()
@@ -37,7 +44,7 @@
 @Text.log()
 @Text.log(Message: <Storage.get(str,Error.Message)>)
 @Text.log(HelpLink: <Storage.get(str,Error.HelpLink)>)
-@Text.log(Data: <Storage.get(str,Error.Data)>
+@Text.log(Data: <Storage.get(str,Error.Data)>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()
