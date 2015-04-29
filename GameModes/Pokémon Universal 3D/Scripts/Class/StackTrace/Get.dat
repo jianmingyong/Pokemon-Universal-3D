@@ -13,10 +13,10 @@
 :endif
 
 :if:<Storage.exist(int,StackTrace.Set.CurrentStoreIndex)>=false
-	@Storage.set(str,Global.Variable.Return,Nothing)
+	@Storage.set(str,Global.Return,Nothing)
 :elseif:!<Storage.get(int,StackTrace.Set.CurrentStoreIndex)><<Storage.get(int,StackTrace.Get)>
 	<CurrentIndex>=<Math.int(<Storage.get(int,StackTrace.Set.CurrentStoreIndex)>-<Storage.get(int,StackTrace.Get)>+1)>
-	@Storage.set(str,Global.Variable.Return,<Storage.get(str,StackTrace.Set.<CurrentIndex>)>)
+	@Storage.set(str,Global.Return,<Storage.get(str,StackTrace.Set.<CurrentIndex>)>)
 :else
-	@Storage.set(str,Global.Variable.Return,Nothing)
+	@Storage.set(str,Global.Return,Nothing)
 :endif
