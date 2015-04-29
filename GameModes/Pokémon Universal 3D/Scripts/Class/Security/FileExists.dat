@@ -12,10 +12,7 @@
 
 # Set a flag to call for script checks.
 @Storage.set(bool,Security.FileValidation.Checks,true)
-
-# Reset Call Flag.
 @Storage.set(bool,Security.FileValidation.ScriptExist,false)
 @Script.start(<Storage.get(str,Security.FileExists)>)
-@Storage.set(bool,Global.Return,<Storage.get(bool,Security.FileValidation.ScriptExists)>)
-	
+@Storage.set(bool,Global.Return,<Storage.get(bool,Security.FileValidation.ScriptExist)>)
 @Storage.set(bool,Security.FileValidation.Checks,false)
