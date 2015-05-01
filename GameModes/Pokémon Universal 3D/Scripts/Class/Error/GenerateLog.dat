@@ -7,6 +7,9 @@
 	:end
 :endif
 
+# Private variable
+<i>=1
+
 @Text.log([CODE])
 @Text.log(Pokémon Universal 3D Crash Log Version <Register.value(Global.Version)>)
 @Text.log(Pokémon Universal 3D has crashed!)
@@ -18,9 +21,16 @@
 @Text.log(Pokémon Universal 3D Version: <Register.value(Global.Version)>)
 @Text.log(Content Pack Required: )
 @Text.log(Active GameMode: <Register.value(Global.GameName)>)
-@Text.log(Actionscript: )
-@Text.log(File Validation: )
+@Storage.set(int,StackTrace.Get,1)
+@Script.start(Class\StackTrace\Get)
+@Text.log(Actionscript: <Storage.get(str,Global.Return)>)
+:if:<Storage.get(int,Error.ID)>=1
+	@Text.log(File Validation: Fail)
+:else
+	@Text.log(File Validation: Pass)
+:endif
 @Text.log(SandBox Mode: <Register.value(Global.SandBoxMode)>)
+@Text.log(Token: <Register.value(Global.Token)>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()
@@ -32,25 +42,34 @@
 @Text.log()
 @Text.log(Error information:)
 @Text.log()
-@Text.log(Message: <Storage.value(str,Error.Message)>)
-@Text.log(HelpLink: <Storage.value(str,Error.HelpLink)>)
-@Text.log(Data: )
+@Text.log(Message: <Storage.get(str,Error.Message)>)
+@Text.log(HelpLink: <Storage.get(str,Error.HelpLink)>)
+@Text.log(Data: <Storage.get(str,Error.Data)>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()
 @Text.log(Error solution:)
 @Text.log((The provided solution might not work for your problem))
 @Text.log()
-@Text.log(Error ID: <Storage.value(int,Error.ID)>)
-@Text.log(Error Type: <Storage.value(str,Error.Type)>)
-@Text.log(Error Description: <Storage.value(str,Error.Description)>)
-@Text.log(Error Solution: <Storage.value(str,Error.Solution)>)
+@Text.log(Error ID: <Storage.get(int,Error.ID)>)
+@Text.log(Error Type: <Storage.get(str,Error.Type)>)
+@Text.log(Error Description: <Storage.get(str,Error.Description)>)
+@Text.log(Error Solution: <Storage.get(str,Error.Solution)>)
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()
 @Text.log(CallStack:)
 @Text.log()
-@Text.log(at ...)
+:while:<i><10
+	@Storage.set(int,StackTrace.Get,<i>)
+	@Script.start(Class\StackTrace\Get)
+	:if:!<Storage.get(str,Global.Return)>=Nothing
+		@Text.log(at <Storage.get(str,Global.Return)>
+	:else
+		:exitwhile
+	:endif
+	<i>+=1
+:endwhile
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()
