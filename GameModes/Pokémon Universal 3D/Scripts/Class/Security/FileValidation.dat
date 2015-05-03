@@ -5,13 +5,19 @@
 @Storage.set(str,StackTrace.Set,Class\Security\FileValidation.dat)
 @Script.start(Class\StackTrace\Set)
 
-# Insert a list of core script to check
-# All File have to return the value from a storage to valid the script have been called.
-
 @Storage.set(int,Security.FileValidation.CurrentIndex,1)
 
+# Insert a list of core script to check
+# All File have to return the value from a storage to valid the script have been called.
 # List of script in ascending order.
+
 @Storage.set(str,Security.FileExists,Class\Error\GenerateLog)
+@Script.start(Class\Security\FileExists)
+
+@Storage.set(str,Security.FileExists,Class\Error\ID -1)
+@Script.start(Class\Security\FileExists)
+
+@Storage.set(str,Security.FileExists,Class\Error\ID 1)
 @Script.start(Class\Security\FileExists)
 
 # End of File Validation
