@@ -16,3 +16,5 @@
 @Script.start(<Storage.get(str,Security.FileExists)>)
 @Storage.set(bool,Global.Return,<Storage.get(bool,Security.FileValidation.ScriptExist)>)
 @Storage.set(bool,Security.FileValidation.Checks,false)
+
+@Script.start(Class\Security\FileValidationLogger)
