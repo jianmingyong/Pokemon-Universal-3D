@@ -5,17 +5,20 @@
 @Storage.set(str,StackTrace.Set,Class\Security\FileValidation.dat)
 @Script.start(Class\StackTrace\Set)
 
-# Set a flag to call for script checks.
-@Storage.set(bool,Security.FileValidation.Checks,true)
-
 # Insert a list of core script to check
 # All File have to return the value from a storage to valid the script have been called.
 
-# Reset Call Flag.
-@Storage.set(bool,Security.FileValidation.ScriptExist,false)
+@Storage.set(int,Security.FileValidation.CurrentIndex,1)
 
-# List of script in acending order.
-@Script.start(Class\Error\GenerateLog)
+# List of script in ascending order.
+@Storage.set(str,Security.FileExists,Class\Error\GenerateLog)
+@Script.start(Class\Security\FileExists)
+@Script.start(Class\Security\FileValidationLogger)
 
-:if:<Storage.get(bool,Security.FileValidation.ScriptExist)>=false
+
+# End of File Validation
+:if:<Storage.get(int,Security.FileValidation.CurrentIndex)>>1
+	# Trigger Crash
 	
+	@Script.start(Class\Error\ID 1)
+:endif
