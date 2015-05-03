@@ -13,8 +13,6 @@
 # List of script in ascending order.
 @Storage.set(str,Security.FileExists,Class\Error\GenerateLog)
 @Script.start(Class\Security\FileExists)
-@Script.start(Class\Security\FileValidationLogger)
-
 
 # End of File Validation
 :if:<Storage.get(int,Security.FileValidation.CurrentIndex)>>1
