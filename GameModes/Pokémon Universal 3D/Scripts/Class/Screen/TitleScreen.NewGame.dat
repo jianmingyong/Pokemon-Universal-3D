@@ -27,7 +27,6 @@
 		@Script.start(System\ScreenState\Entity.Visible)
 		@Screen.fadein
 	:endif
-	@Text.show(Move: W or S or arrow keys.~Select: Space bar or enter.)
 	@Options.show(New Game,Load Game,Options,Additional Content)
 	:select:<Options.result>
 		:when:New Game
