@@ -17,7 +17,6 @@
 @String.SetArgSeparator(;)
 <Token3>=<String.replace(<Token2>;,;|)
 
-@String.SetArgSeparator(,)
 :while:<i>=true
 	:if:<not><Level.filename>=GlobalMain
 		@Screen.fadeout
