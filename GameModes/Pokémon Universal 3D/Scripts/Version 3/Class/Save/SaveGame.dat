@@ -1,0 +1,55 @@
+##############################
+# Sub Save.SaveGame
+##############################
+
+@Storage.set(str,StackTrace.Set,Class\Save\SaveGame.dat)
+@Script.start(Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+# Private Variable
+<CurrentPartyCount>=<Pokemon.count>
+<i>=0
+
+:if:!<Level.filename>=GlobalMain
+	:if:<Register.value(Global.GameName)>=Pokémon Delta Emerald
+		@Register.change(DeltaEmerald.Global.Player.Position.X,<Player.position(x)>)
+		@Register.change(DeltaEmerald.Global.Player.Position.Y,<Player.position(y)>)
+		@Register.change(DeltaEmerald.Global.Player.Position.Z,<Player.position(z)>)
+		@Register.change(DeltaEmerald.Global.Player.Facing,<Player.facing>)
+		@Register.change(DeltaEmerald.Global.Player.ThirdPerson,<Camera.thirdperson>)
+		@Register.change(DeltaEmerald.Global.Player.Map,<Level.file>)
+		:while:<i><6
+			<i>+=1
+			:if:!<i>><CurrentPartyCount>
+				@Register.change(DeltaEmerald.Global.Party.<i>,<Pokemon.data(<Math.int(<i>-1)>)>)
+			:else
+				@Register.change(DeltaEmerald.Global.Party.<i>,Nothing)
+			:endif
+		:endwhile
+		:if:<Register.exists(DeltaEmerald.Global.Save)>=false
+			@Register.new(DeltaEmerald.Global.Save)
+		:endif
+	:elseif:<Register.value(Global.GameName)>=Pokémon Dark Energy
+		@Register.change(DarkEnergy.Global.Player.Position.X,<Player.position(x)>)
+		@Register.change(DarkEnergy.Global.Player.Position.Y,<Player.position(y)>)
+		@Register.change(DarkEnergy.Global.Player.Position.Z,<Player.position(z)>)
+		@Register.change(DarkEnergy.Global.Player.Facing,<Player.facing>)
+		@Register.change(DarkEnergy.Global.Player.ThirdPerson,<Camera.thirdperson>)
+		@Register.change(DarkEnergy.Global.Player.Map,<Level.file>)
+		:while:<i><6
+			<i>+=1
+			:if:!<i>><CurrentPartyCount>
+				@Register.change(DarkEnergy.Global.Party.<i>,<Pokemon.data(<Math.int(<i>-1)>)>)
+			:else
+				@Register.change(DarkEnergy.Global.Party.<i>,Nothing)
+			:endif
+		:endwhile
+		:if:<Register.exists(DarkEnergy.Global.Save)>=false
+			@Register.new(DarkEnergy.Global.Save)
+		:endif
+	:endif
+:endif

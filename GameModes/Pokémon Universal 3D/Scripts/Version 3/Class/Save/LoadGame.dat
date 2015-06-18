@@ -1,0 +1,13 @@
+##############################
+# Sub Save.LoadGame
+##############################
+
+@Storage.set(str,StackTrace.Set,Class\Save\LoadGame.dat)
+@Script.start(Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+@Title.add(Loading save file. Please wait for a while.,2147483647,255,255,255,4,true,0,0)

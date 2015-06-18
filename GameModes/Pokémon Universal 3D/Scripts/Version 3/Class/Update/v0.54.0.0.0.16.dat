@@ -1,0 +1,37 @@
+##############################
+# Sub Update.v0.54.0.0.0.16
+##############################
+
+@Storage.set(str,StackTrace.Set,Class\Update\v0.54.0.0.0.16.dat)
+@Script.start(Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+:if:<Register.exists(System.P3D Version)>=true
+	@Register.remove(System.P3D Version,str)
+:endif
+:if:<Register.exists(System.Game Version)>=true
+	@Register.new(System.Game Version,str)
+:endif
+:if:<Register.exists(System.Game ID)>=true
+	:select:<Register.value(System.Game ID)>
+		:when:12
+			@Register.new(Global.GameName,str,Pokémon Delta Emerald)
+		:when:15
+			@Register.new(Global.GameName,str,Pokémon Mystery Dungeon)
+		:when:16
+			@Register.new(Global.GameName,str,Pokémon Dark Energy)
+	:endselect
+	@Register.remove(System.Game ID,int)
+:endif
+:if:<Register.exists(System.SandBoxMode)>=true
+	@Register.new(Global.SandBoxMode,bool,<Register.value(System.SandBoxMode)>)
+	@Register.remove(System.SandBoxMode,bool)
+:endif
+:if:<Register.exists(System.3D Buildings)>=false
+	@Register.new(Global.3DBuildings,bool,<Register.value(System.3D Buildings)>)
+	@Register.remove(System.3D Buildings,bool)
+:endif

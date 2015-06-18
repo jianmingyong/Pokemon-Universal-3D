@@ -1,0 +1,11 @@
+﻿##############################
+# Sub Security.FileValidationLogger
+##############################
+
+@Storage.set(str,StackTrace.Set,Class\Security\FileValidationLogger.dat)
+@Script.start(Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.ScriptExist)>=false
+	@Storage.set(str,Security.FileValidation.Data.<Storage.get(int,Security.FileValidation.CurrentIndex)>,[File validation result: "<Storage.get(str,Security.FileExists)>" does not exist.])
+	@Storage.update(int,Security.FileValidation.CurrentIndex,add,1)
+:endif

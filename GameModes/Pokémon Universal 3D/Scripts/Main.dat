@@ -1,0 +1,16 @@
+﻿version=2
+##############################
+# Main Engine File
+##############################
+# Check For Script Version 2 or 3.
+<test>=5
+@Storage.set(str,Main,<test>)
+
+:if:<Storage.get(str,Main)>=5
+	# You are running Version 3 Script.
+	# Diverting to Version 3 Script.
+:else
+	# You are running Version 2 Script.
+	# Diverting to Version 2 Script.
+:endif
+:end

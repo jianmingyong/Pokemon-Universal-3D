@@ -1,0 +1,22 @@
+##############################
+# Function StackTrace.Get
+##############################
+# Usage Code:
+# @Storage.set(int,StackTrace.Get,)
+# @Script.start(Class\StackTrace\Get)
+#
+# Return: StackTrace
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+:if:<Storage.exist(int,StackTrace.Set.CurrentStoreIndex)>=false
+	@Storage.set(str,Global.Return,Nothing)
+:elseif:!<Storage.get(int,StackTrace.Set.CurrentStoreIndex)><<Storage.get(int,StackTrace.Get)>
+	<CurrentIndex>=<Math.int(<Storage.get(int,StackTrace.Set.CurrentStoreIndex)>-<Storage.get(int,StackTrace.Get)>+1)>
+	@Storage.set(str,Global.Return,<Storage.get(str,StackTrace.Set.<CurrentIndex>)>)
+:else
+	@Storage.set(str,Global.Return,Nothing)
+:endif

@@ -1,0 +1,30 @@
+##############################
+# Sub Global.Register
+##############################
+
+@Storage.set(str,StackTrace.Set,Class\Global\Register.dat)
+@Script.start(Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+:if:<Register.exists(Global.Version)>=false
+	@Register.new(Global.Version,str,0.54.0/0.0.16)
+:endif
+:if:!<Register.value(Global.Version)>=0.54.0/0.0.16
+	@Register.change(Global.Version,0.54.0/0.0.16)
+:endif
+:if:<Register.exists(Global.GameName)>=false
+	@Register.new(Global.GameName,str,Nothing)
+:endif
+:if:<Register.exists(Global.SandBoxMode)>=false
+	@Register.new(Global.SandBoxMode,bool,false)
+:endif
+:if:<Register.exists(Global.3DBuildings)>=false
+	@Register.new(Global.3DBuildings,bool,false)
+:endif
+:if:<Register.exists(Global.Token)>=false
+	@Register.new(Global.Token,str,English)
+:endif

@@ -1,0 +1,16 @@
+##############################
+# Sub Error.ID -1
+##############################
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+@Storage.set(str,Error.Message,The game have detected invalid script from running or the script is corrupted.)
+@Storage.set(str,Error.HelpLink,Nothing)
+@Storage.set(int,Error.ID,-1)
+@Storage.set(str,Error.Type,Unknown)
+@Storage.set(str,Error.Solution,Please contact jianmingyong for more details.)
+
+@Script.start(Class\Error\GenerateLog)
