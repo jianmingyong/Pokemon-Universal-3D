@@ -3,8 +3,7 @@
 # Main Engine File
 ##############################
 # Check For Script Version 2 or 3.
-<test>=5
-@Storage.set(str,Main,<test>)
+@Storage.set(str,Main,<Math.dbl(10)>)
 
 :if:<Storage.get(str,Main)>=5
 	# You are running Version 3 Script.
