@@ -1,0 +1,8 @@
+version=2
+##############################
+# Function Global.Storage
+##############################
+
+@Storage.set()
+
+:end
