@@ -1,0 +1,16 @@
+version=2
+##############################
+# Sub StackTrace.Set
+##############################
+# Usage Code:
+# @Storage.set(str,StackTrace.Set,)
+# @Script.start(Version\2\Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+@Storage.update(int,StackTrace.Set.CurrentStoreIndex,add,1)
+@Storage.set(str,StackTrace.Set.<Storage.get(int,StackTrace.Set.CurrentStoreIndex)>,<Storage.get(str,StackTrace.Set)>)
+:end

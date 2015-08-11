@@ -1,0 +1,15 @@
+version=2
+##############################
+# Sub Global.Storage
+##############################
+# Version 2 Script require Storage to be initiated first before any usage.
+
+@Storage.set(int,StackTrace.Set.CurrentStoreIndex,0)
+@Storage.set(bool,Security.FileValidation.Checks,false)
+
+# Return Values
+@Storage.set(str,Global.Return,Nothing)
+@Storage.set(int,Global.Return,0)
+@Storage.set(bool,Global.Return,false)
+
+:end
