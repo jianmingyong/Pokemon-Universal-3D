@@ -10,15 +10,15 @@ version=2
 	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
 	:end
 :endif
-
+:end
 # Reset Screen.
 @Title.clear
 @Camera.defix
 @Screen.fadein
 @Level.update
 
-:if:<Storage.exists(bool,Global.Main.Start)>=false
-	
+:if:<Storage.get(bool,Global.Main.Start)>=false
+
 	@Music.play(Stop)
 	@Storage.set(bool,Global.Main.Start,true)
 
