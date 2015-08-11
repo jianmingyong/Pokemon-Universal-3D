@@ -3,16 +3,12 @@
 ##############################
 # Usage Code:
 # @Storage.set(str,StackTrace.Set,)
-# @Script.start(Class\StackTrace\Set)
+# @Script.start(Version\2\Class\StackTrace\Set)
 
 :if:<Storage.get(bool,Security.FileValidation.Checks)>=true
 	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
 	:end
 :endif
 
-:if:<Storage.exist(int,StackTrace.Set.CurrentStoreIndex)=false
-	@Storage.set(int,StackTrace.Set.CurrentStoreIndex,1)
-:else
-	@Storage.update(int,StackTrace.Set.CurrentStoreIndex,add,1)
-:endif
+@Storage.update(int,StackTrace.Set.CurrentStoreIndex,add,1)
 @Storage.set(str,StackTrace.Set.<Storage.get(int,StackTrace.Set.CurrentStoreIndex)>,<Storage.get(str,StackTrace.Set)>)
