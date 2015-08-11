@@ -25,14 +25,14 @@ version=2
 			@Register.register(Global.GameName,str,Pokémon Mystery Dungeon)
 		:when:16
 			@Register.register(Global.GameName,str,Pokémon Dark Energy)
-	:endselect
+	:endwhen
 	@Register.unregister(System.Game ID,int)
 :endif
 :if:<Register.registered(System.SandBoxMode)>=true
 	@Register.register(Global.SandBoxMode,bool,<Register.value(System.SandBoxMode)>)
 	@Register.unregister(System.SandBoxMode,bool)
 :endif
-:if:<Register.registered(System.3D Buildings)>=false
+:if:<Register.registered(System.3D Buildings)>=true
 	@Register.register(Global.3DBuildings,bool,<Register.value(System.3D Buildings)>)
 	@Register.unregister(System.3D Buildings,bool)
 :endif

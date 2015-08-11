@@ -3,8 +3,8 @@ version=2
 # Sub Global.Register
 ##############################
 
-@Storage.set(str,StackTrace.Set,Class\Global\Register.dat)
-@Script.start(Class\StackTrace\Set)
+@Storage.set(str,StackTrace.Set,Version\2\Class\Global\Register.dat)
+@Script.start(Version\2\Class\StackTrace\Set)
 
 :if:<Storage.get(bool,Security.FileValidation.Checks)>=true
 	@Storage.set(bool,Security.FileValidation.ScriptExist,true)

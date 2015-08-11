@@ -1,0 +1,41 @@
+version=2
+##############################
+# Sub Screen.TitleScreen
+##############################
+
+@Storage.set(str,StackTrace.Set,Version\2\Class\Screen\TitleScreen.dat)
+@Script.start(Version\2\Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+# Private Variable
+@Storage.set(bool,i,true)
+
+:while:<Storage.get(bool,i)>=true
+	:if:<not><Level.filename>=GlobalMain
+		@Screen.fadeout
+		@Camera.set(0,0,0,0,0)
+		@Player.warp(System\GlobalMain.dat,0,0,0,0)
+		@Level.update
+	:endif
+	@Music.play(title)
+	@Camera.deactivatethirdperson
+	@Camera.fix
+	@Entity.setvisible(0,1)
+	@Screen.fadein
+	@Text.show(Move: W or S or arrow keys.~Select: Space bar or enter.)
+	@Options.show(New Game,Load Game,Options,Additional Content)
+		:when:New Game
+			@Script.start(System\ScreenState\ScreenState.0.NewGame)
+		:when:Load Game
+			@Script.start(System\ScreenState\ScreenState.0.LoadGame)
+		:when:Options
+			@Script.start(System\ScreenState\ScreenState.0.Options)
+		:when:Additional Content
+			@Script.start(Version\2\Class\Error\ID -1)
+	:endwhen
+:endwhile
+:end

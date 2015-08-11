@@ -3,5 +3,6 @@
 # Main Engine File
 ##############################
 # Check For Script Version 2 or 3.
+@Script.start(Version\2\Class\Global\Storage)
 @Script.start(Version\2\Class\Global\Main)
 :end

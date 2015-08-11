@@ -11,6 +11,56 @@ version=2
 @Text.log([CODE])
 @Text.log(Pokémon Universal 3D Crash Log Version <Register.value(Global.Version)>)
 @Text.log(Pokémon Universal 3D has crashed!)
+:select:<System.random(1,24)>
+:when:1
+	@Text.log(// I AM ERROR!)
+:when:2
+	@Text.log(// Minecraft crashed.)
+:when:3
+	@Text.log(// Missingno.)
+:when:4
+	@Text.log(// 1 ERROR)
+:when:5
+	@Text.log(// GET TO DA CHOPPA)
+:when:6
+	@Text.log(// Fire attacks might be super effective...)
+:when:7
+	@Text.log(// Does this help?)
+:when:8
+	@Text.log(// Work! Pleeeeeeeease?)
+:when:9
+	@Text.log(// WHAT IS THIS?)
+:when:10
+	@Text.log(// I find your lack of [ERROR] disturbing.)
+:when:11
+	@Text.log(// Blame Darkfire.)
+:when:12
+	@Text.log(// RTFM)
+:when:13
+	@Text.log(// FEZ II announced.)
+:when:14
+	@Text.log(// At least it's not a Blue Screen.)
+:when:15
+	@Text.log(// Kernel PANIC)
+:when:16
+	@Text.log(// I'm sorry, Dave, I'm afraid I can't do that.)
+:when:17
+	@Text.log(// Never gonna give you up ~)
+:when:18
+	@Text.log(// Wouldn't have happend with Swift.)
+:when:19
+	@Text.log(// Team Rocket blasting off again!)
+:when:20
+	@Text.log(// Snorlax just sat on your computer!)
+:when:21
+	@Text.log(// Wut?)
+:when:22
+	@Text.log(// Mojang buys Microsoft! Get your new Mojang operating system now. With more blocks and scrolls.)
+:when:23
+	@Text.log(// HλLF-LIFE 2 confirmed)
+:when:24
+	@Text.log(// (╯°□°）╯︵ ┻━┻)
+:endwhen
 @Text.log()
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()
@@ -20,7 +70,7 @@ version=2
 @Text.log(Content Pack Required: )
 @Text.log(Active GameMode: <Register.value(Global.GameName)>)
 @Storage.set(int,StackTrace.Get,1)
-@Script.start(Class\StackTrace\Get)
+@Script.start(Version\2\Class\StackTrace\Get)
 @Text.log(Actionscript: <Storage.get(str,Global.Return)>)
 :if:<Storage.get(int,Error.ID)>=1
 	@Text.log(File Validation: Fail)
@@ -57,54 +107,53 @@ version=2
 @Text.log(---------------------------------------------------------------------------------)
 @Text.log()
 @Text.log(CallStack:)
-@Text.log()
 @Storage.set(int,StackTrace.Get,1)
-@Script.start(Class\StackTrace\Get)
+@Script.start(Version\2\Class\StackTrace\Get)
 :if:<not><Storage.get(str,Global.Return)>=Nothing
 	@Text.log(at <Storage.get(str,Global.Return)>)
 :endif
 @Storage.set(int,StackTrace.Get,2)
-@Script.start(Class\StackTrace\Get)
+@Script.start(Version\2\Class\StackTrace\Get)
 :if:<not><Storage.get(str,Global.Return)>=Nothing
 	@Text.log(at <Storage.get(str,Global.Return)>)
 :endif
 @Storage.set(int,StackTrace.Get,3)
-@Script.start(Class\StackTrace\Get)
+@Script.start(Version\2\Class\StackTrace\Get)
 :if:<not><Storage.get(str,Global.Return)>=Nothing
 	@Text.log(at <Storage.get(str,Global.Return)>)
 :endif
 @Storage.set(int,StackTrace.Get,4)
-@Script.start(Class\StackTrace\Get)
+@Script.start(Version\2\Class\StackTrace\Get)
 :if:<not><Storage.get(str,Global.Return)>=Nothing
 	@Text.log(at <Storage.get(str,Global.Return)>)
 :endif
 @Storage.set(int,StackTrace.Get,5)
-@Script.start(Class\StackTrace\Get)
+@Script.start(Version\2\Class\StackTrace\Get)
 :if:<not><Storage.get(str,Global.Return)>=Nothing
 	@Text.log(at <Storage.get(str,Global.Return)>)
 :endif
 @Storage.set(int,StackTrace.Get,6)
-@Script.start(Class\StackTrace\Get)
+@Script.start(Version\2\Class\StackTrace\Get)
 :if:<not><Storage.get(str,Global.Return)>=Nothing
 	@Text.log(at <Storage.get(str,Global.Return)>)
 :endif
 @Storage.set(int,StackTrace.Get,7)
-@Script.start(Class\StackTrace\Get)
+@Script.start(Version\2\Class\StackTrace\Get)
 :if:<not><Storage.get(str,Global.Return)>=Nothing
 	@Text.log(at <Storage.get(str,Global.Return)>)
 :endif
 @Storage.set(int,StackTrace.Get,8)
-@Script.start(Class\StackTrace\Get)
+@Script.start(Version\2\Class\StackTrace\Get)
 :if:<not><Storage.get(str,Global.Return)>=Nothing
 	@Text.log(at <Storage.get(str,Global.Return)>)
 :endif
 @Storage.set(int,StackTrace.Get,9)
-@Script.start(Class\StackTrace\Get)
+@Script.start(Version\2\Class\StackTrace\Get)
 :if:<not><Storage.get(str,Global.Return)>=Nothing
 	@Text.log(at <Storage.get(str,Global.Return)>)
 :endif
 @Storage.set(int,StackTrace.Get,10)
-@Script.start(Class\StackTrace\Get)
+@Script.start(Version\2\Class\StackTrace\Get)
 :if:<not><Storage.get(str,Global.Return)>=Nothing
 	@Text.log(at <Storage.get(str,Global.Return)>)
 :endif
@@ -123,4 +172,5 @@ version=2
 @Text.log()
 @Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
 @Text.log([/CODE])
+@Script.start(Version\2\Class\Screen\ErrorScreen)
 :end
