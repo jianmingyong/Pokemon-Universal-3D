@@ -3,13 +3,5 @@
 # Main Engine File
 ##############################
 # Check For Script Version 2 or 3.
-@Storage.set(str,Main,<Math.dbl(10)>)
-
-:if:<Storage.get(str,Main)>=5
-	# You are running Version 3 Script.
-	# Diverting to Version 3 Script.
-:else
-	# You are running Version 2 Script.
-	# Diverting to Version 2 Script.
-:endif
+@Script.start(Version\2\Class\Global\Main)
 :end

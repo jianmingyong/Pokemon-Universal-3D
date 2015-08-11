@@ -1,0 +1,31 @@
+version=2
+##############################
+# Sub Error.ID 1
+##############################
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+@Storage.set(str,Error.Message,The game detected missing files.)
+@Storage.set(str,Error.HelpLink,Nothing)
+
+:if:<Storage.get(int,Security.FileValidation.CurrentIndex)>>0
+	@Storage.set(str,Error.Data,<Storage.get(Security.FileValidation.Data.1)>)
+	@Storage.set(int,i,1)
+	:while:<Storage.get(int,i)><<Storage.get(int,Security.FileValidation.CurrentIndex)>
+		@Storage.update(int,i,add,1)
+		@Storage.update(str,Error.Data,add,,<Storage.get(Security.FileValidation.Data.<Storage.get(int,i)>)>)
+	:endwhile
+:else
+	@Storage.set(str,Error.Data,Nothing)
+:endif
+
+@Storage.set(int,Error.ID,1)
+@Storage.set(str,Error.Type,File validation)
+@Storage.set(str,Error.Description,The game detected missing files.)
+@Storage.set(str,Error.Solution,Please re-download the game. If problem persists, kindly report this error for further fix.)
+
+@Script.start(Version\2\Class\Error\GenerateLog)
+:end

@@ -23,21 +23,22 @@ version=2
 	@Storage.set(bool,Global.Main.Start,true)
 
 	# File Validation.
-	@Script.start(Class\Security\FileValidation)
+	@Script.start(Version\2\Class\Security\FileValidation)
 
 	# Update Game.
-	@Script.start(Class\Update\v0.54.0.0.0.16)
-	@Script.start(Class\Global\Register)
-	:if:!<String.replace(<Register.value(Global.Version)>,/,.)>=0.54.0.0.0.16
-		@Script.start(Class\Update\v<String.replace(<Register.value(Global.Version)>,/,.)>)
+	@Script.start(Version\2\Class\Update\v0.54.0.0.0.16)
+	@Script.start(Version\2\Class\Global\Register)
+	:if:<not><Register.value(Global.Version)>=0.54.0.0.0.16
+		@Script.start(Version\2\Class\Update\v<Register.value(Global.Version)>)
 	:endif
-	@Script.start(Class\Save\SaveGame)
-	@Script.start(Class\Global\Option)
+	@Script.start(Version\2\Class\Save\SaveGame)
+	@Script.start(Version\2\Class\Global\Option)
 	:if:<Storage.get(bool,Global.Variable.SkipMainMenu)>=false
 
 	:else
-		@Script.start(Class\Save\LoadGame)
+		@Script.start(Version\2\Class\Save\LoadGame)
 	:endif
 :else
-	@Script.start(<Filesystem.pathup(<Level.file>)>/<Level.filename>)
+	@Script.start(<Filesystem.pathup(<Level.levelfile>)>\<Level.filename>)
 :endif
+:end
