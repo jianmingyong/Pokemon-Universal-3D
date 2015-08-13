@@ -26,5 +26,5 @@ version=2
 		:endwhile
 		:end
 :endwhen
-@Script.start(Version\2\Class\Error\ID -1)
+@Script.start(Version\2\Class\Error\ID 2)
 :end
