@@ -24,5 +24,7 @@ version=2
 			@Storage.update(int,i,add,1)
 			@Title.add(<Storage.get(str,Function.Title.show.<Storage.get(int,i)>)>,2147483648,255,255,255,2,false,0,<Math.int(<Storage.get(int,i)>*21)>-20)
 		:endwhile
+		:end
 :endwhen
+@Script.start(Version\2\Error\ID -1)
 :end
