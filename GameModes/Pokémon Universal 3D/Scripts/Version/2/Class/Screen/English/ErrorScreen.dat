@@ -1,0 +1,54 @@
+version=2
+##############################
+# Sub Screen.ErrorScreen
+##############################
+
+@Storage.set(str,StackTrace.Set,Version\2\Class\Screen\<Register.value(Global.Token)>\ErrorScreen.dat)
+@Script.start(Version\2\Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+# Private Variable
+@Storage.set(bool,i,true)
+
+
+:if:<not><Level.filename>=GlobalMain
+	#Global Save
+	@Screen.fadeout
+	@Camera.set(0,0,0,0,0)
+	@Player.warp(System\GlobalMain.dat,0,0,0,0)
+	@Level.update
+:endif
+@Screen.fadeout
+@camera.deactivethirdperson
+@Camera.set(0,0,0,0,0)
+@Camera.fix
+@Entity.setvisible(4,1)
+@Screen.fadein
+@Sound.play(Windows Critical Stop)
+@Player.save
+@Title.clear
+@Storage.set(str,Function.Title,show)
+@Storage.set(str,Function.Title.show.1,> Pokémon Universal 3D Crash Log V <Register.value(Global.Version)>)
+@Storage.set(str,Function.Title.show.2,> Pokémon Universal 3D has crashed!)
+@Storage.set(str,Function.Title.show.3,> ---------------------------------------------------------------------------------)
+@Storage.set(str,Function.Title.show.4,> )
+@Storage.set(str,Function.Title.show.5,> Error information:)
+@Storage.set(str,Function.Title.show.6,> )
+@Storage.set(str,Function.Title.show.7,> Message: <Storage.get(str,Error.Message)>)
+@Storage.set(str,Function.Title.show.8,> )
+@Storage.set(str,Function.Title.show.9,> ---------------------------------------------------------------------------------)
+@Storage.set(str,Function.Title.show.10,> )
+@Storage.set(str,Function.Title.show.11,> The crash log is saved at: Pokemon\Log.dat)
+@Storage.set(str,Function.Title.show.12,> Game have been saved to prevent further lost of data.)
+@Storage.set(str,Function.Title.show.13,> More infomation has been added into the crash log.)
+@Storage.set(str,Function.Title.show.14,> If you need to restore/revert your save proceed to http://pokemon3d.net/forum/threads/6297/ and attach your save.)
+@Storage.set(int,Function.Title.show.maxindex,14)
+@Script.start(Version\2\Class\Function\Title)
+:while:<Storage.get(bool,i)>=true
+	@Level.wait(1)
+:endwhile
+:end

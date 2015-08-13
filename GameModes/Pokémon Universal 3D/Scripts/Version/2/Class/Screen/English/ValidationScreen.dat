@@ -1,0 +1,62 @@
+﻿version=2
+##############################
+# Sub Screen.ValidationScreen
+##############################
+
+@Storage.set(str,StackTrace.Set,Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen.dat)
+@Script.start(Version\2\Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+@Storage.set(bool,i,true)
+
+:while:<Storage.get(bool,i)>=true
+	:if:<not><Level.filename>=GlobalMain
+		@Screen.fadeout
+		@Camera.set(0,0,0,0,0)
+		@Player.warp(System\GlobalMain.dat,0,0,0,0)
+		@Level.update
+	:endif
+	@Screen.fadeout
+	@Camera.deactivethirdperson
+	@Camera.fix
+	@Entity.setvisible(0,0)
+	@Entity.setvisible(4,1)
+	@Screen.fadein
+	
+	:if:<Register.value(Global.ValidationScreen)>=false
+		@Title.add(Game Verification System,2147483647,255,255,255,2,true,0,-280)
+		@Title.add(This is a game verification system. You are require to answer them only once.,2147483647,255,255,255,2,true,0,-200)
+		@Title.add(Please answer them truefully. It will affect the game based on your answer.,2147483647,255,255,255,2,true,0,-160)
+		@Title.add(Pre-Check List:,2147483647,255,255,255,2,true,0,-80)
+		@Title.add(1. Activate Pokémon Universal 3D Content Pack.,2147483647,255,255,255,2,true,0,-40)
+		@Title.add(2. Restart the game through the launcher after activating.,2147483647,255,255,255,2,true,0,0)
+		@Title.add("If you have not done so, please do it now as you might experience glitches.",2147483647,255,255,255,2,true,0,40)
+		@Text.show(1. Can you hear the background music?)
+		@Options.setcancelindex(1)
+		@Options.show(YES,NO)
+			:when:NO
+				@Script.start(Version\2\Class\Error\ID 3)
+		:endwhen
+		@Text.show(2. Did the text in this question go out~of textbox?)
+		@Options.setcancelindex(1)
+		@Options.show(YES,NO)
+			:when:YES
+				@Script.start(Version\2\Class\Error\ID 3)
+		:endwhen
+	:endif
+	
+	:if:<Register.value(Global.GameName)>=PokemonDeltaEmerald
+		
+	:endif
+	:if:<Register.value(Global.GameName)>=PokemonDarkEnergy
+		
+	:endif
+	:if:<Register.value(Global.GameName)>=PokemonSunshoreIsle
+		
+	:endif
+:endwhile
+:end

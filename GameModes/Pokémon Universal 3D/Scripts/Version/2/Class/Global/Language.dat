@@ -12,5 +12,6 @@ version=2
 :endif
 
 # To add additional Language, add a comma after last language name.
+# Please also goto Version\2\Class\Screen\OptionScreen to insert new language option for the GUI.
 @Storage.set(str,Global.Language,English)
 :end

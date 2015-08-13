@@ -20,11 +20,11 @@ version=2
 :if:<Register.registered(System.Game ID)>=true
 	:select:<Register.value(System.Game ID)>
 		:when:12
-			@Register.register(Global.GameName,str,Pokémon Delta Emerald)
+			@Register.register(Global.GameName,str,PokemonDeltaEmerald)
 		:when:15
-			@Register.register(Global.GameName,str,Pokémon Mystery Dungeon)
+			@Register.register(Global.GameName,str,PokemonMysteryDungeon)
 		:when:16
-			@Register.register(Global.GameName,str,Pokémon Dark Energy)
+			@Register.register(Global.GameName,str,PokemonDarkEnergy)
 	:endwhen
 	@Register.unregister(System.Game ID,int)
 :endif

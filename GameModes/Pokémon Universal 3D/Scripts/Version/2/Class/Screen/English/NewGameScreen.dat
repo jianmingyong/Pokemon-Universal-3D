@@ -1,0 +1,49 @@
+version=2
+##############################
+# Sub Screen.NewGameScreen
+##############################
+
+@Storage.set(str,StackTrace.Set,Version\2\Class\Screen\<Register.value(Global.Token)>\NewGameScreen.dat)
+@Script.start(Version\2\Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+@Storage.set(bool,i,true)
+
+:while:<Storage.get(bool,i)>=true
+	# New Game Initial Checks.
+	@Storage.set(str,Screen.NewGameScreen.LoadData,)
+	@Storage.set(int,Screen.NewGameScreen.LoadData.Count,0)
+	:if:<Register.registered(Global.Load.PokemonDeltaEmerald)>=false
+		@Storage.update(str,Screen.NewGameScreen.LoadData,add,Pokémon Delta Emerald,)
+		@Storage.update(int,Screen.NewGameScreen.LoadData.Count,add,1)
+	:endif
+	:if:<Register.registered(Global.Load.PokemonDarkEnergy)>=false
+		@Storage.update(str,Screen.NewGameScreen.LoadData,add,Pokémon Dark Energy,)
+		@Storage.update(int,Screen.NewGameScreen.LoadData.Count,add,1)
+	:endif
+	:if:<Register.registered(Global.Load.PokemonSunshoreIsle)>=false
+		@Storage.update(str,Screen.NewGameScreen.LoadData,add,Pokémon Sunshore Isle,)
+		@Storage.update(int,Screen.NewGameScreen.LoadData.Count,add,1)
+	:endif
+	@Storage.update(str,Screen.NewGameScreen.LoadData,add,Back)
+	@Text.show(Please Choose an option.)
+	@Options.setcancelindex(<Storage.get(int,Screen.NewGameScreen.LoadData.Count)>)
+	@Options.show(<Storage.get(str,Screen.NewGameScreen.LoadData)>)
+	:when:Pokémon Delta Emerald
+		@Register.change(Global.GameName,PokemonDeltaEmerald)
+		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen)
+	:when:Pokémon Dark Energy
+		@Register.change(Global.GameName,PokemonDarkEnergy)
+		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen)
+	:when:Pokémon Sunshore Isle
+		@Register.change(Global.GameName,PokemonSunshoreIsle)
+		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen)
+	:when:Back
+		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\TitleScreen)
+	:endwhen
+:endwhile
+:end

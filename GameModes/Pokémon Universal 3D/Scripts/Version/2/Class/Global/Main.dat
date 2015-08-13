@@ -31,10 +31,16 @@ version=2
 	:if:<not><Register.value(Global.Version)>=0.54.0.0.0.16
 		@Script.start(Version\2\Class\Update\v<Register.value(Global.Version)>)
 	:endif
+	
+	# Save Game.
 	#@Script.start(Version\2\Class\Save\SaveGame)
+	
+	# Initalize Options.
+	@Script.start(Version\2\Class\Global\Language)
 	@Script.start(Version\2\Class\Global\Option)
+	
 	:if:<Storage.get(bool,Global.Variable.SkipMainMenu)>=false
-		@Script.start(Version\2\Class\Screen\TitleScreen)
+		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\TitleScreen)
 	:else
 		@Script.start(Version\2\Class\Save\LoadGame)
 	:endif

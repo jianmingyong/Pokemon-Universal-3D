@@ -29,4 +29,7 @@ version=2
 :if:<Register.registered(Global.Token)>=false
 	@Register.register(Global.Token,str,English)
 :endif
+:if:<Register.registered(Global.ValidationScreen)>=false
+	@Register.register(Global.ValidationScreen,bool,false)
+:endif
 :end
