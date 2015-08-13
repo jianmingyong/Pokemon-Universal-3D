@@ -1,0 +1,20 @@
+version=2
+##############################
+# Sub Error.ID 2
+##############################
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+@Storage.set(str,Error.Message,The game have detected invalid function call.)
+@Storage.set(str,Error.HelpLink,Nothing)
+@Storage.set(str,Error.Data,Nothing)
+@Storage.set(int,Error.ID,-1)
+@Storage.set(str,Error.Type,Syntax Error)
+@Storage.set(str,Error.Description,The game have detected invalid function call.)
+@Storage.set(str,Error.Solution,Make sure that the second call stack script call valid function.)
+
+@Script.start(Version\2\Class\Error\GenerateLog)
+:end
