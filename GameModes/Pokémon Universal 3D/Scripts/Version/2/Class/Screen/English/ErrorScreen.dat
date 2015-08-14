@@ -11,9 +11,7 @@ version=2
 	:end
 :endif
 
-# Private Variable
 @Storage.set(bool,i,true)
-
 
 :if:<not><Level.filename>=GlobalMain
 	#Global Save
@@ -48,7 +46,8 @@ version=2
 @Storage.set(str,Function.Title.show.14,> If you need to restore/revert your save proceed to http://pokemon3d.net/forum/threads/6297/ and attach your save.)
 @Storage.set(int,Function.Title.show.maxindex,14)
 @Script.start(Version\2\Class\Function\Title)
+
 :while:<Storage.get(bool,i)>=true
-	@Level.wait(1)
+	@level.wait(1)
 :endwhile
 :end

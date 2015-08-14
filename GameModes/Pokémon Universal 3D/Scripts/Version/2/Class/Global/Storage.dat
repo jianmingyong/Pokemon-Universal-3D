@@ -7,6 +7,7 @@ version=2
 @Storage.set(int,StackTrace.Set.CurrentStoreIndex,0)
 @Storage.set(bool,Security.FileValidation.Checks,false)
 @Storage.set(bool,Global.Main.Start,false)
+@Storage.set(bool,Global.Save.MakeBackupSave,false)
 
 # Return Values
 @Storage.set(str,Global.Return,Nothing)

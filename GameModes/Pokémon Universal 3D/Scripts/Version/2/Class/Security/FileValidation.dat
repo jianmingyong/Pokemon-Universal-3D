@@ -8,6 +8,26 @@ version=2
 
 @Storage.set(int,Security.FileValidation.CurrentIndex,0)
 
+@Entity.setvisible(4,1)
+@Camera.fix
+@Storage.set(str,Function.Title,show)
+@Storage.set(str,Function.Title.show.1,> Pokémon Universal 3D Crash Log V <Register.value(Global.Version)>)
+@Storage.set(str,Function.Title.show.2,> Pokémon Universal 3D has crashed!)
+@Storage.set(str,Function.Title.show.3,> ---------------------------------------------------------------------------------)
+@Storage.set(str,Function.Title.show.4,> )
+@Storage.set(str,Function.Title.show.5,> Error information:)
+@Storage.set(str,Function.Title.show.6,> )
+@Storage.set(str,Function.Title.show.7,> Message: The game detected missing files.)
+@Storage.set(str,Function.Title.show.8,> )
+@Storage.set(str,Function.Title.show.9,> ---------------------------------------------------------------------------------)
+@Storage.set(str,Function.Title.show.10,> )
+@Storage.set(str,Function.Title.show.11,> The crash log is saved at: Pokemon\Log.dat)
+@Storage.set(str,Function.Title.show.12,> Game have been saved to prevent further lost of data.)
+@Storage.set(str,Function.Title.show.13,> More infomation has been added into the crash log.)
+@Storage.set(str,Function.Title.show.14,> If you need to restore/revert your save proceed to http://pokemon3d.net/forum/threads/6297/ and attach your save.)
+@Storage.set(int,Function.Title.show.maxindex,14)
+@Script.start(Version\2\Class\Function\Title)
+
 # Insert a list of core script to check
 # All File have to return the value from a storage to valid the script have been called.
 # List of script in ascending order.
@@ -22,8 +42,12 @@ version=2
 @Script.start(Version\2\Class\Security\FileExists)
 
 # End of File Validation
+
+@Title.clear
+@Camera.defix
+@Entity.setvisible(4,0)
+
 :if:<Storage.get(int,Security.FileValidation.CurrentIndex)>>1
-	# Trigger Crash
 	@Script.start(Version\2\Class\Error\ID 1)
 :endif
 :end

@@ -1,0 +1,58 @@
+# ScreenState Declaration
+@Storage.set(int,System.ScreenState,2)
+
+# Declare Variable
+<CurrentValue>=0
+<MaxValue>=8
+
+@Screen.fadeout
+@Title.add(Loading save file. Please wait for a while.,2147483647,255,255,255,4,true,0,0)
+@Script.start(System\GlobalAntiCheat)
+:if:<Register.exists(System.Load.12)>=true <and> <Register.value(System.Game ID)>=12
+	:while:<CurrentValue><<MaxValue>
+		<CurrentValue>+=1
+		@Player.removebadge(<CurrentValue>)
+		:if:<Register.exists(System.GymBadges.<CurrentValue>.12)>=true
+			:if:<Register.value(System.GymBadges.<CurrentValue>.12)>=true
+				@Player.addbadge(<CurrentValue>,false)
+			:endif
+		:endif
+	:endwhile
+	:if:!<Level.file>=<Register.value(System.LastMap.12)>
+		@Player.warp(<Register.value(System.LastMap.12)>,<Register.value(System.PlayerPosition.X.12)>,<Register.value(System.PlayerPosition.Y.12)>+0.1,<Register.value(System.PlayerPosition.Z.12)>,<Register.value(System.PlayerFacing.12)>)
+		:if:<Register.value(System.PlayerThirdPerson.12)>=true
+			@Camera.activatethirdperson
+		:endif
+		@Level.update
+	:else
+		@Level.reload
+	:endif
+	@Screen.fadein
+	@Title.clear
+:elseif:<Register.registered(System.Load.16)>=true <and> <Register.value(System.Game ID)>=16
+	:while:<CurrentValue><<MaxValue>
+		<CurrentValue>+=1
+		@Player.removebadge(<CurrentValue>)
+		:if:<Register.exists(System.GymBadges.<CurrentValue>.16)>=true
+			:if:<Register.value(System.GymBadges.<CurrentValue>.16)>=true
+				@Player.addbadge(<CurrentValue>,false)
+			:endif
+		:endif
+	:endwhile
+	:if:<not><Level.file>=<Register.value(System.LastMap.16)>
+		@Player.warp(<Register.value(System.LastMap.16)>,<Register.value(System.PlayerPosition.X.16)>,<Register.value(System.PlayerPosition.Y.16)>+0.1,<Register.value(System.PlayerPosition.Z.16)>,<Register.value(System.PlayerFacing.16)>)
+		:if:<Register.value(System.PlayerThirdPerson.16)>=true
+			@Camera.activatethirdperson
+		:endif
+		@Level.update
+	:else
+		@Level.reload
+	:endif
+	@Screen.fadein
+	@Title.clear
+:else
+	@Title.clear
+	@Text.show(No valid save found.~Returning to main menu.)
+	@Screen.fadein
+	@Script.start(System\ScreenState\ScreenState.0)
+:endif

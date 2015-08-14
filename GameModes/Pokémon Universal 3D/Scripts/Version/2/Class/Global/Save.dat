@@ -1,0 +1,92 @@
+version=2
+##############################
+# Sub Global.Save
+##############################
+# Extra Param:
+# @Storage.set(bool,Global.Save.MakeBackupSave,false)
+
+:if:<not><Register.value(Global.GameName)>=Nothing
+	@Script.start(Version\2\Class\GameMode\<Register.value(Global.GameName)>)
+
+	:if:<not><Level.filename>=GlobalMain <and> <Storage.value(bool,Global.Save.MakeBackupSave)>=false
+		# Save Player Position
+		@Register.change(Global.Save.Player.Position.X.<Register.value(Global.GameName)>,<Player.position(x)>)
+		@Register.change(Global.Save.Player.Position.Y.<Register.value(Global.GameName)>,<Player.position(y)>)
+		@Register.change(Global.Save.Player.Position.Z.<Register.value(Global.GameName)>,<Player.position(z)>)
+		@Register.change(Global.Save.Player.Facing.<Register.value(Global.GameName)>,<Player.facing>)
+		@Register.change(Global.Save.Player.ThirdPerson.<Register.value(Global.GameName)>,<Player.thirdperson>)
+		@Register.change(Global.Save.Player.Level.<Register.value(Global.GameName)>,<Level.file>)
+		
+		# Save Player Party
+		@Storage.set(int,i,0)
+		:while:<Pokemon.count>><Storage.get(int,i)>
+			@Register.change(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>,<Pokemon.data(<Storage.get(int,i)>)>)
+			@Storage.update(int,i,add,1)
+		:endwhile
+		:while:<not><Storage.get(int,i)>=6
+			@Register.change(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>,Nothing)
+			@Storage.update(int,i,add,1)
+		:endwhile
+		
+		# Save Player Badge
+		@Storage.set(int,i,0)
+		:while:<Storage.get(int,Global.MaxBadges)>><Storage.get(int,i)>
+			@Register.change(Global.Save.Player.Badge.<Storage.get(int,i)>.<Register.value(Global.GameName)>,<Player.hasbadge(<Storage.get(int,Global.Badge.ID.<Storage.get(int,i)>)>)>)
+		:endwhile
+		
+		# Save Player Inventory
+		@Storage.set(int,i,0)
+		:while:<Storage.get(int,i)><9999
+			:if:<Inventory.count(<Storage.get(int,i)>)>>0
+				@Register.change(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>,<Inventory.count(<Storage.get(int,i)>)>)
+			:endif
+			:if:<Inventory.count(<Storage.get(int,i)>)>=0 <and> <Register.registered(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>=true
+				@Register.unregister(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>,int)
+			:endif
+		:endwhile
+		
+		# Save Game Flag
+		@Register.change(Global.Load.<Register.value(Global.GameName)>,true)
+	:endif
+
+	:if:<not><Level.filename>=GlobalMain <and> <Storage.value(bool,Global.Save.MakeBackupSave)>=true
+		# Save Player Position
+		@Register.change(Global.Save.Player.Position.X.<Register.value(Global.GameName)>.Backup,<Player.position(x)>)
+		@Register.change(Global.Save.Player.Position.Y.<Register.value(Global.GameName)>.Backup,<Player.position(y)>)
+		@Register.change(Global.Save.Player.Position.Z.<Register.value(Global.GameName)>.Backup,<Player.position(z)>)
+		@Register.change(Global.Save.Player.Facing.<Register.value(Global.GameName)>.Backup,<Player.facing>)
+		@Register.change(Global.Save.Player.ThirdPerson.<Register.value(Global.GameName)>.Backup,<Player.thirdperson>)
+		@Register.change(Global.Save.Player.Level.<Register.value(Global.GameName)>.Backup,<Level.file>)
+		
+		# Save Player Party
+		@Storage.set(int,i,0)
+		:while:<Pokemon.count>><Storage.get(int,i)>
+			@Register.change(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>.Backup,<Pokemon.data(<Storage.get(int,i)>)>)
+			@Storage.update(int,i,add,1)
+		:endwhile
+		:while:<not><Storage.get(int,i)>=6
+			@Register.change(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>.Backup,Nothing)
+			@Storage.update(int,i,add,1)
+		:endwhile
+		
+		# Save Player Badge
+		@Storage.set(int,i,0)
+		:while:<Storage.get(int,Global.MaxBadges)>><Storage.get(int,i)>
+			@Register.change(Global.Save.Player.Badge.<Storage.get(int,i)>.<Register.value(Global.GameName)>.Backup,<Player.hasbadge(<Storage.get(int,Global.Badge.ID.<Storage.get(int,i)>)>)>)
+		:endwhile
+		
+		# Save Player Inventory
+		@Storage.set(int,i,0)
+		:while:<Storage.get(int,i)><9999
+			:if:<Inventory.count(<Storage.get(int,i)>)>>0
+				@Register.change(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>.Backup,<Inventory.count(<Storage.get(int,i)>)>)
+			:endif
+			:if:<Inventory.count(<Storage.get(int,i)>)>=0 <and> <Register.registered(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>.Backup)>=true
+				@Register.unregister(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>.Backup,int)
+			:endif
+		:endwhile
+	:endif
+	
+	@Player.save
+:endif
+:end

@@ -172,5 +172,5 @@ version=2
 @Text.log()
 @Text.log(DO NOT POST THIS CUSTOM CRASH LOG INTO "http://pokemon3d.net/forum/forums/6/".)
 @Text.log([/CODE])
-@Script.start(Version\2\Class\Screen\ErrorScreen)
+@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\ErrorScreen)
 :end
