@@ -33,7 +33,7 @@ version=2
 	:endif
 	
 	# Save Game.
-	#@Script.start(Version\2\Class\Save\SaveGame)
+	@Script.start(Version\2\Class\Global\Save)
 	
 	# Initalize Options.
 	@Script.start(Version\2\Class\Global\Language)

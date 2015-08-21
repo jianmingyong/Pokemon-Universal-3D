@@ -21,10 +21,13 @@
 		@Level.update
 	:endif
 	@Screen.fadeout
-	@Camera.deactivethirdperson
-	@Camera.fix
 	@Entity.setvisible(0,0)
-	@Entity.setvisible(4,1)
+	@Entity.setvisible(121,1)
+	:while:<Entity.opacity(121)><100
+		@Entity.setopacity(121,<Entity.opacity(121)>+10)
+		@Level.wait(1)
+		@Level.update
+	:endwhile
 	@Screen.fadein
 	
 	:if:<Register.value(Global.ValidationScreen)>=false
@@ -47,10 +50,13 @@
 			:when:YES
 				@Script.start(Version\2\Class\Error\ID 3)
 		:endwhen
+		@Register.change(Global.ValidationScreen,true)
 	:endif
 	
+	@Screen.fadeout
+	
 	:if:<Register.value(Global.GameName)>=PokemonDeltaEmerald
-		
+		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\Pokémon Delta Emerald\IntroScreen)
 	:endif
 	:if:<Register.value(Global.GameName)>=PokemonDarkEnergy
 		

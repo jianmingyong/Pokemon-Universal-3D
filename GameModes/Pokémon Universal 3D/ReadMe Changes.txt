@@ -11,7 +11,7 @@ Storage (bool): Security.FileValidation.Checks
 Storage (int): StackTrace.Set.CurrentStoreIndex
 
 GameMode Handler:
-Storage (str): GameMode.Name
+Register (str): GameMode.Name
 Storage (str): GameMode.Description
 Storage (str): GameMode.Version
 Storage (str): GameMode.Author

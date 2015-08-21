@@ -1,58 +1,63 @@
-# ScreenState Declaration
-@Storage.set(int,System.ScreenState,2)
+version=2
+##############################
+# Sub Global.Load
+##############################
 
-# Declare Variable
-<CurrentValue>=0
-<MaxValue>=8
+@Storage.set(str,StackTrace.Set,Version\2\Class\Global\Load.dat)
+@Script.start(Version\2\Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
 
 @Screen.fadeout
 @Title.add(Loading save file. Please wait for a while.,2147483647,255,255,255,4,true,0,0)
-@Script.start(System\GlobalAntiCheat)
-:if:<Register.exists(System.Load.12)>=true <and> <Register.value(System.Game ID)>=12
-	:while:<CurrentValue><<MaxValue>
-		<CurrentValue>+=1
-		@Player.removebadge(<CurrentValue>)
-		:if:<Register.exists(System.GymBadges.<CurrentValue>.12)>=true
-			:if:<Register.value(System.GymBadges.<CurrentValue>.12)>=true
-				@Player.addbadge(<CurrentValue>,false)
-			:endif
+
+# Load GameMode Defination
+@Script.start(Version\2\Class\GameMode\<Register.value(Global.GameName)>)
+
+# Load Player Party
+@Storage.set(int,i,1)
+:if:<Register.registered(Global.Save.Pokemon.Party.1.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Pokemon.Party.2.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Pokemon.Party.3.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Pokemon.Party.4.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Pokemon.Party.5.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Pokemon.Party.6.<Register.value(Global.GameName)>)>=true
+	:while:<not><Storage.get(int,i)>>7
+		:if:<not><Register.value(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>=Nothing
+			@Pokemon.add(<Register.value(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>)
 		:endif
+		@Storage.update(int,i,add,1)
 	:endwhile
-	:if:!<Level.file>=<Register.value(System.LastMap.12)>
-		@Player.warp(<Register.value(System.LastMap.12)>,<Register.value(System.PlayerPosition.X.12)>,<Register.value(System.PlayerPosition.Y.12)>+0.1,<Register.value(System.PlayerPosition.Z.12)>,<Register.value(System.PlayerFacing.12)>)
-		:if:<Register.value(System.PlayerThirdPerson.12)>=true
-			@Camera.activatethirdperson
-		:endif
-		@Level.update
-	:else
-		@Level.reload
-	:endif
-	@Screen.fadein
-	@Title.clear
-:elseif:<Register.registered(System.Load.16)>=true <and> <Register.value(System.Game ID)>=16
-	:while:<CurrentValue><<MaxValue>
-		<CurrentValue>+=1
-		@Player.removebadge(<CurrentValue>)
-		:if:<Register.exists(System.GymBadges.<CurrentValue>.16)>=true
-			:if:<Register.value(System.GymBadges.<CurrentValue>.16)>=true
-				@Player.addbadge(<CurrentValue>,false)
-			:endif
-		:endif
-	:endwhile
-	:if:<not><Level.file>=<Register.value(System.LastMap.16)>
-		@Player.warp(<Register.value(System.LastMap.16)>,<Register.value(System.PlayerPosition.X.16)>,<Register.value(System.PlayerPosition.Y.16)>+0.1,<Register.value(System.PlayerPosition.Z.16)>,<Register.value(System.PlayerFacing.16)>)
-		:if:<Register.value(System.PlayerThirdPerson.16)>=true
-			@Camera.activatethirdperson
-		:endif
-		@Level.update
-	:else
-		@Level.reload
-	:endif
-	@Screen.fadein
-	@Title.clear
 :else
-	@Title.clear
-	@Text.show(No valid save found.~Returning to main menu.)
-	@Screen.fadein
-	@Script.start(System\ScreenState\ScreenState.0)
+	@Script.start(Version\2\Class\Error\ID 4)
 :endif
+
+# Load Player Badge
+@Storage.set(int,i,1)
+:while:<not><Storage.get(int,i)>><Storage.get(int,GameMode.MaxBadges)>
+	:if:<Register.value(Global.Save.Player.Badge.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>=true
+		@Player.addbadge(<Storage.get(int,GameMode.Badge.ID.<Storage.get(int,i)>)>)
+	:endif
+	@Storage.update(int,i,add,1)
+:endwhile
+
+# Load Player Inventory
+@Storage.set(int,i,1)
+:while:<Storage.get(int,i)><9999
+	:if:<Register.registered(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>=true
+		:if:<Register.value(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>>0
+			@Item.give(<Storage.get(int,i)>,<Register.value(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>)
+		:endif
+	:endif
+	@Storage.update(int,i,add,1)
+:endwhile
+
+# Load Player Position
+:if:<Register.registered(Global.Save.Player.Position.X.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Player.Position.Y.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Player.Position.Z.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Player.Facing.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Player.ThirdPerson.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Player.Level.<Register.value(Global.GameName)>)>=true
+	@Player.warp(<Register.value(Global.Save.Player.Level.<Register.value(Global.GameName)>)>,<Register.value(Global.Save.Player.Position.X.<Register.value(Global.GameName)>)>,<Register.value(Global.Save.Player.Position.Y.<Register.value(Global.GameName)>)>,<Register.value(Global.Save.Player.Position.Z.<Register.value(Global.GameName)>)>,<Register.value(Global.Save.Player.Facing.<Register.value(Global.GameName)>)>)
+	:if:<Register.value(Global.Save.Player.ThirdPerson)>=true
+		@Camera.activatethirdperson
+	:endif
+	@Level.update
+:else
+	@Script.start(Version\2\Class\Error\ID 4)
+:endif
+:end

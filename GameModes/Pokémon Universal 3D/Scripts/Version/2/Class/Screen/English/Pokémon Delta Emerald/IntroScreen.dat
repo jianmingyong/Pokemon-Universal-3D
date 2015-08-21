@@ -1,0 +1,34 @@
+version=2
+##############################
+# Sub Screen.IntroScreen
+##############################
+
+@Storage.set(str,StackTrace.Set,Version\2\Class\Screen\<Register.value(Global.Token)>\Pokémon Delta Emerald\IntroScreen.dat)
+@Script.start(Version\2\Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+@Screen.fadein
+@Title.clear
+
+@Entity.setvisible(121,1)
+@Entity.setvisible(122,1)
+@Entity.setvisible(123,1)
+:while:<Entity.opacity(122)><100
+	@Entity.setopacity(122,<Entity.opacity(122)>+10)
+	@Level.wait(1)
+	@Level.update
+:endwhile
+:while:<Entity.opacity(123)><100
+	@Entity.setopacity(123,<Entity.opacity(123)>+10)
+	@Level.wait(1)
+	@Level.update
+:endwhile
+
+@Music.play(<Storage.get(str,GameMode.IntroMusic)>)
+@Text.show(Hi! Sorry to keep you waiting!*Welcome to the world of POKéMON!*My name is BIRCH.*But everyone calls me the POKéMON~PROFESSOR.)
+
+:end

@@ -34,7 +34,7 @@ version=2
 	@Options.setcancelindex(<Storage.get(int,Screen.NewGameScreen.LoadData.Count)>)
 	@Options.show(<Storage.get(str,Screen.NewGameScreen.LoadData)>)
 	:when:Pokémon Delta Emerald
-		@Register.change(Global.GameName,PokemonDeltaEmerald)
+		@Script.start(Version\2\Class\GameMode\PokemonDeltaEmerald)
 		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen)
 	:when:Pokémon Dark Energy
 		@Register.change(Global.GameName,PokemonDarkEnergy)

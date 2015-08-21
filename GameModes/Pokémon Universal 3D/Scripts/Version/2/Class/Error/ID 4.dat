@@ -1,0 +1,20 @@
+version=2
+##############################
+# Sub Error.ID 4
+##############################
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+@Storage.set(str,Error.Message,Unable to load your save data.)
+@Storage.set(str,Error.HelpLink,Nothing)
+@Storage.set(str,Error.Data,Nothing)
+@Storage.set(int,Error.ID,4)
+@Storage.set(str,Error.Type,Saves)
+@Storage.set(str,Error.Description,Your save data does not exist. Unable to load.)
+@Storage.set(str,Error.Solution,Please ask jianmingyong in the forum for assistance.)
+
+@Script.start(Version\2\Class\Error\GenerateLog)
+:end

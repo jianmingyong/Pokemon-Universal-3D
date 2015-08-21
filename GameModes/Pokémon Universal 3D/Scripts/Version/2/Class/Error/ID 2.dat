@@ -11,7 +11,7 @@ version=2
 @Storage.set(str,Error.Message,The game have detected invalid function call.)
 @Storage.set(str,Error.HelpLink,Nothing)
 @Storage.set(str,Error.Data,Nothing)
-@Storage.set(int,Error.ID,-1)
+@Storage.set(int,Error.ID,2)
 @Storage.set(str,Error.Type,Syntax Error)
 @Storage.set(str,Error.Description,The game have detected invalid function call.)
 @Storage.set(str,Error.Solution,Make sure that the second call stack script call valid function.)
