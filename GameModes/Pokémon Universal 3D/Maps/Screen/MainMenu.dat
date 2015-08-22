@@ -1,0 +1,21 @@
+Main:
+{"Level"{LEV[{"Name"{str[Main Menu]}}{"MusicLoop"{str[Stop]}}{"WildPokemon"{bool[0]}}{"OverwolrdPokemon"{bool[0]}}{"CurrentRegion"{str[Nothing]}}]}}
+{"Actions"{LEV[{"CanTeleport"{bool[0]}}{"CanDig"{bool[0]}}{"CanFly"{bool[0]}}{"RideType"{int[0]}}{"EnviromentType"{int[1]}}{"Weather"{int[1]}}{"Lightning"{int[1]}}{"IsDark"{bool[0]}}{"IsSafariZone"{bool[0]}}{"MapScript"{str[Main]}}]}}
+
+Blank Screen:
+{"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[1]}}{"Position"{sngArr[0,0,-1]}}{"Textures"{recArr[[0,0,512,384]]}}{"TexturePath"{str[Screen\Main Menu\BlankScreen]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.66,0.935,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[1]}}{"Opacity"{sng[0]}}]}}
+Blank Screen:
+{"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[2]}}{"Position"{sngArr[0,-0.1,-1]}}{"Textures"{recArr[[0,0,512,384]]}}{"TexturePath"{str[Screen\Main Menu\BlankScreen]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.75,1,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[1]}}{"Opacity"{sng[0]}}]}}
+
+Main Menu Screen:
+{"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[0]}}{"Position"{sngArr[0,-0.1,-1]}}{"Textures"{recArr[[0,0,2048,1152]]}}{"TexturePath"{str[Screen\Main Menu\Main]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.75,1,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[1]}}{"Opacity"{sng[0]}}]}}
+
+Pokémon Delta Emerald:
+Intro 1:
+{"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[11]}}{"Position"{sngArr[0,-0.1,-1]}}{"Textures"{recArr[[0,0,512,384]]}}{"TexturePath"{str[Screen\Intro\Pokémon Delta Emerald]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.75,1,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[1]}}{"Opacity"{sng[0]}}]}}
+Intro 2:
+{"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[12]}}{"Position"{sngArr[0,-0.1,-1]}}{"Textures"{recArr[[512,0,512,384]]}}{"TexturePath"{str[Screen\Intro\Pokémon Delta Emerald]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.75,1,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[1]}}{"Opacity"{sng[0]}}]}}
+Intro 3:
+{"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[13]}}{"Position"{sngArr[0,-0.1,-1]}}{"Textures"{recArr[[1024,0,512,384]]}}{"TexturePath"{str[Screen\Intro\Pokémon Delta Emerald]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.75,1,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[1]}}{"Opacity"{sng[0]}}]}}
+Intro 4:
+{"Entity"{ENT[{"EntityID"{str[WallBlock]}}{"ID"{int[14]}}{"Position"{sngArr[0,-0.1,-1]}}{"Textures"{recArr[[1536,0,512,384]]}}{"TexturePath"{str[Screen\Intro\Pokémon Delta Emerald]}}{"TextureIndex"{intArr[0,0]}}{"Scale"{sngArr[1.75,1,1]}}{"Collision"{bool[0]}}{"ModelID"{int[3]}}{"Visible"{bool[1]}}{"Opacity"{sng[0]}}]}}

@@ -12,14 +12,14 @@ version=2
 :endif
 
 # GameMode Handler:
-@Register.change(Global.GameName,PokemonDeltaEmerald)
+@Storage.set(str,GameMode.Name,Pokémon Delta Emerald)
 @Storage.set(str,GameMode.Description,Pokémon Emerald Remake)
 @Storage.set(str,GameMode.Version,0.54)
 @Storage.set(str,GameMode.Author,jianmingyong)
-@Storage.set(str,GameMode.MapPath,PokemonDeltaEmerald)
-@Storage.set(str,GameMode.ScriptPath,PokemonDeltaEmerald)
-@Storage.set(str,GameMode.StartMap,)
-@Storage.set(str,GameMode.StartPosition,)
+@Storage.set(str,GameMode.MapPath,Pokémon Delta Emerald)
+@Storage.set(str,GameMode.ScriptPath,Pokémon Delta Emerald)
+@Storage.set(str,GameMode.StartMap,Nothing)
+@Storage.set(str,GameMode.StartPosition,0,0,0,0)
 @Storage.set(str,GameMode.StartRotation,0)
 @Storage.set(str,GameMode.IntroMusic,P_OR_AS Opening Selection)
 
@@ -27,4 +27,10 @@ version=2
 @Storage.set(int,GameMode.MaxBadges,0)
 @Storage.set(int,GameMode.Badge.ID.1,0)
 
+@Register.change(Global.GameName,<Storage.get(str,GameMode.Name)>)
+
+# Global Register:
+:if:<Register.registered(Pokémon Delta Emerald.Player.Gender)>=false
+	@Register.register(Pokémon Delta Emerald.Player.Gender,str,Nothing)
+:endif
 :end

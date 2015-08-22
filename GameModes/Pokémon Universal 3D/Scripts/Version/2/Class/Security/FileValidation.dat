@@ -8,7 +8,17 @@ version=2
 
 @Storage.set(int,Security.FileValidation.CurrentIndex,0)
 
-@Entity.setvisible(4,1)
+:while:<Entity.opacity(1)><100
+	@Entity.setopacity(1,<Entity.opacity(1)>+10)
+	@Level.wait(1)
+	@Level.update
+:endwhile
+:while:<Entity.opacity(2)><100
+	@Entity.setopacity(2,<Entity.opacity(2)>+10)
+	@Level.wait(1)
+	@Level.update
+:endwhile
+
 @Camera.fix
 @Storage.set(str,Function.Title,show)
 @Storage.set(str,Function.Title.show.1,> Pokémon Universal 3D Crash Log V <Register.value(Global.Version)>)
@@ -20,12 +30,7 @@ version=2
 @Storage.set(str,Function.Title.show.7,> Message: The game detected missing files.)
 @Storage.set(str,Function.Title.show.8,> )
 @Storage.set(str,Function.Title.show.9,> ---------------------------------------------------------------------------------)
-@Storage.set(str,Function.Title.show.10,> )
-@Storage.set(str,Function.Title.show.11,> The crash log is saved at: Pokemon\Log.dat)
-@Storage.set(str,Function.Title.show.12,> Game have been saved to prevent further lost of data.)
-@Storage.set(str,Function.Title.show.13,> More infomation has been added into the crash log.)
-@Storage.set(str,Function.Title.show.14,> If you need to restore/revert your save proceed to http://pokemon3d.net/forum/threads/6297/ and attach your save.)
-@Storage.set(int,Function.Title.show.maxindex,14)
+@Storage.set(int,Function.Title.show.maxindex,9)
 @Script.start(Version\2\Class\Function\Title)
 
 # Insert a list of core script to check
@@ -35,17 +40,16 @@ version=2
 @Storage.set(str,Security.FileExists,Version\2\Class\Error\GenerateLog)
 @Script.start(Version\2\Class\Security\FileExists)
 
-@Storage.set(str,Security.FileExists,Version\2\Class\Error\ID -1)
-@Script.start(Version\2\Class\Security\FileExists)
-
-@Storage.set(str,Security.FileExists,Version\2\Class\Error\ID 1)
-@Script.start(Version\2\Class\Security\FileExists)
-
 # End of File Validation
 
 @Title.clear
 @Camera.defix
-@Entity.setvisible(4,0)
+
+:while:<Entity.opacity(1)>>0
+	@Entity.setopacity(1,<Entity.opacity(1)>-10)
+	@Level.wait(1)
+	@Level.update
+:endwhile
 
 :if:<Storage.get(int,Security.FileValidation.CurrentIndex)>>1
 	@Script.start(Version\2\Class\Error\ID 1)

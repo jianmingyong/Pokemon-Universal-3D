@@ -11,30 +11,31 @@ version=2
 	:end
 :endif
 
-@Storage.set(bool,i,true)
+:if:<not><Level.levelfile>=Screen\MainMenu.dat
+	@Screen.fadeout
+	@Camera.set(0,0,0,0,0)
+	@Player.warp(Screen\MainMenu.dat,0,0,0,0)
+	@Level.update
+:endif
 
-:while:<Storage.get(bool,i)>=true
-	:if:<not><Level.filename>=GlobalMain
-		@Screen.fadeout
-		@Camera.set(0,0,0,0,0)
-		@Player.warp(System\GlobalMain.dat,0,0,0,0)
-		@Level.update
-	:endif
-	@Music.play(title)
-	@Camera.deactivatethirdperson
-	@Camera.fix
-	@Entity.setvisible(0,1)
-	@Screen.fadein
-	@Text.show(Move: W or S or arrow keys.~Select: Space bar or enter.)
-	@Options.show(New Game,Load Game,Options,Additional Content)
-		:when:New Game
-			@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\NewGameScreen)
-		:when:Load Game
-			@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\LoadGameScreen)
-		:when:Options
-			@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\OptionScreen)
-		:when:Additional Content
-			@Script.start(Version\2\Class\Error\ID -1)
-	:endwhen
+:while:<Entity.opacity(0)><100
+	@Entity.setopacity(0,<Entity.opacity(0)>+10)
+	@Level.wait(0)
+	@Level.update
 :endwhile
+
+@Music.play(title)
+@Camera.deactivatethirdperson(true)
+@Camera.fix
+@Screen.fadein
+
+@Text.show(Move: W or S or arrow keys.~Select: Space bar or enter.)
+@Options.show(New Game,Load Game,Options)
+	:when:New Game
+		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\NewGameScreen)
+	:when:Load Game
+		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\LoadGameScreen)
+	:when:Options
+		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\OptionScreen)
+:endwhen
 :end

@@ -34,7 +34,8 @@
 		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\OptionScreen)
 	:when:Back
 		@Player.save
-		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\TitleScreen)
+		:exitwhile
 	:endwhen
 :endwhile
+@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\TitleScreen)
 :end

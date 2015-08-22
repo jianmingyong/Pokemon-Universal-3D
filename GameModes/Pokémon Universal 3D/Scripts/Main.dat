@@ -3,6 +3,10 @@
 # Main Engine File
 ##############################
 # Check For Script Version 2 or 3.
-@Script.start(Version\2\Class\Global\Storage)
+:if:<Storage.count(bool)>=0
+	@Storage.set(int,StackTrace.Set.CurrentStoreIndex,0)
+	@Storage.set(bool,Security.FileValidation.Checks,false)
+	@Storage.set(bool,Global.Main.Start,false)
+:endif
 @Script.start(Version\2\Class\Global\Main)
 :end

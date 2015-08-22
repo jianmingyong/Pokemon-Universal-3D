@@ -11,39 +11,39 @@ version=2
 	:end
 :endif
 
-@Storage.set(bool,i,true)
+# New Game Initial Checks.
+@Storage.set(str,Screen.NewGameScreen.LoadData,)
+@Storage.set(int,Screen.NewGameScreen.LoadData.Count,0)
 
-:while:<Storage.get(bool,i)>=true
-	# New Game Initial Checks.
-	@Storage.set(str,Screen.NewGameScreen.LoadData,)
-	@Storage.set(int,Screen.NewGameScreen.LoadData.Count,0)
-	:if:<Register.registered(Global.Load.PokemonDeltaEmerald)>=false
-		@Storage.update(str,Screen.NewGameScreen.LoadData,add,Pokémon Delta Emerald,)
-		@Storage.update(int,Screen.NewGameScreen.LoadData.Count,add,1)
-	:endif
-	:if:<Register.registered(Global.Load.PokemonDarkEnergy)>=false
-		@Storage.update(str,Screen.NewGameScreen.LoadData,add,Pokémon Dark Energy,)
-		@Storage.update(int,Screen.NewGameScreen.LoadData.Count,add,1)
-	:endif
-	:if:<Register.registered(Global.Load.PokemonSunshoreIsle)>=false
-		@Storage.update(str,Screen.NewGameScreen.LoadData,add,Pokémon Sunshore Isle,)
-		@Storage.update(int,Screen.NewGameScreen.LoadData.Count,add,1)
-	:endif
-	@Storage.update(str,Screen.NewGameScreen.LoadData,add,Back)
-	@Text.show(Please Choose an option.)
-	@Options.setcancelindex(<Storage.get(int,Screen.NewGameScreen.LoadData.Count)>)
-	@Options.show(<Storage.get(str,Screen.NewGameScreen.LoadData)>)
-	:when:Pokémon Delta Emerald
-		@Script.start(Version\2\Class\GameMode\PokemonDeltaEmerald)
-		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen)
-	:when:Pokémon Dark Energy
-		@Register.change(Global.GameName,PokemonDarkEnergy)
-		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen)
-	:when:Pokémon Sunshore Isle
-		@Register.change(Global.GameName,PokemonSunshoreIsle)
-		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen)
-	:when:Back
-		@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\TitleScreen)
-	:endwhen
-:endwhile
+# Add Support to GameModes.
+:if:<Register.registered(Global.Load.Pokémon Delta Emerald)>=false
+	@Storage.update(str,Screen.NewGameScreen.LoadData,add,Pokémon Delta Emerald,)
+	@Storage.update(int,Screen.NewGameScreen.LoadData.Count,add,1)
+:endif
+:if:<Register.registered(Global.Load.Pokémon Dark Energy)>=false
+	@Storage.update(str,Screen.NewGameScreen.LoadData,add,Pokémon Dark Energy,)
+	@Storage.update(int,Screen.NewGameScreen.LoadData.Count,add,1)
+:endif
+:if:<Register.registered(Global.Load.Pokémon Sunshore Isle)>=false
+	@Storage.update(str,Screen.NewGameScreen.LoadData,add,Pokémon Sunshore Isle,)
+	@Storage.update(int,Screen.NewGameScreen.LoadData.Count,add,1)
+:endif
+
+@Storage.update(str,Screen.NewGameScreen.LoadData,add,Back)
+
+@Text.show(Please Choose an option.)
+@Options.setcancelindex(<Storage.get(int,Screen.NewGameScreen.LoadData.Count)>)
+@Options.show(<Storage.get(str,Screen.NewGameScreen.LoadData)>)
+:when:Pokémon Delta Emerald
+	@Script.start(Version\2\Class\GameMode\Pokémon Delta Emerald)
+	@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen)
+:when:Pokémon Dark Energy
+	@Register.change(Global.GameName,Pokémon Dark Energy)
+	@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen)
+:when:Pokémon Sunshore Isle
+	@Register.change(Global.GameName,Pokémon Sunshore Isle)
+	@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen)
+:when:Back
+	@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\TitleScreen)
+:endwhen
 :end
