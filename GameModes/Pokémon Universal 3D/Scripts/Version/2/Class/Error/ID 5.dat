@@ -1,0 +1,23 @@
+version=2
+##############################
+# Sub Error.ID 5
+##############################
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+@Storage.set(str,Error.Message,<Register.value(Global.GameName)>'s save is invalid.)
+@Storage.set(str,Error.HelpLink,Nothing)
+:while:<Storage.get(int,Security.PokémonValidation.Error)><<Storage.get(int,Security.PokémonValidation.TotalError)>
+	@Storage.update(str,Error.Data,add,<Storage.get(str,Security.PokémonValidation.<Storage.get(int,Security.PokémonValidation.Error)>)>)
+	@Storage.update(int,Security.PokémonValidation.Error,add,1)
+:endwhile
+@Storage.set(int,Error.ID,5)
+@Storage.set(str,Error.Type,Saves)
+@Storage.set(str,Error.Description,Your save data contains illegal data.)
+@Storage.set(str,Error.Solution,Please ask jianmingyong in the forum for assistance.)
+
+@Script.start(Version\2\Class\Error\GenerateLog)
+:end

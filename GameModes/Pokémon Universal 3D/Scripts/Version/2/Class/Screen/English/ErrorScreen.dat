@@ -13,11 +13,10 @@ version=2
 
 @Storage.set(bool,i,true)
 
-:if:<not><Level.filename>=GlobalMain
-	#Global Save
+:if:<not><Level.levelfile>=Screen\MainMenu.dat
 	@Screen.fadeout
 	@Camera.set(0,0,0,0,0)
-	@Player.warp(System\GlobalMain.dat,0,0,0,0)
+	@Player.warp(Screen\MainMenu.dat,0,0,0,0)
 	@Level.update
 :endif
 @Screen.fadeout

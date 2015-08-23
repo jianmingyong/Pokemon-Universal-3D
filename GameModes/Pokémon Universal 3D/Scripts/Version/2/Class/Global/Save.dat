@@ -11,26 +11,66 @@ version=2
 	:end
 :endif
 
-:if:<not><Register.value(Global.GameName)>=Nothing
-	@Script.start(Version\2\Class\GameMode\<Register.value(Global.GameName)>)
+:if:<not><Level.levelfile>=Screen\MainMenu.dat
+	:if:<not><Register.value(Global.GameName)>=Nothing
+		@Script.start(Version\2\Class\GameMode\<Register.value(Global.GameName)>)
 
-	:if:<not><Level.filename>=GlobalMain
 		# Save Player Position
-		@Register.change(Global.Save.Player.Position.X.<Register.value(Global.GameName)>,<Player.position(x)>)
-		@Register.change(Global.Save.Player.Position.Y.<Register.value(Global.GameName)>,<Player.position(y)>)
-		@Register.change(Global.Save.Player.Position.Z.<Register.value(Global.GameName)>,<Player.position(z)>)
-		@Register.change(Global.Save.Player.Facing.<Register.value(Global.GameName)>,<Player.facing>)
-		@Register.change(Global.Save.Player.ThirdPerson.<Register.value(Global.GameName)>,<Player.thirdperson>)
-		@Register.change(Global.Save.Player.Level.<Register.value(Global.GameName)>,<Level.file>)
+		:if:<Register.registered(Global.Save.Player.Position.X.<Register.value(Global.GameName)>)>=false
+			@Register.register(Global.Save.Player.Position.X.<Register.value(Global.GameName)>,int,<Player.position(x)>)
+		:else
+			@Register.change(Global.Save.Player.Position.X.<Register.value(Global.GameName)>,<Player.position(x)>)
+		:endif
+		:if:<Register.registered(Global.Save.Player.Position.Y.<Register.value(Global.GameName)>)>=false
+			@Register.register(Global.Save.Player.Position.Y.<Register.value(Global.GameName)>,int,<Player.position(y)>)
+		:else
+			@Register.change(Global.Save.Player.Position.Y.<Register.value(Global.GameName)>,<Player.position(y)>)
+		:endif
+		:if:<Register.registered(Global.Save.Player.Position.Z.<Register.value(Global.GameName)>)>=false
+			@Register.register(Global.Save.Player.Position.Z.<Register.value(Global.GameName)>,int,<Player.position(z)>)
+		:else
+			@Register.change(Global.Save.Player.Position.Z.<Register.value(Global.GameName)>,<Player.position(z)>)
+		:endif
+		:if:<Register.registered(Global.Save.Player.Facing.<Register.value(Global.GameName)>)>=false
+			@Register.register(Global.Save.Player.Facing.<Register.value(Global.GameName)>,int,<Player.facing>)
+		:else
+			@Register.change(Global.Save.Player.Facing.<Register.value(Global.GameName)>,<Player.facing>)
+		:endif
+		:if:<Register.registered(Global.Save.Player.ThirdPerson.<Register.value(Global.GameName)>)>=false
+			@Register.register(Global.Save.Player.ThirdPerson.<Register.value(Global.GameName)>,bool,<Player.thirdperson>)
+		:else
+			@Register.change(Global.Save.Player.ThirdPerson.<Register.value(Global.GameName)>,<Player.thirdperson>)
+		:endif
+		:if:<Register.registered(Global.Save.Player.Level.<Register.value(Global.GameName)>)>=false
+			@Register.register(Global.Save.Player.Level.<Register.value(Global.GameName)>,str,<Level.levelfile>)
+		:else
+			@Register.change(Global.Save.Player.Level.<Register.value(Global.GameName)>,<Level.levelfile>)
+		:endif
+		
+		# Save Player Money
+		:if:<Register.registered(Global.Save.Player.Money.<Register.value(Global.GameName)>)>=false
+			@Register.register(Global.Save.Player.Money.<Register.value(Global.GameName)>,int,<Player.money>)
+		:else
+			@Register.change(Global.Save.Player.Money.<Register.value(Global.GameName)>,<Player.money>)
+		:endif
+		@player.addmoney(-<Player.money>)
 		
 		# Save Player Party
 		@Storage.set(int,i,1)
 		:while:<not><Storage.get(int,i)>><Pokemon.count>
-			@Register.change(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>,<Pokemon.data(<Math.int(<Storage.get(int,i)>-1)>)>)
+			:if:<Register.registered(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>=false
+				@Register.register(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>,str,<Pokemon.data(<Math.int(<Storage.get(int,i)>-1)>)>)
+			:else
+				@Register.change(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>,<Pokemon.data(<Math.int(<Storage.get(int,i)>-1)>)>)
+			:endif
 			@Storage.update(int,i,add,1)
 		:endwhile
 		:while:<Storage.get(int,i)><7
-			@Register.change(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>,Nothing)
+			:if:<Register.registered(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>=false
+				@Register.register(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>,str,Nothing)
+			:else
+				@Register.change(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>,Nothing)
+			:endif
 			@Storage.update(int,i,add,1)
 		:endwhile
 		@Pokemon.clear
@@ -38,7 +78,11 @@ version=2
 		# Save Player Badge
 		@Storage.set(int,i,1)
 		:while:<not><Storage.get(int,i)>><Storage.get(int,GameMode.MaxBadges)>
-			@Register.change(Global.Save.Player.Badge.<Storage.get(int,i)>.<Register.value(Global.GameName)>,<Player.hasbadge(<Storage.get(int,GameMode.Badge.ID.<Storage.get(int,i)>)>)>)
+			:if:<Register.registered(Global.Save.Player.Badge.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>=false
+				@Register.register(Global.Save.Player.Badge.<Storage.get(int,i)>.<Register.value(Global.GameName)>,bool,<Player.hasbadge(<Storage.get(int,GameMode.Badge.ID.<Storage.get(int,i)>)>)>)
+			:else
+				@Register.change(Global.Save.Player.Badge.<Storage.get(int,i)>.<Register.value(Global.GameName)>,<Player.hasbadge(<Storage.get(int,GameMode.Badge.ID.<Storage.get(int,i)>)>)>)
+			:endif
 			@Player.removebadge(<Storage.get(int,GameMode.Badge.ID.<Storage.get(int,i)>)>)
 			@Storage.update(int,i,add,1)
 		:endwhile
@@ -46,20 +90,25 @@ version=2
 		# Save Player Inventory
 		@Storage.set(int,i,1)
 		:while:<Storage.get(int,i)><9999
-			:if:<Inventory.count(<Storage.get(int,i)>)>>0
-				@Register.change(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>,<Inventory.count(<Storage.get(int,i)>)>)
-			:endif
-			:if:<Inventory.count(<Storage.get(int,i)>)>=0 <and> <Register.registered(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>=true
-				@Register.unregister(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>,int)
+			:if:<Inventory.countitem(<Storage.get(int,i)>)>>0
+				:if:<Register.registered(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>=false
+					@Register.register(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>,int,<Inventory.countitem(<Storage.get(int,i)>)>)
+				:else
+					@Register.change(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>,<Inventory.countitem(<Storage.get(int,i)>)>)
+				:endif
+			:else
+				:if:<Register.registered(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>=true
+					@Register.unregister(Global.Save.Item.<Storage.get(int,i)>.<Register.value(Global.GameName)>,int)
+				:endif
 			:endif
 			@Storage.update(int,i,add,1)
 		:endwhile
 		@Item.clearitem
 		
 		# Save Game Flag
-		@Register.change(Global.Load.<Register.value(Global.GameName)>,true)
+		:if:<Register.registered(Global.Load.<Register.value(Global.GameName)>)>=false
+			@Register.register(Global.Load.<Register.value(Global.GameName)>,bool,true)
+		:endif
 	:endif
-	
-	@Player.save
 :endif
 :end

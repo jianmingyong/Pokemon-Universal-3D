@@ -18,6 +18,8 @@ version=2
 @Level.update
 
 :if:<Storage.get(bool,Global.Main.Start)>=false
+	# Save Game.
+	@Script.start(Version\2\Class\Global\Save)
 	
 	# Stop the music.
 	@Music.play(Stop)
@@ -29,9 +31,6 @@ version=2
 	@Script.start(Version\2\Class\Update\v0.54.0.0.0.16)
 	@Script.start(Version\2\Class\Global\Register)
 	
-	# Save Game.
-	@Script.start(Version\2\Class\Global\Save)
-	
 	# Initalize Options.
 	@Script.start(Version\2\Class\Global\Language)
 	
@@ -40,6 +39,6 @@ version=2
 	
 	@Storage.set(bool,Global.Main.Start,true)
 :else
-	#@Script.start(<Storage.get(str,GameMode.ScriptPath)>\<Register.value(Global.Token)>\<Level.filename>)
+	@Script.start(<Register.value(Global.Token)>\<filesystem.pathup(<Level.levelfile>)>\<Level.filename>)
 :endif
 :end

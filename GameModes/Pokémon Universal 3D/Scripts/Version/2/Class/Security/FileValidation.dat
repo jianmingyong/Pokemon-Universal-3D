@@ -8,6 +8,13 @@ version=2
 
 @Storage.set(int,Security.FileValidation.CurrentIndex,0)
 
+:if:<not><Level.levelfile>=Screen\MainMenu.dat
+	@Screen.fadeout
+	@Camera.set(0,0,0,0,0)
+	@Player.warp(Screen\MainMenu.dat,0,0,0,0)
+	@Level.update
+:endif
+
 :while:<Entity.opacity(1)><100
 	@Entity.setopacity(1,<Entity.opacity(1)>+10)
 	@Level.wait(1)

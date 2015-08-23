@@ -11,16 +11,28 @@ version=2
 	:end
 :endif
 
-@Screen.fadeout
-@Title.add(Loading save file. Please wait for a while.,2147483647,255,255,255,4,true,0,0)
+:while:<Entity.opacity(0)>>0
+	@Entity.setopacity(0,<Entity.opacity(0)>-10)
+	@Level.wait(0)
+	@Level.update
+:endwhile
+
+@Title.add(Loading <Register.value(Global.GameName)> Save. Please wait!,2147483647,255,255,255,4,true,0,0)
 
 # Load GameMode Defination
 @Script.start(Version\2\Class\GameMode\<Register.value(Global.GameName)>)
 
+# Load Player Money
+:if:<Register.registered(Global.Save.Player.Money.<Register.value(Global.GameName)>)>=true
+	@player.addmoney(<Register.value(Global.Save.Player.Money.<Register.value(Global.GameName)>)>)
+:else
+	@Script.start(Version\2\Class\Error\ID 4)
+:endif
+
 # Load Player Party
 @Storage.set(int,i,1)
 :if:<Register.registered(Global.Save.Pokemon.Party.1.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Pokemon.Party.2.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Pokemon.Party.3.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Pokemon.Party.4.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Pokemon.Party.5.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Pokemon.Party.6.<Register.value(Global.GameName)>)>=true
-	:while:<not><Storage.get(int,i)>>7
+	:while:<not><Storage.get(int,i)>>6
 		:if:<not><Register.value(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>=Nothing
 			@Pokemon.add(<Register.value(Global.Save.Pokemon.Party.<Storage.get(int,i)>.<Register.value(Global.GameName)>)>)
 		:endif
@@ -50,10 +62,16 @@ version=2
 	@Storage.update(int,i,add,1)
 :endwhile
 
+@Title.clear
+@Title.add(Validating <Register.value(Global.GameName)> Save. Please wait!,2147483647,255,255,255,4,true,0,0)
+:if:<Register.value(Global.SandBoxMode)>=false
+	@Script.start(Version\2\Class\Security\PokémonValidation)
+:endif
+
 # Load Player Position
 :if:<Register.registered(Global.Save.Player.Position.X.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Player.Position.Y.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Player.Position.Z.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Player.Facing.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Player.ThirdPerson.<Register.value(Global.GameName)>)>=true <and> <Register.registered(Global.Save.Player.Level.<Register.value(Global.GameName)>)>=true
-	@Player.warp(<Register.value(Global.Save.Player.Level.<Register.value(Global.GameName)>)>,<Register.value(Global.Save.Player.Position.X.<Register.value(Global.GameName)>)>,<Register.value(Global.Save.Player.Position.Y.<Register.value(Global.GameName)>)>,<Register.value(Global.Save.Player.Position.Z.<Register.value(Global.GameName)>)>,<Register.value(Global.Save.Player.Facing.<Register.value(Global.GameName)>)>)
-	:if:<Register.value(Global.Save.Player.ThirdPerson)>=true
+	@Player.warp(<Register.value(Global.Save.Player.Level.<Register.value(Global.GameName)>)>,<Register.value(Global.Save.Player.Position.X.<Register.value(Global.GameName)>)>,<Math.sng(<Register.value(Global.Save.Player.Position.Y.<Register.value(Global.GameName)>)>+0.1)>,<Register.value(Global.Save.Player.Position.Z.<Register.value(Global.GameName)>)>,<Register.value(Global.Save.Player.Facing.<Register.value(Global.GameName)>)>)
+	:if:<Register.value(Global.Save.Player.ThirdPerson.<Register.value(Global.GameName)>)>=true
 		@Camera.activatethirdperson
 	:endif
 	@Level.update
