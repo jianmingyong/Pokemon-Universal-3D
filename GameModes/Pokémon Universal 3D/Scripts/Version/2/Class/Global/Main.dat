@@ -18,12 +18,12 @@ version=2
 @Level.update
 
 :if:<Storage.get(bool,Global.Main.Start)>=false
+	# Stop the music.
+	@Music.play(Stop)
+	
 	# Save Game.
 	@Script.start(Version\2\Class\Global\Save)
 	
-	# Stop the music.
-	@Music.play(Stop)
-
 	# File Validation.
 	@Script.start(Version\2\Class\Security\FileValidation)
 
@@ -31,14 +31,14 @@ version=2
 	@Script.start(Version\2\Class\Update\v0.54.0.0.0.16)
 	@Script.start(Version\2\Class\Global\Register)
 	
-	# Initalize Options.
-	@Script.start(Version\2\Class\Global\Language)
+	# Initalize Language.
+	@Script.start(Version\2\Class\Localization\Main)
 	
 	# Start Main Menu Screen.
-	@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\TitleScreen)
+	@Script.start(Version\2\Class\Screen\TitleScreen)
 	
 	@Storage.set(bool,Global.Main.Start,true)
 :else
-	@Script.start(<Register.value(Global.Token)>\<filesystem.pathup(<Level.levelfile>)>\<Level.filename>)
+	@Script.start(<filesystem.pathup(<Level.levelfile>)>\<Level.filename>)
 :endif
 :end

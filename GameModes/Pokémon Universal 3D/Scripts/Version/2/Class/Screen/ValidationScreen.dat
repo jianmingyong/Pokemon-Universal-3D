@@ -3,7 +3,7 @@
 # Sub Screen.ValidationScreen
 ##############################
 
-@Storage.set(str,StackTrace.Set,Version\2\Class\Screen\<Register.value(Global.Token)>\ValidationScreen.dat)
+@Storage.set(str,StackTrace.Set,Version\2\Class\Screen\ValidationScreen.dat)
 @Script.start(Version\2\Class\StackTrace\Set)
 
 :if:<Storage.get(bool,Security.FileValidation.Checks)>=true
@@ -47,7 +47,7 @@
 :endif
 
 :if:<Register.value(Global.GameName)>=Pokémon Delta Emerald
-	@Script.start(Version\2\Class\Screen\<Register.value(Global.Token)>\Pokémon Delta Emerald\IntroScreen)
+	@Script.start(Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen)
 :endif
 :if:<Register.value(Global.GameName)>=Pokémon Dark Energy
 	
