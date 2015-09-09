@@ -12,29 +12,34 @@ version=2
 :endif
 
 # English Localization - Default Replace if language does not exist.
-# Basic Structure:
-# Localization.<Path>.<ID>
+
+# Global Language Path
+@Storage.set(str,Localization.Global.English.Path,Version\2\Class\Localization\English)
+
+# Global Language
+@Storage.set(str,Localization.Global.3DBuilding,3D Building)
+@Storage.set(str,Localization.Global.Back,Back)
+@Storage.set(str,Localization.Global.Language,Language)
+@Storage.set(str,Localization.Global.LoadGame,Load Game)
+@Storage.set(str,Localization.Global.NewGame,New Game)
+@Storage.set(str,Localization.Global.Options,Options)
+@Storage.set(str,Localization.Global.Sandbox,Sandbox Mode)
+@Storage.set(str,Localization.Global.Yes,Yes)
+@Storage.set(str,Localization.Global.No,No)
 
 # Version\2\Class\Screen\TitleScreen.dat
-# @Text.show(Move: W or S or arrow keys.~Select: Space bar or enter.)
-@Storage.set(str,Localization.Version\2\Class\Screen\TitleScreen.1,Move: W or S or arrow keys.~Select: Space bar or enter.)
-# :when:New Game
-@Storage.set(str,Localization.Version\2\Class\Screen\TitleScreen.2,New Game)
-# :when:Load Game
-@Storage.set(str,Localization.Version\2\Class\Screen\TitleScreen.3,Load Game)
-# :when:Options
-@Storage.set(str,Localization.Version\2\Class\Screen\TitleScreen.4,Options)
+@Script.start(<Storage.get(str,Localization.Global.English.Path)>\Version\2\Class\Screen\TitleScreen)
 
 # Version\2\Class\Screen\OptionScreen.dat
-# @Text.show(Choose an option to change.)
-@Storage.set(str,Localization.Version\2\Class\Screen\OptionScreen.1,Choose an option to change.)
-# :when:Sandbox Mode
-@Storage.set(str,Localization.Version\2\Class\Screen\OptionScreen.2,Sandbox Mode)
-# :when:3D Building
-@Storage.set(str,Localization.Version\2\Class\Screen\OptionScreen.3,3D Building)
-# :when:Language
-@Storage.set(str,Localization.Version\2\Class\Screen\OptionScreen.4,Language)
-# :when:Back
-@Storage.set(str,Localization.Version\2\Class\Screen\OptionScreen.5,Back)
+@Script.start(<Storage.get(str,Localization.Global.English.Path)>\Version\2\Class\Screen\OptionScreen)
+
+# Version\2\Class\Screen\NewGameScreen.dat
+@Script.start(<Storage.get(str,Localization.Global.English.Path)>\Version\2\Class\Screen\NewGameScreen)
+
+# Version\2\Class\Screen\LoadGameScreen.dat
+@Script.start(<Storage.get(str,Localization.Global.English.Path)>\Version\2\Class\Screen\LoadGameScreen)
+
+# Version\2\Class\Screen\ValidationScreen.dat
+@Script.start(<Storage.get(str,Localization.Global.English.Path)>\Version\2\Class\Screen\ValidationScreen)
 
 :end

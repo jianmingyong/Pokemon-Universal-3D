@@ -23,23 +23,24 @@
 :endwhile
 
 :if:<Register.value(Global.ValidationScreen)>=false
-	@Title.add(Game Verification System,2147483647,255,255,255,2,true,0,-280)
-	@Title.add(This is a game verification system. You are require to answer them only once.,2147483647,255,255,255,2,true,0,-200)
-	@Title.add(Please answer them truefully. It will affect the game based on your answer.,2147483647,255,255,255,2,true,0,-160)
-	@Title.add(Pre-Check List:,2147483647,255,255,255,2,true,0,-80)
-	@Title.add(1. Activate Pokémon Universal 3D Content Pack.,2147483647,255,255,255,2,true,0,-40)
-	@Title.add(2. Restart the game through the launcher after activating.,2147483647,255,255,255,2,true,0,0)
-	@Title.add("If you have not done so, please do it now as you might experience glitches.",2147483647,255,255,255,2,true,0,40)
-	@Text.show(1. Can you hear the background music?)
+	@Music.play(Mega Man Battle Network 6_Theme Of Mega Man Battle Network 6)
+	@Title.add(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.1)>,2147483647,255,255,255,2,true,0,-280)
+	@Title.add(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.2)>,2147483647,255,255,255,2,true,0,-200)
+	@Title.add(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.3)>,2147483647,255,255,255,2,true,0,-160)
+	@Title.add(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.4)>,2147483647,255,255,255,2,true,0,-80)
+	@Title.add(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.5)>,2147483647,255,255,255,2,true,0,-40)
+	@Title.add(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.6)>,2147483647,255,255,255,2,true,0,0)
+	@Title.add(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.7)>,2147483647,255,255,255,2,true,0,40)
+	@Text.show(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.8)>)
 	@Options.setcancelindex(1)
-	@Options.show(YES,NO)
-		:when:NO
+	@Options.show(<Storage.get(str,Localization.Global.Yes)>,<Storage.get(str,Localization.Global.No)>)
+		:when:<Storage.get(str,Localization.Global.No)>
 			@Script.start(Version\2\Class\Error\ID 3)
 	:endwhen
-	@Text.show(2. Did the text in this question go out~of textbox?)
+	@Text.show(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.9)>)
 	@Options.setcancelindex(1)
-	@Options.show(YES,NO)
-		:when:YES
+	@Options.show(<Storage.get(str,Localization.Global.Yes)>,<Storage.get(str,Localization.Global.No)>)
+		:when:<Storage.get(str,Localization.Global.Yes)>
 			@Script.start(Version\2\Class\Error\ID 3)
 	:endwhen
 	@Title.clear

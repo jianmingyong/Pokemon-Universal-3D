@@ -1,4 +1,4 @@
-Name|Surskit
+﻿Name|Surskit
 Number|283
 ExperienceType|1
 BaseExperience|54
@@ -36,14 +36,15 @@ CanSwim|0
 Pokedex|It secretes a thick syrup from the tip of its head. It lives on weed-choked ponds.\Pond Skater Pokémon\1.7\0.5\0,148,0
 Scale|0.7
 Move|1,145
-Move|7,98
-Move|13,230
-Move|19,346
-Move|25,61
-Move|31,97
-Move|37,54
-Move|37,114
-Move|43,226
-Move|46,564
+Move|6,98
+Move|9,230
+Move|14,346
+Move|17,61
+Move|22,97
+Move|25,54
+Move|25,114
+Move|30,453
+Move|35,226
+Move|38,564
 TradeValue|30
 EvolutionCondition|284,level,22,level

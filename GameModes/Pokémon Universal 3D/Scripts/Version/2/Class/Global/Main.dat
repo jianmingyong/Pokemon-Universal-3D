@@ -21,18 +21,22 @@ version=2
 	# Stop the music.
 	@Music.play(Stop)
 	
-	# Save Game.
-	@Script.start(Version\2\Class\Global\Save)
-	
-	# File Validation.
-	@Script.start(Version\2\Class\Security\FileValidation)
-
 	# Update Game.
 	@Script.start(Version\2\Class\Update\v0.54.0.0.0.16)
 	@Script.start(Version\2\Class\Global\Register)
 	
 	# Initalize Language.
 	@Script.start(Version\2\Class\Localization\Main)
+	:if:<not><Register.value(Global.Token)>=English
+		@Script.start(Version\2\Class\Localization\<Register.value(Global.Token)>)
+	:endif
+	@Script.start(Version\2\Class\Localization\English)
+	
+	# Save Game.
+	@Script.start(Version\2\Class\Global\Save)
+	
+	# File Validation.
+	@Script.start(Version\2\Class\Security\FileValidation)
 	
 	# Start Main Menu Screen.
 	@Script.start(Version\2\Class\Screen\TitleScreen)

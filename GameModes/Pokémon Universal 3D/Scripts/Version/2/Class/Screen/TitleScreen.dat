@@ -29,26 +29,13 @@ version=2
 @Camera.fix
 @Screen.fadein
 
-:if:<Register.value(Global.Token)>=English
-	@Text.show(Move: W or S or arrow keys.~Select: Space bar or enter.)
-	@Options.show(New Game,Load Game,Options)
-		:when:New Game
-			@Script.start(Version\2\Class\Screen\NewGameScreen)
-		:when:Load Game
-			@Script.start(Version\2\Class\Screen\LoadGameScreen)
-		:when:Options
-			@Script.start(Version\2\Class\Screen\OptionScreen)
-	:endwhen
-:else
-	@Text.show(<Storage.get(str,Localization.Version\2\Class\Screen\TitleScreen.1)>)
-	@Options.show(<Storage.get(str,Localization.Version\2\Class\Screen\TitleScreen.2)>,<Storage.get(str,Localization.Version\2\Class\Screen\TitleScreen.3)>,<Storage.get(str,Localization.Version\2\Class\Screen\TitleScreen.4)>)
-		:when:<Storage.get(str,Localization.Version\2\Class\Screen\TitleScreen.2)>
-			@Script.start(Version\2\Class\Screen\NewGameScreen)
-		:when:<Storage.get(str,Localization.Version\2\Class\Screen\TitleScreen.3)>
-			@Script.start(Version\2\Class\Screen\LoadGameScreen)
-		:when:<Storage.get(str,Localization.Version\2\Class\Screen\TitleScreen.4)>
-			@Script.start(Version\2\Class\Screen\OptionScreen)
-	:endwhen	
-:endif
-
+@Text.show(<Storage.get(str,Localization.Version\2\Class\Screen\TitleScreen.1)>)
+@Options.show(<Storage.get(str,Localization.Global.NewGame)>,<Storage.get(str,Localization.Global.LoadGame)>,<Storage.get(str,Localization.Global.Options)>)
+	:when:<Storage.get(str,Localization.Global.NewGame)>
+		@Script.start(Version\2\Class\Screen\NewGameScreen)
+	:when:<Storage.get(str,Localization.Global.LoadGame)>
+		@Script.start(Version\2\Class\Screen\LoadGameScreen)
+	:when:<Storage.get(str,Localization.Global.Options)>
+		@Script.start(Version\2\Class\Screen\OptionScreen)
+:endwhen
 :end

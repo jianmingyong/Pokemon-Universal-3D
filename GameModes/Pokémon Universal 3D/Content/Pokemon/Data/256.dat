@@ -1,4 +1,4 @@
-Name|Combusken
+﻿Name|Combusken
 Number|256
 ExperienceType|2
 BaseExperience|142
@@ -39,6 +39,7 @@ Move|1,10
 Move|1,45
 Move|1,52
 Move|1,28
+Move|1,116
 Move|5,52
 Move|10,28
 Move|14,64

@@ -1,0 +1,40 @@
+version=2
+##############################
+# Sub Localization.English
+##############################
+
+@Storage.set(str,StackTrace.Set,Version\2\Class\Localization\English\Version\2\Class\Screen\ValidationScreen.dat)
+@Script.start(Version\2\Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+# @Title.add(Game Verification System,2147483647,255,255,255,2,true,0,-280)
+@Storage.set(str,Localization.Version\2\Class\Screen\ValidationScreen.1,Game Verification System)
+
+# @Title.add(This is a game verification system. You are require to answer them only once.,2147483647,255,255,255,2,true,0,-200)
+@Storage.set(str,Localization.Version\2\Class\Screen\ValidationScreen.2,This is a game verification system. You are require to answer them only once.)
+
+# @Title.add(Please answer them truefully. It will affect the game based on your answer.,2147483647,255,255,255,2,true,0,-160)
+@Storage.set(str,Localization.Version\2\Class\Screen\ValidationScreen.3,Please answer them truefully. It will affect the game based on your answer.)
+
+# @Title.add(Pre-Check List:,2147483647,255,255,255,2,true,0,-80)
+@Storage.set(str,Localization.Version\2\Class\Screen\ValidationScreen.4,Pre-Check List:)
+
+# @Title.add(1. Activate Pokémon Universal 3D Content Pack.,2147483647,255,255,255,2,true,0,-40)
+@Storage.set(str,Localization.Version\2\Class\Screen\ValidationScreen.5,1. Activate Pokémon Universal 3D Content Pack.)
+
+# @Title.add(2. Restart the game through the launcher after activating.,2147483647,255,255,255,2,true,0,0)
+@Storage.set(str,Localization.Version\2\Class\Screen\ValidationScreen.6,2. Restart the game through the launcher after activating.)
+
+# @Title.add("If you have not done so, please do it now as you might experience glitches.",2147483647,255,255,255,2,true,0,40)
+@Storage.set(str,Localization.Version\2\Class\Screen\ValidationScreen.7,"If you have not done so, please do it now as you might experience glitches.")
+
+# @Text.show(1. Can you hear the background music?)
+@Storage.set(str,Localization.Version\2\Class\Screen\ValidationScreen.8,1. Can you hear the background music?)
+
+# @Text.show(2. Did the text in this question go out~of textbox?)
+@Storage.set(str,Localization.Version\2\Class\Screen\ValidationScreen.9,2. Did the text in this question go out~of textbox?)
+:end

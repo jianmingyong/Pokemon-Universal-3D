@@ -1,4 +1,4 @@
-Name|Beautifly
+﻿Name|Beautifly
 Number|267
 ExperienceType|1
 BaseExperience|173
@@ -35,16 +35,19 @@ CanSwim|0
 Pokedex|Vibrantly patterned wings are its prominent feature. It sucks sweet flower nectar with its long mouth.\Butterfly Pokémon\28.4\1\0,148,0
 Scale|1
 Move|1,71
-Move|10,71
-Move|13,16
-Move|17,78
-Move|20,234
-Move|24,72
-Move|27,18
-Move|31,213
-Move|34,318
-Move|38,202
-Move|41,405
-Move|45,483
+Move|1,16
+Move|10,16
+Move|12,71
+Move|15,78
+Move|17,234
+Move|20,314
+Move|22,72
+Move|25,318
+Move|27,213
+Move|30,18
+Move|32,202
+Move|35,405
+Move|37,99
+Move|40,483
 TradeValue|20
 Item|5,154

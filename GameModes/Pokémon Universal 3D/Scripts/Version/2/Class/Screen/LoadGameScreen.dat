@@ -29,9 +29,9 @@ version=2
 	@Storage.update(int,Screen.LoadGameScreen.LoadData.Count,add,1)
 :endif
 
-@Storage.update(str,Screen.LoadGameScreen.LoadData,add,Back)
+@Storage.update(str,Screen.LoadGameScreen.LoadData,add,<Storage.get(str,Localization.Global.Back)>)
 
-@Text.show(Please Choose an option.)
+@Text.show(<Storage.get(str,Localization.Version\2\Class\Screen\LoadGameScreen.1)>)
 @Options.setcancelindex(<Storage.get(int,Screen.LoadGameScreen.LoadData.Count)>)
 @Options.show(<Storage.get(str,Screen.LoadGameScreen.LoadData)>)
 :when:Pokémon Delta Emerald
@@ -43,7 +43,7 @@ version=2
 :when:Pokémon Sunshore Isle
 	@Register.change(Global.GameName,Pokémon Sunshore Isle)
 	@Script.start(Version\2\Class\Global\Load)
-:when:Back
+:when:<Storage.get(str,Localization.Global.Back)>
 	@Script.start(Version\2\Class\Screen\TitleScreen)
 :endwhen
 :end
