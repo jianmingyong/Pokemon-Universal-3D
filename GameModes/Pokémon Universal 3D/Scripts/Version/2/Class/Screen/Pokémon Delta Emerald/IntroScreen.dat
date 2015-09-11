@@ -33,7 +33,7 @@ version=2
 :endwhile
 
 @Music.play(<Storage.get(str,GameMode.IntroMusic)>)
-@Text.show(Hi! Sorry to keep you waiting!*Welcome to the world of POKéMON!*My name is BIRCH.*But everyone calls me the POKéMON~PROFESSOR.)
+@Text.show(<Storage.get(str,Localization.Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen.1)>)
 
 :while:<Entity.opacity(14)><100
 	@Entity.setopacity(14,<Entity.opacity(14)>+10)
@@ -42,20 +42,20 @@ version=2
 :endwhile
 
 @Pokemon.cry(270)
-@Text.show(This is what we call a "POKéMON."*This world is widely inhabited by~creatures known as POKéMON.*We humans live alongside POKéMON,~at times as friendly playmates, and~at times as cooperative workmates.*And sometimes, we band together~and battle others like us.*But despite our closeness, we don't~know everything about POKéMON.*In fact, there are many, many~secrets surrounding POKéMON.*To unravel POKéMON mysteries,~I've been undertaking research.*That's what I do.*And you are?*Are you a boy?~Or are you a girl?)
+@Text.show(<Storage.get(str,Localization.Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen.2)>)
 
-@Options.show(BOY,GIRL)
-	:when:BOY
+@Options.show(<Storage.get(str,Localization.Global.Boy)>,<Storage.get(str,Localization.Global.Girl)>)
+	:when:<Storage.get(str,Localization.Global.Boy)>
 		@Register.change(Pokémon Delta Emerald.Player.Gender,Boy)
 		@Player.wearskin(Brendan)
 		@Player.setrivalname(May)
-	:when:GIRL
+	:when:<Storage.get(str,Localization.Global.Girl)>
 		@Register.change(Pokémon Delta Emerald.Player.Gender,Girl)
 		@Player.wearskin(May)
 		@Player.setrivalname(Brendan)
 :endwhen
 
-@Text.show(All right.~What's your name?*You're <Player.name> who's moving to my~hometown of LITTLEROOT.*I get it now!)
+@Text.show(<Storage.get(str,Localization.Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen.3)>)
 
 :while:<Entity.opacity(14)>>0
 	@Entity.setopacity(14,<Entity.opacity(14)>-10)
@@ -63,7 +63,7 @@ version=2
 	@Level.update
 :endwhile
 
-@Text.show(All right, are you ready?*Your very own adventure is about~to unfold.*Take courage, and leap into the~world of POKéMON where dreams,~adventure, and friendships await!*Well, I'll be expecting you later.~Come see me in my POKéMON LAB.)
+@Text.show(<Storage.get(str,Localization.Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen.4)>)
 
 :while:<Entity.opacity(13)>>0
 	@Entity.setopacity(13,<Entity.opacity(13)>-10)

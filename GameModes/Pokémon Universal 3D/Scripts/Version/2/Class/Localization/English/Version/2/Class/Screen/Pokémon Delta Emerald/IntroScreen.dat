@@ -1,0 +1,25 @@
+version=2
+##############################
+# Sub Localization.English
+##############################
+
+@Storage.set(str,StackTrace.Set,Version\2\Class\Localization\English\Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen.dat)
+@Script.start(Version\2\Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+# @Text.show(Hi! Sorry to keep you waiting!*Welcome to the world of POKéMON!*My name is BIRCH.*But everyone calls me the POKéMON~PROFESSOR.)
+@Storage.set(str,Localization.Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen.1,Hi! Sorry to keep you waiting!*Welcome to the world of POKéMON!*My name is BIRCH.*But everyone calls me the POKéMON~PROFESSOR.)
+
+# @Text.show(This is what we call a "POKéMON."*This world is widely inhabited by~creatures known as POKéMON.*We humans live alongside POKéMON,~at times as friendly playmates, and~at times as cooperative workmates.*And sometimes, we band together~and battle others like us.*But despite our closeness, we don't~know everything about POKéMON.*In fact, there are many, many~secrets surrounding POKéMON.*To unravel POKéMON mysteries,~I've been undertaking research.*That's what I do.*And you are?*Are you a boy?~Or are you a girl?)
+@Storage.set(str,Localization.Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen.2,This is what we call a "POKéMON."*This world is widely inhabited by~creatures known as POKéMON.*We humans live alongside POKéMON,~at times as friendly playmates, and~at times as cooperative workmates.*And sometimes, we band together~and battle others like us.*But despite our closeness, we don't~know everything about POKéMON.*In fact, there are many, many~secrets surrounding POKéMON.*To unravel POKéMON mysteries,~I've been undertaking research.*That's what I do.*And you are?*Are you a boy?~Or are you a girl?)
+
+# @Text.show(All right.~What's your name?*You're <Player.name> who's moving to my~hometown of LITTLEROOT.*I get it now!)
+@Storage.set(str,Localization.Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen.3,All right.~What's your name?*You're <Player.name> who's moving to my~hometown of LITTLEROOT.*I get it now!)
+
+# @Text.show(All right, are you ready?*Your very own adventure is about~to unfold.*Take courage, and leap into the~world of POKéMON where dreams,~adventure, and friendships await!*Well, I'll be expecting you later.~Come see me in my POKéMON LAB.)
+@Storage.set(str,Localization.Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen.4,All right, are you ready?*Your very own adventure is about~to unfold.*Take courage, and leap into the~world of POKéMON where dreams,~adventure, and friendships await!*Well, I'll be expecting you later.~Come see me in my POKéMON LAB.)
+:end

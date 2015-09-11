@@ -33,4 +33,13 @@ version=2
 :if:<Register.registered(Pokémon Delta Emerald.Player.Gender)>=false
 	@Register.register(Pokémon Delta Emerald.Player.Gender,str,Nothing)
 :endif
+
+# Local Register:
+:if:<Register.registered(Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Boy)>=false
+	@Register.register(Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Boy,int,0)
+:endif
+
+:if:<Register.registered(Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Girl)>=false
+	@Register.register(Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Girl,int,0)
+:endif
 :end

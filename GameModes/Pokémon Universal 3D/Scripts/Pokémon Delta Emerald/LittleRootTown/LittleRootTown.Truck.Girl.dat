@@ -1,0 +1,10 @@
+version=2
+@Storage.set(str,StackTrace.Set,English\Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Girl.dat)
+@Script.start(Version\2\Class\StackTrace\Set)
+
+:if:<Storage.get(bool,Security.FileValidation.Checks)>=true
+	@Storage.set(bool,Security.FileValidation.ScriptExist,true)
+	:end
+:endif
+
+:end

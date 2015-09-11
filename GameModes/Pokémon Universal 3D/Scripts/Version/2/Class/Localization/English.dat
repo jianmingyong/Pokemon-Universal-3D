@@ -26,20 +26,29 @@ version=2
 @Storage.set(str,Localization.Global.Sandbox,Sandbox Mode)
 @Storage.set(str,Localization.Global.Yes,Yes)
 @Storage.set(str,Localization.Global.No,No)
+@Storage.set(str,Localization.Global.Boy,Boy)
+@Storage.set(str,Localization.Global.Girl,Girl)
 
+##################################################
+# Basic Screen Localization
+##################################################
 # Version\2\Class\Screen\TitleScreen.dat
 @Script.start(<Storage.get(str,Localization.Global.English.Path)>\Version\2\Class\Screen\TitleScreen)
-
 # Version\2\Class\Screen\OptionScreen.dat
 @Script.start(<Storage.get(str,Localization.Global.English.Path)>\Version\2\Class\Screen\OptionScreen)
-
 # Version\2\Class\Screen\NewGameScreen.dat
 @Script.start(<Storage.get(str,Localization.Global.English.Path)>\Version\2\Class\Screen\NewGameScreen)
-
 # Version\2\Class\Screen\LoadGameScreen.dat
 @Script.start(<Storage.get(str,Localization.Global.English.Path)>\Version\2\Class\Screen\LoadGameScreen)
-
 # Version\2\Class\Screen\ValidationScreen.dat
 @Script.start(<Storage.get(str,Localization.Global.English.Path)>\Version\2\Class\Screen\ValidationScreen)
+# Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen.dat
+@Script.start(<Storage.get(str,Localization.Global.English.Path)>\Version\2\Class\Screen\Pokémon Delta Emerald\IntroScreen)
+
+##################################################
+# Pokémon Delta Emerald
+##################################################
+# Pokémon Delta Emerald\LittleRootTown\Truck\CE_Truck
+@Script.start(<Storage.get(str,Localization.Global.English.Path)>\Pokémon Delta Emerald\LittleRootTown\Truck\CE_Truck)
 
 :end

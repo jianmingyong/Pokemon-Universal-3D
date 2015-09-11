@@ -23,7 +23,7 @@
 :endwhile
 
 :if:<Register.value(Global.ValidationScreen)>=false
-	@Music.play(Mega Man Battle Network 6_Theme Of Mega Man Battle Network 6)
+	@Music.play(P_Lugia's song)
 	@Title.add(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.1)>,2147483647,255,255,255,2,true,0,-280)
 	@Title.add(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.2)>,2147483647,255,255,255,2,true,0,-200)
 	@Title.add(<Storage.get(str,Localization.Version\2\Class\Screen\ValidationScreen.3)>,2147483647,255,255,255,2,true,0,-160)

@@ -1,5 +1,5 @@
 version=2
-@Storage.set(str,StackTrace.Set,English\Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Boy.dat)
+@Storage.set(str,StackTrace.Set,Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Boy.dat)
 @Script.start(Version\2\Class\StackTrace\Set)
 
 :if:<Storage.get(bool,Security.FileValidation.Checks)>=true
@@ -7,4 +7,26 @@ version=2
 	:end
 :endif
 
+:if:<Register.value(Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Boy)>=0
+	@Entity.remove(0050021)
+	@Entity.remove(0050031)
+	@Sound.play(Pokémon Delta Emerald\Truck Moving)
+	@Level.wait(800)
+	@Register.change(Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Boy,1)
+	@Level.reload
+:endif
+
+:if:<Register.value(Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Boy)>=1
+	@Sound.play(Pokémon Delta Emerald\Truck Door Open)
+	@Entity.remove(0050020)
+	@Entity.remove(0050030)
+	@Level.update
+	@Register.change(Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Boy,2)
+:endif
+
+:if:<Register.value(Pokémon Delta Emerald\LittleRootTown\LittleRootTown.Truck.Boy)>=2
+	@Entity.remove(0050020)
+	@Entity.remove(0050030)
+	@Level.update
+:endif
 :end

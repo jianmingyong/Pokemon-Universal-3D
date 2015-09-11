@@ -1,5 +1,5 @@
 ﻿version=2
-@Storage.set(str,StackTrace.Set,English\Pokémon Delta Emerald\LittleRootTown\Truck\CE_Truck.dat)
+@Storage.set(str,StackTrace.Set,Pokémon Delta Emerald\LittleRootTown\Truck\CE_Truck.dat)
 @Script.start(Version\2\Class\StackTrace\Set)
 
 :if:<Storage.get(bool,Security.FileValidation.Checks)>=true
@@ -7,5 +7,5 @@
 	:end
 :endif
 
-@Text.show(The box is printed with a POKéMON logo.*It's a POKéMON brand moving and~delivery service.)
+@Text.show(<Storage.get(str,Localization.Pokémon Delta Emerald\LittleRootTown\Truck\CE_Truck.1)>)
 :end
